@@ -117,7 +117,7 @@ function TemplateDetail() {
             <p>{template.description}</p>
             <h2 className="text-2xl font-bold text-foreground">Who it suits</h2>
             <ul className="mt-3 space-y-2">
-              {template.bestFor.map((b) => (
+              {template.bestFor.map((b: string) => (
                 <li key={b} className="flex items-center gap-2">
                   <Check className="size-4 text-primary" aria-hidden="true" /> {b}
                 </li>
