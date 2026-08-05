@@ -101,6 +101,14 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
       { property: "og:site_name", content: SITE.name },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary_large_image" },
+      { title: "Lovable App" },
+      { property: "og:title", content: "Lovable App" },
+      { name: "twitter:title", content: "Lovable App" },
+      { name: "description", content: "Create professional invoices online for free with this SEO-optimized invoice generator website." },
+      { property: "og:description", content: "Create professional invoices online for free with this SEO-optimized invoice generator website." },
+      { name: "twitter:description", content: "Create professional invoices online for free with this SEO-optimized invoice generator website." },
+      { property: "og:image", content: "https://pub-bb2e103a32db4e198524a2e9ed8f35b4.r2.dev/ed322c8c-d716-4ffe-bb86-bf89e725880f/id-preview-25abf4db--aab16691-c983-4c12-9976-28bf1032ac40.lovable.app-1785925676624.png" },
+      { name: "twitter:image", content: "https://pub-bb2e103a32db4e198524a2e9ed8f35b4.r2.dev/ed322c8c-d716-4ffe-bb86-bf89e725880f/id-preview-25abf4db--aab16691-c983-4c12-9976-28bf1032ac40.lovable.app-1785925676624.png" },
     ],
     links: [
       {
