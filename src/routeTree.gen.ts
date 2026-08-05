@@ -17,11 +17,15 @@ import { Route as DisclaimerRouteImport } from './routes/disclaimer'
 import { Route as FaqRouteImport } from './routes/faq'
 import { Route as InvoiceGeneratorRouteImport } from './routes/invoice-generator'
 import { Route as PrivacyPolicyRouteImport } from './routes/privacy-policy'
+import { Route as SearchRouteImport } from './routes/search'
 import { Route as SitemapDotxmlRouteImport } from './routes/sitemap[.]xml'
 import { Route as TermsAndConditionsRouteImport } from './routes/terms-and-conditions'
 import { Route as ToolsRouteImport } from './routes/tools'
+import { Route as BlogIndexRouteImport } from './routes/blog/index'
+import { Route as BlogSlugRouteImport } from './routes/blog/$slug'
 import { Route as InvoiceTemplatesIndexRouteImport } from './routes/invoice-templates/index'
 import { Route as InvoiceTemplatesSlugRouteImport } from './routes/invoice-templates/$slug'
+import { Route as BlogCategorySlugRouteImport } from './routes/blog/category/$slug'
 
 const IndexRoute = IndexRouteImport.update({
   id: '/',
@@ -63,6 +67,11 @@ const PrivacyPolicyRoute = PrivacyPolicyRouteImport.update({
   path: '/privacy-policy',
   getParentRoute: () => rootRouteImport,
 } as any)
+const SearchRoute = SearchRouteImport.update({
+  id: '/search',
+  path: '/search',
+  getParentRoute: () => rootRouteImport,
+} as any)
 const SitemapDotxmlRoute = SitemapDotxmlRouteImport.update({
   id: '/sitemap.xml',
   path: '/sitemap.xml',
@@ -78,6 +87,16 @@ const ToolsRoute = ToolsRouteImport.update({
   path: '/tools',
   getParentRoute: () => rootRouteImport,
 } as any)
+const BlogIndexRoute = BlogIndexRouteImport.update({
+  id: '/blog/',
+  path: '/blog/',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const BlogSlugRoute = BlogSlugRouteImport.update({
+  id: '/blog/$slug',
+  path: '/blog/$slug',
+  getParentRoute: () => rootRouteImport,
+} as any)
 const InvoiceTemplatesIndexRoute = InvoiceTemplatesIndexRouteImport.update({
   id: '/invoice-templates/',
   path: '/invoice-templates/',
@@ -86,6 +105,11 @@ const InvoiceTemplatesIndexRoute = InvoiceTemplatesIndexRouteImport.update({
 const InvoiceTemplatesSlugRoute = InvoiceTemplatesSlugRouteImport.update({
   id: '/invoice-templates/$slug',
   path: '/invoice-templates/$slug',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const BlogCategorySlugRoute = BlogCategorySlugRouteImport.update({
+  id: '/blog/category/$slug',
+  path: '/blog/category/$slug',
   getParentRoute: () => rootRouteImport,
 } as any)
 
@@ -98,11 +122,15 @@ export interface FileRoutesByFullPath {
   '/faq': typeof FaqRoute
   '/invoice-generator': typeof InvoiceGeneratorRoute
   '/privacy-policy': typeof PrivacyPolicyRoute
+  '/search': typeof SearchRoute
   '/sitemap.xml': typeof SitemapDotxmlRoute
   '/terms-and-conditions': typeof TermsAndConditionsRoute
   '/tools': typeof ToolsRoute
+  '/blog/$slug': typeof BlogSlugRoute
   '/invoice-templates/$slug': typeof InvoiceTemplatesSlugRoute
+  '/blog/': typeof BlogIndexRoute
   '/invoice-templates/': typeof InvoiceTemplatesIndexRoute
+  '/blog/category/$slug': typeof BlogCategorySlugRoute
 }
 export interface FileRoutesByTo {
   '/': typeof IndexRoute
@@ -113,11 +141,15 @@ export interface FileRoutesByTo {
   '/faq': typeof FaqRoute
   '/invoice-generator': typeof InvoiceGeneratorRoute
   '/privacy-policy': typeof PrivacyPolicyRoute
+  '/search': typeof SearchRoute
   '/sitemap.xml': typeof SitemapDotxmlRoute
   '/terms-and-conditions': typeof TermsAndConditionsRoute
   '/tools': typeof ToolsRoute
+  '/blog/$slug': typeof BlogSlugRoute
   '/invoice-templates/$slug': typeof InvoiceTemplatesSlugRoute
+  '/blog': typeof BlogIndexRoute
   '/invoice-templates': typeof InvoiceTemplatesIndexRoute
+  '/blog/category/$slug': typeof BlogCategorySlugRoute
 }
 export interface FileRoutesById {
   __root__: typeof rootRouteImport
@@ -129,11 +161,15 @@ export interface FileRoutesById {
   '/faq': typeof FaqRoute
   '/invoice-generator': typeof InvoiceGeneratorRoute
   '/privacy-policy': typeof PrivacyPolicyRoute
+  '/search': typeof SearchRoute
   '/sitemap.xml': typeof SitemapDotxmlRoute
   '/terms-and-conditions': typeof TermsAndConditionsRoute
   '/tools': typeof ToolsRoute
+  '/blog/$slug': typeof BlogSlugRoute
   '/invoice-templates/$slug': typeof InvoiceTemplatesSlugRoute
+  '/blog/': typeof BlogIndexRoute
   '/invoice-templates/': typeof InvoiceTemplatesIndexRoute
+  '/blog/category/$slug': typeof BlogCategorySlugRoute
 }
 export interface FileRouteTypes {
   fileRoutesByFullPath: FileRoutesByFullPath
@@ -146,11 +182,15 @@ export interface FileRouteTypes {
     | '/faq'
     | '/invoice-generator'
     | '/privacy-policy'
+    | '/search'
     | '/sitemap.xml'
     | '/terms-and-conditions'
     | '/tools'
+    | '/blog/$slug'
     | '/invoice-templates/$slug'
+    | '/blog/'
     | '/invoice-templates/'
+    | '/blog/category/$slug'
   fileRoutesByTo: FileRoutesByTo
   to:
     | '/'
@@ -161,11 +201,15 @@ export interface FileRouteTypes {
     | '/faq'
     | '/invoice-generator'
     | '/privacy-policy'
+    | '/search'
     | '/sitemap.xml'
     | '/terms-and-conditions'
     | '/tools'
+    | '/blog/$slug'
     | '/invoice-templates/$slug'
+    | '/blog'
     | '/invoice-templates'
+    | '/blog/category/$slug'
   id:
     | '__root__'
     | '/'
@@ -176,11 +220,15 @@ export interface FileRouteTypes {
     | '/faq'
     | '/invoice-generator'
     | '/privacy-policy'
+    | '/search'
     | '/sitemap.xml'
     | '/terms-and-conditions'
     | '/tools'
+    | '/blog/$slug'
     | '/invoice-templates/$slug'
+    | '/blog/'
     | '/invoice-templates/'
+    | '/blog/category/$slug'
   fileRoutesById: FileRoutesById
 }
 export interface RootRouteChildren {
@@ -192,11 +240,15 @@ export interface RootRouteChildren {
   FaqRoute: typeof FaqRoute
   InvoiceGeneratorRoute: typeof InvoiceGeneratorRoute
   PrivacyPolicyRoute: typeof PrivacyPolicyRoute
+  SearchRoute: typeof SearchRoute
   SitemapDotxmlRoute: typeof SitemapDotxmlRoute
   TermsAndConditionsRoute: typeof TermsAndConditionsRoute
   ToolsRoute: typeof ToolsRoute
+  BlogSlugRoute: typeof BlogSlugRoute
   InvoiceTemplatesSlugRoute: typeof InvoiceTemplatesSlugRoute
+  BlogIndexRoute: typeof BlogIndexRoute
   InvoiceTemplatesIndexRoute: typeof InvoiceTemplatesIndexRoute
+  BlogCategorySlugRoute: typeof BlogCategorySlugRoute
 }
 
 declare module '@tanstack/react-router' {
@@ -257,6 +309,13 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof PrivacyPolicyRouteImport
       parentRoute: typeof rootRouteImport
     }
+    '/search': {
+      id: '/search'
+      path: '/search'
+      fullPath: '/search'
+      preLoaderRoute: typeof SearchRouteImport
+      parentRoute: typeof rootRouteImport
+    }
     '/sitemap.xml': {
       id: '/sitemap.xml'
       path: '/sitemap.xml'
@@ -278,6 +337,20 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof ToolsRouteImport
       parentRoute: typeof rootRouteImport
     }
+    '/blog/': {
+      id: '/blog/'
+      path: '/blog'
+      fullPath: '/blog/'
+      preLoaderRoute: typeof BlogIndexRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/blog/$slug': {
+      id: '/blog/$slug'
+      path: '/blog/$slug'
+      fullPath: '/blog/$slug'
+      preLoaderRoute: typeof BlogSlugRouteImport
+      parentRoute: typeof rootRouteImport
+    }
     '/invoice-templates/': {
       id: '/invoice-templates/'
       path: '/invoice-templates'
@@ -292,6 +365,13 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof InvoiceTemplatesSlugRouteImport
       parentRoute: typeof rootRouteImport
     }
+    '/blog/category/$slug': {
+      id: '/blog/category/$slug'
+      path: '/blog/category/$slug'
+      fullPath: '/blog/category/$slug'
+      preLoaderRoute: typeof BlogCategorySlugRouteImport
+      parentRoute: typeof rootRouteImport
+    }
   }
 }
 
@@ -304,11 +384,15 @@ const rootRouteChildren: RootRouteChildren = {
   FaqRoute: FaqRoute,
   InvoiceGeneratorRoute: InvoiceGeneratorRoute,
   PrivacyPolicyRoute: PrivacyPolicyRoute,
+  SearchRoute: SearchRoute,
   SitemapDotxmlRoute: SitemapDotxmlRoute,
   TermsAndConditionsRoute: TermsAndConditionsRoute,
   ToolsRoute: ToolsRoute,
+  BlogSlugRoute: BlogSlugRoute,
   InvoiceTemplatesSlugRoute: InvoiceTemplatesSlugRoute,
+  BlogIndexRoute: BlogIndexRoute,
   InvoiceTemplatesIndexRoute: InvoiceTemplatesIndexRoute,
+  BlogCategorySlugRoute: BlogCategorySlugRoute,
 }
 export const routeTree = rootRouteImport
   ._addFileChildren(rootRouteChildren)

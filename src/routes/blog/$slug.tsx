@@ -3,7 +3,7 @@ import { Clock, User } from "lucide-react";
 import { Breadcrumbs, breadcrumbSchema } from "@/components/layout/Breadcrumbs";
 import { AdSlot } from "@/components/layout/AdSlot";
 import { Button } from "@/components/ui/button";
-import { CATEGORIES, POSTS, getPost, relatedPosts } from "@/data/blog";
+import { CATEGORIES, POSTS, getPost, relatedPosts, type Post } from "@/data/blog";
 import { SITE } from "@/data/site";
 
 interface Heading {
@@ -143,7 +143,7 @@ function PostPage() {
                 On this page
               </h2>
               <ol className="mt-3 grid gap-2 text-sm">
-                {headings.map((h) => (
+                {headings.map((h: Heading) => (
                   <li key={h.id}>
                     <a href={`#${h.id}`} className="hover:text-primary">
                       {h.text}
@@ -170,7 +170,7 @@ function PostPage() {
               <span className="grid size-12 shrink-0 place-items-center rounded-full bg-primary/10 font-display text-lg font-bold text-primary">
                 {post.author
                   .split(" ")
-                  .map((w) => w[0])
+                  .map((w: string) => w[0])
                   .join("")}
               </span>
               <div>
@@ -192,7 +192,7 @@ function PostPage() {
             <section className="mt-12">
               <h2 className="text-2xl font-extrabold">Related reading</h2>
               <div className="mt-6 grid gap-6 sm:grid-cols-3">
-                {related.map((r) => (
+                {related.map((r: Post) => (
                   <article key={r.slug} className="rounded-xl border border-border bg-card p-5">
                     <h3 className="text-base font-bold leading-snug">
                       <Link to="/blog/$slug" params={{ slug: r.slug }} className="hover:text-primary">
@@ -217,7 +217,7 @@ function PostPage() {
                 On this page
               </h2>
               <ol className="mt-3 grid gap-2 text-sm">
-                {headings.map((h) => (
+                {headings.map((h: Heading) => (
                   <li key={h.id}>
                     <a href={`#${h.id}`} className="text-muted-foreground hover:text-primary">
                       {h.text}

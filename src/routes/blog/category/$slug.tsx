@@ -2,7 +2,7 @@ import { createFileRoute, Link, notFound } from "@tanstack/react-router";
 import { PageHeader } from "@/components/layout/PageHeader";
 import { AdSlot } from "@/components/layout/AdSlot";
 import { breadcrumbSchema } from "@/components/layout/Breadcrumbs";
-import { CATEGORIES, POSTS, getCategory } from "@/data/blog";
+import { CATEGORIES, POSTS, getCategory, type Post } from "@/data/blog";
 import { SITE } from "@/data/site";
 import { PostCard } from "../index";
 
@@ -85,7 +85,7 @@ function CategoryPage() {
         </div>
 
         <div className="mt-8 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
-          {posts.map((post) => (
+          {posts.map((post: Post) => (
             <PostCard key={post.slug} post={post} />
           ))}
         </div>
