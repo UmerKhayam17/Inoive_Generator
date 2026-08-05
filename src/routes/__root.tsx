@@ -19,19 +19,32 @@ import { SITE } from "@/data/site";
 
 function NotFoundComponent() {
   return (
-    <div className="flex min-h-screen items-center justify-center bg-background px-4">
-      <div className="max-w-md text-center">
-        <h1 className="text-7xl font-bold text-foreground">404</h1>
-        <h2 className="mt-4 text-xl font-semibold text-foreground">Page not found</h2>
-        <p className="mt-2 text-sm text-muted-foreground">
-          The page you're looking for doesn't exist or has been moved.
+    <div className="flex min-h-[70vh] items-center justify-center px-4 py-20">
+      <div className="max-w-lg text-center">
+        <p className="font-display text-8xl font-extrabold text-gradient">404</p>
+        <h1 className="mt-4 text-2xl font-bold text-foreground">This page doesn&apos;t exist</h1>
+        <p className="mt-3 text-muted-foreground">
+          The page you&apos;re looking for has moved or never existed. Try the invoice generator,
+          browse our templates, or search the blog.
         </p>
-        <div className="mt-6">
+        <div className="mt-7 flex flex-wrap justify-center gap-3">
           <Link
-            to="/"
-            className="inline-flex items-center justify-center rounded-md bg-primary px-4 py-2 text-sm font-medium text-primary-foreground transition-colors hover:bg-primary/90"
+            to="/invoice-generator"
+            className="inline-flex min-h-11 items-center justify-center rounded-md bg-primary px-5 text-sm font-semibold text-primary-foreground transition-colors hover:bg-primary/90"
           >
-            Go home
+            Create an invoice
+          </Link>
+          <Link
+            to="/invoice-templates"
+            className="inline-flex min-h-11 items-center justify-center rounded-md border border-input px-5 text-sm font-semibold transition-colors hover:bg-accent/20"
+          >
+            Browse templates
+          </Link>
+          <Link
+            to="/search"
+            className="inline-flex min-h-11 items-center justify-center rounded-md border border-input px-5 text-sm font-semibold transition-colors hover:bg-accent/20"
+          >
+            Search
           </Link>
         </div>
       </div>
