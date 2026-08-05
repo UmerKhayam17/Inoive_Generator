@@ -15,6 +15,8 @@ import { reportLovableError } from "../lib/lovable-error-reporting";
 import { SiteHeader } from "@/components/layout/SiteHeader";
 import { SiteFooter } from "@/components/layout/SiteFooter";
 import { Toaster } from "@/components/ui/sonner";
+import { Analytics } from "@/components/Analytics";
+import { CookieConsent } from "@/components/CookieConsent";
 import { SITE } from "@/data/site";
 
 function NotFoundComponent() {
@@ -101,9 +103,6 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
       { property: "og:site_name", content: SITE.name },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary_large_image" },
-      { title: "Lovable App" },
-      { property: "og:title", content: "Lovable App" },
-      { name: "twitter:title", content: "Lovable App" },
       { name: "description", content: "Create professional invoices online for free with this SEO-optimized invoice generator website." },
       { property: "og:description", content: "Create professional invoices online for free with this SEO-optimized invoice generator website." },
       { name: "twitter:description", content: "Create professional invoices online for free with this SEO-optimized invoice generator website." },
@@ -193,6 +192,8 @@ function RootComponent() {
         </main>
         <SiteFooter />
       </div>
+      <Analytics />
+      <CookieConsent />
       <Toaster />
     </QueryClientProvider>
   );
