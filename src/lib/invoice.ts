@@ -17,6 +17,8 @@ export interface Party {
 
 export interface InvoiceData {
   templateSlug: string;
+  /** Overrides the template accent when set (hex, e.g. #2563eb) */
+  accentColor: string | null;
   currency: string;
   logo: string | null;
   signature: string | null;
@@ -34,6 +36,162 @@ export interface InvoiceData {
   amountPaid: number;
   notes: string;
   terms: string;
+  /** Optional overlay shown on preview + PDF when enabled */
+  watermarkEnabled: boolean;
+  watermarkText: string;
+  watermarkOpacity: number;
+  watermarkImage: string | null;
+  /** Optional custom typography for preview + PDF */
+  typography: InvoiceTypography;
+}
+
+export type InvoiceFontFamily =
+  | "default"
+  | "sans"
+  | "serif"
+  | "mono"
+  | "classic"
+  | "rounded";
+
+export type InvoiceHeadingLevel = "h1" | "h2" | "h3";
+
+export interface InvoiceTypography {
+  /** When false, template defaults are used */
+  enabled: boolean;
+  fontFamily: InvoiceFontFamily;
+  /** Body base size in px (11–18) */
+  baseSize: number;
+  /** Invoice title treated as H1 / H2 / H3 */
+  titleLevel: InvoiceHeadingLevel;
+  boldTitles: boolean;
+  boldBody: boolean;
+  italicBody: boolean;
+  italicNotes: boolean;
+}
+
+export const FONT_FAMILY_OPTIONS: { id: InvoiceFontFamily; label: string; stack: string }[] = [
+  {
+    id: "default",
+    label: "Template default",
+    stack: "",
+  },
+  {
+    id: "sans",
+    label: "Sans (Helvetica)",
+    stack: 'Helvetica, Arial, "Segoe UI", sans-serif',
+  },
+  {
+    id: "serif",
+    label: "Serif (Georgia)",
+    stack: 'Georgia, "Iowan Old Style", "Palatino Linotype", Palatino, serif',
+  },
+  {
+    id: "mono",
+    label: "Mono (Courier)",
+    stack: '"Courier New", Courier, monospace',
+  },
+  {
+    id: "classic",
+    label: "Classic (Times)",
+    stack: '"Times New Roman", Times, serif',
+  },
+  {
+    id: "rounded",
+    label: "Rounded (Verdana)",
+    stack: 'Verdana, Geneva, Tahoma, sans-serif',
+  },
+];
+
+export const HEADING_LEVELS: {
+  id: InvoiceHeadingLevel;
+  label: string;
+  size: number;
+}[] = [
+  { id: "h1", label: "H1 — Large", size: 36 },
+  { id: "h2", label: "H2 — Medium", size: 28 },
+  { id: "h3", label: "H3 — Compact", size: 22 },
+];
+
+export function createDefaultTypography(): InvoiceTypography {
+  return {
+    enabled: false,
+    fontFamily: "default",
+    baseSize: 13,
+    titleLevel: "h2",
+    boldTitles: true,
+    boldBody: false,
+    italicBody: false,
+    italicNotes: false,
+  };
+}
+
+export function normalizeTypography(
+  value: Partial<InvoiceTypography> | null | undefined,
+): InvoiceTypography {
+  const base = createDefaultTypography();
+  if (!value || typeof value !== "object") return base;
+  const familyIds = FONT_FAMILY_OPTIONS.map((f) => f.id);
+  const levelIds = HEADING_LEVELS.map((h) => h.id);
+  return {
+    enabled: Boolean(value.enabled),
+    fontFamily: familyIds.includes(value.fontFamily as InvoiceFontFamily)
+      ? (value.fontFamily as InvoiceFontFamily)
+      : base.fontFamily,
+    baseSize: Math.min(18, Math.max(11, Number(value.baseSize) || base.baseSize)),
+    titleLevel: levelIds.includes(value.titleLevel as InvoiceHeadingLevel)
+      ? (value.titleLevel as InvoiceHeadingLevel)
+      : base.titleLevel,
+    boldTitles: value.boldTitles !== false,
+    boldBody: Boolean(value.boldBody),
+    italicBody: Boolean(value.italicBody),
+    italicNotes: Boolean(value.italicNotes),
+  };
+}
+
+/** Resolved sizes/weights for InvoicePreview + PDF */
+export function resolveTypographyStyles(
+  typography: InvoiceTypography,
+  templateSerif: boolean,
+) {
+  const ty = normalizeTypography(typography);
+  const serifStack = '"Iowan Old Style", "Palatino Linotype", Palatino, Georgia, serif';
+  const sansStack = 'Helvetica, Arial, "Segoe UI", sans-serif';
+  const option = FONT_FAMILY_OPTIONS.find((f) => f.id === ty.fontFamily);
+  const fontFamily =
+    ty.enabled && option?.stack
+      ? option.stack
+      : templateSerif
+        ? serifStack
+        : sansStack;
+
+  const scale = ty.enabled ? ty.baseSize / 13 : 1;
+  const sz = (n: number) => Math.round(n * scale * 10) / 10;
+  const titleSize = ty.enabled
+    ? HEADING_LEVELS.find((h) => h.id === ty.titleLevel)?.size ?? 28
+    : null;
+  const titleWeight = !ty.enabled ? null : ty.boldTitles ? 800 : 500;
+  const bodyWeight = !ty.enabled ? null : ty.boldBody ? 700 : 400;
+  const bodyStyle: "normal" | "italic" = ty.enabled && ty.italicBody ? "italic" : "normal";
+  const notesStyle: "normal" | "italic" = ty.enabled && ty.italicNotes ? "italic" : "normal";
+
+  return {
+    enabled: ty.enabled,
+    fontFamily,
+    scale,
+    sz,
+    titleSize,
+    titleWeight,
+    bodyWeight,
+    bodyStyle,
+    notesStyle,
+    labelSize: sz(10),
+    bodySize: sz(13),
+    smallSize: sz(12),
+    tableSize: sz(12.5),
+    businessSize: sz(17),
+    totalSize: sz(14),
+    heroSize: sz(34),
+  };
 }
 
 export const CURRENCIES = [
@@ -56,6 +214,7 @@ const inDays = (days: number) =>
 export function createDefaultInvoice(): InvoiceData {
   return {
     templateSlug: "modern",
+    accentColor: null,
     currency: "USD",
     logo: null,
     signature: null,
@@ -88,6 +247,11 @@ export function createDefaultInvoice(): InvoiceData {
     amountPaid: 0,
     notes: "Thank you for your business. Payment via bank transfer or card.",
     terms: "Net 14. Late payments incur 2% interest per month.",
+    watermarkEnabled: false,
+    watermarkText: "PAID",
+    watermarkOpacity: 0.14,
+    watermarkImage: null,
+    typography: createDefaultTypography(),
   };
 }
 
@@ -203,12 +367,15 @@ export function validateInvoice(d: InvoiceData): Record<string, string> {
 
 /* ---------------------------------- persistence -------------------------------- */
 
-export const DRAFT_KEY = "invoiceforge:draft:v1";
+export const DRAFT_KEY = "invoicecreator:draft:v1";
+const LEGACY_DRAFT_KEY = "invoiceforge:draft:v1";
 
 export function loadDraft(): InvoiceData | null {
   if (typeof window === "undefined") return null;
   try {
-    const raw = window.localStorage.getItem(DRAFT_KEY);
+    const raw =
+      window.localStorage.getItem(DRAFT_KEY) ??
+      window.localStorage.getItem(LEGACY_DRAFT_KEY);
     if (!raw) return null;
     const parsed = JSON.parse(raw) as Partial<InvoiceData>;
     const base = createDefaultInvoice();
@@ -217,6 +384,23 @@ export function loadDraft(): InvoiceData | null {
       ...parsed,
       from: { ...base.from, ...(parsed.from ?? {}) },
       to: { ...base.to, ...(parsed.to ?? {}) },
+      watermarkEnabled: Boolean(parsed.watermarkEnabled),
+      watermarkText:
+        typeof parsed.watermarkText === "string" && parsed.watermarkText.trim()
+          ? parsed.watermarkText
+          : base.watermarkText,
+      watermarkOpacity:
+        typeof parsed.watermarkOpacity === "number"
+          ? Math.min(0.45, Math.max(0.04, parsed.watermarkOpacity))
+          : base.watermarkOpacity,
+      watermarkImage:
+        typeof parsed.watermarkImage === "string" ? parsed.watermarkImage : null,
+      accentColor:
+        typeof parsed.accentColor === "string" &&
+        /^#([0-9a-fA-F]{3}|[0-9a-fA-F]{6})$/.test(parsed.accentColor)
+          ? parsed.accentColor
+          : null,
+      typography: normalizeTypography(parsed.typography),
       items:
         Array.isArray(parsed.items) && parsed.items.length
           ? parsed.items.map((i) => ({ id: i.id ?? uid(), description: i.description ?? "", quantity: Number(i.quantity) || 0, rate: Number(i.rate) || 0 }))
@@ -239,6 +423,7 @@ export function saveDraft(data: InvoiceData) {
 export function clearDraft() {
   try {
     window.localStorage.removeItem(DRAFT_KEY);
+    window.localStorage.removeItem(LEGACY_DRAFT_KEY);
   } catch {
     /* ignore */
   }

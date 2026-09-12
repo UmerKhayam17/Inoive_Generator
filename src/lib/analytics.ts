@@ -4,11 +4,12 @@
  * Both integrations are optional: nothing is loaded unless the corresponding
  * environment variable is present AND the visitor has accepted cookies.
  *
- *   VITE_GA_MEASUREMENT_ID  e.g. G-XXXXXXXXXX
- *   VITE_ADSENSE_CLIENT     e.g. ca-pub-0000000000000000
+ *   NEXT_PUBLIC_GA_MEASUREMENT_ID  e.g. G-XXXXXXXXXX
+ *   NEXT_PUBLIC_ADSENSE_CLIENT     e.g. ca-pub-0000000000000000
  */
 
-export const CONSENT_KEY = "invoiceforge:cookie-consent:v1";
+export const CONSENT_KEY = "invoicecreator:cookie-consent:v1";
+const LEGACY_CONSENT_KEY = "invoiceforge:cookie-consent:v1";
 
 export type ConsentValue = "accepted" | "rejected";
 
@@ -20,13 +21,15 @@ declare global {
   }
 }
 
-export const GA_ID = import.meta.env["VITE_GA_MEASUREMENT_ID"] as string | undefined;
-export const ADSENSE_CLIENT = import.meta.env["VITE_ADSENSE_CLIENT"] as string | undefined;
+export const GA_ID = process.env.NEXT_PUBLIC_GA_MEASUREMENT_ID;
+export const ADSENSE_CLIENT = process.env.NEXT_PUBLIC_ADSENSE_CLIENT;
 
 export function getConsent(): ConsentValue | null {
   if (typeof window === "undefined") return null;
   try {
-    const v = window.localStorage.getItem(CONSENT_KEY);
+    const v =
+      window.localStorage.getItem(CONSENT_KEY) ??
+      window.localStorage.getItem(LEGACY_CONSENT_KEY);
     return v === "accepted" || v === "rejected" ? v : null;
   } catch {
     return null;

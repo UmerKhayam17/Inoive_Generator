@@ -1,5 +1,7 @@
+"use client";
+
 import { useEffect } from "react";
-import { useRouterState } from "@tanstack/react-router";
+import { usePathname } from "next/navigation";
 import {
   analyticsAllowed,
   initAdSense,
@@ -8,11 +10,11 @@ import {
 } from "@/lib/analytics";
 
 /**
- * Mounts once in the root route. Boots gtag.js + AdSense after consent and
+ * Mounts once in the root layout. Boots gtag.js + AdSense after consent and
  * reports a page_view on every client-side route change.
  */
 export function Analytics() {
-  const pathname = useRouterState({ select: (s) => s.location.pathname });
+  const pathname = usePathname();
 
   useEffect(() => {
     if (!analyticsAllowed()) return;

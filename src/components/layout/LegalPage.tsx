@@ -19,7 +19,7 @@ export function LegalPage({
         eyebrow="Legal"
         title={title}
         lead={lead}
-        crumbs={[{ label: "Home", to: "/" }, { label: title }]}
+        crumbs={[{ label: "Home", href: "/" }, { label: title }]}
       />
       <div className="mx-auto max-w-3xl px-4 py-12 sm:px-6 lg:px-8">
         <p className="mb-8 text-sm text-muted-foreground">Last updated: {updated}</p>

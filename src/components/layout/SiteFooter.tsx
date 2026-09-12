@@ -1,41 +1,39 @@
-import { Link } from "@tanstack/react-router";
-import { FileText, Mail, MapPin, Phone } from "lucide-react";
+"use client";
+
+import Link from "next/link";
+import { Mail, MapPin, Phone } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
+import { BrandLogo } from "@/components/layout/BrandLogo";
 import { SITE } from "@/data/site";
 import { TEMPLATES } from "@/data/templates";
 import { toast } from "sonner";
 
 const quickLinks = [
-  { label: "Home", to: "/" },
-  { label: "Invoice Generator", to: "/invoice-generator" },
-  { label: "Invoice Templates", to: "/invoice-templates" },
-  { label: "Blog", to: "/blog" },
-  { label: "About Us", to: "/about" },
-  { label: "Contact", to: "/contact" },
-  { label: "FAQ", to: "/faq" },
-  { label: "Search", to: "/search" },
+  { label: "Home", href: "/" },
+  { label: "Invoice Generator", href: "/invoice-generator" },
+  { label: "Invoice Templates", href: "/invoice-templates" },
+  { label: "Blog", href: "/blog" },
+  { label: "About Us", href: "/about" },
+  { label: "Contact", href: "/contact" },
+  { label: "FAQ", href: "/faq" },
+  { label: "Search", href: "/search" },
 ] as const;
 
 const legalLinks = [
-  { label: "Privacy Policy", to: "/privacy-policy" },
-  { label: "Terms & Conditions", to: "/terms-and-conditions" },
-  { label: "Cookie Policy", to: "/cookie-policy" },
-  { label: "Disclaimer", to: "/disclaimer" },
+  { label: "Privacy Policy", href: "/privacy-policy" },
+  { label: "Terms & Conditions", href: "/terms-and-conditions" },
+  { label: "Cookie Policy", href: "/cookie-policy" },
+  { label: "Disclaimer", href: "/disclaimer" },
 ] as const;
 
 export function SiteFooter() {
   return (
-    <footer className="mt-24 border-t border-border bg-ink text-ink-foreground">
-      <div className="mx-auto max-w-7xl px-4 py-14 sm:px-6 lg:px-8">
-        <div className="grid gap-10 md:grid-cols-2 lg:grid-cols-5">
+    <footer className="mt-16 border-t border-border bg-ink text-ink-foreground sm:mt-24">
+      <div className="mx-auto max-w-[96rem] px-3 py-10 sm:px-6 sm:py-14 lg:px-8">
+        <div className="grid gap-10 sm:grid-cols-2 lg:grid-cols-5">
           <div className="lg:col-span-2">
-            <div className="flex items-center gap-2.5">
-              <span className="grid size-9 place-items-center rounded-xl bg-primary text-primary-foreground">
-                <FileText className="size-5" aria-hidden="true" />
-              </span>
-              <span className="font-display text-lg font-bold">{SITE.name}</span>
-            </div>
+            <BrandLogo size="lg" className="rounded-lg bg-white/95 px-2" />
             <p className="mt-4 max-w-sm text-sm leading-relaxed text-ink-foreground/70">
               {SITE.name} is a free, browser-based invoice generator for freelancers and small
               businesses. Create professional PDF invoices in minutes — no signup, no watermarks,
@@ -63,8 +61,8 @@ export function SiteFooter() {
             <h2 className="text-sm font-semibold uppercase tracking-wider">Quick Links</h2>
             <ul className="mt-4 space-y-2.5 text-sm text-ink-foreground/70">
               {quickLinks.map((l) => (
-                <li key={l.to}>
-                  <Link to={l.to} className="hover:text-ink-foreground">
+                <li key={l.href}>
+                  <Link href={l.href} className="hover:text-ink-foreground">
                     {l.label}
                   </Link>
                 </li>
@@ -78,11 +76,10 @@ export function SiteFooter() {
               {TEMPLATES.slice(0, 8).map((t) => (
                 <li key={t.slug}>
                   <Link
-                    to="/invoice-templates/$slug"
-                    params={{ slug: t.slug }}
+                    href={`/invoice-templates/${t.slug}`}
                     className="hover:text-ink-foreground"
                   >
-                    {t.name} Invoice
+                    {t.name} · Top-rated {t.industry}
                   </Link>
                 </li>
               ))}
@@ -94,13 +91,13 @@ export function SiteFooter() {
               <h2 className="text-sm font-semibold uppercase tracking-wider">Resources</h2>
               <ul className="mt-4 space-y-2.5 text-sm text-ink-foreground/70">
                 <li>
-                  <Link to="/tools" className="hover:text-ink-foreground">
+                  <Link href="/tools" className="hover:text-ink-foreground">
                     Free Business Tools
                   </Link>
                 </li>
                 {legalLinks.map((l) => (
-                  <li key={l.to}>
-                    <Link to={l.to} className="hover:text-ink-foreground">
+                  <li key={l.href}>
+                    <Link href={l.href} className="hover:text-ink-foreground">
                       {l.label}
                     </Link>
                   </li>

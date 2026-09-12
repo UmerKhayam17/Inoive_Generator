@@ -1,5 +1,7 @@
+"use client";
+
 import { useEffect, useState } from "react";
-import { Link } from "@tanstack/react-router";
+import Link from "next/link";
 import { Cookie } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import {
@@ -40,11 +42,11 @@ export function CookieConsent() {
         <p className="flex-1 text-sm text-muted-foreground">
           We use cookies for anonymous analytics and to fund the site with advertising. Your invoice
           data never leaves your browser. Read our{" "}
-          <Link to="/cookie-policy" className="font-medium text-foreground underline">
+          <Link href="/cookie-policy" className="font-medium text-foreground underline">
             cookie policy
           </Link>{" "}
           and{" "}
-          <Link to="/privacy-policy" className="font-medium text-foreground underline">
+          <Link href="/privacy-policy" className="font-medium text-foreground underline">
             privacy policy
           </Link>
           .

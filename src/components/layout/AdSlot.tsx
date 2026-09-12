@@ -7,10 +7,10 @@ interface AdSlotProps {
 }
 
 const HEIGHTS: Record<NonNullable<AdSlotProps["format"]>, string> = {
-  leaderboard: "min-h-[90px] md:min-h-[110px]",
-  rectangle: "min-h-[250px]",
-  sidebar: "min-h-[600px]",
-  "in-article": "min-h-[140px]",
+  leaderboard: "min-h-[72px] md:min-h-[110px]",
+  rectangle: "min-h-[200px] sm:min-h-[250px]",
+  sidebar: "min-h-[280px] lg:min-h-[600px]",
+  "in-article": "min-h-[120px] sm:min-h-[140px]",
 };
 
 /**
