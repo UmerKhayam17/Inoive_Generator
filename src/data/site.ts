@@ -7,7 +7,7 @@ export const SITE = {
   phone: "+1 (555) 018-2244",
   address: "244 Meridian Ave, Suite 12, Austin, TX 78701, United States",
   hours: "Monday – Friday, 9:00 – 18:00 (CST)",
-  url: process.env.NEXT_PUBLIC_SITE_URL || "https://invoicecreator.example",
+  url: process.env.NEXT_PUBLIC_SITE_URL || "https://nextfreeinvoicegenerator.com",
   social: [
     { label: "X (Twitter)", href: "https://x.com" },
     { label: "LinkedIn", href: "https://linkedin.com" },
