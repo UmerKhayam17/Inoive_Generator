@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { Clock, Mail, MapPin, Phone } from "lucide-react";
+import { Clock, Mail } from "lucide-react";
 import { PageHeader } from "@/components/layout/PageHeader";
 import { AdSlot } from "@/components/layout/AdSlot";
 import {
@@ -13,8 +13,7 @@ import { CONTACT_FAQS } from "@/data/faqs";
 import { SITE } from "@/data/site";
 
 const TITLE = `Contact ${SITE.name} — Support for the Free Invoice Generator`;
-const DESCRIPTION =
-  "Get in touch with the Invoice Creator team. Support, feature requests, bug reports and partnership enquiries — answered within one business day.";
+const DESCRIPTION = `Email ${SITE.email} for support, feature requests and bug reports. Invoices stay in your browser — we only see what you send us.`;
 
 export const metadata: Metadata = {
   title: TITLE,
@@ -22,7 +21,7 @@ export const metadata: Metadata = {
   alternates: { canonical: "/contact" },
   openGraph: {
     title: `Contact ${SITE.name}`,
-    description: "Support and enquiries for Invoice Creator.",
+    description: DESCRIPTION,
     type: "website",
     url: "/contact",
   },
@@ -47,8 +46,8 @@ export default function ContactPage() {
       />
       <PageHeader
         eyebrow="Contact"
-        title="Talk to the Invoice Creator team"
-        lead="Support questions, feature ideas, bug reports or partnerships — we read everything."
+        title="Email the Invoice Creator team"
+        lead="Support questions, feature ideas, bug reports or partnerships — send them to a real inbox."
         crumbs={[{ label: "Home", href: "/" }, { label: "Contact" }]}
       />
 
@@ -63,21 +62,13 @@ export default function ContactPage() {
 
           <aside className="space-y-6">
             <div className="rounded-2xl border border-border bg-card p-6 shadow-elegant">
-              <h2 className="text-lg font-bold">Business information</h2>
+              <h2 className="text-lg font-bold">How to reach us</h2>
               <ul className="mt-4 space-y-4 text-sm">
                 <li className="flex gap-3">
                   <Mail className="mt-0.5 size-4 shrink-0 text-primary" aria-hidden="true" />
                   <a className="hover:underline" href={`mailto:${SITE.email}`}>
                     {SITE.email}
                   </a>
-                </li>
-                <li className="flex gap-3">
-                  <Phone className="mt-0.5 size-4 shrink-0 text-primary" aria-hidden="true" />
-                  <span>{SITE.phone}</span>
-                </li>
-                <li className="flex gap-3">
-                  <MapPin className="mt-0.5 size-4 shrink-0 text-primary" aria-hidden="true" />
-                  <span>{SITE.address}</span>
                 </li>
                 <li className="flex gap-3">
                   <Clock className="mt-0.5 size-4 shrink-0 text-primary" aria-hidden="true" />

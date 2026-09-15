@@ -1,6 +1,7 @@
 import type { MetadataRoute } from "next";
 import { POSTS, CATEGORIES } from "@/data/blog";
 import { TEMPLATES } from "@/data/templates";
+import { LOCALES } from "@/data/locales";
 import { SITE } from "@/data/site";
 
 export default function sitemap(): MetadataRoute.Sitemap {
@@ -9,6 +10,11 @@ export default function sitemap(): MetadataRoute.Sitemap {
   const staticRoutes: MetadataRoute.Sitemap = [
     { url: `${base}/`, changeFrequency: "weekly", priority: 1 },
     { url: `${base}/invoice-generator`, changeFrequency: "weekly", priority: 0.9 },
+    ...LOCALES.map((l) => ({
+      url: `${base}${l.path}`,
+      changeFrequency: "weekly" as const,
+      priority: 0.85,
+    })),
     { url: `${base}/invoice-templates`, changeFrequency: "weekly", priority: 0.9 },
     { url: `${base}/blog`, changeFrequency: "daily", priority: 0.8 },
     { url: `${base}/tools`, changeFrequency: "monthly", priority: 0.6 },

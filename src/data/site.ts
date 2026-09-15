@@ -8,12 +8,6 @@ export const SITE = {
   address: "Islamabad, Pakistan",
   hours: "Monday – Friday, 9:00 – 18:00 (PKT)",
   url: process.env.NEXT_PUBLIC_SITE_URL || "https://nextfreeinvoicegenerator.com",
-  social: [
-    { label: "X (Twitter)", href: "https://x.com" },
-    { label: "LinkedIn", href: "https://linkedin.com" },
-    { label: "GitHub", href: "https://github.com" },
-    { label: "YouTube", href: "https://youtube.com" },
-  ],
 };
 
 export const NAV_LINKS = [

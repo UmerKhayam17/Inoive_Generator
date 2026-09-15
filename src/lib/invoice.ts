@@ -1,4 +1,5 @@
 import { z } from "zod";
+import { getLocale, type InvoiceLocale } from "@/data/locales";
 
 export interface LineItem {
   id: string;
@@ -13,10 +14,14 @@ export interface Party {
   address: string;
   phone: string;
   taxId: string;
+  /** Second tax identifier (STRN, extra VAT number, etc.) */
+  taxIdSecondary: string;
 }
 
 export interface InvoiceData {
   templateSlug: string;
+  /** Country preset such as "pakistan". Drives NTN/STRN labels in preview + PDF. */
+  localeSlug: string | null;
   /** Overrides the template accent when set (hex, e.g. #2563eb) */
   accentColor: string | null;
   currency: string;
@@ -211,42 +216,52 @@ const today = () => new Date().toISOString().slice(0, 10);
 const inDays = (days: number) =>
   new Date(Date.now() + days * 86_400_000).toISOString().slice(0, 10);
 
-export function createDefaultInvoice(): InvoiceData {
+function emptyParty(partial: Partial<Party> = {}): Party {
+  return {
+    name: "",
+    email: "",
+    address: "",
+    phone: "",
+    taxId: "",
+    taxIdSecondary: "",
+    ...partial,
+  };
+}
+
+export function createDefaultInvoice(localeSlug?: string | null): InvoiceData {
+  const locale: InvoiceLocale | undefined = getLocale(localeSlug ?? undefined);
   return {
     templateSlug: "modern",
+    localeSlug: locale?.slug ?? null,
     accentColor: null,
-    currency: "USD",
+    currency: locale?.currency ?? "USD",
     logo: null,
     signature: null,
     invoiceNumber: `${new Date().getFullYear()}-0001`,
     issueDate: today(),
     dueDate: inDays(14),
     poNumber: "",
-    from: {
+    from: emptyParty({
       name: "Your Business Ltd",
       email: "billing@yourbusiness.com",
-      address: "12 Market Street\nAustin, TX 78701",
-      phone: "",
-      taxId: "",
-    },
-    to: {
+      address: locale?.sampleFromAddress ?? "12 Market Street\nYour city",
+    }),
+    to: emptyParty({
       name: "Client Company Inc",
       email: "accounts@clientcompany.com",
-      address: "480 Harbour Road\nSeattle, WA 98101",
-      phone: "",
-      taxId: "",
-    },
-    items: [
-      { id: uid(), description: "Website design — discovery & wireframes", quantity: 1, rate: 1200 },
-      { id: uid(), description: "Frontend development (hours)", quantity: 18, rate: 85 },
-    ],
-    taxRate: 8.25,
+      address: locale?.sampleToAddress ?? "480 Harbour Road\nClient city",
+    }),
+    items: (locale?.sampleItems ?? [
+      { description: "Website design — discovery & wireframes", quantity: 1, rate: 1200 },
+      { description: "Frontend development (hours)", quantity: 18, rate: 85 },
+    ]).map((item) => ({ id: uid(), ...item })),
+    taxRate: locale?.defaultTaxRate ?? 0,
     discount: 0,
     discountType: "percent",
     shipping: 0,
     amountPaid: 0,
-    notes: "Thank you for your business. Payment via bank transfer or card.",
-    terms: "Net 14. Late payments incur 2% interest per month.",
+    notes: locale?.defaultNotes ?? "Thank you for your business. Payment via bank transfer or card.",
+    terms: locale?.defaultTerms ?? "Net 14. Late payments incur 2% interest per month.",
     watermarkEnabled: false,
     watermarkText: "PAID",
     watermarkOpacity: 0.14,
@@ -309,6 +324,7 @@ const partySchema = (who: string) =>
     address: z.string().max(400).optional().default(""),
     phone: z.string().max(40).optional().default(""),
     taxId: z.string().max(60).optional().default(""),
+    taxIdSecondary: z.string().max(60).optional().default(""),
   });
 
 export const invoiceSchema = z
@@ -370,15 +386,21 @@ export function validateInvoice(d: InvoiceData): Record<string, string> {
 export const DRAFT_KEY = "invoicecreator:draft:v1";
 const LEGACY_DRAFT_KEY = "invoiceforge:draft:v1";
 
-export function loadDraft(): InvoiceData | null {
+export function draftStorageKey(localeSlug?: string | null) {
+  return localeSlug ? `${DRAFT_KEY}:${localeSlug}` : DRAFT_KEY;
+}
+
+export function loadDraft(localeSlug?: string | null): InvoiceData | null {
   if (typeof window === "undefined") return null;
   try {
-    const raw =
-      window.localStorage.getItem(DRAFT_KEY) ??
-      window.localStorage.getItem(LEGACY_DRAFT_KEY);
+    const key = draftStorageKey(localeSlug);
+    const raw = localeSlug
+      ? window.localStorage.getItem(key)
+      : (window.localStorage.getItem(DRAFT_KEY) ??
+        window.localStorage.getItem(LEGACY_DRAFT_KEY));
     if (!raw) return null;
     const parsed = JSON.parse(raw) as Partial<InvoiceData>;
-    const base = createDefaultInvoice();
+    const base = createDefaultInvoice(localeSlug);
     return {
       ...base,
       ...parsed,
@@ -400,6 +422,7 @@ export function loadDraft(): InvoiceData | null {
         /^#([0-9a-fA-F]{3}|[0-9a-fA-F]{6})$/.test(parsed.accentColor)
           ? parsed.accentColor
           : null,
+      localeSlug: localeSlug ?? (typeof parsed.localeSlug === "string" ? parsed.localeSlug : null),
       typography: normalizeTypography(parsed.typography),
       items:
         Array.isArray(parsed.items) && parsed.items.length
@@ -413,17 +436,17 @@ export function loadDraft(): InvoiceData | null {
 
 export function saveDraft(data: InvoiceData) {
   try {
-    window.localStorage.setItem(DRAFT_KEY, JSON.stringify(data));
+    window.localStorage.setItem(draftStorageKey(data.localeSlug), JSON.stringify(data));
     return true;
   } catch {
     return false;
   }
 }
 
-export function clearDraft() {
+export function clearDraft(localeSlug?: string | null) {
   try {
-    window.localStorage.removeItem(DRAFT_KEY);
-    window.localStorage.removeItem(LEGACY_DRAFT_KEY);
+    window.localStorage.removeItem(draftStorageKey(localeSlug));
+    if (!localeSlug) window.localStorage.removeItem(LEGACY_DRAFT_KEY);
   } catch {
     /* ignore */
   }

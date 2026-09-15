@@ -26,9 +26,10 @@ import { Textarea } from "@/components/ui/textarea";
 import { Separator } from "@/components/ui/separator";
 import { Switch } from "@/components/ui/switch";
 import { AdSlot } from "@/components/layout/AdSlot";
-import { Breadcrumbs } from "@/components/layout/Breadcrumbs";
+import { Breadcrumbs, type Crumb } from "@/components/layout/Breadcrumbs";
 import { InvoicePreview, PAGE_WIDTH } from "@/components/invoice/InvoicePreview";
-import { TEMPLATES, templateLabel } from "@/data/templates";
+import { TEMPLATES, TEMPLATE_COUNT, templateLabel } from "@/data/templates";
+import { getLocale } from "@/data/locales";
 import { trackEvent } from "@/lib/analytics";
 import { safeFileName } from "@/lib/pdf";
 import { cn } from "@/lib/utils";
@@ -74,9 +75,25 @@ function FieldError({ message }: { message?: string | undefined }) {
   );
 }
 
-export function InvoiceGenerator() {
+export function InvoiceGenerator({
+  localeSlug = null,
+  heading = "Invoice generator",
+  lead = "Everything calculates live and autosaves to this browser. When it looks right, download the PDF — the export always matches the template shown in the preview.",
+  titleAs = "h1",
+  crumbs = [
+    { label: "Home", href: "/" },
+    { label: "Invoice generator" },
+  ],
+}: {
+  localeSlug?: string | null;
+  heading?: string;
+  lead?: string;
+  titleAs?: "h1" | "h2";
+  crumbs?: Crumb[];
+} = {}) {
+  const locale = getLocale(localeSlug);
   const searchParams = useSearchParams();
-  const [data, setData] = useState<InvoiceData>(() => createDefaultInvoice());
+  const [data, setData] = useState<InvoiceData>(() => createDefaultInvoice(localeSlug));
   const [hydrated, setHydrated] = useState(false);
   const [savedAt, setSavedAt] = useState<Date | null>(null);
   const [errors, setErrors] = useState<Record<string, string>>({});
@@ -89,7 +106,7 @@ export function InvoiceGenerator() {
 
   /* restore autosaved draft + optional ?template= slug (once on mount) */
   useEffect(() => {
-    const draft = loadDraft();
+    const draft = loadDraft(localeSlug);
     const templateParam = searchParams.get("template");
     const knownTemplate =
       templateParam && TEMPLATES.some((t) => t.slug === templateParam)
@@ -232,8 +249,8 @@ export function InvoiceGenerator() {
   };
 
   const resetAll = () => {
-    clearDraft();
-    setData(createDefaultInvoice());
+    clearDraft(localeSlug);
+    setData(createDefaultInvoice(localeSlug));
     setErrors({});
     setShowErrors(false);
     toast.success("Invoice reset", { description: "Your saved draft was cleared." });
@@ -331,14 +348,27 @@ export function InvoiceGenerator() {
             />
           </div>
           <div>
-            <Label htmlFor={`${which}-tax`}>Tax / VAT ID</Label>
+            <Label htmlFor={`${which}-tax`}>{locale?.taxIdLabel ?? "Tax / VAT ID"}</Label>
             <Input
               id={`${which}-tax`}
               value={data[which].taxId}
               maxLength={60}
+              placeholder={locale?.taxIdPlaceholder}
               onChange={(e) => patchParty(which, "taxId", e.target.value)}
             />
           </div>
+          {locale?.taxIdSecondaryLabel ? (
+            <div className="sm:col-span-2">
+              <Label htmlFor={`${which}-tax-2`}>{locale.taxIdSecondaryLabel}</Label>
+              <Input
+                id={`${which}-tax-2`}
+                value={data[which].taxIdSecondary}
+                maxLength={60}
+                placeholder={locale.taxIdSecondaryPlaceholder}
+                onChange={(e) => patchParty(which, "taxIdSecondary", e.target.value)}
+              />
+            </div>
+          ) : null}
         </div>
       </div>
     </div>
@@ -346,14 +376,17 @@ export function InvoiceGenerator() {
 
   return (
     <div className="mx-auto w-full max-w-[96rem] overflow-x-hidden px-3 py-6 pb-[calc(6.25rem+env(safe-area-inset-bottom))] sm:px-6 sm:py-8 lg:px-8 lg:py-12 lg:pb-12">
-      <Breadcrumbs items={[{ label: "Home", href: "/" }, { label: "Invoice generator" }]} />
+      <Breadcrumbs items={crumbs} />
 
       <div className="flex flex-col gap-4 sm:flex-row sm:flex-wrap sm:items-end sm:justify-between">
         <div className="min-w-0">
-          <h1 className="text-2xl font-extrabold sm:text-3xl lg:text-4xl">Invoice generator</h1>
+          {titleAs === "h2" ? (
+            <h2 className="text-2xl font-extrabold sm:text-3xl lg:text-4xl">{heading}</h2>
+          ) : (
+            <h1 className="text-2xl font-extrabold sm:text-3xl lg:text-4xl">{heading}</h1>
+          )}
           <p className="mt-2 max-w-2xl text-sm text-muted-foreground sm:text-base">
-            Everything calculates live and autosaves to this browser. When it looks right, download
-            the PDF — the export always matches the template shown in the preview.
+            {lead}
           </p>
         </div>
         <div className="hidden items-center gap-2 sm:flex">
@@ -445,7 +478,7 @@ export function InvoiceGenerator() {
                 Template
               </h2>
               <Link href="/invoice-templates" className="text-xs font-medium text-primary underline">
-                Compare all 18
+                Compare all {TEMPLATE_COUNT}
               </Link>
             </div>
             <div className="mt-4 grid grid-cols-2 gap-2 sm:grid-cols-3 lg:grid-cols-5">
@@ -912,7 +945,7 @@ export function InvoiceGenerator() {
 
             <div className="grid gap-4 sm:grid-cols-2">
               <div data-invalid={invalid("taxRate")}>
-                <Label htmlFor="tax-rate">Tax rate (%)</Label>
+                <Label htmlFor="tax-rate">{locale?.taxRateLabel ?? "Tax rate (%)"}</Label>
                 <Input
                   id="tax-rate"
                   type="number"

@@ -1,4 +1,5 @@
 import type { CSSProperties } from "react";
+import { getLocale } from "@/data/locales";
 import {
   computeTotals,
   formatMoney,
@@ -38,6 +39,9 @@ export function InvoicePreview({
   const accent = data.accentColor?.trim() || t.accent;
   const totals = computeTotals(data);
   const ty = resolveTypographyStyles(data.typography, Boolean(t.serif));
+  const locale = getLocale(data.localeSlug);
+  const taxIdLabel = locale?.taxIdLabel ?? "Tax ID";
+  const taxIdSecondaryLabel = locale?.taxIdSecondaryLabel ?? "Tax ID (2)";
   const money = (n: number) => formatMoney(n, data.currency);
 
   const titleFs = (fallback: number) => ty.titleSize ?? fallback;
@@ -102,7 +106,12 @@ export function InvoicePreview({
       ) : null}
       {p.taxId ? (
         <p style={{ margin: "3px 0 0", fontSize: ty.smallSize, color: A.muted, fontWeight: bodyFw(400) }}>
-          Tax ID: {p.taxId}
+          {taxIdLabel}: {p.taxId}
+        </p>
+      ) : null}
+      {p.taxIdSecondary ? (
+        <p style={{ margin: "3px 0 0", fontSize: ty.smallSize, color: A.muted, fontWeight: bodyFw(400) }}>
+          {taxIdSecondaryLabel}: {p.taxIdSecondary}
         </p>
       ) : null}
     </div>

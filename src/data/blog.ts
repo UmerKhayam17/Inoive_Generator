@@ -194,7 +194,7 @@ export const POSTS: Post[] = [
 </ol>
 <h2>Choosing quickly</h2>
 <p>Bill enterprises? Corporate. Bill other creatives? Minimal or Creative. Bill consumers? Blue or Classic. Everything else: Modern.</p>
-<p>Preview all ten instantly inside the <a href="/invoice-generator">generator</a>.</p>
+<p>Preview every layout instantly inside the <a href="/invoice-generator">generator</a>.</p>
 `,
   },
   {
@@ -460,7 +460,7 @@ Hi Sam, a quick reminder that invoice 2026-0041 (£2,400) is due today. I have r
 <li>Never let a table split awkwardly across pages.</li>
 <li>Leave a signature area only if your clients actually require one.</li>
 </ol>
-<p>All fifteen principles are baked into our <a href="/invoice-templates">ten invoice templates</a>.</p>
+<p>All fifteen principles are baked into our <a href="/invoice-templates">invoice templates</a>.</p>
 `,
   },
 ];

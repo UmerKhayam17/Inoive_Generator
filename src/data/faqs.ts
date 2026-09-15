@@ -1,3 +1,6 @@
+import { TEMPLATE_COUNT, TEMPLATE_NAME_LIST } from "@/data/templates";
+import { SITE } from "@/data/site";
+
 export interface Faq {
   q: string;
   a: string;
@@ -22,7 +25,7 @@ export const HOME_FAQS: Faq[] = [
   },
   {
     q: "How many invoice templates can I choose from?",
-    a: "Ten professionally designed templates are included — Modern, Minimal, Corporate, Elegant, Blue, Dark, Startup, Agency, Creative and Classic. You can switch between them instantly without re-entering data.",
+    a: `There are ${TEMPLATE_COUNT} professionally designed templates: ${TEMPLATE_NAME_LIST}. You can switch between them instantly without re-entering data.`,
   },
   {
     q: "Can I add tax, discount and shipping?",
@@ -30,7 +33,7 @@ export const HOME_FAQS: Faq[] = [
   },
   {
     q: "Which currencies are supported?",
-    a: "You can invoice in USD, EUR, GBP, INR, AUD, CAD, AED, SGD, JPY, ZAR and more. The chosen symbol is applied everywhere on the invoice.",
+    a: "You can invoice in USD, EUR, GBP, INR, AUD, CAD, AED and PKR. The chosen symbol is applied everywhere on the invoice, including the downloaded PDF.",
   },
   {
     q: "Can I print the invoice instead of downloading it?",
@@ -53,6 +56,6 @@ export const CONTACT_FAQS: Faq[] = [
   },
   {
     q: "I found a bug — where do I report it?",
-    a: "Use the form on this page and include your browser and what you were doing. Bug reports get priority.",
+    a: `Use the form on this page — it opens your email app to ${SITE.email}. Include your browser and what you were doing. Bug reports get priority.`,
   },
 ];

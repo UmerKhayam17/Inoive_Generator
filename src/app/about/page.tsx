@@ -1,10 +1,11 @@
 import type { Metadata } from "next";
 import Link from "next/link";
-import { Award, Compass, HeartHandshake, Rocket, ShieldCheck, Users } from "lucide-react";
+import { HeartHandshake, Rocket, ShieldCheck, Award } from "lucide-react";
 import { PageHeader } from "@/components/layout/PageHeader";
 import { AdSlot } from "@/components/layout/AdSlot";
 import { Button } from "@/components/ui/button";
 import { SITE } from "@/data/site";
+import { TEMPLATE_COUNT } from "@/data/templates";
 
 const values = [
   {
@@ -15,7 +16,7 @@ const values = [
   {
     icon: HeartHandshake,
     title: "Free means free",
-    body: "No trial, no credit card, no watermark, no export limit. Advertising keeps the lights on so the tool can stay open to everyone.",
+    body: "No trial, no credit card, no watermark, no export limit. Advertising is how we plan to keep the tool open. Until ads are live, the generator still works the same way.",
   },
   {
     icon: Award,
@@ -29,39 +30,16 @@ const values = [
   },
 ];
 
-const timeline = [
-  {
-    year: "2023",
-    title: "A frustrating Friday afternoon",
-    body: "Our founder spent two hours fighting a spreadsheet template to bill a €900 project — and decided invoicing should not cost anyone an afternoon.",
-  },
-  {
-    year: "2024",
-    title: "First public version",
-    body: "A single-template, browser-only invoice builder shipped to a handful of freelance friends. No accounts, no database, no analytics.",
-  },
-  {
-    year: "2025",
-    title: "Ten templates and a knowledge base",
-    body: "We added the full template library, currency support, tax and discount handling, and began publishing practical invoicing guides.",
-  },
-  {
-    year: "2026",
-    title: "Eighteen templates and a free business toolkit",
-    body: "Expanded the template library with Nordic, Emerald, Sunset, Slate, Bold, Lavender, Ocean and Mono. Quotation, receipt and estimate generators plus GST, VAT and margin calculators are in development — all with the same client-side promise.",
-  },
-];
-
 const TITLE = `About ${SITE.name} — Free Invoicing Tools for Small Business`;
 const DESCRIPTION =
-  "Meet the team behind Invoice Creator: why we built a free, privacy-first invoice generator and where the product is heading next.";
+  "Why we built a free, privacy-first invoice generator: no signup, no watermark, and your invoice never leaves your browser.";
 
 export const metadata: Metadata = {
   title: TITLE,
   description: DESCRIPTION,
   openGraph: {
     title: `About ${SITE.name}`,
-    description: "Our story, mission and roadmap for free, privacy-first business tools.",
+    description: DESCRIPTION,
     type: "website",
     url: "/about",
   },
@@ -74,7 +52,7 @@ export default function Page() {
       <PageHeader
         eyebrow="About us"
         title="Invoicing shouldn't cost you an afternoon — or a subscription"
-        lead="Invoice Creator is a small, independent team building free business tools that respect your time and your data."
+        lead="Invoice Creator is an independent free invoice generator. We publish what the product actually does today — not invented launch stats."
         crumbs={[{ label: "Home", href: "/" }, { label: "About" }]}
       />
 
@@ -96,36 +74,36 @@ export default function Page() {
 
             <h2>Our mission</h2>
             <p>
-              To make professional, compliant business paperwork free and effortless for every
-              independent worker and small business on the internet.
+              To make professional business paperwork free and effortless for independent workers
+              and small businesses — including markets that most SaaS invoice tools treat as an
+              afterthought, starting with Pakistan (PKR, NTN, STRN).
             </p>
 
-            <h2>Our vision</h2>
-            <p>
-              A complete suite of free, privacy-first business tools — invoices, quotes, receipts,
-              estimates, purchase orders and tax calculators — that a small business can run on
-              without ever entering a credit card number.
-            </p>
-
-            <h2>Why choose us</h2>
+            <h2>What is live today</h2>
             <ul>
-              <li>Ten professionally designed, print-tested invoice templates.</li>
-              <li>Real-time calculations with discount, tax, shipping and multi-currency support.</li>
+              <li>
+                {TEMPLATE_COUNT} professionally designed, print-tested invoice templates you can
+                switch without re-entering data.
+              </li>
+              <li>Real-time calculations with discount, tax, shipping and multi-currency support including PKR, AED, GBP, CAD and AUD.</li>
               <li>Instant PDF download and print, with no watermark and no export cap.</li>
-              <li>Nothing uploaded: drafts live in your own browser storage.</li>
-              <li>A growing library of practical invoicing and tax guides.</li>
+              <li>Drafts stored only in your browser. Clearing site data deletes them.</li>
+              <li>A growing library of practical invoicing guides on the blog.</li>
             </ul>
+            <p>
+              We do not publish invoice-volume or user-count numbers. If a figure is not something
+              we can measure on this site, it does not belong on this page.
+            </p>
           </article>
 
           <aside className="space-y-6">
             <div className="rounded-2xl border border-border bg-card p-6 shadow-elegant">
-              <Users className="size-6 text-primary" aria-hidden="true" />
-              <p className="mt-4 font-display text-3xl font-extrabold">120,000+</p>
-              <p className="text-sm text-muted-foreground">invoices generated since launch</p>
-              <p className="mt-5 font-display text-3xl font-extrabold">10</p>
-              <p className="text-sm text-muted-foreground">professional templates included</p>
+              <p className="font-display text-3xl font-extrabold">{TEMPLATE_COUNT}</p>
+              <p className="text-sm text-muted-foreground">invoice templates in the library</p>
               <p className="mt-5 font-display text-3xl font-extrabold">$0</p>
-              <p className="text-sm text-muted-foreground">the price, permanently</p>
+              <p className="text-sm text-muted-foreground">the price to create and download</p>
+              <p className="mt-5 font-display text-3xl font-extrabold">0</p>
+              <p className="text-sm text-muted-foreground">accounts required — ever</p>
             </div>
             <AdSlot id="about-sidebar" format="rectangle" />
           </aside>
@@ -144,29 +122,6 @@ export default function Page() {
               </div>
             ))}
           </div>
-        </section>
-
-        <section aria-labelledby="timeline" className="mt-20">
-          <h2 id="timeline" className="flex items-center gap-2 text-2xl font-bold sm:text-3xl">
-            <Compass className="size-6 text-primary" aria-hidden="true" /> Our timeline
-          </h2>
-          <ol className="mt-8 border-l border-border pl-6">
-            {timeline.map((t) => (
-              <li key={t.year} className="relative pb-9 last:pb-0">
-                <span
-                  className="absolute -left-[31px] top-1 grid size-5 place-items-center rounded-full border-4 border-background bg-primary"
-                  aria-hidden="true"
-                />
-                <p className="text-xs font-semibold uppercase tracking-[0.2em] text-primary">
-                  {t.year}
-                </p>
-                <h3 className="mt-1 text-lg font-bold">{t.title}</h3>
-                <p className="mt-1 max-w-2xl text-sm leading-relaxed text-muted-foreground">
-                  {t.body}
-                </p>
-              </li>
-            ))}
-          </ol>
         </section>
 
         <div className="mt-16 flex flex-wrap gap-3">

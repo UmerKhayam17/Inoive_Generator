@@ -10,7 +10,6 @@ import {
   Palette,
   ShieldCheck,
   Sparkles,
-  Star,
   Wallet,
 } from "lucide-react";
 import {
@@ -22,13 +21,14 @@ import {
 import { Button } from "@/components/ui/button";
 import { AdSlot } from "@/components/layout/AdSlot";
 import { TemplateCardPreview } from "@/components/invoice/TemplateCardPreview";
-import { TEMPLATES } from "@/data/templates";
+import { TEMPLATES, TEMPLATE_COUNT } from "@/data/templates";
+import { LOCALES } from "@/data/locales";
 import { HOME_FAQS } from "@/data/faqs";
 import { SITE } from "@/data/site";
 
 const TITLE = `Free Invoice Generator — Create & Download PDF Invoices | ${SITE.name}`;
 const DESCRIPTION =
-  "Create professional invoices in your browser and download a clean PDF instantly. 18 templates, logo upload, tax and discount calculations, autosave — free, no signup.";
+  `Create professional invoices in your browser and download a clean PDF instantly. ${TEMPLATE_COUNT} templates, logo upload, tax and discount calculations, autosave — free, no signup.`;
 
 export const metadata: Metadata = {
   title: TITLE,
@@ -50,13 +50,21 @@ const JSON_LD = {
   "@context": "https://schema.org",
   "@graph": [
     {
-      "@type": "WebApplication",
+      "@type": "SoftwareApplication",
       name: `${SITE.name} Invoice Generator`,
       applicationCategory: "BusinessApplication",
       operatingSystem: "Any (web browser)",
-      url: "/invoice-generator",
+      url: `${SITE.url}/invoice-generator`,
       description: DESCRIPTION,
       offers: { "@type": "Offer", price: "0", priceCurrency: "USD" },
+      isAccessibleForFree: true,
+      featureList: [
+        "PDF invoice download",
+        "No signup",
+        `${TEMPLATE_COUNT} templates`,
+        "PKR and multi-currency",
+        "Browser-only storage",
+      ],
     },
     {
       "@type": "FAQPage",
@@ -77,7 +85,7 @@ const FEATURES = [
   },
   {
     icon: Layers,
-    title: "18 professional templates",
+    title: `${TEMPLATE_COUNT} professional templates`,
     body: "Switch template at any time. The live preview and the downloaded PDF always use the design you picked — nothing shifts on export.",
   },
   {
@@ -113,32 +121,11 @@ const STEPS = [
   },
   {
     title: "Pick a template",
-    body: "Try all ten designs in the live preview. The one you select is exactly what your client receives.",
+    body: `Try all ${TEMPLATE_COUNT} designs in the live preview. The one you select is exactly what your client receives.`,
   },
   {
     title: "Download the PDF",
     body: "Hit download for a print-ready A4 PDF, then send it straight from your email client.",
-  },
-];
-
-const TESTIMONIALS = [
-  {
-    quote:
-      "I bill six retainer clients a month and this replaced a spreadsheet plus a Word template. The Agency layout with the side rail is exactly what my clients' finance teams wanted.",
-    name: "Rosa Delgado",
-    role: "Brand consultant, Madrid",
-  },
-  {
-    quote:
-      "The autosave saved me twice on a train with flaky wifi. I closed the tab, reopened it and the whole invoice was still there.",
-    name: "Tom Whitfield",
-    role: "Freelance developer, Manchester",
-  },
-  {
-    quote:
-      "Being able to switch templates and see the PDF change straight away means I stopped second-guessing how the invoice looks.",
-    name: "Aisha Karim",
-    role: "Studio owner, Karachi",
   },
 ];
 
@@ -168,7 +155,7 @@ export default function Home() {
             </h1>
             <p className="mt-5 max-w-xl text-base text-muted-foreground sm:text-lg">
               Build a professional invoice in your browser, watch the totals calculate as you type,
-              choose from 18 templates and download a print-ready PDF in seconds.
+              choose from {TEMPLATE_COUNT} templates and download a print-ready PDF in seconds.
             </p>
             <div className="mt-8 flex flex-col gap-3 sm:flex-row sm:flex-wrap">
               <Button asChild size="lg" className="w-full sm:w-auto">
@@ -177,7 +164,7 @@ export default function Home() {
                 </Link>
               </Button>
               <Button asChild size="lg" variant="outline" className="w-full sm:w-auto">
-                <Link href="/invoice-templates">Browse 18 templates</Link>
+                <Link href="/invoice-templates">Browse {TEMPLATE_COUNT} templates</Link>
               </Button>
             </div>
             <ul className="mt-8 flex flex-wrap gap-x-6 gap-y-2 text-sm text-muted-foreground">
@@ -281,7 +268,7 @@ export default function Home() {
               </p>
             </div>
             <Button asChild variant="outline">
-              <Link href="/invoice-templates">See all 18</Link>
+              <Link href="/invoice-templates">See all {TEMPLATE_COUNT}</Link>
             </Button>
           </div>
 
@@ -334,28 +321,30 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Testimonials */}
       <section className="border-y border-border bg-muted/40 py-16 lg:py-20">
         <div className="mx-auto max-w-[96rem] px-4 sm:px-6 lg:px-8">
-          <h2 className="text-3xl font-extrabold sm:text-4xl">What people say</h2>
-          <div className="mt-10 grid gap-6 lg:grid-cols-3">
-            {TESTIMONIALS.map((t) => (
-              <figure key={t.name} className="rounded-xl border border-border bg-card p-6">
-                <div className="flex gap-0.5 text-accent" aria-label="5 out of 5">
-                  {Array.from({ length: 5 }).map((_, i) => (
-                    <Star key={i} className="size-4 fill-current" aria-hidden="true" />
-                  ))}
-                </div>
-                <blockquote className="mt-4 text-sm leading-relaxed text-muted-foreground">
-                  “{t.quote}”
-                </blockquote>
-                <figcaption className="mt-4 text-sm font-semibold">
-                  {t.name}
-                  <span className="block text-xs font-normal text-muted-foreground">{t.role}</span>
-                </figcaption>
-              </figure>
+          <h2 className="text-3xl font-extrabold sm:text-4xl">Invoices for your country</h2>
+          <p className="mt-4 max-w-2xl text-lg text-muted-foreground">
+            Localized generators ship with the right currency and tax ID labels — not a US invoice
+            with the country name swapped in.
+          </p>
+          <ul className="mt-8 grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
+            {LOCALES.map((l) => (
+              <li key={l.slug}>
+                <Link
+                  href={l.path}
+                  className="block rounded-xl border border-border bg-card p-5 transition-shadow hover:shadow-elegant"
+                >
+                  <h3 className="text-lg font-bold">{l.country} invoice generator</h3>
+                  <p className="mt-2 text-sm text-muted-foreground">
+                    {l.currency} · {l.taxIdLabel}
+                    {l.taxIdSecondaryLabel ? ` · ${l.taxIdSecondaryLabel}` : ""}
+                  </p>
+                  <p className="mt-3 text-sm font-semibold text-primary">Open generator →</p>
+                </Link>
+              </li>
             ))}
-          </div>
+          </ul>
         </div>
       </section>
 

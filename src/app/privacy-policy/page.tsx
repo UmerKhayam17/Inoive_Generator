@@ -22,13 +22,15 @@ export default function Page() {
   return (
     <LegalPage
       title="Privacy Policy"
-      updated="1 August 2026"
+      updated="14 September 2026"
       lead="We built Invoice Creator so your invoice data never has to leave your device. This policy explains exactly what we do and do not collect."
     >
       <h2>1. Who we are</h2>
       <p>
         {SITE.name} (&quot;we&quot;, &quot;us&quot;) operates this website and the free invoice
-        generator available on it. You can reach us at <a href={`mailto:${SITE.email}`}>{SITE.email}</a> or by post at {SITE.address}.
+        generator available on it. You can reach us at{" "}
+        <a href={`mailto:${SITE.email}`}>{SITE.email}</a>. We do not maintain a public street
+        address or phone number.
       </p>
 
       <h2>2. Invoice data stays in your browser</h2>
@@ -42,28 +44,26 @@ export default function Page() {
       <h2>3. Information we do collect</h2>
       <ul>
         <li>
-          <strong>Contact form submissions.</strong> Your name, email address and message, used only
-          to reply to you.
-        </li>
-        <li>
-          <strong>Newsletter sign-ups.</strong> Your email address, used to send occasional product
-          updates. You can unsubscribe from any email.
+          <strong>Email you send us.</strong> If you contact {SITE.email} (including via the contact
+          page, which opens your own email app), we receive the name, address and message you
+          choose to send, and we use it only to reply.
         </li>
         <li>
           <strong>Analytics.</strong> Aggregated, non-identifying usage data such as page views,
-          referrers, approximate country and device type.
+          referrers, approximate country and device type, when analytics is enabled.
         </li>
         <li>
           <strong>Server logs.</strong> Standard technical logs including IP address and user agent,
           retained for security and troubleshooting.
         </li>
       </ul>
+      <p>We do not run an email newsletter and we do not operate a server-side contact inbox form.</p>
 
       <h2>4. Legal bases for processing</h2>
       <p>
-        Where required by law, we rely on your consent (newsletter, non-essential cookies), the
-        performance of a contract (responding to your enquiry) and our legitimate interests
-        (securing and improving the service).
+        Where required by law, we rely on your consent (non-essential cookies), the performance of a
+        contract (responding to your enquiry) and our legitimate interests (securing and improving
+        the service).
       </p>
 
       <h2>5. Cookies and advertising</h2>
@@ -77,14 +77,14 @@ export default function Page() {
       <h2>6. Sharing your information</h2>
       <p>
         We do not sell personal information. We share data only with service providers who help us
-        run the site (hosting, email delivery, analytics, advertising), each bound by contractual
-        confidentiality obligations, or where required by law.
+        run the site (hosting, analytics, advertising), each bound by contractual confidentiality
+        obligations, or where required by law.
       </p>
 
       <h2>7. Retention</h2>
       <p>
-        Contact messages are kept for up to 24 months. Newsletter data is kept until you
-        unsubscribe. Analytics data is retained in aggregated form.
+        Support emails are kept for up to 24 months. Analytics data is retained in aggregated form.
+        Invoice drafts are never stored on our servers.
       </p>
 
       <h2>8. Your rights</h2>
@@ -115,7 +115,7 @@ export default function Page() {
       <h2>12. Contact</h2>
       <p>
         Questions about privacy? Email <a href={`mailto:${SITE.email}`}>{SITE.email}</a> or use our{" "}
-        <a href="/contact">contact form</a>.
+        <a href="/contact">contact page</a>.
       </p>
     </LegalPage>
   );
