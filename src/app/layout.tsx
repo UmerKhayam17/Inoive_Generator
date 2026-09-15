@@ -87,7 +87,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
           dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
         />
       </head>
-      <body className="font-sans">
+      <body className="font-sans" suppressHydrationWarning>
         <script dangerouslySetInnerHTML={{ __html: themeScript }} />
         <a
           href="#main"
