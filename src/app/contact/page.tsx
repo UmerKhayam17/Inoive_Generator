@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { Clock, Mail } from "lucide-react";
+import { Clock, Mail, MapPin, Phone } from "lucide-react";
 import { PageHeader } from "@/components/layout/PageHeader";
 import { AdSlot } from "@/components/layout/AdSlot";
 import {
@@ -69,6 +69,16 @@ export default function ContactPage() {
                   <a className="hover:underline" href={`mailto:${SITE.email}`}>
                     {SITE.email}
                   </a>
+                </li>
+                <li className="flex gap-3">
+                  <Phone className="mt-0.5 size-4 shrink-0 text-primary" aria-hidden="true" />
+                  <a className="hover:underline" href={`tel:${SITE.phone.replace(/\s/g, "")}`}>
+                    {SITE.phone}
+                  </a>
+                </li>
+                <li className="flex gap-3">
+                  <MapPin className="mt-0.5 size-4 shrink-0 text-primary" aria-hidden="true" />
+                  <span>{SITE.address}</span>
                 </li>
                 <li className="flex gap-3">
                   <Clock className="mt-0.5 size-4 shrink-0 text-primary" aria-hidden="true" />

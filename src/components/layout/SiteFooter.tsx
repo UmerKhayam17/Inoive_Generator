@@ -1,7 +1,7 @@
 "use client";
 
 import Link from "next/link";
-import { Mail } from "lucide-react";
+import { Mail, MapPin, Phone } from "lucide-react";
 import { BrandLogo } from "@/components/layout/BrandLogo";
 import { SITE } from "@/data/site";
 import { TEMPLATES } from "@/data/templates";
@@ -43,6 +43,19 @@ export function SiteFooter() {
                 <a className="hover:text-ink-foreground" href={`mailto:${SITE.email}`}>
                   {SITE.email}
                 </a>
+              </li>
+              <li className="flex items-start gap-2">
+                <Phone className="mt-0.5 size-4 shrink-0" aria-hidden="true" />
+                <a
+                  className="hover:text-ink-foreground"
+                  href={`tel:${SITE.phone.replace(/\s/g, "")}`}
+                >
+                  {SITE.phone}
+                </a>
+              </li>
+              <li className="flex items-start gap-2">
+                <MapPin className="mt-0.5 size-4 shrink-0" aria-hidden="true" />
+                <span>{SITE.address}</span>
               </li>
             </ul>
           </div>
