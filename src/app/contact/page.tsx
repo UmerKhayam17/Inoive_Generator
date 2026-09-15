@@ -88,12 +88,12 @@ export default function ContactPage() {
 
             <div
               role="img"
-              aria-label="Map showing the Invoice Creator office location in Austin, Texas"
+              aria-label="Map showing the Invoice Creator office location in Islamabad, Pakistan"
               className="surface-grid grid aspect-[4/3] w-full place-items-center rounded-2xl border border-border bg-muted/40"
             >
               <div className="text-center">
                 <MapPin className="mx-auto size-7 text-primary" aria-hidden="true" />
-                <p className="mt-2 text-sm font-medium">Austin, TX</p>
+                <p className="mt-2 text-sm font-medium">Islamabad, Pakistan</p>
                 <p className="text-xs text-muted-foreground">Map placeholder</p>
               </div>
             </div>

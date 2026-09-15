@@ -131,11 +131,12 @@ export function SiteFooter() {
           </div>
         </div>
 
-        <div className="mt-12 flex flex-col items-center justify-between gap-4 border-t border-ink-foreground/10 pt-6 sm:flex-row">
-          <p className="text-xs text-ink-foreground/60">
+        <div className="mt-12 grid gap-4 border-t border-ink-foreground/10 pt-6 text-xs text-ink-foreground/60 sm:grid-cols-3 sm:items-center">
+          <p className="text-center sm:text-left">
             © {new Date().getFullYear()} {SITE.name}. All rights reserved.
           </p>
-          <ul className="flex flex-wrap items-center gap-4 text-xs text-ink-foreground/60">
+          <p className="text-center">Developed by Next Software Development Company</p>
+          <ul className="flex flex-wrap items-center justify-center gap-4 sm:justify-end">
             {SITE.social.map((s) => (
               <li key={s.label}>
                 <a
