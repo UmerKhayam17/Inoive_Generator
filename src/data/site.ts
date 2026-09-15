@@ -3,8 +3,10 @@ export const SITE = {
   tagline: "Free Invoice Generator",
   description:
     "Create professional invoices online for free. Download high-quality PDF invoices instantly. No signup required.",
-  email: "hello@nextfreeinvoicegenerator.com",
-  hours: "We reply by email, usually within one business day (Monday–Friday).",
+  email: "hello@invoicecreator.example",
+  phone: "+92 3710510083",
+  address: "Islamabad, Pakistan",
+  hours: "Monday – Friday, 9:00 – 18:00 (PKT)",
   url: process.env.NEXT_PUBLIC_SITE_URL || "https://nextfreeinvoicegenerator.com",
 };
 
@@ -15,4 +17,4 @@ export const NAV_LINKS = [
   { label: "Blog", href: "/blog" },
   { label: "About", href: "/about" },
   { label: "Contact", href: "/contact" },
-] as const;
+] as const;     

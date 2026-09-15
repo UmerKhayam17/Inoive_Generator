@@ -75,10 +75,18 @@ export default function ContactPage() {
                   <span>{SITE.hours}</span>
                 </li>
               </ul>
-              <p className="mt-4 text-xs leading-relaxed text-muted-foreground">
-                We operate online and do not publish a phone number or street address. Invoice data
-                never leaves your browser, so we cannot look up a draft on your device.
-              </p>
+            </div>
+
+            <div
+              role="img"
+              aria-label="Map showing the Invoice Creator office location in Islamabad, Pakistan"
+              className="surface-grid grid aspect-[4/3] w-full place-items-center rounded-2xl border border-border bg-muted/40"
+            >
+              <div className="text-center">
+                <MapPin className="mx-auto size-7 text-primary" aria-hidden="true" />
+                <p className="mt-2 text-sm font-medium">Islamabad, Pakistan</p>
+                <p className="text-xs text-muted-foreground">Map placeholder</p>
+              </div>
             </div>
 
             <AdSlot id="contact-sidebar" format="rectangle" />

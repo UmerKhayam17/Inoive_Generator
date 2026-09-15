@@ -102,10 +102,25 @@ export function SiteFooter() {
           </nav>
         </div>
 
-        <div className="mt-12 border-t border-ink-foreground/10 pt-6">
-          <p className="text-xs text-ink-foreground/60">
+        <div className="mt-12 grid gap-4 border-t border-ink-foreground/10 pt-6 text-xs text-ink-foreground/60 sm:grid-cols-3 sm:items-center">
+          <p className="text-center sm:text-left">
             © {new Date().getFullYear()} {SITE.name}. All rights reserved.
           </p>
+          <p className="text-center">Developed by Next Software Development Company</p>
+          <ul className="flex flex-wrap items-center justify-center gap-4 sm:justify-end">
+            {SITE.social.map((s) => (
+              <li key={s.label}>
+                <a
+                  href={s.href}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="hover:text-ink-foreground"
+                >
+                  {s.label}
+                </a>
+              </li>
+            ))}
+          </ul>
         </div>
       </div>
     </footer>
