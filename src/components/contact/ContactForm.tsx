@@ -38,13 +38,6 @@ export function ContactForm() {
 
   return (
     <form onSubmit={handleSubmit(onSubmit)} noValidate className="mt-6 space-y-5">
-      <p className="text-sm text-muted-foreground">
-        Submitting opens your email app with a message addressed to{" "}
-        <a className="font-medium text-foreground underline" href={`mailto:${SITE.email}`}>
-          {SITE.email}
-        </a>
-        . Nothing is uploaded to our servers.
-      </p>
       <div className="grid gap-5 sm:grid-cols-2">
         <div className="space-y-2">
           <Label htmlFor="name">Your name</Label>

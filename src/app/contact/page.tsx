@@ -47,7 +47,7 @@ export default function ContactPage() {
       <PageHeader
         eyebrow="Contact"
         title="Email the Invoice Creator team"
-        lead="Support questions, feature ideas, bug reports or partnerships — send them to a real inbox."
+        lead={`Support questions, feature ideas, bug reports or partnerships — write to ${SITE.email}.`}
         crumbs={[{ label: "Home", href: "/" }, { label: "Contact" }]}
       />
 

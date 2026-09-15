@@ -3,7 +3,7 @@ export const SITE = {
   tagline: "Free Invoice Generator",
   description:
     "Create professional invoices online for free. Download high-quality PDF invoices instantly. No signup required.",
-  email: "hello@invoicecreator.example",
+  email: "support@nextfreeinvoicegenerator.com",
   phone: "+92 3710510083",
   address: "Islamabad, Pakistan",
   hours: "Monday – Friday, 9:00 – 18:00 (PKT)",
