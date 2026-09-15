@@ -6,7 +6,7 @@ import { AdSlot } from "@/components/layout/AdSlot";
 import { Button } from "@/components/ui/button";
 import { breadcrumbSchema } from "@/components/layout/Breadcrumbs";
 import { TemplatesIndustryBrowser } from "@/components/invoice/TemplatesIndustryBrowser";
-import { TEMPLATES, templateLabel } from "@/data/templates";
+import { TEMPLATES } from "@/data/templates";
 import { SITE } from "@/data/site";
 
 const TITLE = `${TEMPLATES.length} Top-Rated Free Invoice Templates by Industry | ${SITE.name}`;
@@ -33,7 +33,7 @@ const itemListLd = {
   itemListElement: TEMPLATES.map((t, i) => ({
     "@type": "ListItem",
     position: i + 1,
-    name: `${templateLabel(t)} top-rated invoice template`,
+    name: `${t.name} Invoice Template`,
     url: `/invoice-templates/${t.slug}`,
   })),
 };

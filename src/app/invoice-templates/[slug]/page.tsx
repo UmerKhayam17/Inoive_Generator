@@ -22,15 +22,12 @@ export async function generateMetadata({
 }): Promise<Metadata> {
   const { slug } = await params;
   const template = TEMPLATES.find((t) => t.slug === slug);
-  const label = template ? templateLabel(template) : "Invoice";
-  const title = `${label} Top-Rated Invoice Template — Free PDF | ${SITE.name}`;
-  const description =
-    template
-      ? `High-rated ${template.industry} invoice — ${template.name}. ${template.description}`.slice(
-          0,
-          155,
-        )
-      : "Free top-rated invoice template with live preview and instant PDF download.";
+  const title = template
+    ? `${template.name} Invoice Template — ${template.industry} | ${SITE.name}`
+    : `Invoice Template | ${SITE.name}`;
+  const description = template
+    ? `Create a professional ${template.industry.toLowerCase()} invoice with our free ${template.name} Invoice Template. Customize your invoice and download it as a PDF.`
+    : "Free invoice template with live preview and instant PDF download.";
 
   return {
     title,
@@ -62,7 +59,7 @@ export default async function TemplateDetailPage({
   const productLd = {
     "@context": "https://schema.org",
     "@type": "Product",
-    name: `${templateLabel(template)} top-rated invoice template`,
+    name: `${template.name} Invoice Template`,
     description,
     brand: { "@type": "Brand", name: SITE.name },
     offers: {
@@ -101,10 +98,10 @@ export default async function TemplateDetailPage({
       <div className="grid gap-10 lg:grid-cols-[minmax(0,1fr)_360px]">
         <div>
           <p className="text-xs font-semibold uppercase tracking-[0.2em] text-primary">
-            Top-rated {template.industry} industry
+            {template.industry}
           </p>
           <h1 className="mt-2 text-3xl font-extrabold sm:text-4xl">
-            {template.name} · High-rated {template.industry} invoice template
+            {template.name} Invoice Template
           </h1>
           <p className="mt-3 text-lg text-muted-foreground">{template.tagline}</p>
 
