@@ -240,6 +240,10 @@ export const TEMPLATES: InvoiceTemplate[] = [
   },
 ];
 
+export const TEMPLATE_COUNT = TEMPLATES.length;
+
+export const TEMPLATE_NAME_LIST = TEMPLATES.map((t) => t.name).join(", ");
+
 export const getTemplate = (slug: string) => TEMPLATES.find((t) => t.slug === slug);
 
 /** Unique industries in display order (first occurrence in TEMPLATES). */

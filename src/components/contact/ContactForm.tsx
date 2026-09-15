@@ -8,6 +8,7 @@ import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import { Label } from "@/components/ui/label";
+import { SITE } from "@/data/site";
 
 const schema = z.object({
   name: z.string().min(2, "Please enter your name"),
@@ -26,13 +27,24 @@ export function ContactForm() {
   } = useForm<FormValues>({ resolver: zodResolver(schema) });
 
   const onSubmit = async (values: FormValues) => {
-    await new Promise((r) => setTimeout(r, 500));
-    toast.success(`Thanks ${values.name.split(" ")[0]}! We'll reply within one business day.`);
+    const body = `From: ${values.name} <${values.email}>\n\n${values.message}`;
+    const href = `mailto:${SITE.email}?subject=${encodeURIComponent(values.subject)}&body=${encodeURIComponent(body)}`;
+    window.location.href = href;
+    toast.success("Opening your email app", {
+      description: `If nothing opens, write to ${SITE.email} yourself.`,
+    });
     reset();
   };
 
   return (
     <form onSubmit={handleSubmit(onSubmit)} noValidate className="mt-6 space-y-5">
+      <p className="text-sm text-muted-foreground">
+        Submitting opens your email app with a message addressed to{" "}
+        <a className="font-medium text-foreground underline" href={`mailto:${SITE.email}`}>
+          {SITE.email}
+        </a>
+        . Nothing is uploaded to our servers.
+      </p>
       <div className="grid gap-5 sm:grid-cols-2">
         <div className="space-y-2">
           <Label htmlFor="name">Your name</Label>
@@ -94,7 +106,7 @@ export function ContactForm() {
         )}
       </div>
       <Button type="submit" size="lg" disabled={isSubmitting}>
-        {isSubmitting ? "Sending…" : "Send message"}
+        {isSubmitting ? "Opening…" : "Open email to send"}
       </Button>
     </form>
   );

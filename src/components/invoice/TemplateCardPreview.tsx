@@ -38,6 +38,7 @@ export function TemplateCardPreview({
         address: "12 Market Street\nAustin, TX 78701",
         phone: "+1 555 0100",
         taxId: "TX-88421",
+        taxIdSecondary: "",
       },
       to: {
         name: "Acme Retail Co.",
@@ -45,6 +46,7 @@ export function TemplateCardPreview({
         address: "480 Harbour Road\nSeattle, WA 98101",
         phone: "",
         taxId: "",
+        taxIdSecondary: "",
       },
       items: [
         {

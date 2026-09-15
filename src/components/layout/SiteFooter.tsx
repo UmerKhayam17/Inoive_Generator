@@ -1,13 +1,11 @@
 "use client";
 
 import Link from "next/link";
-import { Mail, MapPin, Phone } from "lucide-react";
-import { Button } from "@/components/ui/button";
-import { Input } from "@/components/ui/input";
+import { Mail } from "lucide-react";
 import { BrandLogo } from "@/components/layout/BrandLogo";
 import { SITE } from "@/data/site";
 import { TEMPLATES } from "@/data/templates";
-import { toast } from "sonner";
+import { LOCALES } from "@/data/locales";
 
 const quickLinks = [
   { label: "Home", href: "/" },
@@ -46,14 +44,6 @@ export function SiteFooter() {
                   {SITE.email}
                 </a>
               </li>
-              <li className="flex items-start gap-2">
-                <Phone className="mt-0.5 size-4 shrink-0" aria-hidden="true" />
-                <span>{SITE.phone}</span>
-              </li>
-              <li className="flex items-start gap-2">
-                <MapPin className="mt-0.5 size-4 shrink-0" aria-hidden="true" />
-                <span>{SITE.address}</span>
-              </li>
             </ul>
           </div>
 
@@ -86,69 +76,36 @@ export function SiteFooter() {
             </ul>
           </nav>
 
-          <div>
-            <nav aria-label="Legal">
-              <h2 className="text-sm font-semibold uppercase tracking-wider">Resources</h2>
-              <ul className="mt-4 space-y-2.5 text-sm text-ink-foreground/70">
-                <li>
-                  <Link href="/tools" className="hover:text-ink-foreground">
-                    Free Business Tools
+          <nav aria-label="Legal and locales">
+            <h2 className="text-sm font-semibold uppercase tracking-wider">Resources</h2>
+            <ul className="mt-4 space-y-2.5 text-sm text-ink-foreground/70">
+              <li>
+                <Link href="/tools" className="hover:text-ink-foreground">
+                  Free Business Tools
+                </Link>
+              </li>
+              {LOCALES.map((l) => (
+                <li key={l.slug}>
+                  <Link href={l.path} className="hover:text-ink-foreground">
+                    Invoice generator — {l.country}
                   </Link>
                 </li>
-                {legalLinks.map((l) => (
-                  <li key={l.href}>
-                    <Link href={l.href} className="hover:text-ink-foreground">
-                      {l.label}
-                    </Link>
-                  </li>
-                ))}
-              </ul>
-            </nav>
-
-            <h2 className="mt-8 text-sm font-semibold uppercase tracking-wider">Newsletter</h2>
-            <form
-              className="mt-3 space-y-2"
-              onSubmit={(e) => {
-                e.preventDefault();
-                toast.success("You're subscribed! Check your inbox for a confirmation email.");
-                (e.currentTarget as HTMLFormElement).reset();
-              }}
-            >
-              <label htmlFor="newsletter-email" className="sr-only">
-                Email address
-              </label>
-              <Input
-                id="newsletter-email"
-                type="email"
-                required
-                placeholder="you@company.com"
-                className="border-ink-foreground/20 bg-ink-foreground/5 placeholder:text-ink-foreground/40"
-              />
-              <Button type="submit" variant="secondary" className="w-full">
-                Subscribe
-              </Button>
-            </form>
-          </div>
+              ))}
+              {legalLinks.map((l) => (
+                <li key={l.href}>
+                  <Link href={l.href} className="hover:text-ink-foreground">
+                    {l.label}
+                  </Link>
+                </li>
+              ))}
+            </ul>
+          </nav>
         </div>
 
-        <div className="mt-12 flex flex-col items-center justify-between gap-4 border-t border-ink-foreground/10 pt-6 sm:flex-row">
+        <div className="mt-12 border-t border-ink-foreground/10 pt-6">
           <p className="text-xs text-ink-foreground/60">
             © {new Date().getFullYear()} {SITE.name}. All rights reserved.
           </p>
-          <ul className="flex flex-wrap items-center gap-4 text-xs text-ink-foreground/60">
-            {SITE.social.map((s) => (
-              <li key={s.label}>
-                <a
-                  href={s.href}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="hover:text-ink-foreground"
-                >
-                  {s.label}
-                </a>
-              </li>
-            ))}
-          </ul>
         </div>
       </div>
     </footer>

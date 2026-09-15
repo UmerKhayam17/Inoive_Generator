@@ -2,10 +2,11 @@ import type { Metadata } from "next";
 import { Suspense } from "react";
 import { InvoiceGenerator } from "@/components/invoice/InvoiceGenerator";
 import { SITE } from "@/data/site";
+import { TEMPLATE_COUNT } from "@/data/templates";
 
 const TITLE = `Free Invoice Generator — Live Preview & Instant PDF | ${SITE.name}`;
 const DESCRIPTION =
-  "Fill in your details, add line items and download a print-ready PDF invoice. Live calculations, logo and signature upload, 18 templates and automatic local autosave.";
+  `Fill in your details, add line items and download a print-ready PDF invoice. Live calculations, logo and signature upload, ${TEMPLATE_COUNT} templates and automatic local autosave.`;
 
 export const metadata: Metadata = {
   title: TITLE,
@@ -28,6 +29,7 @@ const jsonLd = {
   operatingSystem: "Any (web browser)",
   description: DESCRIPTION,
   offers: { "@type": "Offer", price: "0", priceCurrency: "USD" },
+  isAccessibleForFree: true,
 };
 
 export default function InvoiceGeneratorPage() {
