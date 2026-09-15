@@ -13,9 +13,9 @@ export interface InvoiceTemplate {
   serif?: boolean;
 }
 
-/** Style name + industry, e.g. "Modern · Top-rated Freelance" */
+/** Style name + industry, e.g. "Modern · Freelance" */
 export function templateLabel(t: Pick<InvoiceTemplate, "name" | "industry">) {
-  return `${t.name} · Top-rated ${t.industry}`;
+  return `${t.name} · ${t.industry}`;
 }
 
 export const TEMPLATES: InvoiceTemplate[] = [
