@@ -130,7 +130,7 @@ export default async function TemplateDetailPage({
             <h2 className="text-2xl font-bold text-foreground">Industry</h2>
             <p>
               Designed for the <strong className="text-foreground">{template.industry}</strong>{" "}
-              industry as a high-rated, top-rated layout. Style name:{" "}
+              industry as a professional invoice layout. Style name:{" "}
               <strong className="text-foreground">{template.name}</strong>.
             </p>
             <h2 className="text-2xl font-bold text-foreground">Who it suits</h2>
@@ -173,7 +173,7 @@ export default async function TemplateDetailPage({
                     />
                     {t.name}
                     <span className="ml-auto text-xs font-normal text-muted-foreground">
-                      Top-rated {t.industry}
+                      {t.industry}
                     </span>
                   </Link>
                 </li>

@@ -22,13 +22,17 @@ export default function Page() {
   return (
     <LegalPage
       title="Terms & Conditions"
-      updated="1 August 2026"
+      updated="24 September 2026"
       lead="By using Invoice Creator you agree to these terms. They are written to be readable — please still read them."
     >
       <h2>1. Acceptance</h2>
       <p>
         By accessing {SITE.name} you agree to be bound by these Terms &amp; Conditions. If you do
         not agree, please do not use the service.
+      </p>
+      <p>
+        {SITE.name} is operated by {SITE.operator}, a software development company based in{" "}
+        {SITE.address}.
       </p>
 
       <h2>2. The service</h2>
@@ -60,8 +64,8 @@ export default function Page() {
 
       <h2>6. Intellectual property</h2>
       <p>
-        The website design, template layouts, code and written articles are owned by {SITE.name} and
-        protected by copyright. You may use the generated invoice documents commercially without
+        The website design, template layouts, code and written articles are owned by {SITE.operator}{" "}
+        and protected by copyright. You may use the generated invoice documents commercially without
         restriction; you may not republish the templates or articles as your own.
       </p>
 
@@ -92,13 +96,20 @@ export default function Page() {
 
       <h2>11. Governing law</h2>
       <p>
-        These terms are governed by the laws of the State of Texas, United States, without regard to
-        conflict-of-law rules.
+        These Terms and Conditions shall be governed by and interpreted in accordance with the
+        applicable laws governing the operation of {SITE.operator} in Pakistan, without prejudice to
+        any mandatory consumer protection rights that may apply to users in their respective
+        jurisdictions.
+      </p>
+      <p>
+        If you have questions about these Terms, please contact us through our{" "}
+        <a href="/contact">Contact page</a>.
       </p>
 
       <h2>12. Contact</h2>
       <p>
-        Questions about these terms? Email <a href={`mailto:${SITE.email}`}>{SITE.email}</a>.
+        Questions about these terms? Email <a href={`mailto:${SITE.email}`}>{SITE.email}</a> or
+        call <a href={`tel:${SITE.phone.replace(/\s/g, "")}`}>{SITE.phone}</a>.
       </p>
     </LegalPage>
   );

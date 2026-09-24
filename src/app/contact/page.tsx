@@ -46,8 +46,8 @@ export default function ContactPage() {
       />
       <PageHeader
         eyebrow="Contact"
-        title="Email the Invoice Creator team"
-        lead={`Support questions, feature ideas, bug reports or partnerships — write to ${SITE.email}.`}
+        title="Contact Invoice Creator"
+        lead={`${SITE.name} is operated by ${SITE.operator}. If you have a question about the invoice generator, find a technical issue, want to report a problem, or have a suggestion for improving the service, please contact us.`}
         crumbs={[{ label: "Home", href: "/" }, { label: "Contact" }]}
       />
 
@@ -57,32 +57,51 @@ export default function ContactPage() {
             <h2 id="form-heading" className="text-2xl font-bold">
               Send us a message
             </h2>
+            <p className="mt-2 text-sm text-muted-foreground">
+              For technical support, please include enough information about the issue to help us
+              understand and reproduce the problem.
+            </p>
             <ContactForm />
           </section>
 
           <aside className="space-y-6">
             <div className="rounded-2xl border border-border bg-card p-6 shadow-elegant">
-              <h2 className="text-lg font-bold">How to reach us</h2>
+              <h2 className="text-lg font-bold">Contact Information</h2>
               <ul className="mt-4 space-y-4 text-sm">
+                <li className="text-muted-foreground">
+                  <strong className="text-foreground">Company:</strong> {SITE.operator}
+                </li>
                 <li className="flex gap-3">
                   <Mail className="mt-0.5 size-4 shrink-0 text-primary" aria-hidden="true" />
-                  <a className="hover:underline" href={`mailto:${SITE.email}`}>
-                    {SITE.email}
-                  </a>
+                  <div>
+                    <span className="block text-xs text-muted-foreground">Email</span>
+                    <a className="hover:underline" href={`mailto:${SITE.email}`}>
+                      {SITE.email}
+                    </a>
+                  </div>
                 </li>
                 <li className="flex gap-3">
                   <Phone className="mt-0.5 size-4 shrink-0 text-primary" aria-hidden="true" />
-                  <a className="hover:underline" href={`tel:${SITE.phone.replace(/\s/g, "")}`}>
-                    {SITE.phone}
-                  </a>
+                  <div>
+                    <span className="block text-xs text-muted-foreground">Phone</span>
+                    <a className="hover:underline" href={`tel:${SITE.phone.replace(/\s/g, "")}`}>
+                      {SITE.phone}
+                    </a>
+                  </div>
                 </li>
                 <li className="flex gap-3">
                   <MapPin className="mt-0.5 size-4 shrink-0 text-primary" aria-hidden="true" />
-                  <span>{SITE.address}</span>
+                  <div>
+                    <span className="block text-xs text-muted-foreground">Location</span>
+                    <span>{SITE.address}</span>
+                  </div>
                 </li>
                 <li className="flex gap-3">
                   <Clock className="mt-0.5 size-4 shrink-0 text-primary" aria-hidden="true" />
-                  <span>{SITE.hours}</span>
+                  <div>
+                    <span className="block text-xs text-muted-foreground">Hours</span>
+                    <span>{SITE.hours}</span>
+                  </div>
                 </li>
               </ul>
             </div>

@@ -22,16 +22,39 @@ export default function Page() {
   return (
     <LegalPage
       title="Privacy Policy"
-      updated="14 September 2026"
+      updated="24 September 2026"
       lead="We built Invoice Creator so your invoice data never has to leave your device. This policy explains exactly what we do and do not collect."
     >
       <h2>1. Who we are</h2>
       <p>
-        {SITE.name} (&quot;we&quot;, &quot;us&quot;) operates this website and the free invoice
-        generator available on it. You can reach us at{" "}
-        <a href={`mailto:${SITE.email}`}>{SITE.email}</a>. We do not maintain a public street
-        address or phone number.
+        {SITE.name} (&quot;we&quot;, &quot;us&quot;) is a free online invoice generation service
+        operated by {SITE.operator}, a software development company based in {SITE.address}. We
+        operate this website and the free invoice generator available on it.
       </p>
+      <p>
+        For questions regarding this Privacy Policy, the service, or your information, you can
+        contact us using the contact details provided on our{" "}
+        <a href="/contact">Contact page</a>.
+      </p>
+      <h3>Contact Information</h3>
+      <ul>
+        <li>
+          <strong>Company:</strong> {SITE.operator}
+        </li>
+        <li>
+          <strong>Website:</strong> nextfreeinvoicegenerator.com
+        </li>
+        <li>
+          <strong>Location:</strong> {SITE.address}
+        </li>
+        <li>
+          <strong>Email:</strong> <a href={`mailto:${SITE.email}`}>{SITE.email}</a>
+        </li>
+        <li>
+          <strong>Phone:</strong>{" "}
+          <a href={`tel:${SITE.phone.replace(/\s/g, "")}`}>{SITE.phone}</a>
+        </li>
+      </ul>
 
       <h2>2. Invoice data stays in your browser</h2>
       <p>

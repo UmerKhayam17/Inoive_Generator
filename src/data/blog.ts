@@ -4,8 +4,12 @@ export interface Post {
   description: string;
   category: string;
   date: string;
+  /** ISO date of last editorial update; when omitted, `date` is used. */
+  updated?: string;
   readingTime: number;
   author: string;
+  /** Shown on tax/compliance articles (e.g. "Pakistan", "General"). */
+  jurisdiction?: string;
   content: string; // simple HTML
 }
 
@@ -26,7 +30,7 @@ export const POSTS: Post[] = [
     category: "invoicing-basics",
     date: "2026-07-28",
     readingTime: 6,
-    author: "Maya Ellison",
+    author: "Invoice Creator Editorial Team",
     content: `
 <h2>The short definition</h2>
 <p>An invoice is a commercial document issued by a seller to a buyer that itemises goods or services supplied, states the amount owed, and sets a deadline for payment. It is simultaneously a request for money, a record of a transaction, and — in most countries — an accounting document you are legally required to keep.</p>
@@ -60,7 +64,7 @@ export const POSTS: Post[] = [
     category: "guides",
     date: "2026-07-22",
     readingTime: 8,
-    author: "Maya Ellison",
+    author: "Invoice Creator Editorial Team",
     content: `
 <h2>Before you start</h2>
 <p>Gather three things: your business details, the client's legal billing details, and an agreed scope with prices. Ninety percent of late payments trace back to a disagreement about one of those three, not to the invoice itself.</p>
@@ -92,7 +96,7 @@ export const POSTS: Post[] = [
     category: "comparisons",
     date: "2026-07-15",
     readingTime: 5,
-    author: "Daniel Okafor",
+    author: "Invoice Creator Editorial Team",
     content: `
 <h2>The core difference</h2>
 <p>An invoice is issued <em>before</em> payment and asks for money. A receipt is issued <em>after</em> payment and confirms money was received. One creates a debt, the other extinguishes it.</p>
@@ -122,7 +126,7 @@ export const POSTS: Post[] = [
     category: "comparisons",
     date: "2026-07-08",
     readingTime: 5,
-    author: "Daniel Okafor",
+    author: "Invoice Creator Editorial Team",
     content: `
 <h2>Definitions</h2>
 <p>An <strong>estimate</strong> is a good-faith projection of what a job will cost. It is not binding and it usually carries a validity window and a variance range. An <strong>invoice</strong> is a definite request for a specific amount, issued once the work is delivered.</p>
@@ -147,7 +151,7 @@ export const POSTS: Post[] = [
     category: "comparisons",
     date: "2026-07-01",
     readingTime: 5,
-    author: "Daniel Okafor",
+    author: "Invoice Creator Editorial Team",
     content: `
 <h2>A quotation is an offer</h2>
 <p>Unlike an estimate, a quotation is a firm price. Once the client accepts it, most legal systems treat it as part of a contract — you cannot raise the price later without agreement. That precision is exactly why quotations must be written carefully.</p>
@@ -175,7 +179,7 @@ export const POSTS: Post[] = [
     category: "design",
     date: "2026-06-24",
     readingTime: 7,
-    author: "Priya Raman",
+    author: "Invoice Creator Editorial Team",
     content: `
 <h2>Why the template matters</h2>
 <p>An invoice is often the last document a client reads before deciding how quickly to pay you. Clarity beats decoration: the amount due, the due date and the payment method should be findable in under three seconds.</p>
@@ -205,7 +209,7 @@ export const POSTS: Post[] = [
     category: "guides",
     date: "2026-06-17",
     readingTime: 7,
-    author: "Priya Raman",
+    author: "Invoice Creator Editorial Team",
     content: `
 <h2>1. Freelance project invoice</h2>
 <p>One line per deliverable, a fixed fee, Net 14 terms. Reference the accepted proposal number in the notes.</p>
@@ -230,7 +234,7 @@ export const POSTS: Post[] = [
     category: "guides",
     date: "2026-06-10",
     readingTime: 9,
-    author: "Maya Ellison",
+    author: "Invoice Creator Editorial Team",
     content: `
 <h2>Set terms before you start</h2>
 <p>Agree payment terms in writing at proposal stage: deposit percentage, payment schedule, accepted methods and late-payment interest. An invoice cannot enforce terms the client never saw.</p>
@@ -259,7 +263,7 @@ export const POSTS: Post[] = [
     category: "guides",
     date: "2026-06-03",
     readingTime: 8,
-    author: "Daniel Okafor",
+    author: "Invoice Creator Editorial Team",
     content: `
 <h2>Design the process, not just the document</h2>
 <p>Most small businesses have a template but no process. Decide who raises invoices, when they go out (weekly batch beats ad hoc), who chases, and where the PDFs are stored.</p>
@@ -291,7 +295,7 @@ export const POSTS: Post[] = [
     category: "guides",
     date: "2026-05-27",
     readingTime: 6,
-    author: "Priya Raman",
+    author: "Invoice Creator Editorial Team",
     content: `
 <h2>Send a PDF, always</h2>
 <p>PDFs render identically everywhere and cannot be edited accidentally. Never send a spreadsheet or a word-processor file as your invoice of record.</p>
@@ -301,10 +305,10 @@ export const POSTS: Post[] = [
 <p>Ask for the accounts-payable address at kickoff. CC your day-to-day contact so they can approve it internally.</p>
 <h2>Email template — first send</h2>
 <p><em>Subject: Invoice 2026-0041 — Acme Ltd — due 14 Aug 2026</em><br>
-Hi Sam, please find attached invoice 2026-0041 for £2,400 covering the August retainer. Payment is due by 14 August; bank details are on the invoice. Happy to answer any questions. Thanks, Priya.</p>
+Hi Sam, please find attached invoice 2026-0041 for £2,400 covering the August retainer. Payment is due by 14 August; bank details are on the invoice. Happy to answer any questions. Thanks,</p>
 <h2>Email template — polite reminder</h2>
 <p><em>Subject: Reminder — invoice 2026-0041 due today</em><br>
-Hi Sam, a quick reminder that invoice 2026-0041 (£2,400) is due today. I have re-attached it for convenience. If it is already scheduled, ignore this. Thanks, Priya.</p>
+Hi Sam, a quick reminder that invoice 2026-0041 (£2,400) is due today. I have re-attached it for convenience. If it is already scheduled, ignore this. Thanks,</p>
 <h2>Escalating</h2>
 <p>After 14 days overdue, reference your late-payment terms and ask for a specific payment date rather than a vague update.</p>
 <p>Create the PDF first with our <a href="/invoice-generator">generator</a>.</p>
@@ -318,7 +322,7 @@ Hi Sam, a quick reminder that invoice 2026-0041 (£2,400) is due today. I have r
     category: "invoicing-basics",
     date: "2026-05-20",
     readingTime: 6,
-    author: "Daniel Okafor",
+    author: "Invoice Creator Editorial Team",
     content: `
 <h2>The list</h2>
 <ol>
@@ -346,9 +350,12 @@ Hi Sam, a quick reminder that invoice 2026-0041 (£2,400) is due today. I have r
       "A tax invoice lets your customer reclaim the tax they paid. Learn the mandatory fields and the difference from a standard invoice.",
     category: "tax",
     date: "2026-05-13",
+    updated: "2026-09-24",
     readingTime: 6,
-    author: "Maya Ellison",
+    author: "Invoice Creator Editorial Team",
+    jurisdiction: "General",
     content: `
+<p><strong>Important:</strong> Tax laws, rates, registration requirements, and invoicing rules can change and may vary by jurisdiction. This article provides general informational content and should not be considered professional tax, accounting, or legal advice. Verify current requirements with the relevant tax authority or a qualified professional.</p>
 <h2>What makes an invoice a tax invoice</h2>
 <p>A tax invoice is a standard invoice plus the specific information a tax authority requires so the buyer can claim an input-tax credit. Miss a field and your customer loses the credit — which is why AP teams check these carefully.</p>
 <h2>Typical mandatory fields</h2>
@@ -366,7 +373,7 @@ Hi Sam, a quick reminder that invoice 2026-0041 (£2,400) is due today. I have r
 <h2>Exempt and zero-rated supplies</h2>
 <p>State the reason for the exemption or zero rating directly on the invoice (for example, "Reverse charge — customer to account for tax").</p>
 <h2>Disclaimer</h2>
-<p>Tax rules differ by country and change often. Treat this as general guidance and confirm requirements with a qualified accountant. See also our <a href="/blog/gst-invoice-guide">GST</a> and <a href="/blog/vat-invoice-guide">VAT</a> guides.</p>
+<p>Tax rules differ by country and change often. Treat this as general guidance and confirm requirements with a qualified accountant. See also our <a href="/blog/gst-invoice-guide">GST</a> and <a href="/blog/vat-invoice-guide">VAT</a> guides, or create a document with our <a href="/invoice-generator">free invoice generator</a>.</p>
 `,
   },
   {
@@ -376,11 +383,14 @@ Hi Sam, a quick reminder that invoice 2026-0041 (£2,400) is due today. I have r
       "How a GST invoice differs from a regular invoice, the fields it must carry, and how to handle CGST, SGST and IGST splits.",
     category: "tax",
     date: "2026-05-06",
+    updated: "2026-09-24",
     readingTime: 7,
-    author: "Priya Raman",
+    author: "Invoice Creator Editorial Team",
+    jurisdiction: "GST jurisdictions (e.g. India)",
     content: `
+<p><strong>Important:</strong> Tax laws, rates, registration requirements, and invoicing rules can change and may vary by jurisdiction. This article provides general informational content and should not be considered professional tax, accounting, or legal advice. Verify current requirements with the relevant tax authority or a qualified professional.</p>
 <h2>What is a GST invoice?</h2>
-<p>A GST invoice is the document a registered supplier issues for a taxable supply of goods or services. It carries GST identification numbers for both parties and shows tax split by component where applicable.</p>
+<p>A GST invoice is the document a registered supplier issues for a taxable supply of goods or services. It carries GST identification numbers for both parties and shows tax split by component where applicable. Requirements described here are typical of GST systems such as India&apos;s and may not apply elsewhere.</p>
 <h2>Required fields</h2>
 <ul>
 <li>Supplier name, address and GSTIN</li>
@@ -400,7 +410,7 @@ Hi Sam, a quick reminder that invoice 2026-0041 (£2,400) is due today. I have r
 <li>Keep a separate series for export invoices.</li>
 <li>Issue credit notes rather than editing an issued invoice.</li>
 </ul>
-<p>Use the notes and tax fields in our <a href="/invoice-generator">invoice generator</a> to capture these details. Always confirm current requirements with your accountant.</p>
+<p>Use the notes and tax fields in our <a href="/invoice-generator">invoice generator</a> to capture these details. Always confirm current requirements with your accountant. Related: <a href="/faq">FAQ</a>, <a href="/invoice-templates">invoice templates</a>.</p>
 `,
   },
   {
@@ -410,11 +420,14 @@ Hi Sam, a quick reminder that invoice 2026-0041 (£2,400) is due today. I have r
       "Everything a VAT invoice must show, when a simplified invoice is allowed, and how reverse charge works for cross-border services.",
     category: "tax",
     date: "2026-04-29",
+    updated: "2026-09-24",
     readingTime: 7,
-    author: "Maya Ellison",
+    author: "Invoice Creator Editorial Team",
+    jurisdiction: "VAT jurisdictions (e.g. UK / EU)",
     content: `
+<p><strong>Important:</strong> Tax laws, rates, registration requirements, and invoicing rules can change and may vary by jurisdiction. This article provides general informational content and should not be considered professional tax, accounting, or legal advice. Verify current requirements with the relevant tax authority or a qualified professional.</p>
 <h2>Full VAT invoice</h2>
-<p>A full VAT invoice must show your VAT number, the customer's details, a unique number, the supply date (tax point), a description per line, the net amount per VAT rate, the rate applied, the VAT amount and the gross total.</p>
+<p>A full VAT invoice must show your VAT number, the customer's details, a unique number, the supply date (tax point), a description per line, the net amount per VAT rate, the rate applied, the VAT amount and the gross total. Exact field lists differ by country.</p>
 <h2>Simplified invoices</h2>
 <p>Many jurisdictions allow a simplified VAT invoice below a value threshold — typically showing the gross amount and the VAT rate rather than a full breakdown. Check your local threshold before relying on it.</p>
 <h2>Reverse charge</h2>
@@ -423,7 +436,7 @@ Hi Sam, a quick reminder that invoice 2026-0041 (£2,400) is due today. I have r
 <p>Subtotal by rate. Show standard-rated, reduced-rated and zero-rated lines separately, each with its own VAT amount.</p>
 <h2>Credit notes</h2>
 <p>To correct a VAT invoice, issue a credit note referencing the original invoice number — never amend and resend the original.</p>
-<p>This is general information, not tax advice. Build the document in the <a href="/invoice-generator">generator</a> and confirm details with your accountant.</p>
+<p>This is general information, not tax advice. Build the document in the <a href="/invoice-generator">generator</a> and confirm details with your accountant. See also our <a href="/about">About</a> page and <a href="/disclaimer">Disclaimer</a>.</p>
 `,
   },
   {
@@ -434,7 +447,7 @@ Hi Sam, a quick reminder that invoice 2026-0041 (£2,400) is due today. I have r
     category: "design",
     date: "2026-04-22",
     readingTime: 6,
-    author: "Priya Raman",
+    author: "Invoice Creator Editorial Team",
     content: `
 <h2>Hierarchy first</h2>
 <ol>
@@ -460,7 +473,7 @@ Hi Sam, a quick reminder that invoice 2026-0041 (£2,400) is due today. I have r
 <li>Never let a table split awkwardly across pages.</li>
 <li>Leave a signature area only if your clients actually require one.</li>
 </ol>
-<p>All fifteen principles are baked into our <a href="/invoice-templates">invoice templates</a>.</p>
+<p>All fifteen principles are baked into our <a href="/invoice-templates">invoice templates</a>. You can create your invoice directly using our <a href="/invoice-generator">Free Invoice Generator</a>.</p>
 `,
   },
 ];

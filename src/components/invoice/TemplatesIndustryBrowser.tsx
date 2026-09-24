@@ -21,7 +21,7 @@ function TemplateCard({ t }: { t: InvoiceTemplate }) {
       </Link>
       <h3 className="mt-4 text-lg font-bold">{t.name}</h3>
       <p className="mt-1 text-sm font-medium text-primary">
-        Top-rated {t.industry} invoice
+        {t.industry} invoice template
       </p>
       <p className="mt-1 text-sm text-muted-foreground">{t.tagline}</p>
       <p className="mt-3 text-xs uppercase tracking-wide text-muted-foreground">
@@ -52,13 +52,13 @@ export function TemplatesIndustryBrowser() {
 
   const heading =
     selected === "all"
-      ? "All top-rated templates"
-      : `Top-rated ${selected} templates`;
+      ? "All professional templates"
+      : `${selected} invoice templates`;
 
   const sub =
     selected === "all"
-      ? `${filtered.length} high-rated templates across every industry`
-      : `${filtered.length} high-rated template${filtered.length === 1 ? "" : "s"} for ${selected.toLowerCase()} businesses`;
+      ? `${filtered.length} professional templates across every industry`
+      : `${filtered.length} professional template${filtered.length === 1 ? "" : "s"} for ${selected.toLowerCase()} businesses`;
 
   return (
     <div className="mt-10">

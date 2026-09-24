@@ -122,7 +122,7 @@ export function SearchPage() {
                     />
                     <span>
                       <span className="block font-semibold">
-                        {t.name} · Top-rated {t.industry}
+                        {t.name} · {t.industry}
                       </span>
                       <span className="block text-sm text-muted-foreground">{t.tagline}</span>
                     </span>
