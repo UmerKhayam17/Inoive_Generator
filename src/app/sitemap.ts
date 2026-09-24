@@ -21,6 +21,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: `${base}/about`, changeFrequency: "yearly", priority: 0.4 },
     { url: `${base}/contact`, changeFrequency: "yearly", priority: 0.4 },
     { url: `${base}/faq`, changeFrequency: "monthly", priority: 0.5 },
+    { url: `${base}/user-guide`, changeFrequency: "monthly", priority: 0.7 },
     { url: `${base}/search`, changeFrequency: "monthly", priority: 0.3 },
     { url: `${base}/privacy-policy`, changeFrequency: "yearly", priority: 0.2 },
     { url: `${base}/cookie-policy`, changeFrequency: "yearly", priority: 0.2 },
@@ -42,7 +43,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     })),
     ...POSTS.map((p) => ({
       url: `${base}/blog/${p.slug}`,
-      lastModified: p.date,
+      lastModified: p.updated ?? p.date,
       changeFrequency: "monthly" as const,
       priority: 0.7,
     })),

@@ -3,6 +3,7 @@ import Link from "next/link";
 import { notFound } from "next/navigation";
 import { Clock, User } from "lucide-react";
 import { Breadcrumbs, breadcrumbSchema } from "@/components/layout/Breadcrumbs";
+import { SmoothScrollButton } from "@/components/layout/SmoothScrollButton";
 import { AdSlot } from "@/components/layout/AdSlot";
 import { Button } from "@/components/ui/button";
 import { CATEGORIES, POSTS, getPost, relatedPosts, type Post } from "@/data/blog";
@@ -78,6 +79,13 @@ export default async function PostPage({ params }: { params: Promise<{ slug: str
     month: "long",
     day: "numeric",
   });
+  const modifiedIso = post.updated ?? post.date;
+  const modified = new Date(modifiedIso).toLocaleDateString("en-US", {
+    year: "numeric",
+    month: "long",
+    day: "numeric",
+  });
+  const isTax = post.category === "tax";
 
   const jsonLd = {
     "@context": "https://schema.org",
@@ -85,10 +93,14 @@ export default async function PostPage({ params }: { params: Promise<{ slug: str
     headline: post.title,
     description: post.description,
     datePublished: post.date,
-    dateModified: post.date,
-    author: { "@type": "Person", name: post.author },
-    publisher: { "@type": "Organization", name: SITE.name },
-    mainEntityOfPage: { "@type": "WebPage", "@id": `/blog/${slug}` },
+    dateModified: modifiedIso,
+    author: { "@type": "Organization", name: post.author },
+    publisher: {
+      "@type": "Organization",
+      name: SITE.operator,
+      url: SITE.url,
+    },
+    mainEntityOfPage: { "@type": "WebPage", "@id": `/blog/${post.slug}` },
   };
 
   const breadcrumbLd = breadcrumbSchema([
@@ -132,12 +144,20 @@ export default async function PostPage({ params }: { params: Promise<{ slug: str
           <p className="mt-4 text-lg text-muted-foreground">{post.description}</p>
           <div className="mt-5 flex flex-wrap items-center gap-4 text-sm text-muted-foreground">
             <span className="flex items-center gap-1.5">
-              <User className="size-4" aria-hidden="true" /> {post.author}
+              <User className="size-4" aria-hidden="true" /> By {post.author}
             </span>
             <span className="flex items-center gap-1.5">
               <Clock className="size-4" aria-hidden="true" /> {post.readingTime} min read
             </span>
-            <time dateTime={post.date}>{published}</time>
+            <time dateTime={post.date}>Published: {published}</time>
+            {post.updated && (
+              <time dateTime={post.updated}>
+                {isTax ? "Last reviewed" : "Last updated"}: {modified}
+              </time>
+            )}
+            {post.jurisdiction && (
+              <span>Applicable jurisdiction: {post.jurisdiction}</span>
+            )}
           </div>
 
           <div className="mt-8">
@@ -155,9 +175,9 @@ export default async function PostPage({ params }: { params: Promise<{ slug: str
               <ol className="mt-3 grid gap-2 text-sm">
                 {headings.map((h) => (
                   <li key={h.id}>
-                    <a href={`#${h.id}`} className="hover:text-primary">
+                    <SmoothScrollButton targetId={h.id} className="hover:text-primary">
                       {h.text}
-                    </a>
+                    </SmoothScrollButton>
                   </li>
                 ))}
               </ol>
@@ -178,17 +198,14 @@ export default async function PostPage({ params }: { params: Promise<{ slug: str
           <section className="mt-10 rounded-xl border border-border bg-card p-6">
             <div className="flex items-start gap-4">
               <span className="grid size-12 shrink-0 place-items-center rounded-full bg-primary/10 font-display text-lg font-bold text-primary">
-                {post.author
-                  .split(" ")
-                  .map((w: string) => w[0])
-                  .join("")}
+                IC
               </span>
               <div>
                 <h2 className="text-lg font-bold">{post.author}</h2>
                 <p className="mt-1 text-sm leading-relaxed text-muted-foreground">
-                  {post.author} writes about invoicing, cash flow and small-business finance for{" "}
-                  {SITE.name}. Every guide is reviewed against the fields our own invoice generator
-                  produces, so the advice matches the tool.
+                  Guides on invoicing, cash flow and small-business finance from {SITE.name},
+                  operated by {SITE.operator}. Content is reviewed for accuracy against the fields
+                  our own invoice generator produces.
                 </p>
                 <Button asChild size="sm" variant="outline" className="mt-4">
                   <Link href="/invoice-generator">Try the invoice generator</Link>
@@ -229,9 +246,12 @@ export default async function PostPage({ params }: { params: Promise<{ slug: str
               <ol className="mt-3 grid gap-2 text-sm">
                 {headings.map((h) => (
                   <li key={h.id}>
-                    <a href={`#${h.id}`} className="text-muted-foreground hover:text-primary">
+                    <SmoothScrollButton
+                      targetId={h.id}
+                      className="text-muted-foreground hover:text-primary"
+                    >
                       {h.text}
-                    </a>
+                    </SmoothScrollButton>
                   </li>
                 ))}
               </ol>
