@@ -1,5 +1,4 @@
 import type { Metadata } from "next";
-import Script from "next/script";
 import { Plus_Jakarta_Sans, Sora } from "next/font/google";
 import { SiteHeader } from "@/components/layout/SiteHeader";
 import { SiteFooter } from "@/components/layout/SiteFooter";
@@ -50,6 +49,9 @@ export const metadata: Metadata = {
     images: ["/invoice_logo.png"],
   },
   icons: { icon: "/favicon.ico" },
+  other: {
+    "google-adsense-account": ADSENSE_CLIENT,
+  },
 };
 
 const themeScript = `try{var t=localStorage.getItem('theme');if(t==='dark'||(!t&&window.matchMedia('(prefers-color-scheme: dark)').matches)){document.documentElement.classList.add('dark')}}catch(e){}`;
@@ -87,13 +89,12 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
     <html lang="en" className={`${sans.variable} ${display.variable} scroll-smooth`} suppressHydrationWarning>
       <head>
         <meta name="google-site-verification" content="_c7mZwE2FNiRLG4kNxK0KTZ9posJZy7vIx9Mr1rsyr4" />
-        {/* Step 5: AdSense loader only (meta + ads.txt later if needed) */}
-        <Script
-          id="adsense-loader"
+        {/* Native <script> (not next/script) so AdSense crawler sees the exact tag */}
+        <meta name="google-adsense-account" content={ADSENSE_CLIENT} />
+        <script
           async
           src={`https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=${ADSENSE_CLIENT}`}
           crossOrigin="anonymous"
-          strategy="beforeInteractive"
         />
         <script
           type="application/ld+json"
