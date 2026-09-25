@@ -11,12 +11,8 @@ export const SITE = {
   address: "Islamabad, Pakistan",
   hours: "Monday – Friday, 9:00 – 18:00 (PKT)",
   url: process.env.NEXT_PUBLIC_SITE_URL || "https://nextfreeinvoicegenerator.com",
-  social: [
-    { label: "X (Twitter)", href: "https://x.com" },
-    { label: "LinkedIn", href: "https://linkedin.com" },
-    { label: "GitHub", href: "https://github.com" },
-    { label: "YouTube", href: "https://youtube.com" },
-  ],
+  /** Only list profiles you actually operate. Empty until real URLs are set. */
+  social: [] as { label: string; href: string }[],
 };
 
 export const NAV_LINKS = [

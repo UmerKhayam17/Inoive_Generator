@@ -85,7 +85,7 @@ export default async function PostPage({ params }: { params: Promise<{ slug: str
     month: "long",
     day: "numeric",
   });
-  const isTax = post.category === "tax";
+  const isTax = post.category === "tax-compliance";
 
   const jsonLd = {
     "@context": "https://schema.org",
@@ -158,10 +158,6 @@ export default async function PostPage({ params }: { params: Promise<{ slug: str
             {post.jurisdiction && (
               <span>Applicable jurisdiction: {post.jurisdiction}</span>
             )}
-          </div>
-
-          <div className="mt-8">
-            <AdSlot id="post-above-content" format="leaderboard" />
           </div>
 
           {headings.length > 1 && (
@@ -273,7 +269,6 @@ export default async function PostPage({ params }: { params: Promise<{ slug: str
                 ))}
             </ul>
           </div>
-          <AdSlot id="post-sidebar" format="rectangle" />
         </aside>
       </div>
     </div>

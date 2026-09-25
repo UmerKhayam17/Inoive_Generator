@@ -469,3 +469,13 @@ export function getLocale(slug: string | null | undefined): InvoiceLocale | unde
 export function getLocaleSlugs(): string[] {
   return LOCALES.map((l) => l.slug);
 }
+
+/** Ensures each locale path stays aligned with its slug (used by sitemap & routes). */
+export function assertLocalePaths(): void {
+  for (const l of LOCALES) {
+    const expected = `/invoice-generator/${l.slug}`;
+    if (l.path !== expected) {
+      throw new Error(`Locale "${l.slug}" path is "${l.path}", expected "${expected}"`);
+    }
+  }
+}

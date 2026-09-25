@@ -6,7 +6,6 @@ import { useRouter, useSearchParams } from "next/navigation";
 import { Search as SearchIcon } from "lucide-react";
 import { Input } from "@/components/ui/input";
 import { PageHeader } from "@/components/layout/PageHeader";
-import { AdSlot } from "@/components/layout/AdSlot";
 import { POSTS, CATEGORIES } from "@/data/blog";
 import { TEMPLATES } from "@/data/templates";
 
@@ -100,10 +99,6 @@ export function SearchPage() {
             </div>
           </div>
         )}
-
-        <div className="mt-8">
-          <AdSlot id="search-top" format="leaderboard" />
-        </div>
 
         {templates.length > 0 && (
           <section className="mt-10">

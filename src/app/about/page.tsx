@@ -1,7 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import { PageHeader } from "@/components/layout/PageHeader";
-import { AdSlot } from "@/components/layout/AdSlot";
 import { Button } from "@/components/ui/button";
 import { SITE } from "@/data/site";
 import { TEMPLATE_COUNT } from "@/data/templates";
@@ -115,7 +114,6 @@ export default function Page() {
               <p className="mt-5 font-display text-3xl font-extrabold">0</p>
               <p className="text-sm text-muted-foreground">accounts required — ever</p>
             </div>
-            <AdSlot id="about-sidebar" format="rectangle" />
           </aside>
         </div>
 

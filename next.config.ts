@@ -7,6 +7,21 @@ const nextConfig: NextConfig = {
     // Prettier CRLF noise on Windows should not block production builds.
     ignoreDuringBuilds: true,
   },
+  // Keep old category URLs working after slug corrections.
+  async redirects() {
+    return [
+      {
+        source: "/blog/category/tax",
+        destination: "/blog/category/tax-compliance",
+        permanent: true,
+      },
+      {
+        source: "/blog/category/design",
+        destination: "/blog/category/design-templates",
+        permanent: true,
+      },
+    ];
+  },
 };
 
 export default nextConfig;
