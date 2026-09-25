@@ -6,7 +6,10 @@ export default function robots(): MetadataRoute.Robots {
     rules: {
       userAgent: "*",
       allow: "/",
+      // Utility UI — not worth crawl budget; important pages stay allowed above.
+      disallow: ["/search"],
     },
     sitemap: `${SITE.url}/sitemap.xml`,
+    host: SITE.url,
   };
 }

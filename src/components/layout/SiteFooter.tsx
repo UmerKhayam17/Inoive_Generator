@@ -126,20 +126,28 @@ export function SiteFooter() {
           <p className="text-center">
             {SITE.name} · Operated by {SITE.operator}
           </p>
-          <ul className="flex flex-wrap items-center justify-center gap-4 sm:justify-end">
-            {SITE.social.map((s) => (
-              <li key={s.label}>
-                <a
-                  href={s.href}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="hover:text-ink-foreground"
-                >
-                  {s.label}
-                </a>
-              </li>
-            ))}
-          </ul>
+          {SITE.social.length > 0 ? (
+            <ul className="flex flex-wrap items-center justify-center gap-4 sm:justify-end">
+              {SITE.social.map((s) => (
+                <li key={s.label}>
+                  <a
+                    href={s.href}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="hover:text-ink-foreground"
+                  >
+                    {s.label}
+                  </a>
+                </li>
+              ))}
+            </ul>
+          ) : (
+            <p className="text-center sm:text-right">
+              <Link href="/contact" className="hover:text-ink-foreground">
+                Contact support
+              </Link>
+            </p>
+          )}
         </div>
       </div>
     </footer>

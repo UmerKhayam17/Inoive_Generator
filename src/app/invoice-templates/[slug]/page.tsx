@@ -8,6 +8,7 @@ import { AdSlot } from "@/components/layout/AdSlot";
 import { InvoicePreview } from "@/components/invoice/InvoicePreview";
 import { ResponsiveInvoiceFrame } from "@/components/invoice/ResponsiveInvoiceFrame";
 import { TEMPLATES, templateLabel } from "@/data/templates";
+import { getTemplateGuide } from "@/data/templateGuides";
 import { SITE } from "@/data/site";
 import { createDefaultInvoice } from "@/lib/invoice";
 
@@ -72,6 +73,7 @@ export default async function TemplateDetailPage({
   const others = TEMPLATES.filter((t) => t.slug !== template.slug).slice(0, 5);
   const description = template.description.slice(0, 155);
   const imageUrl = `${SITE.url}/invoice-templates/${slug}/opengraph-image`;
+  const guide = getTemplateGuide(template.slug);
 
   const productLd = {
     "@context": "https://schema.org",
@@ -159,12 +161,32 @@ export default async function TemplateDetailPage({
                 </li>
               ))}
             </ul>
-            <h2 className="text-2xl font-bold text-foreground">What you get</h2>
-            <p>
-              A print-ready A4 layout with your logo, itemised lines, tax and discount handling, a
-              signature area and a totals panel. Switch to this template in the generator and the
-              downloaded PDF matches this preview exactly.
-            </p>
+            {guide ? (
+              <div
+                className="mt-8"
+                // Guide copy is authored in-repo (src/data/templateGuides.ts), never user input.
+                dangerouslySetInnerHTML={{ __html: guide }}
+              />
+            ) : null}
+            <h2 className="mt-8 text-2xl font-bold text-foreground">Included with every template</h2>
+            <ul className="mt-3 space-y-2">
+              <li className="flex items-center gap-2">
+                <Check className="size-4 text-primary" aria-hidden="true" /> Print-ready A4 layout with
+                logo support
+              </li>
+              <li className="flex items-center gap-2">
+                <Check className="size-4 text-primary" aria-hidden="true" /> Itemised lines with tax
+                and discount handling
+              </li>
+              <li className="flex items-center gap-2">
+                <Check className="size-4 text-primary" aria-hidden="true" /> Signature area and clear
+                totals panel
+              </li>
+              <li className="flex items-center gap-2">
+                <Check className="size-4 text-primary" aria-hidden="true" /> Instant PDF that matches
+                this preview
+              </li>
+            </ul>
           </div>
 
           <div className="mt-10">
@@ -198,7 +220,6 @@ export default async function TemplateDetailPage({
               ))}
             </ul>
           </div>
-          <AdSlot id="template-detail-sidebar" format="rectangle" />
         </aside>
       </div>
     </div>

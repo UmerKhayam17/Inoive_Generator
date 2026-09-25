@@ -70,9 +70,6 @@ export default function TemplatesIndexPage() {
       <div className="mx-auto max-w-[96rem] px-4 py-12 sm:px-6 lg:px-8">
         <AdSlot id="templates-top" format="leaderboard" />
         <TemplatesIndustryBrowser />
-        <div className="mt-12">
-          <AdSlot id="templates-bottom" format="leaderboard" />
-        </div>
       </div>
     </>
   );
