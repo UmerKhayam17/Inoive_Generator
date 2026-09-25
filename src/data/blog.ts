@@ -21,13 +21,18 @@ export const CATEGORIES = [
   { slug: "design-templates", name: "Design & Templates" },
 ];
 
-/** Approximate reading time from HTML (~220 words per minute). */
+/** Approximate reading time from HTML (~200 wpm for instructional articles). */
 export function estimateReadingTime(html: string): number {
-  const words = html.replace(/<[^>]+>/g, " ").trim().split(/\s+/).filter(Boolean).length;
-  return Math.max(1, Math.round(words / 220));
+  const words = html
+    .replace(/<[^>]+>/g, " ")
+    .replace(/&[a-z]+;/gi, " ")
+    .trim()
+    .split(/\s+/)
+    .filter(Boolean).length;
+  return Math.max(1, Math.round(words / 200));
 }
 
-export const POSTS: Post[] = [
+export const POST_DRAFTS: Omit<Post, "readingTime">[] = [
   {
     slug: "what-is-an-invoice",
     title: "What Is an Invoice? A Plain-English Definition for Small Businesses",
@@ -36,7 +41,6 @@ export const POSTS: Post[] = [
     category: "invoicing-basics",
     date: "2026-07-28",
     updated: "2026-09-25",
-    readingTime: 6,
     author: "Invoice Creator Editorial Team",
     content: `
 <h2>The short definition</h2>
@@ -99,7 +103,6 @@ export const POSTS: Post[] = [
     category: "guides",
     date: "2026-07-22",
     updated: "2026-09-25",
-    readingTime: 5,
     author: "Invoice Creator Editorial Team",
     content: `
 <h2>Before you start</h2>
@@ -175,7 +178,6 @@ export const POSTS: Post[] = [
     category: "comparisons",
     date: "2026-07-15",
     updated: "2026-09-25",
-    readingTime: 4,
     author: "Invoice Creator Editorial Team",
     content: `
 <h2>The core difference</h2>
@@ -260,7 +262,6 @@ export const POSTS: Post[] = [
     category: "comparisons",
     date: "2026-07-08",
     updated: "2026-09-25",
-    readingTime: 4,
     author: "Invoice Creator Editorial Team",
     content: `
 <h2>Definitions</h2>
@@ -334,7 +335,6 @@ export const POSTS: Post[] = [
     category: "comparisons",
     date: "2026-07-01",
     updated: "2026-09-25",
-    readingTime: 4,
     author: "Invoice Creator Editorial Team",
     content: `
 <h2>A quotation is an offer</h2>
@@ -411,7 +411,6 @@ export const POSTS: Post[] = [
     category: "design-templates",
     date: "2026-06-24",
     updated: "2026-09-25",
-    readingTime: 4,
     author: "Invoice Creator Editorial Team",
     content: `
 <h2>Why the template matters</h2>
@@ -492,7 +491,6 @@ export const POSTS: Post[] = [
     category: "guides",
     date: "2026-06-17",
     updated: "2026-09-25",
-    readingTime: 4,
     author: "Invoice Creator Editorial Team",
     content: `
 <h2>How to use these examples</h2>
@@ -587,7 +585,6 @@ export const POSTS: Post[] = [
     category: "guides",
     date: "2026-06-10",
     updated: "2026-09-25",
-    readingTime: 4,
     author: "Invoice Creator Editorial Team",
     content: `
 <h2>Set terms before you start</h2>
@@ -663,7 +660,6 @@ export const POSTS: Post[] = [
     category: "guides",
     date: "2026-06-03",
     updated: "2026-09-25",
-    readingTime: 4,
     author: "Invoice Creator Editorial Team",
     content: `
 <h2>Design the process, not just the document</h2>
@@ -736,7 +732,6 @@ export const POSTS: Post[] = [
     category: "guides",
     date: "2026-05-27",
     updated: "2026-09-25",
-    readingTime: 4,
     author: "Invoice Creator Editorial Team",
     content: `
 <h2>Send a PDF, always</h2>
@@ -820,7 +815,6 @@ export const POSTS: Post[] = [
     category: "invoicing-basics",
     date: "2026-05-20",
     updated: "2026-09-25",
-    readingTime: 4,
     author: "Invoice Creator Editorial Team",
     content: `
 <h2>Why small errors cost weeks</h2>
@@ -900,7 +894,6 @@ export const POSTS: Post[] = [
     category: "tax-compliance",
     date: "2026-05-13",
     updated: "2026-09-25",
-    readingTime: 4,
     author: "Invoice Creator Editorial Team",
     jurisdiction: "General",
     content: `
@@ -986,7 +979,6 @@ export const POSTS: Post[] = [
     category: "tax-compliance",
     date: "2026-05-06",
     updated: "2026-09-25",
-    readingTime: 4,
     author: "Invoice Creator Editorial Team",
     jurisdiction: "GST jurisdictions (e.g. India)",
     content: `
@@ -1070,7 +1062,6 @@ export const POSTS: Post[] = [
     category: "tax-compliance",
     date: "2026-04-29",
     updated: "2026-09-25",
-    readingTime: 4,
     author: "Invoice Creator Editorial Team",
     jurisdiction: "VAT jurisdictions (e.g. UK / EU)",
     content: `
@@ -1149,7 +1140,6 @@ export const POSTS: Post[] = [
     category: "design-templates",
     date: "2026-04-22",
     updated: "2026-09-25",
-    readingTime: 4,
     author: "Invoice Creator Editorial Team",
     content: `
 <h2>Design for approval speed, not decoration</h2>
@@ -1229,6 +1219,12 @@ export const POSTS: Post[] = [
 `,
   },
 ];
+
+/** Reading time is derived from content length so it cannot drift from the article. */
+export const POSTS: Post[] = POST_DRAFTS.map((p) => ({
+  ...p,
+  readingTime: estimateReadingTime(p.content),
+}));
 
 export const getPost = (slug: string) => POSTS.find((p) => p.slug === slug);
 export const getCategory = (slug: string) => CATEGORIES.find((c) => c.slug === slug);
