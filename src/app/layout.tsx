@@ -6,9 +6,12 @@ import { SiteFooter } from "@/components/layout/SiteFooter";
 import { Toaster } from "@/components/ui/sonner";
 import { Analytics } from "@/components/Analytics";
 import { CookieConsent } from "@/components/CookieConsent";
-import { ADSENSE_CLIENT } from "@/lib/analytics";
 import { SITE } from "@/data/site";
 import "./globals.css";
+
+/** Live AdSense publisher ID (also overridable via NEXT_PUBLIC_ADSENSE_CLIENT). */
+const ADSENSE_CLIENT =
+  process.env.NEXT_PUBLIC_ADSENSE_CLIENT || "ca-pub-9252917783014745";
 
 const sans = Plus_Jakarta_Sans({
   subsets: ["latin"],
@@ -84,18 +87,20 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
     <html lang="en" className={`${sans.variable} ${display.variable} scroll-smooth`} suppressHydrationWarning>
       <head>
         <meta name="google-site-verification" content="_c7mZwE2FNiRLG4kNxK0KTZ9posJZy7vIx9Mr1rsyr4" />
+        {/* Step 5: AdSense loader only (meta + ads.txt later if needed) */}
+        <Script
+          id="adsense-loader"
+          async
+          src={`https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=${ADSENSE_CLIENT}`}
+          crossOrigin="anonymous"
+          strategy="beforeInteractive"
+        />
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
         />
       </head>
       <body className="font-sans" suppressHydrationWarning>
-        <Script
-          async
-          src={`https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=${ADSENSE_CLIENT}`}
-          crossOrigin="anonymous"
-          strategy="afterInteractive"
-        />
         <script dangerouslySetInnerHTML={{ __html: themeScript }} />
         <a
           href="#main"

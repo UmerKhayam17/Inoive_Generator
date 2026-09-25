@@ -24,7 +24,7 @@ declare global {
 export const GA_ID = process.env.NEXT_PUBLIC_GA_MEASUREMENT_ID;
 /** Publisher client — env override, otherwise the live AdSense account. */
 export const ADSENSE_CLIENT =
-  process.env.NEXT_PUBLIC_ADSENSE_CLIENT;
+  process.env.NEXT_PUBLIC_ADSENSE_CLIENT || "ca-pub-9252917783014745";
 
 export function getConsent(): ConsentValue | null {
   if (typeof window === "undefined") return null;
