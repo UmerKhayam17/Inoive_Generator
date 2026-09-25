@@ -5,7 +5,7 @@
  * environment variable is present AND the visitor has accepted cookies.
  *
  *   NEXT_PUBLIC_GA_MEASUREMENT_ID  e.g. G-XXXXXXXXXX
- *   NEXT_PUBLIC_ADSENSE_CLIENT     e.g. ca-pub-0000000000000000
+ *   NEXT_PUBLIC_ADSENSE_CLIENT     e.g. ca-pub-9252917783014745
  */
 
 export const CONSENT_KEY = "invoicecreator:cookie-consent:v1";
@@ -22,7 +22,9 @@ declare global {
 }
 
 export const GA_ID = process.env.NEXT_PUBLIC_GA_MEASUREMENT_ID;
-export const ADSENSE_CLIENT = process.env.NEXT_PUBLIC_ADSENSE_CLIENT;
+/** Publisher client — env override, otherwise the live AdSense account. */
+export const ADSENSE_CLIENT =
+  process.env.NEXT_PUBLIC_ADSENSE_CLIENT;
 
 export function getConsent(): ConsentValue | null {
   if (typeof window === "undefined") return null;
