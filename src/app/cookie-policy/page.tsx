@@ -22,16 +22,22 @@ export default function Page() {
   return (
     <LegalPage
       title="Cookie Policy"
-      updated="1 August 2026"
+      updated="24 September 2026"
       lead="Cookies are small files stored by your browser. Here is every category we use and how to switch them off."
     >
-      <h2>1. What cookies are</h2>
+      <h2>1. Who we are</h2>
+      <p>
+        {SITE.name} is operated by {SITE.operator}, based in {SITE.address}. This Cookie Policy
+        explains how cookies and similar technologies are used on this website.
+      </p>
+
+      <h2>2. What cookies are</h2>
       <p>
         Cookies and similar technologies (local storage, pixels) let a website remember information
         between visits. Some are essential; others are optional.
       </p>
 
-      <h2>2. Categories we use</h2>
+      <h2>3. Categories we use</h2>
       <table>
         <thead>
           <tr>
@@ -66,7 +72,7 @@ export default function Page() {
         </tbody>
       </table>
 
-      <h2>3. Third-party advertising cookies</h2>
+      <h2>4. Third-party advertising cookies</h2>
       <p>
         Third-party vendors, including Google, may use cookies to serve ads based on your prior
         visits to this and other websites. You can opt out of personalised advertising through
@@ -77,19 +83,19 @@ export default function Page() {
         .
       </p>
 
-      <h2>4. Managing cookies in your browser</h2>
+      <h2>5. Managing cookies in your browser</h2>
       <p>
         Every major browser lets you block or delete cookies from its settings menu, usually under
         &quot;Privacy&quot;. Blocking all cookies may break parts of the site, including your saved
         invoice draft.
       </p>
 
-      <h2>5. Do Not Track</h2>
+      <h2>6. Do Not Track</h2>
       <p>
         We honour browser Do Not Track signals for our own analytics where technically supported.
       </p>
 
-      <h2>6. Contact</h2>
+      <h2>7. Contact</h2>
       <p>
         Questions? Email <a href={`mailto:${SITE.email}`}>{SITE.email}</a>. See also our{" "}
         <a href="/privacy-policy">Privacy Policy</a>.

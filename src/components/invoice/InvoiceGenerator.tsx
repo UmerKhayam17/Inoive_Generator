@@ -84,12 +84,15 @@ export function InvoiceGenerator({
     { label: "Home", href: "/" },
     { label: "Invoice generator" },
   ],
+  showBreadcrumbs = true,
 }: {
   localeSlug?: string | null;
   heading?: string;
   lead?: string;
   titleAs?: "h1" | "h2";
   crumbs?: Crumb[];
+  /** Hide breadcrumbs when the parent page already shows them. */
+  showBreadcrumbs?: boolean;
 } = {}) {
   const locale = getLocale(localeSlug);
   const searchParams = useSearchParams();
@@ -376,7 +379,7 @@ export function InvoiceGenerator({
 
   return (
     <div className="mx-auto w-full max-w-[96rem] overflow-x-hidden px-3 py-6 pb-[calc(6.25rem+env(safe-area-inset-bottom))] sm:px-6 sm:py-8 lg:px-8 lg:py-12 lg:pb-12">
-      <Breadcrumbs items={crumbs} />
+      {showBreadcrumbs ? <Breadcrumbs items={crumbs} /> : null}
 
       <div className="flex flex-col gap-4 sm:flex-row sm:flex-wrap sm:items-end sm:justify-between">
         <div className="min-w-0">
@@ -511,7 +514,7 @@ export function InvoiceGenerator({
                       {t.name}
                     </span>
                     <span className="mt-0.5 block truncate text-[10px] text-muted-foreground">
-                      Top-rated {t.industry}
+                      {t.industry}
                     </span>
                   </button>
                 );

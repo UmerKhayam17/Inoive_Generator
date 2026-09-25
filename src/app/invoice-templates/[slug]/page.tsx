@@ -28,6 +28,7 @@ export async function generateMetadata({
   const description = template
     ? `Create a professional ${template.industry.toLowerCase()} invoice with our free ${template.name} Invoice Template. Customize your invoice and download it as a PDF.`
     : "Free invoice template with live preview and instant PDF download.";
+  const imageUrl = `${SITE.url}/invoice-templates/${slug}/opengraph-image`;
 
   return {
     title,
@@ -38,8 +39,23 @@ export async function generateMetadata({
       description,
       type: "website",
       url: `/invoice-templates/${slug}`,
+      images: [
+        {
+          url: imageUrl,
+          width: 1200,
+          height: 630,
+          alt: template
+            ? `${template.name} Invoice Template`
+            : "Invoice template",
+        },
+      ],
     },
-    twitter: { title, description },
+    twitter: {
+      title,
+      description,
+      card: "summary_large_image",
+      images: [imageUrl],
+    },
   };
 }
 
@@ -55,19 +71,21 @@ export default async function TemplateDetailPage({
   const sample = { ...createDefaultInvoice(), templateSlug: template.slug };
   const others = TEMPLATES.filter((t) => t.slug !== template.slug).slice(0, 5);
   const description = template.description.slice(0, 155);
+  const imageUrl = `${SITE.url}/invoice-templates/${slug}/opengraph-image`;
 
   const productLd = {
     "@context": "https://schema.org",
     "@type": "Product",
     name: `${template.name} Invoice Template`,
     description,
+    image: [imageUrl, `${SITE.url}/invoice_logo.png`],
     brand: { "@type": "Brand", name: SITE.name },
     offers: {
       "@type": "Offer",
       price: "0",
       priceCurrency: "USD",
       availability: "https://schema.org/InStock",
-      url: `/invoice-templates/${slug}`,
+      url: `${SITE.url}/invoice-templates/${slug}`,
     },
   };
 
@@ -130,7 +148,7 @@ export default async function TemplateDetailPage({
             <h2 className="text-2xl font-bold text-foreground">Industry</h2>
             <p>
               Designed for the <strong className="text-foreground">{template.industry}</strong>{" "}
-              industry as a high-rated, top-rated layout. Style name:{" "}
+              industry as a professional invoice layout. Style name:{" "}
               <strong className="text-foreground">{template.name}</strong>.
             </p>
             <h2 className="text-2xl font-bold text-foreground">Who it suits</h2>
@@ -173,7 +191,7 @@ export default async function TemplateDetailPage({
                     />
                     {t.name}
                     <span className="ml-auto text-xs font-normal text-muted-foreground">
-                      Top-rated {t.industry}
+                      {t.industry}
                     </span>
                   </Link>
                 </li>

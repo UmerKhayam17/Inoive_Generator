@@ -9,9 +9,9 @@ import { TemplatesIndustryBrowser } from "@/components/invoice/TemplatesIndustry
 import { TEMPLATES } from "@/data/templates";
 import { SITE } from "@/data/site";
 
-const TITLE = `${TEMPLATES.length} Top-Rated Free Invoice Templates by Industry | ${SITE.name}`;
+const TITLE = `${TEMPLATES.length} Free Professional Invoice Templates by Industry | ${SITE.name}`;
 const DESCRIPTION =
-  "Browse high-rated and top-rated industry invoice templates — freelance, design, legal, hospitality, healthcare, SaaS and more. Each shows its style name and industry. Preview and download as PDF.";
+  "Browse professional industry invoice templates — freelance, design, legal, hospitality, healthcare, SaaS and more. Each shows its style name and industry. Preview and download as PDF.";
 
 export const metadata: Metadata = {
   title: TITLE,
@@ -29,7 +29,7 @@ export const metadata: Metadata = {
 const itemListLd = {
   "@context": "https://schema.org",
   "@type": "ItemList",
-  name: "Top-rated free invoice templates by industry",
+  name: "Free professional invoice templates by industry",
   itemListElement: TEMPLATES.map((t, i) => ({
     "@type": "ListItem",
     position: i + 1,
@@ -56,8 +56,8 @@ export default function TemplatesIndexPage() {
       />
       <PageHeader
         eyebrow="Templates"
-        title={`${TEMPLATES.length} top-rated free invoice templates`}
-        lead="High-rated designs for every industry — each template lists its style name and industry so you can pick by look or by the business you run. Preview with real numbers, then export the same layout to PDF."
+        title={`${TEMPLATES.length} free professional invoice templates`}
+        lead="Professional designs for every industry — each template lists its style name and industry so you can pick by look or by the business you run. Preview with real numbers, then export the same layout to PDF."
         crumbs={[{ label: "Home", href: "/" }, { label: "Invoice templates" }]}
       >
         <Button asChild size="lg" className="mt-8">

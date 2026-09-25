@@ -261,10 +261,10 @@ export default function Home() {
                 Templates
               </p>
               <h2 className="mt-3 text-3xl font-extrabold sm:text-4xl">
-                Top-rated invoice templates
+                Free professional invoice templates
               </h2>
               <p className="mt-4 text-lg text-muted-foreground">
-                High-rated designs for every industry — print-tested and pixel-perfect in PDF.
+                Professional designs for every industry — print-tested and pixel-perfect in PDF.
               </p>
             </div>
             <Button asChild variant="outline">
@@ -282,7 +282,7 @@ export default function Home() {
                 <TemplateCardPreview slug={t.slug} height={220} />
                 <h3 className="mt-4 text-lg font-bold group-hover:text-primary">{t.name}</h3>
                 <p className="mt-1 text-sm font-medium text-primary">
-                  Top-rated {t.industry} invoice
+                  {t.industry} invoice template
                 </p>
                 <p className="mt-1 text-sm text-muted-foreground">{t.tagline}</p>
                 <p className="mt-3 text-xs uppercase tracking-wide text-muted-foreground">
