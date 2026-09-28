@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { LegalPage } from "@/components/layout/LegalPage";
 import { SITE } from "@/data/site";
+import { canonicalFor } from "@/lib/seo";
 
 const TITLE = `Privacy Policy — ${SITE.name}`;
 const DESCRIPTION =
@@ -13,9 +14,9 @@ export const metadata: Metadata = {
     title: TITLE,
     description: "How Invoice Creator collects, uses and protects information.",
     type: "website",
-    url: "/privacy-policy",
+    url: canonicalFor("/privacy-policy"),
   },
-  alternates: { canonical: "/privacy-policy" },
+  alternates: { canonical: canonicalFor("/privacy-policy") },
 };
 
 export default function Page() {

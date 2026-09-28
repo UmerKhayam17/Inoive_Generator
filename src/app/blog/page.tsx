@@ -3,6 +3,7 @@ import { breadcrumbSchema } from "@/components/layout/Breadcrumbs";
 import { BlogIndex } from "@/components/blog/BlogIndex";
 import { POSTS } from "@/data/blog";
 import { SITE } from "@/data/site";
+import { canonicalFor } from "@/lib/seo";
 
 const TITLE = `Invoicing Blog — Guides, Templates & Tax Explainers | ${SITE.name}`;
 const DESCRIPTION =
@@ -11,12 +12,12 @@ const DESCRIPTION =
 export const metadata: Metadata = {
   title: TITLE,
   description: DESCRIPTION,
-  alternates: { canonical: "/blog" },
+  alternates: { canonical: canonicalFor("/blog") },
   openGraph: {
     title: TITLE,
     description: DESCRIPTION,
     type: "website",
-    url: "/blog",
+    url: canonicalFor("/blog"),
   },
   twitter: {
     title: TITLE,

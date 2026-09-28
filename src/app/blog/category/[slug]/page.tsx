@@ -7,6 +7,7 @@ import { breadcrumbSchema } from "@/components/layout/Breadcrumbs";
 import { PostCard } from "@/components/blog/PostCard";
 import { CATEGORIES, POSTS, getCategory, type Post } from "@/data/blog";
 import { SITE } from "@/data/site";
+import { canonicalFor } from "@/lib/seo";
 
 export function generateStaticParams() {
   return CATEGORIES.map((c) => ({ slug: c.slug }));
@@ -23,16 +24,17 @@ export async function generateMetadata({
   const count = POSTS.filter((p) => p.category === slug).length;
   const title = `${name} — Invoicing Articles (${count}) | ${SITE.name}`;
   const description = `Every ${name.toLowerCase()} article on ${SITE.name}: ${count} practical guides on invoicing for freelancers and small businesses.`;
+  const url = canonicalFor(`/blog/category/${slug}`);
 
   return {
     title,
     description,
-    alternates: { canonical: `/blog/category/${slug}` },
+    alternates: { canonical: url },
     openGraph: {
       title,
       description,
       type: "website",
-      url: `/blog/category/${slug}`,
+      url,
     },
     twitter: { title, description },
   };

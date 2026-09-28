@@ -6,6 +6,7 @@ import { Toaster } from "@/components/ui/sonner";
 import { Analytics } from "@/components/Analytics";
 import { CookieConsent } from "@/components/CookieConsent";
 import { SITE } from "@/data/site";
+import { absoluteUrl, siteLogoUrl } from "@/lib/seo";
 import "./globals.css";
 
 /** Live AdSense publisher ID (also overridable via NEXT_PUBLIC_ADSENSE_CLIENT). */
@@ -63,6 +64,8 @@ const jsonLd = {
       "@type": "Organization",
       name: SITE.name,
       url: SITE.url,
+      logo: siteLogoUrl(),
+      image: siteLogoUrl(),
       email: SITE.email,
       contactPoint: {
         "@type": "ContactPoint",
@@ -70,6 +73,12 @@ const jsonLd = {
         contactType: "customer support",
       },
       description: SITE.description,
+      hasMerchantReturnPolicy: {
+        "@type": "MerchantReturnPolicy",
+        applicableCountry: ["US", "GB", "AE", "PK"],
+        returnPolicyCategory: "https://schema.org/MerchantReturnNotPermitted",
+        merchantReturnLink: absoluteUrl("/terms-and-conditions"),
+      },
     },
     {
       "@type": "WebSite",

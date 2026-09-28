@@ -8,6 +8,7 @@ import { Breadcrumbs, breadcrumbSchema } from "@/components/layout/Breadcrumbs";
 import { InvoiceGenerator } from "@/components/invoice/InvoiceGenerator";
 import { getLocale, getLocaleSlugs, LOCALES, type InvoiceLocale } from "@/data/locales";
 import { SITE } from "@/data/site";
+import { absoluteUrl, digitalOffer, schemaImages, canonicalFor, siteLogoUrl } from "@/lib/seo";
 
 export function generateStaticParams() {
   return getLocaleSlugs().map((locale) => ({ locale }));
@@ -20,26 +21,33 @@ export async function generateMetadata({
 }): Promise<Metadata> {
   const { locale: slug } = await params;
   const locale = getLocale(slug);
+  const path = locale?.path ?? `/invoice-generator/${slug}`;
+  const url = canonicalFor(path);
+
   if (!locale) {
-    return { title: `Invoice generator | ${SITE.name}` };
+    return {
+      title: `Invoice generator | ${SITE.name}`,
+      alternates: { canonical: url },
+    };
   }
 
   return {
     title: locale.seoTitle,
     description: locale.seoDescription,
     keywords: locale.keywords,
-    alternates: { canonical: locale.path },
+    alternates: { canonical: url },
     openGraph: {
       title: locale.seoTitle,
       description: locale.seoDescription,
       type: "website",
-      url: locale.path,
+      url,
     },
     twitter: { title: locale.seoTitle, description: locale.seoDescription },
   };
 }
 
 function LocalePage({ locale }: { locale: InvoiceLocale }) {
+  const pageUrl = absoluteUrl(locale.path);
   const jsonLd = {
     "@context": "https://schema.org",
     "@graph": [
@@ -48,9 +56,13 @@ function LocalePage({ locale }: { locale: InvoiceLocale }) {
         name: `${locale.country} Invoice Generator (${locale.currency}, ${locale.taxIdLabel})`,
         applicationCategory: "BusinessApplication",
         operatingSystem: "Any (web browser)",
-        url: `${SITE.url}${locale.path}`,
+        url: pageUrl,
         description: locale.seoDescription,
-        offers: { "@type": "Offer", price: "0", priceCurrency: locale.currency },
+        image: schemaImages(siteLogoUrl()),
+        offers: digitalOffer({
+          url: pageUrl,
+          priceCurrency: locale.currency,
+        }),
         isAccessibleForFree: true,
       },
       {
@@ -64,7 +76,7 @@ function LocalePage({ locale }: { locale: InvoiceLocale }) {
       breadcrumbSchema([
         { name: "Home", item: `${SITE.url}/` },
         { name: "Invoice generator", item: `${SITE.url}/invoice-generator` },
-        { name: locale.country, item: `${SITE.url}${locale.path}` },
+        { name: locale.country, item: pageUrl },
       ]),
     ],
   };

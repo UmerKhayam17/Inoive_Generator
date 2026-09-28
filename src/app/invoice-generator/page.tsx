@@ -5,6 +5,7 @@ import { InvoiceGenerator } from "@/components/invoice/InvoiceGenerator";
 import { AdSlot } from "@/components/layout/AdSlot";
 import { SITE } from "@/data/site";
 import { TEMPLATE_COUNT } from "@/data/templates";
+import { absoluteUrl, digitalOffer, schemaImages, canonicalFor, siteLogoUrl } from "@/lib/seo";
 
 const TITLE = `Free Invoice Generator — Live Preview & Instant PDF | ${SITE.name}`;
 const DESCRIPTION =
@@ -13,12 +14,12 @@ const DESCRIPTION =
 export const metadata: Metadata = {
   title: TITLE,
   description: DESCRIPTION,
-  alternates: { canonical: "/invoice-generator" },
+  alternates: { canonical: canonicalFor("/invoice-generator") },
   openGraph: {
     title: TITLE,
     description: DESCRIPTION,
     type: "website",
-    url: "/invoice-generator",
+    url: canonicalFor("/invoice-generator"),
   },
   twitter: { title: TITLE, description: DESCRIPTION },
 };
@@ -30,7 +31,9 @@ const jsonLd = {
   applicationCategory: "BusinessApplication",
   operatingSystem: "Any (web browser)",
   description: DESCRIPTION,
-  offers: { "@type": "Offer", price: "0", priceCurrency: "USD" },
+  url: absoluteUrl("/invoice-generator"),
+  image: schemaImages(siteLogoUrl()),
+  offers: digitalOffer({ url: absoluteUrl("/invoice-generator") }),
   isAccessibleForFree: true,
 };
 

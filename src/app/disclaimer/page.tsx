@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { LegalPage } from "@/components/layout/LegalPage";
 import { SITE } from "@/data/site";
+import { canonicalFor } from "@/lib/seo";
 
 const TITLE = `Disclaimer — ${SITE.name}`;
 const DESCRIPTION =
@@ -13,9 +14,9 @@ export const metadata: Metadata = {
     title: TITLE,
     description: "General information only — not professional advice.",
     type: "website",
-    url: "/disclaimer",
+    url: canonicalFor("/disclaimer"),
   },
-  alternates: { canonical: "/disclaimer" },
+  alternates: { canonical: canonicalFor("/disclaimer") },
 };
 
 export default function Page() {

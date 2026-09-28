@@ -25,6 +25,7 @@ import { TEMPLATES, TEMPLATE_COUNT } from "@/data/templates";
 import { LOCALES } from "@/data/locales";
 import { HOME_FAQS } from "@/data/faqs";
 import { SITE } from "@/data/site";
+import { absoluteUrl, digitalOffer, schemaImages, canonicalFor, siteLogoUrl } from "@/lib/seo";
 
 const TITLE = `Free Invoice Generator — Create & Download PDF Invoices | ${SITE.name}`;
 const DESCRIPTION =
@@ -37,13 +38,13 @@ export const metadata: Metadata = {
     title: TITLE,
     description: DESCRIPTION,
     type: "website",
-    url: "/",
+    url: canonicalFor("/"),
   },
   twitter: {
     title: TITLE,
     description: DESCRIPTION,
   },
-  alternates: { canonical: "/" },
+  alternates: { canonical: canonicalFor("/") },
 };
 
 const JSON_LD = {
@@ -54,9 +55,10 @@ const JSON_LD = {
       name: `${SITE.name} Invoice Generator`,
       applicationCategory: "BusinessApplication",
       operatingSystem: "Any (web browser)",
-      url: `${SITE.url}/invoice-generator`,
+      url: absoluteUrl("/invoice-generator"),
       description: DESCRIPTION,
-      offers: { "@type": "Offer", price: "0", priceCurrency: "USD" },
+      image: schemaImages(siteLogoUrl()),
+      offers: digitalOffer({ url: absoluteUrl("/invoice-generator") }),
       isAccessibleForFree: true,
       featureList: [
         "PDF invoice download",

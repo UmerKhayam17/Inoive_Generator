@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Suspense } from "react";
 import { SearchPage } from "@/components/search/SearchPage";
 import { SITE } from "@/data/site";
+import { canonicalFor } from "@/lib/seo";
 
 const TITLE = `Search — Invoice Templates & Guides | ${SITE.name}`;
 const DESCRIPTION =
@@ -10,13 +11,13 @@ const DESCRIPTION =
 export const metadata: Metadata = {
   title: TITLE,
   description: DESCRIPTION,
-  alternates: { canonical: "/search" },
+  alternates: { canonical: canonicalFor("/search") },
   robots: { index: false, follow: true },
   openGraph: {
     title: TITLE,
     description: DESCRIPTION,
     type: "website",
-    url: "/search",
+    url: canonicalFor("/search"),
   },
   twitter: { title: TITLE, description: DESCRIPTION },
 };

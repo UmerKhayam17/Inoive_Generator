@@ -5,6 +5,7 @@ import { AdSlot } from "@/components/layout/AdSlot";
 import { Button } from "@/components/ui/button";
 import { TEMPLATE_COUNT } from "@/data/templates";
 import { SITE } from "@/data/site";
+import { canonicalFor } from "@/lib/seo";
 
 const ALL = [
   {
@@ -84,9 +85,9 @@ export const metadata: Metadata = {
     title: TITLE,
     description: "Everything people ask about creating free PDF invoices online.",
     type: "website",
-    url: "/faq",
+    url: canonicalFor("/faq"),
   },
-  alternates: { canonical: "/faq" },
+  alternates: { canonical: canonicalFor("/faq") },
 };
 
 const JSON_LD = {

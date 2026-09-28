@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { LegalPage } from "@/components/layout/LegalPage";
 import { SITE } from "@/data/site";
+import { canonicalFor } from "@/lib/seo";
 
 const TITLE = `Terms & Conditions — ${SITE.name}`;
 const DESCRIPTION =
@@ -13,9 +14,9 @@ export const metadata: Metadata = {
     title: TITLE,
     description: "Terms governing use of Invoice Creator.",
     type: "website",
-    url: "/terms-and-conditions",
+    url: canonicalFor("/terms-and-conditions"),
   },
-  alternates: { canonical: "/terms-and-conditions" },
+  alternates: { canonical: canonicalFor("/terms-and-conditions") },
 };
 
 export default function Page() {
