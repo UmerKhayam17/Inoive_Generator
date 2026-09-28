@@ -4,6 +4,7 @@ import { PageHeader } from "@/components/layout/PageHeader";
 import { Button } from "@/components/ui/button";
 import { SITE } from "@/data/site";
 import { TEMPLATE_COUNT } from "@/data/templates";
+import { canonicalFor } from "@/lib/seo";
 
 const TITLE = `About ${SITE.name} — Free Invoicing Tools for Small Business`;
 const DESCRIPTION =
@@ -16,9 +17,9 @@ export const metadata: Metadata = {
     title: `About ${SITE.name}`,
     description: DESCRIPTION,
     type: "website",
-    url: "/about",
+    url: canonicalFor("/about"),
   },
-  alternates: { canonical: "/about" },
+  alternates: { canonical: canonicalFor("/about") },
 };
 
 export default function Page() {

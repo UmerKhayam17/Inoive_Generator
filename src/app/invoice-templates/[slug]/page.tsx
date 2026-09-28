@@ -11,6 +11,7 @@ import { TEMPLATES, templateLabel } from "@/data/templates";
 import { getTemplateGuide } from "@/data/templateGuides";
 import { SITE } from "@/data/site";
 import { createDefaultInvoice } from "@/lib/invoice";
+import { absoluteUrl, digitalOffer, schemaImages, canonicalFor } from "@/lib/seo";
 
 export function generateStaticParams() {
   return TEMPLATES.map((t) => ({ slug: t.slug }));
@@ -29,17 +30,18 @@ export async function generateMetadata({
   const description = template
     ? `Create a professional ${template.industry.toLowerCase()} invoice with our free ${template.name} Invoice Template. Customize your invoice and download it as a PDF.`
     : "Free invoice template with live preview and instant PDF download.";
-  const imageUrl = `${SITE.url}/invoice-templates/${slug}/opengraph-image`;
+  const imageUrl = absoluteUrl(`/invoice-templates/${slug}/opengraph-image`);
+  const url = canonicalFor(`/invoice-templates/${slug}`);
 
   return {
     title,
     description,
-    alternates: { canonical: `/invoice-templates/${slug}` },
+    alternates: { canonical: url },
     openGraph: {
       title,
       description,
       type: "website",
-      url: `/invoice-templates/${slug}`,
+      url,
       images: [
         {
           url: imageUrl,
@@ -72,23 +74,28 @@ export default async function TemplateDetailPage({
   const sample = { ...createDefaultInvoice(), templateSlug: template.slug };
   const others = TEMPLATES.filter((t) => t.slug !== template.slug).slice(0, 5);
   const description = template.description.slice(0, 155);
-  const imageUrl = `${SITE.url}/invoice-templates/${slug}/opengraph-image`;
+  const pageUrl = absoluteUrl(`/invoice-templates/${slug}`);
+  const imageUrl = absoluteUrl(`/invoice-templates/${slug}/opengraph-image`);
   const guide = getTemplateGuide(template.slug);
 
-  const productLd = {
+  const appLd = {
     "@context": "https://schema.org",
-    "@type": "Product",
+    "@type": "SoftwareApplication",
     name: `${template.name} Invoice Template`,
     description,
-    image: [imageUrl, `${SITE.url}/invoice_logo.png`],
+    applicationCategory: "BusinessApplication",
+    operatingSystem: "Any (web browser)",
+    url: pageUrl,
+    image: schemaImages(imageUrl),
     brand: { "@type": "Brand", name: SITE.name },
-    offers: {
-      "@type": "Offer",
-      price: "0",
-      priceCurrency: "USD",
-      availability: "https://schema.org/InStock",
-      url: `${SITE.url}/invoice-templates/${slug}`,
-    },
+    offers: digitalOffer({ url: pageUrl }),
+    isAccessibleForFree: true,
+    featureList: [
+      `${template.industry} invoice layout`,
+      "Live preview",
+      "Instant PDF download",
+      "No signup",
+    ],
   };
 
   const breadcrumbLd = breadcrumbSchema([
@@ -101,7 +108,7 @@ export default async function TemplateDetailPage({
     <div className="mx-auto max-w-[96rem] px-4 py-10 sm:px-6 lg:px-8 lg:py-14">
       <script
         type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(productLd) }}
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(appLd) }}
       />
       <script
         type="application/ld+json"

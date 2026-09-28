@@ -1,4 +1,4 @@
-﻿import type { Metadata } from "next";
+import type { Metadata } from "next";
 import Link from "next/link";
 import { PageHeader } from "@/components/layout/PageHeader";
 import { SmoothScrollButton } from "@/components/layout/SmoothScrollButton";
@@ -8,6 +8,7 @@ import { Button } from "@/components/ui/button";
 import { LOCALES } from "@/data/locales";
 import { SITE } from "@/data/site";
 import { TEMPLATE_COUNT, TEMPLATES } from "@/data/templates";
+import { canonicalFor } from "@/lib/seo";
 
 const TITLE = `User Guide — How to Create & Download Invoices | ${SITE.name}`;
 const DESCRIPTION =
@@ -16,12 +17,12 @@ const DESCRIPTION =
 export const metadata: Metadata = {
   title: TITLE,
   description: DESCRIPTION,
-  alternates: { canonical: "/user-guide" },
+  alternates: { canonical: canonicalFor("/user-guide") },
   openGraph: {
     title: TITLE,
     description: DESCRIPTION,
     type: "website",
-    url: "/user-guide",
+    url: canonicalFor("/user-guide"),
   },
 };
 

@@ -11,6 +11,7 @@ import {
 import { ContactForm } from "@/components/contact/ContactForm";
 import { CONTACT_FAQS } from "@/data/faqs";
 import { SITE } from "@/data/site";
+import { canonicalFor } from "@/lib/seo";
 
 const TITLE = `Contact ${SITE.name} — Support for the Free Invoice Generator`;
 const DESCRIPTION = `Email ${SITE.email} for support, feature requests and bug reports. Invoices stay in your browser — we only see what you send us.`;
@@ -18,12 +19,12 @@ const DESCRIPTION = `Email ${SITE.email} for support, feature requests and bug r
 export const metadata: Metadata = {
   title: TITLE,
   description: DESCRIPTION,
-  alternates: { canonical: "/contact" },
+  alternates: { canonical: canonicalFor("/contact") },
   openGraph: {
     title: `Contact ${SITE.name}`,
     description: DESCRIPTION,
     type: "website",
-    url: "/contact",
+    url: canonicalFor("/contact"),
   },
 };
 

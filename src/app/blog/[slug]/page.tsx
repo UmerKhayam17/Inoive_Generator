@@ -8,6 +8,7 @@ import { AdSlot } from "@/components/layout/AdSlot";
 import { Button } from "@/components/ui/button";
 import { CATEGORIES, POSTS, getPost, relatedPosts, type Post } from "@/data/blog";
 import { SITE } from "@/data/site";
+import { canonicalFor } from "@/lib/seo";
 
 interface Heading {
   id: string;
@@ -46,16 +47,17 @@ export async function generateMetadata({
   const post = getPost(slug);
   const title = post ? `${post.title} | ${SITE.name}` : `Article | ${SITE.name}`;
   const description = post?.description ?? "Invoicing guides for small businesses.";
+  const url = canonicalFor(`/blog/${slug}`);
 
   return {
     title,
     description,
-    alternates: { canonical: `/blog/${slug}` },
+    alternates: { canonical: url },
     openGraph: {
       title: post?.title ?? title,
       description,
       type: "article",
-      url: `/blog/${slug}`,
+      url,
       publishedTime: post?.date,
       authors: post?.author ? [post.author] : undefined,
     },

@@ -5,6 +5,7 @@ import { AdSlot } from "@/components/layout/AdSlot";
 import { Button } from "@/components/ui/button";
 import { TOOLS } from "@/data/tools";
 import { SITE } from "@/data/site";
+import { canonicalFor } from "@/lib/seo";
 
 const AVAILABLE_TOOLS = TOOLS.filter((t) => t.available);
 
@@ -20,13 +21,13 @@ export const metadata: Metadata = {
     title: TITLE,
     description: DESCRIPTION,
     type: "website",
-    url: "/tools",
+    url: canonicalFor("/tools"),
   },
   twitter: {
     title: TITLE,
     description: DESCRIPTION,
   },
-  alternates: { canonical: "/tools" },
+  alternates: { canonical: canonicalFor("/tools") },
 };
 
 export default function ToolsPage() {

@@ -1,5 +1,9 @@
 import type { NextConfig } from "next";
 
+const SITE_HOST = (
+  process.env.NEXT_PUBLIC_SITE_URL || "https://nextfreeinvoicegenerator.com"
+).replace(/^https?:\/\//, "");
+
 const nextConfig: NextConfig = {
   reactStrictMode: true,
   allowedDevOrigins: ["192.168.88.54", "localhost"],
@@ -18,6 +22,12 @@ const nextConfig: NextConfig = {
       {
         source: "/blog/category/design",
         destination: "/blog/category/design-templates",
+        permanent: true,
+      },
+      {
+        source: "/:path*",
+        has: [{ type: "host", value: `www.${SITE_HOST}` }],
+        destination: `https://${SITE_HOST}/:path*`,
         permanent: true,
       },
     ];
