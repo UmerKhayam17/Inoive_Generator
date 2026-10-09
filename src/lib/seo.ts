@@ -24,63 +24,18 @@ export function absoluteUrl(path: string): string {
   return canonicalFor(path === "/" ? "/" : path);
 }
 
-/**
- * Free digital download offer with the Offer properties Google flags on
- * Product / merchant-listing rich results (shipping + return policy).
- */
+/** Free web-app offer. Kept minimal: no shipping or return policy, which do not apply to a free browser tool. */
 export function digitalOffer(options: {
   url: string;
   priceCurrency?: string;
   price?: string | number;
 }) {
-  const currency = options.priceCurrency ?? "USD";
-  const price = options.price ?? "0";
-  const validUntil = new Date();
-  validUntil.setFullYear(validUntil.getFullYear() + 1);
-
   return {
     "@type": "Offer" as const,
     url: options.url,
-    price: String(price),
-    priceCurrency: currency,
-    priceValidUntil: validUntil.toISOString().slice(0, 10),
+    price: String(options.price ?? "0"),
+    priceCurrency: options.priceCurrency ?? "USD",
     availability: "https://schema.org/InStock",
-    itemCondition: "https://schema.org/NewCondition",
-    hasMerchantReturnPolicy: {
-      "@type": "MerchantReturnPolicy",
-      applicableCountry: ["US", "GB", "AE", "PK"],
-      returnPolicyCategory: "https://schema.org/MerchantReturnNotPermitted",
-      merchantReturnLink: absoluteUrl("/terms-and-conditions"),
-    },
-    shippingDetails: {
-      "@type": "OfferShippingDetails",
-      shippingRate: {
-        "@type": "MonetaryAmount",
-        value: "0",
-        currency,
-      },
-      deliveryTime: {
-        "@type": "ShippingDeliveryTime",
-        handlingTime: {
-          "@type": "QuantitativeValue",
-          minValue: 0,
-          maxValue: 0,
-          unitCode: "HUR",
-        },
-        transitTime: {
-          "@type": "QuantitativeValue",
-          minValue: 0,
-          maxValue: 0,
-          unitCode: "HUR",
-        },
-      },
-      shippingDestination: [
-        { "@type": "DefinedRegion", addressCountry: "US" },
-        { "@type": "DefinedRegion", addressCountry: "GB" },
-        { "@type": "DefinedRegion", addressCountry: "AE" },
-        { "@type": "DefinedRegion", addressCountry: "PK" },
-      ],
-    },
   };
 }
 

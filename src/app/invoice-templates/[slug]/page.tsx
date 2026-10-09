@@ -34,7 +34,7 @@ export async function generateMetadata({
   const url = canonicalFor(`/invoice-templates/${slug}`);
 
   return {
-    title,
+    title: { absolute: title },
     description,
     alternates: { canonical: url },
     openGraph: {
@@ -47,9 +47,7 @@ export async function generateMetadata({
           url: imageUrl,
           width: 1200,
           height: 630,
-          alt: template
-            ? `${template.name} Invoice Template`
-            : "Invoice template",
+          alt: template ? `${template.name} Invoice Template` : "Invoice template",
         },
       ],
     },
@@ -175,23 +173,25 @@ export default async function TemplateDetailPage({
                 dangerouslySetInnerHTML={{ __html: guide }}
               />
             ) : null}
-            <h2 className="mt-8 text-2xl font-bold text-foreground">Included with every template</h2>
+            <h2 className="mt-8 text-2xl font-bold text-foreground">
+              Included with every template
+            </h2>
             <ul className="mt-3 space-y-2">
               <li className="flex items-center gap-2">
-                <Check className="size-4 text-primary" aria-hidden="true" /> Print-ready A4 layout with
-                logo support
+                <Check className="size-4 text-primary" aria-hidden="true" /> Print-ready A4 layout
+                with logo support
               </li>
               <li className="flex items-center gap-2">
                 <Check className="size-4 text-primary" aria-hidden="true" /> Itemised lines with tax
                 and discount handling
               </li>
               <li className="flex items-center gap-2">
-                <Check className="size-4 text-primary" aria-hidden="true" /> Signature area and clear
-                totals panel
+                <Check className="size-4 text-primary" aria-hidden="true" /> Signature area and
+                clear totals panel
               </li>
               <li className="flex items-center gap-2">
-                <Check className="size-4 text-primary" aria-hidden="true" /> Instant PDF that matches
-                this preview
+                <Check className="size-4 text-primary" aria-hidden="true" /> Instant PDF that
+                matches this preview
               </li>
             </ul>
           </div>

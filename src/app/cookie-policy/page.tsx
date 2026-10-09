@@ -8,7 +8,7 @@ const DESCRIPTION =
   "Which cookies Invoice Creator uses, why we use them, and how to control or disable them in your browser.";
 
 export const metadata: Metadata = {
-  title: TITLE,
+  title: { absolute: TITLE },
   description: DESCRIPTION,
   openGraph: {
     title: TITLE,

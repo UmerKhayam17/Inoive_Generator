@@ -1,5 +1,6 @@
 import Link from "next/link";
 import { ChevronRight } from "lucide-react";
+import { absoluteUrl } from "@/lib/seo";
 
 export interface Crumb {
   label: string;
@@ -37,7 +38,7 @@ export function breadcrumbSchema(items: { name: string; item: string }[]) {
       "@type": "ListItem",
       position: i + 1,
       name: it.name,
-      item: it.item,
+      item: it.item.startsWith("http") ? it.item : absoluteUrl(it.item),
     })),
   };
 }

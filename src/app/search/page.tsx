@@ -9,7 +9,7 @@ const DESCRIPTION =
   "Search Invoice Creator for invoice templates, invoicing guides and tax explainers. Find the right template or article in seconds.";
 
 export const metadata: Metadata = {
-  title: TITLE,
+  title: { absolute: TITLE },
   description: DESCRIPTION,
   alternates: { canonical: canonicalFor("/search") },
   robots: { index: false, follow: true },

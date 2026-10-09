@@ -27,7 +27,7 @@ export async function generateMetadata({
   const url = canonicalFor(`/blog/category/${slug}`);
 
   return {
-    title,
+    title: { absolute: title },
     description,
     alternates: { canonical: url },
     openGraph: {

@@ -8,7 +8,7 @@ const DESCRIPTION =
   "The terms that govern your use of the Invoice Creator free invoice generator, including acceptable use, intellectual property and liability.";
 
 export const metadata: Metadata = {
-  title: TITLE,
+  title: { absolute: TITLE },
   description: DESCRIPTION,
   openGraph: {
     title: TITLE,
@@ -109,8 +109,8 @@ export default function Page() {
 
       <h2>12. Contact</h2>
       <p>
-        Questions about these terms? Email <a href={`mailto:${SITE.email}`}>{SITE.email}</a> or
-        call <a href={`tel:${SITE.phone.replace(/\s/g, "")}`}>{SITE.phone}</a>.
+        Questions about these terms? Email <a href={`mailto:${SITE.email}`}>{SITE.email}</a> or call{" "}
+        <a href={`tel:${SITE.phone.replace(/\s/g, "")}`}>{SITE.phone}</a>.
       </p>
     </LegalPage>
   );

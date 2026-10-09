@@ -8,7 +8,7 @@ const DESCRIPTION =
   "How Invoice Creator handles your data. Invoices are processed in your browser and never uploaded to our servers. Read our full privacy policy.";
 
 export const metadata: Metadata = {
-  title: TITLE,
+  title: { absolute: TITLE },
   description: DESCRIPTION,
   openGraph: {
     title: TITLE,
@@ -23,7 +23,7 @@ export default function Page() {
   return (
     <LegalPage
       title="Privacy Policy"
-      updated="24 September 2026"
+      updated="9 October 2026"
       lead="We built Invoice Creator so your invoice data never has to leave your device. This policy explains exactly what we do and do not collect."
     >
       <h2>1. Who we are</h2>
@@ -34,8 +34,7 @@ export default function Page() {
       </p>
       <p>
         For questions regarding this Privacy Policy, the service, or your information, you can
-        contact us using the contact details provided on our{" "}
-        <a href="/contact">Contact page</a>.
+        contact us using the contact details provided on our <a href="/contact">Contact page</a>.
       </p>
       <h3>Contact Information</h3>
       <ul>
@@ -52,8 +51,7 @@ export default function Page() {
           <strong>Email:</strong> <a href={`mailto:${SITE.email}`}>{SITE.email}</a>
         </li>
         <li>
-          <strong>Phone:</strong>{" "}
-          <a href={`tel:${SITE.phone.replace(/\s/g, "")}`}>{SITE.phone}</a>
+          <strong>Phone:</strong> <a href={`tel:${SITE.phone.replace(/\s/g, "")}`}>{SITE.phone}</a>
         </li>
       </ul>
 
@@ -69,8 +67,8 @@ export default function Page() {
       <ul>
         <li>
           <strong>Email you send us.</strong> If you contact {SITE.email} (including via the contact
-          page, which opens your own email app), we receive the name, address and message you
-          choose to send, and we use it only to reply.
+          page, which opens your own email app), we receive the name, address and message you choose
+          to send, and we use it only to reply.
         </li>
         <li>
           <strong>Analytics.</strong> Aggregated, non-identifying usage data such as page views,
@@ -81,7 +79,9 @@ export default function Page() {
           retained for security and troubleshooting.
         </li>
       </ul>
-      <p>We do not run an email newsletter and we do not operate a server-side contact inbox form.</p>
+      <p>
+        We do not run an email newsletter and we do not operate a server-side contact inbox form.
+      </p>
 
       <h2>4. Legal bases for processing</h2>
       <p>
@@ -92,10 +92,52 @@ export default function Page() {
 
       <h2>5. Cookies and advertising</h2>
       <p>
-        We use essential cookies to remember your theme preference, and we may display advertising
-        supplied by third-party networks such as Google AdSense. Advertising partners may set
-        cookies or use device identifiers to serve and measure ads. See our{" "}
-        <a href="/cookie-policy">Cookie Policy</a> for details and opt-out links.
+        We use essential browser storage to remember your theme preference, your cookie choice and
+        your invoice draft. With your consent, we also use Google Analytics to understand how the
+        site is used, and we display advertising supplied by Google AdSense.
+      </p>
+      <h3>Google advertising</h3>
+      <ul>
+        <li>
+          Third-party vendors, including Google, use cookies to serve ads based on a user&apos;s
+          prior visits to this website or other websites.
+        </li>
+        <li>
+          Google&apos;s use of advertising cookies enables it and its partners to serve ads to our
+          users based on their visit to this site and/or other sites on the Internet.
+        </li>
+        <li>
+          You may opt out of personalised advertising by visiting{" "}
+          <a href="https://www.google.com/settings/ads" rel="nofollow noopener" target="_blank">
+            Google Ads Settings
+          </a>
+          . You can also opt out of some third-party vendors&apos; use of cookies for personalised
+          advertising at{" "}
+          <a href="https://www.aboutads.info/choices/" rel="nofollow noopener" target="_blank">
+            aboutads.info/choices
+          </a>{" "}
+          or, in Europe,{" "}
+          <a href="https://www.youronlinechoices.eu/" rel="nofollow noopener" target="_blank">
+            youronlinechoices.eu
+          </a>
+          .
+        </li>
+        <li>
+          Learn how Google uses information from sites that use its services at{" "}
+          <a
+            href="https://policies.google.com/technologies/partner-sites"
+            rel="nofollow noopener"
+            target="_blank"
+          >
+            policies.google.com/technologies/partner-sites
+          </a>
+          .
+        </li>
+      </ul>
+      <p>
+        You can change your choice at any time by clearing this site&apos;s data in your browser,
+        which brings back the cookie banner. See our <a href="/cookie-policy">Cookie Policy</a> for
+        details.
       </p>
 
       <h2>6. Sharing your information</h2>

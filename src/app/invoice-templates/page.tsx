@@ -15,7 +15,7 @@ const DESCRIPTION =
   "Browse professional industry invoice templates — freelance, design, legal, hospitality, healthcare, SaaS and more. Each shows its style name and industry. Preview and download as PDF.";
 
 export const metadata: Metadata = {
-  title: TITLE,
+  title: { absolute: TITLE },
   description: DESCRIPTION,
   alternates: { canonical: canonicalFor("/invoice-templates") },
   openGraph: {

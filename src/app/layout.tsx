@@ -6,12 +6,11 @@ import { Toaster } from "@/components/ui/sonner";
 import { Analytics } from "@/components/Analytics";
 import { CookieConsent } from "@/components/CookieConsent";
 import { SITE } from "@/data/site";
-import { absoluteUrl, siteLogoUrl } from "@/lib/seo";
+import { siteLogoUrl } from "@/lib/seo";
 import "./globals.css";
 
 /** Live AdSense publisher ID (also overridable via NEXT_PUBLIC_ADSENSE_CLIENT). */
-const ADSENSE_CLIENT =
-  process.env.NEXT_PUBLIC_ADSENSE_CLIENT || "ca-pub-9252917783014745";
+const ADSENSE_CLIENT = process.env.NEXT_PUBLIC_ADSENSE_CLIENT || "ca-pub-9252917783014745";
 
 const sans = Plus_Jakarta_Sans({
   subsets: ["latin"],
@@ -73,12 +72,6 @@ const jsonLd = {
         contactType: "customer support",
       },
       description: SITE.description,
-      hasMerchantReturnPolicy: {
-        "@type": "MerchantReturnPolicy",
-        applicableCountry: ["US", "GB", "AE", "PK"],
-        returnPolicyCategory: "https://schema.org/MerchantReturnNotPermitted",
-        merchantReturnLink: absoluteUrl("/terms-and-conditions"),
-      },
     },
     {
       "@type": "WebSite",
@@ -95,9 +88,16 @@ const jsonLd = {
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
-    <html lang="en" className={`${sans.variable} ${display.variable} scroll-smooth`} suppressHydrationWarning>
+    <html
+      lang="en"
+      className={`${sans.variable} ${display.variable} scroll-smooth`}
+      suppressHydrationWarning
+    >
       <head>
-        <meta name="google-site-verification" content="_c7mZwE2FNiRLG4kNxK0KTZ9posJZy7vIx9Mr1rsyr4" />
+        <meta
+          name="google-site-verification"
+          content="_c7mZwE2FNiRLG4kNxK0KTZ9posJZy7vIx9Mr1rsyr4"
+        />
         {/* Native <script> (not next/script) so AdSense crawler sees the exact tag */}
         <meta name="google-adsense-account" content={ADSENSE_CLIENT} />
         <script

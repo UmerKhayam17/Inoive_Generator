@@ -11,7 +11,7 @@ const DESCRIPTION =
   "Invoice Creator is a free online invoice generator operated by Next Software Development Company in Islamabad, Pakistan. No signup, professional PDF invoices.";
 
 export const metadata: Metadata = {
-  title: TITLE,
+  title: { absolute: TITLE },
   description: DESCRIPTION,
   openGraph: {
     title: `About ${SITE.name}`,
@@ -51,7 +51,9 @@ export default function Page() {
             <p>Invoice Creator currently provides:</p>
             <ul>
               <li>Free online invoice creation</li>
-              <li>Multiple professional invoice templates ({TEMPLATE_COUNT} currently available)</li>
+              <li>
+                Multiple professional invoice templates ({TEMPLATE_COUNT} currently available)
+              </li>
               <li>PDF invoice generation</li>
               <li>Tax and discount calculations</li>
               <li>Logo and signature support</li>
@@ -69,15 +71,15 @@ export default function Page() {
               browser rather than requiring an account.
             </p>
             <p>
-              Users should review our{" "}
-              <Link href="/privacy-policy">Privacy Policy</Link> for complete information about how
-              information is handled.
+              Users should review our <Link href="/privacy-policy">Privacy Policy</Link> for
+              complete information about how information is handled.
             </p>
 
             <h2>Our Mission</h2>
             <p>
               Our mission is to provide a simple, reliable, and accessible invoicing tool that helps
-              individuals and businesses create professional invoices without unnecessary complexity.
+              individuals and businesses create professional invoices without unnecessary
+              complexity.
             </p>
             <p>
               Invoice Creator is continuously improved based on user feedback, technical
@@ -87,12 +89,10 @@ export default function Page() {
             <h2>About Next Software Development Company</h2>
             <p>
               {SITE.operator} develops custom software, web applications, business management
-              systems, CRM and ERP solutions, eCommerce platforms, booking systems, and other digital
-              products.
+              systems, CRM and ERP solutions, eCommerce platforms, booking systems, and other
+              digital products.
             </p>
-            <p>
-              Invoice Creator is one of the products developed and maintained by the company.
-            </p>
+            <p>Invoice Creator is one of the products developed and maintained by the company.</p>
 
             <h2>Contact Us</h2>
             <p>

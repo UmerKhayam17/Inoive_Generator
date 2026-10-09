@@ -22,17 +22,17 @@ import { Button } from "@/components/ui/button";
 import { AdSlot } from "@/components/layout/AdSlot";
 import { TemplateCardPreview } from "@/components/invoice/TemplateCardPreview";
 import { TEMPLATES, TEMPLATE_COUNT } from "@/data/templates";
+import { POSTS } from "@/data/blog";
 import { LOCALES } from "@/data/locales";
 import { HOME_FAQS } from "@/data/faqs";
 import { SITE } from "@/data/site";
 import { absoluteUrl, digitalOffer, schemaImages, canonicalFor, siteLogoUrl } from "@/lib/seo";
 
 const TITLE = `Free Invoice Generator — Create & Download PDF Invoices | ${SITE.name}`;
-const DESCRIPTION =
-  `Create professional invoices in your browser and download a clean PDF instantly. ${TEMPLATE_COUNT} templates, logo upload, tax and discount calculations, autosave — free, no signup.`;
+const DESCRIPTION = `Create professional invoices in your browser and download a clean PDF instantly. ${TEMPLATE_COUNT} templates, logo upload, tax and discount calculations, autosave — free, no signup.`;
 
 export const metadata: Metadata = {
-  title: TITLE,
+  title: { absolute: TITLE },
   description: DESCRIPTION,
   openGraph: {
     title: TITLE,
@@ -134,6 +134,7 @@ const STEPS = [
 const POPULAR = ["modern", "minimal", "nordic", "emerald", "bold", "lavender"];
 
 export default function Home() {
+  const latestPosts = [...POSTS].sort((a, b) => b.date.localeCompare(a.date)).slice(0, 6);
   const popular = POPULAR.map((slug) => TEMPLATES.find((t) => t.slug === slug)).filter(
     (t): t is (typeof TEMPLATES)[number] => Boolean(t),
   );
@@ -152,8 +153,8 @@ export default function Home() {
               <Sparkles className="size-3.5" aria-hidden="true" /> Free forever · No signup
             </p>
             <h1 className="mt-5 text-3xl font-extrabold leading-[1.08] sm:text-5xl lg:text-6xl">
-              The free{" "}
-              <span className="text-gradient">invoice generator</span> that downloads a real PDF
+              The free <span className="text-gradient">invoice generator</span> that downloads a
+              real PDF
             </h1>
             <p className="mt-5 max-w-xl text-base text-muted-foreground sm:text-lg">
               Build a professional invoice in your browser, watch the totals calculate as you type,
@@ -305,7 +306,9 @@ export default function Home() {
           <p className="text-xs font-semibold uppercase tracking-[0.2em] text-primary">
             How it works
           </p>
-          <h2 className="mt-3 text-3xl font-extrabold sm:text-4xl">From blank page to PDF in four steps</h2>
+          <h2 className="mt-3 text-3xl font-extrabold sm:text-4xl">
+            From blank page to PDF in four steps
+          </h2>
         </div>
         <ol className="mt-12 grid gap-6 md:grid-cols-2 lg:grid-cols-4">
           {STEPS.map((step, i) => (
@@ -348,6 +351,38 @@ export default function Home() {
             ))}
           </ul>
         </div>
+      </section>
+
+      {/* Guides */}
+      <section className="mx-auto max-w-[96rem] px-4 py-16 sm:px-6 lg:px-8 lg:py-20">
+        <div className="flex flex-wrap items-end justify-between gap-4">
+          <div className="max-w-2xl">
+            <p className="text-xs font-semibold uppercase tracking-[0.2em] text-primary">Guides</p>
+            <h2 className="mt-3 text-3xl font-extrabold sm:text-4xl">
+              Learn to invoice like a pro
+            </h2>
+            <p className="mt-4 text-lg text-muted-foreground">
+              Practical, plain-English guides on payment terms, tax invoices, reminders and getting
+              paid on time — written for freelancers and small businesses.
+            </p>
+          </div>
+          <Button asChild variant="outline">
+            <Link href="/blog">All {POSTS.length} guides</Link>
+          </Button>
+        </div>
+        <ul className="mt-10 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
+          {latestPosts.map((p) => (
+            <li key={p.slug} className="rounded-xl border border-border bg-card p-6">
+              <h3 className="text-lg font-bold leading-snug">
+                <Link href={`/blog/${p.slug}`} className="hover:text-primary">
+                  {p.title}
+                </Link>
+              </h3>
+              <p className="mt-2 text-sm leading-relaxed text-muted-foreground">{p.description}</p>
+              <p className="mt-3 text-xs text-muted-foreground">{p.readingTime} min read</p>
+            </li>
+          ))}
+        </ul>
       </section>
 
       {/* FAQs */}

@@ -79,7 +79,7 @@ const DESCRIPTION =
   "Answers to the most common questions about our free invoice generator: pricing, signup, data storage, templates, currencies, tax and PDF downloads.";
 
 export const metadata: Metadata = {
-  title: TITLE,
+  title: { absolute: TITLE },
   description: DESCRIPTION,
   openGraph: {
     title: TITLE,

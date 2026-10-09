@@ -8,7 +8,7 @@ const DESCRIPTION =
   "Invoice Creator provides general information and a free invoice tool. It is not legal, tax or accounting advice. Read the full disclaimer.";
 
 export const metadata: Metadata = {
-  title: TITLE,
+  title: { absolute: TITLE },
   description: DESCRIPTION,
   openGraph: {
     title: TITLE,
@@ -41,9 +41,9 @@ export default function Page() {
 
       <h2>3. No professional relationship</h2>
       <p>
-        Reading this site or using the invoice generator does not create an
-        accountant–client or attorney–client relationship. Always consult a qualified professional
-        in your jurisdiction before acting.
+        Reading this site or using the invoice generator does not create an accountant–client or
+        attorney–client relationship. Always consult a qualified professional in your jurisdiction
+        before acting.
       </p>
 
       <h2>4. Accuracy</h2>

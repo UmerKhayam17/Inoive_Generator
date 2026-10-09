@@ -10,7 +10,7 @@ const DESCRIPTION =
   "Practical invoicing guides for freelancers and small businesses: how to create and send invoices, invoice vs receipt, tax and VAT requirements, and template design tips.";
 
 export const metadata: Metadata = {
-  title: TITLE,
+  title: { absolute: TITLE },
   description: DESCRIPTION,
   alternates: { canonical: canonicalFor("/blog") },
   openGraph: {

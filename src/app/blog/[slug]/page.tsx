@@ -8,7 +8,7 @@ import { AdSlot } from "@/components/layout/AdSlot";
 import { Button } from "@/components/ui/button";
 import { CATEGORIES, POSTS, getPost, relatedPosts, type Post } from "@/data/blog";
 import { SITE } from "@/data/site";
-import { canonicalFor } from "@/lib/seo";
+import { canonicalFor, siteLogoUrl } from "@/lib/seo";
 
 interface Heading {
   id: string;
@@ -50,7 +50,7 @@ export async function generateMetadata({
   const url = canonicalFor(`/blog/${slug}`);
 
   return {
-    title,
+    title: { absolute: title },
     description,
     alternates: { canonical: url },
     openGraph: {
@@ -102,7 +102,8 @@ export default async function PostPage({ params }: { params: Promise<{ slug: str
       name: SITE.operator,
       url: SITE.url,
     },
-    mainEntityOfPage: { "@type": "WebPage", "@id": `/blog/${post.slug}` },
+    mainEntityOfPage: { "@type": "WebPage", "@id": canonicalFor(`/blog/${post.slug}`) },
+    image: siteLogoUrl(),
   };
 
   const breadcrumbLd = breadcrumbSchema([
@@ -125,9 +126,7 @@ export default async function PostPage({ params }: { params: Promise<{ slug: str
         items={[
           { label: "Home", href: "/" },
           { label: "Blog", href: "/blog" },
-          ...(category
-            ? [{ label: category.name, href: `/blog/category/${category.slug}` }]
-            : []),
+          ...(category ? [{ label: category.name, href: `/blog/category/${category.slug}` }] : []),
           { label: post.title },
         ]}
       />
@@ -157,9 +156,7 @@ export default async function PostPage({ params }: { params: Promise<{ slug: str
                 {isTax ? "Last reviewed" : "Last updated"}: {modified}
               </time>
             )}
-            {post.jurisdiction && (
-              <span>Applicable jurisdiction: {post.jurisdiction}</span>
-            )}
+            {post.jurisdiction && <span>Applicable jurisdiction: {post.jurisdiction}</span>}
           </div>
 
           {headings.length > 1 && (

@@ -9,10 +9,19 @@ import { InvoiceGenerator } from "@/components/invoice/InvoiceGenerator";
 import { getLocale, getLocaleSlugs, LOCALES, type InvoiceLocale } from "@/data/locales";
 import { SITE } from "@/data/site";
 import { absoluteUrl, digitalOffer, schemaImages, canonicalFor, siteLogoUrl } from "@/lib/seo";
+import { getPost } from "@/data/blog";
 
 export function generateStaticParams() {
   return getLocaleSlugs().map((locale) => ({ locale }));
 }
+
+/** Country-specific articles linked from each locale page. */
+const LOCALE_GUIDES: Record<string, string[]> = {
+  pakistan: ["sales-tax-invoice-pakistan", "invoice-international-clients", "tax-invoice-guide"],
+  uae: ["uae-vat-invoice-requirements", "vat-invoice-guide", "invoice-international-clients"],
+  uk: ["sole-trader-invoice-uk", "vat-invoice-guide", "late-payment-fees"],
+  usa: ["tax-invoice-guide", "freelancer-invoice-guide", "how-to-invoice-for-hourly-work"],
+};
 
 export async function generateMetadata({
   params,
@@ -82,6 +91,9 @@ function LocalePage({ locale }: { locale: InvoiceLocale }) {
   };
 
   const otherLocales = LOCALES.filter((l) => l.slug !== locale.slug);
+  const guides = (LOCALE_GUIDES[locale.slug] ?? [])
+    .map((slug) => getPost(slug))
+    .filter((p): p is NonNullable<typeof p> => Boolean(p));
 
   return (
     <>
@@ -188,6 +200,24 @@ function LocalePage({ locale }: { locale: InvoiceLocale }) {
                   General information only — not tax, legal or filing advice.
                 </p>
               </div>
+
+              {guides.length > 0 && (
+                <div className="rounded-2xl border border-border bg-card p-6">
+                  <h2 className="text-lg font-bold">Guides for {locale.country}</h2>
+                  <ul className="mt-4 space-y-2 text-sm">
+                    {guides.map((g) => (
+                      <li key={g.slug}>
+                        <Link
+                          href={`/blog/${g.slug}`}
+                          className="font-medium text-primary hover:underline"
+                        >
+                          {g.title}
+                        </Link>
+                      </li>
+                    ))}
+                  </ul>
+                </div>
+              )}
 
               {otherLocales.length > 0 && (
                 <div className="rounded-2xl border border-border bg-card p-6">

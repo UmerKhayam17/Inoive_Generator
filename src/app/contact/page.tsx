@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
+import Link from "next/link";
 import { Clock, Mail, MapPin, Phone } from "lucide-react";
 import { PageHeader } from "@/components/layout/PageHeader";
-import { AdSlot } from "@/components/layout/AdSlot";
 import {
   Accordion,
   AccordionContent,
@@ -17,7 +17,7 @@ const TITLE = `Contact ${SITE.name} — Support for the Free Invoice Generator`;
 const DESCRIPTION = `Email ${SITE.email} for support, feature requests and bug reports. Invoices stay in your browser — we only see what you send us.`;
 
 export const metadata: Metadata = {
-  title: TITLE,
+  title: { absolute: TITLE },
   description: DESCRIPTION,
   alternates: { canonical: canonicalFor("/contact") },
   openGraph: {
@@ -107,19 +107,27 @@ export default function ContactPage() {
               </ul>
             </div>
 
-            <div
-              role="img"
-              aria-label="Map showing the Invoice Creator office location in Islamabad, Pakistan"
-              className="surface-grid grid aspect-[4/3] w-full place-items-center rounded-2xl border border-border bg-muted/40"
-            >
-              <div className="text-center">
-                <MapPin className="mx-auto size-7 text-primary" aria-hidden="true" />
-                <p className="mt-2 text-sm font-medium">Islamabad, Pakistan</p>
-                <p className="text-xs text-muted-foreground">Map placeholder</p>
-              </div>
+            <div className="rounded-2xl border border-border bg-card p-6">
+              <h2 className="text-lg font-bold">Before you write</h2>
+              <ul className="mt-4 list-disc space-y-2 pl-5 text-sm text-muted-foreground">
+                <li>
+                  Many questions are answered in the{" "}
+                  <Link href="/faq" className="font-medium text-foreground underline">
+                    FAQ
+                  </Link>{" "}
+                  and the{" "}
+                  <Link href="/user-guide" className="font-medium text-foreground underline">
+                    user guide
+                  </Link>
+                  .
+                </li>
+                <li>For a bug, tell us your browser, device and the steps that caused it.</li>
+                <li>
+                  Never send real bank details or client data — we do not need them to help you.
+                </li>
+                <li>We answer most messages within one business day, Monday to Friday.</li>
+              </ul>
             </div>
-
-            <AdSlot id="contact-sidebar" format="rectangle" />
           </aside>
         </div>
 
