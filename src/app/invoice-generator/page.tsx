@@ -47,7 +47,7 @@ const GENERATOR_FAQS = [
   },
   {
     q: "Where is my invoice data saved?",
-    a: "In your own browser's local storage on this device. It is not uploaded to our servers. Clearing your browser data, or using a private window, removes it, so keep a copy of every PDF you send.",
+    a: "In your own browser's local storage on this device. Invoice content is not uploaded to our servers. Clearing your browser data, or using a private window, removes it, so keep a copy of every PDF you send. Analytics and ads (if you consent) are separate from invoice data — see the Privacy Policy.",
   },
   {
     q: "Can I create an invoice on my phone?",

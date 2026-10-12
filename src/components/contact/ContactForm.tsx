@@ -98,9 +98,18 @@ export function ContactForm() {
           </p>
         )}
       </div>
-      <Button type="submit" size="lg" disabled={isSubmitting}>
-        {isSubmitting ? "Opening…" : "Open email to send"}
-      </Button>
+      <div className="space-y-2">
+        <Button type="submit" size="lg" disabled={isSubmitting}>
+          {isSubmitting ? "Opening…" : `Email ${SITE.email}`}
+        </Button>
+        <p className="text-xs text-muted-foreground">
+          Opens your email app with a message addressed to{" "}
+          <a className="font-medium text-foreground underline" href={`mailto:${SITE.email}`}>
+            {SITE.email}
+          </a>
+          . If nothing opens, copy that address and write to us directly.
+        </p>
+      </div>
     </form>
   );
 }

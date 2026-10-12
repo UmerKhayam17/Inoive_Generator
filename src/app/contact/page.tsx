@@ -2,12 +2,6 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import { Clock, Mail, MapPin, Phone } from "lucide-react";
 import { PageHeader } from "@/components/layout/PageHeader";
-import {
-  Accordion,
-  AccordionContent,
-  AccordionItem,
-  AccordionTrigger,
-} from "@/components/ui/accordion";
 import { ContactForm } from "@/components/contact/ContactForm";
 import { CONTACT_FAQS } from "@/data/faqs";
 import { SITE } from "@/data/site";
@@ -135,14 +129,17 @@ export default function ContactPage() {
           <h2 id="contact-faq" className="text-2xl font-bold">
             Contact FAQs
           </h2>
-          <Accordion type="single" collapsible className="mt-6">
-            {CONTACT_FAQS.map((f, i) => (
-              <AccordionItem key={f.q} value={`c-${i}`}>
-                <AccordionTrigger className="text-left font-semibold">{f.q}</AccordionTrigger>
-                <AccordionContent className="text-muted-foreground">{f.a}</AccordionContent>
-              </AccordionItem>
+          {/* Answers stay visible in the HTML for crawlers and AdSense review — not accordion-only. */}
+          <div className="mt-6 space-y-8">
+            {CONTACT_FAQS.map((f) => (
+              <div key={f.q} className="border-b border-border pb-6 last:border-0">
+                <h3 className="text-base font-semibold sm:text-lg">{f.q}</h3>
+                <p className="mt-2 text-sm leading-relaxed text-muted-foreground sm:text-base">
+                  {f.a}
+                </p>
+              </div>
             ))}
-          </Accordion>
+          </div>
         </section>
       </div>
     </>

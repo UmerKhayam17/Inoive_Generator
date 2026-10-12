@@ -46,7 +46,7 @@ const ALL = [
   },
   {
     q: "Where is my invoice data stored?",
-    a: "Depending on the application's functionality, invoice drafts and information may be stored locally in your browser. Your draft is auto-saved on every change and restored when you return in the same browser. Review our Privacy Policy for complete information. Clearing your browser data removes drafts permanently.",
+    a: "Invoice drafts are stored only in your browser's local storage on this device — they are never uploaded to our servers. Your draft is auto-saved on every change and restored when you return in the same browser. Clearing your browser data removes drafts permanently. Separately, if you accept cookies, analytics and advertising partners may collect usage data as described in our Privacy Policy and Cookie Policy — that is not your invoice content.",
   },
   {
     q: "Can I create invoices in different currencies?",

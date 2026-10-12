@@ -17,7 +17,7 @@ export const HOME_FAQS: Faq[] = [
   },
   {
     q: "Where is my invoice data stored?",
-    a: "Your invoice is saved in your own browser's local storage so you can return and continue later. Nothing is uploaded to a server, and clearing your browser data removes it permanently.",
+    a: "Your invoice draft is saved in your own browser's local storage so you can return and continue later. Invoice content is never uploaded to our servers. Clearing your browser data removes it permanently. Analytics and advertising (if you consent) are separate from invoice data — see the Privacy Policy.",
   },
   {
     q: "Can I add my company logo and brand colour?",

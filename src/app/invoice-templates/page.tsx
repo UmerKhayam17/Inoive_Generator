@@ -2,7 +2,6 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import { ArrowRight } from "lucide-react";
 import { PageHeader } from "@/components/layout/PageHeader";
-import { AdSlot } from "@/components/layout/AdSlot";
 import { Button } from "@/components/ui/button";
 import { breadcrumbSchema } from "@/components/layout/Breadcrumbs";
 import { TemplatesIndustryBrowser } from "@/components/invoice/TemplatesIndustryBrowser";
@@ -69,7 +68,6 @@ export default function TemplatesIndexPage() {
       </PageHeader>
 
       <div className="mx-auto max-w-[96rem] px-4 py-12 sm:px-6 lg:px-8">
-        <AdSlot id="templates-top" format="leaderboard" />
         <TemplatesIndustryBrowser />
       </div>
     </>

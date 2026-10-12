@@ -25,7 +25,7 @@ export function BlogIndex() {
       <PageHeader
         eyebrow="Blog"
         title="Invoicing, explained properly"
-        lead="Fifteen in-depth guides on creating, sending and getting paid on invoices — written for freelancers and small businesses."
+        lead={`${POSTS.length} in-depth guides on creating, sending and getting paid on invoices — written for freelancers and small businesses.`}
         crumbs={[{ label: "Home", href: "/" }, { label: "Blog" }]}
       />
 

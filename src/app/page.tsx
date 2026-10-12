@@ -103,7 +103,7 @@ const FEATURES = [
   {
     icon: ShieldCheck,
     title: "Private by design",
-    body: "Invoice data is saved to your own browser's local storage. Nothing is uploaded, so there is no account to create and nothing to leak.",
+    body: "Invoice drafts stay in your browser's local storage and are never uploaded to our servers. No account is required. Analytics and ads (with consent) are separate from invoice content.",
   },
   {
     icon: Clock,

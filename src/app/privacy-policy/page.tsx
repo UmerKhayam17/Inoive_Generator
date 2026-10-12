@@ -59,11 +59,19 @@ export default function Page() {
       <p>
         The invoice generator runs entirely client-side. Company details, customer details, line
         items, logos and totals are stored in your browser&apos;s local storage so you can return to
-        an unfinished invoice. This information is never transmitted to us and we cannot read it.
-        Clearing your browser data deletes it permanently.
+        an unfinished invoice. This invoice information is never transmitted to our servers and we
+        cannot read it. Clearing your browser data deletes it permanently.
+      </p>
+      <p>
+        This section covers invoice content only. Analytics and advertising data (described below)
+        are separate and do not include your invoice line items, customer names or uploaded logos.
       </p>
 
       <h2>3. Information we do collect</h2>
+      <p>
+        We do not collect the contents of invoices you create. We may collect the following other
+        information:
+      </p>
       <ul>
         <li>
           <strong>Email you send us.</strong> If you contact {SITE.email} (including via the contact
@@ -72,7 +80,12 @@ export default function Page() {
         </li>
         <li>
           <strong>Analytics.</strong> Aggregated, non-identifying usage data such as page views,
-          referrers, approximate country and device type, when analytics is enabled.
+          referrers, approximate country and device type, when you consent to analytics cookies.
+        </li>
+        <li>
+          <strong>Advertising.</strong> If advertising is enabled and you consent, Google AdSense and
+          its partners may use cookies or similar technologies to serve ads. This is not invoice
+          data.
         </li>
         <li>
           <strong>Server logs.</strong> Standard technical logs including IP address and user agent,

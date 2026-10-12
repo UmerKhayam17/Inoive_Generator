@@ -66,13 +66,16 @@ export default function Page() {
 
             <h2>Privacy-Focused Invoice Creation</h2>
             <p>
-              We aim to keep invoice creation simple and privacy-conscious. Where functionality
-              allows, invoice information can be processed or stored locally in the user&apos;s
-              browser rather than requiring an account.
+              Invoice creation is privacy-conscious by design. Company details, customer details,
+              line items, logos and totals are processed and stored in your browser&apos;s local
+              storage — they are never transmitted to our servers, and we cannot read them. No
+              account is required.
             </p>
             <p>
-              Users should review our <Link href="/privacy-policy">Privacy Policy</Link> for
-              complete information about how information is handled.
+              If you accept cookies, analytics and advertising partners may collect separate usage
+              data (such as page views). That is not your invoice content. See our{" "}
+              <Link href="/privacy-policy">Privacy Policy</Link> and{" "}
+              <Link href="/cookie-policy">Cookie Policy</Link> for full details.
             </p>
 
             <h2>Our Mission</h2>

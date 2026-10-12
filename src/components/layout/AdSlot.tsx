@@ -13,12 +13,16 @@ const HEIGHTS: Record<NonNullable<AdSlotProps["format"]>, string> = {
   "in-article": "min-h-[120px] sm:min-h-[140px]",
 };
 
-/** Placeholders stay hidden until real ad units are wired in (empty "Advertisement" boxes hurt AdSense review). */
+/**
+ * Empty "Advertisement" placeholders hurt AdSense review.
+ * Keep this false until real ad units are approved and live.
+ * Set NEXT_PUBLIC_SHOW_AD_SLOTS=true only when serving actual ads.
+ */
 const SHOW_AD_SLOTS = process.env.NEXT_PUBLIC_SHOW_AD_SLOTS === "true";
 
 /**
- * Reserved advertising space. Renders a neutral, clearly-labelled placeholder so
- * layout height is stable (no CLS) once a real ad unit is dropped in.
+ * Reserved advertising space. Renders nothing by default so review crawlers
+ * never see empty ad boxes mixed into navigation or template grids.
  */
 export function AdSlot({
   id,

@@ -4,7 +4,6 @@ import { notFound } from "next/navigation";
 import { ArrowRight, Check } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Breadcrumbs, breadcrumbSchema } from "@/components/layout/Breadcrumbs";
-import { AdSlot } from "@/components/layout/AdSlot";
 import { InvoicePreview } from "@/components/invoice/InvoicePreview";
 import { ResponsiveInvoiceFrame } from "@/components/invoice/ResponsiveInvoiceFrame";
 import { TEMPLATES, templateLabel } from "@/data/templates";
@@ -196,9 +195,6 @@ export default async function TemplateDetailPage({
             </ul>
           </div>
 
-          <div className="mt-10">
-            <AdSlot id="template-detail-bottom" format="leaderboard" />
-          </div>
         </div>
 
         <aside className="grid h-fit gap-6">
