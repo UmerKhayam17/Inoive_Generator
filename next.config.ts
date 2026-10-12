@@ -11,6 +11,19 @@ const nextConfig: NextConfig = {
     // Prettier CRLF noise on Windows should not block production builds.
     ignoreDuringBuilds: true,
   },
+  async headers() {
+    return [
+      {
+        source: "/:path*",
+        headers: [
+          {
+            key: "Strict-Transport-Security",
+            value: "max-age=63072000; includeSubDomains; preload",
+          },
+        ],
+      },
+    ];
+  },
   // Keep old category URLs working after slug corrections.
   async redirects() {
     return [

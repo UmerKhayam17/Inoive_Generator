@@ -23,7 +23,7 @@ export default function Page() {
   return (
     <LegalPage
       title="Terms & Conditions"
-      updated="24 September 2026"
+      updated="12 October 2026"
       lead="By using Invoice Creator you agree to these terms. They are written to be readable — please still read them."
     >
       <h2>1. Acceptance</h2>

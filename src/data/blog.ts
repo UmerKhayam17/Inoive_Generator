@@ -1452,16 +1452,16 @@ jane@smithdesign.example</p>
   },
   {
     slug: "best-invoice-templates",
-    title: "The 10 Best Invoice Templates and When to Use Each",
+    title: "The 18 Best Invoice Templates and When to Use Each",
     description:
-      "A practical tour of ten invoice layouts — Modern, Minimal, Corporate, Elegant and more — with guidance on which fits your business.",
+      "A practical tour of all 18 invoice layouts — Modern, Minimal, Corporate, Nordic, Emerald and more — with guidance on which industry each fits.",
     category: "design-templates",
     date: "2026-06-24",
-    updated: "2026-09-25",
+    updated: "2026-10-12",
     author: "Invoice Creator Editorial Team",
     content: `
 <h2>Why the template matters</h2>
-<p>An invoice is often the last document a client reads before deciding how quickly to pay you. Clarity beats decoration: the amount due, the due date, and the payment method should be findable in under three seconds. A good template is a information hierarchy problem solved once, then reused on every job.</p>
+<p>An invoice is often the last document a client reads before deciding how quickly to pay you. Clarity beats decoration: the amount due, the due date, and the payment method should be findable in under three seconds. A good template is an information hierarchy problem solved once, then reused on every job.</p>
 <p>Brand personality still matters — especially for agencies and creatives — but never at the expense of scannability. Accounts payable staff process dozens of PDFs a day. They reward documents that look familiar and complete.</p>
 
 <h2>What every strong template shares</h2>
@@ -1473,30 +1473,42 @@ jane@smithdesign.example</p>
 <li>A dedicated payment-instructions area</li>
 <li>Enough whitespace to print cleanly in greyscale</li>
 </ul>
-<p>If a layout fails any of those tests, it is art, not an invoice. For design principles beyond templates, see <a href="/blog/professional-invoice-design-tips">professional invoice design tips</a>.</p>
+<p>If a layout fails any of those tests, it is art, not an invoice. For design principles beyond templates, see <a href="/blog/professional-invoice-design-tips">professional invoice design tips</a>. Browse the full set on the <a href="/invoice-templates">invoice templates</a> page.</p>
 
-<h2>The ten layouts</h2>
+<h2>All 18 layouts</h2>
 <ol>
-<li><strong><a href="/invoice-templates/modern">Modern</a></strong> — Clean header, balanced type, flexible for most industries. The safe default when you are unsure.</li>
-<li><strong><a href="/invoice-templates/minimal">Minimal</a></strong> — Typography-led with little ornament. Ideal for solo creatives, writers, and consultants who want quiet professionalism.</li>
-<li><strong><a href="/invoice-templates/corporate">Corporate</a></strong> — Dense reference fields (PO, project, tax IDs) that AP teams expect. Best for enterprise and government-adjacent work.</li>
-<li><strong><a href="/invoice-templates/elegant">Elegant</a></strong> — Serif headings and restrained spacing for premium services: legal-adjacent consulting, interior design, high-end photography.</li>
-<li><strong><a href="/invoice-templates/blue">Blue</a></strong> — Familiar colour cue associated with trust and finance. Works well for general small business and consumer-facing services.</li>
-<li><strong><a href="/invoice-templates/dark">Dark</a></strong> — High-contrast header that stands out in a crowded inbox preview and as a PDF thumbnail. Use when brand guidelines already favour dark UI.</li>
-<li><strong><a href="/invoice-templates/startup">Startup</a></strong> — Brand-forward and friendly without losing structure. Suits SaaS services, retainers, and productised freelance offers.</li>
-<li><strong><a href="/invoice-templates/agency">Agency</a></strong> — Side rail and strong sectioning keep long multi-line item lists readable across multi-page invoices.</li>
-<li><strong><a href="/invoice-templates/creative">Creative</a></strong> — Oversized total and colour-blocked header. Good for design studios billing other creatives who appreciate visual confidence.</li>
-<li><strong><a href="/invoice-templates/classic">Classic</a></strong> — Traditional ruled bookkeeping feel. Comfortable for trades, local services, and clients who still print everything.</li>
+<li><strong><a href="/invoice-templates/modern">Modern</a> · Freelance</strong> — Clean header, balanced type, flexible for most industries. The safe default when you are unsure.</li>
+<li><strong><a href="/invoice-templates/minimal">Minimal</a> · Design</strong> — Typography-led with little ornament. Ideal for solo creatives, writers, and consultants who want quiet professionalism.</li>
+<li><strong><a href="/invoice-templates/corporate">Corporate</a> · Enterprise</strong> — Dense reference fields (PO, project, tax IDs) that AP teams expect. Best for enterprise and government-adjacent work.</li>
+<li><strong><a href="/invoice-templates/elegant">Elegant</a> · Luxury</strong> — Serif headings and restrained spacing for premium services: interior design, events, high-end photography.</li>
+<li><strong><a href="/invoice-templates/blue">Blue</a> · Small Business</strong> — Familiar colour cue associated with trust and finance. Works well for trades, retail and consumer-facing services.</li>
+<li><strong><a href="/invoice-templates/dark">Dark</a> · Tech</strong> — High-contrast header that stands out in a crowded inbox preview and as a PDF thumbnail. Use when brand guidelines already favour dark UI.</li>
+<li><strong><a href="/invoice-templates/startup">Startup</a> · SaaS</strong> — Brand-forward and friendly without losing structure. Suits SaaS services, retainers, and productised freelance offers.</li>
+<li><strong><a href="/invoice-templates/agency">Agency</a> · Marketing</strong> — Side rail and strong sectioning keep long multi-line item lists readable across multi-page invoices.</li>
+<li><strong><a href="/invoice-templates/creative">Creative</a> · Creative Arts</strong> — Oversized total and colour-blocked header. Good for design studios billing other creatives who appreciate visual confidence.</li>
+<li><strong><a href="/invoice-templates/classic">Classic</a> · Accounting</strong> — Traditional ruled bookkeeping feel. Comfortable for wholesalers, accountants and clients who still print everything.</li>
+<li><strong><a href="/invoice-templates/nordic">Nordic</a> · Architecture</strong> — Thin colour band and calm whitespace for architects, product designers and craft-led studios.</li>
+<li><strong><a href="/invoice-templates/emerald">Emerald</a> · Healthcare</strong> — Fresh green bar for clinics, coaches and wellness brands that need to feel trustworthy.</li>
+<li><strong><a href="/invoice-templates/sunset">Sunset</a> · Hospitality</strong> — Warm stacked header for restaurants, hotels and event hosts.</li>
+<li><strong><a href="/invoice-templates/slate">Slate</a> · Legal</strong> — Restrained split layout for law firms, advisors and formal professional services.</li>
+<li><strong><a href="/invoice-templates/bold">Bold</a> · Sales</strong> — Corner accent that stands out in busy inboxes — useful for sales teams and course creators.</li>
+<li><strong><a href="/invoice-templates/lavender">Lavender</a> · Beauty</strong> — Soft stacked header for beauty studios, coaches and educators.</li>
+<li><strong><a href="/invoice-templates/ocean">Ocean</a> · Consulting</strong> — Teal side rail that leaves full width for long project descriptions.</li>
+<li><strong><a href="/invoice-templates/mono">Mono</a> · Software</strong> — Stark black-and-white band for developers, engineers and SaaS billing.</li>
 </ol>
 
 <h2>Choosing quickly by client type</h2>
 <table><thead><tr><th>You mostly bill…</th><th>Start with</th></tr></thead><tbody>
-<tr><td>Enterprises / formal AP teams</td><td>Corporate</td></tr>
-<tr><td>Other creatives / studios</td><td>Minimal or Creative</td></tr>
+<tr><td>Enterprises / formal AP teams</td><td>Corporate or Slate</td></tr>
+<tr><td>Other creatives / studios</td><td>Minimal, Creative or Lavender</td></tr>
 <tr><td>Consumers / local clients</td><td>Blue or Classic</td></tr>
 <tr><td>Premium service buyers</td><td>Elegant</td></tr>
-<tr><td>Startups / retainers</td><td>Startup or Modern</td></tr>
-<tr><td>Long item lists / retainers + extras</td><td>Agency</td></tr>
+<tr><td>Startups / retainers</td><td>Startup, Modern or Ocean</td></tr>
+<tr><td>Long item lists / retainers + extras</td><td>Agency or Ocean</td></tr>
+<tr><td>Healthcare / wellness</td><td>Emerald</td></tr>
+<tr><td>Hospitality / events</td><td>Sunset</td></tr>
+<tr><td>Architecture / product design</td><td>Nordic</td></tr>
+<tr><td>Software / engineering</td><td>Mono or Dark</td></tr>
 <tr><td>Everything else</td><td>Modern</td></tr>
 </tbody></table>
 
@@ -2262,7 +2274,7 @@ jane@smithdesign.example</p>
 <p>A single payment-link QR code near the payment block can help consumer and small-business payers. Keep it secondary to readable bank details for clients who cannot scan. Do not scatter multiple QR codes or app-store badges across the page — they compete with the total and look promotional rather than financial.</p>
 <p>If a link is present, also print the URL in plain text for accessibility and printouts.</p>
 <h2>Apply the principles in minutes</h2>
-<p>All fifteen principles are baked into our <a href="/invoice-templates">invoice templates</a>. Create your next document with the <a href="/invoice-generator">free invoice generator</a>, pick a layout that fits your buyer, and let structure — not ornament — carry the payment request.</p>
+<p>These design principles are baked into our <a href="/invoice-templates">18 invoice templates</a>. Create your next document with the <a href="/invoice-generator">free invoice generator</a>, pick a layout that fits your buyer, and let structure — not ornament — carry the payment request.</p>
 `,
   },
 ];

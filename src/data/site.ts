@@ -10,7 +10,11 @@ export const SITE = {
   phone: "+92 3710510083",
   address: "Islamabad, Pakistan",
   hours: "Monday – Friday, 9:00 – 18:00 (PKT)",
-  url: process.env.NEXT_PUBLIC_SITE_URL || "https://nextfreeinvoicegenerator.com",
+  // Always prefer HTTPS for canonicals, sitemap, and AdSense / Search Console.
+  url: (process.env.NEXT_PUBLIC_SITE_URL || "https://nextfreeinvoicegenerator.com").replace(
+    /^http:\/\//i,
+    "https://",
+  ),
   /** Only list profiles you actually operate. Empty until real URLs are set. */
   social: [] as { label: string; href: string }[],
 };

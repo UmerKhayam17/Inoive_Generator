@@ -23,7 +23,7 @@ export default function Page() {
   return (
     <LegalPage
       title="Privacy Policy"
-      updated="9 October 2026"
+      updated="12 October 2026"
       lead="We built Invoice Creator so your invoice data never has to leave your device. This policy explains exactly what we do and do not collect."
     >
       <h2>1. Who we are</h2>

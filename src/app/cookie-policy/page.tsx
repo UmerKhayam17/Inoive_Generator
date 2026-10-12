@@ -23,7 +23,7 @@ export default function Page() {
   return (
     <LegalPage
       title="Cookie Policy"
-      updated="24 September 2026"
+      updated="12 October 2026"
       lead="Cookies are small files stored by your browser. Here is every category we use and how to switch them off."
     >
       <h2>1. Who we are</h2>

@@ -66,20 +66,50 @@ export default function ToolsPage() {
           <p className="mt-3 text-muted-foreground leading-relaxed">
             {SITE.name} currently offers a full-featured free invoice generator. You can customise
             templates, add your logo, itemise line items with tax and discounts, and download a
-            print-ready PDF — all without uploading invoice data to our servers. Additional document
-            builders and calculators will be published here only when they are ready to use.
+            print-ready PDF — all without uploading invoice data to our servers. We only list tools
+            that are ready to use; quotation, receipt and calculator tools will appear here when
+            they ship.
           </p>
           <p className="mt-3 text-muted-foreground leading-relaxed">
             Prefer to jump straight in? Open the{" "}
             <Link href="/invoice-generator" className="font-medium text-foreground underline">
               invoice generator
-            </Link>{" "}
-            or browse{" "}
+            </Link>
+            , browse{" "}
             <Link href="/invoice-templates" className="font-medium text-foreground underline">
               invoice templates
             </Link>
+            , or read the{" "}
+            <Link href="/user-guide" className="font-medium text-foreground underline">
+              user guide
+            </Link>
             .
           </p>
+        </section>
+
+        <section className="mt-14 max-w-3xl">
+          <h2 className="text-2xl font-bold">Country invoice generators</h2>
+          <p className="mt-3 text-muted-foreground leading-relaxed">
+            Same PDF tool with currency and tax-ID labels matched to common jurisdictions. Tax rates
+            are editable defaults — not filing advice.
+          </p>
+          <ul className="mt-4 space-y-3">
+            {[
+              {
+                href: "/invoice-generator/pakistan",
+                label: "Pakistan — PKR, NTN & STRN",
+              },
+              { href: "/invoice-generator/uae", label: "UAE — AED & TRN" },
+              { href: "/invoice-generator/uk", label: "UK — GBP & VAT number" },
+              { href: "/invoice-generator/usa", label: "USA — USD, EIN & state tax ID" },
+            ].map(({ href, label }) => (
+              <li key={href}>
+                <Link href={href} className="font-medium text-foreground underline">
+                  {label}
+                </Link>
+              </li>
+            ))}
+          </ul>
         </section>
 
         <section className="mt-14 max-w-3xl">

@@ -23,7 +23,7 @@ export default function Page() {
   return (
     <LegalPage
       title="Disclaimer"
-      updated="24 September 2026"
+      updated="12 October 2026"
       lead="Please read this before relying on anything you find on this website."
     >
       <h2>1. Who we are</h2>

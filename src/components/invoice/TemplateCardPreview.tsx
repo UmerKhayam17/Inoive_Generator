@@ -34,7 +34,7 @@ export function TemplateCardPreview({
       invoiceNumber: "2026-0041",
       from: {
         name: "Northwind Studio",
-        email: "billing@northwind.example",
+        email: "billing@example.com",
         address: "12 Market Street\nAustin, TX 78701",
         phone: "+1 555 0100",
         taxId: "TX-88421",

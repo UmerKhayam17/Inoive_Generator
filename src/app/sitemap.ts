@@ -4,9 +4,21 @@ import { TEMPLATES } from "@/data/templates";
 import { assertLocalePaths, LOCALES } from "@/data/locales";
 import { SITE } from "@/data/site";
 
+function safeDate(value: string | undefined, fallback: Date): Date {
+  if (!value) return fallback;
+  const d = new Date(value);
+  return Number.isNaN(d.getTime()) ? fallback : d;
+}
+
 export default function sitemap(): MetadataRoute.Sitemap {
-  assertLocalePaths();
-  const base = SITE.url;
+  // Never let a locale misconfig take down /sitemap.xml for crawlers / AdSense.
+  try {
+    assertLocalePaths();
+  } catch (err) {
+    console.error("[sitemap] locale path check failed:", err);
+  }
+
+  const base = SITE.url.replace(/\/$/, "") || "https://nextfreeinvoicegenerator.com";
   const now = new Date();
 
   const staticRoutes: MetadataRoute.Sitemap = [
@@ -82,7 +94,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     })),
     ...POSTS.map((p) => ({
       url: `${base}/blog/${p.slug}`,
-      lastModified: new Date(p.updated ?? p.date),
+      lastModified: safeDate(p.updated ?? p.date, now),
       changeFrequency: "monthly" as const,
       priority: 0.7,
     })),

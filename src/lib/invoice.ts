@@ -243,12 +243,12 @@ export function createDefaultInvoice(localeSlug?: string | null): InvoiceData {
     poNumber: "",
     from: emptyParty({
       name: "Your Business Ltd",
-      email: "billing@yourbusiness.com",
+      email: "billing@example.com",
       address: locale?.sampleFromAddress ?? "12 Market Street\nYour city",
     }),
     to: emptyParty({
       name: "Client Company Inc",
-      email: "accounts@clientcompany.com",
+      email: "accounts@example.com",
       address: locale?.sampleToAddress ?? "480 Harbour Road\nClient city",
     }),
     items: (locale?.sampleItems ?? [
