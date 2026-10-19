@@ -23,7 +23,7 @@ export default function Page() {
   return (
     <LegalPage
       title="Disclaimer"
-      updated="12 October 2026"
+      updated="19 October 2026"
       lead="Please read this before relying on anything you find on this website."
     >
       <h2>1. Who we are</h2>
@@ -66,8 +66,10 @@ export default function Page() {
 
       <h2>7. Advertising</h2>
       <p>
-        This site displays third-party advertising. Advertisements do not constitute an endorsement
-        of the advertiser or its products.
+        This site may display third-party advertising (for example via Google AdSense) once
+        advertising is enabled and you have consented where required. Any advertisements that
+        appear do not constitute an endorsement of the advertiser or its products. Until
+        advertising is switched on, no ad units are shown on this site.
       </p>
 
       <h2>8. Limitation of liability</h2>

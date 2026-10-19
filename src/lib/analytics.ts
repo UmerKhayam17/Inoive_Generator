@@ -1,11 +1,17 @@
 /**
  * Lightweight, consent-aware analytics + AdSense loader.
  *
- * Both integrations are optional: nothing is loaded unless the corresponding
- * environment variable is present AND the visitor has accepted cookies.
+ * Analytics load only when NEXT_PUBLIC_GA_MEASUREMENT_ID is set AND the visitor
+ * has accepted cookies.
+ *
+ * AdSense loads only when NEXT_PUBLIC_SHOW_AD_SLOTS=true (real units ready),
+ * a publisher client is configured, AND the visitor has accepted cookies.
+ * Site ownership for AdSense uses the google-adsense-account meta + /ads.txt —
+ * do not load adsbygoogle.js sitewide before real inventory exists.
  *
  *   NEXT_PUBLIC_GA_MEASUREMENT_ID  e.g. G-XXXXXXXXXX
  *   NEXT_PUBLIC_ADSENSE_CLIENT     e.g. ca-pub-9252917783014745
+ *   NEXT_PUBLIC_SHOW_AD_SLOTS      "true" only when real ad units are live
  */
 
 export const CONSENT_KEY = "invoicecreator:cookie-consent:v1";
@@ -25,6 +31,8 @@ export const GA_ID = process.env.NEXT_PUBLIC_GA_MEASUREMENT_ID;
 /** Publisher client — env override, otherwise the live AdSense account. */
 export const ADSENSE_CLIENT =
   process.env.NEXT_PUBLIC_ADSENSE_CLIENT || "ca-pub-9252917783014745";
+/** Real ad units only — empty placeholders hurt AdSense review. */
+export const ADS_ENABLED = process.env.NEXT_PUBLIC_SHOW_AD_SLOTS === "true";
 
 export function getConsent(): ConsentValue | null {
   if (typeof window === "undefined") return null;
@@ -71,9 +79,13 @@ export function initAnalytics() {
   window.gtag("config", GA_ID, { send_page_view: false, anonymize_ip: true });
 }
 
-/** Loads the AdSense library once (only with consent + a configured client). */
+/**
+ * Loads the AdSense library once — only with consent, a configured client,
+ * and NEXT_PUBLIC_SHOW_AD_SLOTS=true (real units ready to render).
+ */
 export function initAdSense() {
-  if (!ADSENSE_CLIENT || typeof window === "undefined") return;
+  if (!ADS_ENABLED || !ADSENSE_CLIENT || typeof window === "undefined") return;
+  if (getConsent() !== "accepted") return;
   injectScript(
     `https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=${ADSENSE_CLIENT}`,
     { crossorigin: "anonymous" },

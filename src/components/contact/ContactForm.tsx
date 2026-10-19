@@ -18,26 +18,65 @@ const schema = z.object({
 });
 type FormValues = z.infer<typeof schema>;
 
+function buildBody(values: FormValues) {
+  return `From: ${values.name} <${values.email}>\n\n${values.message}`;
+}
+
 export function ContactForm() {
   const {
     register,
     handleSubmit,
+    getValues,
     reset,
     formState: { errors, isSubmitting },
   } = useForm<FormValues>({ resolver: zodResolver(schema) });
 
   const onSubmit = async (values: FormValues) => {
-    const body = `From: ${values.name} <${values.email}>\n\n${values.message}`;
+    const body = buildBody(values);
     const href = `mailto:${SITE.email}?subject=${encodeURIComponent(values.subject)}&body=${encodeURIComponent(body)}`;
     window.location.href = href;
     toast.success("Opening your email app", {
-      description: `If nothing opens, write to ${SITE.email} yourself.`,
+      description: `If nothing opens, use “Copy message” below or write to ${SITE.email}.`,
     });
     reset();
   };
 
+  const copyMessage = async () => {
+    const values = getValues();
+    const parsed = schema.safeParse(values);
+    if (!parsed.success) {
+      toast.error("Please fill the form first", {
+        description: "Name, email, subject and a short message are required.",
+      });
+      return;
+    }
+    const text = `To: ${SITE.email}\nSubject: ${parsed.data.subject}\n\n${buildBody(parsed.data)}`;
+    try {
+      await navigator.clipboard.writeText(text);
+      toast.success("Message copied", {
+        description: `Paste it into any email app addressed to ${SITE.email}.`,
+      });
+    } catch {
+      toast.error("Could not copy", {
+        description: `Please email ${SITE.email} directly.`,
+      });
+    }
+  };
+
   return (
     <form onSubmit={handleSubmit(onSubmit)} noValidate className="mt-6 space-y-5">
+      <div className="rounded-lg border border-border bg-muted/30 p-4 text-sm text-muted-foreground">
+        <p>
+          Support email:{" "}
+          <a className="font-medium text-foreground underline" href={`mailto:${SITE.email}`}>
+            {SITE.email}
+          </a>
+        </p>
+        <p className="mt-1">
+          We read every message during {SITE.hours}. Typical reply time is one business day.
+        </p>
+      </div>
+
       <div className="grid gap-5 sm:grid-cols-2">
         <div className="space-y-2">
           <Label htmlFor="name">Your name</Label>
@@ -98,18 +137,20 @@ export function ContactForm() {
           </p>
         )}
       </div>
-      <div className="space-y-2">
+      <div className="flex flex-col gap-3 sm:flex-row sm:items-center">
         <Button type="submit" size="lg" disabled={isSubmitting}>
           {isSubmitting ? "Opening…" : `Email ${SITE.email}`}
         </Button>
-        <p className="text-xs text-muted-foreground">
-          Opens your email app with a message addressed to{" "}
-          <a className="font-medium text-foreground underline" href={`mailto:${SITE.email}`}>
-            {SITE.email}
-          </a>
-          . If nothing opens, copy that address and write to us directly.
-        </p>
+        <Button type="button" size="lg" variant="outline" onClick={copyMessage}>
+          Copy message
+        </Button>
       </div>
+      <p className="text-xs text-muted-foreground">
+        “Email” opens your mail app with a draft to {SITE.email}. “Copy message” puts the same
+        content on your clipboard if mailto is blocked — then paste into Gmail, Outlook or any
+        client. We do not operate a server-side inbox form; your message only reaches us when you
+        send the email.
+      </p>
     </form>
   );
 }

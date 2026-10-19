@@ -27,7 +27,7 @@ export default function Page() {
     <>
       <PageHeader
         eyebrow="About us"
-        title="About Invoice Creator"
+        title={`About ${SITE.name}`}
         lead={SITE.operatorDescription}
         crumbs={[{ label: "Home", href: "/" }, { label: "About" }]}
       />
@@ -35,20 +35,28 @@ export default function Page() {
       <div className="mx-auto max-w-[96rem] px-4 py-14 sm:px-6 lg:px-8">
         <div className="grid gap-12 lg:grid-cols-[1.4fr_1fr]">
           <article className="prose-invoice">
+            <h2>Brand and website</h2>
+            <p>
+              <strong>{SITE.name}</strong> is the product name of this free invoice generator. The
+              public website is <strong>{SITE.host}</strong>. Both are operated by{" "}
+              <strong>{SITE.operator}</strong>, a software development company based in{" "}
+              {SITE.address}. If you see {SITE.name} in the interface and {SITE.host} in the
+              address bar, you are on the same service.
+            </p>
             <p>
               Our goal is to make professional invoicing simple and accessible for freelancers,
               small businesses, consultants, agencies, service providers, and other independent
               professionals.
             </p>
             <p>
-              With Invoice Creator, users can create professional invoices without creating an
-              account or installing software. Users can add business and customer information,
-              products or services, taxes, discounts, shipping charges, payment details, logos, and
-              signatures, then generate and download a professional PDF invoice.
+              With {SITE.name}, you can create professional invoices without creating an account or
+              installing software. Add business and customer information, products or services,
+              taxes, discounts, shipping charges, payment details, logos, and signatures, then
+              download a professional PDF invoice.
             </p>
 
             <h2>What We Provide</h2>
-            <p>Invoice Creator currently provides:</p>
+            <p>{SITE.name} currently provides:</p>
             <ul>
               <li>Free online invoice creation</li>
               <li>
@@ -72,8 +80,9 @@ export default function Page() {
               account is required.
             </p>
             <p>
-              If you accept cookies, analytics and advertising partners may collect separate usage
-              data (such as page views). That is not your invoice content. See our{" "}
+              If you accept cookies, analytics partners may collect separate usage data (such as
+              page views). When advertising is enabled on the site, advertising partners may do the
+              same for ad delivery. That is not your invoice content. See our{" "}
               <Link href="/privacy-policy">Privacy Policy</Link> and{" "}
               <Link href="/cookie-policy">Cookie Policy</Link> for full details.
             </p>
@@ -107,10 +116,20 @@ export default function Page() {
           <aside className="space-y-6">
             <div className="rounded-2xl border border-border bg-card p-6 shadow-elegant">
               <p className="text-sm font-semibold uppercase tracking-wider text-muted-foreground">
+                Product &amp; site
+              </p>
+              <p className="mt-2 font-display text-xl font-bold">{SITE.name}</p>
+              <p className="mt-1 text-sm text-muted-foreground">{SITE.host}</p>
+              <p className="mt-5 text-sm font-semibold uppercase tracking-wider text-muted-foreground">
                 Operated by
               </p>
               <p className="mt-2 font-display text-xl font-bold">{SITE.operator}</p>
               <p className="mt-1 text-sm text-muted-foreground">{SITE.address}</p>
+              <p className="mt-1 text-sm">
+                <a className="text-primary underline" href={`mailto:${SITE.email}`}>
+                  {SITE.email}
+                </a>
+              </p>
               <p className="mt-5 font-display text-3xl font-extrabold">{TEMPLATE_COUNT}</p>
               <p className="text-sm text-muted-foreground">invoice templates in the library</p>
               <p className="mt-5 font-display text-3xl font-extrabold">$0</p>

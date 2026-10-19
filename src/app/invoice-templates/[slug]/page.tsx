@@ -151,11 +151,10 @@ export default async function TemplateDetailPage({
           <div className="prose-invoice mt-10 max-w-none text-muted-foreground">
             <h2 className="text-2xl font-bold text-foreground">About this template</h2>
             <p>{template.description}</p>
-            <h2 className="text-2xl font-bold text-foreground">Industry</h2>
             <p>
-              Designed for the <strong className="text-foreground">{template.industry}</strong>{" "}
-              industry as a professional invoice layout. Style name:{" "}
-              <strong className="text-foreground">{template.name}</strong>.
+              Style: <strong className="text-foreground">{template.name}</strong>. Best fit for{" "}
+              <strong className="text-foreground">{template.industry}</strong> work when you need a
+              print-ready PDF that matches the live preview above.
             </p>
             <h2 className="text-2xl font-bold text-foreground">Who it suits</h2>
             <ul className="mt-3 space-y-2">
@@ -172,27 +171,25 @@ export default async function TemplateDetailPage({
                 dangerouslySetInnerHTML={{ __html: guide }}
               />
             ) : null}
-            <h2 className="mt-8 text-2xl font-bold text-foreground">
-              Included with every template
-            </h2>
-            <ul className="mt-3 space-y-2">
-              <li className="flex items-center gap-2">
-                <Check className="size-4 text-primary" aria-hidden="true" /> Print-ready A4 layout
-                with logo support
+            <h2 className="mt-8 text-2xl font-bold text-foreground">How to use it</h2>
+            <ol className="mt-3 list-decimal space-y-2 pl-5">
+              <li>
+                Open{" "}
+                <Link
+                  href={`/invoice-generator?template=${template.slug}`}
+                  className="font-medium text-foreground underline"
+                >
+                  this template in the generator
+                </Link>
+                .
               </li>
-              <li className="flex items-center gap-2">
-                <Check className="size-4 text-primary" aria-hidden="true" /> Itemised lines with tax
-                and discount handling
-              </li>
-              <li className="flex items-center gap-2">
-                <Check className="size-4 text-primary" aria-hidden="true" /> Signature area and
-                clear totals panel
-              </li>
-              <li className="flex items-center gap-2">
-                <Check className="size-4 text-primary" aria-hidden="true" /> Instant PDF that
-                matches this preview
-              </li>
-            </ul>
+              <li>Fill bill-from, bill-to, line items, tax and payment notes.</li>
+              <li>Confirm the live preview, then download the matching PDF.</li>
+            </ol>
+            <p className="mt-4">
+              Invoice data stays in your browser on {SITE.host}. No account is required to create or
+              download.
+            </p>
           </div>
 
         </div>

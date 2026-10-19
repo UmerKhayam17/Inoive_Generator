@@ -42,7 +42,7 @@ export default function ContactPage() {
       <PageHeader
         eyebrow="Contact"
         title="Contact Invoice Creator"
-        lead={`${SITE.name} is operated by ${SITE.operator}. If you have a question about the invoice generator, find a technical issue, want to report a problem, or have a suggestion for improving the service, please contact us.`}
+        lead={`${SITE.name} (${SITE.host}) is operated by ${SITE.operator}. Email ${SITE.email} for support, feature requests and bug reports — or use the form below to draft a message.`}
         crumbs={[{ label: "Home", href: "/" }, { label: "Contact" }]}
       />
 

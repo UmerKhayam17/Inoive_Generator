@@ -5,6 +5,7 @@ import Link from "next/link";
 import { Cookie } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import {
+  ADS_ENABLED,
   getConsent,
   initAdSense,
   initAnalytics,
@@ -12,7 +13,7 @@ import {
   type ConsentValue,
 } from "@/lib/analytics";
 
-/** GDPR-style banner. Analytics and ads only load after an explicit "accept". */
+/** Preference banner. Analytics (and ads, when enabled) load only after Accept. */
 export function CookieConsent() {
   const [visible, setVisible] = useState(false);
 
@@ -25,7 +26,7 @@ export function CookieConsent() {
     setVisible(false);
     if (value === "accepted") {
       initAnalytics();
-      initAdSense();
+      if (ADS_ENABLED) initAdSense();
     }
   };
 
@@ -40,8 +41,9 @@ export function CookieConsent() {
       <div className="flex flex-col gap-4 sm:flex-row sm:items-center">
         <Cookie className="size-6 shrink-0 text-accent" aria-hidden="true" />
         <p className="flex-1 text-sm text-muted-foreground">
-          We use cookies for anonymous analytics and to fund the site with advertising. Your invoice
-          data never leaves your browser. Read our{" "}
+          We use optional cookies for anonymous analytics
+          {ADS_ENABLED ? " and, when you accept, to show advertising that helps keep the tool free" : ""}
+          . Your invoice data never leaves your browser. Read our{" "}
           <Link href="/cookie-policy" className="font-medium text-foreground underline">
             cookie policy
           </Link>{" "}

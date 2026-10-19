@@ -23,14 +23,15 @@ export default function Page() {
   return (
     <LegalPage
       title="Privacy Policy"
-      updated="12 October 2026"
+      updated="19 October 2026"
       lead="We built Invoice Creator so your invoice data never has to leave your device. This policy explains exactly what we do and do not collect."
     >
       <h2>1. Who we are</h2>
       <p>
         {SITE.name} (&quot;we&quot;, &quot;us&quot;) is a free online invoice generation service
-        operated by {SITE.operator}, a software development company based in {SITE.address}. We
-        operate this website and the free invoice generator available on it.
+        operated by {SITE.operator}, a software development company based in {SITE.address}. The
+        product brand is {SITE.name}; the website is {SITE.host}. We operate this website and the
+        free invoice generator available on it.
       </p>
       <p>
         For questions regarding this Privacy Policy, the service, or your information, you can
@@ -42,7 +43,10 @@ export default function Page() {
           <strong>Company:</strong> {SITE.operator}
         </li>
         <li>
-          <strong>Website:</strong> nextfreeinvoicegenerator.com
+          <strong>Product:</strong> {SITE.name}
+        </li>
+        <li>
+          <strong>Website:</strong> {SITE.host}
         </li>
         <li>
           <strong>Location:</strong> {SITE.address}
@@ -83,9 +87,10 @@ export default function Page() {
           referrers, approximate country and device type, when you consent to analytics cookies.
         </li>
         <li>
-          <strong>Advertising.</strong> If advertising is enabled and you consent, Google AdSense and
-          its partners may use cookies or similar technologies to serve ads. This is not invoice
-          data.
+          <strong>Advertising.</strong> When advertising is enabled on this site and you consent,
+          Google AdSense and its partners may use cookies or similar technologies to serve ads.
+          Advertising is not currently active until we switch on approved ad units. This is not
+          invoice data.
         </li>
         <li>
           <strong>Server logs.</strong> Standard technical logs including IP address and user agent,
@@ -106,14 +111,15 @@ export default function Page() {
       <h2>5. Cookies and advertising</h2>
       <p>
         We use essential browser storage to remember your theme preference, your cookie choice and
-        your invoice draft. With your consent, we also use Google Analytics to understand how the
-        site is used, and we display advertising supplied by Google AdSense.
+        your invoice draft. With your consent, we may use Google Analytics to understand how the
+        site is used. When advertising is enabled, we may also show ads supplied by Google AdSense
+        after consent. Until advertising is enabled, no AdSense ad units are rendered on pages.
       </p>
       <h3>Google advertising</h3>
       <ul>
         <li>
-          Third-party vendors, including Google, use cookies to serve ads based on a user&apos;s
-          prior visits to this website or other websites.
+          When ads are live, third-party vendors, including Google, may use cookies to serve ads
+          based on a user&apos;s prior visits to this website or other websites.
         </li>
         <li>
           Google&apos;s use of advertising cookies enables it and its partners to serve ads to our
