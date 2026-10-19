@@ -25,6 +25,7 @@ import { TEMPLATES, TEMPLATE_COUNT } from "@/data/templates";
 import { POSTS } from "@/data/blog";
 import { LOCALES } from "@/data/locales";
 import { HOME_FAQS } from "@/data/faqs";
+import { EDITORIAL } from "@/data/editorial";
 import { SITE } from "@/data/site";
 import {
   absoluteUrl,
@@ -228,6 +229,51 @@ export default function Home() {
       <div className="mx-auto max-w-[96rem] px-4 pt-10 sm:px-6 lg:px-8">
         <AdSlot id="home-below-hero" format="leaderboard" />
       </div>
+
+      {/* Why this tool exists — unique value for reviewers & humans */}
+      <section className="mx-auto max-w-[96rem] px-4 py-14 sm:px-6 lg:px-8">
+        <div className="max-w-3xl">
+          <p className="text-xs font-semibold uppercase tracking-[0.2em] text-primary">
+            Why {SITE.name} exists
+          </p>
+          <h2 className="mt-3 text-3xl font-extrabold sm:text-4xl">
+            A real PDF tool — not a landing page that gates downloads
+          </h2>
+          <p className="mt-4 text-lg text-muted-foreground leading-relaxed">
+            {EDITORIAL.mission} We built {SITE.name} at {SITE.host} because most “free invoice”
+            sites either force signup, watermark the PDF, or upload your client list to a server. Here
+            the form, live preview and download all run in your browser.
+          </p>
+          <ul className="mt-6 space-y-3 text-muted-foreground leading-relaxed">
+            <li>
+              <strong className="text-foreground">Working software:</strong> totals, tax, discounts,
+              logo, signature and {TEMPLATE_COUNT} print-ready templates.
+            </li>
+            <li>
+              <strong className="text-foreground">Helpers that do something:</strong>{" "}
+              <Link href="/tools/invoice-number-generator" className="underline">
+                invoice numbers
+              </Link>{" "}
+              and a{" "}
+              <Link href="/tools/sales-tax-calculator" className="underline">
+                sales tax calculator
+              </Link>
+              , plus country presets for Pakistan, UAE, UK and USA.
+            </li>
+            <li>
+              <strong className="text-foreground">Maintained in public:</strong> see{" "}
+              <Link href="/whats-new" className="underline">
+                What’s new
+              </Link>{" "}
+              and our{" "}
+              <Link href="/editorial-standards" className="underline">
+                editorial standards
+              </Link>
+              . Last reviewed {EDITORIAL.lastReviewed}.
+            </li>
+          </ul>
+        </div>
+      </section>
 
       {/* Features */}
       <section className="mx-auto max-w-[96rem] px-4 py-16 sm:px-6 lg:px-8 lg:py-20">

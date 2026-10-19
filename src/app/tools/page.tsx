@@ -10,11 +10,12 @@ import { absoluteUrl, canonicalFor, pageSocial } from "@/lib/seo";
 
 const AVAILABLE = TOOLS.filter((t) => t.available);
 const CORE = AVAILABLE.filter((t) => t.group === "core");
+const HELPERS = AVAILABLE.filter((t) => t.group === "helpers");
 const LOCALE = AVAILABLE.filter((t) => t.group === "locale");
 const LEARN = AVAILABLE.filter((t) => t.group === "learn");
 
 const TITLE = `Free Invoicing Tools for Small Businesses | ${SITE.name}`;
-const DESCRIPTION = `Free browser-based invoicing tools from ${SITE.name}: invoice generator, ${TEMPLATES.length} templates, country-ready layouts for Pakistan, UAE, UK and USA. No signup.`;
+const DESCRIPTION = `Free browser-based invoicing tools from ${SITE.name}: PDF invoice generator, invoice number helper, sales tax calculator, ${TEMPLATES.length} templates, and country layouts. No signup.`;
 
 export const metadata: Metadata = {
   title: { absolute: TITLE },
@@ -94,6 +95,17 @@ export default function ToolsPage() {
           <ToolGrid tools={CORE} />
         </section>
 
+        <section aria-labelledby="helper-tools" className="mt-14">
+          <h2 id="helper-tools" className="text-2xl font-bold">
+            Numbering &amp; tax helpers
+          </h2>
+          <p className="mt-2 max-w-3xl text-muted-foreground leading-relaxed">
+            Small utilities that support the generator — invent a numbering scheme or check tax maths
+            before you lock the PDF. Calculations stay in your browser.
+          </p>
+          <ToolGrid tools={HELPERS} />
+        </section>
+
         <section aria-labelledby="locale-tools" className="mt-14">
           <h2 id="locale-tools" className="text-2xl font-bold">
             Country invoice generators
@@ -148,8 +160,9 @@ export default function ToolsPage() {
             clients who need a simple document.
           </p>
           <p className="mt-3 text-muted-foreground leading-relaxed">
-            We only list tools that are ready to use today. Quotation, receipt and calculator tools
-            will appear here when they ship — we do not show empty “coming soon” cards.
+            We only list tools that work today — including the PDF generator, number helper and tax
+            calculator. Quotation and receipt builders will appear here when they ship; we do not
+            show empty “coming soon” cards.
           </p>
         </section>
 
