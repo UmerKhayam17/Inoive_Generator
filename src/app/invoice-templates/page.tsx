@@ -7,7 +7,7 @@ import { breadcrumbSchema } from "@/components/layout/Breadcrumbs";
 import { TemplatesIndustryBrowser } from "@/components/invoice/TemplatesIndustryBrowser";
 import { TEMPLATES } from "@/data/templates";
 import { SITE } from "@/data/site";
-import { canonicalFor } from "@/lib/seo";
+import { absoluteUrl, canonicalFor, pageSocial } from "@/lib/seo";
 
 const TITLE = `${TEMPLATES.length} Free Professional Invoice Templates by Industry | ${SITE.name}`;
 const DESCRIPTION =
@@ -17,13 +17,11 @@ export const metadata: Metadata = {
   title: { absolute: TITLE },
   description: DESCRIPTION,
   alternates: { canonical: canonicalFor("/invoice-templates") },
-  openGraph: {
+  ...pageSocial({
     title: TITLE,
     description: DESCRIPTION,
-    type: "website",
     url: canonicalFor("/invoice-templates"),
-  },
-  twitter: { title: TITLE, description: DESCRIPTION },
+  }),
 };
 
 const itemListLd = {
@@ -34,7 +32,7 @@ const itemListLd = {
     "@type": "ListItem",
     position: i + 1,
     name: `${t.name} Invoice Template`,
-    url: `/invoice-templates/${t.slug}`,
+    url: absoluteUrl(`/invoice-templates/${t.slug}`),
   })),
 };
 

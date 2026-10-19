@@ -3,7 +3,7 @@ import { breadcrumbSchema } from "@/components/layout/Breadcrumbs";
 import { BlogIndex } from "@/components/blog/BlogIndex";
 import { POSTS } from "@/data/blog";
 import { SITE } from "@/data/site";
-import { canonicalFor } from "@/lib/seo";
+import { absoluteUrl, canonicalFor, pageSocial } from "@/lib/seo";
 
 const TITLE = `Invoicing Blog — Guides, Templates & Tax Explainers | ${SITE.name}`;
 const DESCRIPTION =
@@ -13,16 +13,11 @@ export const metadata: Metadata = {
   title: { absolute: TITLE },
   description: DESCRIPTION,
   alternates: { canonical: canonicalFor("/blog") },
-  openGraph: {
+  ...pageSocial({
     title: TITLE,
     description: DESCRIPTION,
-    type: "website",
     url: canonicalFor("/blog"),
-  },
-  twitter: {
-    title: TITLE,
-    description: DESCRIPTION,
-  },
+  }),
 };
 
 const jsonLd = {
@@ -30,13 +25,13 @@ const jsonLd = {
   "@type": "Blog",
   name: `${SITE.name} blog`,
   description: DESCRIPTION,
-  url: "/blog",
+  url: absoluteUrl("/blog"),
   blogPost: POSTS.slice(0, 10).map((p) => ({
     "@type": "BlogPosting",
     headline: p.title,
     datePublished: p.date,
-    author: { "@type": "Person", name: p.author },
-    url: `/blog/${p.slug}`,
+    author: { "@type": "Organization", name: p.author },
+    url: absoluteUrl(`/blog/${p.slug}`),
   })),
 };
 

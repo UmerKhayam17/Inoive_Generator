@@ -7,7 +7,7 @@ import { breadcrumbSchema } from "@/components/layout/Breadcrumbs";
 import { PostCard } from "@/components/blog/PostCard";
 import { CATEGORIES, POSTS, getCategory, type Post } from "@/data/blog";
 import { SITE } from "@/data/site";
-import { canonicalFor } from "@/lib/seo";
+import { canonicalFor, pageSocial } from "@/lib/seo";
 
 export function generateStaticParams() {
   return CATEGORIES.map((c) => ({ slug: c.slug }));
@@ -32,13 +32,7 @@ export async function generateMetadata({
     title: { absolute: title },
     description,
     alternates: { canonical: url },
-    openGraph: {
-      title,
-      description,
-      type: "website",
-      url,
-    },
-    twitter: { title, description },
+    ...pageSocial({ title, description, url }),
   };
 }
 

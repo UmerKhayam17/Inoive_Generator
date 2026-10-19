@@ -8,7 +8,7 @@ import { Button } from "@/components/ui/button";
 import { LOCALES } from "@/data/locales";
 import { SITE } from "@/data/site";
 import { TEMPLATE_COUNT, TEMPLATES } from "@/data/templates";
-import { canonicalFor } from "@/lib/seo";
+import { canonicalFor, pageSocial } from "@/lib/seo";
 
 const TITLE = `User Guide — How to Create & Download Invoices | ${SITE.name}`;
 const DESCRIPTION =
@@ -18,12 +18,11 @@ export const metadata: Metadata = {
   title: { absolute: TITLE },
   description: DESCRIPTION,
   alternates: { canonical: canonicalFor("/user-guide") },
-  openGraph: {
+  ...pageSocial({
     title: TITLE,
     description: DESCRIPTION,
-    type: "website",
     url: canonicalFor("/user-guide"),
-  },
+  }),
 };
 
 const TOC = [

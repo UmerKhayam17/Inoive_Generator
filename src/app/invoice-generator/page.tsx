@@ -5,22 +5,31 @@ import { InvoiceGenerator } from "@/components/invoice/InvoiceGenerator";
 import { AdSlot } from "@/components/layout/AdSlot";
 import { SITE } from "@/data/site";
 import { TEMPLATE_COUNT } from "@/data/templates";
-import { absoluteUrl, digitalOffer, schemaImages, canonicalFor, siteLogoUrl } from "@/lib/seo";
+import {
+  absoluteUrl,
+  digitalOffer,
+  schemaImages,
+  canonicalFor,
+  siteLogoUrl,
+  pageSocial,
+  localeLanguageAlternates,
+} from "@/lib/seo";
 
-const TITLE = `Free Invoice Generator — Live Preview & Instant PDF | ${SITE.name}`;
+const TITLE = `Create & Download a PDF Invoice — Live Preview | ${SITE.name}`;
 const DESCRIPTION = `Fill in your details, add line items and download a print-ready PDF invoice. Live calculations, logo and signature upload, ${TEMPLATE_COUNT} templates and automatic local autosave.`;
 
 export const metadata: Metadata = {
   title: { absolute: TITLE },
   description: DESCRIPTION,
-  alternates: { canonical: canonicalFor("/invoice-generator") },
-  openGraph: {
+  alternates: {
+    canonical: canonicalFor("/invoice-generator"),
+    languages: localeLanguageAlternates(),
+  },
+  ...pageSocial({
     title: TITLE,
     description: DESCRIPTION,
-    type: "website",
     url: canonicalFor("/invoice-generator"),
-  },
-  twitter: { title: TITLE, description: DESCRIPTION },
+  }),
 };
 
 const jsonLd = {

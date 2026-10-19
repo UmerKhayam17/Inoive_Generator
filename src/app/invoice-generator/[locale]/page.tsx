@@ -8,7 +8,15 @@ import { Breadcrumbs, breadcrumbSchema } from "@/components/layout/Breadcrumbs";
 import { InvoiceGenerator } from "@/components/invoice/InvoiceGenerator";
 import { getLocale, getLocaleSlugs, LOCALES, type InvoiceLocale } from "@/data/locales";
 import { SITE } from "@/data/site";
-import { absoluteUrl, digitalOffer, schemaImages, canonicalFor, siteLogoUrl } from "@/lib/seo";
+import {
+  absoluteUrl,
+  digitalOffer,
+  schemaImages,
+  canonicalFor,
+  siteLogoUrl,
+  pageSocial,
+  localeLanguageAlternates,
+} from "@/lib/seo";
 import { getPost } from "@/data/blog";
 
 export function generateStaticParams() {
@@ -35,23 +43,27 @@ export async function generateMetadata({
 
   if (!locale) {
     return {
-      title: `Invoice generator | ${SITE.name}`,
+      title: { absolute: `Invoice generator | ${SITE.name}` },
       alternates: { canonical: url },
     };
   }
 
+  // Absolute title avoids "%s | Invoice Creator" stacking on already long seoTitles.
+  const title = locale.seoTitle;
+
   return {
-    title: locale.seoTitle,
+    title: { absolute: title },
     description: locale.seoDescription,
     keywords: locale.keywords,
-    alternates: { canonical: url },
-    openGraph: {
-      title: locale.seoTitle,
-      description: locale.seoDescription,
-      type: "website",
-      url,
+    alternates: {
+      canonical: url,
+      languages: localeLanguageAlternates(),
     },
-    twitter: { title: locale.seoTitle, description: locale.seoDescription },
+    ...pageSocial({
+      title,
+      description: locale.seoDescription,
+      url,
+    }),
   };
 }
 

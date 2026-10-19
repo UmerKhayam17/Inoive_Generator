@@ -8,7 +8,14 @@ import { AdSlot } from "@/components/layout/AdSlot";
 import { Button } from "@/components/ui/button";
 import { CATEGORIES, POSTS, getPost, relatedPosts, type Post } from "@/data/blog";
 import { SITE } from "@/data/site";
-import { canonicalFor, siteLogoUrl } from "@/lib/seo";
+import {
+  absoluteUrl,
+  canonicalFor,
+  defaultShareImage,
+  pageSocial,
+  publisherOrg,
+  siteLogoUrl,
+} from "@/lib/seo";
 
 interface Heading {
   id: string;
@@ -45,26 +52,31 @@ export async function generateMetadata({
 }): Promise<Metadata> {
   const { slug } = await params;
   const post = getPost(slug);
-  const title = post ? `${post.title} | ${SITE.name}` : `Article | ${SITE.name}`;
+  // Prefer a shorter SERP title when the editorial title is very long.
+  const rawTitle = post?.title ?? "Article";
+  const title =
+    rawTitle.length > 55
+      ? `${rawTitle.slice(0, 52).replace(/\s+\S*$/, "")}… | ${SITE.name}`
+      : `${rawTitle} | ${SITE.name}`;
   const description = post?.description ?? "Invoicing guides for small businesses.";
   const url = canonicalFor(`/blog/${slug}`);
+  const shareImage = absoluteUrl(`/blog/${slug}/opengraph-image`);
 
   return {
     title: { absolute: title },
     description,
     alternates: { canonical: url },
-    openGraph: {
+    ...pageSocial({
       title: post?.title ?? title,
       description,
-      type: "article",
       url,
+      type: "article",
+      imageUrl: shareImage,
+      imageAlt: post?.title ?? title,
       publishedTime: post?.date,
+      modifiedTime: post?.updated ?? post?.date,
       authors: post?.author ? [post.author] : undefined,
-    },
-    twitter: {
-      title: post?.title ?? title,
-      description,
-    },
+    }),
   };
 }
 
@@ -89,6 +101,7 @@ export default async function PostPage({ params }: { params: Promise<{ slug: str
   });
   const isTax = post.category === "tax-compliance";
 
+  const shareImage = absoluteUrl(`/blog/${post.slug}/opengraph-image`);
   const jsonLd = {
     "@context": "https://schema.org",
     "@type": "BlogPosting",
@@ -97,13 +110,9 @@ export default async function PostPage({ params }: { params: Promise<{ slug: str
     datePublished: post.date,
     dateModified: modifiedIso,
     author: { "@type": "Organization", name: post.author },
-    publisher: {
-      "@type": "Organization",
-      name: SITE.operator,
-      url: SITE.url,
-    },
+    publisher: publisherOrg(),
     mainEntityOfPage: { "@type": "WebPage", "@id": canonicalFor(`/blog/${post.slug}`) },
-    image: siteLogoUrl(),
+    image: [shareImage, siteLogoUrl(), defaultShareImage().url],
   };
 
   const breadcrumbLd = breadcrumbSchema([

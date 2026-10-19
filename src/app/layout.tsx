@@ -6,7 +6,7 @@ import { Toaster } from "@/components/ui/sonner";
 import { Analytics } from "@/components/Analytics";
 import { CookieConsent } from "@/components/CookieConsent";
 import { SITE } from "@/data/site";
-import { siteLogoUrl } from "@/lib/seo";
+import { defaultShareImage, siteLogoUrl } from "@/lib/seo";
 import "./globals.css";
 
 /** Live AdSense publisher ID (also overridable via NEXT_PUBLIC_ADSENSE_CLIENT). */
@@ -40,15 +40,22 @@ export const metadata: Metadata = {
     siteName: SITE.name,
     title: `${SITE.name} — Free Invoice Generator`,
     description: SITE.description,
-    images: [{ url: "/invoice_logo.png", alt: SITE.name }],
+    images: [defaultShareImage()],
   },
   twitter: {
     card: "summary_large_image",
     title: `${SITE.name} — Free Invoice Generator`,
     description: SITE.description,
-    images: ["/invoice_logo.png"],
+    images: [defaultShareImage().url],
   },
-  icons: { icon: "/favicon.ico" },
+  icons: {
+    icon: [
+      { url: "/favicon.ico", sizes: "any" },
+      { url: "/favicon-32.png", type: "image/png", sizes: "32x32" },
+      { url: "/favicon-48.png", type: "image/png", sizes: "48x48" },
+    ],
+    apple: [{ url: "/apple-touch-icon.png", sizes: "180x180" }],
+  },
   other: {
     "google-adsense-account": ADSENSE_CLIENT,
   },

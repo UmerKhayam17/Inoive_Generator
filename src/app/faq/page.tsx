@@ -5,7 +5,7 @@ import { AdSlot } from "@/components/layout/AdSlot";
 import { Button } from "@/components/ui/button";
 import { TEMPLATE_COUNT } from "@/data/templates";
 import { SITE } from "@/data/site";
-import { canonicalFor } from "@/lib/seo";
+import { canonicalFor, pageSocial } from "@/lib/seo";
 
 const ALL = [
   {
@@ -70,7 +70,7 @@ const ALL = [
   },
   {
     q: "How do you make money if everything is free?",
-    a: "The site is supported by unobtrusive advertising. We never charge for the generator and never gate downloads.",
+    a: "When advertising is enabled, the site may be supported by unobtrusive ads (for example Google AdSense) after you consent where required. We never charge for the generator and never gate downloads.",
   },
 ];
 
@@ -81,13 +81,12 @@ const DESCRIPTION =
 export const metadata: Metadata = {
   title: { absolute: TITLE },
   description: DESCRIPTION,
-  openGraph: {
-    title: TITLE,
-    description: "Everything people ask about creating free PDF invoices online.",
-    type: "website",
-    url: canonicalFor("/faq"),
-  },
   alternates: { canonical: canonicalFor("/faq") },
+  ...pageSocial({
+    title: TITLE,
+    description: DESCRIPTION,
+    url: canonicalFor("/faq"),
+  }),
 };
 
 const JSON_LD = {
