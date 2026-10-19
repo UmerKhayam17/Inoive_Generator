@@ -11,12 +11,14 @@ const quickLinks = [
   { label: "Home", href: "/" },
   { label: "Invoice Generator", href: "/invoice-generator" },
   { label: "Invoice Templates", href: "/invoice-templates" },
+  { label: "Tools", href: "/tools" },
   { label: "User Guide", href: "/user-guide" },
   { label: "Blog", href: "/blog" },
+  { label: "What’s new", href: "/whats-new" },
   { label: "About Us", href: "/about" },
   { label: "Contact", href: "/contact" },
   { label: "FAQ", href: "/faq" },
-  { label: "Search", href: "/search" },
+  { label: "Editorial standards", href: "/editorial-standards" },
 ] as const;
 
 const legalLinks = [

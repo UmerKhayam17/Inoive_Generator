@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import { PageHeader } from "@/components/layout/PageHeader";
 import { Button } from "@/components/ui/button";
+import { EDITORIAL } from "@/data/editorial";
 import { SITE } from "@/data/site";
 import { TEMPLATE_COUNT } from "@/data/templates";
 import { absoluteUrl, canonicalFor, pageSocial, siteLogoUrl } from "@/lib/seo";
@@ -82,19 +83,29 @@ export default function Page() {
             <h2>What We Provide</h2>
             <p>{SITE.name} currently provides:</p>
             <ul>
-              <li>Free online invoice creation</li>
+              <li>Free online invoice creation with instant PDF download</li>
+              <li>{TEMPLATE_COUNT} professional invoice templates with unique industry scenarios</li>
               <li>
-                Multiple professional invoice templates ({TEMPLATE_COUNT} currently available)
+                Helper tools:{" "}
+                <Link href="/tools/invoice-number-generator">invoice number generator</Link> and{" "}
+                <Link href="/tools/sales-tax-calculator">sales tax calculator</Link>
               </li>
-              <li>PDF invoice generation</li>
-              <li>Tax and discount calculations</li>
-              <li>Logo and signature support</li>
-              <li>Multiple currencies</li>
-              <li>Mobile-friendly invoice creation</li>
-              <li>Automatic draft saving</li>
-              <li>Invoice templates for freelancers and businesses</li>
-              <li>Invoice guidance and educational resources</li>
+              <li>Country presets for Pakistan, UAE, UK and USA</li>
+              <li>Logo and signature support, multiple currencies, autosaved drafts</li>
+              <li>
+                Practical guides maintained under our{" "}
+                <Link href="/editorial-standards">editorial standards</Link>
+              </li>
             </ul>
+
+            <h2>How we maintain the site</h2>
+            <p>{EDITORIAL.mission}</p>
+            <p>
+              Material product and content changes are listed on{" "}
+              <Link href="/whats-new">What’s new</Link>. Last full review:{" "}
+              <strong>{EDITORIAL.lastReviewed}</strong>. We prioritise fixing real invoicing
+              problems over publishing thin, repetitive pages.
+            </p>
 
             <h2>Privacy-Focused Invoice Creation</h2>
             <p>
@@ -109,17 +120,6 @@ export default function Page() {
               same for ad delivery. That is not your invoice content. See our{" "}
               <Link href="/privacy-policy">Privacy Policy</Link> and{" "}
               <Link href="/cookie-policy">Cookie Policy</Link> for full details.
-            </p>
-
-            <h2>Our Mission</h2>
-            <p>
-              Our mission is to provide a simple, reliable, and accessible invoicing tool that helps
-              individuals and businesses create professional invoices without unnecessary
-              complexity.
-            </p>
-            <p>
-              Invoice Creator is continuously improved based on user feedback, technical
-              improvements, and changes in invoicing requirements.
             </p>
 
             <h2>About Next Software Development Company</h2>

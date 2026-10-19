@@ -2302,6 +2302,82 @@ jane@smithdesign.example</p>
 <p>These design principles are baked into our <a href="/invoice-templates">18 invoice templates</a>. Create your next document with the <a href="/invoice-generator">free invoice generator</a>, pick a layout that fits your buyer, and let structure — not ornament — carry the payment request.</p>
 `,
   },
+  {
+    slug: "choose-invoice-template-by-client",
+    title: "How to Choose an Invoice Template Based on Who Pays You",
+    description:
+      "Match invoice layout to the buyer: freelancers, enterprise AP, hospitality, legal and consumers. A practical decision guide with examples — not a generic template list.",
+    category: "design-templates",
+    date: "2026-10-19",
+    author: "Invoice Creator Editorial Team",
+    content: `
+<p>Most “best template” articles rank designs by colour. Buyers do not. Accounts payable, homeowners and brand clients each scan a PDF differently. Choosing a template by <em>who pays you</em> cuts revision emails and speeds approval.</p>
+
+<h2>Start with the reader, not your brand palette</h2>
+<p>Ask one question: will a stranger in accounts payable approve this, or will a founder who already knows your work? AP wants reference fields and quiet layout. Creative clients tolerate more personality if the total is still obvious within a second.</p>
+
+<h2>Buyer type → layout bias</h2>
+<table><thead><tr><th>Who pays</th><th>What they scan first</th><th>Template bias</th></tr></thead><tbody>
+<tr><td>Enterprise / procurement</td><td>PO, legal names, tax IDs</td><td><a href="/invoice-templates/corporate">Corporate</a>, <a href="/invoice-templates/slate">Slate</a></td></tr>
+<tr><td>SMB / trades clients</td><td>Familiar header, job address</td><td><a href="/invoice-templates/blue">Blue</a>, <a href="/invoice-templates/modern">Modern</a></td></tr>
+<tr><td>Design-led brands</td><td>Typography, whitespace</td><td><a href="/invoice-templates/minimal">Minimal</a>, <a href="/invoice-templates/nordic">Nordic</a></td></tr>
+<tr><td>Hospitality / events</td><td>Warmth + confirmation numbers</td><td><a href="/invoice-templates/sunset">Sunset</a>, <a href="/invoice-templates/elegant">Elegant</a></td></tr>
+<tr><td>Tech / engineering</td><td>Contrast, ticket references</td><td><a href="/invoice-templates/mono">Mono</a>, <a href="/invoice-templates/dark">Dark</a></td></tr>
+</tbody></table>
+
+<h2>A five-minute selection test</h2>
+<ol>
+<li>Export a sample PDF with your real legal name and a long client name.</li>
+<li>Print or view greyscale — does the total still dominate?</li>
+<li>Cover everything except the top third — can you name supplier, number and buyer?</li>
+<li>Ask: would this look odd next to the proposals you already send?</li>
+</ol>
+<p>If step 3 fails, change hierarchy before you change accent colour.</p>
+
+<h2>When to keep one template forever</h2>
+<p>Consistency helps returning clients recognise your documents. Switch templates only when the <em>buyer type</em> changes (for example, you start billing enterprises that require PO blocks). Seasonal redesigns force AP to relearn your layout for no gain.</p>
+
+<h2>Apply the choice</h2>
+<p>Browse the full <a href="/invoice-templates">template library</a>, open your pick in the <a href="/invoice-generator">generator</a>, and fill a real scenario from that template’s detail page. For visual polish after structure is right, read <a href="/blog/professional-invoice-design-tips">professional invoice design tips</a>.</p>
+`,
+  },
+  {
+    slug: "invoice-pdf-print-checklist",
+    title: "Invoice PDF Print Checklist: What Breaks on Paper (and How to Fix It)",
+    description:
+      "A practical checklist for invoice PDFs that must survive printers, scanners and greyscale — margins, colour, logos, totals and payment details.",
+    category: "design-templates",
+    date: "2026-10-19",
+    author: "Invoice Creator Editorial Team",
+    content: `
+<p>Screen-perfect invoices often fail on paper: clipped logos, grey-on-grey totals, payment IBANs that wrap mid-digit. If any of your clients still print or scan, run this checklist before you send.</p>
+
+<h2>1. Margins and clip risk</h2>
+<p>Keep critical content inside a safe margin. Consumer printers crop edges. Put invoice number, totals and bank details away from the extreme footer edge. Our templates target A4 with print-safe spacing — do not shrink margins to “fit more branding.”</p>
+
+<h2>2. Greyscale legibility</h2>
+<p>Print once in black and white. Accent bars should not be the only cue for hierarchy. Amount due must remain the darkest, largest number on the page. Neon or pastel text that looks fine on OLED often disappears on office printers.</p>
+
+<h2>3. Logo resolution</h2>
+<p>Upload a transparent PNG at useful resolution. A 200px-wide logo stretched across a header looks unprofessional on paper. If the logo is complex, prefer a simplified mark for invoices.</p>
+
+<h2>4. Tables that survive photocopying</h2>
+<p>Hairline rules can vanish when scanned. Ensure quantity, rate and amount columns remain aligned after a phone-photo of the printout. Avoid placing important numbers only in coloured chips.</p>
+
+<h2>5. Payment block completeness</h2>
+<p>Bank name, account name, IBAN/account number and payment reference should be readable without zoom. If you add a QR code, also print the URL or account digits — scanners are not universal.</p>
+
+<h2>6. Long legal names</h2>
+<p>Test with worst-case strings (long LLC names, bilingual addresses). Fixed-height boxes that clip text look careless. Templates like <a href="/invoice-templates/corporate">Corporate</a> and <a href="/invoice-templates/modern">Modern</a> wrap more gracefully than decorative stacked headers when names are long.</p>
+
+<h2>Quick pass / fail</h2>
+<ul>
+<li>Pass: someone can pay from a paper copy alone.</li>
+<li>Fail: they must open the email again to find the IBAN or total.</li>
+</ul>
+<p>Generate a test PDF in the <a href="/invoice-generator">invoice generator</a>, print it, and only then send to a real client. Design tips that complement this checklist live in <a href="/blog/professional-invoice-design-tips">15 professional invoice design tips</a>.</p>
+`,
+  },
 ];
 
 /** Reading time is derived from content length so it cannot drift from the article. */

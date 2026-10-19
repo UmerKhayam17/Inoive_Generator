@@ -8,6 +8,8 @@ import { InvoicePreview } from "@/components/invoice/InvoicePreview";
 import { ResponsiveInvoiceFrame } from "@/components/invoice/ResponsiveInvoiceFrame";
 import { TEMPLATES, templateLabel } from "@/data/templates";
 import { getTemplateGuide } from "@/data/templateGuides";
+import { getTemplateExtra } from "@/data/templateExtras";
+import { EDITORIAL } from "@/data/editorial";
 import { SITE } from "@/data/site";
 import { createDefaultInvoice } from "@/lib/invoice";
 import { absoluteUrl, digitalOffer, schemaImages, canonicalFor, pageSocial } from "@/lib/seo";
@@ -61,6 +63,7 @@ export default async function TemplateDetailPage({
   const pageUrl = absoluteUrl(`/invoice-templates/${slug}`);
   const imageUrl = absoluteUrl(`/invoice-templates/${slug}/opengraph-image`);
   const guide = getTemplateGuide(template.slug);
+  const extra = getTemplateExtra(template.slug);
 
   const appLd = {
     "@context": "https://schema.org",
@@ -143,6 +146,9 @@ export default async function TemplateDetailPage({
               <strong className="text-foreground">{template.industry}</strong> work when you need a
               print-ready PDF that matches the live preview above.
             </p>
+            <p className="text-xs font-semibold uppercase tracking-[0.16em] text-primary">
+              Content reviewed {EDITORIAL.lastReviewed}
+            </p>
             <h2 className="text-2xl font-bold text-foreground">Who it suits</h2>
             <ul className="mt-3 space-y-2">
               {template.bestFor.map((b: string) => (
@@ -151,6 +157,45 @@ export default async function TemplateDetailPage({
                 </li>
               ))}
             </ul>
+            {extra ? (
+              <>
+                <h2 className="mt-8 text-2xl font-bold text-foreground">
+                  Real billing scenario
+                </h2>
+                <p>{extra.scenario}</p>
+                <h2 className="mt-8 text-2xl font-bold text-foreground">
+                  Example line items
+                </h2>
+                <ul className="mt-3 space-y-2">
+                  {extra.lineItemExamples.map((line) => (
+                    <li key={line} className="flex items-center gap-2">
+                      <Check className="size-4 text-primary" aria-hidden="true" /> {line}
+                    </li>
+                  ))}
+                </ul>
+                <h2 className="mt-8 text-2xl font-bold text-foreground">
+                  Fields worth including
+                </h2>
+                <ul className="mt-3 space-y-2">
+                  {extra.fieldsToInclude.map((f) => (
+                    <li key={f} className="flex items-center gap-2">
+                      <Check className="size-4 text-primary" aria-hidden="true" /> {f}
+                    </li>
+                  ))}
+                </ul>
+                <h2 className="mt-8 text-2xl font-bold text-foreground">
+                  Common mistakes with this layout
+                </h2>
+                <ul className="mt-3 space-y-2">
+                  {extra.commonMistakes.map((m) => (
+                    <li key={m} className="flex items-start gap-2">
+                      <Check className="mt-0.5 size-4 shrink-0 text-primary" aria-hidden="true" />{" "}
+                      {m}
+                    </li>
+                  ))}
+                </ul>
+              </>
+            ) : null}
             {guide ? (
               <div
                 className="mt-8"
@@ -175,7 +220,14 @@ export default async function TemplateDetailPage({
             </ol>
             <p className="mt-4">
               Invoice data stays in your browser on {SITE.host}. No account is required to create or
-              download.
+              download. Need a number sequence first? Use the{" "}
+              <Link
+                href="/tools/invoice-number-generator"
+                className="font-medium text-foreground underline"
+              >
+                invoice number generator
+              </Link>
+              .
             </p>
           </div>
 

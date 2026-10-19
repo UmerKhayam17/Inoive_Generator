@@ -7,6 +7,8 @@ import {
   Building2,
   Landmark,
   MapPinned,
+  Hash,
+  Percent,
 } from "lucide-react";
 
 export interface ToolCard {
@@ -16,10 +18,10 @@ export interface ToolCard {
   href: string;
   icon: LucideIcon;
   available: boolean;
-  group: "core" | "locale" | "learn";
+  group: "core" | "locale" | "learn" | "helpers";
 }
 
-/** Live tools and locale generators already on the site — /tools is a hub, not a single card. */
+/** Live tools already on the site — /tools is a hub of working utilities. */
 export const TOOLS: ToolCard[] = [
   {
     slug: "invoice-generator",
@@ -40,6 +42,26 @@ export const TOOLS: ToolCard[] = [
     icon: LayoutTemplate,
     available: true,
     group: "core",
+  },
+  {
+    slug: "invoice-number-generator",
+    name: "Invoice Number Generator",
+    description:
+      "Create sequential prefixed numbers (INV-2026-0001) and copy them into your next invoice.",
+    href: "/tools/invoice-number-generator",
+    icon: Hash,
+    available: true,
+    group: "helpers",
+  },
+  {
+    slug: "sales-tax-calculator",
+    name: "Sales Tax Calculator",
+    description:
+      "Add or extract tax from an amount when you already know the rate. Educational — not filing advice.",
+    href: "/tools/sales-tax-calculator",
+    icon: Percent,
+    available: true,
+    group: "helpers",
   },
   {
     slug: "user-guide",
