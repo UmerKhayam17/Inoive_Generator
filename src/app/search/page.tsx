@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import { Suspense } from "react";
 import { SearchPage } from "@/components/search/SearchPage";
 import { SITE } from "@/data/site";
-import { canonicalFor } from "@/lib/seo";
+import { canonicalFor, pageSocial } from "@/lib/seo";
 
 const TITLE = `Search — Invoice Templates & Guides | ${SITE.name}`;
 const DESCRIPTION =
@@ -13,13 +13,11 @@ export const metadata: Metadata = {
   description: DESCRIPTION,
   alternates: { canonical: canonicalFor("/search") },
   robots: { index: false, follow: true },
-  openGraph: {
+  ...pageSocial({
     title: TITLE,
     description: DESCRIPTION,
-    type: "website",
     url: canonicalFor("/search"),
-  },
-  twitter: { title: TITLE, description: DESCRIPTION },
+  }),
 };
 
 export default function Page() {

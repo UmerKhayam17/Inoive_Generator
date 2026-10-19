@@ -4,27 +4,51 @@ import { PageHeader } from "@/components/layout/PageHeader";
 import { Button } from "@/components/ui/button";
 import { SITE } from "@/data/site";
 import { TEMPLATE_COUNT } from "@/data/templates";
-import { canonicalFor } from "@/lib/seo";
+import { absoluteUrl, canonicalFor, pageSocial, siteLogoUrl } from "@/lib/seo";
 
 const TITLE = `About ${SITE.name} — Free Invoicing Tools for Small Business`;
-const DESCRIPTION =
-  "Invoice Creator is a free online invoice generator operated by Next Software Development Company in Islamabad, Pakistan. No signup, professional PDF invoices.";
+const DESCRIPTION = `${SITE.name} is a free online invoice generator at ${SITE.host}, operated by ${SITE.operator} in ${SITE.address}. No signup, professional PDF invoices.`;
 
 export const metadata: Metadata = {
   title: { absolute: TITLE },
   description: DESCRIPTION,
-  openGraph: {
-    title: `About ${SITE.name}`,
-    description: DESCRIPTION,
-    type: "website",
-    url: canonicalFor("/about"),
-  },
   alternates: { canonical: canonicalFor("/about") },
+  ...pageSocial({
+    title: TITLE,
+    description: DESCRIPTION,
+    url: canonicalFor("/about"),
+  }),
+};
+
+const aboutLd = {
+  "@context": "https://schema.org",
+  "@type": "AboutPage",
+  name: TITLE,
+  description: DESCRIPTION,
+  url: absoluteUrl("/about"),
+  mainEntity: {
+    "@type": "Organization",
+    name: SITE.operator,
+    url: SITE.url,
+    email: SITE.email,
+    telephone: SITE.phone,
+    address: {
+      "@type": "PostalAddress",
+      addressLocality: "Islamabad",
+      addressCountry: "PK",
+    },
+    logo: siteLogoUrl(),
+    brand: { "@type": "Brand", name: SITE.name },
+  },
 };
 
 export default function Page() {
   return (
     <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(aboutLd) }}
+      />
       <PageHeader
         eyebrow="About us"
         title={`About ${SITE.name}`}

@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import { LegalPage } from "@/components/layout/LegalPage";
 import { SITE } from "@/data/site";
-import { canonicalFor } from "@/lib/seo";
+import { canonicalFor, pageSocial } from "@/lib/seo";
 
 const TITLE = `Disclaimer — ${SITE.name}`;
 const DESCRIPTION =
@@ -10,13 +10,12 @@ const DESCRIPTION =
 export const metadata: Metadata = {
   title: { absolute: TITLE },
   description: DESCRIPTION,
-  openGraph: {
-    title: TITLE,
-    description: "General information only — not professional advice.",
-    type: "website",
-    url: canonicalFor("/disclaimer"),
-  },
   alternates: { canonical: canonicalFor("/disclaimer") },
+  ...pageSocial({
+    title: TITLE,
+    description: DESCRIPTION,
+    url: canonicalFor("/disclaimer"),
+  }),
 };
 
 export default function Page() {

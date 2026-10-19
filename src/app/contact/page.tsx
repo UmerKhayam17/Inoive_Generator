@@ -5,7 +5,7 @@ import { PageHeader } from "@/components/layout/PageHeader";
 import { ContactForm } from "@/components/contact/ContactForm";
 import { CONTACT_FAQS } from "@/data/faqs";
 import { SITE } from "@/data/site";
-import { canonicalFor } from "@/lib/seo";
+import { absoluteUrl, canonicalFor, pageSocial } from "@/lib/seo";
 
 const TITLE = `Contact ${SITE.name} — Support for the Free Invoice Generator`;
 const DESCRIPTION = `Email ${SITE.email} for support, feature requests and bug reports. Invoices stay in your browser — we only see what you send us.`;
@@ -14,22 +14,31 @@ export const metadata: Metadata = {
   title: { absolute: TITLE },
   description: DESCRIPTION,
   alternates: { canonical: canonicalFor("/contact") },
-  openGraph: {
-    title: `Contact ${SITE.name}`,
+  ...pageSocial({
+    title: TITLE,
     description: DESCRIPTION,
-    type: "website",
     url: canonicalFor("/contact"),
-  },
+  }),
 };
 
 const jsonLd = {
   "@context": "https://schema.org",
-  "@type": "FAQPage",
-  mainEntity: CONTACT_FAQS.map((f) => ({
-    "@type": "Question",
-    name: f.q,
-    acceptedAnswer: { "@type": "Answer", text: f.a },
-  })),
+  "@graph": [
+    {
+      "@type": "ContactPage",
+      name: TITLE,
+      description: DESCRIPTION,
+      url: absoluteUrl("/contact"),
+    },
+    {
+      "@type": "FAQPage",
+      mainEntity: CONTACT_FAQS.map((f) => ({
+        "@type": "Question",
+        name: f.q,
+        acceptedAnswer: { "@type": "Answer", text: f.a },
+      })),
+    },
+  ],
 };
 
 export default function ContactPage() {

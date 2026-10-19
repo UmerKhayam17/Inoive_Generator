@@ -10,7 +10,7 @@ import { TEMPLATES, templateLabel } from "@/data/templates";
 import { getTemplateGuide } from "@/data/templateGuides";
 import { SITE } from "@/data/site";
 import { createDefaultInvoice } from "@/lib/invoice";
-import { absoluteUrl, digitalOffer, schemaImages, canonicalFor } from "@/lib/seo";
+import { absoluteUrl, digitalOffer, schemaImages, canonicalFor, pageSocial } from "@/lib/seo";
 
 export function generateStaticParams() {
   return TEMPLATES.map((t) => ({ slug: t.slug }));
@@ -36,26 +36,13 @@ export async function generateMetadata({
     title: { absolute: title },
     description,
     alternates: { canonical: url },
-    openGraph: {
+    ...pageSocial({
       title,
       description,
-      type: "website",
       url,
-      images: [
-        {
-          url: imageUrl,
-          width: 1200,
-          height: 630,
-          alt: template ? `${template.name} Invoice Template` : "Invoice template",
-        },
-      ],
-    },
-    twitter: {
-      title,
-      description,
-      card: "summary_large_image",
-      images: [imageUrl],
-    },
+      imageUrl,
+      imageAlt: template ? `${template.name} Invoice Template` : "Invoice template",
+    }),
   };
 }
 

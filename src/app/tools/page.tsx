@@ -6,7 +6,7 @@ import { Button } from "@/components/ui/button";
 import { TEMPLATES } from "@/data/templates";
 import { TOOLS } from "@/data/tools";
 import { SITE } from "@/data/site";
-import { canonicalFor } from "@/lib/seo";
+import { absoluteUrl, canonicalFor, pageSocial } from "@/lib/seo";
 
 const AVAILABLE = TOOLS.filter((t) => t.available);
 const CORE = AVAILABLE.filter((t) => t.group === "core");
@@ -20,17 +20,27 @@ export const metadata: Metadata = {
   title: { absolute: TITLE },
   description: DESCRIPTION,
   robots: { index: true, follow: true },
-  openGraph: {
-    title: TITLE,
-    description: DESCRIPTION,
-    type: "website",
-    url: canonicalFor("/tools"),
-  },
-  twitter: {
-    title: TITLE,
-    description: DESCRIPTION,
-  },
   alternates: { canonical: canonicalFor("/tools") },
+  ...pageSocial({
+    title: TITLE,
+    description: DESCRIPTION,
+    url: canonicalFor("/tools"),
+  }),
+};
+
+const toolsListLd = {
+  "@context": "https://schema.org",
+  "@type": "ItemList",
+  name: `${SITE.name} free invoicing tools`,
+  description: DESCRIPTION,
+  url: absoluteUrl("/tools"),
+  itemListElement: AVAILABLE.map((t, i) => ({
+    "@type": "ListItem",
+    position: i + 1,
+    name: t.name,
+    url: absoluteUrl(t.href),
+    description: t.description,
+  })),
 };
 
 function ToolGrid({
@@ -59,6 +69,10 @@ function ToolGrid({
 export default function ToolsPage() {
   return (
     <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(toolsListLd) }}
+      />
       <PageHeader
         eyebrow="Tools"
         title="Free tools for getting paid"

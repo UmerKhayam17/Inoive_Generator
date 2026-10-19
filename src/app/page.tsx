@@ -26,25 +26,27 @@ import { POSTS } from "@/data/blog";
 import { LOCALES } from "@/data/locales";
 import { HOME_FAQS } from "@/data/faqs";
 import { SITE } from "@/data/site";
-import { absoluteUrl, digitalOffer, schemaImages, canonicalFor, siteLogoUrl } from "@/lib/seo";
+import {
+  absoluteUrl,
+  digitalOffer,
+  schemaImages,
+  canonicalFor,
+  siteLogoUrl,
+  pageSocial,
+} from "@/lib/seo";
 
-const TITLE = `Free Invoice Generator — Create & Download PDF Invoices | ${SITE.name}`;
+const TITLE = `Free Online Invoicing for Freelancers & Small Business | ${SITE.name}`;
 const DESCRIPTION = `Create professional invoices in your browser and download a clean PDF instantly. ${TEMPLATE_COUNT} templates, logo upload, tax and discount calculations, autosave — free, no signup.`;
 
 export const metadata: Metadata = {
   title: { absolute: TITLE },
   description: DESCRIPTION,
-  openGraph: {
-    title: TITLE,
-    description: DESCRIPTION,
-    type: "website",
-    url: canonicalFor("/"),
-  },
-  twitter: {
-    title: TITLE,
-    description: DESCRIPTION,
-  },
   alternates: { canonical: canonicalFor("/") },
+  ...pageSocial({
+    title: TITLE,
+    description: DESCRIPTION,
+    url: canonicalFor("/"),
+  }),
 };
 
 const JSON_LD = {

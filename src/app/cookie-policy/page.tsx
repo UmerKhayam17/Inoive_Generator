@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import { LegalPage } from "@/components/layout/LegalPage";
 import { SITE } from "@/data/site";
-import { canonicalFor } from "@/lib/seo";
+import { canonicalFor, pageSocial } from "@/lib/seo";
 
 const TITLE = `Cookie Policy — ${SITE.name}`;
 const DESCRIPTION =
@@ -10,13 +10,12 @@ const DESCRIPTION =
 export const metadata: Metadata = {
   title: { absolute: TITLE },
   description: DESCRIPTION,
-  openGraph: {
-    title: TITLE,
-    description: "Cookies used by Invoice Creator and how to control them.",
-    type: "website",
-    url: canonicalFor("/cookie-policy"),
-  },
   alternates: { canonical: canonicalFor("/cookie-policy") },
+  ...pageSocial({
+    title: TITLE,
+    description: DESCRIPTION,
+    url: canonicalFor("/cookie-policy"),
+  }),
 };
 
 export default function Page() {
