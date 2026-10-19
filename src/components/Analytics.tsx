@@ -10,8 +10,9 @@ import {
 } from "@/lib/analytics";
 
 /**
- * Mounts once in the root layout. Boots gtag.js + AdSense after consent and
- * reports a page_view on every client-side route change.
+ * Mounts once in the root layout. Boots gtag.js after consent, and AdSense only
+ * when real ad units are enabled (NEXT_PUBLIC_SHOW_AD_SLOTS). Reports page_view
+ * on every client-side route change.
  */
 export function Analytics() {
   const pathname = usePathname();
@@ -19,7 +20,7 @@ export function Analytics() {
   useEffect(() => {
     if (!analyticsAllowed()) return;
     initAnalytics();
-    initAdSense();
+    initAdSense(); // no-op unless ADS_ENABLED + consent
   }, [pathname]);
 
   useEffect(() => {

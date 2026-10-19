@@ -14,11 +14,36 @@ export interface Post {
 }
 
 export const CATEGORIES = [
-  { slug: "invoicing-basics", name: "Invoicing Basics" },
-  { slug: "comparisons", name: "Comparisons" },
-  { slug: "guides", name: "Guides" },
-  { slug: "tax-compliance", name: "Tax & Compliance" },
-  { slug: "design-templates", name: "Design & Templates" },
+  {
+    slug: "invoicing-basics",
+    name: "Invoicing Basics",
+    description:
+      "Foundational articles on what belongs on an invoice, how numbering works, payment terms, and the habits that keep freelancers and small businesses paid on time.",
+  },
+  {
+    slug: "comparisons",
+    name: "Comparisons",
+    description:
+      "Side-by-side explainers that help you choose between invoice types, document formats and common billing approaches — without sales fluff.",
+  },
+  {
+    slug: "guides",
+    name: "Guides",
+    description:
+      "Practical how-tos for creating invoices, chasing payment, issuing credit notes and building a repeatable billing workflow.",
+  },
+  {
+    slug: "tax-compliance",
+    name: "Tax & Compliance",
+    description:
+      "Jurisdiction-aware overviews of tax IDs, sales tax and VAT fields on invoices. General information only — not tax advice; always verify with a local professional.",
+  },
+  {
+    slug: "design-templates",
+    name: "Design & Templates",
+    description:
+      "Advice on invoice layout, branding and choosing a template that accounts payable can read quickly.",
+  },
 ];
 
 /** Approximate reading time from HTML (~200 wpm for instructional articles). */

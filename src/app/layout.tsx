@@ -98,13 +98,10 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
           name="google-site-verification"
           content="_c7mZwE2FNiRLG4kNxK0KTZ9posJZy7vIx9Mr1rsyr4"
         />
-        {/* Native <script> (not next/script) so AdSense crawler sees the exact tag */}
+        {/* Meta alone verifies the site for AdSense. The adsbygoogle.js library
+            loads only after cookie consent when real ad units are enabled
+            (see initAdSense in src/lib/analytics.ts). */}
         <meta name="google-adsense-account" content={ADSENSE_CLIENT} />
-        <script
-          async
-          src={`https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=${ADSENSE_CLIENT}`}
-          crossOrigin="anonymous"
-        />
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}

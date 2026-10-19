@@ -1,127 +1,91 @@
 import type { LucideIcon } from "lucide-react";
 import {
   FileText,
-  // Calculator,
-  // ClipboardList,
-  // Coins,
-  // FileSpreadsheet,
-  // Hash,
-  // Landmark,
-  // Percent,
-  // PiggyBank,
-  // Receipt,
-  // Repeat,
-  // ShoppingCart,
-  // Sparkles,
-  // Wallet,
+  LayoutTemplate,
+  BookOpen,
+  Flag,
+  Building2,
+  Landmark,
+  MapPinned,
 } from "lucide-react";
 
 export interface ToolCard {
   slug: string;
   name: string;
   description: string;
+  href: string;
   icon: LucideIcon;
   available: boolean;
+  group: "core" | "locale" | "learn";
 }
 
+/** Live tools and locale generators already on the site — /tools is a hub, not a single card. */
 export const TOOLS: ToolCard[] = [
   {
     slug: "invoice-generator",
     name: "Invoice Generator",
-    description: "Build and download a professional PDF invoice in under two minutes.",
+    description:
+      "Build a professional PDF invoice with live preview, tax, discounts, logo and payment notes. Runs in your browser — no account.",
+    href: "/invoice-generator",
     icon: FileText,
     available: true,
+    group: "core",
   },
-  // Coming soon — uncomment when ready:
-  // {
-  //   slug: "quotation-generator",
-  //   name: "Quotation Generator",
-  //   description: "Send priced quotations that convert into invoices with one click.",
-  //   icon: ClipboardList,
-  //   available: false,
-  // },
-  // {
-  //   slug: "receipt-generator",
-  //   name: "Receipt Generator",
-  //   description: "Issue payment receipts once an invoice has been settled.",
-  //   icon: Receipt,
-  //   available: false,
-  // },
-  // {
-  //   slug: "estimate-generator",
-  //   name: "Estimate Generator",
-  //   description: "Give clients a clear, non-binding cost estimate before work starts.",
-  //   icon: FileSpreadsheet,
-  //   available: false,
-  // },
-  // {
-  //   slug: "purchase-order-generator",
-  //   name: "Purchase Order Generator",
-  //   description: "Raise structured purchase orders for your suppliers.",
-  //   icon: ShoppingCart,
-  //   available: false,
-  // },
-  // {
-  //   slug: "proforma-invoice-generator",
-  //   name: "Proforma Invoice Generator",
-  //   description: "Create proforma invoices for advance payments and customs.",
-  //   icon: Landmark,
-  //   available: false,
-  // },
-  // {
-  //   slug: "gst-calculator",
-  //   name: "GST Calculator",
-  //   description: "Add or remove GST at any rate with instant net and gross totals.",
-  //   icon: Calculator,
-  //   available: false,
-  // },
-  // {
-  //   slug: "vat-calculator",
-  //   name: "VAT Calculator",
-  //   description: "Work out VAT inclusive and exclusive amounts for any rate.",
-  //   icon: Percent,
-  //   available: false,
-  // },
-  // {
-  //   slug: "sales-tax-calculator",
-  //   name: "Sales Tax Calculator",
-  //   description: "Calculate US sales tax by rate and see the total charged.",
-  //   icon: Coins,
-  //   available: false,
-  // },
-  // {
-  //   slug: "currency-converter",
-  //   name: "Currency Converter",
-  //   description: "Convert invoice amounts between major world currencies.",
-  //   icon: Repeat,
-  //   available: false,
-  // },
-  // {
-  //   slug: "profit-margin-calculator",
-  //   name: "Profit Margin Calculator",
-  //   description: "Check margin, markup and break-even before you quote.",
-  //   icon: PiggyBank,
-  //   available: false,
-  // },
-  // {
-  //   slug: "business-name-generator",
-  //   name: "Business Name Generator",
-  //   description: "Brainstorm available-sounding names for a new venture.",
-  //   icon: Sparkles,
-  //   available: false,
-  // },
-  // {
-  //   slug: "invoice-number-generator",
-  //   name: "Invoice Number Generator",
-  //   description: "Generate sequential, prefixed invoice numbers that never clash.",
-  //   icon: Hash,
-  //   available: false,
-  // },
-  // {
-  //   slug: "expense-tracker",
-  //   name: "Expense Tracker",
-  //   description: "Log business expenses and see where the money actually goes.",
-  //   icon: Wallet,
-  //   available: false,
-  // },
+  {
+    slug: "invoice-templates",
+    name: "Invoice Template Library",
+    description:
+      "Browse industry layouts, compare styles, then open any template in the generator with one click.",
+    href: "/invoice-templates",
+    icon: LayoutTemplate,
+    available: true,
+    group: "core",
+  },
+  {
+    slug: "user-guide",
+    name: "Invoice User Guide",
+    description:
+      "Step-by-step help for fields, taxes, numbering, PDF download and common invoicing mistakes.",
+    href: "/user-guide",
+    icon: BookOpen,
+    available: true,
+    group: "learn",
+  },
+  {
+    slug: "invoice-generator-pakistan",
+    name: "Pakistan Invoice Generator",
+    description:
+      "PKR defaults with NTN and STRN labels for freelancers and small businesses in Pakistan.",
+    href: "/invoice-generator/pakistan",
+    icon: Flag,
+    available: true,
+    group: "locale",
+  },
+  {
+    slug: "invoice-generator-uae",
+    name: "UAE Invoice Generator",
+    description: "AED defaults with TRN fields suited to UAE VAT-registered suppliers.",
+    href: "/invoice-generator/uae",
+    icon: Building2,
+    available: true,
+    group: "locale",
+  },
+  {
+    slug: "invoice-generator-uk",
+    name: "UK Invoice Generator",
+    description: "GBP defaults with VAT number fields for UK sole traders and limited companies.",
+    href: "/invoice-generator/uk",
+    icon: Landmark,
+    available: true,
+    group: "locale",
+  },
+  {
+    slug: "invoice-generator-usa",
+    name: "USA Invoice Generator",
+    description: "USD defaults with EIN and state tax ID fields for US freelancers and LLCs.",
+    href: "/invoice-generator/usa",
+    icon: MapPinned,
+    available: true,
+    group: "locale",
+  },
 ];

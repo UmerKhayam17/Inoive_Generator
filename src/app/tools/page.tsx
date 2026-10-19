@@ -8,11 +8,13 @@ import { TOOLS } from "@/data/tools";
 import { SITE } from "@/data/site";
 import { canonicalFor } from "@/lib/seo";
 
-const AVAILABLE_TOOLS = TOOLS.filter((t) => t.available);
+const AVAILABLE = TOOLS.filter((t) => t.available);
+const CORE = AVAILABLE.filter((t) => t.group === "core");
+const LOCALE = AVAILABLE.filter((t) => t.group === "locale");
+const LEARN = AVAILABLE.filter((t) => t.group === "learn");
 
 const TITLE = `Free Invoicing Tools for Small Businesses | ${SITE.name}`;
-const DESCRIPTION =
-  "Use our free browser-based invoice generator to create and download professional PDF invoices. No signup required.";
+const DESCRIPTION = `Free browser-based invoicing tools from ${SITE.name}: invoice generator, ${TEMPLATES.length} templates, country-ready layouts for Pakistan, UAE, UK and USA. No signup.`;
 
 export const metadata: Metadata = {
   title: { absolute: TITLE },
@@ -31,89 +33,83 @@ export const metadata: Metadata = {
   alternates: { canonical: canonicalFor("/tools") },
 };
 
+function ToolGrid({
+  tools,
+}: {
+  tools: typeof AVAILABLE;
+}) {
+  return (
+    <div className="mt-6 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
+      {tools.map(({ icon: Icon, ...tool }) => (
+        <article key={tool.slug} className="rounded-xl border border-border bg-card p-6">
+          <span className="grid size-10 place-items-center rounded-lg bg-primary/10 text-primary">
+            <Icon className="size-5" aria-hidden="true" />
+          </span>
+          <h3 className="mt-4 text-lg font-bold">{tool.name}</h3>
+          <p className="mt-2 text-sm leading-relaxed text-muted-foreground">{tool.description}</p>
+          <Button asChild size="sm" className="mt-4">
+            <Link href={tool.href}>Open tool</Link>
+          </Button>
+        </article>
+      ))}
+    </div>
+  );
+}
+
 export default function ToolsPage() {
   return (
     <>
       <PageHeader
         eyebrow="Tools"
         title="Free tools for getting paid"
-        lead="Browser-based tools that help small businesses create professional documents. Everything runs on your device — no account required."
+        lead={`${SITE.name} on ${SITE.host} gives freelancers and small businesses browser-based invoicing tools — create PDFs, pick a template, or start with a country-ready layout. Everything runs on your device; no account required.`}
         crumbs={[{ label: "Home", href: "/" }, { label: "Tools" }]}
       />
 
       <div className="mx-auto max-w-[96rem] px-4 py-12 sm:px-6 lg:px-8">
         <AdSlot id="tools-top" format="leaderboard" />
 
-        <div className="mt-10 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
-          {AVAILABLE_TOOLS.map(({ icon: Icon, ...tool }) => (
-            <article key={tool.slug} className="rounded-xl border border-border bg-card p-6">
-              <span className="grid size-10 place-items-center rounded-lg bg-primary/10 text-primary">
-                <Icon className="size-5" aria-hidden="true" />
-              </span>
-              <h2 className="mt-4 text-lg font-bold">{tool.name}</h2>
-              <p className="mt-2 text-sm leading-relaxed text-muted-foreground">
-                {tool.description}
-              </p>
-              <Button asChild size="sm" className="mt-4">
-                <Link href="/invoice-generator">Open tool</Link>
-              </Button>
-            </article>
-          ))}
-        </div>
-
-        <section className="mt-14 max-w-3xl">
-          <h2 className="text-2xl font-bold">About our tools</h2>
-          <p className="mt-3 text-muted-foreground leading-relaxed">
-            {SITE.name} currently offers a full-featured free invoice generator. You can customise
-            templates, add your logo, itemise line items with tax and discounts, and download a
-            print-ready PDF — all without uploading invoice data to our servers. We only list tools
-            that are ready to use; quotation, receipt and calculator tools will appear here when
-            they ship.
+        <section aria-labelledby="core-tools">
+          <h2 id="core-tools" className="text-2xl font-bold">
+            Core invoicing tools
+          </h2>
+          <p className="mt-2 max-w-3xl text-muted-foreground leading-relaxed">
+            Start with the generator or browse templates first. Both use the same PDF engine, so
+            what you preview is what you download.
           </p>
-          <p className="mt-3 text-muted-foreground leading-relaxed">
-            Prefer to jump straight in? Open the{" "}
-            <Link href="/invoice-generator" className="font-medium text-foreground underline">
-              invoice generator
-            </Link>
-            , browse{" "}
-            <Link href="/invoice-templates" className="font-medium text-foreground underline">
-              invoice templates
-            </Link>
-            , or read the{" "}
-            <Link href="/user-guide" className="font-medium text-foreground underline">
-              user guide
-            </Link>
-            .
-          </p>
+          <ToolGrid tools={CORE} />
         </section>
 
-        <section className="mt-14 max-w-3xl">
-          <h2 className="text-2xl font-bold">Country invoice generators</h2>
-          <p className="mt-3 text-muted-foreground leading-relaxed">
+        <section aria-labelledby="locale-tools" className="mt-14">
+          <h2 id="locale-tools" className="text-2xl font-bold">
+            Country invoice generators
+          </h2>
+          <p className="mt-2 max-w-3xl text-muted-foreground leading-relaxed">
             Same PDF tool with currency and tax-ID labels matched to common jurisdictions. Tax rates
-            are editable defaults — not filing advice.
+            are editable defaults — not filing advice. Always confirm local requirements with your
+            adviser or tax authority.
           </p>
-          <ul className="mt-4 space-y-3">
-            {[
-              {
-                href: "/invoice-generator/pakistan",
-                label: "Pakistan — PKR, NTN & STRN",
-              },
-              { href: "/invoice-generator/uae", label: "UAE — AED & TRN" },
-              { href: "/invoice-generator/uk", label: "UK — GBP & VAT number" },
-              { href: "/invoice-generator/usa", label: "USA — USD, EIN & state tax ID" },
-            ].map(({ href, label }) => (
-              <li key={href}>
-                <Link href={href} className="font-medium text-foreground underline">
-                  {label}
-                </Link>
-              </li>
-            ))}
-          </ul>
+          <ToolGrid tools={LOCALE} />
+        </section>
+
+        <section aria-labelledby="learn-tools" className="mt-14">
+          <h2 id="learn-tools" className="text-2xl font-bold">
+            Learn while you bill
+          </h2>
+          <p className="mt-2 max-w-3xl text-muted-foreground leading-relaxed">
+            Prefer a walkthrough before you send your first invoice? The user guide covers every
+            field in the form.
+          </p>
+          <ToolGrid tools={LEARN} />
         </section>
 
         <section className="mt-14 max-w-3xl">
-          <h2 className="text-2xl font-bold">What you can do with the invoice generator</h2>
+          <h2 className="text-2xl font-bold">How these tools work</h2>
+          <p className="mt-3 text-muted-foreground leading-relaxed">
+            {SITE.name} processes invoice data in your browser. Company details, customers, line
+            items, logos and totals stay in local storage on your device — they are not uploaded to
+            our servers. You can clear drafts anytime by clearing site data in your browser.
+          </p>
           <ul className="mt-4 list-disc space-y-2 pl-5 text-muted-foreground leading-relaxed">
             <li>
               Choose from {TEMPLATES.length} professionally designed templates and preview changes
@@ -125,11 +121,21 @@ export default function ToolsPage() {
             <li>
               Add payment instructions and terms in the notes so clients know exactly how to pay.
             </li>
-            <li>Download a print-ready PDF that looks the same on every device.</li>
+            <li>Download a print-ready PDF that matches the on-screen preview.</li>
           </ul>
-          <p className="mt-4 text-muted-foreground leading-relaxed">
-            Invoice data stays in your browser. Nothing you type into the generator is uploaded to
-            our servers, so you can safely use it for real client work.
+        </section>
+
+        <section className="mt-14 max-w-3xl">
+          <h2 className="text-2xl font-bold">Who these tools are for</h2>
+          <p className="mt-3 text-muted-foreground leading-relaxed">
+            Freelancers, consultants, agencies, tradespeople and small product businesses who need a
+            clean PDF without paying for accounting software. If you already use bookkeeping
+            software, you can still use {SITE.name} for one-off invoices, deposits or international
+            clients who need a simple document.
+          </p>
+          <p className="mt-3 text-muted-foreground leading-relaxed">
+            We only list tools that are ready to use today. Quotation, receipt and calculator tools
+            will appear here when they ship — we do not show empty “coming soon” cards.
           </p>
         </section>
 

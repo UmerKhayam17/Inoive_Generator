@@ -1,7 +1,13 @@
+"use client";
+
+import { useEffect, useRef, useState } from "react";
+import { ADS_ENABLED, ADSENSE_CLIENT, analyticsAllowed, initAdSense } from "@/lib/analytics";
+
 interface AdSlotProps {
-  /** Where this placement sits, e.g. "below-hero". Useful when wiring real ad units. */
+  /** Placement id for debugging / future mapping to AdSense unit IDs. */
   id: string;
-  label?: string;
+  /** Real AdSense ad unit slot ID from the AdSense UI. Required to render. */
+  adSlot?: string;
   format?: "leaderboard" | "rectangle" | "sidebar" | "in-article";
   className?: string;
 }
@@ -14,33 +20,58 @@ const HEIGHTS: Record<NonNullable<AdSlotProps["format"]>, string> = {
 };
 
 /**
- * Empty "Advertisement" placeholders hurt AdSense review.
- * Keep this false until real ad units are approved and live.
- * Set NEXT_PUBLIC_SHOW_AD_SLOTS=true only when serving actual ads.
- */
-const SHOW_AD_SLOTS = process.env.NEXT_PUBLIC_SHOW_AD_SLOTS === "true";
-
-/**
- * Reserved advertising space. Renders nothing by default so review crawlers
- * never see empty ad boxes mixed into navigation or template grids.
+ * Renders a real AdSense unit only when:
+ * - NEXT_PUBLIC_SHOW_AD_SLOTS=true
+ * - a real `adSlot` unit ID is passed
+ * - the visitor has accepted cookies
+ *
+ * Otherwise returns null — never empty "Advertisement" placeholders
+ * (those hurt AdSense site review).
  */
 export function AdSlot({
   id,
-  label = "Advertisement",
+  adSlot,
   format = "leaderboard",
   className = "",
 }: AdSlotProps) {
-  if (!SHOW_AD_SLOTS) return null;
+  const [ready, setReady] = useState(false);
+  const pushed = useRef(false);
+
+  useEffect(() => {
+    if (!ADS_ENABLED || !adSlot || !ADSENSE_CLIENT || !analyticsAllowed()) {
+      setReady(false);
+      return;
+    }
+    initAdSense();
+    setReady(true);
+  }, [adSlot]);
+
+  useEffect(() => {
+    if (!ready || pushed.current) return;
+    try {
+      (window.adsbygoogle = window.adsbygoogle || []).push({});
+      pushed.current = true;
+    } catch {
+      /* Script may still be loading; ignore one-shot push errors. */
+    }
+  }, [ready]);
+
+  if (!ready || !adSlot || !ADSENSE_CLIENT) return null;
 
   return (
     <aside
-      aria-label={label}
-      data-ad-slot={id}
-      className={`flex ${HEIGHTS[format]} w-full items-center justify-center rounded-xl border border-dashed border-border bg-muted/40 ${className}`}
+      aria-label="Advertisement"
+      data-ad-placement={id}
+      className={`w-full overflow-hidden ${HEIGHTS[format]} ${className}`}
     >
-      <span className="text-[11px] font-medium uppercase tracking-[0.18em] text-muted-foreground">
-        {label}
-      </span>
+      <ins
+        className="adsbygoogle"
+        style={{ display: "block" }}
+        data-ad-client={ADSENSE_CLIENT}
+        data-ad-slot={adSlot}
+        data-ad-format="auto"
+        data-full-width-responsive="true"
+      />
     </aside>
   );
 }

@@ -23,7 +23,9 @@ export async function generateMetadata({
   const name = category?.name ?? "Category";
   const count = POSTS.filter((p) => p.category === slug).length;
   const title = `${name} — Invoicing Articles (${count}) | ${SITE.name}`;
-  const description = `Every ${name.toLowerCase()} article on ${SITE.name}: ${count} practical guides on invoicing for freelancers and small businesses.`;
+  const description =
+    category?.description ??
+    `Every ${name.toLowerCase()} article on ${SITE.name}: ${count} practical guides on invoicing for freelancers and small businesses.`;
   const url = canonicalFor(`/blog/category/${slug}`);
 
   return {
@@ -62,7 +64,10 @@ export default async function CategoryPage({ params }: { params: Promise<{ slug:
       <PageHeader
         eyebrow="Blog category"
         title={category.name}
-        lead={`${posts.length} article${posts.length === 1 ? "" : "s"} in this category.`}
+        lead={
+          category.description ??
+          `${posts.length} article${posts.length === 1 ? "" : "s"} in this category.`
+        }
         crumbs={[
           { label: "Home", href: "/" },
           { label: "Blog", href: "/blog" },
@@ -87,6 +92,17 @@ export default async function CategoryPage({ params }: { params: Promise<{ slug:
           ))}
         </nav>
 
+        <div className="mt-8 max-w-3xl text-muted-foreground leading-relaxed">
+          <p>
+            {posts.length} article{posts.length === 1 ? "" : "s"} in {category.name}. Use the cards
+            below for the full guide, or jump back to the{" "}
+            <Link href="/blog" className="font-medium text-foreground underline">
+              blog index
+            </Link>{" "}
+            to filter by topic.
+          </p>
+        </div>
+
         <div className="mt-8">
           <AdSlot id="category-top" format="leaderboard" />
         </div>
@@ -96,6 +112,25 @@ export default async function CategoryPage({ params }: { params: Promise<{ slug:
             <PostCard key={post.slug} post={post} />
           ))}
         </div>
+
+        <section className="mt-14 max-w-3xl">
+          <h2 className="text-xl font-bold">Related tools</h2>
+          <p className="mt-2 text-sm text-muted-foreground leading-relaxed">
+            Prefer to create a document while you read? Open the{" "}
+            <Link href="/invoice-generator" className="font-medium text-foreground underline">
+              free invoice generator
+            </Link>
+            , browse{" "}
+            <Link href="/invoice-templates" className="font-medium text-foreground underline">
+              invoice templates
+            </Link>
+            , or see every tool on the{" "}
+            <Link href="/tools" className="font-medium text-foreground underline">
+              tools hub
+            </Link>
+            .
+          </p>
+        </section>
 
         <p className="mt-10 text-sm text-muted-foreground">
           Looking for something else?{" "}

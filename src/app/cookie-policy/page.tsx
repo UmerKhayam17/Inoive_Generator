@@ -23,7 +23,7 @@ export default function Page() {
   return (
     <LegalPage
       title="Cookie Policy"
-      updated="12 October 2026"
+      updated="19 October 2026"
       lead="Cookies are small files stored by your browser. Here is every category we use and how to switch them off."
     >
       <h2>1. Who we are</h2>
@@ -66,7 +66,8 @@ export default function Page() {
           <tr>
             <td>Advertising</td>
             <td>
-              Used by partners such as Google AdSense to serve and measure relevant advertising.
+              Used by partners such as Google AdSense to serve and measure relevant advertising,
+              only when advertising is enabled on this site and you have accepted optional cookies.
             </td>
             <td>Yes</td>
           </tr>
@@ -75,9 +76,11 @@ export default function Page() {
 
       <h2>4. Third-party advertising cookies</h2>
       <p>
-        Third-party vendors, including Google, may use cookies to serve ads based on your prior
-        visits to this and other websites. You can opt out of personalised advertising through
-        Google&apos;s Ads Settings, and you can opt out of many other vendors at{" "}
+        Advertising cookies are not set until advertising is enabled and you accept optional
+        cookies. When ads are live, third-party vendors, including Google, may use cookies to serve
+        ads based on your prior visits to this and other websites. You can opt out of personalised
+        advertising through Google&apos;s Ads Settings, and you can opt out of many other vendors
+        at{" "}
         <a href="https://www.aboutads.info/choices/" rel="nofollow noopener" target="_blank">
           aboutads.info/choices
         </a>

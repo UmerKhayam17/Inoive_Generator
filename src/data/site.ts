@@ -1,11 +1,14 @@
 export const SITE = {
+  /** Product / brand name shown in the UI and metadata. */
   name: "Invoice Creator",
   tagline: "Free Invoice Generator",
   description:
     "Create professional invoices online for free. Download high-quality PDF invoices instantly. No signup required.",
+  /** Public hostname for this product (matches the live domain). */
+  host: "nextfreeinvoicegenerator.com",
   operator: "Next Software Development Company",
   operatorDescription:
-    "Invoice Creator is a free online invoice generation service operated by Next Software Development Company, a software development company based in Islamabad, Pakistan.",
+    "Invoice Creator is the free invoice generator at nextfreeinvoicegenerator.com, operated by Next Software Development Company in Islamabad, Pakistan.",
   email: "support@nextfreeinvoicegenerator.com",
   phone: "+92 3710510083",
   address: "Islamabad, Pakistan",
@@ -23,8 +26,9 @@ export const NAV_LINKS = [
   { label: "Home", href: "/" },
   { label: "Invoice Generator", href: "/invoice-generator" },
   { label: "Templates", href: "/invoice-templates" },
+  { label: "Tools", href: "/tools" },
   { label: "User Guide", href: "/user-guide" },
   { label: "Blog", href: "/blog" },
   { label: "About", href: "/about" },
   { label: "Contact", href: "/contact" },
-] as const;     
+] as const;
