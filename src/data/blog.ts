@@ -1,3 +1,12 @@
+import { INDUSTRY_POSTS_A } from "./posts/industry-a";
+import { INDUSTRY_POSTS_B } from "./posts/industry-b";
+import { HOW_TO_POSTS_A } from "./posts/how-to-a";
+import { HOW_TO_POSTS_B } from "./posts/how-to-b";
+import { FREELANCING_POSTS } from "./posts/freelancing";
+import { PAYMENTS_POSTS } from "./posts/payments";
+import { TAX_POSTS } from "./posts/tax";
+import { COMPARISON_FINANCE_POSTS } from "./posts/comparisons-finance";
+
 export interface Post {
   slug: string;
   title: string;
@@ -11,6 +20,10 @@ export interface Post {
   /** Shown on tax/compliance articles (e.g. "Pakistan", "General"). */
   jurisdiction?: string;
   content: string; // simple HTML
+  /** Rendered as an FAQ accordion after the article and emitted as FAQPage JSON-LD. */
+  faqs?: { q: string; a: string }[];
+  /** Hand-picked related post slugs, shown before same-category fallbacks. */
+  related?: string[];
 }
 
 export const CATEGORIES = [
@@ -44,6 +57,30 @@ export const CATEGORIES = [
     description:
       "Advice on invoice layout, branding and choosing a template that accounts payable can read quickly.",
   },
+  {
+    slug: "industry-invoices",
+    name: "Industry Invoices",
+    description:
+      "Invoice templates and billing guides for specific trades and professions — contractors, photographers, cleaners, consultants, landlords and more.",
+  },
+  {
+    slug: "freelancing",
+    name: "Freelancing",
+    description:
+      "Rates, contracts, retainers and unpaid-invoice playbooks for freelancers and independent contractors.",
+  },
+  {
+    slug: "payments",
+    name: "Payments",
+    description:
+      "How to get paid: card payments, payment links, bank transfers, international transfers, discounts and reminders.",
+  },
+  {
+    slug: "business-finance",
+    name: "Business Finance",
+    description:
+      "Cash flow, bookkeeping, receivables and tax basics for small business owners who do their own finances.",
+  },
 ];
 
 /** Approximate reading time from HTML (~200 wpm for instructional articles). */
@@ -57,7 +94,9 @@ export function estimateReadingTime(html: string): number {
   return Math.max(1, Math.round(words / 200));
 }
 
-export const POST_DRAFTS: Omit<Post, "readingTime">[] = [
+export type PostDraft = Omit<Post, "readingTime">;
+
+const CORE_POSTS: PostDraft[] = [
   {
     slug: "how-to-generate-an-invoice",
     title: "How to Generate an Invoice Online: Free Step-by-Step Guide",
@@ -384,7 +423,7 @@ jane@smithdesign.example</p>
     author: "Invoice Creator Editorial Team",
     content: `
 <h2>When hourly billing makes sense</h2>
-<p>Hourly billing suits work where the scope is hard to predict: consulting, support, maintenance, legal or bookkeeping work, tutoring and many trades. It protects you from unlimited scope creep, and clients pay only for time actually spent. The trade-off is that clients need to trust your time records — so the invoice must make your hours easy to understand and verify.</p>
+<p>Hourly billing suits work where the scope is hard to predict: <a href="/blog/consulting-invoice-template">consulting</a>, support, maintenance, <a href="/blog/legal-invoice-template">legal</a> or bookkeeping work, <a href="/blog/tutoring-invoice-template">tutoring</a> and many trades. It protects you from unlimited scope creep, and clients pay only for time actually spent. The trade-off is that clients need to trust your time records — so the invoice must make your hours easy to understand and verify.</p>
 
 <h2>Step 1: Track time as you work</h2>
 <p>Record time on the day you do it, not from memory at month end. For each entry, note the date, start and end time (or duration), the task, and the project or client. A spreadsheet is enough; a time-tracking app is helpful if you work across many clients.</p>
@@ -471,9 +510,9 @@ jane@smithdesign.example</p>
 <h2>3. Check whether tax applies</h2>
 <p>Cross-border tax rules depend on your country, the client's country, whether the client is a business or a consumer, and what you are selling. Some common patterns:</p>
 <ul>
-<li><strong>Exported services to businesses</strong> are often outside the scope of your local VAT or zero-rated, sometimes with the client accounting for tax under a <em>reverse charge</em>.</li>
+<li><strong>Exported services to businesses</strong> are often outside the scope of your local VAT or <a href="/blog/zero-rated-vs-exempt-vat">zero-rated</a>, sometimes with the client accounting for tax under a <em>reverse charge</em>.</li>
 <li><strong>Digital services sold to consumers</strong> abroad can create a tax obligation in the customer's country.</li>
-<li><strong>Goods</strong> crossing borders involve customs and import duties, usually paid by the importer.</li>
+<li><strong>Goods</strong> crossing borders involve customs and import duties, usually paid by the importer, and travel with a <a href="/blog/commercial-invoice-template">commercial invoice for customs</a>.</li>
 </ul>
 <p>If a reverse charge applies, your invoice usually needs the client's tax number and a note such as "Reverse charge: customer to account for VAT". Ask an accountant once and build the answer into your template. See our <a href="/blog/vat-invoice-guide">VAT</a> and <a href="/blog/tax-invoice-guide">tax invoice</a> guides for background.</p>
 
@@ -978,7 +1017,7 @@ jane@smithdesign.example</p>
     content: `
 <h2>The short answer</h2>
 <p>A <strong>proforma invoice</strong> is a preliminary document sent <em>before</em> a sale is completed. It tells the buyer exactly what they will be billed — items, prices, taxes, shipping and terms — so they can arrange payment, approvals or import paperwork. It is not a demand for payment in the accounting sense and is not usually recorded as a sale.</p>
-<p>A <strong>commercial invoice</strong> (or simply "invoice") is issued once goods are shipped or services delivered. It is the legal request for payment and the record of the sale used for accounting and tax.</p>
+<p>A <strong>commercial invoice</strong> (or simply "invoice") is issued once goods are shipped or services delivered. It is the legal request for payment and the record of the sale used for accounting and tax. For exports, it is also the customs document — see our <a href="/blog/commercial-invoice-template">commercial invoice template</a> for the fields customs brokers expect.</p>
 
 <h2>Side-by-side comparison</h2>
 <table><thead><tr><th></th><th>Proforma invoice</th><th>Commercial invoice</th></tr></thead><tbody>
@@ -1040,7 +1079,7 @@ jane@smithdesign.example</p>
     author: "Invoice Creator Editorial Team",
     content: `
 <h2>What a recurring invoice is</h2>
-<p>A recurring invoice bills the same client for the same (or similar) service on a regular schedule — weekly, monthly, quarterly or yearly. Typical examples include design or marketing retainers, website maintenance plans, bookkeeping services, equipment rental, coaching packages, cleaning contracts and software subscriptions.</p>
+<p>A recurring invoice bills the same client for the same (or similar) service on a regular schedule — weekly, monthly, quarterly or yearly. Typical examples include design or marketing retainers, <a href="/blog/web-development-invoice-template">website maintenance plans</a>, bookkeeping services, equipment rental, coaching packages, cleaning contracts and software subscriptions.</p>
 <p>Recurring revenue is the most predictable income a small business can have. But it only stays predictable if the invoicing is consistent: the same day, the same format, the same clear description, every period.</p>
 
 <h2>Choosing the billing schedule</h2>
@@ -1255,7 +1294,7 @@ jane@smithdesign.example</p>
 
 <h2>Why the details matter</h2>
 <p>Accounts-payable teams reject invoices for surprisingly small reasons: a missing PO number, an ambiguous due date, a total that does not match the sum of the lines, or billing the wrong legal entity after a company rename. Every rejection adds days or weeks to your payment cycle because the invoice re-enters the approval queue from the start.</p>
-<p>A structured template removes much of that risk. When fields always appear in the same place, both you and the client know where to look. That is why tools like our <a href="/invoice-generator">free invoice generator</a> and ready-made <a href="/invoice-templates">invoice templates</a> outperform ad-hoc Word documents for anyone who invoices more than occasionally.</p>
+<p>A structured template removes much of that risk. When fields always appear in the same place, both you and the client know where to look. That is why tools like our <a href="/invoice-generator">free invoice generator</a> (see <a href="/blog/how-to-generate-an-invoice">how to generate an invoice online</a>) and ready-made <a href="/invoice-templates">invoice templates</a> outperform ad-hoc Word documents for anyone who invoices more than occasionally.</p>
 
 <h2>Invoice numbering that survives an audit</h2>
 <p>Use a predictable scheme such as <code>2026-0041</code> or <code>ACME-0041</code>. Prefixing with the year makes year-end filing obvious. Never restart numbering mid-year, never skip numbers without a logged void, and never issue two invoices with the same number — auditors treat duplicates as a red flag.</p>
@@ -1506,7 +1545,7 @@ jane@smithdesign.example</p>
 
 <h2>Language that keeps estimates from becoming fake quotes</h2>
 <p>Write "This is an estimate, not a fixed quotation" near the total. Add that the final invoice may vary based on actual hours and approved extras. Those sentences feel cautious, but they prevent angry threads when reality diverges from the first sketch of scope.</p>
-<p>If a client says they need something so finance can reserve budget, an estimate is perfect. If they need a price they can raise a purchase order against, escalate to a quotation with firm scope. Matching document type to the buyer's internal process is part of getting paid later without drama.</p>
+<p>If a client says they need something so finance can reserve budget, an estimate is perfect. If they need a price they can raise a <a href="/blog/invoice-vs-purchase-order">purchase order</a> against, escalate to a quotation with firm scope. Matching document type to the buyer's internal process is part of getting paid later without drama.</p>
 <h2>Range estimates and capped estimates</h2>
 <p>A range communicates uncertainty honestly. A capped estimate that will not be exceeded without written approval protects the client while giving you a stop point for conversation. Either approach beats a single fake-precise number you cannot defend when conditions change.</p>
 <p>When you invoice inside a cap, show actuals and remaining headroom. When you need to exceed a cap, pause and get approval before continuing — then invoice the approved overrun as a clearly labelled variation line rather than quietly inflating an existing one.</p>
@@ -1655,6 +1694,17 @@ jane@smithdesign.example</p>
 <tr><td>Software / engineering</td><td>Mono or Dark</td></tr>
 <tr><td>Everything else</td><td>Modern</td></tr>
 </tbody></table>
+<p>Not sure which applies? Our guide on <a href="/blog/choose-invoice-template-by-client">choosing an invoice template based on who pays you</a> walks through the decision.</p>
+
+<h2>Invoice templates by industry</h2>
+<p>Each trade has its own line items, deposit habits and compliance quirks. These industry guides show what to include and a worked example for each:</p>
+<ul>
+<li><strong>Trades and home services:</strong> <a href="/blog/contractor-invoice-template">contractor invoice template</a>, <a href="/blog/plumbing-invoice-template">plumbing invoice template</a>, <a href="/blog/electrician-invoice-template">electrician invoice template</a>, <a href="/blog/hvac-invoice-template">HVAC invoice template</a>, <a href="/blog/handyman-invoice-template">handyman invoice template</a>, <a href="/blog/landscaping-invoice-template">landscaping invoice template</a>, <a href="/blog/cleaning-service-invoice-template">cleaning service invoice template</a> and <a href="/blog/auto-repair-invoice-template">auto repair invoice template</a>.</li>
+<li><strong>Creative and digital work:</strong> <a href="/blog/photography-invoice-template">photography invoice template</a>, <a href="/blog/graphic-design-invoice-template">graphic design invoice template</a> and <a href="/blog/web-development-invoice-template">web development invoice template</a>.</li>
+<li><strong>Professional services:</strong> <a href="/blog/consulting-invoice-template">consulting invoice template</a>, <a href="/blog/legal-invoice-template">legal invoice template</a>, <a href="/blog/medical-invoice-template">medical invoice template</a> and <a href="/blog/tutoring-invoice-template">tutoring invoice template</a>.</li>
+<li><strong>Property, food and logistics:</strong> <a href="/blog/rent-invoice-template">rent invoice template</a> for landlords, <a href="/blog/catering-invoice-template">catering invoice template</a> and <a href="/blog/trucking-invoice-template">trucking invoice template</a>.</li>
+</ul>
+<p>Prefer to start from scratch? Use a <a href="/blog/blank-invoice-template">blank invoice template</a> or a <a href="/blog/freelance-invoice-template">freelance invoice template</a>.</p>
 
 <h2>Matching template to content density</h2>
 <p>Short freelance invoices (three to five lines) look best on Minimal, Elegant, or Creative — sparse layouts that celebrate whitespace. Product invoices with SKUs, shipping, and tax columns need Corporate, Agency, or Classic so columns stay aligned. International invoices with IBAN/SWIFT notes benefit from Corporate or Modern, where the notes block is easy to find.</p>
@@ -2347,7 +2397,7 @@ jane@smithdesign.example</p>
     content: `
 <h2>Design for approval speed, not decoration</h2>
 <p>An invoice has one job: get understood and paid. Visual design should accelerate that job. When hierarchy is clear, accounts payable finds the amount, due date, PO, and bank details in seconds. When hierarchy is muddy, your brand look becomes expensive noise.</p>
-<p>The fifteen tips below are practical rules you can apply in any template — including those in our <a href="/invoice-templates">invoice templates</a> gallery.</p>
+<p>The fifteen tips below are practical rules you can apply in any template — including those in our <a href="/invoice-templates">invoice templates</a> gallery. If you are still deciding on a layout, start with <a href="/blog/choose-invoice-template-by-client">how to choose an invoice template based on who pays you</a>.</p>
 
 <h2>Hierarchy first</h2>
 <ol>
@@ -2499,6 +2549,18 @@ jane@smithdesign.example</p>
   },
 ];
 
+export const POST_DRAFTS: PostDraft[] = [
+  ...CORE_POSTS,
+  ...INDUSTRY_POSTS_A,
+  ...INDUSTRY_POSTS_B,
+  ...HOW_TO_POSTS_A,
+  ...HOW_TO_POSTS_B,
+  ...FREELANCING_POSTS,
+  ...PAYMENTS_POSTS,
+  ...TAX_POSTS,
+  ...COMPARISON_FINANCE_POSTS,
+];
+
 /** Reading time is derived from content length so it cannot drift from the article. */
 export const POSTS: Post[] = POST_DRAFTS.map((p) => ({
   ...p,
@@ -2507,7 +2569,12 @@ export const POSTS: Post[] = POST_DRAFTS.map((p) => ({
 
 export const getPost = (slug: string) => POSTS.find((p) => p.slug === slug);
 export const getCategory = (slug: string) => CATEGORIES.find((c) => c.slug === slug);
-export const relatedPosts = (post: Post, limit = 3) =>
-  POSTS.filter((p) => p.slug !== post.slug)
-    .sort((a, b) => (b.category === post.category ? 1 : 0) - (a.category === post.category ? 1 : 0))
-    .slice(0, limit);
+export const relatedPosts = (post: Post, limit = 3) => {
+  const picked = (post.related ?? [])
+    .map((slug) => getPost(slug))
+    .filter((p): p is Post => !!p && p.slug !== post.slug);
+  const fallback = POSTS.filter(
+    (p) => p.slug !== post.slug && p.category === post.category && !picked.includes(p),
+  );
+  return [...picked, ...fallback].slice(0, limit);
+};

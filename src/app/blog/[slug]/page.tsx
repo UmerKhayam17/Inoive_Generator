@@ -86,7 +86,10 @@ export default async function PostPage({ params }: { params: Promise<{ slug: str
   if (!post) notFound();
 
   const related = relatedPosts(post);
-  const { html, headings } = withAnchors(post.content);
+  const { html, headings: articleHeadings } = withAnchors(post.content);
+  const headings = post.faqs?.length
+    ? [...articleHeadings, { id: "faq", text: "Frequently asked questions" }]
+    : articleHeadings;
   const category = CATEGORIES.find((c) => c.slug === post.category);
   const published = new Date(post.date).toLocaleDateString("en-US", {
     year: "numeric",
@@ -115,6 +118,18 @@ export default async function PostPage({ params }: { params: Promise<{ slug: str
     image: [shareImage, siteLogoUrl(), defaultShareImage().url],
   };
 
+  const faqLd = post.faqs?.length
+    ? {
+        "@context": "https://schema.org",
+        "@type": "FAQPage",
+        mainEntity: post.faqs.map((f) => ({
+          "@type": "Question",
+          name: f.q,
+          acceptedAnswer: { "@type": "Answer", text: f.a },
+        })),
+      }
+    : null;
+
   const breadcrumbLd = breadcrumbSchema([
     { name: "Home", item: "/" },
     { name: "Blog", item: "/blog" },
@@ -131,6 +146,12 @@ export default async function PostPage({ params }: { params: Promise<{ slug: str
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbLd) }}
       />
+      {faqLd && (
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(faqLd) }}
+        />
+      )}
       <Breadcrumbs
         items={[
           { label: "Home", href: "/" },
@@ -193,6 +214,18 @@ export default async function PostPage({ params }: { params: Promise<{ slug: str
             // Content is authored in-repo (src/data/blog.ts), never user input.
             dangerouslySetInnerHTML={{ __html: html }}
           />
+
+          {post.faqs && post.faqs.length > 0 && (
+            <section className="prose-invoice mt-10 max-w-none text-muted-foreground">
+              <h2 id="faq">Frequently asked questions</h2>
+              {post.faqs.map((f) => (
+                <details key={f.q} className="faq">
+                  <summary>{f.q}</summary>
+                  <p>{f.a}</p>
+                </details>
+              ))}
+            </section>
+          )}
 
           <div className="mt-10">
             <AdSlot id="post-below-content" format="in-article" />
