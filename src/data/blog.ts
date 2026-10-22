@@ -59,6 +59,125 @@ export function estimateReadingTime(html: string): number {
 
 export const POST_DRAFTS: Omit<Post, "readingTime">[] = [
   {
+    slug: "how-to-generate-an-invoice",
+    title: "How to Generate an Invoice Online: Free Step-by-Step Guide",
+    description:
+      "Learn how to generate an invoice online for free: compare invoice generators, Word, Excel and accounting software, then create a PDF invoice in minutes.",
+    category: "guides",
+    date: "2026-10-22",
+    author: "Invoice Creator Editorial Team",
+    content: `
+<p><strong>Quick answer:</strong> To generate an invoice, open a free online invoice generator, add your business details and your client's billing details, set a unique invoice number, issue date and due date, list each product or service with its quantity and rate, apply any tax or discount, add payment instructions, and then download the invoice as a PDF and email it to your client. With a good invoice maker, this takes about five minutes and you don't need any accounting software.</p>
+
+<p>This guide covers the four common ways to generate an invoice, which one suits which business, and a step-by-step walkthrough using our <a href="/invoice-generator">free invoice generator</a>. If you want a field-by-field explanation of what an invoice must contain, read our companion guide on <a href="/blog/how-to-create-an-invoice">how to create an invoice</a>.</p>
+
+<h2>What "generating an invoice" actually means</h2>
+<p>Generating an invoice means producing a finished, sendable billing document — usually a PDF — from your business details, your client's details and the work you delivered. The difference between <em>creating</em> an invoice by hand and <em>generating</em> one is automation: a generator calculates line totals, subtotals, tax and the amount due for you, formats the layout, and exports a clean file you can send straight away.</p>
+<p>Whatever tool you use, the output has to work for the person paying it. Accounts payable teams need to see who you are, who you are billing, what you delivered, how much is due, how to pay and by when. If any of those is missing, the invoice gets queried instead of paid. See <a href="/blog/what-is-an-invoice">what is an invoice</a> if you are new to billing.</p>
+
+<h2>4 ways to generate an invoice (compared)</h2>
+<table><thead><tr><th>Method</th><th>Cost</th><th>Speed</th><th>Automatic maths</th><th>Best for</th></tr></thead><tbody>
+<tr><td>Online invoice generator</td><td>Free</td><td>Fast — a few minutes</td><td>Yes</td><td>Freelancers, contractors, small businesses, one-off invoices</td></tr>
+<tr><td>Word or Google Docs template</td><td>Free</td><td>Slow</td><td>No</td><td>Very occasional invoices with simple lines</td></tr>
+<tr><td>Excel or Google Sheets template</td><td>Free</td><td>Medium</td><td>Only if formulas are set up correctly</td><td>People comfortable maintaining spreadsheets</td></tr>
+<tr><td>Accounting or billing software</td><td>Monthly subscription</td><td>Fast after setup</td><td>Yes</td><td>Businesses with high volume, inventory or bookkeeping needs</td></tr>
+</tbody></table>
+
+<h3>1. Online invoice generator</h3>
+<p>An online invoice generator (also called an invoice maker or bill generator) is a web form with a live preview. You type your details, the tool does the calculations, and you download a professional PDF. There is nothing to install, and good generators don't make you sign up or put a watermark on your invoice. For most freelancers and small businesses, this is the fastest way to generate an invoice that looks professional.</p>
+
+<h3>2. Word or Google Docs</h3>
+<p>Word-processor templates look fine, but every number is typed by hand. Totals don't update when you change a quantity, which is one of the most common sources of <a href="/blog/common-invoice-mistakes">invoice mistakes</a>. Always export to PDF before sending — never send an editable .docx as your invoice of record.</p>
+
+<h3>3. Excel or Google Sheets</h3>
+<p>A spreadsheet can calculate totals, but only if every formula is correct and stays correct as you add rows. Spreadsheets also make invoice numbering easy to break when you copy last month's file. If you go this route, lock the formula cells and keep a separate log of issued numbers — our <a href="/blog/invoice-numbering-system">invoice numbering guide</a> explains how.</p>
+
+<h3>4. Accounting software</h3>
+<p>Accounting platforms generate invoices from customer records, track payments and send automatic reminders. They make sense once you issue many invoices a month or need bookkeeping, inventory and reporting in one place. For a freelancer sending a handful of invoices, a paid subscription is often more than you need.</p>
+
+<h2>How to generate an invoice online in 8 steps</h2>
+<p>These steps follow the fields in our <a href="/invoice-generator">invoice generator</a>, but they apply to any good invoice tool.</p>
+
+<h3>Step 1: Choose your invoice template</h3>
+<p>Pick a layout that suits the client. <a href="/invoice-templates/corporate">Corporate</a> and <a href="/invoice-templates/classic">Classic</a> work well for enterprise finance teams; <a href="/invoice-templates/modern">Modern</a>, <a href="/invoice-templates/creative">Creative</a> and <a href="/invoice-templates/agency">Agency</a> suit design and marketing work; <a href="/invoice-templates/minimal">Minimal</a> keeps things quiet and clear. You can browse all <a href="/invoice-templates">invoice templates</a> and switch at any time without retyping anything.</p>
+
+<h3>Step 2: Add your business details and logo</h3>
+<p>Enter your legal business name, address, email, phone number and tax ID if you are registered. Upload your logo so the invoice is recognisable in a busy inbox. Use the same details on every invoice so your client's finance team can match you to the right supplier record.</p>
+
+<h3>Step 3: Add your client's billing details</h3>
+<p>Bill the legal entity named in your contract or purchase order, not just the person you work with day to day. Add their billing address, their tax ID where required, and their <a href="/blog/po-number-on-invoice">PO number</a> if they use purchase orders. A missing PO is one of the fastest ways to get an invoice sent back.</p>
+
+<h3>Step 4: Set the invoice number, date and due date</h3>
+<p>Every invoice needs a unique, sequential number. If you don't have a system yet, our <a href="/tools/invoice-number-generator">invoice number generator</a> builds a consistent format for you, such as <code>INV-2026-0042</code>. Then set the issue date and a due date that matches your <a href="/blog/invoice-payment-terms">payment terms</a> — for example "Net 14, due 5 November 2026" rather than "Net 14" on its own.</p>
+
+<h3>Step 5: List your products or services</h3>
+<p>Add one line item for each product or service, with a clear description, quantity and rate. The generator multiplies quantity by rate and adds up the subtotal automatically. Write descriptions your client can approve without asking a question: "Logo design — 3 concepts, 2 revision rounds" beats "Design work". If you bill by the hour, see <a href="/blog/how-to-invoice-for-hourly-work">how to invoice for hourly work</a>.</p>
+
+<h3>Step 6: Add tax, discounts and shipping</h3>
+<p>Choose your currency, then apply any discount, tax rate and shipping charges. Show tax as its own line so the client can reclaim it where they are entitled to. If you are not sure what rate applies, our <a href="/tools/sales-tax-calculator">sales tax calculator</a> helps you check the numbers, and our <a href="/blog/vat-invoice-guide">VAT</a>, <a href="/blog/gst-invoice-guide">GST</a> and <a href="/blog/tax-invoice-guide">tax invoice</a> guides cover the required fields. If you are not registered for tax, don't charge it.</p>
+
+<h3>Step 7: Add payment terms, notes and a signature</h3>
+<p>Put your bank details or payment link on the invoice itself, along with accepted payment methods and any late-payment terms you agreed in your contract. A short thank-you note and an optional signature make the invoice feel personal. You can also add a watermark such as "PAID" or "DRAFT" when you need to.</p>
+
+<h3>Step 8: Download the PDF and send it</h3>
+<p>Check the live preview one last time, then download your invoice as a PDF. Name the file clearly — for example <code>Invoice-INV-2026-0042-ClientName.pdf</code> — and email it to the client's accounts payable address with the invoice number and due date in the subject line. Our guide on <a href="/blog/how-to-send-an-invoice">how to send an invoice</a> includes ready-to-use email templates.</p>
+
+<h2>Generate a country-specific invoice</h2>
+<p>Tax ID labels, currencies and required fields vary by country. Our country presets fill in the right defaults so your invoice matches local expectations:</p>
+<ul>
+<li><a href="/invoice-generator/usa">USA invoice generator</a> — USD, EIN and US sales tax.</li>
+<li><a href="/invoice-generator/uk">UK invoice generator</a> — GBP and VAT registration number (see <a href="/blog/sole-trader-invoice-uk">invoicing as a UK sole trader</a>).</li>
+<li><a href="/invoice-generator/uae">UAE invoice generator</a> — AED and TRN (see <a href="/blog/uae-vat-invoice-requirements">UAE VAT invoice requirements</a>).</li>
+<li><a href="/invoice-generator/pakistan">Pakistan invoice generator</a> — PKR, NTN and STRN (see <a href="/blog/sales-tax-invoice-pakistan">sales tax invoices in Pakistan</a>).</li>
+</ul>
+<p>Billing a client abroad? Read <a href="/blog/invoice-international-clients">how to invoice international clients</a> for currency and payment tips.</p>
+
+<h2>How to generate invoices faster every month</h2>
+<ul>
+<li><strong>Reuse your saved draft.</strong> Our generator saves your draft in your browser, so your business details are already filled in next time you open it on the same device.</li>
+<li><strong>Keep one numbering series.</strong> Never restart or reuse numbers — gaps and duplicates cause problems in audits.</li>
+<li><strong>Set up recurring billing habits.</strong> For retainers and subscriptions, invoice on the same day each period. Our <a href="/blog/recurring-invoices-guide">recurring invoices guide</a> explains how.</li>
+<li><strong>Invoice as soon as work is approved.</strong> Every day you wait to invoice is a day added to when you get paid. More tactics are in <a href="/blog/how-to-get-paid-faster">how to get paid faster</a>.</li>
+<li><strong>Follow up on time.</strong> Have <a href="/blog/payment-reminder-emails">payment reminder emails</a> ready before the due date arrives.</li>
+</ul>
+
+<h2>Checklist before you generate the final PDF</h2>
+<ul>
+<li>Your business name, address and tax ID are correct.</li>
+<li>The client's legal name and billing address match the contract or PO.</li>
+<li>The invoice number is unique and follows your sequence.</li>
+<li>The due date is a real calendar date.</li>
+<li>Every line item has a clear description, quantity and rate.</li>
+<li>Tax, discount and shipping lines are correct, and the total adds up.</li>
+<li>Bank details or a payment link are on the invoice itself.</li>
+<li>The PDF reads clearly on a phone and in black-and-white print — see our <a href="/blog/invoice-pdf-print-checklist">invoice PDF print checklist</a>.</li>
+</ul>
+
+<h2>Frequently asked questions</h2>
+
+<h3>Can I generate an invoice for free?</h3>
+<p>Yes. Our <a href="/invoice-generator">invoice generator</a> is free to use, with no sign-up and no watermark unless you add one yourself. You can generate and download as many PDF invoices as you need.</p>
+
+<h3>How do I generate an invoice without accounting software?</h3>
+<p>Use an online invoice generator. Fill in your details, your client's details and your line items, then download the PDF. You get automatic calculations and a professional layout without paying for or learning accounting software.</p>
+
+<h3>Can I generate an invoice on my phone?</h3>
+<p>Yes. A browser-based invoice maker works on mobile, so you can generate and send an invoice from your phone right after finishing a job. Check the preview before downloading so long names and totals display correctly.</p>
+
+<h3>What is the best format to send an invoice in?</h3>
+<p>PDF. It looks the same on every device, can't be edited by accident, and is what most accounts payable teams expect. Avoid sending Word or Excel files as your final invoice.</p>
+
+<h3>Do I need to be a registered business to generate an invoice?</h3>
+<p>In many countries, freelancers and sole traders can issue invoices under their own name. You may need to show tax registration numbers and charge tax only once you are registered. Rules vary, so check with your local tax authority or an accountant.</p>
+
+<h3>What is the difference between an invoice, an estimate and a receipt?</h3>
+<p>An estimate or quote prices work before it starts, an invoice requests payment once it's done, and a receipt confirms payment was received. See <a href="/blog/invoice-vs-estimate">invoice vs estimate</a> and <a href="/blog/invoice-vs-receipt">invoice vs receipt</a> for details.</p>
+
+<h2>Generate your invoice now</h2>
+<p>You now know how to generate an invoice that is accurate, professional and quick to approve. Open the <a href="/invoice-generator">free invoice generator</a>, pick a template, fill in your details and download your PDF invoice in minutes.</p>
+`,
+  },
+  {
     slug: "sales-tax-invoice-pakistan",
     title: "Sales Tax Invoice in Pakistan: Required Fields, NTN, STRN and a Sample Layout",
     description:
