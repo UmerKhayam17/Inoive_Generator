@@ -1,3 +1,12 @@
+import { INDUSTRY_POSTS_A } from "./posts/industry-a";
+import { INDUSTRY_POSTS_B } from "./posts/industry-b";
+import { HOW_TO_POSTS_A } from "./posts/how-to-a";
+import { HOW_TO_POSTS_B } from "./posts/how-to-b";
+import { FREELANCING_POSTS } from "./posts/freelancing";
+import { PAYMENTS_POSTS } from "./posts/payments";
+import { TAX_POSTS } from "./posts/tax";
+import { COMPARISON_FINANCE_POSTS } from "./posts/comparisons-finance";
+
 export interface Post {
   slug: string;
   title: string;
@@ -11,6 +20,10 @@ export interface Post {
   /** Shown on tax/compliance articles (e.g. "Pakistan", "General"). */
   jurisdiction?: string;
   content: string; // simple HTML
+  /** Rendered as an FAQ accordion after the article and emitted as FAQPage JSON-LD. */
+  faqs?: { q: string; a: string }[];
+  /** Hand-picked related post slugs, shown before same-category fallbacks. */
+  related?: string[];
 }
 
 export const CATEGORIES = [
@@ -44,6 +57,30 @@ export const CATEGORIES = [
     description:
       "Advice on invoice layout, branding and choosing a template that accounts payable can read quickly.",
   },
+  {
+    slug: "industry-invoices",
+    name: "Industry Invoices",
+    description:
+      "Invoice templates and billing guides for specific trades and professions — contractors, photographers, cleaners, consultants, landlords and more.",
+  },
+  {
+    slug: "freelancing",
+    name: "Freelancing",
+    description:
+      "Rates, contracts, retainers and unpaid-invoice playbooks for freelancers and independent contractors.",
+  },
+  {
+    slug: "payments",
+    name: "Payments",
+    description:
+      "How to get paid: card payments, payment links, bank transfers, international transfers, discounts and reminders.",
+  },
+  {
+    slug: "business-finance",
+    name: "Business Finance",
+    description:
+      "Cash flow, bookkeeping, receivables and tax basics for small business owners who do their own finances.",
+  },
 ];
 
 /** Approximate reading time from HTML (~200 wpm for instructional articles). */
@@ -57,7 +94,128 @@ export function estimateReadingTime(html: string): number {
   return Math.max(1, Math.round(words / 200));
 }
 
-export const POST_DRAFTS: Omit<Post, "readingTime">[] = [
+export type PostDraft = Omit<Post, "readingTime">;
+
+const CORE_POSTS: PostDraft[] = [
+  {
+    slug: "how-to-generate-an-invoice",
+    title: "How to Generate an Invoice Online: Free Step-by-Step Guide",
+    description:
+      "Learn how to generate an invoice online for free: compare invoice generators, Word, Excel and accounting software, then create a PDF invoice in minutes.",
+    category: "guides",
+    date: "2026-10-22",
+    author: "Invoice Creator Editorial Team",
+    content: `
+<p><strong>Quick answer:</strong> To generate an invoice, open a free online invoice generator, add your business details and your client's billing details, set a unique invoice number, issue date and due date, list each product or service with its quantity and rate, apply any tax or discount, add payment instructions, and then download the invoice as a PDF and email it to your client. With a good invoice maker, this takes about five minutes and you don't need any accounting software.</p>
+
+<p>This guide covers the four common ways to generate an invoice, which one suits which business, and a step-by-step walkthrough using our <a href="/invoice-generator">free invoice generator</a>. If you want a field-by-field explanation of what an invoice must contain, read our companion guide on <a href="/blog/how-to-create-an-invoice">how to create an invoice</a>.</p>
+
+<h2>What "generating an invoice" actually means</h2>
+<p>Generating an invoice means producing a finished, sendable billing document — usually a PDF — from your business details, your client's details and the work you delivered. The difference between <em>creating</em> an invoice by hand and <em>generating</em> one is automation: a generator calculates line totals, subtotals, tax and the amount due for you, formats the layout, and exports a clean file you can send straight away.</p>
+<p>Whatever tool you use, the output has to work for the person paying it. Accounts payable teams need to see who you are, who you are billing, what you delivered, how much is due, how to pay and by when. If any of those is missing, the invoice gets queried instead of paid. See <a href="/blog/what-is-an-invoice">what is an invoice</a> if you are new to billing.</p>
+
+<h2>4 ways to generate an invoice (compared)</h2>
+<table><thead><tr><th>Method</th><th>Cost</th><th>Speed</th><th>Automatic maths</th><th>Best for</th></tr></thead><tbody>
+<tr><td>Online invoice generator</td><td>Free</td><td>Fast — a few minutes</td><td>Yes</td><td>Freelancers, contractors, small businesses, one-off invoices</td></tr>
+<tr><td>Word or Google Docs template</td><td>Free</td><td>Slow</td><td>No</td><td>Very occasional invoices with simple lines</td></tr>
+<tr><td>Excel or Google Sheets template</td><td>Free</td><td>Medium</td><td>Only if formulas are set up correctly</td><td>People comfortable maintaining spreadsheets</td></tr>
+<tr><td>Accounting or billing software</td><td>Monthly subscription</td><td>Fast after setup</td><td>Yes</td><td>Businesses with high volume, inventory or bookkeeping needs</td></tr>
+</tbody></table>
+
+<h3>1. Online invoice generator</h3>
+<p>An online invoice generator (also called an invoice maker or bill generator) is a web form with a live preview. You type your details, the tool does the calculations, and you download a professional PDF. There is nothing to install, and good generators don't make you sign up or put a watermark on your invoice. For most freelancers and small businesses, this is the fastest way to generate an invoice that looks professional.</p>
+
+<h3>2. Word or Google Docs</h3>
+<p>Word-processor templates look fine, but every number is typed by hand. Totals don't update when you change a quantity, which is one of the most common sources of <a href="/blog/common-invoice-mistakes">invoice mistakes</a>. Always export to PDF before sending — never send an editable .docx as your invoice of record.</p>
+
+<h3>3. Excel or Google Sheets</h3>
+<p>A spreadsheet can calculate totals, but only if every formula is correct and stays correct as you add rows. Spreadsheets also make invoice numbering easy to break when you copy last month's file. If you go this route, lock the formula cells and keep a separate log of issued numbers — our <a href="/blog/invoice-numbering-system">invoice numbering guide</a> explains how.</p>
+
+<h3>4. Accounting software</h3>
+<p>Accounting platforms generate invoices from customer records, track payments and send automatic reminders. They make sense once you issue many invoices a month or need bookkeeping, inventory and reporting in one place. For a freelancer sending a handful of invoices, a paid subscription is often more than you need.</p>
+
+<h2>How to generate an invoice online in 8 steps</h2>
+<p>These steps follow the fields in our <a href="/invoice-generator">invoice generator</a>, but they apply to any good invoice tool.</p>
+
+<h3>Step 1: Choose your invoice template</h3>
+<p>Pick a layout that suits the client. <a href="/invoice-templates/corporate">Corporate</a> and <a href="/invoice-templates/classic">Classic</a> work well for enterprise finance teams; <a href="/invoice-templates/modern">Modern</a>, <a href="/invoice-templates/creative">Creative</a> and <a href="/invoice-templates/agency">Agency</a> suit design and marketing work; <a href="/invoice-templates/minimal">Minimal</a> keeps things quiet and clear. You can browse all <a href="/invoice-templates">invoice templates</a> and switch at any time without retyping anything.</p>
+
+<h3>Step 2: Add your business details and logo</h3>
+<p>Enter your legal business name, address, email, phone number and tax ID if you are registered. Upload your logo so the invoice is recognisable in a busy inbox. Use the same details on every invoice so your client's finance team can match you to the right supplier record.</p>
+
+<h3>Step 3: Add your client's billing details</h3>
+<p>Bill the legal entity named in your contract or purchase order, not just the person you work with day to day. Add their billing address, their tax ID where required, and their <a href="/blog/po-number-on-invoice">PO number</a> if they use purchase orders. A missing PO is one of the fastest ways to get an invoice sent back.</p>
+
+<h3>Step 4: Set the invoice number, date and due date</h3>
+<p>Every invoice needs a unique, sequential number. If you don't have a system yet, our <a href="/tools/invoice-number-generator">invoice number generator</a> builds a consistent format for you, such as <code>INV-2026-0042</code>. Then set the issue date and a due date that matches your <a href="/blog/invoice-payment-terms">payment terms</a> — for example "Net 14, due 5 November 2026" rather than "Net 14" on its own.</p>
+
+<h3>Step 5: List your products or services</h3>
+<p>Add one line item for each product or service, with a clear description, quantity and rate. The generator multiplies quantity by rate and adds up the subtotal automatically. Write descriptions your client can approve without asking a question: "Logo design — 3 concepts, 2 revision rounds" beats "Design work". If you bill by the hour, see <a href="/blog/how-to-invoice-for-hourly-work">how to invoice for hourly work</a>.</p>
+
+<h3>Step 6: Add tax, discounts and shipping</h3>
+<p>Choose your currency, then apply any discount, tax rate and shipping charges. Show tax as its own line so the client can reclaim it where they are entitled to. If you are not sure what rate applies, our <a href="/tools/sales-tax-calculator">sales tax calculator</a> helps you check the numbers, and our <a href="/blog/vat-invoice-guide">VAT</a>, <a href="/blog/gst-invoice-guide">GST</a> and <a href="/blog/tax-invoice-guide">tax invoice</a> guides cover the required fields. If you are not registered for tax, don't charge it.</p>
+
+<h3>Step 7: Add payment terms, notes and a signature</h3>
+<p>Put your bank details or payment link on the invoice itself, along with accepted payment methods and any late-payment terms you agreed in your contract. A short thank-you note and an optional signature make the invoice feel personal. You can also add a watermark such as "PAID" or "DRAFT" when you need to.</p>
+
+<h3>Step 8: Download the PDF and send it</h3>
+<p>Check the live preview one last time, then download your invoice as a PDF. Name the file clearly — for example <code>Invoice-INV-2026-0042-ClientName.pdf</code> — and email it to the client's accounts payable address with the invoice number and due date in the subject line. Our guide on <a href="/blog/how-to-send-an-invoice">how to send an invoice</a> includes ready-to-use email templates.</p>
+
+<h2>Generate a country-specific invoice</h2>
+<p>Tax ID labels, currencies and required fields vary by country. Our country presets fill in the right defaults so your invoice matches local expectations:</p>
+<ul>
+<li><a href="/invoice-generator/usa">USA invoice generator</a> — USD, EIN and US sales tax.</li>
+<li><a href="/invoice-generator/uk">UK invoice generator</a> — GBP and VAT registration number (see <a href="/blog/sole-trader-invoice-uk">invoicing as a UK sole trader</a>).</li>
+<li><a href="/invoice-generator/uae">UAE invoice generator</a> — AED and TRN (see <a href="/blog/uae-vat-invoice-requirements">UAE VAT invoice requirements</a>).</li>
+<li><a href="/invoice-generator/pakistan">Pakistan invoice generator</a> — PKR, NTN and STRN (see <a href="/blog/sales-tax-invoice-pakistan">sales tax invoices in Pakistan</a>).</li>
+</ul>
+<p>Billing a client abroad? Read <a href="/blog/invoice-international-clients">how to invoice international clients</a> for currency and payment tips.</p>
+
+<h2>How to generate invoices faster every month</h2>
+<ul>
+<li><strong>Reuse your saved draft.</strong> Our generator saves your draft in your browser, so your business details are already filled in next time you open it on the same device.</li>
+<li><strong>Keep one numbering series.</strong> Never restart or reuse numbers — gaps and duplicates cause problems in audits.</li>
+<li><strong>Set up recurring billing habits.</strong> For retainers and subscriptions, invoice on the same day each period. Our <a href="/blog/recurring-invoices-guide">recurring invoices guide</a> explains how.</li>
+<li><strong>Invoice as soon as work is approved.</strong> Every day you wait to invoice is a day added to when you get paid. More tactics are in <a href="/blog/how-to-get-paid-faster">how to get paid faster</a>.</li>
+<li><strong>Follow up on time.</strong> Have <a href="/blog/payment-reminder-emails">payment reminder emails</a> ready before the due date arrives.</li>
+</ul>
+
+<h2>Checklist before you generate the final PDF</h2>
+<ul>
+<li>Your business name, address and tax ID are correct.</li>
+<li>The client's legal name and billing address match the contract or PO.</li>
+<li>The invoice number is unique and follows your sequence.</li>
+<li>The due date is a real calendar date.</li>
+<li>Every line item has a clear description, quantity and rate.</li>
+<li>Tax, discount and shipping lines are correct, and the total adds up.</li>
+<li>Bank details or a payment link are on the invoice itself.</li>
+<li>The PDF reads clearly on a phone and in black-and-white print — see our <a href="/blog/invoice-pdf-print-checklist">invoice PDF print checklist</a>.</li>
+</ul>
+
+<h2>Frequently asked questions</h2>
+
+<h3>Can I generate an invoice for free?</h3>
+<p>Yes. Our <a href="/invoice-generator">invoice generator</a> is free to use, with no sign-up and no watermark unless you add one yourself. You can generate and download as many PDF invoices as you need.</p>
+
+<h3>How do I generate an invoice without accounting software?</h3>
+<p>Use an online invoice generator. Fill in your details, your client's details and your line items, then download the PDF. You get automatic calculations and a professional layout without paying for or learning accounting software.</p>
+
+<h3>Can I generate an invoice on my phone?</h3>
+<p>Yes. A browser-based invoice maker works on mobile, so you can generate and send an invoice from your phone right after finishing a job. Check the preview before downloading so long names and totals display correctly.</p>
+
+<h3>What is the best format to send an invoice in?</h3>
+<p>PDF. It looks the same on every device, can't be edited by accident, and is what most accounts payable teams expect. Avoid sending Word or Excel files as your final invoice.</p>
+
+<h3>Do I need to be a registered business to generate an invoice?</h3>
+<p>In many countries, freelancers and sole traders can issue invoices under their own name. You may need to show tax registration numbers and charge tax only once you are registered. Rules vary, so check with your local tax authority or an accountant.</p>
+
+<h3>What is the difference between an invoice, an estimate and a receipt?</h3>
+<p>An estimate or quote prices work before it starts, an invoice requests payment once it's done, and a receipt confirms payment was received. See <a href="/blog/invoice-vs-estimate">invoice vs estimate</a> and <a href="/blog/invoice-vs-receipt">invoice vs receipt</a> for details.</p>
+
+<h2>Generate your invoice now</h2>
+<p>You now know how to generate an invoice that is accurate, professional and quick to approve. Open the <a href="/invoice-generator">free invoice generator</a>, pick a template, fill in your details and download your PDF invoice in minutes.</p>
+`,
+  },
   {
     slug: "sales-tax-invoice-pakistan",
     title: "Sales Tax Invoice in Pakistan: Required Fields, NTN, STRN and a Sample Layout",
@@ -265,7 +423,7 @@ jane@smithdesign.example</p>
     author: "Invoice Creator Editorial Team",
     content: `
 <h2>When hourly billing makes sense</h2>
-<p>Hourly billing suits work where the scope is hard to predict: consulting, support, maintenance, legal or bookkeeping work, tutoring and many trades. It protects you from unlimited scope creep, and clients pay only for time actually spent. The trade-off is that clients need to trust your time records — so the invoice must make your hours easy to understand and verify.</p>
+<p>Hourly billing suits work where the scope is hard to predict: <a href="/blog/consulting-invoice-template">consulting</a>, support, maintenance, <a href="/blog/legal-invoice-template">legal</a> or bookkeeping work, <a href="/blog/tutoring-invoice-template">tutoring</a> and many trades. It protects you from unlimited scope creep, and clients pay only for time actually spent. The trade-off is that clients need to trust your time records — so the invoice must make your hours easy to understand and verify.</p>
 
 <h2>Step 1: Track time as you work</h2>
 <p>Record time on the day you do it, not from memory at month end. For each entry, note the date, start and end time (or duration), the task, and the project or client. A spreadsheet is enough; a time-tracking app is helpful if you work across many clients.</p>
@@ -352,9 +510,9 @@ jane@smithdesign.example</p>
 <h2>3. Check whether tax applies</h2>
 <p>Cross-border tax rules depend on your country, the client's country, whether the client is a business or a consumer, and what you are selling. Some common patterns:</p>
 <ul>
-<li><strong>Exported services to businesses</strong> are often outside the scope of your local VAT or zero-rated, sometimes with the client accounting for tax under a <em>reverse charge</em>.</li>
+<li><strong>Exported services to businesses</strong> are often outside the scope of your local VAT or <a href="/blog/zero-rated-vs-exempt-vat">zero-rated</a>, sometimes with the client accounting for tax under a <em>reverse charge</em>.</li>
 <li><strong>Digital services sold to consumers</strong> abroad can create a tax obligation in the customer's country.</li>
-<li><strong>Goods</strong> crossing borders involve customs and import duties, usually paid by the importer.</li>
+<li><strong>Goods</strong> crossing borders involve customs and import duties, usually paid by the importer, and travel with a <a href="/blog/commercial-invoice-template">commercial invoice for customs</a>.</li>
 </ul>
 <p>If a reverse charge applies, your invoice usually needs the client's tax number and a note such as "Reverse charge: customer to account for VAT". Ask an accountant once and build the answer into your template. See our <a href="/blog/vat-invoice-guide">VAT</a> and <a href="/blog/tax-invoice-guide">tax invoice</a> guides for background.</p>
 
@@ -859,7 +1017,7 @@ jane@smithdesign.example</p>
     content: `
 <h2>The short answer</h2>
 <p>A <strong>proforma invoice</strong> is a preliminary document sent <em>before</em> a sale is completed. It tells the buyer exactly what they will be billed — items, prices, taxes, shipping and terms — so they can arrange payment, approvals or import paperwork. It is not a demand for payment in the accounting sense and is not usually recorded as a sale.</p>
-<p>A <strong>commercial invoice</strong> (or simply "invoice") is issued once goods are shipped or services delivered. It is the legal request for payment and the record of the sale used for accounting and tax.</p>
+<p>A <strong>commercial invoice</strong> (or simply "invoice") is issued once goods are shipped or services delivered. It is the legal request for payment and the record of the sale used for accounting and tax. For exports, it is also the customs document — see our <a href="/blog/commercial-invoice-template">commercial invoice template</a> for the fields customs brokers expect.</p>
 
 <h2>Side-by-side comparison</h2>
 <table><thead><tr><th></th><th>Proforma invoice</th><th>Commercial invoice</th></tr></thead><tbody>
@@ -921,7 +1079,7 @@ jane@smithdesign.example</p>
     author: "Invoice Creator Editorial Team",
     content: `
 <h2>What a recurring invoice is</h2>
-<p>A recurring invoice bills the same client for the same (or similar) service on a regular schedule — weekly, monthly, quarterly or yearly. Typical examples include design or marketing retainers, website maintenance plans, bookkeeping services, equipment rental, coaching packages, cleaning contracts and software subscriptions.</p>
+<p>A recurring invoice bills the same client for the same (or similar) service on a regular schedule — weekly, monthly, quarterly or yearly. Typical examples include design or marketing retainers, <a href="/blog/web-development-invoice-template">website maintenance plans</a>, bookkeeping services, equipment rental, coaching packages, cleaning contracts and software subscriptions.</p>
 <p>Recurring revenue is the most predictable income a small business can have. But it only stays predictable if the invoicing is consistent: the same day, the same format, the same clear description, every period.</p>
 
 <h2>Choosing the billing schedule</h2>
@@ -1136,7 +1294,7 @@ jane@smithdesign.example</p>
 
 <h2>Why the details matter</h2>
 <p>Accounts-payable teams reject invoices for surprisingly small reasons: a missing PO number, an ambiguous due date, a total that does not match the sum of the lines, or billing the wrong legal entity after a company rename. Every rejection adds days or weeks to your payment cycle because the invoice re-enters the approval queue from the start.</p>
-<p>A structured template removes much of that risk. When fields always appear in the same place, both you and the client know where to look. That is why tools like our <a href="/invoice-generator">free invoice generator</a> and ready-made <a href="/invoice-templates">invoice templates</a> outperform ad-hoc Word documents for anyone who invoices more than occasionally.</p>
+<p>A structured template removes much of that risk. When fields always appear in the same place, both you and the client know where to look. That is why tools like our <a href="/invoice-generator">free invoice generator</a> (see <a href="/blog/how-to-generate-an-invoice">how to generate an invoice online</a>) and ready-made <a href="/invoice-templates">invoice templates</a> outperform ad-hoc Word documents for anyone who invoices more than occasionally.</p>
 
 <h2>Invoice numbering that survives an audit</h2>
 <p>Use a predictable scheme such as <code>2026-0041</code> or <code>ACME-0041</code>. Prefixing with the year makes year-end filing obvious. Never restart numbering mid-year, never skip numbers without a logged void, and never issue two invoices with the same number — auditors treat duplicates as a red flag.</p>
@@ -1387,7 +1545,7 @@ jane@smithdesign.example</p>
 
 <h2>Language that keeps estimates from becoming fake quotes</h2>
 <p>Write "This is an estimate, not a fixed quotation" near the total. Add that the final invoice may vary based on actual hours and approved extras. Those sentences feel cautious, but they prevent angry threads when reality diverges from the first sketch of scope.</p>
-<p>If a client says they need something so finance can reserve budget, an estimate is perfect. If they need a price they can raise a purchase order against, escalate to a quotation with firm scope. Matching document type to the buyer's internal process is part of getting paid later without drama.</p>
+<p>If a client says they need something so finance can reserve budget, an estimate is perfect. If they need a price they can raise a <a href="/blog/invoice-vs-purchase-order">purchase order</a> against, escalate to a quotation with firm scope. Matching document type to the buyer's internal process is part of getting paid later without drama.</p>
 <h2>Range estimates and capped estimates</h2>
 <p>A range communicates uncertainty honestly. A capped estimate that will not be exceeded without written approval protects the client while giving you a stop point for conversation. Either approach beats a single fake-precise number you cannot defend when conditions change.</p>
 <p>When you invoice inside a cap, show actuals and remaining headroom. When you need to exceed a cap, pause and get approval before continuing — then invoice the approved overrun as a clearly labelled variation line rather than quietly inflating an existing one.</p>
@@ -1536,6 +1694,17 @@ jane@smithdesign.example</p>
 <tr><td>Software / engineering</td><td>Mono or Dark</td></tr>
 <tr><td>Everything else</td><td>Modern</td></tr>
 </tbody></table>
+<p>Not sure which applies? Our guide on <a href="/blog/choose-invoice-template-by-client">choosing an invoice template based on who pays you</a> walks through the decision.</p>
+
+<h2>Invoice templates by industry</h2>
+<p>Each trade has its own line items, deposit habits and compliance quirks. These industry guides show what to include and a worked example for each:</p>
+<ul>
+<li><strong>Trades and home services:</strong> <a href="/blog/contractor-invoice-template">contractor invoice template</a>, <a href="/blog/plumbing-invoice-template">plumbing invoice template</a>, <a href="/blog/electrician-invoice-template">electrician invoice template</a>, <a href="/blog/hvac-invoice-template">HVAC invoice template</a>, <a href="/blog/handyman-invoice-template">handyman invoice template</a>, <a href="/blog/landscaping-invoice-template">landscaping invoice template</a>, <a href="/blog/cleaning-service-invoice-template">cleaning service invoice template</a> and <a href="/blog/auto-repair-invoice-template">auto repair invoice template</a>.</li>
+<li><strong>Creative and digital work:</strong> <a href="/blog/photography-invoice-template">photography invoice template</a>, <a href="/blog/graphic-design-invoice-template">graphic design invoice template</a> and <a href="/blog/web-development-invoice-template">web development invoice template</a>.</li>
+<li><strong>Professional services:</strong> <a href="/blog/consulting-invoice-template">consulting invoice template</a>, <a href="/blog/legal-invoice-template">legal invoice template</a>, <a href="/blog/medical-invoice-template">medical invoice template</a> and <a href="/blog/tutoring-invoice-template">tutoring invoice template</a>.</li>
+<li><strong>Property, food and logistics:</strong> <a href="/blog/rent-invoice-template">rent invoice template</a> for landlords, <a href="/blog/catering-invoice-template">catering invoice template</a> and <a href="/blog/trucking-invoice-template">trucking invoice template</a>.</li>
+</ul>
+<p>Prefer to start from scratch? Use a <a href="/blog/blank-invoice-template">blank invoice template</a> or a <a href="/blog/freelance-invoice-template">freelance invoice template</a>.</p>
 
 <h2>Matching template to content density</h2>
 <p>Short freelance invoices (three to five lines) look best on Minimal, Elegant, or Creative — sparse layouts that celebrate whitespace. Product invoices with SKUs, shipping, and tax columns need Corporate, Agency, or Classic so columns stay aligned. International invoices with IBAN/SWIFT notes benefit from Corporate or Modern, where the notes block is easy to find.</p>
@@ -2228,7 +2397,7 @@ jane@smithdesign.example</p>
     content: `
 <h2>Design for approval speed, not decoration</h2>
 <p>An invoice has one job: get understood and paid. Visual design should accelerate that job. When hierarchy is clear, accounts payable finds the amount, due date, PO, and bank details in seconds. When hierarchy is muddy, your brand look becomes expensive noise.</p>
-<p>The fifteen tips below are practical rules you can apply in any template — including those in our <a href="/invoice-templates">invoice templates</a> gallery.</p>
+<p>The fifteen tips below are practical rules you can apply in any template — including those in our <a href="/invoice-templates">invoice templates</a> gallery. If you are still deciding on a layout, start with <a href="/blog/choose-invoice-template-by-client">how to choose an invoice template based on who pays you</a>.</p>
 
 <h2>Hierarchy first</h2>
 <ol>
@@ -2380,6 +2549,18 @@ jane@smithdesign.example</p>
   },
 ];
 
+export const POST_DRAFTS: PostDraft[] = [
+  ...CORE_POSTS,
+  ...INDUSTRY_POSTS_A,
+  ...INDUSTRY_POSTS_B,
+  ...HOW_TO_POSTS_A,
+  ...HOW_TO_POSTS_B,
+  ...FREELANCING_POSTS,
+  ...PAYMENTS_POSTS,
+  ...TAX_POSTS,
+  ...COMPARISON_FINANCE_POSTS,
+];
+
 /** Reading time is derived from content length so it cannot drift from the article. */
 export const POSTS: Post[] = POST_DRAFTS.map((p) => ({
   ...p,
@@ -2388,7 +2569,12 @@ export const POSTS: Post[] = POST_DRAFTS.map((p) => ({
 
 export const getPost = (slug: string) => POSTS.find((p) => p.slug === slug);
 export const getCategory = (slug: string) => CATEGORIES.find((c) => c.slug === slug);
-export const relatedPosts = (post: Post, limit = 3) =>
-  POSTS.filter((p) => p.slug !== post.slug)
-    .sort((a, b) => (b.category === post.category ? 1 : 0) - (a.category === post.category ? 1 : 0))
-    .slice(0, limit);
+export const relatedPosts = (post: Post, limit = 3) => {
+  const picked = (post.related ?? [])
+    .map((slug) => getPost(slug))
+    .filter((p): p is Post => !!p && p.slug !== post.slug);
+  const fallback = POSTS.filter(
+    (p) => p.slug !== post.slug && p.category === post.category && !picked.includes(p),
+  );
+  return [...picked, ...fallback].slice(0, limit);
+};
