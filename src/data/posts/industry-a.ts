@@ -126,6 +126,8 @@ export const INDUSTRY_POSTS_A: PostDraft[] = [
 </ul>
 <p>If you work as a sole operator for a general contractor rather than for homeowners, your invoice looks more like a freelancer's — see the <a href="/blog/independent-contractor-invoice">independent contractor invoice</a> guide.</p>
 
+<p>Specialist trades have their own line items. See our <a href="/blog/roofing-invoice-template">roofing</a> and <a href="/blog/painting-invoice-template">painting</a> invoice guides for worked examples.</p>
+
 <h2>Create your contractor invoice now</h2>
 <p>Open the <a href="/invoice-generator">free invoice generator</a>, pick the Corporate template or browse all <a href="/invoice-templates">invoice templates</a>, add your labor, materials and deposits, and download a professional contractor invoice as a PDF in a few minutes.</p>
 `,
@@ -383,6 +385,8 @@ export const INDUSTRY_POSTS_A: PostDraft[] = [
 <li>Keep a short note of any issue the client raised and how you fixed it, in case the invoice is questioned.</li>
 </ul>
 <p>Outdoor maintenance businesses use a very similar recurring model — see our <a href="/blog/landscaping-invoice-template">landscaping invoice template</a> guide for a comparison.</p>
+
+<p>Offer exterior work too? The <a href="/blog/pressure-washing-invoice-template">pressure washing invoice template</a> covers per-square-foot pricing and add-ons.</p>
 
 <h2>Create your cleaning invoice now</h2>
 <p>Open the <a href="/invoice-generator">free invoice generator</a>, pick the Emerald template or browse all <a href="/invoice-templates">invoice templates</a>, add your visits and extras, and download a professional cleaning invoice as a PDF in minutes.</p>

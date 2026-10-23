@@ -119,6 +119,8 @@ export const COMPARISON_FINANCE_POSTS: PostDraft[] = [
 <p>Not every PO covers a single delivery. Clients who buy from you regularly may issue a blanket purchase order: one PO with a total spending limit and an end date, against which you invoice many times. For example, a blanket PO of $24,000 for monthly IT support from January to December lets you invoice $2,000 each month, quoting the same PO number every time.</p>
 <p>With blanket POs, keep a simple running tally on your side: PO value, amount invoiced to date and remaining balance. If the remaining balance will not cover the next invoice, tell the client early so they can raise a new PO before your invoice is due. Showing "PO balance remaining" in your invoice notes is a courtesy many accounts payable teams appreciate.</p>
 
+<p>Need the buyer-side document? Our <a href="/blog/purchase-order-template">purchase order template</a> lists the fields suppliers expect, and <a href="/blog/packing-slip-vs-invoice">packing slip vs invoice</a> explains the paperwork that travels with the goods.</p>
+
 <h2>Create your PO-matched invoice now</h2>
 <p>Now that you know the difference between an invoice and a purchase order, bill the right way: open the <a href="/invoice-generator">invoice generator</a>, enter the client's PO number, mirror the PO lines and download a PDF. The <a href="/invoice-templates/corporate">Corporate invoice template</a> suits procurement-heavy clients with a clear, formal layout.</p>
 `,
@@ -254,6 +256,8 @@ export const COMPARISON_FINANCE_POSTS: PostDraft[] = [
 <li><strong>"Switching later is painful, so I should start with software."</strong> Moving from a generator to software mostly means importing a client list and opening balances. Starting simple and switching when you need to is a perfectly sound plan.</li>
 </ul>
 <p>The right answer is the one that matches your workload today. A designer sending four invoices a month and a distributor sending four hundred have genuinely different needs, and neither choice is a sign of a more serious business.</p>
+
+<p>If you are comparing specific products, see our roundup of <a href="/blog/best-free-invoicing-software">free invoicing software</a> and our <a href="/blog/freshbooks-vs-quickbooks">FreshBooks vs QuickBooks</a> comparison.</p>
 
 <h2>Start with a free invoice generator</h2>
 <p>If you mainly need to bill clients, the fastest choice is to start simple. Open the <a href="/invoice-generator">invoice generator</a>, choose a template such as <a href="/invoice-templates/modern">Modern</a>, and download your first invoice in minutes. You can always move to accounting software when the business demands it.</p>
@@ -642,6 +646,8 @@ export const COMPARISON_FINANCE_POSTS: PostDraft[] = [
 </ul>
 <p>Most of these problems are prevented by a disciplined routine: invoice immediately, record everything, review weekly and follow up on schedule. None of it requires expensive tools, just consistency.</p>
 
+<p>To measure how quickly customers actually pay, track <a href="/blog/days-sales-outstanding">days sales outstanding (DSO)</a>. If the terms still feel muddled, our explainer on <a href="/blog/accounts-payable-vs-accounts-receivable">accounts payable vs accounts receivable</a> sets out the difference.</p>
+
 <h2>Send invoices that are easy to collect</h2>
 <p>Healthy accounts receivable starts with invoices that are clear, accurate and easy to pay. Create yours in the <a href="/invoice-generator">invoice generator</a> and pick a clean layout such as the <a href="/invoice-templates/slate">Slate invoice template</a> so the due date and amount stand out.</p>
 `,
@@ -782,6 +788,8 @@ export const COMPARISON_FINANCE_POSTS: PostDraft[] = [
 <li><strong>Using the invoice date for some customers and the due date for others.</strong> Consistency matters more than which method you choose.</li>
 <li><strong>Running the report but not acting on it.</strong> Assign a next step and a date to every balance over 30 days.</li>
 </ul>
+
+<p>If you are not using accounting software, an <a href="/blog/invoice-tracker-spreadsheet">invoice tracker spreadsheet</a> can produce the same aging buckets with a few formulas.</p>
 
 <h2>Keep your receivables current</h2>
 <p>The easiest aging report to manage is one where most balances sit in "current". Send clear, prompt invoices from the <a href="/invoice-generator">invoice generator</a> — the <a href="/invoice-templates/mono">Mono invoice template</a> keeps the due date and amount front and center — and review your aging report every week.</p>

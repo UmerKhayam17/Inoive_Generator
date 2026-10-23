@@ -122,6 +122,8 @@ export const TAX_POSTS: PostDraft[] = [
 <li>The ship-to address is on the invoice when it differs from the billing address.</li>
 </ul>
 
+<p>If a customer gives you a tax-inclusive total, our guide to <a href="/blog/reverse-sales-tax-calculation">reverse sales tax calculation</a> shows how to split out the tax.</p>
+
 <h2>Create your US sales tax invoice now</h2>
 <p>Open the <a href="/invoice-generator/usa">USA invoice generator</a>, which defaults to USD and US-style tax fields, add your line items, set your sales tax rate and download a clean PDF. A structured layout such as the <a href="/invoice-templates/classic">Classic invoice template</a> keeps taxable lines, the tax rate and the total easy to read, and you can browse every option in our <a href="/invoice-templates">invoice templates</a> gallery. Remember to confirm current rates and rules with your state before you send.</p>
 `,
@@ -242,6 +244,8 @@ export const TAX_POSTS: PostDraft[] = [
 <li><strong>Emailing an unencrypted W-9</strong> to an unverified address. Fraudsters impersonate clients to collect SSNs.</li>
 <li><strong>Applying an outdated threshold.</strong> Check the threshold for the year being reported.</li>
 </ul>
+
+<p>Payments through PayPal, Venmo or Stripe may be reported on a different form. Our guide to the <a href="/blog/1099-k-threshold">1099-K threshold</a> explains when that happens.</p>
 
 <h2>Create your contractor invoice now</h2>
 <p>Keep your paperwork in sync from the first job: open the <a href="/invoice-generator/usa">USA invoice generator</a>, which is preset for USD and EIN fields, enter the same name and EIN you used on your W-9, and download a clean PDF. The <a href="/invoice-templates/minimal">Minimal invoice template</a> keeps your business details, invoice number and dates easy for a client's accounts payable team to match at year-end.</p>
@@ -622,6 +626,8 @@ export const TAX_POSTS: PostDraft[] = [
 <h2>Where PDF invoices still fit</h2>
 <p>For freelancers and small businesses selling domestically in countries without a mandate, or to consumers, or to clients abroad who accept PDFs, a well-structured PDF remains normal practice. Clear field labels and consistent tax IDs also make your PDFs easier for automated capture tools. Country presets such as the <a href="/invoice-generator/uae">UAE invoice generator</a> and <a href="/invoice-generator/pakistan">Pakistan invoice generator</a> set local tax ID labels, but they produce PDF invoices, not mandated structured e-invoices.</p>
 
+<p>Country rules differ a lot. For the networks and mandates in detail, see <a href="/blog/what-is-peppol">what Peppol is and how it works</a>, the <a href="/blog/zatca-e-invoicing-guide">ZATCA e-invoicing guide</a> for Saudi Arabia, <a href="/blog/france-e-invoicing-reform">the France e-invoicing reform</a> and <a href="/blog/germany-e-invoicing-xrechnung-zugferd">XRechnung vs ZUGFeRD in Germany</a>.</p>
+
 <h2>Create a clear invoice now</h2>
 <p>If no e-invoicing mandate applies to your sales yet, open the invoice generator and download a clean PDF in minutes. A tidy, structured layout such as the <a href="/invoice-templates/slate">Slate invoice template</a> keeps every field easy to find, and you can browse all <a href="/invoice-templates">invoice templates</a> to match your brand. Check the latest mandate dates with your tax authority before each new year.</p>
 `,
@@ -973,6 +979,8 @@ export const TAX_POSTS: PostDraft[] = [
 <li>Keep records for the IRS retention period; see <a href="/blog/how-long-to-keep-invoices">how long to keep invoices</a>.</li>
 </ol>
 <p>Because no tax is withheld from self-employment income, most freelancers also make quarterly estimated payments, generally due in mid-April, mid-June, mid-September and mid-January. Setting aside a fixed share of each payment you receive makes those dates far less painful. For running the wider business side, our <a href="/blog/small-business-invoice-guide">small business invoicing guide</a> is a good companion.</p>
+
+<p>Deductions lower the bill, but you usually still pay during the year. See <a href="/blog/quarterly-estimated-taxes-freelancers">quarterly estimated taxes for freelancers</a> for the due dates and the safe harbor rules.</p>
 
 <h2>Start with clean invoices</h2>
 <p>Accurate deductions depend on accurate books, and accurate books start with every invoice you send. Use the <a href="/invoice-generator/usa">USA invoice generator</a> to create numbered, dated invoices in USD, and choose a simple layout such as the <a href="/invoice-templates/startup">Startup invoice template</a>, or browse all <a href="/invoice-templates">invoice templates</a>. Then talk to a tax professional about which deductions apply to you this year.</p>

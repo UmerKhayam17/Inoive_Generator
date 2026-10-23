@@ -125,6 +125,8 @@ export const FREELANCING_POSTS: PostDraft[] = [
 </ol>
 <p>Rate increases of 5% to 15% a year are easy for most clients to absorb. Bigger jumps are usually better handled by repositioning your services or moving to project or value-based pricing. For the wider invoicing habits that protect your income — deposits, terms and follow-ups — read <a href="/blog/freelancer-invoice-guide">the freelancer's invoice guide</a>.</p>
 
+<p>If you resell materials or subcontract work, learn the difference between <a href="/blog/markup-vs-margin">markup vs margin</a> so your percentages mean what you think they mean.</p>
+
 <h2>Bill your new rate with a professional invoice</h2>
 <p>Once your rate is set, make sure every invoice reflects it accurately and professionally. Open the <a href="/invoice-generator">invoice generator</a>, add your services with quantities and rates, and download a PDF ready to send. Choose a template that matches your brand, such as the <a href="/invoice-templates/modern">Modern invoice template</a>, set a real due date, and get paid for the value you deliver. Revisit the numbers each year, because knowing how to set freelance rates is a skill you will use for your whole career.</p>
 `,
@@ -473,6 +475,8 @@ export const FREELANCING_POSTS: PostDraft[] = [
 <li>Agree a firm rule that work pauses when any invoice is more than a set number of days overdue.</li>
 </ul>
 <p>If a client has repeatedly ignored invoices, made you chase for weeks, or disputed work only after it was delivered, it is often cheaper to end the relationship politely. The time you spend chasing one bad payer is time you could have spent serving a client who pays on schedule.</p>
+
+<p>If polite chasing and a final demand fail, our guide to <a href="/blog/small-claims-court-unpaid-invoice">small claims court for an unpaid invoice</a> explains the next step in the US and UK.</p>
 
 <h2>Resend a clear invoice today</h2>
 <p>A client not paying an invoice is often a client who has lost it or cannot process it. Recreate it in the <a href="/invoice-generator">invoice generator</a> with the PO number, correct billing entity, due date and payment details, and resend it as a fresh PDF. The <a href="/invoice-templates/corporate">Corporate invoice template</a> is easy for finance teams to read and approve.</p>

@@ -493,6 +493,8 @@ export const INDUSTRY_POSTS_B: PostDraft[] = [
 </ul>
 <p>Track every open invoice by broker and age. A weekly look at an <a href="/blog/accounts-receivable-aging-report">accounts receivable aging report</a> shows which brokers pay slowly, which is useful when deciding which loads to accept. More general tactics are in <a href="/blog/how-to-get-paid-faster">how to get paid faster</a>.</p>
 
+<p>Household moves follow different rules from freight. See the <a href="/blog/moving-company-invoice-template">moving company invoice template</a> for estimates, crews and packing materials.</p>
+
 <h2>Create your trucking invoice now</h2>
 <p>A clear trucking invoice template that mirrors the rate con gets loads paid without back-and-forth. Open the generator with <a href="/invoice-generator/usa">US presets</a>, pick a bold, high-contrast layout such as the <a href="/invoice-templates/slate">Slate template</a>, enter the load details and charges, and send your PDF with the signed BOL the same day.</p>
 `,
@@ -621,6 +623,8 @@ export const INDUSTRY_POSTS_B: PostDraft[] = [
 <li><strong>Print warranty terms</strong> on the invoice so the customer knows what is covered and for how long.</li>
 <li><strong>Avoid common errors</strong> such as wrong VINs, missing mileage or arithmetic slips — see <a href="/blog/common-invoice-mistakes">common invoice mistakes</a>.</li>
 </ul>
+
+<p>For cosmetic work rather than repairs, see the <a href="/blog/car-detailing-invoice-template">car detailing invoice template</a>.</p>
 
 <h2>Create your auto repair invoice now</h2>
 <p>A clear auto repair invoice template shows customers exactly what they paid for and keeps your shop's records in order. Open the generator with <a href="/invoice-generator/usa">US presets</a>, choose the strong, readable <a href="/invoice-templates/bold">Bold template</a>, add your parts and labor lines, and download a PDF ready to print at the counter.</p>
@@ -865,6 +869,8 @@ export const INDUSTRY_POSTS_B: PostDraft[] = [
 </ol>
 <p>A calm, friendly design suits tutoring well — the soft <a href="/invoice-templates/lavender">Lavender template</a> feels approachable while staying professional.</p>
 
+<p>Running regular childcare rather than lessons? The <a href="/blog/daycare-invoice-template">daycare invoice template</a> covers weekly tuition and the details parents need for tax purposes.</p>
+
 <h2>Create your tutoring invoice now</h2>
 <p>A clear tutoring invoice template saves you admin and gives families no reason to delay payment. Open the generator with <a href="/invoice-generator/usa">US presets</a>, choose the clean <a href="/invoice-templates/ocean">Ocean template</a>, add your sessions and extras, and download a PDF to send to parents today.</p>
 `,
@@ -991,6 +997,8 @@ export const INDUSTRY_POSTS_B: PostDraft[] = [
 <li><strong>Agree late terms up front.</strong> If a corporate client pays late, our guide to <a href="/blog/late-payment-fees">late payment fees</a> explains how to apply agreed charges.</li>
 <li><strong>Match the design to the event.</strong> Weddings and private events suit a refined layout such as the <a href="/invoice-templates/elegant">Elegant template</a>; corporate lunches suit something plainer.</li>
 </ul>
+
+<p>If you plan the whole event rather than just the food, the <a href="/blog/event-planner-invoice-template">event planner invoice template</a> covers retainers and vendor pass-through costs.</p>
 
 <h2>Create your catering invoice now</h2>
 <p>A detailed catering invoice template keeps deposits, guest counts and tax clear from booking to the last plate. Open the generator with <a href="/invoice-generator/usa">US presets</a>, choose the warm <a href="/invoice-templates/sunset">Sunset template</a>, add your menu, staffing and payments, and download a PDF ready to send.</p>
