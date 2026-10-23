@@ -116,6 +116,8 @@ export const HOW_TO_POSTS_B: PostDraft[] = [
 <p>A packing list describes how the goods are packed: carton numbers, contents per carton, dimensions and weights. It usually carries no prices. The commercial invoice carries the values. Customs and freight forwarders often want both, and the quantities and weights on the two documents must agree exactly. If you ship regularly, keep your commercial invoice template and packing list template side by side so you update both from the same order data.</p>
 <p>Rules change and vary by destination, so treat this as general guidance and confirm specific requirements with your carrier, freight forwarder or a licensed customs broker.</p>
 
+<p>A commercial invoice usually travels with a packing list. Our guide to <a href="/blog/packing-slip-vs-invoice">packing slips vs invoices</a> shows how the two documents differ.</p>
+
 <h2>Create your commercial invoice now</h2>
 <p>Open the <a href="/invoice-generator">invoice generator</a>, choose the Corporate or Classic layout, add your exporter, importer and customs details, and download a clean PDF commercial invoice ready to sign and ship.</p>
 `,
@@ -1033,6 +1035,8 @@ export const HOW_TO_POSTS_B: PostDraft[] = [
 <li><strong>Print in batches.</strong> Pre-number a pad so every sheet has a unique invoice number.</li>
 </ul>
 <p>Our <a href="/blog/invoice-pdf-print-checklist">invoice PDF print checklist</a> covers margins, fonts and color in more detail.</p>
+
+<p>If you want something you can fill in quickly, compare a <a href="/blog/simple-invoice-template">simple invoice template</a> with a <a href="/blog/invoice-template-pdf">printable invoice template PDF</a>.</p>
 
 <h2>Fill in your blank invoice online now</h2>
 <p>Skip the calculator and the handwriting. Open the <a href="/invoice-generator">invoice generator</a>, choose the Minimal or Mono layout, fill in the blanks and download a print-ready PDF in a couple of minutes.</p>

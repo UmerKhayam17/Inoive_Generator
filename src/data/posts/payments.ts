@@ -131,6 +131,8 @@ export const PAYMENTS_POSTS: PostDraft[] = [
 <p>Customers pay faster when the invoice tells them exactly how. In the payment terms or notes section, list the methods you accept, include a working payment link, and state the due date as a real calendar date. Agree the terms up front; our guide to <a href="/blog/invoice-payment-terms">invoice payment terms</a> explains common options such as Net 15 and Net 30.</p>
 <p>Offering cards is one of several levers for faster payment. For the rest, see <a href="/blog/how-to-get-paid-faster">how to get paid faster</a>. If you bill clients abroad, card payments can avoid wire fees for the customer, but currency conversion costs apply; read <a href="/blog/invoice-international-clients">how to invoice international clients</a> before choosing a method. For a broader view of billing processes, the <a href="/blog/small-business-invoice-guide">small business invoicing guide</a> pulls everything together.</p>
 
+<p>Processor costs vary more than most people expect. Compare <a href="/blog/square-invoice-fees">Square invoice fees</a>, <a href="/blog/stripe-invoicing-guide">Stripe invoicing</a> and <a href="/blog/how-to-send-paypal-invoice">PayPal invoices</a> before you choose.</p>
+
 <h2>Create an invoice that accepts card payments</h2>
 <p>Once your processor is set up, open the <a href="/invoice-generator">invoice generator</a>, choose a clean layout such as the <a href="/invoice-templates/modern">Modern invoice template</a>, and add your payment link and accepted cards to the payment instructions. Download the PDF, send it, and let your customers pay in a couple of clicks.</p>
 `,
@@ -367,6 +369,8 @@ Our bank details will never change by email. If you receive a message saying the
 <h2>Offer a faster option alongside bank transfer</h2>
 <p>Bank transfers are often the cheapest way to get paid, but some clients prefer to pay by card. Listing both gives them a choice. See <a href="/blog/add-payment-link-to-invoice">how to add a payment link to an invoice</a> and our guide to <a href="/blog/how-to-accept-credit-card-payments">accepting credit card payments</a> if you want to add one.</p>
 
+<p>Fraudsters often target exactly these details. Read <a href="/blog/invoice-scams">how to spot invoice scams</a> so you and your clients know how to verify a change of bank account.</p>
+
 <h2>Add your bank details to an invoice now</h2>
 <p>Open the <a href="/invoice-generator">invoice generator</a>, choose a structured layout such as the <a href="/invoice-templates/corporate">Corporate invoice template</a>, and paste your labeled bank details and payment reference into the payment section. Your draft is saved in your browser, so your bank details are ready for the next invoice on the same device.</p>
 `,
@@ -599,6 +603,8 @@ Our bank details never change by email. Call 555-0187 to verify before sending a
 
 <h2>Record payments when they arrive</h2>
 <p>Match each deposit to its invoice using the reference, mark the invoice paid, and send a confirmation. A <a href="/blog/payment-receipt-template">payment receipt template</a> makes that quick. Keeping this routine tight is part of good billing hygiene, covered in our <a href="/blog/small-business-invoice-guide">small business invoicing guide</a>.</p>
+
+<p>Business payers often send a <a href="/blog/remittance-advice">remittance advice</a> with an ACH payment so you can match it to the right invoices.</p>
 
 <h2>Create an invoice with clear payment instructions</h2>
 <p>Build your invoice with a clean, numbers-friendly layout such as the <a href="/invoice-templates/slate">Slate invoice template</a>, add your ACH and wire details with labels and a reference, and download the PDF. Clear instructions are the easiest way to make sure the right payment method is used every time.</p>

@@ -6,6 +6,11 @@ import { FREELANCING_POSTS } from "./posts/freelancing";
 import { PAYMENTS_POSTS } from "./posts/payments";
 import { TAX_POSTS } from "./posts/tax";
 import { COMPARISON_FINANCE_POSTS } from "./posts/comparisons-finance";
+import { EINVOICING_POSTS } from "./posts/e-invoicing";
+import { FORMAT_TEMPLATE_POSTS } from "./posts/formats-templates";
+import { PLATFORM_SOFTWARE_POSTS } from "./posts/platforms-software";
+import { INDUSTRY_POSTS_C } from "./posts/industry-c";
+import { FINANCE_ADVANCED_POSTS } from "./posts/finance-advanced";
 
 export interface Post {
   slug: string;
@@ -276,6 +281,8 @@ const CORE_POSTS: PostDraft[] = [
 <h2>Freelancers exporting services</h2>
 <p>Pakistani freelancers who invoice foreign clients are usually exporting services. These invoices are typically issued in USD or another foreign currency and normally do not include Pakistani sales tax, but the treatment depends on the service and your registration. Show your NTN, state the currency clearly, and keep proof of the foreign remittance. Our guide to <a href="/blog/invoice-international-clients">invoicing international clients</a> covers the practical side.</p>
 
+<p>If you are a sales-tax registered business, check whether FBR's digital invoicing rules apply to you as well. Our guide to <a href="/blog/fbr-e-invoicing-pakistan">FBR e-invoicing in Pakistan</a> explains who must integrate.</p>
+
 <h2>Create a PKR invoice</h2>
 <p>Our <a href="/invoice-generator/pakistan">Pakistan invoice generator</a> is preset with PKR, NTN and STRN fields so both parties' registration numbers appear on the PDF. Adjust the tax rate to match your supply, and confirm requirements with your tax adviser before relying on any template for compliance.</p>
 `,
@@ -339,6 +346,8 @@ const CORE_POSTS: PostDraft[] = [
 <li>Calling a document a "Tax Invoice" before you are VAT-registered</li>
 <li>Gaps or duplicates in invoice numbering</li>
 </ul>
+
+<p>The UAE is also moving to mandatory structured e-invoicing. Our guide to <a href="/blog/uae-e-invoicing-2027">UAE e-invoicing in 2027</a> covers the timeline and the accredited service provider requirement.</p>
 
 <h2>Create a UAE invoice</h2>
 <p>Our <a href="/invoice-generator/uae">UAE invoice generator</a> is preset with AED and a TRN field and calculates 5% VAT automatically; you can change the rate for zero-rated lines. For general background on VAT invoicing in other countries, see our <a href="/blog/vat-invoice-guide">VAT invoice guide</a>.</p>
@@ -537,6 +546,8 @@ jane@smithdesign.example</p>
 <h2>7. Language and format</h2>
 <p>English is widely accepted for B2B invoices, but some countries require local-language invoices for tax purposes. If your client asks for a bilingual invoice or specific fields, add them — it's cheaper than a rejected invoice.</p>
 
+<p>For the payment side, compare <a href="/blog/wise-vs-payoneer">Wise vs Payoneer</a>. If you are based in Pakistan, see <a href="/blog/receive-payment-from-abroad-pakistan">how to receive payment from abroad in Pakistan</a>.</p>
+
 <h2>Checklist for international invoices</h2>
 <ul>
 <li>Currency agreed and shown with its three-letter code</li>
@@ -667,6 +678,8 @@ jane@smithdesign.example</p>
 <li>Payment terms and bank details</li>
 </ul>
 
+<p>For trade-specific layouts, see the <a href="/blog/roofing-invoice-template">roofing invoice template</a> and the <a href="/blog/painting-invoice-template">painting invoice template</a>.</p>
+
 <h2>Tips for getting paid on site work</h2>
 <ul>
 <li>Take a deposit before ordering custom materials.</li>
@@ -715,6 +728,8 @@ jane@smithdesign.example</p>
 <h2>Which word should you use?</h2>
 <p>If you run a business and sell to other businesses, title your document <strong>"Invoice"</strong> (or "Tax Invoice" / "VAT Invoice" where your registration requires it). Accounts-payable teams look for that word, and it signals a formal commercial document with a number, date and payment terms. Using "bill" on a B2B document isn't wrong, but it can look informal.</p>
 <p>If you run a consumer business — a restaurant, salon or repair shop — "bill" is natural at the point of sale, though you may still need to issue a tax-compliant invoice or receipt depending on local rules.</p>
+
+<p>For a ready-to-copy layout for shops and small services, see our <a href="/blog/bill-format">simple bill format</a> guide.</p>
 
 <h2>What both should contain</h2>
 <ul>
@@ -1629,6 +1644,8 @@ jane@smithdesign.example</p>
 <h2>When a quotation should expire</h2>
 <p>Material prices, exchange rates, and your own utilisation change. A 14- or 30-day validity window is not unfriendly — it is honest. When a client accepts after expiry, re-issue or confirm the old price in writing before you schedule work. Honouring expired quotes silently trains late decisions and eats margin.</p>
 <p>Put the expiry date near the total where it will be seen, not only in fine print at the bottom of page two.</p>
+<p>If you need a ready layout for the quote itself, our <a href="/blog/quotation-format">quotation format guide</a> walks through every field with a worked sample.</p>
+
 <h2>Create the documents cleanly</h2>
 <p>Keep quotation and invoice numbering in separate series if that helps your filing (Q-2026-018 vs INV-2026-0041), and cross-reference them in notes. When it is time to request payment, build the invoice in the <a href="/invoice-generator">free invoice generator</a> using a layout such as <a href="/invoice-templates/corporate">Corporate</a> for formal buyers or <a href="/invoice-templates/elegant">Elegant</a> for premium services.</p>
 `,
@@ -1732,6 +1749,8 @@ jane@smithdesign.example</p>
 <h2>Testing before you standardise</h2>
 <p>Before locking a company-wide default, send yourself three sample PDFs: a short three-line invoice, a two-page item list, and an international invoice with long bank details. Open each on desktop and phone, then print one page. Any template that fails one of those tests should not become your default, however attractive it looks empty.</p>
 <p>Also ask one client whether their AP system prefers colour or can only archive greyscale cleanly. Buyer constraints beat personal taste.</p>
+<p>Thinking about designing your own? Read the honest pros and cons of a <a href="/blog/canva-invoice-template">Canva invoice template</a>, or start from a <a href="/blog/service-invoice-template">service invoice template</a> if you bill for time rather than products.</p>
+
 <h2>Preview and create</h2>
 <p>Preview every layout instantly inside the <a href="/invoice-generator">invoice generator</a>, then download a PDF when the fields are complete. For scenario-based line items to drop into these layouts, see <a href="/blog/invoice-examples">invoice examples</a>. For small-business process around templates — numbering, batching, reminders — read the <a href="/blog/small-business-invoice-guide">small business invoicing guide</a>.</p>
 `,
@@ -1895,6 +1914,8 @@ jane@smithdesign.example</p>
 <p>Define unused-hour policy in the agreement and restate it annually. Roll-over ambiguity is one of the most common retainer disputes and it often surfaces only when someone cancels.</p>
 <h2>Tools without complexity addiction</h2>
 <p>You need a PDF generator, a way to track sent versus paid, and a calendar for reminders. You do not need five overlapping apps. Start with the <a href="/invoice-generator">invoice generator</a> and a simple spreadsheet; graduate to accounting software when volume or tax complexity demands it. Complexity that delays sending invoices is working against you.</p>
+<p>Working through a marketplace? See <a href="/blog/fiverr-upwork-invoice">how to get Fiverr and Upwork invoices</a>. Remote support work has its own guide, the <a href="/blog/virtual-assistant-invoice-template">virtual assistant invoice template</a>.</p>
+
 <h2>Common freelancer payment killers</h2>
 <ul>
 <li>Starting without a deposit on a new client</li>
@@ -2219,6 +2240,8 @@ jane@smithdesign.example</p>
 <h2>Cross-border first invoices</h2>
 <p>The first time you sell into a new country, pause before reusing your domestic tax invoice layout. Ask whether reverse charge, local registration, or marketplace collection rules apply. A correctly unpaid VAT line with reverse-charge wording is often safer than charging domestic tax to a foreign VAT-registered business by habit.</p>
 <p>Document the decision in the client file so the next invoice follows the same treatment.</p>
+<p>For country-specific detail, read our guides to <a href="/blog/australia-tax-invoice-requirements">tax invoice requirements in Australia</a> and <a href="/blog/zatca-e-invoicing-guide">Saudi ZATCA e-invoicing</a>.</p>
+
 <h2>Build the document carefully</h2>
 <p>Use the notes and tax fields in our <a href="/invoice-generator">free invoice generator</a> to capture registration numbers, rate breaks, and reverse-charge statements. Pair with a clear layout such as <a href="/invoice-templates/corporate">Corporate</a> when buyers are strict about reference fields.</p>
 <p>Treat this article as general guidance only. Confirm current requirements with a qualified professional or the relevant tax authority before you rely on a format for reclaim or filing.</p>
@@ -2302,6 +2325,8 @@ jane@smithdesign.example</p>
 <p>Goods returns should reference the original invoice on the credit note and reverse the same tax components. Ad-hoc refunds without tax documents create return mismatches.</p>
 <h2>Working with your tax professional</h2>
 <p>Bring sample PDFs to your accountant when you expand into inter-state trade, exports, or reverse-charge categories for the first time. Template changes are cheaper than amended filings. Use our <a href="/invoice-generator">invoice generator</a> for clear drafts, then confirm mandatory fields against current official guidance before you scale volume.</p>
+<p>Larger GST taxpayers must also report invoices to the IRP; see <a href="/blog/india-e-invoice-limit">the e-invoice limit under GST</a>. For goods moved without a sale, use a <a href="/blog/delivery-challan-format">delivery challan</a> instead of a tax invoice.</p>
+
 <h2>Create and cross-check</h2>
 <p>Use the notes and tax fields in our <a href="/invoice-generator">invoice generator</a> to capture registration IDs, rate lines, and reverse-charge statements. For general tax-invoice principles that apply across regimes, read the <a href="/blog/tax-invoice-guide">tax invoice guide</a>. Browse <a href="/invoice-templates">invoice templates</a> when you need a clearer AP-friendly layout.</p>
 <p>Always confirm current field lists, rates, and e-invoicing thresholds with your accountant or the relevant authority — this guide is informational, not a filing manual.</p>
@@ -2380,6 +2405,8 @@ jane@smithdesign.example</p>
 <p>Shipping and postage may follow special rules depending on whether they are incidental to goods. If unsure, separate them and seek advice rather than inventing a blended rate.</p>
 <h2>Year-end hygiene</h2>
 <p>Before year end, review open credit notes, orphaned invoices, and foreign customers billed with domestic VAT by mistake. Clean documents make accountant reviews faster and reduce surprise assessments. Retain evidence of VAT number checks for cross-border B2B where your process requires it.</p>
+<p>Across the EU, VAT invoices are steadily becoming structured e-invoices. See <a href="/blog/belgium-poland-e-invoicing-mandates">the Belgium and Poland (KSeF) mandates</a> and <a href="/blog/germany-e-invoicing-xrechnung-zugferd">the German XRechnung rules</a> for two current examples.</p>
+
 <h2>Build the document, then verify</h2>
 <p>Build the document in the <a href="/invoice-generator">invoice generator</a>, use an AP-friendly layout such as <a href="/invoice-templates/corporate">Corporate</a> or <a href="/invoice-templates/modern">Modern</a>, and confirm details with your accountant before you rely on a format for reclaim or return filing. See also our <a href="/about">About</a> page and <a href="/disclaimer">Disclaimer</a>.</p>
 <p>This article is general information, not tax advice. Rules change; your registration status and trade pattern determine what you must show.</p>
@@ -2559,6 +2586,11 @@ export const POST_DRAFTS: PostDraft[] = [
   ...PAYMENTS_POSTS,
   ...TAX_POSTS,
   ...COMPARISON_FINANCE_POSTS,
+  ...EINVOICING_POSTS,
+  ...FORMAT_TEMPLATE_POSTS,
+  ...PLATFORM_SOFTWARE_POSTS,
+  ...INDUSTRY_POSTS_C,
+  ...FINANCE_ADVANCED_POSTS,
 ];
 
 /** Reading time is derived from content length so it cannot drift from the article. */

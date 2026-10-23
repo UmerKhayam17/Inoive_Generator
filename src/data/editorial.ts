@@ -34,6 +34,17 @@ export type ChangelogEntry = {
 /** Reverse-chronological product / content updates — evidence of ongoing curation. */
 export const CHANGELOG: ChangelogEntry[] = [
   {
+    date: "2026-10-23",
+    title: "50 new guides",
+    items: [
+      "E-invoicing guides for Saudi Arabia, UAE, Pakistan, India, Malaysia, France, Germany, Belgium, Poland and Australia, plus a Peppol explainer",
+      "Quotation, bill, delivery challan, purchase order and packing slip formats, and an invoice tracker spreadsheet",
+      "Guides to PayPal, Stripe, Square, Venmo, Wise and Payoneer, plus fair comparisons of invoicing software",
+      "Ten new industry invoice guides, from roofing to daycare",
+      "Finance and tax guides: markup vs margin, DSO, reverse sales tax, quarterly estimated taxes, the 1099-K threshold, invoice scams and small claims",
+    ],
+  },
+  {
     date: "2026-10-19",
     title: "Quality and tools update",
     items: [
