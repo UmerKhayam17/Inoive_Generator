@@ -3,7 +3,7 @@ import { LegalPage } from "@/components/layout/LegalPage";
 import { SITE } from "@/data/site";
 import { canonicalFor, pageSocial } from "@/lib/seo";
 
-const TITLE = `Disclaimer — ${SITE.name}`;
+const TITLE = `Disclaimer | ${SITE.name}`;
 const DESCRIPTION =
   "Invoice Creator provides general information and a free invoice tool. It is not legal, tax or accounting advice. Read the full disclaimer.";
 

@@ -326,7 +326,7 @@ export const TAX_POSTS: PostDraft[] = [
 <h2>Reverse charge invoice wording examples</h2>
 <p>For intra-EU services, the VAT Directive requires the invoice to carry the mention "Reverse charge" (member states may accept the equivalent in their own language). HMRC offers example wording for the UK construction reverse charge. Commonly used phrasing includes:</p>
 <ul>
-<li><strong>Intra-EU B2B services:</strong> "Reverse charge" or "Reverse charge — Article 196, Council Directive 2006/112/EC".</li>
+<li><strong>Intra-EU B2B services:</strong> "Reverse charge" or "Reverse charge: Article 196, Council Directive 2006/112/EC".</li>
 <li><strong>UK supplier, B2B services to an EU customer:</strong> "Outside the scope of UK VAT. Reverse charge: customer to account for VAT in their country."</li>
 <li><strong>UK construction reverse charge:</strong> "Reverse charge: customer to account for VAT to HMRC" or "Reverse charge: S55A VATA 94 applies".</li>
 <li><strong>Intra-EU goods:</strong> "Exempt intra-Community supply" with the relevant legal reference used in your member state.</li>

@@ -27,7 +27,7 @@ export const TOOLS: ToolCard[] = [
     slug: "invoice-generator",
     name: "Invoice Generator",
     description:
-      "Build a professional PDF invoice with live preview, tax, discounts, logo and payment notes. Runs in your browser — no account.",
+      "Build a professional PDF invoice with live preview, tax, discounts, logo and payment notes. Runs in your browser, no account.",
     href: "/invoice-generator",
     icon: FileText,
     available: true,
@@ -57,7 +57,7 @@ export const TOOLS: ToolCard[] = [
     slug: "sales-tax-calculator",
     name: "Sales Tax Calculator",
     description:
-      "Add or extract tax from an amount when you already know the rate. Educational — not filing advice.",
+      "Add or extract tax from an amount when you already know the rate. Educational, not filing advice.",
     href: "/tools/sales-tax-calculator",
     icon: Percent,
     available: true,

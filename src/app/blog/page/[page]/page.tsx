@@ -25,7 +25,7 @@ export async function generateMetadata({
   params: Promise<{ page: string }>;
 }): Promise<Metadata> {
   const page = parsePage((await params).page);
-  const title = `Invoicing Blog — Page ${page} of ${BLOG_PAGE_COUNT} | ${SITE.name}`;
+  const title = `Invoicing Blog: Page ${page} of ${BLOG_PAGE_COUNT} | ${SITE.name}`;
   const description = `Page ${page} of the ${SITE.name} invoicing blog: practical guides on invoices, payments, tax and templates for freelancers and small businesses.`;
   const url = canonicalFor(blogPageHref(page));
 

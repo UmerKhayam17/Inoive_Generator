@@ -78,7 +78,7 @@ function FieldError({ message }: { message?: string | undefined }) {
 export function InvoiceGenerator({
   localeSlug = null,
   heading = "Invoice generator",
-  lead = "Everything calculates live and autosaves to this browser. When it looks right, download the PDF — the export always matches the template shown in the preview.",
+  lead = "Everything calculates live and autosaves to this browser. When it looks right, download the PDF. The export always matches the template shown in the preview.",
   titleAs = "h1",
   crumbs = [
     { label: "Home", href: "/" },
@@ -576,7 +576,7 @@ export function InvoiceGenerator({
                   Typography
                 </h2>
                 <p className="mt-1 text-xs text-muted-foreground">
-                  Optional — change font, size, bold, italic and title level (H1 / H2 / H3).
+                  Optional: change font, size, bold, italic and title level (H1 / H2 / H3).
                 </p>
               </div>
               <div className="flex items-center gap-3">
@@ -674,7 +674,7 @@ export function InvoiceGenerator({
                             {level.id.toUpperCase()}
                           </span>
                           <span className="mt-1 block text-[10px] text-muted-foreground">
-                            {level.label.replace(/^H\d — /, "")}
+                            {level.label.replace(/^H\d: /, "")}
                           </span>
                         </button>
                       );
@@ -748,7 +748,7 @@ export function InvoiceGenerator({
                   >
                     Invoice
                   </span>
-                  Preview sample — your PDF will use these settings.
+                  Preview sample: your PDF will use these settings.
                 </p>
               </div>
             )}
@@ -860,7 +860,7 @@ export function InvoiceGenerator({
                 >
                   {CURRENCIES.map((c) => (
                     <option key={c.code} value={c.code}>
-                      {c.code} — {c.label}
+                      {c.code}: {c.label}
                     </option>
                   ))}
                 </select>

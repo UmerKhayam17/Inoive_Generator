@@ -8,7 +8,7 @@ import { absoluteUrl, canonicalFor, pageSocial } from "@/lib/seo";
 
 const TITLE = `Free Sales Tax Calculator | ${SITE.name}`;
 const DESCRIPTION =
-  "Add or extract sales tax / VAT from an amount instantly. Browser-based calculator for invoice drafts — not tax advice. Confirm your rate before you bill.";
+  "Add or extract sales tax / VAT from an amount instantly. Browser-based calculator for invoice drafts, not tax advice. Confirm your rate before you bill.";
 
 export const metadata: Metadata = {
   title: { absolute: TITLE },
@@ -61,16 +61,16 @@ export default function Page() {
           <h2 className="text-2xl font-bold text-foreground">Exclusive vs inclusive amounts</h2>
           <p>
             <strong className="text-foreground">Exclusive</strong> means your line items are before
-            tax — the calculator adds tax on top.{" "}
+            tax: the calculator adds tax on top.{" "}
             <strong className="text-foreground">Inclusive</strong> means the figure you typed already
-            contains tax — the calculator splits net and tax.
+            contains tax: the calculator splits net and tax.
           </p>
           <h2 className="text-2xl font-bold text-foreground">Important limitations</h2>
           <ul>
             <li>We do not look up live state or national rates.</li>
-            <li>Some goods and services are zero-rated or exempt — this tool cannot decide that.</li>
+            <li>Some goods and services are zero-rated or exempt. This tool cannot decide that.</li>
             <li>
-              Country-specific invoice rules (NTN, TRN, VAT numbers) belong on the invoice itself —
+              Country-specific invoice rules (NTN, TRN, VAT numbers) belong on the invoice itself;
               see our <Link href="/blog/tax-invoice-guide">tax invoice guide</Link>.
             </li>
           </ul>

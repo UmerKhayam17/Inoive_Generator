@@ -77,7 +77,7 @@ export default function ToolsPage() {
       <PageHeader
         eyebrow="Tools"
         title="Free tools for getting paid"
-        lead={`${SITE.name} on ${SITE.host} gives freelancers and small businesses browser-based invoicing tools — create PDFs, pick a template, or start with a country-ready layout. Everything runs on your device; no account required.`}
+        lead={`${SITE.name} on ${SITE.host} gives freelancers and small businesses browser-based invoicing tools: create PDFs, pick a template, or start with a country-ready layout. Everything runs on your device; no account required.`}
         crumbs={[{ label: "Home", href: "/" }, { label: "Tools" }]}
       />
 
@@ -100,7 +100,7 @@ export default function ToolsPage() {
             Numbering &amp; tax helpers
           </h2>
           <p className="mt-2 max-w-3xl text-muted-foreground leading-relaxed">
-            Small utilities that support the generator — invent a numbering scheme or check tax maths
+            Small utilities that support the generator: invent a numbering scheme or check tax maths
             before you lock the PDF. Calculations stay in your browser.
           </p>
           <ToolGrid tools={HELPERS} />
@@ -112,7 +112,7 @@ export default function ToolsPage() {
           </h2>
           <p className="mt-2 max-w-3xl text-muted-foreground leading-relaxed">
             Same PDF tool with currency and tax-ID labels matched to common jurisdictions. Tax rates
-            are editable defaults — not filing advice. Always confirm local requirements with your
+            are editable defaults, not filing advice. Always confirm local requirements with your
             adviser or tax authority.
           </p>
           <ToolGrid tools={LOCALE} />
@@ -133,7 +133,7 @@ export default function ToolsPage() {
           <h2 className="text-2xl font-bold">How these tools work</h2>
           <p className="mt-3 text-muted-foreground leading-relaxed">
             {SITE.name} processes invoice data in your browser. Company details, customers, line
-            items, logos and totals stay in local storage on your device — they are not uploaded to
+            items, logos and totals stay in local storage on your device. They are not uploaded to
             our servers. You can clear drafts anytime by clearing site data in your browser.
           </p>
           <ul className="mt-4 list-disc space-y-2 pl-5 text-muted-foreground leading-relaxed">
@@ -160,7 +160,7 @@ export default function ToolsPage() {
             clients who need a simple document.
           </p>
           <p className="mt-3 text-muted-foreground leading-relaxed">
-            We only list tools that work today — including the PDF generator, number helper and tax
+            We only list tools that work today, including the PDF generator, number helper and tax
             calculator. Quotation and receipt builders will appear here when they ship; we do not
             show empty “coming soon” cards.
           </p>

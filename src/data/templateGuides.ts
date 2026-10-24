@@ -3,7 +3,7 @@ export const TEMPLATE_GUIDES: Record<string, string> = {
   modern: `
 <h2>Why freelancers choose Modern</h2>
 <p>Modern is the default recommendation for freelancers, consultants and solo operators who need a document that looks current without looking flashy. A bold coloured header bar carries your business name and invoice number; the body stays quiet so line items and totals dominate. Clients recognise it as a professional request for payment, not a branded flyer.</p>
-<p>The layout works equally well on a laptop screen and when printed in black and white — important when your client still files paper. Whitespace is generous, which reduces the “wall of text” feel that causes accounts payable to skim and miss your due date.</p>
+<p>The layout works equally well on a laptop screen and when printed in black and white, important when your client still files paper. Whitespace is generous, which reduces the “wall of text” feel that causes accounts payable to skim and miss your due date.</p>
 <h2>Layout details</h2>
 <ul>
 <li>Full-width accent header with clear hierarchy for title, number and dates.</li>
@@ -12,16 +12,16 @@ export const TEMPLATE_GUIDES: Record<string, string> = {
 <li>Totals panel that keeps tax, discount and amount due visually separated.</li>
 </ul>
 <h2>Typical billing scenarios</h2>
-<p>Use Modern for milestone invoices (“Discovery complete — 40%”), hourly consulting retainers, and fixed-price project phases. Write line descriptions that a stranger in AP can approve: include deliverable names, date ranges and purchase-order references when the client uses them.</p>
+<p>Use Modern for milestone invoices (“Discovery complete: 40%”), hourly consulting retainers, and fixed-price project phases. Write line descriptions that a stranger in AP can approve: include deliverable names, date ranges and purchase-order references when the client uses them.</p>
 <h2>Filling tips</h2>
-<p>Upload a simple logo (transparent PNG works best). Keep your accent colour close to your brand, but avoid neon hues that wash out in print. Always set a due date or Net terms — “due on receipt” is valid but slower for many B2B buyers. Add bank details or a payment link in the notes field so the PDF is self-contained.</p>
+<p>Upload a simple logo (transparent PNG works best). Keep your accent colour close to your brand, but avoid neon hues that wash out in print. Always set a due date or Net terms. “Due on receipt” is valid but slower for many B2B buyers. Add bank details or a payment link in the notes field so the PDF is self-contained.</p>
 <h2>When to pick something else</h2>
 <p>Choose <strong>Corporate</strong> if you bill large enterprises that expect formal two-column reference blocks. Choose <strong>Minimal</strong> if you sell design or photography and want stationery-grade restraint. Choose <strong>Agency</strong> when multi-line project descriptions need a side rail for metadata.</p>
-<p><a href="/invoice-generator?template=modern">Use the Modern template in the generator</a> — preview updates live, then download a matching PDF.</p>
+<p><a href="/invoice-generator?template=modern">Use the Modern template in the generator</a>. Preview updates live, then download a matching PDF.</p>
 `,
   minimal: `
 <h2>Designed for typography-led businesses</h2>
-<p>Minimal strips colour blocks and decorative boxes so type and rules do the work. Designers, writers, photographers and studios that already send carefully typeset proposals often want invoices that feel like the rest of their stationery — quiet, precise and easy to archive.</p>
+<p>Minimal strips colour blocks and decorative boxes so type and rules do the work. Designers, writers, photographers and studios that already send carefully typeset proposals often want invoices that feel like the rest of their stationery: quiet, precise and easy to archive.</p>
 <p>Because there is no loud header colour, the document relies on spacing and weight. That makes it ideal when your brand is black-and-white or when clients print invoices on shared office printers that muddy heavy fills.</p>
 <h2>Layout details</h2>
 <ul>
@@ -33,7 +33,7 @@ export const TEMPLATE_GUIDES: Record<string, string> = {
 <h2>Typical billing scenarios</h2>
 <p>Bill art direction retainers, photo shoot packages, copywriting rounds, or usage licences. Separate creative fees from expenses (travel, props, stock) as distinct lines so the client can approve each category.</p>
 <h2>Filling tips</h2>
-<p>Use a monochrome or single-colour logo. Keep descriptions short but specific (“Brand guidelines v2 — 3 revisions included”). If you charge late fees, state them once in notes rather than decorating the header. Pair Minimal with clear payment instructions; the quiet look still needs unambiguous next steps.</p>
+<p>Use a monochrome or single-colour logo. Keep descriptions short but specific (“Brand guidelines v2: 3 revisions included”). If you charge late fees, state them once in notes rather than decorating the header. Pair Minimal with clear payment instructions; the quiet look still needs unambiguous next steps.</p>
 <h2>When to pick something else</h2>
 <p>Pick <strong>Creative</strong> or <strong>Bold</strong> when you want the PDF to stand out in a crowded inbox. Pick <strong>Classic</strong> for wholesale or accounting clients who prefer ruled traditional forms. Pick <strong>Modern</strong> if you want a coloured header without losing clarity.</p>
 <p><a href="/invoice-generator?template=minimal">Use the Minimal template in the generator</a> and export a print-ready PDF in one click.</p>
@@ -41,7 +41,7 @@ export const TEMPLATE_GUIDES: Record<string, string> = {
   corporate: `
 <h2>Built for accounts-payable workflows</h2>
 <p>Corporate is for agencies, suppliers and contractors who bill enterprises. AP teams scan for purchase-order numbers, cost centres and matching totals. This template puts reference fields and a bordered totals panel where those reviewers expect them, reducing “please resubmit” emails.</p>
-<p>The split header feels formal without looking outdated. Two-column billing keeps your legal entity and the client’s legal entity equally visible — critical when the person who hired you is not the entity that pays.</p>
+<p>The split header feels formal without looking outdated. Two-column billing keeps your legal entity and the client’s legal entity equally visible, critical when the person who hired you is not the entity that pays.</p>
 <h2>Layout details</h2>
 <ul>
 <li>Split header with structured metadata space.</li>
@@ -52,14 +52,14 @@ export const TEMPLATE_GUIDES: Record<string, string> = {
 <h2>Typical billing scenarios</h2>
 <p>Use Corporate for statement-style project invoices, annual MSA drawdowns, hardware supply, and contractor timesheets that must attach to a PO. Itemise by SOW line or cost code when the client requires it.</p>
 <h2>Filling tips</h2>
-<p>Always include the PO or reference the client asked for — leave it blank only if they confirmed none exists. Match legal names to contracts, not nicknames. If tax is reverse-charged or zero-rated, say so in notes so AP does not “fix” your tax line.</p>
+<p>Always include the PO or reference the client asked for. Leave it blank only if they confirmed none exists. Match legal names to contracts, not nicknames. If tax is reverse-charged or zero-rated, say so in notes so AP does not “fix” your tax line.</p>
 <h2>When to pick something else</h2>
 <p>Choose <strong>Slate</strong> for law firms and advisory work with a quieter professional tone. Choose <strong>Agency</strong> when long creative scopes need a sidebar. Choose <strong>Startup</strong> if you bill indie product teams that expect a friendlier SaaS look.</p>
 <p><a href="/invoice-generator?template=corporate">Use the Corporate template in the generator</a> for an AP-friendly PDF.</p>
 `,
   elegant: `
 <h2>When the invoice is part of the experience</h2>
-<p>Elegant uses serif headings, airy spacing and hairline rules for luxury, boutique and high-touch services. Interior designers, event planners and premium studios often send mood boards and proposals that feel curated — the invoice should not break that spell with a harsh corporate form.</p>
+<p>Elegant uses serif headings, airy spacing and hairline rules for luxury, boutique and high-touch services. Interior designers, event planners and premium studios often send mood boards and proposals that feel curated. The invoice should not break that spell with a harsh corporate form.</p>
 <p>Clients still need clear totals and due dates. Elegant keeps those numbers prominent while the overall page feels refined rather than transactional.</p>
 <h2>Layout details</h2>
 <ul>
@@ -71,7 +71,7 @@ export const TEMPLATE_GUIDES: Record<string, string> = {
 <h2>Typical billing scenarios</h2>
 <p>Deposit invoices for events, final balances after installation, design retainers, and staged payments for custom furniture or styling packages. Separate design fees from third-party costs (florals, rentals, contractors) so the client can see what you mark up versus pass through.</p>
 <h2>Filling tips</h2>
-<p>Use a high-resolution logo; low-res marks look worse on a refined layout. Avoid stuffing the notes field with legalese — put payment terms once, politely. If you require a non-refundable deposit, state that clearly next to the amount due.</p>
+<p>Use a high-resolution logo; low-res marks look worse on a refined layout. Avoid stuffing the notes field with legalese. Put payment terms once, politely. If you require a non-refundable deposit, state that clearly next to the amount due.</p>
 <h2>When to pick something else</h2>
 <p>Choose <strong>Sunset</strong> for hospitality energy. Choose <strong>Lavender</strong> for beauty and coaching brands. Choose <strong>Corporate</strong> when billing a large procurement team that prefers formal structure over atmosphere.</p>
 <p><a href="/invoice-generator?template=elegant">Use the Elegant template in the generator</a> to match a premium client experience.</p>
@@ -97,7 +97,7 @@ export const TEMPLATE_GUIDES: Record<string, string> = {
 `,
   dark: `
 <h2>A tech-forward first impression</h2>
-<p>Dark opens with a deep charcoal header and light type — the kind of contrast product teams and tech studios already use in dashboards and pitch decks. The body returns to a clean light surface so printing remains practical; you get a modern edge without a full dark-mode PDF that wastes toner.</p>
+<p>Dark opens with a deep charcoal header and light type: the kind of contrast product teams and tech studios already use in dashboards and pitch decks. The body returns to a clean light surface so printing remains practical; you get a modern edge without a full dark-mode PDF that wastes toner.</p>
 <p>Use it when your brand is digital-native and you want invoices to feel like part of the product company, not like a generic Word template.</p>
 <h2>Layout details</h2>
 <ul>
@@ -116,7 +116,7 @@ export const TEMPLATE_GUIDES: Record<string, string> = {
 `,
   startup: `
 <h2>Friendly invoices for product companies</h2>
-<p>Startup is for early-stage companies, indie makers and subscription tools that want the invoice to feel like the rest of the product: logo-forward, soft gradient band, approachable rather than legalistic. Investors and first customers still need correct totals — Startup simply presents them without stiff corporate styling.</p>
+<p>Startup is for early-stage companies, indie makers and subscription tools that want the invoice to feel like the rest of the product: logo-forward, soft gradient band, approachable rather than legalistic. Investors and first customers still need correct totals. Startup simply presents them without stiff corporate styling.</p>
 <h2>Layout details</h2>
 <ul>
 <li>Stacked, brand-forward header with space for a recognisable mark.</li>
@@ -134,7 +134,7 @@ export const TEMPLATE_GUIDES: Record<string, string> = {
 `,
   agency: `
 <h2>Project billing with room to explain</h2>
-<p>Agency puts metadata in a side rail so the main column stays wide for multi-line scopes — ideal for marketing agencies, dev shops and consultancies that invoice retainers, media, and production on the same PDF. Clients can read the story of the work without hunting past a cramped table.</p>
+<p>Agency puts metadata in a side rail so the main column stays wide for multi-line scopes, ideal for marketing agencies, dev shops and consultancies that invoice retainers, media, and production on the same PDF. Clients can read the story of the work without hunting past a cramped table.</p>
 <h2>Layout details</h2>
 <ul>
 <li>Sidebar for invoice number, dates and key references.</li>
@@ -145,14 +145,14 @@ export const TEMPLATE_GUIDES: Record<string, string> = {
 <h2>Typical billing scenarios</h2>
 <p>Monthly retainers plus project overages, campaign launches, development sprints, and pass-through media with a management fee. Separate agency fee, media, and tools so finance can code expenses correctly.</p>
 <h2>Filling tips</h2>
-<p>Reference the SOW or campaign name in the first line. If hours exceeded a cap, show approved overage as its own line with the approval date in the description. Keep the sidebar fields complete — empty PO fields look unfinished to client finance teams.</p>
+<p>Reference the SOW or campaign name in the first line. If hours exceeded a cap, show approved overage as its own line with the approval date in the description. Keep the sidebar fields complete. Empty PO fields look unfinished to client finance teams.</p>
 <h2>When to pick something else</h2>
 <p>Choose <strong>Ocean</strong> for a teal consultant variant of the sidebar idea. Choose <strong>Creative</strong> when the invoice should feel expressive. Choose <strong>Corporate</strong> for enterprise procurement that prefers split headers over side rails.</p>
 <p><a href="/invoice-generator?template=agency">Use the Agency template in the generator</a> for retainer and project PDFs.</p>
 `,
   creative: `
 <h2>Stand out without sacrificing clarity</h2>
-<p>Creative uses colour-blocked headers and an expressive amount-due treatment for illustrators, videographers and brand designers. Your invoice often lands next to mood boards and cutdowns — a grey form can feel disconnected from the work you just delivered.</p>
+<p>Creative uses colour-blocked headers and an expressive amount-due treatment for illustrators, videographers and brand designers. Your invoice often lands next to mood boards and cutdowns. A grey form can feel disconnected from the work you just delivered.</p>
 <p>Colour is used structurally, not randomly: hierarchy still leads the eye from identity to lines to totals.</p>
 <h2>Layout details</h2>
 <ul>
@@ -164,7 +164,7 @@ export const TEMPLATE_GUIDES: Record<string, string> = {
 <h2>Typical billing scenarios</h2>
 <p>Production day rates, revision packs, music or footage licences, and usage extensions. Always separate creative fee from expenses (travel, props, talent) to avoid tax and markup confusion.</p>
 <h2>Filling tips</h2>
-<p>Name the project and deliverable versions. If usage is limited by territory or time, put that in the line description or notes — those terms protect you later. Prefer a logo that works on a coloured field.</p>
+<p>Name the project and deliverable versions. If usage is limited by territory or time, put that in the line description or notes. Those terms protect you later. Prefer a logo that works on a coloured field.</p>
 <h2>When to pick something else</h2>
 <p>Choose <strong>Minimal</strong> for ultra-quiet stationery. Choose <strong>Bold</strong> when you want a loud corner accent for sales-driven offers. Choose <strong>Elegant</strong> for luxury clients who prefer serif refinement over bright blocks.</p>
 <p><a href="/invoice-generator?template=creative">Use the Creative template in the generator</a> and download a matching PDF.</p>
@@ -189,7 +189,7 @@ export const TEMPLATE_GUIDES: Record<string, string> = {
 `,
   nordic: `
 <h2>Calm layouts for craft-led studios</h2>
-<p>Nordic pairs a thin colour band with quiet whitespace — a Scandinavian-clean approach for architects, product designers and wellness brands that sell craft and calm. The invoice should feel considered, not crowded.</p>
+<p>Nordic pairs a thin colour band with quiet whitespace: a Scandinavian-clean approach for architects, product designers and wellness brands that sell craft and calm. The invoice should feel considered, not crowded.</p>
 <h2>Layout details</h2>
 <ul>
 <li>Thin band header instead of a heavy colour block.</li>
@@ -225,7 +225,7 @@ export const TEMPLATE_GUIDES: Record<string, string> = {
 `,
   sunset: `
 <h2>Warm invoices for hospitality</h2>
-<p>Sunset brings warm stacked headers and inviting accents for restaurants, hotels and event hosts. Guests and venue clients expect hospitality touchpoints to feel welcoming — including the bill after a booking or catering job.</p>
+<p>Sunset brings warm stacked headers and inviting accents for restaurants, hotels and event hosts. Guests and venue clients expect hospitality touchpoints to feel welcoming, including the bill after a booking or catering job.</p>
 <h2>Layout details</h2>
 <ul>
 <li>Warm stacked header with energetic accent.</li>
@@ -243,7 +243,7 @@ export const TEMPLATE_GUIDES: Record<string, string> = {
 `,
   slate: `
 <h2>Quiet professionalism for serious work</h2>
-<p>Slate is for law firms, accountants and advisors who need invoices that look formal and easy to scan. Colour stays restrained; structure does the talking. Clients expect discretion and precision — loud templates can feel out of place.</p>
+<p>Slate is for law firms, accountants and advisors who need invoices that look formal and easy to scan. Colour stays restrained; structure does the talking. Clients expect discretion and precision. Loud templates can feel out of place.</p>
 <h2>Layout details</h2>
 <ul>
 <li>Split header with clear reference block.</li>
@@ -272,7 +272,7 @@ export const TEMPLATE_GUIDES: Record<string, string> = {
 <h2>Typical billing scenarios</h2>
 <p>Course cohorts, sales enablement retainers, launch packages, and performance bonuses. Name the offer and cohort dates clearly to reduce “which invoice is this?” replies.</p>
 <h2>Filling tips</h2>
-<p>Do not let the accent replace missing fields — still set number, dates and tax. If you sell online, include the order ID in notes. For payment plans, invoice each instalment separately with the instalment number in the title or first line.</p>
+<p>Do not let the accent replace missing fields. Still set number, dates and tax. If you sell online, include the order ID in notes. For payment plans, invoice each instalment separately with the instalment number in the title or first line.</p>
 <h2>When to pick something else</h2>
 <p>Choose <strong>Creative</strong> for artistic colour blocks. Choose <strong>Startup</strong> for softer SaaS branding. Choose <strong>Minimal</strong> when the client expects understated stationery.</p>
 <p><a href="/invoice-generator?template=bold">Use the Bold template in the generator</a> when visibility matters.</p>
@@ -297,7 +297,7 @@ export const TEMPLATE_GUIDES: Record<string, string> = {
 `,
   ocean: `
 <h2>Sidebar clarity for multi-phase work</h2>
-<p>Ocean keeps metadata in a teal side rail so freelancers, dev studios and consultants can write long phase descriptions without crowding dates and numbers. It is the consulting cousin of Agency — tuned for project narratives rather than campaign jargon.</p>
+<p>Ocean keeps metadata in a teal side rail so freelancers, dev studios and consultants can write long phase descriptions without crowding dates and numbers. It is the consulting cousin of Agency, tuned for project narratives rather than campaign jargon.</p>
 <h2>Layout details</h2>
 <ul>
 <li>Teal sidebar for number, dates and references.</li>
@@ -315,7 +315,7 @@ export const TEMPLATE_GUIDES: Record<string, string> = {
 `,
   mono: `
 <h2>Precision without decoration</h2>
-<p>Mono is stark black-and-white with a thin top band — built for developers, engineers and SaaS tools that want invoices to feel like technical documents. No decorative colour means maximum clarity in diffs, printouts and archived PDFs.</p>
+<p>Mono is stark black-and-white with a thin top band, built for developers, engineers and SaaS tools that want invoices to feel like technical documents. No decorative colour means maximum clarity in diffs, printouts and archived PDFs.</p>
 <h2>Layout details</h2>
 <ul>
 <li>Thin band header and high-contrast ink.</li>

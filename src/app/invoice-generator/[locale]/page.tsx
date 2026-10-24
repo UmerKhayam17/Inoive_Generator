@@ -204,12 +204,12 @@ function LocalePage({ locale }: { locale: InvoiceLocale }) {
                 <ul className="mt-4 space-y-3 text-sm text-muted-foreground">
                   {locale.fieldHighlights.map((f) => (
                     <li key={f.label}>
-                      <strong className="text-foreground">{f.label}</strong> — {f.body}
+                      <strong className="text-foreground">{f.label}</strong>: {f.body}
                     </li>
                   ))}
                 </ul>
                 <p className="mt-5 text-xs leading-relaxed text-muted-foreground">
-                  General information only — not tax, legal or filing advice.
+                  General information only, not tax, legal or filing advice.
                 </p>
               </div>
 

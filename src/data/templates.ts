@@ -37,7 +37,7 @@ export const TEMPLATES: InvoiceTemplate[] = [
     industry: "Design",
     tagline: "Just the numbers, beautifully arranged.",
     description:
-      "Minimal is the design-industry favourite: typography and rules only — no colour blocks, no boxes. Ideal for designers, writers and photographers who want stationery-grade invoices.",
+      "Minimal is the design-industry favourite: typography and rules only: no colour blocks, no boxes. Ideal for designers, writers and photographers who want stationery-grade invoices.",
     bestFor: ["Designers", "Writers", "Photographers"],
     accent: "#111827",
     surface: "#ffffff",
@@ -135,7 +135,7 @@ export const TEMPLATES: InvoiceTemplate[] = [
     industry: "Accounting",
     tagline: "The traditional ruled invoice.",
     description:
-      "Classic is the accounting and wholesale standard: full-width rules, centred title and a compact totals ladder — safest for clients who still file paper.",
+      "Classic is the accounting and wholesale standard: full-width rules, centred title and a compact totals ladder, safest for clients who still file paper.",
     bestFor: ["Accountants", "Wholesalers", "Long-standing businesses"],
     accent: "#374151",
     surface: "#ffffff",
@@ -232,7 +232,7 @@ export const TEMPLATES: InvoiceTemplate[] = [
     industry: "Software",
     tagline: "Stark black-and-white precision.",
     description:
-      "Mono is the software and engineering template: thin top band, high-contrast ink and no decorative colour — invoices that feel like technical documents.",
+      "Mono is the software and engineering template: thin top band, high-contrast ink and no decorative colour: invoices that feel like technical documents.",
     bestFor: ["Developers", "Engineers", "SaaS tools"],
     accent: "#18181b",
     surface: "#ffffff",

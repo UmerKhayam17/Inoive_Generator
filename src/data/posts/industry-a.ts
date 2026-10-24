@@ -35,7 +35,7 @@ export const INDUSTRY_POSTS_A: PostDraft[] = [
     content: `
 <p><strong>Quick answer:</strong> A contractor invoice template is a ready-made layout for billing construction, renovation or repair work. It should show your business and license details, the client and job site, a unique invoice number and due date, separate lines for labor, materials, subcontractors and permits, any tax, deposits already paid, and the balance due. Fill it in, download it as a PDF, and send it as soon as the work or milestone is complete.</p>
 
-<p>This guide covers what belongs on a contractor invoice, how pricing usually works in the trades, how to handle deposits and change orders, and a fully worked example you can copy. You can build the invoice in minutes with our <a href="/invoice-generator">free invoice generator</a> — no sign-up, no watermark. For large multi-month projects with progress billing and retainage, also read our <a href="/blog/construction-invoice-guide">construction invoice guide</a>.</p>
+<p>This guide covers what belongs on a contractor invoice, how pricing usually works in the trades, how to handle deposits and change orders, and a fully worked example you can copy. You can build the invoice in minutes with our <a href="/invoice-generator">free invoice generator</a>, no sign-up, no watermark. For large multi-month projects with progress billing and retainage, also read our <a href="/blog/construction-invoice-guide">construction invoice guide</a>.</p>
 
 <h2>What a contractor invoice template must include</h2>
 <p>Homeowners, property managers and general contractors all pay faster when the invoice answers every question before they ask it. A solid contractor invoice template has these fields:</p>
@@ -44,7 +44,7 @@ export const INDUSTRY_POSTS_A: PostDraft[] = [
 <li><strong>Client details:</strong> the name of the person or company who signed the contract, plus their billing address.</li>
 <li><strong>Job site address:</strong> often different from the billing address, especially for landlords and property managers.</li>
 <li><strong>Invoice number:</strong> unique and sequential. Our <a href="/tools/invoice-number-generator">invoice number generator</a> can set up a format such as <code>JOB-2026-118</code>.</li>
-<li><strong>Issue date and due date:</strong> a real calendar date, not just "due on receipt" — see <a href="/blog/invoice-payment-terms">invoice payment terms</a>.</li>
+<li><strong>Issue date and due date:</strong> a real calendar date, not just "due on receipt". See <a href="/blog/invoice-payment-terms">invoice payment terms</a>.</li>
 <li><strong>Reference numbers:</strong> the estimate or contract number, and the client's <a href="/blog/po-number-on-invoice">PO number</a> if they issued one.</li>
 <li><strong>Itemized lines:</strong> labor, materials, equipment rental, subcontractors, disposal and permits on separate lines.</li>
 <li><strong>Tax, deposits and balance:</strong> sales tax where it applies, payments already received, and the amount still due.</li>
@@ -64,7 +64,7 @@ export const INDUSTRY_POSTS_A: PostDraft[] = [
 
 <h2>Typical contractor invoice line items</h2>
 <h3>Labor</h3>
-<p>Show labor by role if rates differ — for example lead carpenter, helper or apprentice. For time-and-materials work, list hours and the hourly rate. For fixed-price work, describe the scope: "Frame and drywall basement partition wall, 18 linear ft."</p>
+<p>Show labor by role if rates differ, for example lead carpenter, helper or apprentice. For time-and-materials work, list hours and the hourly rate. For fixed-price work, describe the scope: "Frame and drywall basement partition wall, 18 linear ft."</p>
 <h3>Materials</h3>
 <p>Itemize major materials (cabinets, flooring, fixtures, lumber packages) and group small consumables into a single "fasteners, adhesives and consumables" line. Keep supplier receipts in case the client asks.</p>
 <h3>Subcontractors</h3>
@@ -73,17 +73,17 @@ export const INDUSTRY_POSTS_A: PostDraft[] = [
 <p>Permit and inspection fees, dumpster or haul-away charges and equipment rental are easy to forget. List them separately so the client can see they are real costs rather than padding.</p>
 
 <h2>Deposits, change orders and progress payments</h2>
-<p>Many contractors ask for a deposit before ordering materials. Deposit limits vary by state for home improvement contracts, so check local rules before setting yours. Issue the deposit as its own invoice — our guide to the <a href="/blog/deposit-invoice">deposit invoice</a> explains how — then show it as a deduction on the final invoice.</p>
+<p>Many contractors ask for a deposit before ordering materials. Deposit limits vary by state for home improvement contracts, so check local rules before setting yours. Issue the deposit as its own invoice (our guide to the <a href="/blog/deposit-invoice">deposit invoice</a> explains how), then show it as a deduction on the final invoice.</p>
 <p>Change orders are the most common source of disputes. Get each change approved in writing, give it a number, and invoice it as its own line: "Change order CO-02: upgrade to soft-close drawer slides." On longer jobs, bill in stages tied to clear milestones such as demolition complete, rough-in passed and final inspection.</p>
 
 <h2>Worked example: kitchen remodel invoice</h2>
-<p>Here is a sample contractor invoice for a mid-size kitchen remodel billed on time and materials, with a deposit already paid. The 7% sales tax rate is an example only and is applied to materials, which is how many — but not all — states treat contractor sales. Check your own state's rules or use our <a href="/tools/sales-tax-calculator">sales tax calculator</a> to verify the figure.</p>
+<p>Here is a sample contractor invoice for a mid-size kitchen remodel billed on time and materials, with a deposit already paid. The 7% sales tax rate is an example only and is applied to materials, which is how many, but not all, states treat contractor sales. Check your own state's rules or use our <a href="/tools/sales-tax-calculator">sales tax calculator</a> to verify the figure.</p>
 <table><thead><tr><th>Description</th><th>Qty</th><th>Rate</th><th>Amount</th></tr></thead><tbody>
-<tr><td>Carpentry labor — cabinet install and trim</td><td>32 hrs</td><td>$75.00</td><td>$2,400.00</td></tr>
+<tr><td>Carpentry labor: cabinet install and trim</td><td>32 hrs</td><td>$75.00</td><td>$2,400.00</td></tr>
 <tr><td>Demolition and haul-away (flat rate)</td><td>1</td><td>$850.00</td><td>$850.00</td></tr>
 <tr><td>Shaker cabinets, 14 units (materials)</td><td>1</td><td>$6,200.00</td><td>$6,200.00</td></tr>
 <tr><td>Quartz countertop, fabricated (materials)</td><td>42 sq ft</td><td>$68.00</td><td>$2,856.00</td></tr>
-<tr><td>Electrical subcontractor — 3 new circuits</td><td>1</td><td>$1,350.00</td><td>$1,350.00</td></tr>
+<tr><td>Electrical subcontractor: 3 new circuits</td><td>1</td><td>$1,350.00</td><td>$1,350.00</td></tr>
 <tr><td>Building permit fee</td><td>1</td><td>$275.00</td><td>$275.00</td></tr>
 <tr><td colspan="3"><strong>Subtotal</strong></td><td><strong>$13,931.00</strong></td></tr>
 <tr><td colspan="3">Sales tax 7% on materials ($9,056.00)</td><td>$633.92</td></tr>
@@ -118,13 +118,13 @@ export const INDUSTRY_POSTS_A: PostDraft[] = [
 
 <h2>Mistakes contractors make on invoices</h2>
 <ul>
-<li><strong>One vague line for the whole job.</strong> "Kitchen work — $14,500" invites questions. Itemize.</li>
+<li><strong>One vague line for the whole job.</strong> "Kitchen work: $14,500" invites questions. Itemize.</li>
 <li><strong>Forgetting approved change orders.</strong> Bill extras on the next invoice, not months later.</li>
 <li><strong>Charging tax on the wrong base.</strong> Taxing labor in a state that only taxes materials, or the reverse, causes refunds or audit issues.</li>
 <li><strong>No due date or late-fee terms.</strong> If your contract allows <a href="/blog/late-payment-fees">late payment fees</a>, say so on the invoice.</li>
 <li><strong>Waiting until the end of a long job.</strong> Stage payments protect your cash flow and reduce your exposure if a client stops paying.</li>
 </ul>
-<p>If you work as a sole operator for a general contractor rather than for homeowners, your invoice looks more like a freelancer's — see the <a href="/blog/independent-contractor-invoice">independent contractor invoice</a> guide.</p>
+<p>If you work as a sole operator for a general contractor rather than for homeowners, your invoice looks more like a freelancer's. See the <a href="/blog/independent-contractor-invoice">independent contractor invoice</a> guide.</p>
 
 <p>Specialist trades have their own line items. See our <a href="/blog/roofing-invoice-template">roofing</a> and <a href="/blog/painting-invoice-template">painting</a> invoice guides for worked examples.</p>
 
@@ -172,7 +172,7 @@ export const INDUSTRY_POSTS_A: PostDraft[] = [
 <p>Photography clients range from couples booking a wedding to marketing managers commissioning product shots. Both need the same core information:</p>
 <ul>
 <li>Your studio or trading name, logo, email, phone and website.</li>
-<li>The client's name and billing address — for commercial work, the company's legal name and accounts payable email.</li>
+<li>The client's name and billing address. For commercial work, the company's legal name and accounts payable email.</li>
 <li>A unique invoice number and the issue date and due date.</li>
 <li>The shoot date, location and type of session.</li>
 <li>Itemized services and products with quantities and rates.</li>
@@ -201,7 +201,7 @@ export const INDUSTRY_POSTS_A: PostDraft[] = [
 <li><strong>Balance:</strong> final invoice issued a few weeks before the date, due before the event.</li>
 <li><strong>Add-ons:</strong> separate invoice after the event for extra prints, albums or overtime.</li>
 </ol>
-<p>Issue the retainer as its own invoice — see our <a href="/blog/deposit-invoice">deposit invoice</a> guide — and deduct it on the final invoice with a reference to its number. Clients appreciate seeing exactly what they have already paid.</p>
+<p>Issue the retainer as its own invoice (see our <a href="/blog/deposit-invoice">deposit invoice</a> guide) and deduct it on the final invoice with a reference to its number. Clients appreciate seeing exactly what they have already paid.</p>
 
 <h2>Invoicing for image licensing and usage rights</h2>
 <p>For commercial photography, the license is often worth more than the shoot itself. List it on its own line rather than burying it in the creative fee, and describe it precisely:</p>
@@ -234,23 +234,23 @@ export const INDUSTRY_POSTS_A: PostDraft[] = [
 <p>Photography work is tied to dates, so your invoices need to handle changes cleanly. Your contract should set the rules; the invoice simply applies them.</p>
 <ul>
 <li><strong>Rescheduling:</strong> if a client moves a session, note the new date on the invoice and any rescheduling fee your contract allows. Keep the original invoice number so the payment history stays together.</li>
-<li><strong>Cancellations:</strong> if a booking is cancelled and the retainer is non-refundable under your contract, issue a short invoice or statement confirming that the retainer has been applied to the cancellation fee and nothing further is owed — or what is owed.</li>
+<li><strong>Cancellations:</strong> if a booking is cancelled and the retainer is non-refundable under your contract, issue a short invoice or statement confirming that the retainer has been applied to the cancellation fee and nothing further is owed, or what is owed.</li>
 <li><strong>Overtime:</strong> list extra coverage at the hourly rate stated in your package, such as "Additional coverage, 1 hr at $300". Bill it within a few days of the event while the client still remembers asking you to stay.</li>
 <li><strong>Rush delivery:</strong> if a client wants edited images faster than your standard turnaround, show the rush fee as its own line.</li>
 </ul>
 
 <h2>Commercial shoots: what changes on the invoice</h2>
 <p>Commercial clients pay through accounts payable, which means process matters more than presentation. Ask for the client's purchase order number, the name of the person approving the invoice, and the email address invoices should go to before the shoot day. Put the PO number near the top of the invoice.</p>
-<p>A typical commercial photography invoice separates the creative fee (your time and expertise on the day), production costs (studio rental, props, stylist, hair and makeup, assistants), post-production (retouching per image), and the usage license. Production costs are often passed through at cost or with a small handling fee — agree which in your estimate. Clients on net 30 terms may also expect a reference to the approved estimate number so they can match the two documents.</p>
+<p>A typical commercial photography invoice separates the creative fee (your time and expertise on the day), production costs (studio rental, props, stylist, hair and makeup, assistants), post-production (retouching per image), and the usage license. Production costs are often passed through at cost or with a small handling fee. Agree which in your estimate. Clients on net 30 terms may also expect a reference to the approved estimate number so they can match the two documents.</p>
 
 <h2>How to create a photography invoice in minutes</h2>
 <ol>
-<li>Open the invoice generator and pick a template that fits your brand — the <a href="/invoice-templates/elegant">Elegant invoice template</a> suits weddings and portraits, while Minimal works well for commercial clients.</li>
+<li>Open the invoice generator and pick a template that fits your brand: the <a href="/invoice-templates/elegant">Elegant invoice template</a> suits weddings and portraits, while Minimal works well for commercial clients.</li>
 <li>Upload your logo and add your studio details.</li>
 <li>Enter the client's details and the shoot date and venue.</li>
 <li>Add each service and product as its own line.</li>
 <li>Apply tax only where it applies and deduct any retainer.</li>
-<li>Add your payment link or bank details. A clickable link usually speeds things up — see <a href="/blog/add-payment-link-to-invoice">adding a payment link to an invoice</a>.</li>
+<li>Add your payment link or bank details. A clickable link usually speeds things up. See <a href="/blog/add-payment-link-to-invoice">adding a payment link to an invoice</a>.</li>
 <li>Download the PDF and send it with a short, friendly email.</li>
 </ol>
 
@@ -305,7 +305,7 @@ export const INDUSTRY_POSTS_A: PostDraft[] = [
 
 <h2>What to include on a cleaning invoice template</h2>
 <ul>
-<li><strong>Your business details:</strong> name, logo, phone, email and, if you have one, your business license or insurance reference — many commercial clients ask for proof of insurance.</li>
+<li><strong>Your business details:</strong> name, logo, phone, email and, if you have one, your business license or insurance reference. Many commercial clients ask for proof of insurance.</li>
 <li><strong>Client details:</strong> the client's name, billing address and the service address if different.</li>
 <li><strong>Invoice number and dates:</strong> a unique number, the issue date and a clear due date.</li>
 <li><strong>Service period:</strong> for recurring work, the date range covered, such as 1–31 October 2026.</li>
@@ -318,10 +318,10 @@ export const INDUSTRY_POSTS_A: PostDraft[] = [
 <h2>How cleaning services are priced</h2>
 <p>Your cleaning invoice template should reflect the pricing model in your quote or service agreement. Most cleaning businesses use one of these:</p>
 <table><thead><tr><th>Pricing model</th><th>Best for</th><th>Invoice line example</th></tr></thead><tbody>
-<tr><td>Flat rate per visit</td><td>Regular home cleans</td><td>Standard clean, 3-bed home — 4 visits × $140</td></tr>
+<tr><td>Flat rate per visit</td><td>Regular home cleans</td><td>Standard clean, 3-bed home, 4 visits × $140</td></tr>
 <tr><td>Hourly per cleaner</td><td>One-off or variable jobs</td><td>2 cleaners × 3.5 hrs × $40</td></tr>
 <tr><td>Per square foot</td><td>Offices, move-out and post-construction cleans</td><td>Post-construction clean, 2,400 sq ft × $0.30</td></tr>
-<tr><td>Monthly contract</td><td>Commercial janitorial</td><td>Janitorial service, October 2026 — fixed monthly fee</td></tr>
+<tr><td>Monthly contract</td><td>Commercial janitorial</td><td>Janitorial service, October 2026, fixed monthly fee</td></tr>
 <tr><td>Add-on pricing</td><td>Extras on top of the base clean</td><td>Inside oven $35, inside fridge $30, interior windows $5 per pane</td></tr>
 </tbody></table>
 <p>For hourly work, record start and finish times so you can back up the hours if asked. Our guide on <a href="/blog/how-to-invoice-for-hourly-work">how to invoice for hourly work</a> explains how to present time clearly.</p>
@@ -337,7 +337,7 @@ export const INDUSTRY_POSTS_A: PostDraft[] = [
 <p>Our <a href="/blog/recurring-invoices-guide">recurring invoices guide</a> walks through setting up a reliable billing rhythm, and the <a href="/blog/how-to-accept-credit-card-payments">guide to accepting credit card payments</a> covers the costs and options for card-on-file billing.</p>
 
 <h2>Supplies, keys and other extras</h2>
-<p>Decide up front whether your rate includes cleaning products and equipment. If the client supplies them, note it on the quote. If you restock items they keep — paper towels, toilet tissue, hand soap, trash liners — bill them on a separate supplies line, ideally at a price agreed in advance.</p>
+<p>Decide up front whether your rate includes cleaning products and equipment. If the client supplies them, note it on the quote. If you restock items they keep (paper towels, toilet tissue, hand soap, trash liners), bill them on a separate supplies line, ideally at a price agreed in advance.</p>
 <p>Other charges cleaners commonly invoice include key or lockbox handling, pet hair surcharges, parking fees in city locations, and heavy-soil surcharges for first cleans. Each should be in your service agreement before it appears on an invoice.</p>
 <p>Commercial cleaning contracts also need a plan for price changes. If your costs rise, give clients written notice of the new rate and the date it takes effect, then start using it on the first invoice after that date. Putting a line in the notes such as "New rate of $150 per visit applies from 1 January 2027, as notified on 1 December 2026" avoids surprise and makes the change easy for the client's finance team to approve. The same applies if you add square footage, extra floors or new service days: update the scope on the invoice so it always matches what you actually clean.</p>
 
@@ -368,10 +368,10 @@ export const INDUSTRY_POSTS_A: PostDraft[] = [
 
 <h2>How to create a cleaning invoice step by step</h2>
 <ol>
-<li>Open the invoice generator and choose a fresh, simple layout — the <a href="/invoice-templates/emerald">Emerald invoice template</a> suits cleaning brands well.</li>
+<li>Open the invoice generator and choose a fresh, simple layout: the <a href="/invoice-templates/emerald">Emerald invoice template</a> suits cleaning brands well.</li>
 <li>Add your business name, logo and contact details.</li>
 <li>Enter the client's billing details and the service address.</li>
-<li>Set an invoice number — our <a href="/tools/invoice-number-generator">invoice number generator</a> can create a consistent series.</li>
+<li>Set an invoice number. Our <a href="/tools/invoice-number-generator">invoice number generator</a> can create a consistent series.</li>
 <li>Add the service period, then each visit or visit summary and any extras.</li>
 <li>Add tax if it applies, then your payment terms and methods.</li>
 <li>Download the PDF and send it the same day the period ends.</li>
@@ -379,12 +379,12 @@ export const INDUSTRY_POSTS_A: PostDraft[] = [
 
 <h2>Getting cleaning invoices paid on time</h2>
 <ul>
-<li>Agree payment terms in writing before the first clean — see <a href="/blog/invoice-payment-terms">invoice payment terms explained</a>.</li>
+<li>Agree payment terms in writing before the first clean. See <a href="/blog/invoice-payment-terms">invoice payment terms explained</a>.</li>
 <li>Send a friendly reminder a few days before the due date and again on the day after. Our <a href="/blog/payment-reminder-emails">payment reminder emails</a> give you wording you can reuse.</li>
 <li>For one-off residential cleans, ask for payment on completion rather than offering net terms.</li>
 <li>Keep a short note of any issue the client raised and how you fixed it, in case the invoice is questioned.</li>
 </ul>
-<p>Outdoor maintenance businesses use a very similar recurring model — see our <a href="/blog/landscaping-invoice-template">landscaping invoice template</a> guide for a comparison.</p>
+<p>Outdoor maintenance businesses use a very similar recurring model. See our <a href="/blog/landscaping-invoice-template">landscaping invoice template</a> guide for a comparison.</p>
 
 <p>Offer exterior work too? The <a href="/blog/pressure-washing-invoice-template">pressure washing invoice template</a> covers per-square-foot pricing and add-ons.</p>
 
@@ -453,9 +453,9 @@ export const INDUSTRY_POSTS_A: PostDraft[] = [
 
 <h2>Billing retainers and milestones</h2>
 <h3>Retainers</h3>
-<p>A retainer is usually invoiced in advance — for example on 1 November for November's advisory access. State what the retainer covers (such as up to 10 hours of advisory time) and how extra hours are billed. If unused hours do not roll over, say so in the engagement letter. Our <a href="/blog/retainer-invoice">retainer invoice</a> guide covers the wording in detail.</p>
+<p>A retainer is usually invoiced in advance, for example on 1 November for November's advisory access. State what the retainer covers (such as up to 10 hours of advisory time) and how extra hours are billed. If unused hours do not roll over, say so in the engagement letter. Our <a href="/blog/retainer-invoice">retainer invoice</a> guide covers the wording in detail.</p>
 <h3>Milestones</h3>
-<p>Fixed-fee projects are typically split into stages — for instance 30% on kickoff, 40% on delivery of the draft report and 30% on final sign-off. Invoice each milestone as soon as it is reached and reference the milestone name from your proposal. Read more about structuring stages in our guide to <a href="/blog/milestone-payments">milestone payments</a>.</p>
+<p>Fixed-fee projects are typically split into stages, for instance 30% on kickoff, 40% on delivery of the draft report and 30% on final sign-off. Invoice each milestone as soon as it is reached and reference the milestone name from your proposal. Read more about structuring stages in our guide to <a href="/blog/milestone-payments">milestone payments</a>.</p>
 
 <h2>How to bill consulting expenses</h2>
 <p>Expenses cause more consulting invoice disputes than fees do. Avoid them with a few habits:</p>
@@ -466,14 +466,14 @@ export const INDUSTRY_POSTS_A: PostDraft[] = [
 <li><strong>Describe each one.</strong> "Return airfare Chicago–Boston, 12–14 Oct 2026" is easy to approve; "Travel" is not.</li>
 <li><strong>Keep receipts and attach them if asked.</strong> Some clients require copies with every invoice.</li>
 </ol>
-<p>Expenses you pay and are reimbursed for still need careful records for your own tax return — keep every receipt, log what each cost related to, and ask an accountant how reimbursements should be treated in your accounts.</p>
+<p>Expenses you pay and are reimbursed for still need careful records for your own tax return: keep every receipt, log what each cost related to, and ask an accountant how reimbursements should be treated in your accounts.</p>
 
 <h2>Worked example: monthly consulting invoice</h2>
 <p>This sample invoice covers one month of a strategy engagement: a two-day workshop at a day rate, advisory calls billed hourly, the second milestone of a fixed-fee report, and reimbursable travel at cost. No sales tax is applied, which is typical for consulting services in many US states, but check the rules that apply to you.</p>
 <table><thead><tr><th>Description</th><th>Qty</th><th>Rate</th><th>Amount</th></tr></thead><tbody>
 <tr><td>Strategy workshop facilitation, 13–14 Oct 2026</td><td>2 days</td><td>$1,800.00</td><td>$3,600.00</td></tr>
 <tr><td>Advisory calls, October 2026 (log attached)</td><td>6.5 hrs</td><td>$225.00</td><td>$1,462.50</td></tr>
-<tr><td>Market analysis report — milestone 2 of 3 (draft delivered)</td><td>1</td><td>$4,000.00</td><td>$4,000.00</td></tr>
+<tr><td>Market analysis report: milestone 2 of 3 (draft delivered)</td><td>1</td><td>$4,000.00</td><td>$4,000.00</td></tr>
 <tr><td>Reimbursable: return airfare Chicago–Boston (at cost)</td><td>1</td><td>$412.60</td><td>$412.60</td></tr>
 <tr><td>Reimbursable: hotel, 12–14 Oct 2026 (at cost)</td><td>2 nights</td><td>$189.00</td><td>$378.00</td></tr>
 <tr><td colspan="3">Professional fees subtotal</td><td>$9,062.50</td></tr>
@@ -483,9 +483,9 @@ export const INDUSTRY_POSTS_A: PostDraft[] = [
 <p>Check the maths: fees are $3,600 + $1,462.50 + $4,000 = $9,062.50; expenses are $412.60 + $378 = $790.60; together $9,853.10. Showing fees and expenses as separate subtotals helps the client code each to the right budget line.</p>
 
 <h2>Time logs and supporting detail</h2>
-<p>When you bill by the hour or by the day, the client's project sponsor usually has to justify your invoice to someone else — a finance director, a procurement team or a budget holder. Make that easy by sending supporting detail with the invoice rather than waiting to be asked.</p>
-<p>A good time log lists the date, the activity, the hours and, for larger teams, who did the work. Keep entries specific: "Stakeholder interviews, sales leadership (4 sessions)" is useful; "Meetings" is not. Round consistently — for example to the nearest quarter hour — and say so in your engagement letter. If you agreed a cap or budget, show how much of it has been used so far, such as "Hours billed to date: 46 of 60 approved". That one line prevents the most awkward conversation in consulting: discovering at month three that the budget ran out at month two.</p>
-<p>For fixed-fee and milestone work, the supporting detail is evidence that the milestone was reached — a short note with the date the draft report was delivered or the workshop was held. Attach it as a separate page or include it in the invoice notes. Either way, the goal is the same: an approver should be able to say yes without picking up the phone.</p>
+<p>When you bill by the hour or by the day, the client's project sponsor usually has to justify your invoice to someone else: a finance director, a procurement team or a budget holder. Make that easy by sending supporting detail with the invoice rather than waiting to be asked.</p>
+<p>A good time log lists the date, the activity, the hours and, for larger teams, who did the work. Keep entries specific: "Stakeholder interviews, sales leadership (4 sessions)" is useful; "Meetings" is not. Round consistently (for example to the nearest quarter hour) and say so in your engagement letter. If you agreed a cap or budget, show how much of it has been used so far, such as "Hours billed to date: 46 of 60 approved". That one line prevents the most awkward conversation in consulting: discovering at month three that the budget ran out at month two.</p>
+<p>For fixed-fee and milestone work, the supporting detail is evidence that the milestone was reached: a short note with the date the draft report was delivered or the workshop was held. Attach it as a separate page or include it in the invoice notes. Either way, the goal is the same: an approver should be able to say yes without picking up the phone.</p>
 
 <h2>How to create a consulting invoice step by step</h2>
 <ol>
@@ -505,7 +505,7 @@ export const INDUSTRY_POSTS_A: PostDraft[] = [
 <h2>Common consulting invoice mistakes</h2>
 <ul>
 <li><strong>Billing the wrong legal entity.</strong> Large groups often have several companies; use the one in your contract.</li>
-<li><strong>Vague descriptions.</strong> "Consulting services — October" makes the sponsor re-justify your fee internally.</li>
+<li><strong>Vague descriptions.</strong> "Consulting services, October" makes the sponsor re-justify your fee internally.</li>
 <li><strong>Mixing expenses into fees.</strong> It hides real costs and makes approval slower.</li>
 <li><strong>Late invoicing.</strong> Invoice on the first working day after the period ends, every month.</li>
 <li><strong>No follow-up plan.</strong> Diary a reminder for the due date and use proven <a href="/blog/payment-reminder-emails">payment reminder emails</a> if it passes.</li>
@@ -547,7 +547,7 @@ export const INDUSTRY_POSTS_A: PostDraft[] = [
       },
     ],
     content: `
-<p><strong>Quick answer:</strong> A graphic design invoice template is a billing layout for designers and studios that lists each deliverable — such as logo concepts, brand guidelines or social assets — along with included and extra revision rounds, stock or font licenses, the deposit already paid and the balance due. It should also state when usage rights transfer. Send it at each agreed milestone or when final files are ready for handover.</p>
+<p><strong>Quick answer:</strong> A graphic design invoice template is a billing layout for designers and studios that lists each deliverable (such as logo concepts, brand guidelines or social assets) along with included and extra revision rounds, stock or font licenses, the deposit already paid and the balance due. It should also state when usage rights transfer. Send it at each agreed milestone or when final files are ready for handover.</p>
 
 <p>In this guide you will learn what to put on a graphic design invoice, how designers price projects, how to handle deposits, revisions and rights, and you will see a worked branding example with correct totals. You can build your own in our <a href="/invoice-generator">free invoice generator</a> and download a branded PDF that looks as good as your portfolio.</p>
 
@@ -556,7 +556,7 @@ export const INDUSTRY_POSTS_A: PostDraft[] = [
 <li><strong>Your details:</strong> name or studio name, logo, email, website or portfolio link, and any tax ID.</li>
 <li><strong>Client details:</strong> company name, contact person, billing address and AP email if they have one.</li>
 <li><strong>Invoice number and dates:</strong> unique number, issue date and due date. Our <a href="/tools/invoice-number-generator">invoice number generator</a> can set up a tidy format.</li>
-<li><strong>Project name and reference:</strong> for example "Brand identity refresh — proposal P-2026-14".</li>
+<li><strong>Project name and reference:</strong> for example "Brand identity refresh, proposal P-2026-14".</li>
 <li><strong>Deliverables:</strong> each item with a description your client will recognise.</li>
 <li><strong>Revisions:</strong> included rounds noted, and extra rounds billed as separate lines.</li>
 <li><strong>Pass-through costs:</strong> stock images, fonts, printing or hosting bought for the project.</li>
@@ -567,7 +567,7 @@ export const INDUSTRY_POSTS_A: PostDraft[] = [
 <h2>How graphic designers price projects</h2>
 <p>Design pricing usually falls into a few models, and many designers mix them:</p>
 <table><thead><tr><th>Model</th><th>Works well for</th><th>Invoice line example</th></tr></thead><tbody>
-<tr><td>Project or package fee</td><td>Logos, brand identities, websites</td><td>Logo design — 3 concepts, 2 revision rounds</td></tr>
+<tr><td>Project or package fee</td><td>Logos, brand identities, websites</td><td>Logo design: 3 concepts, 2 revision rounds</td></tr>
 <tr><td>Per-deliverable rate</td><td>Social graphics, banners, presentation slides</td><td>Social media templates × 15 at $40</td></tr>
 <tr><td>Hourly rate</td><td>Ongoing production work, small edits, unclear scope</td><td>Layout updates, 4.5 hrs at $85</td></tr>
 <tr><td>Monthly retainer</td><td>In-house-style support for marketing teams</td><td>Design retainer, November 2026, up to 20 hrs</td></tr>
@@ -576,14 +576,14 @@ export const INDUSTRY_POSTS_A: PostDraft[] = [
 <p>Project pricing rewards efficiency and is easiest for clients to budget. Hourly pricing protects you when the scope is fuzzy. Whatever you choose, describe deliverables precisely: "Brand style guide, 12 pages, PDF and editable source" is far easier to approve than "branding".</p>
 
 <h2>Deposits and payment schedules for design work</h2>
-<p>Designers commonly take a deposit before starting — often 30% to 50% of the project fee. Larger projects may be split into three stages: deposit on signing, a payment when concepts are approved, and the balance on final file delivery. Issue the deposit as a separate invoice (see our <a href="/blog/deposit-invoice">deposit invoice</a> guide) and subtract it on the final invoice, quoting the deposit invoice number.</p>
+<p>Designers commonly take a deposit before starting, often 30% to 50% of the project fee. Larger projects may be split into three stages: deposit on signing, a payment when concepts are approved, and the balance on final file delivery. Issue the deposit as a separate invoice (see our <a href="/blog/deposit-invoice">deposit invoice</a> guide) and subtract it on the final invoice, quoting the deposit invoice number.</p>
 <p>For multi-month projects, tie each payment to a visible milestone rather than a calendar date. Our <a href="/blog/milestone-payments">milestone payments</a> article shows how to set this up in a proposal.</p>
 
 <h2>Revisions, rush fees and kill fees</h2>
 <h3>Revision rounds</h3>
-<p>Define a "round" in your proposal — for example, one consolidated set of feedback from the client, answered by one updated version. When a client asks for more rounds than included, confirm the cost in writing before you start, then list it on the invoice: "Additional revision round × 2 at $150".</p>
+<p>Define a "round" in your proposal: for example, one consolidated set of feedback from the client, answered by one updated version. When a client asks for more rounds than included, confirm the cost in writing before you start, then list it on the invoice: "Additional revision round × 2 at $150".</p>
 <h3>Rush fees</h3>
-<p>If a client needs work faster than your standard turnaround, a rush fee — often a percentage surcharge — is reasonable. Show it as its own line so the client sees exactly what speed costs.</p>
+<p>If a client needs work faster than your standard turnaround, a rush fee (often a percentage surcharge) is reasonable. Show it as its own line so the client sees exactly what speed costs.</p>
 <h3>Kill fees</h3>
 <p>If a client cancels mid-project, a kill fee in your contract lets you invoice for work done to date. Bill it with a description of what was completed and reference the contract clause.</p>
 
@@ -591,7 +591,7 @@ export const INDUSTRY_POSTS_A: PostDraft[] = [
 <p>The client accepted a quote of $4,550 for discovery, logo, style guide and social pack, and paid a 50% deposit of $2,275. During the project they requested two extra revision rounds and three stock images. Design services carry no sales tax in this example; check your own state's rules, as some states tax certain digital or printed deliverables.</p>
 <table><thead><tr><th>Description</th><th>Qty</th><th>Rate</th><th>Amount</th></tr></thead><tbody>
 <tr><td>Brand discovery workshop</td><td>1</td><td>$600.00</td><td>$600.00</td></tr>
-<tr><td>Logo design — 3 concepts, 2 revision rounds included</td><td>1</td><td>$2,400.00</td><td>$2,400.00</td></tr>
+<tr><td>Logo design: 3 concepts, 2 revision rounds included</td><td>1</td><td>$2,400.00</td><td>$2,400.00</td></tr>
 <tr><td>Additional revision round (approved 3 Oct 2026)</td><td>2</td><td>$150.00</td><td>$300.00</td></tr>
 <tr><td>Brand style guide, 12 pages</td><td>1</td><td>$950.00</td><td>$950.00</td></tr>
 <tr><td>Social media asset pack</td><td>15</td><td>$40.00</td><td>$600.00</td></tr>
@@ -610,7 +610,7 @@ export const INDUSTRY_POSTS_A: PostDraft[] = [
 <li>Add each deliverable, extra revision round and pass-through cost.</li>
 <li>Add a negative line for the deposit received.</li>
 <li>In the notes, state when rights transfer and how to pay.</li>
-<li>Download the PDF and send it with the final file handover email — or hold the final files until payment, if your contract says so.</li>
+<li>Download the PDF and send it with the final file handover email, or hold the final files until payment, if your contract says so.</li>
 </ol>
 <p>Our <a href="/blog/professional-invoice-design-tips">professional invoice design tips</a> explain how to keep a branded invoice readable for finance teams.</p>
 
@@ -693,8 +693,8 @@ export const INDUSTRY_POSTS_A: PostDraft[] = [
 <p>Flat-rate pricing tends to reduce arguments because the customer agrees the price before you start. Hourly billing is fairer when you cannot see the problem yet. Whichever you use, your plumbing invoice should match what you told the customer. Our guide on <a href="/blog/invoice-vs-estimate">invoice vs estimate</a> explains how to move from a quoted price to the final bill.</p>
 
 <h2>Parts, materials and markup</h2>
-<p>Parts are usually the largest variable on a plumbing invoice. List major parts individually — a water heater, a pressure-reducing valve, a toilet — and group fittings, solder, tape and sealant into one consumables line. Most plumbing businesses price parts above their supply-house cost to cover sourcing, stocking, returns and warranty handling. That is normal; just be consistent and make sure it matches what you quoted.</p>
-<p>If a customer supplies their own fixture or part, note "Customer-supplied part — labor only" on the invoice. It makes clear that your workmanship warranty covers the installation but not the product itself, which avoids an awkward call if a cheap faucet cartridge fails a few months later.</p>
+<p>Parts are usually the largest variable on a plumbing invoice. List major parts individually (a water heater, a pressure-reducing valve, a toilet) and group fittings, solder, tape and sealant into one consumables line. Most plumbing businesses price parts above their supply-house cost to cover sourcing, stocking, returns and warranty handling. That is normal; just be consistent and make sure it matches what you quoted.</p>
+<p>If a customer supplies their own fixture or part, note "Customer-supplied part: labor only" on the invoice. It makes clear that your workmanship warranty covers the installation but not the product itself, which avoids an awkward call if a cheap faucet cartridge fails a few months later.</p>
 <p>Sales tax on parts and labor varies a lot by state, and rules for repair work can differ from new construction. Show tax as its own line on the right base, and use our <a href="/tools/sales-tax-calculator">sales tax calculator</a> to check the figure. Our guide to <a href="/blog/sales-tax-on-invoices-us">sales tax on invoices in the US</a> explains the general principles.</p>
 
 <h2>Permits, inspections and emergency calls</h2>
@@ -707,7 +707,7 @@ export const INDUSTRY_POSTS_A: PostDraft[] = [
 <tr><td>Service call and diagnosis</td><td>1</td><td>$89.00</td><td>$89.00</td></tr>
 <tr><td>50-gal gas water heater, 6-yr manufacturer warranty</td><td>1</td><td>$1,150.00</td><td>$1,150.00</td></tr>
 <tr><td>Install kit: flex connectors, gas valve, expansion tank</td><td>1</td><td>$185.00</td><td>$185.00</td></tr>
-<tr><td>Labor — licensed plumber, remove and install</td><td>3.5 hrs</td><td>$125.00</td><td>$437.50</td></tr>
+<tr><td>Labor: licensed plumber, remove and install</td><td>3.5 hrs</td><td>$125.00</td><td>$437.50</td></tr>
 <tr><td>Old unit removal and disposal</td><td>1</td><td>$75.00</td><td>$75.00</td></tr>
 <tr><td>Plumbing permit fee</td><td>1</td><td>$120.00</td><td>$120.00</td></tr>
 <tr><td colspan="3"><strong>Subtotal</strong></td><td><strong>$2,056.50</strong></td></tr>
@@ -718,7 +718,7 @@ export const INDUSTRY_POSTS_A: PostDraft[] = [
 
 <h2>How to fill in a plumbing invoice on the job</h2>
 <ol>
-<li>Open the generator on your phone and choose a clear layout — the <a href="/invoice-templates/blue">Blue invoice template</a> is easy to read on small screens.</li>
+<li>Open the generator on your phone and choose a clear layout: the <a href="/invoice-templates/blue">Blue invoice template</a> is easy to read on small screens.</li>
 <li>Your business details are saved in your browser from last time; check them.</li>
 <li>Add the customer and service address, and set the invoice number using your <a href="/blog/invoice-numbering-system">invoice numbering system</a>.</li>
 <li>Describe the problem and the fix in one or two sentences.</li>
@@ -743,7 +743,7 @@ export const INDUSTRY_POSTS_A: PostDraft[] = [
 <li><strong>Collect on completion for homeowners.</strong> Card, payment link or check on the day is standard for residential service work.</li>
 <li><strong>Use net terms for commercial and property management accounts</strong> only once they are approved, and quote their work order number on every invoice.</li>
 <li><strong>Take a deposit on big installs.</strong> For repiping or a tankless upgrade, a deposit covers equipment you order in advance.</li>
-<li><strong>Chase promptly.</strong> If an invoice is unpaid, a polite reminder the day after the due date works better than waiting weeks — see <a href="/blog/how-to-get-paid-faster">how to get paid faster</a>.</li>
+<li><strong>Chase promptly.</strong> If an invoice is unpaid, a polite reminder the day after the due date works better than waiting weeks. See <a href="/blog/how-to-get-paid-faster">how to get paid faster</a>.</li>
 </ul>
 <p>Plumbers who also work on heating systems can compare billing practices in our <a href="/blog/hvac-invoice-template">HVAC invoice template</a> guide, and those working as subcontractors on renovations should read the <a href="/blog/contractor-invoice-template">contractor invoice template</a> guide.</p>
 
@@ -804,21 +804,21 @@ export const INDUSTRY_POSTS_A: PostDraft[] = [
 <h2>How electricians price their work</h2>
 <p>An electrical invoice template should match the pricing model you quoted. Most electricians use a mix of these:</p>
 <table><thead><tr><th>Pricing model</th><th>How it works</th><th>Example invoice line</th></tr></thead><tbody>
-<tr><td>Service call fee</td><td>Fixed fee to attend, diagnose and often the first portion of labor</td><td>Service call and troubleshooting — $95</td></tr>
+<tr><td>Service call fee</td><td>Fixed fee to attend, diagnose and often the first portion of labor</td><td>Service call and troubleshooting: $95</td></tr>
 <tr><td>Hourly by role</td><td>Different rates for master, journeyman and apprentice</td><td>Journeyman electrician, 6 hrs at $95</td></tr>
-<tr><td>Flat rate per task</td><td>Price-book pricing for common jobs</td><td>Install GFCI outlet, kitchen — $165</td></tr>
+<tr><td>Flat rate per task</td><td>Price-book pricing for common jobs</td><td>Install GFCI outlet, kitchen: $165</td></tr>
 <tr><td>Fixed project quote</td><td>One price for a defined scope</td><td>Panel upgrade per quote Q-2026-077</td></tr>
 <tr><td>Per device or per opening</td><td>Common in new construction and remodels</td><td>Recessed lights, 12 openings at $145</td></tr>
 </tbody></table>
 <p>Showing labor by role is worth the extra line. Customers can see that an apprentice handled the cable runs at a lower rate while the master electrician did the panel work, which makes the total feel fair rather than arbitrary.</p>
 
 <h2>Materials: breakers, wire and devices</h2>
-<p>Electrical materials range from a $3 wire nut to a several-thousand-dollar generator, so group them sensibly. List major items by name and quantity — a panel, a meter base, a whole-house surge protector, an EV charger, a set of breakers — and roll small items (connectors, staples, boxes, tape) into one "fittings and consumables" line. Wire and cable can be billed by the foot or as a single line per run.</p>
+<p>Electrical materials range from a $3 wire nut to a several-thousand-dollar generator, so group them sensibly. List major items by name and quantity (a panel, a meter base, a whole-house surge protector, an EV charger, a set of breakers) and roll small items (connectors, staples, boxes, tape) into one "fittings and consumables" line. Wire and cable can be billed by the foot or as a single line per run.</p>
 <p>Many electrical contractors price materials above their wholesale cost to cover sourcing, stock and warranty handling. That is common, but your invoice should match the quote. If a material price jumped between quote and installation and your contract allows you to pass it on, explain the change on the invoice rather than letting the customer discover it.</p>
 
 <h2>Permits, inspections and code compliance</h2>
 <p>Panel upgrades, new circuits, service changes, EV chargers and generator installs commonly require an electrical permit and inspection. Put the permit fee on its own line and note the permit number in the description. If the utility has to disconnect and reconnect service, list any coordination time or utility fee separately.</p>
-<p>After a passed inspection, add a note such as "Final inspection passed 20 Oct 2026". For commercial clients and landlords, that line is often what releases payment. If you work as a subcontractor for a general contractor, they may also need it for their own progress billing — see our <a href="/blog/construction-invoice-guide">construction invoice guide</a> for how progress billing and retainage work.</p>
+<p>After a passed inspection, add a note such as "Final inspection passed 20 Oct 2026". For commercial clients and landlords, that line is often what releases payment. If you work as a subcontractor for a general contractor, they may also need it for their own progress billing. See our <a href="/blog/construction-invoice-guide">construction invoice guide</a> for how progress billing and retainage work.</p>
 
 <h2>Worked example: 200-amp panel upgrade invoice</h2>
 <p>This sample electrician invoice covers a residential panel upgrade from 100 to 200 amps. The customer paid a $900 deposit to cover materials. Tax is applied to materials only at an example rate of 7%; your state may tax a different base, so check with your <a href="/tools/sales-tax-calculator">sales tax calculator</a> and local rules.</p>
@@ -826,8 +826,8 @@ export const INDUSTRY_POSTS_A: PostDraft[] = [
 <tr><td>200A main breaker load center, 40 spaces</td><td>1</td><td>$425.00</td><td>$425.00</td></tr>
 <tr><td>Circuit breakers, assorted (incl. AFCI/GFCI)</td><td>18</td><td>$28.00</td><td>$504.00</td></tr>
 <tr><td>Service entrance cable, grounding and fittings</td><td>1</td><td>$310.00</td><td>$310.00</td></tr>
-<tr><td>Labor — master electrician</td><td>8 hrs</td><td>$110.00</td><td>$880.00</td></tr>
-<tr><td>Labor — apprentice electrician</td><td>8 hrs</td><td>$55.00</td><td>$440.00</td></tr>
+<tr><td>Labor: master electrician</td><td>8 hrs</td><td>$110.00</td><td>$880.00</td></tr>
+<tr><td>Labor: apprentice electrician</td><td>8 hrs</td><td>$55.00</td><td>$440.00</td></tr>
 <tr><td>Electrical permit and inspection fee</td><td>1</td><td>$185.00</td><td>$185.00</td></tr>
 <tr><td>Utility disconnect/reconnect coordination</td><td>1</td><td>$150.00</td><td>$150.00</td></tr>
 <tr><td colspan="3"><strong>Subtotal</strong></td><td><strong>$2,894.00</strong></td></tr>
@@ -840,24 +840,24 @@ export const INDUSTRY_POSTS_A: PostDraft[] = [
 
 <h2>Service call invoices vs project invoices</h2>
 <p>Electricians usually send two very different kinds of invoice, and the template should flex to suit each one.</p>
-<p>A <strong>service call invoice</strong> is short and issued on the spot: a service call fee, a line or two of labor, a few parts and payment collected before you leave. The description does the heavy lifting here — "Tripping kitchen circuit traced to failed GFCI receptacle; replaced receptacle, tested all downstream outlets" tells the customer exactly what they paid for and gives you a record if the problem recurs.</p>
+<p>A <strong>service call invoice</strong> is short and issued on the spot: a service call fee, a line or two of labor, a few parts and payment collected before you leave. The description does the heavy lifting here: "Tripping kitchen circuit traced to failed GFCI receptacle; replaced receptacle, tested all downstream outlets" tells the customer exactly what they paid for and gives you a record if the problem recurs.</p>
 <p>A <strong>project invoice</strong> covers larger work such as a rewire, a basement finish, an EV charger circuit or a generator install. It usually follows a written quote, often includes a deposit, and may be split into stages such as rough-in and final. Reference the quote number, list approved change orders separately, and attach the passed inspection where relevant. For commercial clients, include their PO number and send the invoice to their accounts payable address rather than the site contact.</p>
 <p>Keeping one numbering series for both types makes your records simpler, even if the layouts look a little different.</p>
 
 <h2>How to create an electrical invoice step by step</h2>
 <ol>
-<li>Open the generator and choose a strong, legible layout — the <a href="/invoice-templates/bold">Bold invoice template</a> works well for trades businesses.</li>
+<li>Open the generator and choose a strong, legible layout: the <a href="/invoice-templates/bold">Bold invoice template</a> works well for trades businesses.</li>
 <li>Add your company name, logo, license number and contact details.</li>
 <li>Enter the customer's billing details and the job address.</li>
 <li>Set the invoice number with our <a href="/tools/invoice-number-generator">invoice number generator</a> if you do not already have a series.</li>
 <li>Describe the scope, then add materials, labor by role, permit and other fees.</li>
-<li>Apply tax to the correct lines and deduct any deposit — see our <a href="/blog/deposit-invoice">deposit invoice</a> guide for how to issue the deposit itself.</li>
+<li>Apply tax to the correct lines and deduct any deposit. See our <a href="/blog/deposit-invoice">deposit invoice</a> guide for how to issue the deposit itself.</li>
 <li>Add your warranty, payment methods and <a href="/blog/invoice-payment-terms">payment terms</a>, then download and send the PDF.</li>
 </ol>
 
 <h2>Common electrician invoice mistakes</h2>
 <ul>
-<li><strong>"Electrical work — $2,900" as the only line.</strong> Itemize materials and labor so the customer can see value.</li>
+<li><strong>"Electrical work: $2,900" as the only line.</strong> Itemize materials and labor so the customer can see value.</li>
 <li><strong>Forgetting the permit.</strong> If you paid it, bill it, and say so in the quote.</li>
 <li><strong>Not recording changes.</strong> If the customer asked for two extra outlets on the day, get it approved and add it as a separate line.</li>
 <li><strong>Wrong tax base.</strong> Charging tax on labor in a state that only taxes materials, or the reverse, causes problems later.</li>
@@ -866,7 +866,7 @@ export const INDUSTRY_POSTS_A: PostDraft[] = [
 <p>Our list of <a href="/blog/common-invoice-mistakes">common invoice mistakes</a> covers the general errors that apply to every trade.</p>
 
 <h2>Electrical work alongside other trades</h2>
-<p>Electricians often work next to other trades on renovations, so it helps to know how they bill. If you subcontract to a general contractor, they will pass your invoice into their own — the <a href="/blog/contractor-invoice-template">contractor invoice template</a> guide shows how. If you install controls or circuits for heating and cooling equipment, compare with the <a href="/blog/hvac-invoice-template">HVAC invoice template</a>. Once you have been paid, send a receipt if the customer asks for one; our <a href="/blog/payment-receipt-template">payment receipt template</a> guide explains what it should show.</p>
+<p>Electricians often work next to other trades on renovations, so it helps to know how they bill. If you subcontract to a general contractor, they will pass your invoice into their own. The <a href="/blog/contractor-invoice-template">contractor invoice template</a> guide shows how. If you install controls or circuits for heating and cooling equipment, compare with the <a href="/blog/hvac-invoice-template">HVAC invoice template</a>. Once you have been paid, send a receipt if the customer asks for one; our <a href="/blog/payment-receipt-template">payment receipt template</a> guide explains what it should show.</p>
 
 <h2>Create your electrician invoice now</h2>
 <p>Open the <a href="/invoice-generator">free invoice generator</a>, pick the Bold template or browse all <a href="/invoice-templates">invoice templates</a>, add your materials, labor and permit fees, and download a professional electrical invoice as a PDF in minutes.</p>
@@ -911,7 +911,7 @@ export const INDUSTRY_POSTS_A: PostDraft[] = [
 <h2>What to include on a landscaping invoice template</h2>
 <ul>
 <li><strong>Business details:</strong> company name, logo, phone, email and any license or pesticide applicator certification your state requires for the services you provide.</li>
-<li><strong>Client and property:</strong> the client's name and billing address, plus the property address if different — essential for HOAs and property managers with many sites.</li>
+<li><strong>Client and property:</strong> the client's name and billing address, plus the property address if different, essential for HOAs and property managers with many sites.</li>
 <li><strong>Invoice number and dates:</strong> a unique number, issue date and due date.</li>
 <li><strong>Service period or visit dates:</strong> for maintenance, list each visit; for projects, the start and completion dates.</li>
 <li><strong>Labor:</strong> per visit, per crew-hour or as a project price.</li>
@@ -923,7 +923,7 @@ export const INDUSTRY_POSTS_A: PostDraft[] = [
 
 <h2>How landscaping services are priced</h2>
 <table><thead><tr><th>Service type</th><th>Common pricing</th><th>Invoice line example</th></tr></thead><tbody>
-<tr><td>Lawn mowing and maintenance</td><td>Per visit, by lot size</td><td>Mow, edge and blow — 4 visits at $55</td></tr>
+<tr><td>Lawn mowing and maintenance</td><td>Per visit, by lot size</td><td>Mow, edge and blow: 4 visits at $55</td></tr>
 <tr><td>Seasonal contracts</td><td>Fixed monthly fee across the season</td><td>Maintenance plan, October 2026 (month 7 of 8)</td></tr>
 <tr><td>Cleanups</td><td>Hourly per crew member or flat fee</td><td>Fall leaf cleanup, 2.5 crew-hrs at $60</td></tr>
 <tr><td>Applications</td><td>Per application, by lawn area</td><td>Fertilizer and weed control, 8,000 sq ft</td></tr>
@@ -940,7 +940,7 @@ export const INDUSTRY_POSTS_A: PostDraft[] = [
 <h2>Worked example 1: monthly lawn maintenance invoice</h2>
 <p>A residential client on per-visit billing, invoiced at the end of October. No tax is applied in this example, which assumes a state that does not tax lawn services.</p>
 <table><thead><tr><th>Description</th><th>Qty</th><th>Rate</th><th>Amount</th></tr></thead><tbody>
-<tr><td>Mow, edge and blow — 3, 10, 17, 24 Oct 2026</td><td>4 visits</td><td>$55.00</td><td>$220.00</td></tr>
+<tr><td>Mow, edge and blow: 3, 10, 17, 24 Oct 2026</td><td>4 visits</td><td>$55.00</td><td>$220.00</td></tr>
 <tr><td>Fall leaf cleanup, 31 Oct 2026</td><td>2.5 crew-hrs</td><td>$60.00</td><td>$150.00</td></tr>
 <tr><td>Fall fertilizer application</td><td>1</td><td>$85.00</td><td>$85.00</td></tr>
 <tr><td colspan="3"><strong>Total due by 14 Nov 2026</strong></td><td><strong>$455.00</strong></td></tr>
@@ -952,24 +952,24 @@ export const INDUSTRY_POSTS_A: PostDraft[] = [
 <tr><td>Landscape design plan, front yard</td><td>1</td><td>$350.00</td><td>$350.00</td></tr>
 <tr><td>Double-shredded hardwood mulch, delivered</td><td>6 cu yd</td><td>$48.00</td><td>$288.00</td></tr>
 <tr><td>Shrubs, 3-gallon (boxwood and hydrangea)</td><td>12</td><td>$38.00</td><td>$456.00</td></tr>
-<tr><td>Labor — bed prep, planting and mulching</td><td>14 crew-hrs</td><td>$65.00</td><td>$910.00</td></tr>
+<tr><td>Labor: bed prep, planting and mulching</td><td>14 crew-hrs</td><td>$65.00</td><td>$910.00</td></tr>
 <tr><td>Sod, supplied and installed</td><td>800 sq ft</td><td>$1.10</td><td>$880.00</td></tr>
 <tr><td>Green waste disposal</td><td>1</td><td>$95.00</td><td>$95.00</td></tr>
 <tr><td colspan="3"><strong>Subtotal</strong></td><td><strong>$2,979.00</strong></td></tr>
 <tr><td colspan="3">Sales tax 6% on mulch and shrubs ($744.00)</td><td>$44.64</td></tr>
 <tr><td colspan="3"><strong>Total due by 14 Nov 2026</strong></td><td><strong>$3,023.64</strong></td></tr>
 </tbody></table>
-<p>Check the maths: 6 × $48 = $288; 12 × $38 = $456; 14 × $65 = $910; 800 × $1.10 = $880; with the design plan and disposal the subtotal is $2,979. Tax is 6% of $744, or $44.64, for a total of $3,023.64. If the client paid a deposit, add a negative line for it and show the balance — our <a href="/blog/deposit-invoice">deposit invoice</a> guide explains the format.</p>
+<p>Check the maths: 6 × $48 = $288; 12 × $38 = $456; 14 × $65 = $910; 800 × $1.10 = $880; with the design plan and disposal the subtotal is $2,979. Tax is 6% of $744, or $44.64, for a total of $3,023.64. If the client paid a deposit, add a negative line for it and show the balance. Our <a href="/blog/deposit-invoice">deposit invoice</a> guide explains the format.</p>
 
 <h2>Seasonal contracts, HOAs and commercial accounts</h2>
-<p>Larger landscaping clients — homeowners associations, property managers, office parks and retail sites — bring steady work but stricter invoicing rules. Before the season starts, ask each one how they want to be billed and record the answers in your service agreement.</p>
+<p>Larger landscaping clients (homeowners associations, property managers, office parks and retail sites) bring steady work but stricter invoicing rules. Before the season starts, ask each one how they want to be billed and record the answers in your service agreement.</p>
 <ul>
 <li><strong>One invoice per property or one combined invoice?</strong> Property managers often need a separate invoice for each site so they can charge it to the right owner.</li>
 <li><strong>What reference must appear?</strong> Many require a PO number, contract number or property code on every invoice.</li>
 <li><strong>Is extra work pre-approved?</strong> Storm cleanups, irrigation repairs and plant replacements usually need written approval before you start, and the approval reference should appear on the invoice line.</li>
 <li><strong>What are the payment terms?</strong> Commercial accounts commonly pay on net 30 terms, so plan your cash flow around that.</li>
 </ul>
-<p>For a fixed seasonal contract, a clear line reads something like "Grounds maintenance, October 2026 — month 7 of 8 per contract LC-2026-09". Listing the visits performed underneath, even at a zero amount, gives the client evidence that the service was delivered and protects you if a board member asks why the grass looked long one week. Irrigation start-up and winterization, snow removal and holiday lighting are usually invoiced separately from the base contract.</p>
+<p>For a fixed seasonal contract, a clear line reads something like "Grounds maintenance, October 2026, month 7 of 8 per contract LC-2026-09". Listing the visits performed underneath, even at a zero amount, gives the client evidence that the service was delivered and protects you if a board member asks why the grass looked long one week. Irrigation start-up and winterization, snow removal and holiday lighting are usually invoiced separately from the base contract.</p>
 
 <h2>How to create a landscaping invoice step by step</h2>
 <ol>
@@ -1036,7 +1036,7 @@ export const INDUSTRY_POSTS_A: PostDraft[] = [
 <ul>
 <li><strong>Your details:</strong> name or business name, logo, phone and email, and any license or registration number your state requires.</li>
 <li><strong>Customer details:</strong> name and address of the customer, and the job address if different.</li>
-<li><strong>Invoice number and date:</strong> unique and sequential — our <a href="/tools/invoice-number-generator">invoice number generator</a> creates a simple series such as <code>HM-0137</code>.</li>
+<li><strong>Invoice number and date:</strong> unique and sequential. Our <a href="/tools/invoice-number-generator">invoice number generator</a> creates a simple series such as <code>HM-0137</code>.</li>
 <li><strong>Task list:</strong> each job on its own line, so the customer can see what they paid for.</li>
 <li><strong>Labor:</strong> hours and rate, or a flat price per task.</li>
 <li><strong>Trip charge or minimum:</strong> shown clearly if you use one.</li>
@@ -1062,7 +1062,7 @@ export const INDUSTRY_POSTS_A: PostDraft[] = [
 <h3>Trip charges</h3>
 <p>Some handymen charge a trip fee on every visit; others charge one only outside a set radius or for very small jobs. Either way, show it as its own line.</p>
 <h3>Materials</h3>
-<p>If you pick up materials, list them separately from labor. Many handymen add a small markup to cover the time spent shopping and returning items, or charge a separate "materials pickup" line. Keep store receipts — some customers will want to see them, and they support your own bookkeeping. If the customer supplied the parts, note "Customer-supplied materials" so there is no confusion if something fails later.</p>
+<p>If you pick up materials, list them separately from labor. Many handymen add a small markup to cover the time spent shopping and returning items, or charge a separate "materials pickup" line. Keep store receipts: some customers will want to see them, and they support your own bookkeeping. If the customer supplied the parts, note "Customer-supplied materials" so there is no confusion if something fails later.</p>
 
 <h2>Worked example: multi-task handyman invoice</h2>
 <p>A homeowner booked a half-day visit with several small jobs. Flat rates were quoted for the TV mount and door hardware, and the drywall repair was billed hourly. Tax is applied to materials at an example rate of 7%; your state's treatment may differ, so check with our <a href="/tools/sales-tax-calculator">sales tax calculator</a> and local rules.</p>
@@ -1081,7 +1081,7 @@ export const INDUSTRY_POSTS_A: PostDraft[] = [
 
 <h2>How to create a handyman invoice step by step</h2>
 <ol>
-<li>Open the generator on your phone and choose a clean layout — the <a href="/invoice-templates/minimal">Minimal invoice template</a> reads well on small screens. Our guide on <a href="/blog/how-to-make-an-invoice-on-your-phone">how to make an invoice on your phone</a> has more tips.</li>
+<li>Open the generator on your phone and choose a clean layout: the <a href="/invoice-templates/minimal">Minimal invoice template</a> reads well on small screens. Our guide on <a href="/blog/how-to-make-an-invoice-on-your-phone">how to make an invoice on your phone</a> has more tips.</li>
 <li>Check your saved business details.</li>
 <li>Enter the customer's name and address.</li>
 <li>Add each task as its own line with hours or a flat price.</li>
@@ -1089,29 +1089,29 @@ export const INDUSTRY_POSTS_A: PostDraft[] = [
 <li>Add your payment methods and a thank-you note.</li>
 <li>Download the PDF, send it, and take payment before you leave.</li>
 </ol>
-<p>Once paid, the same document can serve as the customer's record, or you can send a separate receipt — see <a href="/blog/invoice-vs-receipt">invoice vs receipt</a> for the difference.</p>
+<p>Once paid, the same document can serve as the customer's record, or you can send a separate receipt. See <a href="/blog/invoice-vs-receipt">invoice vs receipt</a> for the difference.</p>
 
 <h2>Quotes, approvals and scope creep</h2>
-<p>Handyman visits have a habit of growing. You arrive to fix a sticking door and leave having also replaced a toilet flapper, re-caulked the tub and hung three shelves. That is good business — as long as the invoice reflects it and the customer agreed to it.</p>
+<p>Handyman visits have a habit of growing. You arrive to fix a sticking door and leave having also replaced a toilet flapper, re-caulked the tub and hung three shelves. That is good business, as long as the invoice reflects it and the customer agreed to it.</p>
 <ol>
 <li><strong>Start with a written task list.</strong> A short text or email confirming the jobs and prices before the visit is enough for small work.</li>
 <li><strong>Confirm additions on the spot.</strong> When the customer asks for "one more thing", tell them the price or estimated time before you start, and get a quick yes in writing if you can.</li>
-<li><strong>Flag surprises early.</strong> If a repair turns out to be bigger than expected — water damage behind tiles, rotten subfloor — stop, explain, and agree how to proceed before running up hours.</li>
+<li><strong>Flag surprises early.</strong> If a repair turns out to be bigger than expected (water damage behind tiles, rotten subfloor), stop, explain, and agree how to proceed before running up hours.</li>
 <li><strong>Label additions on the invoice.</strong> A line such as "Added on site at customer request: hang 3 floating shelves" removes any doubt later.</li>
 </ol>
 <p>For anything beyond a single visit, give a written estimate first. It sets expectations, and it means the final invoice is a confirmation rather than a surprise.</p>
 
 <h2>Know where handyman work ends</h2>
-<p>Many states and cities limit what you can do without a contractor license — often by job value, and almost always for electrical, plumbing, gas and structural work. The thresholds and rules vary, so check with your state licensing board before quoting larger jobs. When a job is beyond your scope, refer it to a licensed tradesperson; our <a href="/blog/electrician-invoice-template">electrician invoice template</a> and <a href="/blog/contractor-invoice-template">contractor invoice template</a> guides show how those businesses bill.</p>
+<p>Many states and cities limit what you can do without a contractor license, often by job value, and almost always for electrical, plumbing, gas and structural work. The thresholds and rules vary, so check with your state licensing board before quoting larger jobs. When a job is beyond your scope, refer it to a licensed tradesperson; our <a href="/blog/electrician-invoice-template">electrician invoice template</a> and <a href="/blog/contractor-invoice-template">contractor invoice template</a> guides show how those businesses bill.</p>
 <p>Staying within your scope also protects your invoice. A customer who discovers that unlicensed work needs redoing is unlikely to pay for it, and your insurance may not cover it.</p>
 
 <h2>Handyman invoicing mistakes to avoid</h2>
 <ul>
-<li><strong>One line for the whole visit.</strong> "Odd jobs — $627" invites a haggle. List every task.</li>
+<li><strong>One line for the whole visit.</strong> "Odd jobs: $627" invites a haggle. List every task.</li>
 <li><strong>Not mentioning the minimum or trip charge up front.</strong> Surprise fees are the top cause of handyman disputes.</li>
 <li><strong>Losing material receipts.</strong> You need them for the customer and for your own tax deductions.</li>
 <li><strong>Waiting to invoice.</strong> Send it before you leave, while the work is fresh and the customer is happy.</li>
-<li><strong>Reusing invoice numbers.</strong> Keep one continuous series — our list of <a href="/blog/common-invoice-mistakes">common invoice mistakes</a> explains why.</li>
+<li><strong>Reusing invoice numbers.</strong> Keep one continuous series. Our list of <a href="/blog/common-invoice-mistakes">common invoice mistakes</a> explains why.</li>
 </ul>
 
 <h2>Create your handyman invoice now</h2>

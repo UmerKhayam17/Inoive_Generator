@@ -39,7 +39,7 @@ export const HOW_TO_POSTS_A: PostDraft[] = [
     content: `
 <p><strong>Quick answer:</strong> To make an invoice in Word, open a new document, either pick an invoice template from Word's template gallery or insert a table for your line items, then add your business details, the client's billing details, a unique invoice number, the issue and due dates, each service with its quantity and rate, the total due and your payment instructions. Check every calculation by hand, then save the file as a PDF and email the PDF to your client.</p>
 
-<p>This guide walks through both routes — starting from a Word invoice template and building one from a blank document — with a worked example, a field checklist and the mistakes that cause Word invoices to be rejected. If you would rather not format tables at all, our <a href="/invoice-generator">free invoice generator</a> does the layout and maths for you and exports a PDF in a few minutes.</p>
+<p>This guide walks through both routes (starting from a Word invoice template and building one from a blank document) with a worked example, a field checklist and the mistakes that cause Word invoices to be rejected. If you would rather not format tables at all, our <a href="/invoice-generator">free invoice generator</a> does the layout and maths for you and exports a PDF in a few minutes.</p>
 
 <h2>Is Word a good tool for making an invoice?</h2>
 <p>Microsoft Word is fine for occasional, simple invoices: a single project fee, a couple of service lines, no complicated tax. It is familiar, it prints well and it lets you control fonts and spacing. The weakness is arithmetic. Word is a word processor, so line totals, subtotals and tax are typed by hand unless you set up table formula fields, and those fields do not update by themselves.</p>
@@ -89,7 +89,7 @@ export const HOW_TO_POSTS_A: PostDraft[] = [
 <p>Under the header, add a <strong>Bill to</strong> label followed by the client's legal business name, billing contact, address and tax ID if required. Include a PO number line if your client uses purchase orders.</p>
 
 <h3>Step 3: Insert the line-item table</h3>
-<p>Insert a table with four columns — <strong>Description</strong>, <strong>Qty</strong>, <strong>Rate</strong> and <strong>Amount</strong> — and one row per item plus a header row. Right-align the number columns so decimals line up. Leave a few spare rows; you can delete empty ones before you send.</p>
+<p>Insert a table with four columns (<strong>Description</strong>, <strong>Qty</strong>, <strong>Rate</strong> and <strong>Amount</strong>) and one row per item plus a header row. Right-align the number columns so decimals line up. Leave a few spare rows; you can delete empty ones before you send.</p>
 
 <h3>Step 4: Add the totals rows</h3>
 <p>Below the items, add rows for <strong>Subtotal</strong>, <strong>Discount</strong> or <strong>Tax</strong> if they apply, and <strong>Total due</strong>. Make the total bold so it is the first number the client sees. If you want Word to add up the Amount column, place the cursor in the subtotal cell and insert a table formula such as <code>=SUM(ABOVE)</code>. Remember that this field will not refresh automatically; select it and update the field after every change, or simply calculate totals yourself and double-check them.</p>
@@ -106,7 +106,7 @@ export const HOW_TO_POSTS_A: PostDraft[] = [
 <h2>Worked example: a simple Word invoice</h2>
 <p>Here is the line-item table for a freelance copywriter billing a small business. The maths is checked so you can use it as a model.</p>
 <table><thead><tr><th>Description</th><th>Qty</th><th>Rate (USD)</th><th>Amount (USD)</th></tr></thead><tbody>
-<tr><td>Website copy — home, about, services, pricing and contact pages</td><td>5</td><td>180.00</td><td>900.00</td></tr>
+<tr><td>Website copy: home, about, services, pricing and contact pages</td><td>5</td><td>180.00</td><td>900.00</td></tr>
 <tr><td>SEO meta titles and descriptions</td><td>20</td><td>15.00</td><td>300.00</td></tr>
 <tr><td>Additional revision round (hours)</td><td>2</td><td>75.00</td><td>150.00</td></tr>
 <tr><td colspan="3"><strong>Subtotal</strong></td><td>1,350.00</td></tr>
@@ -125,7 +125,7 @@ export const HOW_TO_POSTS_A: PostDraft[] = [
 <p>For a longer list, see our roundup of <a href="/blog/common-invoice-mistakes">common invoice mistakes</a>, and run through the <a href="/blog/invoice-pdf-print-checklist">invoice PDF print checklist</a> before sending.</p>
 
 <h2>Word vs Google Docs vs an invoice generator</h2>
-<p>Word and Google Docs work in much the same way: both are document editors with tables, and neither recalculates totals reliably. Google Docs adds easy sharing and automatic cloud saving — see <a href="/blog/how-to-make-an-invoice-in-google-docs">how to make an invoice in Google Docs</a> if you prefer working in a browser. An online invoice generator removes the formatting step entirely: you fill in fields, the totals calculate as you type, and the layout comes from professional templates such as <a href="/invoice-templates/classic">Classic</a>. For a broader comparison of methods, read <a href="/blog/how-to-create-an-invoice">how to create an invoice step by step</a>.</p>
+<p>Word and Google Docs work in much the same way: both are document editors with tables, and neither recalculates totals reliably. Google Docs adds easy sharing and automatic cloud saving. See <a href="/blog/how-to-make-an-invoice-in-google-docs">how to make an invoice in Google Docs</a> if you prefer working in a browser. An online invoice generator removes the formatting step entirely: you fill in fields, the totals calculate as you type, and the layout comes from professional templates such as <a href="/invoice-templates/classic">Classic</a>. For a broader comparison of methods, read <a href="/blog/how-to-create-an-invoice">how to create an invoice step by step</a>.</p>
 
 <h2>Create your invoice without the formatting</h2>
 <p>A Word invoice works, but every total is your responsibility. If you want the same professional result with automatic maths, open the <a href="/invoice-generator">free invoice generator</a>, choose the clean <a href="/invoice-templates/minimal">Minimal invoice template</a>, fill in your details and download a PDF in minutes.</p>
@@ -177,7 +177,7 @@ export const HOW_TO_POSTS_A: PostDraft[] = [
 <tr><td>Excel template from the gallery</td><td>Yes</td><td>Low</td><td>Hidden formula assumptions</td></tr>
 <tr><td>Excel invoice built from scratch</td><td>Yes</td><td>30–60 minutes once</td><td>Formula errors you introduce</td></tr>
 <tr><td>Word or Google Docs</td><td>No</td><td>Low</td><td>Typed totals that don't add up</td></tr>
-<tr><td>Online invoice generator</td><td>Yes</td><td>None</td><td>Few — fields are validated</td></tr>
+<tr><td>Online invoice generator</td><td>Yes</td><td>None</td><td>Few: fields are validated</td></tr>
 </tbody></table>
 
 <h2>The Excel invoice layout we'll build</h2>
@@ -212,10 +212,10 @@ export const HOW_TO_POSTS_A: PostDraft[] = [
 <h3>Step 3: Generate the invoice number</h3>
 <p>Type the sequence number (for example <code>42</code>) in B4, then put this formula in B5 to create a consistently formatted number:</p>
 <p><code>="INV-"&amp;TEXT(B6,"yyyy")&amp;"-"&amp;TEXT(B4,"0000")</code></p>
-<p>With an issue date in 2026 this returns <code>INV-2026-0042</code>. Increase B4 by one for every new invoice and record each number in a log — our <a href="/blog/invoice-numbering-system">invoice numbering system guide</a> explains why gaps and duplicates matter, and the <a href="/tools/invoice-number-generator">invoice number generator</a> can suggest a format.</p>
+<p>With an issue date in 2026 this returns <code>INV-2026-0042</code>. Increase B4 by one for every new invoice and record each number in a log. Our <a href="/blog/invoice-numbering-system">invoice numbering system guide</a> explains why gaps and duplicates matter, and the <a href="/tools/invoice-number-generator">invoice number generator</a> can suggest a format.</p>
 
 <h3>Step 4: Calculate the due date</h3>
-<p>Enter the issue date in B6 (or use <code>=TODAY()</code> only while drafting — replace it with a fixed date before sending, because <code>TODAY()</code> changes every day). Enter your terms in days in B7, then in B8 use:</p>
+<p>Enter the issue date in B6 (or use <code>=TODAY()</code> only while drafting; replace it with a fixed date before sending, because <code>TODAY()</code> changes every day). Enter your terms in days in B7, then in B8 use:</p>
 <p><code>=B6+B7</code></p>
 <p>Format B8 as a date. For Net 30 terms, an invoice issued on 22 October 2026 is due on 21 November 2026. See <a href="/blog/invoice-payment-terms">invoice payment terms explained</a> if you're unsure which terms to offer.</p>
 
@@ -232,7 +232,7 @@ export const HOW_TO_POSTS_A: PostDraft[] = [
 <li>Tax rate in C25 (e.g. 8%), tax amount in D25: <code>=ROUND((D23-D24)*C25,2)</code></li>
 <li>Total in D26: <code>=D23-D24+D25</code></li>
 </ul>
-<p>Wrapping tax and discount in <code>ROUND</code> keeps the displayed figures and the calculated figures identical to the cent. Whether tax applies before or after a discount, and to which items, depends on local rules — check with your tax authority or accountant, and use our <a href="/tools/sales-tax-calculator">sales tax calculator</a> to sanity-check the result.</p>
+<p>Wrapping tax and discount in <code>ROUND</code> keeps the displayed figures and the calculated figures identical to the cent. Whether tax applies before or after a discount, and to which items, depends on local rules. Check with your tax authority or accountant, and use our <a href="/tools/sales-tax-calculator">sales tax calculator</a> to sanity-check the result.</p>
 
 <h3>Step 7: Track payments and balance due</h3>
 <p>If the client paid a deposit, enter it in D27 and put the balance due in D28:</p>
@@ -250,7 +250,7 @@ export const HOW_TO_POSTS_A: PostDraft[] = [
 
 <h2>Worked example: Excel invoice with discount and tax</h2>
 <table><thead><tr><th>Row</th><th>Description</th><th>Qty (B)</th><th>Rate (C)</th><th>Amount (D)</th></tr></thead><tbody>
-<tr><td>12</td><td>Product photography — half-day sessions</td><td>3</td><td>450.00</td><td>1,350.00</td></tr>
+<tr><td>12</td><td>Product photography: half-day sessions</td><td>3</td><td>450.00</td><td>1,350.00</td></tr>
 <tr><td>13</td><td>Image retouching (hours)</td><td>12</td><td>85.00</td><td>1,020.00</td></tr>
 <tr><td>14</td><td>Studio prop rental</td><td>1</td><td>230.00</td><td>230.00</td></tr>
 <tr><td>23</td><td colspan="3">Subtotal <code>=SUM(D12:D21)</code></td><td>2,600.00</td></tr>
@@ -272,7 +272,7 @@ export const HOW_TO_POSTS_A: PostDraft[] = [
 </ul>
 
 <h2>Excel vs Google Sheets for invoices</h2>
-<p>The formulas in this guide work almost identically in Google Sheets. Sheets adds cloud saving and easy sharing, plus <code>ARRAYFORMULA</code> for filling a whole column at once — our <a href="/blog/google-sheets-invoice-template">Google Sheets invoice template guide</a> shows that version. If you are deciding between a spreadsheet and a document editor, see <a href="/blog/how-to-make-an-invoice-in-word">how to make an invoice in Word</a> for the trade-offs.</p>
+<p>The formulas in this guide work almost identically in Google Sheets. Sheets adds cloud saving and easy sharing, plus <code>ARRAYFORMULA</code> for filling a whole column at once. Our <a href="/blog/google-sheets-invoice-template">Google Sheets invoice template guide</a> shows that version. If you are deciding between a spreadsheet and a document editor, see <a href="/blog/how-to-make-an-invoice-in-word">how to make an invoice in Word</a> for the trade-offs.</p>
 
 <h2>When to move beyond an Excel invoice</h2>
 <p>Excel works well until you're sending many invoices a month, chasing several late payments, or need branded layouts for different clients. At that point a dedicated tool saves time. An invoice generator gives you the same automatic subtotal, discount, tax and amount-paid fields without formulas to maintain. Need a field-by-field refresher on what every invoice must show? Read <a href="/blog/how-to-write-an-invoice">how to write an invoice</a>.</p>
@@ -345,16 +345,16 @@ export const HOW_TO_POSTS_A: PostDraft[] = [
 <li><strong>Add the header.</strong> Type <strong>INVOICE</strong> at the top in a large heading style. Insert a two-column table and remove its borders: put your business details in the left cell and the invoice number, issue date and due date in the right cell. This keeps both blocks aligned on every screen.</li>
 <li><strong>Insert your logo.</strong> Add your logo image to the header area and keep it small enough that the line items stay on page one.</li>
 <li><strong>Add the Bill to block.</strong> Below the header, add a <strong>Bill to</strong> label, then the client's legal business name, contact person, billing address and any PO number.</li>
-<li><strong>Insert the line-item table.</strong> Add a table with four columns — Description, Qty, Rate, Amount — and enough rows for your usual number of items plus three rows for Subtotal, Tax and Total. Right-align the number columns.</li>
+<li><strong>Insert the line-item table.</strong> Add a table with four columns (Description, Qty, Rate, Amount) and enough rows for your usual number of items plus three rows for Subtotal, Tax and Total. Right-align the number columns.</li>
 <li><strong>Calculate and type the totals.</strong> Multiply each quantity by its rate, add the amounts, and apply any tax. Use a calculator or our <a href="/tools/sales-tax-calculator">sales tax calculator</a>, then recheck the total once more before moving on.</li>
-<li><strong>Add payment details.</strong> Under the table, list how to pay — bank transfer details or a payment link — the payment terms and a polite thank-you line. Our guide to <a href="/blog/invoice-payment-terms">invoice payment terms</a> suggests clear wording.</li>
+<li><strong>Add payment details.</strong> Under the table, list how to pay (bank transfer details or a payment link), the payment terms and a polite thank-you line. Our guide to <a href="/blog/invoice-payment-terms">invoice payment terms</a> suggests clear wording.</li>
 <li><strong>Download as PDF and send.</strong> Use the download option to save a PDF document, open it to check the layout, and attach it to an email. Avoid sending an edit link as your invoice.</li>
 </ol>
 
 <h2>Worked example: freelance translation invoice</h2>
 <p>This example shows a translator's invoice built in a Google Docs table. Every figure has been checked.</p>
 <table><thead><tr><th>Description</th><th>Qty</th><th>Rate (USD)</th><th>Amount (USD)</th></tr></thead><tbody>
-<tr><td>Translation, Spanish to English — product manual (words)</td><td>4,200</td><td>0.12</td><td>504.00</td></tr>
+<tr><td>Translation, Spanish to English: product manual (words)</td><td>4,200</td><td>0.12</td><td>504.00</td></tr>
 <tr><td>Proofreading and formatting (hours)</td><td>3</td><td>40.00</td><td>120.00</td></tr>
 <tr><td>Rush delivery fee (48-hour turnaround)</td><td>1</td><td>50.00</td><td>50.00</td></tr>
 <tr><td colspan="3"><strong>Subtotal</strong></td><td>674.00</td></tr>
@@ -373,7 +373,7 @@ export const HOW_TO_POSTS_A: PostDraft[] = [
 </ul>
 
 <h2>Bringing calculated totals into Google Docs</h2>
-<p>If typing totals by hand worries you, there is a middle ground: calculate the line items in Google Sheets, then copy the range into your Doc. Docs can paste a Sheets range as a linked table that you can refresh when the sheet changes. It works, but it adds another file to manage. For most people it's simpler to build the whole invoice in Sheets — see our <a href="/blog/google-sheets-invoice-template">Google Sheets invoice template</a> guide with formulas — or to use a generator that calculates as you type.</p>
+<p>If typing totals by hand worries you, there is a middle ground: calculate the line items in Google Sheets, then copy the range into your Doc. Docs can paste a Sheets range as a linked table that you can refresh when the sheet changes. It works, but it adds another file to manage. For most people it's simpler to build the whole invoice in Sheets (see our <a href="/blog/google-sheets-invoice-template">Google Sheets invoice template</a> guide with formulas) or to use a generator that calculates as you type.</p>
 
 <h2>Common Google Docs invoice mistakes</h2>
 <ul>
@@ -390,7 +390,7 @@ export const HOW_TO_POSTS_A: PostDraft[] = [
 <li><strong>Create a top-level Invoices folder</strong> with one subfolder per year, such as <code>2026</code>.</li>
 <li><strong>Keep two files per invoice:</strong> the editable Doc and the PDF you actually sent. The PDF is your record of what the client received.</li>
 <li><strong>Name both files the same way,</strong> starting with the invoice number so they sort in order: <code>INV-2026-0018 - Acme Ltd - 674.00</code>.</li>
-<li><strong>Keep a simple list of issued invoices</strong> — invoice number, client, amount, due date and paid date — in a single sheet or document so you can see at a glance who still owes you.</li>
+<li><strong>Keep a simple list of issued invoices</strong> (invoice number, client, amount, due date and paid date) in a single sheet or document so you can see at a glance who still owes you.</li>
 <li><strong>Restrict sharing.</strong> Keep the folder private to you (and your accountant, if needed). Clients only ever receive PDFs.</li>
 </ol>
 <p>When a client pays, move nothing and delete nothing; just mark the invoice as paid in your list and note the date. At tax time, the year folder and the list together give you a complete, ordered record of your income.</p>
@@ -399,7 +399,7 @@ export const HOW_TO_POSTS_A: PostDraft[] = [
 <p>Attach the PDF to an email addressed to the client's accounts payable contact, with the invoice number, amount and due date in the subject line. Our guide on <a href="/blog/how-to-send-an-invoice">how to send an invoice</a> has ready-to-use email templates, and if this is your first time billing a new customer, read <a href="/blog/how-to-invoice-a-client">how to invoice a client</a> for what to confirm before you send.</p>
 
 <h2>Make your invoice the faster way</h2>
-<p>Google Docs gets the job done for simple bills, but you still do all the maths and formatting. Open the <a href="/invoice-generator">free invoice generator</a>, choose the airy <a href="/invoice-templates/nordic">Nordic invoice template</a>, and download a calculated, professional PDF in minutes — no copying master documents required.</p>
+<p>Google Docs gets the job done for simple bills, but you still do all the maths and formatting. Open the <a href="/invoice-generator">free invoice generator</a>, choose the airy <a href="/invoice-templates/nordic">Nordic invoice template</a>, and download a calculated, professional PDF in minutes, no copying master documents required.</p>
 `,
   },
   {
@@ -460,7 +460,7 @@ export const HOW_TO_POSTS_A: PostDraft[] = [
 <li><strong>B4:</strong> invoice sequence number; <strong>B5:</strong> formatted invoice number</li>
 <li><strong>B6:</strong> issue date; <strong>B7:</strong> terms in days; <strong>B8:</strong> due date</li>
 <li><strong>A9:A10:</strong> Bill to block</li>
-<li><strong>A11:D11:</strong> headers — Description, Qty, Rate, Amount</li>
+<li><strong>A11:D11:</strong> headers: Description, Qty, Rate, Amount</li>
 <li><strong>A12:D21:</strong> ten line-item rows</li>
 <li><strong>D23:</strong> subtotal; <strong>C24/D24:</strong> tax rate and tax; <strong>D25:</strong> shipping; <strong>D26:</strong> total; <strong>D27:</strong> amount paid; <strong>D28:</strong> balance due</li>
 </ul>
@@ -481,7 +481,7 @@ export const HOW_TO_POSTS_A: PostDraft[] = [
 <h3>Step 4: Calculate the due date</h3>
 <p>Enter the issue date in B6 and the number of days in B7 (for example 14), then in B8:</p>
 <p><code>=B6+B7</code></p>
-<p>Format B8 as a date. Avoid leaving <code>=TODAY()</code> in the issue date of a sent invoice — it changes every day you open the file.</p>
+<p>Format B8 as a date. Avoid leaving <code>=TODAY()</code> in the issue date of a sent invoice: it changes every day you open the file.</p>
 
 <h3>Step 5: Add the line-item formula</h3>
 <p>You can put <code>=IF(B12="","",B12*C12)</code> in D12 and fill it down to D21. Or, in Google Sheets, use one formula in D12 that fills the whole column:</p>
@@ -502,7 +502,7 @@ export const HOW_TO_POSTS_A: PostDraft[] = [
 <p>Use the protected ranges feature to lock D12:D28 and B5 and B8 so they can't be overwritten. Leave descriptions, quantities, rates, dates and the tax rate editable.</p>
 
 <h3>Step 8: Set up the print layout</h3>
-<p>Before downloading, select the invoice range and set the export options to print the selection, fit to width, portrait orientation and no gridlines. Save these settings mentally — you'll use them every time.</p>
+<p>Before downloading, select the invoice range and set the export options to print the selection, fit to width, portrait orientation and no gridlines. Save these settings mentally: you'll use them every time.</p>
 
 <h3>Step 9: Create each new invoice</h3>
 <p>Duplicate the Template tab and rename the copy with the invoice number. Increase B4 by one, enter the issue date, client and line items, then download the tab as a PDF. Keep the original Template tab untouched.</p>
@@ -534,7 +534,7 @@ export const HOW_TO_POSTS_A: PostDraft[] = [
 <li><strong>Total invoiced this year:</strong> <code>=SUMIFS(E2:E200,C2:C200,"&gt;="&amp;DATE(2026,1,1),C2:C200,"&lt;="&amp;DATE(2026,12,31))</code></li>
 <li><strong>Next sequence number:</strong> if you store the plain sequence number (7, 8, 9...) in a hidden column I, <code>=MAX(I2:I200)+1</code> tells you what to type in B4 on the next invoice.</li>
 </ul>
-<p>Add conditional formatting to the Status column — for example a red fill when it reads Overdue — and you have a quick visual of who to chase this week.</p>
+<p>Add conditional formatting to the Status column (for example a red fill when it reads Overdue) and you have a quick visual of who to chase this week.</p>
 
 <h2>Common Google Sheets invoice mistakes</h2>
 <ul>
@@ -590,7 +590,7 @@ export const HOW_TO_POSTS_A: PostDraft[] = [
     content: `
 <p><strong>Quick answer:</strong> To write an invoice, start with the word Invoice and a unique invoice number, add the issue date and a specific due date, then list your business details and your client's billing details. Write one line for each product or service with a clear description, quantity, rate and amount, show the subtotal, any tax or discount and the total due, and finish with payment instructions and terms. Send the invoice as a PDF and keep a copy.</p>
 
-<p>This article focuses on the writing itself — what to put in each section and how to word it so the invoice gets approved without questions — with a full worked example. You can follow along in our <a href="/invoice-generator">free invoice generator</a>, which lays out every field for you and calculates the totals.</p>
+<p>This article focuses on the writing itself (what to put in each section and how to word it so the invoice gets approved without questions) with a full worked example. You can follow along in our <a href="/invoice-generator">free invoice generator</a>, which lays out every field for you and calculates the totals.</p>
 
 <h2>What an invoice must include</h2>
 <p>Before you write a single line, make sure you have the information each section needs. This table summarizes the parts of an invoice and what to write in each.</p>
@@ -613,19 +613,19 @@ export const HOW_TO_POSTS_A: PostDraft[] = [
 <p>Use a template rather than a blank page so nothing gets left out. A structured layout like the <a href="/invoice-templates/corporate">Corporate invoice template</a> works for most business clients.</p>
 
 <h3>Step 2: Write a clear title</h3>
-<p>Label the document <strong>Invoice</strong>. If you are registered for VAT or GST and your jurisdiction requires it, the title may need to be "Tax Invoice". Don't call a request for payment a quote or a receipt — those are different documents.</p>
+<p>Label the document <strong>Invoice</strong>. If you are registered for VAT or GST and your jurisdiction requires it, the title may need to be "Tax Invoice". Don't call a request for payment a quote or a receipt: those are different documents.</p>
 
 <h3>Step 3: Assign a unique invoice number</h3>
 <p>Each invoice gets its own number that you never reuse. A format such as <code>INV-2026-0042</code> sorts neatly and shows the year. Our <a href="/tools/invoice-number-generator">invoice number generator</a> builds one for you.</p>
 
 <h3>Step 4: Write the issue date and due date</h3>
-<p>Write the date you issue the invoice and the date payment is due. Use a real calendar date for the due date — "Due 21 November 2026" — rather than only "Net 30". Our guide to the <a href="/blog/invoice-due-date">invoice due date</a> explains how to choose one, and <a href="/blog/invoice-payment-terms">invoice payment terms explained</a> covers the common options.</p>
+<p>Write the date you issue the invoice and the date payment is due. Use a real calendar date for the due date ("Due 21 November 2026") rather than only "Net 30". Our guide to the <a href="/blog/invoice-due-date">invoice due date</a> explains how to choose one, and <a href="/blog/invoice-payment-terms">invoice payment terms explained</a> covers the common options.</p>
 
 <h3>Step 5: Write your business details</h3>
 <p>Use your legal or trading name exactly as it appears in your contract, followed by your address, email, phone and tax ID if registered. Consistency helps accounts payable match you to their supplier record.</p>
 
 <h3>Step 6: Write the client's billing details</h3>
-<p>Write the name of the legal entity that pays, not the person you work with day to day. Add the billing address and, if the client issued one, the purchase order number. Missing POs are a common reason for invoices bouncing — see <a href="/blog/po-number-on-invoice">what a PO number on an invoice is</a>.</p>
+<p>Write the name of the legal entity that pays, not the person you work with day to day. Add the billing address and, if the client issued one, the purchase order number. Missing POs are a common reason for invoices bouncing. See <a href="/blog/po-number-on-invoice">what a PO number on an invoice is</a>.</p>
 
 <h3>Step 7: Write specific line-item descriptions</h3>
 <p>This is where most invoices succeed or fail. A good description tells the approver what they're paying for without opening another document:</p>
@@ -641,17 +641,17 @@ export const HOW_TO_POSTS_A: PostDraft[] = [
 <p>Show the subtotal, then any discount, then tax as its own line, then the total due in bold. If you're registered to charge sales tax, VAT or GST, state the rate and the amount; if you aren't, don't add tax. The <a href="/tools/sales-tax-calculator">sales tax calculator</a> helps you check the figure.</p>
 
 <h3>Step 9: Write payment instructions and terms</h3>
-<p>Spell out exactly how to pay: bank details, a payment link, or accepted cards. State the terms and, if your contract allows, the late fee — our guide to <a href="/blog/late-payment-fees">charging late payment fees</a> has sample wording.</p>
+<p>Spell out exactly how to pay: bank details, a payment link, or accepted cards. State the terms and, if your contract allows, the late fee. Our guide to <a href="/blog/late-payment-fees">charging late payment fees</a> has sample wording.</p>
 
 <h3>Step 10: Write a short note and send</h3>
 <p>Add a one-line thank you and the reference the client should quote. Then export as a PDF and send it to the right billing contact. If this is a new customer, read <a href="/blog/how-to-invoice-a-client">how to invoice a client for the first time</a>.</p>
 
 <h2>Worked example: a written consulting invoice</h2>
-<p><strong>Invoice INV-2026-0042</strong> — issued 22 October 2026, due 21 November 2026. From Rivera Consulting LLC to Northwind Foods Inc., PO 55120.</p>
+<p><strong>Invoice INV-2026-0042</strong>: issued 22 October 2026, due 21 November 2026. From Rivera Consulting LLC to Northwind Foods Inc., PO 55120.</p>
 <table><thead><tr><th>Description</th><th>Qty</th><th>Rate (USD)</th><th>Amount (USD)</th></tr></thead><tbody>
 <tr><td>Pricing strategy workshop, on-site, 14 Oct 2026 (half day)</td><td>1</td><td>1,800.00</td><td>1,800.00</td></tr>
 <tr><td>Follow-up advisory calls, 15–21 Oct 2026 (hours)</td><td>4</td><td>150.00</td><td>600.00</td></tr>
-<tr><td>Travel expenses at cost — train and hotel, receipts attached</td><td>1</td><td>212.40</td><td>212.40</td></tr>
+<tr><td>Travel expenses at cost: train and hotel, receipts attached</td><td>1</td><td>212.40</td><td>212.40</td></tr>
 <tr><td colspan="3"><strong>Subtotal</strong></td><td>2,612.40</td></tr>
 <tr><td colspan="3"><strong>Total due</strong></td><td><strong>2,612.40</strong></td></tr>
 </tbody></table>
@@ -670,7 +670,7 @@ export const HOW_TO_POSTS_A: PostDraft[] = [
 <p>The structure stays the same, but what you write in the line items changes with how you charge.</p>
 
 <h3>Hourly work</h3>
-<p>Write one line per task or per week, with the hours as the quantity and your hourly rate as the rate: "UX research interviews, week of 12 Oct 2026 — 9.5 hours at 95.00". Attach or summarize a timesheet if the client asked for one.</p>
+<p>Write one line per task or per week, with the hours as the quantity and your hourly rate as the rate: "UX research interviews, week of 12 Oct 2026: 9.5 hours at 95.00". Attach or summarize a timesheet if the client asked for one.</p>
 
 <h3>Fixed-price projects</h3>
 <p>Use a quantity of 1 and the agreed fee, and name the deliverable plus the quote or contract reference: "Website redesign, per proposal P-2026-07, phase 1 of 2". If you bill in stages, say which stage this is.</p>
@@ -732,7 +732,7 @@ export const HOW_TO_POSTS_A: PostDraft[] = [
     content: `
 <p><strong>Quick answer:</strong> To fill out an invoice, work through the template from top to bottom: enter your business details, the client's Bill to details, a unique invoice number, the issue date and due date, then one line per product or service with a description, quantity and rate. Add any discount, tax and shipping, confirm the total due, fill in payment instructions and notes, and save the completed invoice as a PDF.</p>
 
-<p>This is a box-by-box guide for anyone holding a template — printed, spreadsheet or online — and wondering exactly what goes where. We cover every common field, what you can leave blank, a completed example and a final checklist. The quickest way to follow along is in our <a href="/invoice-generator">free invoice generator</a>, which has each of these boxes and calculates the totals as you type.</p>
+<p>This is a box-by-box guide for anyone holding a template (printed, spreadsheet or online) and wondering exactly what goes where. We cover every common field, what you can leave blank, a completed example and a final checklist. The quickest way to follow along is in our <a href="/invoice-generator">free invoice generator</a>, which has each of these boxes and calculates the totals as you type.</p>
 
 <h2>Before you start: gather this information</h2>
 <p>Filling out an invoice is fast when you have everything in front of you. Collect:</p>
@@ -771,25 +771,25 @@ export const HOW_TO_POSTS_A: PostDraft[] = [
 <p>Enter your name exactly as it appears on your contract or registration. Include the email address you want queries sent to. If you're registered for tax, add your tax ID in its own field; our guide to the <a href="/blog/tax-id-on-invoice">tax ID on an invoice</a> explains which number to use in which country.</p>
 
 <h3>Box 2: Bill to</h3>
-<p>Enter the business that pays — for example "Harbor Dental Group LLC", not "Dr. Lee". Use the billing address from the contract or PO. Add the accounts payable email if they gave you one.</p>
+<p>Enter the business that pays, for example "Harbor Dental Group LLC", not "Dr. Lee". Use the billing address from the contract or PO. Add the accounts payable email if they gave you one.</p>
 
 <h3>Box 3: Invoice number</h3>
 <p>Enter the next number in your sequence. If this is your first invoice, you can start at any number, such as <code>INV-0001</code> or <code>2026-101</code>, as long as each following invoice goes up by one. The <a href="/tools/invoice-number-generator">invoice number generator</a> can suggest a format.</p>
 
 <h3>Box 4: Invoice date and due date</h3>
-<p>The invoice date is the day you issue it. For the due date, add your payment terms to the invoice date — Net 15 on an invoice dated 22 October 2026 means a due date of 6 November 2026 — and enter that date.</p>
+<p>The invoice date is the day you issue it. For the due date, add your payment terms to the invoice date (Net 15 on an invoice dated 22 October 2026 means a due date of 6 November 2026) and enter that date.</p>
 
 <h3>Box 5: Line items</h3>
 <p>Fill one row per product or service. In <strong>Description</strong>, say what it is and when it was delivered. In <strong>Quantity</strong>, enter units, hours or days. In <strong>Rate</strong>, enter the price per unit. If the template doesn't calculate, multiply quantity by rate yourself and enter the amount. Billing by time? See <a href="/blog/how-to-invoice-for-hourly-work">how to invoice for hourly work</a>.</p>
 
 <h3>Box 6: Discount, tax and shipping</h3>
-<p>Only fill these if they apply. Enter a discount as a percentage or fixed amount. Enter the tax rate only if you're registered to charge it, and make sure the document meets local rules — our <a href="/blog/tax-invoice-guide">tax invoice guide</a> lists the extra fields some countries require. Enter shipping if you're passing on delivery costs.</p>
+<p>Only fill these if they apply. Enter a discount as a percentage or fixed amount. Enter the tax rate only if you're registered to charge it, and make sure the document meets local rules. Our <a href="/blog/tax-invoice-guide">tax invoice guide</a> lists the extra fields some countries require. Enter shipping if you're passing on delivery costs.</p>
 
 <h3>Box 7: Amount paid</h3>
 <p>If the client paid a deposit, enter it here so the invoice shows the balance due rather than the full total.</p>
 
 <h3>Box 8: Notes, terms and payment details</h3>
-<p>Write how to pay and where. For bank transfers, include the account name, account number and routing or sort code, or IBAN and SWIFT for international payments — see <a href="/blog/bank-details-on-invoice">bank details on an invoice</a>. Add the terms ("Payment due within 15 days") and a thank-you line.</p>
+<p>Write how to pay and where. For bank transfers, include the account name, account number and routing or sort code, or IBAN and SWIFT for international payments. See <a href="/blog/bank-details-on-invoice">bank details on an invoice</a>. Add the terms ("Payment due within 15 days") and a thank-you line.</p>
 
 <h3>Box 9: Signature and logo</h3>
 <p>Optional, but a logo makes the invoice recognizable and a signature adds a personal touch. Neither is usually a legal requirement.</p>
@@ -810,10 +810,10 @@ export const HOW_TO_POSTS_A: PostDraft[] = [
 <p>The boxes are the same everywhere, but each format has its own traps.</p>
 <ul>
 <li><strong>Paper or printed forms.</strong> Write in block capitals with a dark pen, calculate each line with a calculator and write the total twice-checked. Keep a carbon copy, a photo or a scan of every invoice you hand over, because once it leaves your hands you have no record. Number paper forms in advance so you can't skip or repeat a number.</li>
-<li><strong>Spreadsheet templates.</strong> Type only in the input cells — description, quantity, rate, dates, client — and leave the formula cells alone. After filling it out, check that the subtotal range includes every line you used, then export the invoice area to PDF.</li>
+<li><strong>Spreadsheet templates.</strong> Type only in the input cells (description, quantity, rate, dates, client) and leave the formula cells alone. After filling it out, check that the subtotal range includes every line you used, then export the invoice area to PDF.</li>
 <li><strong>Online invoice generators.</strong> Fill in the form fields and watch the live preview update. The amount column, subtotal, discount, tax and balance due calculate for you, so your main job is checking descriptions, dates and payment details before downloading.</li>
 </ul>
-<p>Whichever format you use, fill the invoice out the same way every time. A consistent order — your details, client, number, dates, lines, totals, payment — makes it much harder to forget a box.</p>
+<p>Whichever format you use, fill the invoice out the same way every time. A consistent order (your details, client, number, dates, lines, totals, payment) makes it much harder to forget a box.</p>
 
 <h2>What to leave blank (and what never to)</h2>
 <ul>
@@ -879,7 +879,7 @@ export const HOW_TO_POSTS_A: PostDraft[] = [
 <p>This guide covers the ways to invoice from a phone, a step-by-step walkthrough for iPhone and Android, a worked example for a job finished on site, and tips for making mobile invoicing faster. Everything below works with our <a href="/invoice-generator">free invoice generator</a>, which runs in your phone's browser with no sign-up.</p>
 
 <h2>Why invoice from your phone?</h2>
-<p>The best moment to send an invoice is right after the job is done and the client is happy. If you're a tradesperson, cleaner, <a href="/blog/photography-invoice-template">photographer</a> or mobile service provider, that moment usually happens away from a desk. Invoicing from your phone means you don't wait until the evening — or the weekend — to bill, and every day saved at the start is a day closer to getting paid. Our guide on <a href="/blog/how-to-get-paid-faster">how to get paid faster</a> covers more ways to shorten the gap.</p>
+<p>The best moment to send an invoice is right after the job is done and the client is happy. If you're a tradesperson, cleaner, <a href="/blog/photography-invoice-template">photographer</a> or mobile service provider, that moment usually happens away from a desk. Invoicing from your phone means you don't wait until the evening (or the weekend) to bill, and every day saved at the start is a day closer to getting paid. Our guide on <a href="/blog/how-to-get-paid-faster">how to get paid faster</a> covers more ways to shorten the gap.</p>
 
 <h2>3 ways to make an invoice on a phone</h2>
 <table><thead><tr><th>Method</th><th>Cost</th><th>Install needed</th><th>Calculates totals</th><th>Best for</th></tr></thead><tbody>
@@ -896,7 +896,7 @@ export const HOW_TO_POSTS_A: PostDraft[] = [
 <li><strong>Pick a template.</strong> Choose a layout with large, clear text. Simple designs such as the <a href="/invoice-templates/modern">Modern invoice template</a> read well on small screens, which matters because your client may also open the invoice on a phone.</li>
 <li><strong>Enter your business details.</strong> Add your business name, email, phone, address and tax ID if registered. Upload your logo from your photo library if you have one.</li>
 <li><strong>Enter the client's details.</strong> Type the client's name or business name, billing address and email. Ask for these before you leave the job site.</li>
-<li><strong>Set the invoice number and dates.</strong> Use the next number in your sequence — the <a href="/tools/invoice-number-generator">invoice number generator</a> can suggest a format — then set the issue date and due date.</li>
+<li><strong>Set the invoice number and dates.</strong> Use the next number in your sequence (the <a href="/tools/invoice-number-generator">invoice number generator</a> can suggest a format), then set the issue date and due date.</li>
 <li><strong>Add line items.</strong> Add a line for each service, part or product with a description, quantity and rate. The totals calculate as you type.</li>
 <li><strong>Add tax, discount or amount paid.</strong> Enter the tax rate only if you're registered to charge it; the <a href="/tools/sales-tax-calculator">sales tax calculator</a> helps you check it. Enter any deposit already received under amount paid.</li>
 <li><strong>Add payment details and notes.</strong> Include your bank details or payment link and your terms. A short thank-you note helps.</li>
@@ -915,7 +915,7 @@ export const HOW_TO_POSTS_A: PostDraft[] = [
 <h2>Worked example: invoicing on site after a repair</h2>
 <p>A handyman finishes a kitchen faucet replacement and invoices before leaving the driveway.</p>
 <table><thead><tr><th>Description</th><th>Qty</th><th>Rate (USD)</th><th>Amount (USD)</th></tr></thead><tbody>
-<tr><td>Labor — replace kitchen faucet and supply lines (hours)</td><td>1.5</td><td>80.00</td><td>120.00</td></tr>
+<tr><td>Labor: replace kitchen faucet and supply lines (hours)</td><td>1.5</td><td>80.00</td><td>120.00</td></tr>
 <tr><td>Replacement faucet cartridge</td><td>1</td><td>34.50</td><td>34.50</td></tr>
 <tr><td>Call-out fee</td><td>1</td><td>45.00</td><td>45.00</td></tr>
 <tr><td colspan="3"><strong>Total due</strong></td><td><strong>199.50</strong></td></tr>
@@ -927,7 +927,7 @@ export const HOW_TO_POSTS_A: PostDraft[] = [
 <ol>
 <li><strong>Fill in your business details once.</strong> Enter your name, address, phone, email, tax ID, logo and signature on the phone you'll use, so the saved draft carries them forward.</li>
 <li><strong>Write your standard payment notes.</strong> Prepare your bank details, payment link and terms ("Due on receipt" or "Net 7") in a note you can paste.</li>
-<li><strong>List your common line items and rates.</strong> Call-out fee, hourly labor, standard packages — keep the exact wording and prices handy.</li>
+<li><strong>List your common line items and rates.</strong> Call-out fee, hourly labor, standard packages: keep the exact wording and prices handy.</li>
 <li><strong>Decide your numbering.</strong> Know the next invoice number before you leave, especially if you sometimes invoice from a laptop as well. Two devices are the most common cause of duplicate numbers.</li>
 <li><strong>Test a download.</strong> Download a sample PDF once and confirm where your phone saves it, so you're not hunting for the file in front of a client.</li>
 </ol>
@@ -937,7 +937,7 @@ export const HOW_TO_POSTS_A: PostDraft[] = [
 <ul>
 <li><strong>Reuse your saved draft.</strong> Our generator saves your draft in the browser, so your business details are already there next time on the same phone.</li>
 <li><strong>Keep standard descriptions in a note.</strong> Copy and paste your common line items and rates instead of typing them each time.</li>
-<li><strong>Add a pay-now link.</strong> Clients pay faster when they can tap and pay on the spot — see <a href="/blog/add-payment-link-to-invoice">how to add a payment link to an invoice</a>.</li>
+<li><strong>Add a pay-now link.</strong> Clients pay faster when they can tap and pay on the spot. See <a href="/blog/add-payment-link-to-invoice">how to add a payment link to an invoice</a>.</li>
 <li><strong>Send a receipt after payment.</strong> When the client pays, send a confirmation; our <a href="/blog/payment-receipt-template">payment receipt template</a> guide shows what to include.</li>
 <li><strong>Use Wi-Fi or good signal for uploads.</strong> Logo and signature images upload faster, and the PDF downloads cleanly.</li>
 </ul>
@@ -996,10 +996,10 @@ export const HOW_TO_POSTS_A: PostDraft[] = [
     content: `
 <p><strong>Quick answer:</strong> To invoice a client for the first time, agree the price and payment terms in writing, collect the client's legal billing name, address and accounts payable email, then create an invoice with a unique number, issue and due dates, clear line items, the total due and payment instructions. Send it as a PDF with a short email, note the due date, and follow up politely if payment doesn't arrive on time.</p>
 
-<p>This guide covers the full first-invoice process: what to settle before the work starts, what to ask the client, how to create and send the invoice, a sample email and a worked example with a deposit deducted. You can create the invoice itself in our <a href="/invoice-generator">free invoice generator</a> — no account needed.</p>
+<p>This guide covers the full first-invoice process: what to settle before the work starts, what to ask the client, how to create and send the invoice, a sample email and a worked example with a deposit deducted. You can create the invoice itself in our <a href="/invoice-generator">free invoice generator</a>, no account needed.</p>
 
 <h2>Before the work starts: agree the terms</h2>
-<p>Most first-invoice problems start before the invoice exists. Put these points in writing — a signed contract is best, an email the client replies "agreed" to is the minimum:</p>
+<p>Most first-invoice problems start before the invoice exists. Put these points in writing: a signed contract is best, an email the client replies "agreed" to is the minimum:</p>
 <ul>
 <li>The scope of work and deliverables</li>
 <li>Your price: fixed fee, hourly or daily rate, or per item</li>
@@ -1037,7 +1037,7 @@ export const HOW_TO_POSTS_A: PostDraft[] = [
 <h2>Worked example: first invoice with a deposit</h2>
 <p>A designer quoted 2,400.00 for a brand identity package and took a 50% deposit before starting. The final invoice looks like this:</p>
 <table><thead><tr><th>Description</th><th>Qty</th><th>Rate (USD)</th><th>Amount (USD)</th></tr></thead><tbody>
-<tr><td>Brand identity package — logo suite, color palette, typography guide (per quote Q-2026-014)</td><td>1</td><td>2,000.00</td><td>2,000.00</td></tr>
+<tr><td>Brand identity package: logo suite, color palette, typography guide (per quote Q-2026-014)</td><td>1</td><td>2,000.00</td><td>2,000.00</td></tr>
 <tr><td>Business card and letterhead design</td><td>1</td><td>400.00</td><td>400.00</td></tr>
 <tr><td colspan="3">Total</td><td>2,400.00</td></tr>
 <tr><td colspan="3">Less deposit paid 1 October 2026 (INV-2026-003)</td><td>−1,200.00</td></tr>
@@ -1047,7 +1047,7 @@ export const HOW_TO_POSTS_A: PostDraft[] = [
 
 <h2>Sample email for your first invoice</h2>
 <blockquote>
-<p><strong>Subject:</strong> Invoice INV-2026-004 from Studio Lane — 1,200.00 due 5 November 2026</p>
+<p><strong>Subject:</strong> Invoice INV-2026-004 from Studio Lane: 1,200.00 due 5 November 2026</p>
 <p>Hi Priya,</p>
 <p>Thank you for the opportunity to work on the new brand identity. Please find attached invoice INV-2026-004 for the remaining balance of 1,200.00, due by 5 November 2026.</p>
 <p>Payment details are on the invoice. Please quote INV-2026-004 as the reference. If you need anything else from me to process it, such as a supplier form, just let me know.</p>
@@ -1064,7 +1064,7 @@ export const HOW_TO_POSTS_A: PostDraft[] = [
 <tr><td>On completion</td><td>One invoice when the work is delivered</td><td>Short projects with trusted clients</td></tr>
 <tr><td>Monthly in arrears</td><td>Invoice at month end for work done that month</td><td>Ongoing or hourly work</td></tr>
 </tbody></table>
-<p>With a new client you have no payment history to go on, so it's reasonable to reduce your exposure: take a deposit, bill in milestones, or keep the first project small. Whatever you choose, invoice on the day the trigger happens — the day the milestone is approved or the month ends — rather than when you get round to it. A consistent, prompt invoicing rhythm also tells the client that you run a professional business and expect to be paid on schedule.</p>
+<p>With a new client you have no payment history to go on, so it's reasonable to reduce your exposure: take a deposit, bill in milestones, or keep the first project small. Whatever you choose, invoice on the day the trigger happens (the day the milestone is approved or the month ends) rather than when you get round to it. A consistent, prompt invoicing rhythm also tells the client that you run a professional business and expect to be paid on schedule.</p>
 <p>If the client is in another country, agree the currency and payment method upfront too, because transfer fees and exchange rates can change what actually lands in your account.</p>
 
 <h2>After you send: follow up and record payment</h2>
@@ -1169,27 +1169,27 @@ export const HOW_TO_POSTS_A: PostDraft[] = [
 <ol>
 <li><strong>Check the invoice's status.</strong> Has it been sent? Paid, even partly? Included in a sales tax or VAT return? Recorded in the client's system? The answers decide whether voiding is appropriate or a credit note is needed.</li>
 <li><strong>Talk to the client.</strong> If they've received it, agree that it should be cancelled before you act, and confirm they haven't scheduled a payment.</li>
-<li><strong>Mark the invoice as void.</strong> In accounting software, use its void or cancel action, which normally keeps the record at zero value. With a PDF-based workflow, keep the original file and save a copy clearly marked VOID — a diagonal watermark works well — with the void date and reason.</li>
+<li><strong>Mark the invoice as void.</strong> In accounting software, use its void or cancel action, which normally keeps the record at zero value. With a PDF-based workflow, keep the original file and save a copy clearly marked VOID (a diagonal watermark works well) with the void date and reason.</li>
 <li><strong>Update your invoice log.</strong> Keep the number in your register with status "Void", the date and a short reason, for example "Duplicate of INV-2026-0108". Never delete the row or reuse the number. Our <a href="/blog/invoice-numbering-system">invoice numbering system</a> guide explains why gaps raise questions.</li>
 <li><strong>Adjust your books.</strong> Remove the amount from accounts receivable and from income for the period. If you use cash-basis records and nothing was paid, there may be nothing else to change; if in doubt, ask your bookkeeper.</li>
 <li><strong>Issue a replacement if needed.</strong> Create a new invoice with the next number in your sequence and reference the voided one: "Replaces INV-2026-0107 (void)". The <a href="/tools/invoice-number-generator">invoice number generator</a> helps keep the format consistent.</li>
-<li><strong>Keep everything.</strong> Retain the voided invoice, the reason and any correspondence for as long as you keep other financial records — see <a href="/blog/how-long-to-keep-invoices">how long to keep invoices</a>.</li>
+<li><strong>Keep everything.</strong> Retain the voided invoice, the reason and any correspondence for as long as you keep other financial records. See <a href="/blog/how-long-to-keep-invoices">how long to keep invoices</a>.</li>
 </ol>
 
 <h2>Worked example: invoice sent to the wrong entity</h2>
 <p>A consultant sent INV-2026-0107 for 3,200.00 to Northwind Holdings when the contract was with its subsidiary, Northwind Foods Inc. The client had already booked the invoice, so a credit note is used rather than a quiet void. Separately, INV-2026-0108 was accidentally emailed twice, and the second copy generated INV-2026-0110 in the log.</p>
 <table><thead><tr><th>Document</th><th>Date</th><th>Billed to</th><th>Amount (USD)</th><th>Status / note</th></tr></thead><tbody>
 <tr><td>INV-2026-0107</td><td>15 Oct 2026</td><td>Northwind Holdings</td><td>3,200.00</td><td>Cancelled by CN-2026-0012</td></tr>
-<tr><td>CN-2026-0012</td><td>22 Oct 2026</td><td>Northwind Holdings</td><td>−3,200.00</td><td>Credits INV-2026-0107 in full — wrong entity</td></tr>
+<tr><td>CN-2026-0012</td><td>22 Oct 2026</td><td>Northwind Holdings</td><td>−3,200.00</td><td>Credits INV-2026-0107 in full: wrong entity</td></tr>
 <tr><td>INV-2026-0108</td><td>16 Oct 2026</td><td>Bayview Retail</td><td>1,450.00</td><td>Valid, awaiting payment</td></tr>
 <tr><td>INV-2026-0109</td><td>22 Oct 2026</td><td>Northwind Foods Inc.</td><td>3,200.00</td><td>Replaces INV-2026-0107</td></tr>
-<tr><td>INV-2026-0110</td><td>22 Oct 2026</td><td>Bayview Retail</td><td>0.00</td><td>VOID — duplicate of INV-2026-0108</td></tr>
+<tr><td>INV-2026-0110</td><td>22 Oct 2026</td><td>Bayview Retail</td><td>0.00</td><td>VOID: duplicate of INV-2026-0108</td></tr>
 </tbody></table>
 <p>The net position is correct: Northwind Holdings owes 3,200.00 − 3,200.00 = 0.00, Northwind Foods owes 3,200.00, Bayview owes 1,450.00 once, and every number in the sequence is accounted for.</p>
 
 <h2>Email to send when you void an invoice</h2>
 <blockquote>
-<p><strong>Subject:</strong> Invoice INV-2026-0110 cancelled — duplicate of INV-2026-0108</p>
+<p><strong>Subject:</strong> Invoice INV-2026-0110 cancelled: duplicate of INV-2026-0108</p>
 <p>Hi Jordan,</p>
 <p>Invoice INV-2026-0110 was sent to you in error and duplicates INV-2026-0108. I've voided INV-2026-0110, so please disregard it. The amount due remains 1,450.00 on INV-2026-0108, due 15 November 2026.</p>
 <p>Apologies for the confusion, and thank you.</p>
@@ -1202,13 +1202,13 @@ export const HOW_TO_POSTS_A: PostDraft[] = [
 <li><strong>Invoice generator or PDF workflow.</strong> There's no database doing it for you, so your invoice log is the official record. Keep the original PDF untouched, create a copy watermarked VOID, update the log entry with the status and reason, and file both copies together.</li>
 <li><strong>Paper invoices.</strong> Write VOID clearly across the original and any copies, keep them in your invoice book in number order, and note the reason on the stub.</li>
 </ul>
-<p>In every case the goal is the same: anyone reviewing your records later — you, your accountant or a tax inspector — can see that the number was used, why it was cancelled and what replaced it.</p>
+<p>In every case the goal is the same: anyone reviewing your records later (you, your accountant or a tax inspector) can see that the number was used, why it was cancelled and what replaced it.</p>
 
 <h2>Mistakes to avoid when cancelling invoices</h2>
 <ul>
 <li><strong>Deleting a sent invoice.</strong> The client still has it, and your records now don't.</li>
 <li><strong>Reusing the number.</strong> Two different invoices with one number is a reconciliation headache.</li>
-<li><strong>Voiding a paid invoice.</strong> The payment needs a home — use a credit note and refund or apply it.</li>
+<li><strong>Voiding a paid invoice.</strong> The payment needs a home: use a credit note and refund or apply it.</li>
 <li><strong>Editing and resending under the same number.</strong> The client may now hold two versions of "the same" invoice.</li>
 <li><strong>Not telling the client.</strong> They may pay a cancelled invoice and wait for a refund.</li>
 </ul>

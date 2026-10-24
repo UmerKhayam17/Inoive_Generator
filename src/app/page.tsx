@@ -37,7 +37,7 @@ import {
 } from "@/lib/seo";
 
 const TITLE = `Free Online Invoicing for Freelancers & Small Business | ${SITE.name}`;
-const DESCRIPTION = `Create professional invoices in your browser and download a clean PDF instantly. ${TEMPLATE_COUNT} templates, logo upload, tax and discount calculations, autosave — free, no signup.`;
+const DESCRIPTION = `Create professional invoices in your browser and download a clean PDF instantly. ${TEMPLATE_COUNT} templates, logo upload, tax and discount calculations, autosave. Free, no signup.`;
 
 export const metadata: Metadata = {
   title: { absolute: TITLE },
@@ -91,7 +91,7 @@ const FEATURES = [
   {
     icon: Layers,
     title: `${TEMPLATE_COUNT} professional templates`,
-    body: "Switch template at any time. The live preview and the downloaded PDF always use the design you picked — nothing shifts on export.",
+    body: "Switch template at any time. The live preview and the downloaded PDF always use the design you picked. Nothing shifts on export.",
   },
   {
     icon: Palette,
@@ -111,7 +111,7 @@ const FEATURES = [
   {
     icon: Clock,
     title: "Autosave drafts",
-    body: "Close the tab mid-invoice and come back later — your draft, client details and template choice are restored automatically.",
+    body: "Close the tab mid-invoice and come back later: your draft, client details and template choice are restored automatically.",
   },
 ];
 
@@ -202,7 +202,7 @@ export default function Home() {
               </div>
               <dl className="mt-4 space-y-2 text-sm">
                 {[
-                  ["Website design — discovery", "$1,200.00"],
+                  ["Website design: discovery", "$1,200.00"],
                   ["Frontend development · 18 h", "$1,530.00"],
                   ["Tax (8.25%)", "$225.22"],
                 ].map(([k, v]) => (
@@ -237,7 +237,7 @@ export default function Home() {
             Why {SITE.name} exists
           </p>
           <h2 className="mt-3 text-3xl font-extrabold sm:text-4xl">
-            A real PDF tool — not a landing page that gates downloads
+            A real PDF tool, not a landing page that gates downloads
           </h2>
           <p className="mt-4 text-lg text-muted-foreground leading-relaxed">
             {EDITORIAL.mission} We built {SITE.name} at {SITE.host} because most “free invoice”
@@ -315,7 +315,7 @@ export default function Home() {
                 Free professional invoice templates
               </h2>
               <p className="mt-4 text-lg text-muted-foreground">
-                Professional designs for every industry — print-tested and pixel-perfect in PDF.
+                Professional designs for every industry, print-tested and pixel-perfect in PDF.
               </p>
             </div>
             <Button asChild variant="outline">
@@ -378,7 +378,7 @@ export default function Home() {
         <div className="mx-auto max-w-[96rem] px-4 sm:px-6 lg:px-8">
           <h2 className="text-3xl font-extrabold sm:text-4xl">Invoices for your country</h2>
           <p className="mt-4 max-w-2xl text-lg text-muted-foreground">
-            Localized generators ship with the right currency and tax ID labels — not a US invoice
+            Localized generators ship with the right currency and tax ID labels, not a US invoice
             with the country name swapped in.
           </p>
           <ul className="mt-8 grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
@@ -411,7 +411,7 @@ export default function Home() {
             </h2>
             <p className="mt-4 text-lg text-muted-foreground">
               Practical, plain-English guides on payment terms, tax invoices, reminders and getting
-              paid on time — written for freelancers and small businesses.
+              paid on time, written for freelancers and small businesses.
             </p>
           </div>
           <Button asChild variant="outline">

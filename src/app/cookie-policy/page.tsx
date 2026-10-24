@@ -3,7 +3,7 @@ import { LegalPage } from "@/components/layout/LegalPage";
 import { SITE } from "@/data/site";
 import { canonicalFor, pageSocial } from "@/lib/seo";
 
-const TITLE = `Cookie Policy — ${SITE.name}`;
+const TITLE = `Cookie Policy | ${SITE.name}`;
 const DESCRIPTION =
   "Which cookies Invoice Creator uses, why we use them, and how to control or disable them in your browser.";
 
@@ -55,7 +55,7 @@ export default function Page() {
           <tr>
             <td>Preferences (local storage)</td>
             <td>Remembers your light/dark theme and your saved invoice draft.</td>
-            <td>No — stored only on your device</td>
+            <td>No, stored only on your device</td>
           </tr>
           <tr>
             <td>Analytics</td>

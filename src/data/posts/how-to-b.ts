@@ -673,7 +673,7 @@ export const HOW_TO_POSTS_B: PostDraft[] = [
 <p>This guide explains what belongs on each line, how itemized and summary invoices compare, how detailed to be, and includes a worked example with labor, parts and tax. Our <a href="/invoice-generator">free invoice generator</a> calculates every line total and the grand total automatically, so itemizing takes seconds rather than adding risk.</p>
 
 <h2>What is an itemized invoice?</h2>
-<p>Every invoice has line items, but an itemized invoice uses them properly: one line per distinct thing you charge for. A plumber's invoice that says "Repair work — $448.70" is a lump-sum invoice. One that lists labor hours, the faucet, the supply lines and the consumables separately, with tax applied correctly, is itemized.</p>
+<p>Every invoice has line items, but an itemized invoice uses them properly: one line per distinct thing you charge for. A plumber's invoice that says "Repair work: $448.70" is a lump-sum invoice. One that lists labor hours, the faucet, the supply lines and the consumables separately, with tax applied correctly, is itemized.</p>
 <p>Itemizing is not about length; it is about clarity. A customer who can see each charge is less likely to query the invoice, and you have a clear record if they do. Vague, bundled descriptions are high on our list of <a href="/blog/common-invoice-mistakes">common invoice mistakes</a> for exactly that reason.</p>
 <p>The term "itemized bill" is also used in consumer settings. Hospital patients, car owners and tenants often ask for an itemized statement of charges to check what they are being asked to pay. Some jurisdictions give consumers a right to request one in specific sectors, so if you serve the public, assume that any customer may ask for a line-by-line breakdown and make it easy to provide. If your invoices are already itemized, there is nothing extra to prepare.</p>
 
@@ -1132,7 +1132,7 @@ export const HOW_TO_POSTS_B: PostDraft[] = [
 
 <h2>Email template for an invoice correction</h2>
 <blockquote>
-<p><strong>Subject:</strong> Correction to invoice INV-2026-0412 – revised amount $3,420.00</p>
+<p><strong>Subject:</strong> Correction to invoice INV-2026-0412: revised amount $3,420.00</p>
 <p>Hi [Client name],</p>
 <p>Thanks for flagging the hours on invoice INV-2026-0412. You're right: the timesheet shows 36 hours, not 40. I've attached credit note CN-2026-0009 for $380.00, which brings the amount due to $3,420.00.</p>
 <p>The payment due date remains [date]. Apologies for the error, and let me know if you need anything else to process this.</p>

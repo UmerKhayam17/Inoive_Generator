@@ -5,7 +5,7 @@ import { blogPagePosts } from "@/data/blog";
 import { SITE } from "@/data/site";
 import { absoluteUrl, canonicalFor, pageSocial } from "@/lib/seo";
 
-const TITLE = `Invoicing Blog — Guides, Templates & Tax Explainers | ${SITE.name}`;
+const TITLE = `Invoicing Blog: Guides, Templates & Tax Explainers | ${SITE.name}`;
 const DESCRIPTION =
   "Practical invoicing guides for freelancers and small businesses: how to create and send invoices, invoice vs receipt, tax and VAT requirements, and template design tips.";
 

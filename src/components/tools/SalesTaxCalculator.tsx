@@ -69,7 +69,7 @@ export function SalesTaxCalculatorTool() {
         </div>
         <p className="text-xs text-muted-foreground leading-relaxed">
           Rates vary by country, state and product type. This calculator does not look up live rates
-          and is not tax advice — confirm the rate your registration requires before you invoice.
+          and is not tax advice. Confirm the rate your registration requires before you invoice.
         </p>
       </form>
 

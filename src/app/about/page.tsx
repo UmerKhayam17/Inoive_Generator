@@ -7,7 +7,7 @@ import { SITE } from "@/data/site";
 import { TEMPLATE_COUNT } from "@/data/templates";
 import { absoluteUrl, canonicalFor, pageSocial, siteLogoUrl } from "@/lib/seo";
 
-const TITLE = `About ${SITE.name} — Free Invoicing Tools for Small Business`;
+const TITLE = `About ${SITE.name}: Free Invoicing Tools for Small Business`;
 const DESCRIPTION = `${SITE.name} is a free online invoice generator at ${SITE.host}, operated by ${SITE.operator} in ${SITE.address}. No signup, professional PDF invoices.`;
 
 export const metadata: Metadata = {
@@ -111,7 +111,7 @@ export default function Page() {
             <p>
               Invoice creation is privacy-conscious by design. Company details, customer details,
               line items, logos and totals are processed and stored in your browser&apos;s local
-              storage — they are never transmitted to our servers, and we cannot read them. No
+              storage. They are never transmitted to our servers, and we cannot read them. No
               account is required.
             </p>
             <p>
@@ -159,7 +159,7 @@ export default function Page() {
               <p className="mt-5 font-display text-3xl font-extrabold">$0</p>
               <p className="text-sm text-muted-foreground">the price to create and download</p>
               <p className="mt-5 font-display text-3xl font-extrabold">0</p>
-              <p className="text-sm text-muted-foreground">accounts required — ever</p>
+              <p className="text-sm text-muted-foreground">accounts required, ever</p>
             </div>
           </aside>
         </div>

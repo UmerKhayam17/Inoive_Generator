@@ -29,7 +29,7 @@ const display = Sora({
 export const metadata: Metadata = {
   metadataBase: new URL(SITE.url),
   title: {
-    default: `${SITE.name} — Free Invoice Generator`,
+    default: `${SITE.name}: Free Invoice Generator`,
     template: `%s | ${SITE.name}`,
   },
   description: SITE.description,
@@ -38,13 +38,13 @@ export const metadata: Metadata = {
   openGraph: {
     type: "website",
     siteName: SITE.name,
-    title: `${SITE.name} — Free Invoice Generator`,
+    title: `${SITE.name}: Free Invoice Generator`,
     description: SITE.description,
     images: [defaultShareImage()],
   },
   twitter: {
     card: "summary_large_image",
-    title: `${SITE.name} — Free Invoice Generator`,
+    title: `${SITE.name}: Free Invoice Generator`,
     description: SITE.description,
     images: [defaultShareImage().url],
   },

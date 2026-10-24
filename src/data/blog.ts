@@ -51,7 +51,7 @@ export const CATEGORIES = [
     slug: "comparisons",
     name: "Comparisons",
     description:
-      "Side-by-side explainers that help you choose between invoice types, document formats and common billing approaches — without sales fluff.",
+      "Side-by-side explainers that help you choose between invoice types, document formats and common billing approaches, without sales fluff.",
   },
   {
     slug: "guides",
@@ -63,7 +63,7 @@ export const CATEGORIES = [
     slug: "tax-compliance",
     name: "Tax & Compliance",
     description:
-      "Jurisdiction-aware overviews of tax IDs, sales tax and VAT fields on invoices. General information only — not tax advice; always verify with a local professional.",
+      "Jurisdiction-aware overviews of tax IDs, sales tax and VAT fields on invoices. General information only, not tax advice; always verify with a local professional.",
   },
   {
     slug: "design-templates",
@@ -75,7 +75,7 @@ export const CATEGORIES = [
     slug: "industry-invoices",
     name: "Industry Invoices",
     description:
-      "Invoice templates and billing guides for specific trades and professions — contractors, photographers, cleaners, consultants, landlords and more.",
+      "Invoice templates and billing guides for specific trades and professions: contractors, photographers, cleaners, consultants, landlords and more.",
   },
   {
     slug: "freelancing",
@@ -125,12 +125,12 @@ const CORE_POSTS: PostDraft[] = [
 <p>This guide covers the four common ways to generate an invoice, which one suits which business, and a step-by-step walkthrough using our <a href="/invoice-generator">free invoice generator</a>. If you want a field-by-field explanation of what an invoice must contain, read our companion guide on <a href="/blog/how-to-create-an-invoice">how to create an invoice</a>.</p>
 
 <h2>What "generating an invoice" actually means</h2>
-<p>Generating an invoice means producing a finished, sendable billing document — usually a PDF — from your business details, your client's details and the work you delivered. The difference between <em>creating</em> an invoice by hand and <em>generating</em> one is automation: a generator calculates line totals, subtotals, tax and the amount due for you, formats the layout, and exports a clean file you can send straight away.</p>
+<p>Generating an invoice means producing a finished, sendable billing document (usually a PDF) from your business details, your client's details and the work you delivered. The difference between <em>creating</em> an invoice by hand and <em>generating</em> one is automation: a generator calculates line totals, subtotals, tax and the amount due for you, formats the layout, and exports a clean file you can send straight away.</p>
 <p>Whatever tool you use, the output has to work for the person paying it. Accounts payable teams need to see who you are, who you are billing, what you delivered, how much is due, how to pay and by when. If any of those is missing, the invoice gets queried instead of paid. See <a href="/blog/what-is-an-invoice">what is an invoice</a> if you are new to billing.</p>
 
 <h2>4 ways to generate an invoice (compared)</h2>
 <table><thead><tr><th>Method</th><th>Cost</th><th>Speed</th><th>Automatic maths</th><th>Best for</th></tr></thead><tbody>
-<tr><td>Online invoice generator</td><td>Free</td><td>Fast — a few minutes</td><td>Yes</td><td>Freelancers, contractors, small businesses, one-off invoices</td></tr>
+<tr><td>Online invoice generator</td><td>Free</td><td>Fast: a few minutes</td><td>Yes</td><td>Freelancers, contractors, small businesses, one-off invoices</td></tr>
 <tr><td>Word or Google Docs template</td><td>Free</td><td>Slow</td><td>No</td><td>Very occasional invoices with simple lines</td></tr>
 <tr><td>Excel or Google Sheets template</td><td>Free</td><td>Medium</td><td>Only if formulas are set up correctly</td><td>People comfortable maintaining spreadsheets</td></tr>
 <tr><td>Accounting or billing software</td><td>Monthly subscription</td><td>Fast after setup</td><td>Yes</td><td>Businesses with high volume, inventory or bookkeeping needs</td></tr>
@@ -140,10 +140,10 @@ const CORE_POSTS: PostDraft[] = [
 <p>An online invoice generator (also called an invoice maker or bill generator) is a web form with a live preview. You type your details, the tool does the calculations, and you download a professional PDF. There is nothing to install, and good generators don't make you sign up or put a watermark on your invoice. For most freelancers and small businesses, this is the fastest way to generate an invoice that looks professional.</p>
 
 <h3>2. Word or Google Docs</h3>
-<p>Word-processor templates look fine, but every number is typed by hand. Totals don't update when you change a quantity, which is one of the most common sources of <a href="/blog/common-invoice-mistakes">invoice mistakes</a>. Always export to PDF before sending — never send an editable .docx as your invoice of record.</p>
+<p>Word-processor templates look fine, but every number is typed by hand. Totals don't update when you change a quantity, which is one of the most common sources of <a href="/blog/common-invoice-mistakes">invoice mistakes</a>. Always export to PDF before sending. Never send an editable .docx as your invoice of record.</p>
 
 <h3>3. Excel or Google Sheets</h3>
-<p>A spreadsheet can calculate totals, but only if every formula is correct and stays correct as you add rows. Spreadsheets also make invoice numbering easy to break when you copy last month's file. If you go this route, lock the formula cells and keep a separate log of issued numbers — our <a href="/blog/invoice-numbering-system">invoice numbering guide</a> explains how.</p>
+<p>A spreadsheet can calculate totals, but only if every formula is correct and stays correct as you add rows. Spreadsheets also make invoice numbering easy to break when you copy last month's file. If you go this route, lock the formula cells and keep a separate log of issued numbers. Our <a href="/blog/invoice-numbering-system">invoice numbering guide</a> explains how.</p>
 
 <h3>4. Accounting software</h3>
 <p>Accounting platforms generate invoices from customer records, track payments and send automatic reminders. They make sense once you issue many invoices a month or need bookkeeping, inventory and reporting in one place. For a freelancer sending a handful of invoices, a paid subscription is often more than you need.</p>
@@ -161,10 +161,10 @@ const CORE_POSTS: PostDraft[] = [
 <p>Bill the legal entity named in your contract or purchase order, not just the person you work with day to day. Add their billing address, their tax ID where required, and their <a href="/blog/po-number-on-invoice">PO number</a> if they use purchase orders. A missing PO is one of the fastest ways to get an invoice sent back.</p>
 
 <h3>Step 4: Set the invoice number, date and due date</h3>
-<p>Every invoice needs a unique, sequential number. If you don't have a system yet, our <a href="/tools/invoice-number-generator">invoice number generator</a> builds a consistent format for you, such as <code>INV-2026-0042</code>. Then set the issue date and a due date that matches your <a href="/blog/invoice-payment-terms">payment terms</a> — for example "Net 14, due 5 November 2026" rather than "Net 14" on its own.</p>
+<p>Every invoice needs a unique, sequential number. If you don't have a system yet, our <a href="/tools/invoice-number-generator">invoice number generator</a> builds a consistent format for you, such as <code>INV-2026-0042</code>. Then set the issue date and a due date that matches your <a href="/blog/invoice-payment-terms">payment terms</a>, for example "Net 14, due 5 November 2026" rather than "Net 14" on its own.</p>
 
 <h3>Step 5: List your products or services</h3>
-<p>Add one line item for each product or service, with a clear description, quantity and rate. The generator multiplies quantity by rate and adds up the subtotal automatically. Write descriptions your client can approve without asking a question: "Logo design — 3 concepts, 2 revision rounds" beats "Design work". If you bill by the hour, see <a href="/blog/how-to-invoice-for-hourly-work">how to invoice for hourly work</a>.</p>
+<p>Add one line item for each product or service, with a clear description, quantity and rate. The generator multiplies quantity by rate and adds up the subtotal automatically. Write descriptions your client can approve without asking a question: "Logo design: 3 concepts, 2 revision rounds" beats "Design work". If you bill by the hour, see <a href="/blog/how-to-invoice-for-hourly-work">how to invoice for hourly work</a>.</p>
 
 <h3>Step 6: Add tax, discounts and shipping</h3>
 <p>Choose your currency, then apply any discount, tax rate and shipping charges. Show tax as its own line so the client can reclaim it where they are entitled to. If you are not sure what rate applies, our <a href="/tools/sales-tax-calculator">sales tax calculator</a> helps you check the numbers, and our <a href="/blog/vat-invoice-guide">VAT</a>, <a href="/blog/gst-invoice-guide">GST</a> and <a href="/blog/tax-invoice-guide">tax invoice</a> guides cover the required fields. If you are not registered for tax, don't charge it.</p>
@@ -173,22 +173,22 @@ const CORE_POSTS: PostDraft[] = [
 <p>Put your bank details or payment link on the invoice itself, along with accepted payment methods and any late-payment terms you agreed in your contract. A short thank-you note and an optional signature make the invoice feel personal. You can also add a watermark such as "PAID" or "DRAFT" when you need to.</p>
 
 <h3>Step 8: Download the PDF and send it</h3>
-<p>Check the live preview one last time, then download your invoice as a PDF. Name the file clearly — for example <code>Invoice-INV-2026-0042-ClientName.pdf</code> — and email it to the client's accounts payable address with the invoice number and due date in the subject line. Our guide on <a href="/blog/how-to-send-an-invoice">how to send an invoice</a> includes ready-to-use email templates.</p>
+<p>Check the live preview one last time, then download your invoice as a PDF. Name the file clearly (for example <code>Invoice-INV-2026-0042-ClientName.pdf</code>) and email it to the client's accounts payable address with the invoice number and due date in the subject line. Our guide on <a href="/blog/how-to-send-an-invoice">how to send an invoice</a> includes ready-to-use email templates.</p>
 
 <h2>Generate a country-specific invoice</h2>
 <p>Tax ID labels, currencies and required fields vary by country. Our country presets fill in the right defaults so your invoice matches local expectations:</p>
 <ul>
-<li><a href="/invoice-generator/usa">USA invoice generator</a> — USD, EIN and US sales tax.</li>
-<li><a href="/invoice-generator/uk">UK invoice generator</a> — GBP and VAT registration number (see <a href="/blog/sole-trader-invoice-uk">invoicing as a UK sole trader</a>).</li>
-<li><a href="/invoice-generator/uae">UAE invoice generator</a> — AED and TRN (see <a href="/blog/uae-vat-invoice-requirements">UAE VAT invoice requirements</a>).</li>
-<li><a href="/invoice-generator/pakistan">Pakistan invoice generator</a> — PKR, NTN and STRN (see <a href="/blog/sales-tax-invoice-pakistan">sales tax invoices in Pakistan</a>).</li>
+<li><a href="/invoice-generator/usa">USA invoice generator</a>: USD, EIN and US sales tax.</li>
+<li><a href="/invoice-generator/uk">UK invoice generator</a>: GBP and VAT registration number (see <a href="/blog/sole-trader-invoice-uk">invoicing as a UK sole trader</a>).</li>
+<li><a href="/invoice-generator/uae">UAE invoice generator</a>: AED and TRN (see <a href="/blog/uae-vat-invoice-requirements">UAE VAT invoice requirements</a>).</li>
+<li><a href="/invoice-generator/pakistan">Pakistan invoice generator</a>: PKR, NTN and STRN (see <a href="/blog/sales-tax-invoice-pakistan">sales tax invoices in Pakistan</a>).</li>
 </ul>
 <p>Billing a client abroad? Read <a href="/blog/invoice-international-clients">how to invoice international clients</a> for currency and payment tips.</p>
 
 <h2>How to generate invoices faster every month</h2>
 <ul>
 <li><strong>Reuse your saved draft.</strong> Our generator saves your draft in your browser, so your business details are already filled in next time you open it on the same device.</li>
-<li><strong>Keep one numbering series.</strong> Never restart or reuse numbers — gaps and duplicates cause problems in audits.</li>
+<li><strong>Keep one numbering series.</strong> Never restart or reuse numbers. Gaps and duplicates cause problems in audits.</li>
 <li><strong>Set up recurring billing habits.</strong> For retainers and subscriptions, invoice on the same day each period. Our <a href="/blog/recurring-invoices-guide">recurring invoices guide</a> explains how.</li>
 <li><strong>Invoice as soon as work is approved.</strong> Every day you wait to invoice is a day added to when you get paid. More tactics are in <a href="/blog/how-to-get-paid-faster">how to get paid faster</a>.</li>
 <li><strong>Follow up on time.</strong> Have <a href="/blog/payment-reminder-emails">payment reminder emails</a> ready before the due date arrives.</li>
@@ -203,7 +203,7 @@ const CORE_POSTS: PostDraft[] = [
 <li>Every line item has a clear description, quantity and rate.</li>
 <li>Tax, discount and shipping lines are correct, and the total adds up.</li>
 <li>Bank details or a payment link are on the invoice itself.</li>
-<li>The PDF reads clearly on a phone and in black-and-white print — see our <a href="/blog/invoice-pdf-print-checklist">invoice PDF print checklist</a>.</li>
+<li>The PDF reads clearly on a phone and in black-and-white print. See our <a href="/blog/invoice-pdf-print-checklist">invoice PDF print checklist</a>.</li>
 </ul>
 
 <h2>Frequently asked questions</h2>
@@ -234,7 +234,7 @@ const CORE_POSTS: PostDraft[] = [
     slug: "sales-tax-invoice-pakistan",
     title: "Sales Tax Invoice in Pakistan: Required Fields, NTN, STRN and a Sample Layout",
     description:
-      "What a sales tax invoice in Pakistan should show — supplier and buyer NTN/STRN, value excluding tax, sales tax amount and more — with a sample layout and common mistakes.",
+      "What a sales tax invoice in Pakistan should show (supplier and buyer NTN/STRN, value excluding tax, sales tax amount and more), with a sample layout and common mistakes.",
     category: "tax-compliance",
     date: "2026-10-08",
     author: "Invoice Creator Editorial Team",
@@ -243,10 +243,10 @@ const CORE_POSTS: PostDraft[] = [
 <p><strong>Important:</strong> Tax laws, rates, registration requirements, and invoicing rules can change and may vary by province and by type of supply. This article provides general informational content and should not be considered professional tax, accounting, or legal advice. Verify current requirements with the Federal Board of Revenue (FBR), the relevant provincial revenue authority, or a qualified tax adviser.</p>
 
 <h2>Who needs to issue a sales tax invoice</h2>
-<p>In Pakistan, a business registered for sales tax is generally required to issue a sales tax invoice for each taxable supply it makes. Sales tax on goods is administered federally by the FBR under the Sales Tax Act, 1990, while sales tax on services is largely administered by the provinces — for example the Punjab Revenue Authority (PRA), Sindh Revenue Board (SRB), Khyber Pakhtunkhwa Revenue Authority (KPRA) and Balochistan Revenue Authority (BRA), with the Islamabad Capital Territory under federal rules.</p>
+<p>In Pakistan, a business registered for sales tax is generally required to issue a sales tax invoice for each taxable supply it makes. Sales tax on goods is administered federally by the FBR under the Sales Tax Act, 1990, while sales tax on services is largely administered by the provinces, for example the Punjab Revenue Authority (PRA), Sindh Revenue Board (SRB), Khyber Pakhtunkhwa Revenue Authority (KPRA) and Balochistan Revenue Authority (BRA), with the Islamabad Capital Territory under federal rules.</p>
 <p>If you are a freelancer or small business that is <em>not</em> registered for sales tax, you should not charge sales tax or present your document as a sales tax invoice. You can still issue a normal commercial invoice showing your NTN, if you have one.</p>
 
-<h2>NTN and STRN — what's the difference?</h2>
+<h2>NTN and STRN: what's the difference?</h2>
 <table><thead><tr><th>Number</th><th>Full name</th><th>What it identifies</th></tr></thead><tbody>
 <tr><td>NTN</td><td>National Tax Number</td><td>Your income tax registration with the FBR</td></tr>
 <tr><td>STRN</td><td>Sales Tax Registration Number</td><td>Your registration for sales tax</td></tr>
@@ -266,22 +266,22 @@ const CORE_POSTS: PostDraft[] = [
 <li>Rate and amount of sales tax</li>
 <li>Value including sales tax</li>
 </ul>
-<p>Provincial authorities apply similar requirements to services, sometimes with additional details. Some categories of retailers must also issue invoices through a system integrated with the FBR, which then prints an FBR invoice number or QR code. If you fall into one of those categories, your point-of-sale system — not a manual template — must generate the invoice.</p>
+<p>Provincial authorities apply similar requirements to services, sometimes with additional details. Some categories of retailers must also issue invoices through a system integrated with the FBR, which then prints an FBR invoice number or QR code. If you fall into one of those categories, your point-of-sale system, not a manual template, must generate the invoice.</p>
 
 <h2>Sample layout</h2>
 <table><thead><tr><th>Description</th><th>Qty</th><th>Unit price (PKR)</th><th>Value excl. tax</th><th>Sales tax (18%)</th><th>Value incl. tax</th></tr></thead><tbody>
 <tr><td>Office chairs, model OC-200</td><td>10</td><td>12,000</td><td>120,000</td><td>21,600</td><td>141,600</td></tr>
 <tr><td>Delivery and installation</td><td>1</td><td>5,000</td><td>5,000</td><td>See note</td><td>—</td></tr>
 </tbody></table>
-<p>The 18% rate above is an example only. Rates differ for goods and services, between provinces, and for specific items, and they change in federal and provincial budgets. Services such as delivery may fall under provincial sales tax at a different rate, so many businesses invoice goods and services on separate lines — or separate invoices — and show the correct tax for each.</p>
+<p>The 18% rate above is an example only. Rates differ for goods and services, between provinces, and for specific items, and they change in federal and provincial budgets. Services such as delivery may fall under provincial sales tax at a different rate, so many businesses invoice goods and services on separate lines (or separate invoices) and show the correct tax for each.</p>
 
 <h2>Common mistakes</h2>
 <ul>
 <li><strong>Charging sales tax without being registered.</strong> Only registered persons should charge and collect sales tax.</li>
 <li><strong>Missing buyer registration details.</strong> Registered buyers often cannot claim input tax if their NTN/STRN is missing or wrong.</li>
 <li><strong>One blended tax line for mixed supplies.</strong> Goods and services, or items at different rates, should be shown separately.</li>
-<li><strong>Reusing or skipping invoice numbers.</strong> Keep one continuous series and explain any voids — see <a href="/blog/invoice-numbering-system">invoice numbering</a>.</li>
-<li><strong>Editing an issued invoice.</strong> Corrections should be made through a credit or debit note — see our <a href="/blog/credit-note-guide">credit note guide</a>.</li>
+<li><strong>Reusing or skipping invoice numbers.</strong> Keep one continuous series and explain any voids. See <a href="/blog/invoice-numbering-system">invoice numbering</a>.</li>
+<li><strong>Editing an issued invoice.</strong> Corrections should be made through a credit or debit note. See our <a href="/blog/credit-note-guide">credit note guide</a>.</li>
 </ul>
 
 <h2>Withholding tax on invoices</h2>
@@ -300,13 +300,13 @@ const CORE_POSTS: PostDraft[] = [
     slug: "uae-vat-invoice-requirements",
     title: "UAE VAT Tax Invoice Requirements: Full vs Simplified Tax Invoice",
     description:
-      "What a UAE tax invoice must include under VAT — TRN, amounts in AED, VAT per line — and when a simplified tax invoice is allowed, with a sample layout.",
+      "What a UAE tax invoice must include under VAT (TRN, amounts in AED, VAT per line) and when a simplified tax invoice is allowed, with a sample layout.",
     category: "tax-compliance",
     date: "2026-10-07",
     author: "Invoice Creator Editorial Team",
     jurisdiction: "United Arab Emirates",
     content: `
-<p><strong>Important:</strong> Tax laws, rates, registration requirements, and invoicing rules can change. This article provides general informational content and should not be considered professional tax, accounting, or legal advice. Verify current requirements with the UAE Federal Tax Authority (FTA) or a qualified tax agent. The UAE has also announced a move to mandatory e-invoicing, which will change how invoices are issued for many businesses — check the FTA's latest timeline.</p>
+<p><strong>Important:</strong> Tax laws, rates, registration requirements, and invoicing rules can change. This article provides general informational content and should not be considered professional tax, accounting, or legal advice. Verify current requirements with the UAE Federal Tax Authority (FTA) or a qualified tax agent. The UAE has also announced a move to mandatory e-invoicing, which will change how invoices are issued for many businesses, so check the FTA's latest timeline.</p>
 
 <h2>VAT in the UAE at a glance</h2>
 <p>The UAE introduced VAT on 1 January 2018 at a standard rate of 5%. Businesses whose taxable supplies exceed the mandatory registration threshold must register with the Federal Tax Authority and receive a Tax Registration Number (TRN). Registered businesses must issue tax invoices for taxable supplies, generally within 14 days of the date of supply.</p>
@@ -329,14 +329,14 @@ const CORE_POSTS: PostDraft[] = [
 </ul>
 
 <h2>Simplified tax invoice</h2>
-<p>A simplified tax invoice can generally be issued when the recipient is not VAT-registered, or when the recipient is registered and the value of the supply does not exceed AED 10,000. It needs fewer details — typically the words "Tax Invoice", your name, address and TRN, an invoice number, the date, a description, the total consideration and the tax charged. Retail receipts often take this form.</p>
+<p>A simplified tax invoice can generally be issued when the recipient is not VAT-registered, or when the recipient is registered and the value of the supply does not exceed AED 10,000. It needs fewer details: typically the words "Tax Invoice", your name, address and TRN, an invoice number, the date, a description, the total consideration and the tax charged. Retail receipts often take this form.</p>
 
 <h2>Invoicing in a foreign currency</h2>
 <p>You may invoice in USD, EUR or another currency, but the VAT amount must be shown in AED, along with the exchange rate applied. A common approach is to show line items in the agreed currency and add a summary box: "VAT payable: AED 91.84 (USD 25.00 at 3.6735)". Use the exchange rate method your tax agent recommends and apply it consistently.</p>
 
 <h2>Sample full tax invoice layout</h2>
 <table><thead><tr><th>Description</th><th>Qty</th><th>Unit price (AED)</th><th>VAT rate</th><th>VAT (AED)</th><th>Total (AED)</th></tr></thead><tbody>
-<tr><td>Website development — phase 1</td><td>1</td><td>18,000.00</td><td>5%</td><td>900.00</td><td>18,900.00</td></tr>
+<tr><td>Website development: phase 1</td><td>1</td><td>18,000.00</td><td>5%</td><td>900.00</td><td>18,900.00</td></tr>
 <tr><td>Monthly hosting (October)</td><td>1</td><td>500.00</td><td>5%</td><td>25.00</td><td>525.00</td></tr>
 <tr><td colspan="4"><strong>Totals</strong></td><td><strong>925.00</strong></td><td><strong>19,425.00</strong></td></tr>
 </tbody></table>
@@ -409,7 +409,7 @@ jane@smithdesign.example</p>
 <p><strong>Bill to:</strong> Northwind Ltd, 2 Canal Wharf, Leeds LS11 5PS<br>
 <strong>Invoice date:</strong> 6 October 2026 · <strong>Supply date:</strong> 30 September 2026 · <strong>Due:</strong> 20 October 2026</p>
 <table><thead><tr><th>Description</th><th>Qty</th><th>Rate</th><th>Amount</th></tr></thead><tbody>
-<tr><td>Logo design — 3 concepts, 2 revision rounds</td><td>1</td><td>£650.00</td><td>£650.00</td></tr>
+<tr><td>Logo design: 3 concepts, 2 revision rounds</td><td>1</td><td>£650.00</td><td>£650.00</td></tr>
 <tr><td>Business card layout</td><td>1</td><td>£120.00</td><td>£120.00</td></tr>
 <tr><td colspan="3"><strong>Total due</strong></td><td><strong>£770.00</strong></td></tr>
 </tbody></table>
@@ -419,11 +419,11 @@ jane@smithdesign.example</p>
 <p>When you sell to another business, UK law lets you claim statutory interest and fixed compensation on late payments, unless your contract sets a different, substantial remedy. Many sole traders mention this in their terms. Read <a href="/blog/late-payment-fees">how to charge late payment fees</a> before you apply it.</p>
 
 <h2>Keeping records</h2>
-<p>As a sole trader you must keep records of your business income and expenses, including copies of invoices, for your Self Assessment tax return. HMRC generally expects records to be kept for at least 5 years after the 31 January submission deadline of the relevant tax year. With Making Tax Digital for Income Tax being phased in for higher-earning sole traders, you may also need compatible software to keep digital records — check whether it applies to you.</p>
+<p>As a sole trader you must keep records of your business income and expenses, including copies of invoices, for your Self Assessment tax return. HMRC generally expects records to be kept for at least 5 years after the 31 January submission deadline of the relevant tax year. With Making Tax Digital for Income Tax being phased in for higher-earning sole traders, you may also need compatible software to keep digital records, so check whether it applies to you.</p>
 
 <h2>Tips for getting paid</h2>
 <ul>
-<li>Agree payment terms before starting — see <a href="/blog/invoice-payment-terms">payment terms explained</a>.</li>
+<li>Agree payment terms before starting. See <a href="/blog/invoice-payment-terms">payment terms explained</a>.</li>
 <li>Invoice on the day you finish the work.</li>
 <li>Write the due date as a date, not just "30 days".</li>
 <li>Put your bank details on every invoice.</li>
@@ -435,24 +435,24 @@ jane@smithdesign.example</p>
     slug: "how-to-invoice-for-hourly-work",
     title: "How to Invoice for Hourly Work: Timesheets, Rates and Examples",
     description:
-      "A practical guide to billing by the hour — tracking time, rounding rules, writing hourly line items, attaching timesheets and avoiding disputes.",
+      "A practical guide to billing by the hour: tracking time, rounding rules, writing hourly line items, attaching timesheets and avoiding disputes.",
     category: "guides",
     date: "2026-10-03",
     author: "Invoice Creator Editorial Team",
     content: `
 <h2>When hourly billing makes sense</h2>
-<p>Hourly billing suits work where the scope is hard to predict: <a href="/blog/consulting-invoice-template">consulting</a>, support, maintenance, <a href="/blog/legal-invoice-template">legal</a> or bookkeeping work, <a href="/blog/tutoring-invoice-template">tutoring</a> and many trades. It protects you from unlimited scope creep, and clients pay only for time actually spent. The trade-off is that clients need to trust your time records — so the invoice must make your hours easy to understand and verify.</p>
+<p>Hourly billing suits work where the scope is hard to predict: <a href="/blog/consulting-invoice-template">consulting</a>, support, maintenance, <a href="/blog/legal-invoice-template">legal</a> or bookkeeping work, <a href="/blog/tutoring-invoice-template">tutoring</a> and many trades. It protects you from unlimited scope creep, and clients pay only for time actually spent. The trade-off is that clients need to trust your time records, so the invoice must make your hours easy to understand and verify.</p>
 
 <h2>Step 1: Track time as you work</h2>
 <p>Record time on the day you do it, not from memory at month end. For each entry, note the date, start and end time (or duration), the task, and the project or client. A spreadsheet is enough; a time-tracking app is helpful if you work across many clients.</p>
-<p>Good entries are specific: "Debugged checkout payment error and deployed fix — 2.5 h" is far easier to approve than "Development — 2.5 h".</p>
+<p>Good entries are specific: "Debugged checkout payment error and deployed fix: 2.5 h" is far easier to approve than "Development: 2.5 h".</p>
 
 <h2>Step 2: Decide your rounding rule</h2>
 <p>Agree a rounding rule in advance and apply it consistently. Common options are:</p>
 <ul>
 <li>Exact minutes (most transparent)</li>
-<li>Nearest 15 minutes (0.25 h) — the most common professional standard</li>
-<li>Nearest 6 minutes (0.1 h) — used by many law firms</li>
+<li>Nearest 15 minutes (0.25 h), the most common professional standard</li>
+<li>Nearest 6 minutes (0.1 h), used by many law firms</li>
 <li>A minimum charge per call-out or session, e.g. 1 hour</li>
 </ul>
 <p>State the rule in your contract or on the invoice. Rounding every task up to a full hour without agreement is a quick way to lose trust.</p>
@@ -461,27 +461,27 @@ jane@smithdesign.example</p>
 <p>You have two good options:</p>
 <h3>Option A: one line per task or week</h3>
 <table><thead><tr><th>Description</th><th>Hours</th><th>Rate</th><th>Amount</th></tr></thead><tbody>
-<tr><td>Week of 1 Sep — API integration and testing</td><td>12.5</td><td>80.00</td><td>1,000.00</td></tr>
-<tr><td>Week of 8 Sep — bug fixes, client call (1 h)</td><td>6.0</td><td>80.00</td><td>480.00</td></tr>
-<tr><td>Week of 15 Sep — deployment and documentation</td><td>8.25</td><td>80.00</td><td>660.00</td></tr>
+<tr><td>Week of 1 Sep: API integration and testing</td><td>12.5</td><td>80.00</td><td>1,000.00</td></tr>
+<tr><td>Week of 8 Sep: bug fixes, client call (1 h)</td><td>6.0</td><td>80.00</td><td>480.00</td></tr>
+<tr><td>Week of 15 Sep: deployment and documentation</td><td>8.25</td><td>80.00</td><td>660.00</td></tr>
 </tbody></table>
 <h3>Option B: one summary line plus an attached timesheet</h3>
-<p>"Development services, 1–30 September 2026 (see attached timesheet) — 26.75 h × 80.00 = 2,140.00". This keeps the invoice short while the timesheet gives full detail.</p>
+<p>"Development services, 1–30 September 2026 (see attached timesheet): 26.75 h × 80.00 = 2,140.00". This keeps the invoice short while the timesheet gives full detail.</p>
 <p>In our <a href="/invoice-generator">invoice generator</a>, enter hours in the quantity field and your hourly rate in the rate field; the line total calculates automatically, including decimal hours such as 8.25.</p>
 
 <h2>Step 4: Attach a timesheet</h2>
 <p>For anything beyond a few hours, attach a simple timesheet (PDF or spreadsheet) with date, task and duration. Many clients, agencies and staffing firms require one. The total of the timesheet must exactly match the hours on the invoice.</p>
 
 <h2>Different rates for different work</h2>
-<p>If you charge different rates — for example standard and urgent work, or senior and junior staff — show them as separate lines. Never blend them into one average rate; clients cannot check it, and it hides the value of your premium work.</p>
+<p>If you charge different rates (for example standard and urgent work, or senior and junior staff), show them as separate lines. Never blend them into one average rate; clients cannot check it, and it hides the value of your premium work.</p>
 <ul>
-<li>"Senior consultant — 10 h × 120.00"</li>
-<li>"Junior analyst — 16 h × 60.00"</li>
-<li>"Out-of-hours emergency support — 2 h × 150.00"</li>
+<li>"Senior consultant: 10 h × 120.00"</li>
+<li>"Junior analyst: 16 h × 60.00"</li>
+<li>"Out-of-hours emergency support: 2 h × 150.00"</li>
 </ul>
 
 <h2>Expenses and travel</h2>
-<p>Bill expenses as separate lines, ideally with receipts. If you charge for travel time, say whether it is billed at your full rate, a reduced rate, or not at all — and agree this before you travel.</p>
+<p>Bill expenses as separate lines, ideally with receipts. If you charge for travel time, say whether it is billed at your full rate, a reduced rate, or not at all, and agree this before you travel.</p>
 
 <h2>Caps and estimates</h2>
 <p>Clients often ask for an estimate of hours. If you give one, track progress against it and warn the client before you go over: "We're at 18 of the estimated 20 hours; finishing will take about 6 more." Surprises at invoice time cause most hourly-billing disputes. See <a href="/blog/invoice-vs-estimate">invoice vs estimate</a> for how estimates relate to final invoices.</p>
@@ -505,13 +505,13 @@ jane@smithdesign.example</p>
     slug: "invoice-international-clients",
     title: "How to Invoice International Clients: Currency, Tax and Payment Tips",
     description:
-      "Everything to get right when billing clients abroad — choosing the currency, exchange rates, cross-border tax, payment methods and the details banks need.",
+      "Everything to get right when billing clients abroad: choosing the currency, exchange rates, cross-border tax, payment methods and the details banks need.",
     category: "guides",
     date: "2026-10-01",
     author: "Invoice Creator Editorial Team",
     content: `
 <h2>Why cross-border invoices are different</h2>
-<p>Billing a client in another country adds three questions that domestic invoices rarely raise: which currency to use, whether any tax applies, and how the money will actually reach you. Getting these right up front prevents the most common problems — short payments due to fees, bounced transfers, and tax queries months later.</p>
+<p>Billing a client in another country adds three questions that domestic invoices rarely raise: which currency to use, whether any tax applies, and how the money will actually reach you. Getting these right up front prevents the most common problems: short payments due to fees, bounced transfers, and tax queries months later.</p>
 
 <h2>1. Agree the currency first</h2>
 <p>Decide the invoice currency in your contract. Your options are:</p>
@@ -550,10 +550,10 @@ jane@smithdesign.example</p>
 <p>International transfers can involve sender fees, intermediary bank fees and receiving fees, so you may receive less than you invoiced. Agree in the contract that the client covers sending charges (often written as "OUR" charges on a SWIFT transfer) or build expected fees into your price. State the agreement on the invoice: "All bank charges to be paid by the sender."</p>
 
 <h2>6. Write dates and addresses unambiguously</h2>
-<p>"04/05/2026" means 4 May in the UK and April 5 in the US. Write dates as "4 May 2026". Include full addresses with the country name, and use the client's legal entity name — international clients often have regional subsidiaries that pay separately.</p>
+<p>"04/05/2026" means 4 May in the UK and April 5 in the US. Write dates as "4 May 2026". Include full addresses with the country name, and use the client's legal entity name. International clients often have regional subsidiaries that pay separately.</p>
 
 <h2>7. Language and format</h2>
-<p>English is widely accepted for B2B invoices, but some countries require local-language invoices for tax purposes. If your client asks for a bilingual invoice or specific fields, add them — it's cheaper than a rejected invoice.</p>
+<p>English is widely accepted for B2B invoices, but some countries require local-language invoices for tax purposes. If your client asks for a bilingual invoice or specific fields, add them. It's cheaper than a rejected invoice.</p>
 
 <p>For the payment side, compare <a href="/blog/wise-vs-payoneer">Wise vs Payoneer</a>. If you are based in Pakistan, see <a href="/blog/receive-payment-from-abroad-pakistan">how to receive payment from abroad in Pakistan</a>.</p>
 
@@ -589,7 +589,7 @@ jane@smithdesign.example</p>
 <li>You send an invoice quoting the PO number.</li>
 <li>Accounts payable matches the invoice to the PO (and often to a delivery receipt) and approves payment.</li>
 </ol>
-<p>This matching process — often called two-way or three-way matching — is how larger organisations control spending. If your invoice doesn't match the PO, it is held until someone resolves the difference.</p>
+<p>This matching process (often called two-way or three-way matching) is how larger organisations control spending. If your invoice doesn't match the PO, it is held until someone resolves the difference.</p>
 
 <h2>Where to put the PO number</h2>
 <p>Put it near the top of the invoice, close to the invoice number and dates, labelled clearly: "PO number: 4500012345". Many templates have a dedicated field for it. Our <a href="/invoice-generator">invoice generator</a> includes a PO number field that appears in the invoice header and on the PDF.</p>
@@ -608,13 +608,13 @@ jane@smithdesign.example</p>
 <ul>
 <li>Use the same item descriptions as the PO wherever possible.</li>
 <li>Bill the same quantities and unit prices. If something changed, ask the client to amend the PO <em>before</em> invoicing.</li>
-<li>Don't invoice more than the PO value — the excess will usually be rejected.</li>
+<li>Don't invoice more than the PO value. The excess will usually be rejected.</li>
 <li>Bill the legal entity named on the PO, not the person who emailed you.</li>
 <li>Send the invoice to the address the PO specifies, which is often a central accounts-payable inbox.</li>
 </ul>
 
 <h2>What if the client doesn't give you a PO number?</h2>
-<p>Ask at the start of the project: "Will you be issuing a purchase order for this work?" Small businesses and individuals usually don't use POs, and that's fine — leave the field blank. But if a larger organisation hasn't given you one, it often means the purchase hasn't been approved in their system yet. Chasing the PO before you start work is far easier than chasing payment afterwards.</p>
+<p>Ask at the start of the project: "Will you be issuing a purchase order for this work?" Small businesses and individuals usually don't use POs, and that's fine: leave the field blank. But if a larger organisation hasn't given you one, it often means the purchase hasn't been approved in their system yet. Chasing the PO before you start work is far easier than chasing payment afterwards.</p>
 
 <h2>Common PO problems</h2>
 <ul>
@@ -629,7 +629,7 @@ jane@smithdesign.example</p>
     slug: "construction-invoice-guide",
     title: "Construction & Contractor Invoices: Progress Billing, Retainage and Materials",
     description:
-      "How contractors and tradespeople should invoice — deposits, progress payments, retainage, materials and labour lines, change orders and final invoices.",
+      "How contractors and tradespeople should invoice: deposits, progress payments, retainage, materials and labour lines, change orders and final invoices.",
     category: "guides",
     date: "2026-09-26",
     author: "Invoice Creator Editorial Team",
@@ -649,22 +649,22 @@ jane@smithdesign.example</p>
 <h2>Separating labour and materials</h2>
 <p>Show labour and materials as separate lines. Clients understand the job better, tax treatment can differ between them in some places, and it is much easier to justify price changes if material costs rise. For example:</p>
 <ul>
-<li>"Labour — kitchen tiling, 2 tilers × 3 days"</li>
-<li>"Materials — porcelain tiles 24 m², adhesive and grout (receipts attached)"</li>
-<li>"Skip hire — 1 week"</li>
+<li>"Labour: kitchen tiling, 2 tilers × 3 days"</li>
+<li>"Materials: porcelain tiles 24 m², adhesive and grout (receipts attached)"</li>
+<li>"Skip hire: 1 week"</li>
 </ul>
 <p>If you add a markup to materials, be consistent and make sure your contract allows it.</p>
 
 <h2>Progress billing</h2>
 <p>Progress billing means invoicing for the portion of work completed so far. There are two common methods:</p>
 <ul>
-<li><strong>Milestone billing:</strong> a fixed amount when each stage is complete — for example 30% at foundations, 30% at roof, 30% at first fix, 10% at completion.</li>
+<li><strong>Milestone billing:</strong> a fixed amount when each stage is complete, for example 30% at foundations, 30% at roof, 30% at first fix, 10% at completion.</li>
 <li><strong>Percentage of completion:</strong> each month you bill the percentage of each contract item completed, minus what was billed before.</li>
 </ul>
 <p>Each progress invoice should show the contract value, amount completed to date, amounts previously invoiced, and the amount due now. This "running total" format lets the client check the maths instantly.</p>
 
 <h2>Retainage (retention)</h2>
-<p>On many commercial projects, the client holds back a percentage of each payment — often around 5% to 10% — until the job is finished and any defects are fixed. This is called retainage in the US and retention in the UK. Show it clearly on every progress invoice:</p>
+<p>On many commercial projects, the client holds back a percentage of each payment (often around 5% to 10%) until the job is finished and any defects are fixed. This is called retainage in the US and retention in the UK. Show it clearly on every progress invoice:</p>
 <table><thead><tr><th>Line</th><th>Amount</th></tr></thead><tbody>
 <tr><td>Work completed this period</td><td>20,000.00</td></tr>
 <tr><td>Less retainage (5%)</td><td>−1,000.00</td></tr>
@@ -673,13 +673,13 @@ jane@smithdesign.example</p>
 <p>Keep a running total of retainage held, and invoice for its release when the contract allows. Rules on retention and payment timing vary by country and state, so check the contract and local law.</p>
 
 <h2>Change orders</h2>
-<p>Never start extra work on a verbal request alone. Get a written change order with a description and price, then invoice it as a separate, referenced line: "Change order #3 — additional socket outlets ×6, approved 12 Sep". Unapproved extras are the most common source of construction payment disputes.</p>
+<p>Never start extra work on a verbal request alone. Get a written change order with a description and price, then invoice it as a separate, referenced line: "Change order #3: additional socket outlets ×6, approved 12 Sep". Unapproved extras are the most common source of construction payment disputes.</p>
 
 <h2>What every contractor invoice should include</h2>
 <ul>
 <li>Your business name, address, licence or registration number where applicable</li>
 <li>Client name and the site address (not just the billing address)</li>
-<li>Job or contract reference and PO number if provided — see <a href="/blog/po-number-on-invoice">PO numbers</a></li>
+<li>Job or contract reference and PO number if provided (see <a href="/blog/po-number-on-invoice">PO numbers</a>)</li>
 <li>Invoice number, date and due date</li>
 <li>Itemised labour, materials and other costs</li>
 <li>Tax as required in your jurisdiction</li>
@@ -720,23 +720,23 @@ jane@smithdesign.example</p>
 <tr><td>Payment timing</td><td>Often on terms (e.g. Net 14)</td><td>Often immediate or by a fixed date</td></tr>
 <tr><td>Level of detail</td><td>Itemised, with tax and references</td><td>Can be brief (e.g. a restaurant bill)</td></tr>
 </tbody></table>
-<p>In everyday speech, "bill" is more common for consumer situations — a phone bill, an electricity bill, the bill at a restaurant. "Invoice" is the standard term between businesses. Both are requests for payment.</p>
+<p>In everyday speech, "bill" is more common for consumer situations: a phone bill, an electricity bill, the bill at a restaurant. "Invoice" is the standard term between businesses. Both are requests for payment.</p>
 
 <h2>Regional differences</h2>
-<p>Usage varies by country. In some places, "bill" is used for almost any request for payment, including business invoices; in others, "invoice" is preferred in all commercial settings. Tax law usually uses specific terms such as "tax invoice" or "VAT invoice", and those documents have defined content requirements — see our <a href="/blog/tax-invoice-guide">tax invoice guide</a>.</p>
+<p>Usage varies by country. In some places, "bill" is used for almost any request for payment, including business invoices; in others, "invoice" is preferred in all commercial settings. Tax law usually uses specific terms such as "tax invoice" or "VAT invoice", and those documents have defined content requirements. See our <a href="/blog/tax-invoice-guide">tax invoice guide</a>.</p>
 
 <h2>How they relate to other documents</h2>
 <ul>
-<li><strong>Quote or estimate</strong> — comes before the sale; an offer, not a request for payment. See <a href="/blog/invoice-vs-quotation">invoice vs quotation</a> and <a href="/blog/invoice-vs-estimate">invoice vs estimate</a>.</li>
-<li><strong>Invoice / bill</strong> — requests payment after (or at) the sale.</li>
-<li><strong>Receipt</strong> — confirms payment was made. See <a href="/blog/invoice-vs-receipt">invoice vs receipt</a>.</li>
-<li><strong>Statement</strong> — summarises all invoices and payments on an account over a period.</li>
-<li><strong>Credit note</strong> — reduces an invoice already issued. See our <a href="/blog/credit-note-guide">credit note guide</a>.</li>
+<li><strong>Quote or estimate</strong>: comes before the sale; an offer, not a request for payment. See <a href="/blog/invoice-vs-quotation">invoice vs quotation</a> and <a href="/blog/invoice-vs-estimate">invoice vs estimate</a>.</li>
+<li><strong>Invoice / bill</strong>: requests payment after (or at) the sale.</li>
+<li><strong>Receipt</strong>: confirms payment was made. See <a href="/blog/invoice-vs-receipt">invoice vs receipt</a>.</li>
+<li><strong>Statement</strong>: summarises all invoices and payments on an account over a period.</li>
+<li><strong>Credit note</strong>: reduces an invoice already issued. See our <a href="/blog/credit-note-guide">credit note guide</a>.</li>
 </ul>
 
 <h2>Which word should you use?</h2>
 <p>If you run a business and sell to other businesses, title your document <strong>"Invoice"</strong> (or "Tax Invoice" / "VAT Invoice" where your registration requires it). Accounts-payable teams look for that word, and it signals a formal commercial document with a number, date and payment terms. Using "bill" on a B2B document isn't wrong, but it can look informal.</p>
-<p>If you run a consumer business — a restaurant, salon or repair shop — "bill" is natural at the point of sale, though you may still need to issue a tax-compliant invoice or receipt depending on local rules.</p>
+<p>If you run a consumer business (a restaurant, salon or repair shop), "bill" is natural at the point of sale, though you may still need to issue a tax-compliant invoice or receipt depending on local rules.</p>
 
 <p>For a ready-to-copy layout for shops and small services, see our <a href="/blog/bill-format">simple bill format</a> guide.</p>
 
@@ -756,18 +756,18 @@ jane@smithdesign.example</p>
     slug: "how-to-get-paid-faster",
     title: "How to Get Paid Faster: 12 Proven Tactics for Small Businesses",
     description:
-      "Practical, low-friction ways to shorten the time between finishing work and money landing in your account — from contract terms to invoice layout to follow-up rhythm.",
+      "Practical, low-friction ways to shorten the time between finishing work and money landing in your account, from contract terms to invoice layout to follow-up rhythm.",
     category: "guides",
     date: "2026-09-22",
     author: "Invoice Creator Editorial Team",
     content: `
 <h2>Why payment speed matters more than price</h2>
-<p>A business can be profitable on paper and still run out of cash. The gap between delivering work and receiving payment — often called days sales outstanding (DSO) — is the single number that decides whether you can pay rent, suppliers and yourself on time. Cutting an average payment cycle from 45 days to 20 days is the equivalent of an interest-free loan worth almost a month of revenue.</p>
+<p>A business can be profitable on paper and still run out of cash. The gap between delivering work and receiving payment, often called days sales outstanding (DSO), is the single number that decides whether you can pay rent, suppliers and yourself on time. Cutting an average payment cycle from 45 days to 20 days is the equivalent of an interest-free loan worth almost a month of revenue.</p>
 <p>Most late payments are not malicious. They happen because an invoice was unclear, arrived at the wrong inbox, missed a payment run, or required a question nobody had time to ask. Every tactic below removes one of those frictions.</p>
 
 <h2>Before the work starts</h2>
 <h3>1. Agree payment terms in writing</h3>
-<p>Put the terms in the proposal or contract the client signs: the due period (for example Net 14), accepted payment methods, the currency, and what happens if payment is late. When terms are agreed up front, the invoice simply restates them — there is nothing to negotiate later. Our guide to <a href="/blog/invoice-payment-terms">invoice payment terms</a> explains the common options.</p>
+<p>Put the terms in the proposal or contract the client signs: the due period (for example Net 14), accepted payment methods, the currency, and what happens if payment is late. When terms are agreed up front, the invoice simply restates them, so there is nothing to negotiate later. Our guide to <a href="/blog/invoice-payment-terms">invoice payment terms</a> explains the common options.</p>
 <h3>2. Ask how the client pays suppliers</h3>
 <p>One question at kickoff saves weeks later: "What do you need on an invoice to approve it, and where should I send it?" Larger organisations often need a purchase-order number, a supplier registration form, a specific accounts-payable email address, or a vendor portal upload. Missing any one of these can mean your invoice is never even seen by the person who pays it.</p>
 <h3>3. Take a deposit on larger jobs</h3>
@@ -777,23 +777,23 @@ jane@smithdesign.example</p>
 <h3>4. Invoice immediately</h3>
 <p>Send the invoice the day the work is delivered or the milestone is reached. Waiting until the end of the month adds up to 30 days to every payment for no reason. If you invoice on a schedule, pick a fixed day and stick to it so clients can plan.</p>
 <h3>5. Use short, specific due dates</h3>
-<p>"Due 14 March 2026" is clearer than "Net 30" — the client does not have to calculate anything. Many small businesses find Net 14 is accepted without pushback, especially when it was agreed in the contract.</p>
+<p>"Due 14 March 2026" is clearer than "Net 30": the client does not have to calculate anything. Many small businesses find Net 14 is accepted without pushback, especially when it was agreed in the contract.</p>
 <h3>6. Write line items a stranger can approve</h3>
-<p>The person who approves your invoice is often not the person who hired you. "Website work — £2,400" invites a query. "Homepage redesign, 3 templates, delivered 2 March (PO 4471) — £2,400" gets approved. See our <a href="/blog/invoice-examples">invoice examples</a> for well-written descriptions.</p>
+<p>The person who approves your invoice is often not the person who hired you. "Website work: £2,400" invites a query. "Homepage redesign, 3 templates, delivered 2 March (PO 4471): £2,400" gets approved. See our <a href="/blog/invoice-examples">invoice examples</a> for well-written descriptions.</p>
 <h3>7. Make paying effortless</h3>
-<p>Print full bank details, a payment link, or both, in a clearly separated block. Include the invoice number as the payment reference so you can match the transfer. Every extra step — logging in somewhere, requesting bank details by email — is a chance for the invoice to slip to next week.</p>
+<p>Print full bank details, a payment link, or both, in a clearly separated block. Include the invoice number as the payment reference so you can match the transfer. Every extra step (logging in somewhere, requesting bank details by email) is a chance for the invoice to slip to next week.</p>
 <h3>8. Send a PDF, not an editable file</h3>
 <p>A PDF looks the same on every device, cannot be accidentally edited, and is what accounts-payable systems expect. You can create one in under two minutes with our <a href="/invoice-generator">free invoice generator</a>.</p>
 
 <h2>After the invoice is sent</h2>
 <h3>9. Confirm receipt</h3>
-<p>For first invoices or large amounts, a short message — "Just checking invoice 2026-0041 reached the right person" — catches wrong-inbox problems while there is still time before the due date.</p>
+<p>For first invoices or large amounts, a short message ("Just checking invoice 2026-0041 reached the right person") catches wrong-inbox problems while there is still time before the due date.</p>
 <h3>10. Follow a reminder schedule</h3>
 <p>Decide your reminder rhythm once and apply it to every client: a polite note a few days before the due date, another on the due date, then at 7, 14 and 30 days overdue. Consistency removes the awkwardness because it is simply your process. Copy-ready wording is in our <a href="/blog/payment-reminder-emails">payment reminder email templates</a>.</p>
-<h3>11. State late-payment terms — and apply them consistently</h3>
+<h3>11. State late-payment terms, and apply them consistently</h3>
 <p>A clearly stated late fee or interest charge encourages clients to prioritise your invoice. You do not have to enforce it every time, but if you never mention it, clients learn your invoices can wait. Read <a href="/blog/late-payment-fees">how to charge late payment fees</a> before adding one.</p>
 <h3>12. Offer an early-payment incentive (selectively)</h3>
-<p>Terms such as "2/10 Net 30" — a 2% discount if paid within 10 days — can work well with clients who have healthy cash flow. Calculate the cost first: a 2% discount to be paid 20 days earlier is expensive money, so reserve it for situations where cash now is worth it.</p>
+<p>Terms such as "2/10 Net 30" (a 2% discount if paid within 10 days) can work well with clients who have healthy cash flow. Calculate the cost first: a 2% discount to be paid 20 days earlier is expensive money, so reserve it for situations where cash now is worth it.</p>
 
 <h2>Track the right numbers</h2>
 <p>Keep a simple list of every open invoice with its issue date, due date, and status. Once a month, look at three figures: total outstanding, the amount more than 30 days overdue, and which clients are consistently late. Those clients may need shorter terms, deposits, or a conversation.</p>
@@ -830,11 +830,11 @@ jane@smithdesign.example</p>
 
 <h2>What a late payment fee is</h2>
 <p>A late payment fee is an extra charge added when a client pays after the agreed due date. It usually takes one of two forms: a <strong>flat fee</strong> (for example a fixed amount per overdue invoice) or <strong>interest</strong> (a percentage of the outstanding balance, charged monthly or annually until payment arrives).</p>
-<p>The purpose is not to earn extra money. It compensates you for the cost of waiting — borrowing, missed opportunities, and the admin time spent chasing — and it gives clients a reason to put your invoice ahead of others in the queue.</p>
+<p>The purpose is not to earn extra money. It compensates you for the cost of waiting (borrowing, missed opportunities, and the admin time spent chasing), and it gives clients a reason to put your invoice ahead of others in the queue.</p>
 
 <h2>The golden rule: agree it before the work</h2>
 <p>A fee that appears for the first time on an overdue invoice is hard to enforce and damages trust. The fee should be written into your contract, proposal, or terms of business that the client accepted before you started. The invoice then simply reminds them of what was already agreed.</p>
-<p>In some places, the law gives businesses a right to claim interest on late commercial payments even if the contract is silent. For example, the UK has statutory late-payment interest for business-to-business debts, and the EU has a Late Payment Directive setting standards for commercial transactions. Many other jurisdictions have their own rules — and consumer sales are usually much more tightly regulated. Always check locally.</p>
+<p>In some places, the law gives businesses a right to claim interest on late commercial payments even if the contract is silent. For example, the UK has statutory late-payment interest for business-to-business debts, and the EU has a Late Payment Directive setting standards for commercial transactions. Many other jurisdictions have their own rules, and consumer sales are usually much more tightly regulated. Always check locally.</p>
 
 <h2>Flat fee or interest?</h2>
 <table><thead><tr><th>Approach</th><th>Works well for</th><th>Watch out for</th></tr></thead><tbody>
@@ -854,7 +854,7 @@ jane@smithdesign.example</p>
 <p>Always show the calculation when you add it to an invoice. Transparent maths is far less likely to be challenged than a single unexplained number.</p>
 
 <h2>Wording to put on your invoice</h2>
-<p>Place a short statement in the terms or notes section of every invoice — not only overdue ones:</p>
+<p>Place a short statement in the terms or notes section of every invoice, not only overdue ones:</p>
 <ul>
 <li>"Payment is due within 14 days of the invoice date. Overdue balances incur interest at 1.5% per month, as set out in our terms of business."</li>
 <li>"A late fee of [amount] applies to invoices unpaid 30 days after the due date."</li>
@@ -866,12 +866,12 @@ jane@smithdesign.example</p>
 <ol>
 <li><strong>Send reminders first.</strong> Most late payments are fixed by a polite reminder. See our <a href="/blog/payment-reminder-emails">payment reminder templates</a>.</li>
 <li><strong>Give notice.</strong> Before adding the fee, tell the client: "As per our terms, a late fee will be added if payment is not received by [date]."</li>
-<li><strong>Issue a separate invoice or a clear line.</strong> Add a line such as "Late payment interest on invoice 2026-0041 (45 days at 1.5%/month)". Do not silently change the original invoice — it is an accounting record.</li>
+<li><strong>Issue a separate invoice or a clear line.</strong> Add a line such as "Late payment interest on invoice 2026-0041 (45 days at 1.5%/month)". Do not silently change the original invoice. It is an accounting record.</li>
 <li><strong>Be consistent.</strong> Applying fees to some clients and not others makes the policy look arbitrary.</li>
 </ol>
 
 <h2>When to waive it</h2>
-<p>Waiving a fee can be a smart relationship move: a long-standing client with a one-off delay, a genuine banking error, or a client who contacted you before the due date to explain. Say so explicitly — "We've waived the late fee on this occasion" — so the client knows the policy exists and that you are being generous.</p>
+<p>Waiving a fee can be a smart relationship move: a long-standing client with a one-off delay, a genuine banking error, or a client who contacted you before the due date to explain. Say so explicitly ("We've waived the late fee on this occasion") so the client knows the policy exists and that you are being generous.</p>
 <p>Repeated lateness is a different matter. For clients who are regularly late, shortening payment terms or requiring deposits is often more effective than fees.</p>
 
 <h2>Common mistakes</h2>
@@ -879,19 +879,19 @@ jane@smithdesign.example</p>
 <li>Introducing a fee only after the invoice is overdue</li>
 <li>Charging a rate above the legal maximum where one applies</li>
 <li>Editing the original invoice total instead of issuing a separate charge</li>
-<li>Threatening fees in an angry tone — keep every message factual and calm</li>
+<li>Threatening fees in an angry tone: keep every message factual and calm</li>
 <li>Forgetting that consumer customers often have stronger legal protections than businesses</li>
 </ul>
 
 <h2>The bigger picture</h2>
-<p>Late fees are a backstop, not a strategy. The fastest payments come from clear invoices, agreed terms and consistent follow-up — covered in <a href="/blog/how-to-get-paid-faster">how to get paid faster</a>. A well-structured invoice from our <a href="/invoice-templates">templates</a> gives you the best chance of never needing to charge a fee at all.</p>
+<p>Late fees are a backstop, not a strategy. The fastest payments come from clear invoices, agreed terms and consistent follow-up, covered in <a href="/blog/how-to-get-paid-faster">how to get paid faster</a>. A well-structured invoice from our <a href="/invoice-templates">templates</a> gives you the best chance of never needing to charge a fee at all.</p>
 `,
   },
   {
     slug: "invoice-numbering-system",
     title: "Invoice Numbering: How to Build a System That Never Breaks",
     description:
-      "Formats, examples and rules for invoice numbers that stay unique, sequential and audit-friendly — including multiple businesses, voided invoices and switching software.",
+      "Formats, examples and rules for invoice numbers that stay unique, sequential and audit-friendly, including multiple businesses, voided invoices and switching software.",
     category: "guides",
     date: "2026-09-08",
     author: "Invoice Creator Editorial Team",
@@ -902,7 +902,7 @@ jane@smithdesign.example</p>
 
 <h2>The three rules</h2>
 <ol>
-<li><strong>Unique.</strong> No two invoices from the same business may ever share a number — not even across years or after a void.</li>
+<li><strong>Unique.</strong> No two invoices from the same business may ever share a number, not even across years or after a void.</li>
 <li><strong>Sequential.</strong> Numbers increase in order of issue. Many tax systems expect an unbroken sequence; where gaps exist, you should be able to explain them.</li>
 <li><strong>Consistent.</strong> Use the same format every time so numbers sort correctly and are easy to search.</li>
 </ol>
@@ -919,15 +919,15 @@ jane@smithdesign.example</p>
 <p>A note on client-code formats: if you use them, keep a single overall sequence as well, or check your local rules. Some tax authorities expect one continuous series per business, not a separate series per client.</p>
 
 <h2>Use leading zeros</h2>
-<p>Pad the sequence to a fixed width — 0041 rather than 41. Without padding, a file list sorts "100" before "20", which makes manual checks harder. Four digits allow 9,999 invoices per year; choose five if your volume is higher.</p>
+<p>Pad the sequence to a fixed width: 0041 rather than 41. Without padding, a file list sorts "100" before "20", which makes manual checks harder. Four digits allow 9,999 invoices per year; choose five if your volume is higher.</p>
 
 <h2>Different document types</h2>
 <p>Quotes, estimates, invoices, credit notes and receipts are different documents and should have their own prefixes so they are never confused:</p>
 <ul>
-<li><code>QT-2026-0012</code> — quotation (see <a href="/blog/invoice-vs-quotation">invoice vs quotation</a>)</li>
-<li><code>INV-2026-0041</code> — invoice</li>
-<li><code>CN-2026-0003</code> — credit note (see our <a href="/blog/credit-note-guide">credit note guide</a>)</li>
-<li><code>PF-2026-0005</code> — proforma invoice</li>
+<li><code>QT-2026-0012</code>: quotation (see <a href="/blog/invoice-vs-quotation">invoice vs quotation</a>)</li>
+<li><code>INV-2026-0041</code>: invoice</li>
+<li><code>CN-2026-0003</code>: credit note (see our <a href="/blog/credit-note-guide">credit note guide</a>)</li>
+<li><code>PF-2026-0005</code>: proforma invoice</li>
 </ul>
 <p>Proforma invoices and quotes are not tax invoices, so they normally do not use your invoice sequence.</p>
 
@@ -937,7 +937,7 @@ jane@smithdesign.example</p>
 <h3>You need to cancel an invoice before sending</h3>
 <p>If an invoice was created but never sent, mark it as void in your records with the reason, and keep the number unused. Do not reuse it for a different client.</p>
 <h3>You skipped a number by accident</h3>
-<p>Record the gap and the reason (for example "0042 skipped — software error, never issued"). An explained gap is not a problem; an unexplained one invites questions.</p>
+<p>Record the gap and the reason (for example "0042 skipped: software error, never issued"). An explained gap is not a problem; an unexplained one invites questions.</p>
 <h3>You changed software</h3>
 <p>Continue from the last number used in the old system. Do not restart at 0001 mid-year. Keep an export of the old records so the full sequence can be shown.</p>
 
@@ -969,29 +969,29 @@ jane@smithdesign.example</p>
     author: "Invoice Creator Editorial Team",
     content: `
 <h2>The short definition</h2>
-<p>A credit note (sometimes called a credit memo) is a document a seller issues to a buyer to reduce, partly or fully, the amount of an invoice that has already been issued. It is the correct, auditable way to fix an invoice after it has been sent — instead of editing or deleting the original.</p>
+<p>A credit note (sometimes called a credit memo) is a document a seller issues to a buyer to reduce, partly or fully, the amount of an invoice that has already been issued. It is the correct, auditable way to fix an invoice after it has been sent, instead of editing or deleting the original.</p>
 <p>Think of it as a negative invoice: it has its own number and date, refers back to the original invoice, and shows the amount being credited, including any tax.</p>
 
 <h2>When you need a credit note</h2>
 <ul>
-<li><strong>Pricing or quantity errors</strong> — you charged for 10 hours instead of 8, or used the wrong rate.</li>
-<li><strong>Returned goods</strong> — the customer sent back part or all of an order.</li>
-<li><strong>Cancelled services</strong> — a booked service will not be delivered.</li>
-<li><strong>Agreed discounts after invoicing</strong> — a goodwill discount, a volume rebate, or compensation for a problem.</li>
-<li><strong>Wrong customer details</strong> — you billed the wrong legal entity and must cancel the invoice and re-issue it correctly.</li>
-<li><strong>Duplicate invoices</strong> — the same work was invoiced twice.</li>
+<li><strong>Pricing or quantity errors</strong>: you charged for 10 hours instead of 8, or used the wrong rate.</li>
+<li><strong>Returned goods</strong>: the customer sent back part or all of an order.</li>
+<li><strong>Cancelled services</strong>: a booked service will not be delivered.</li>
+<li><strong>Agreed discounts after invoicing</strong>: a goodwill discount, a volume rebate, or compensation for a problem.</li>
+<li><strong>Wrong customer details</strong>: you billed the wrong legal entity and must cancel the invoice and re-issue it correctly.</li>
+<li><strong>Duplicate invoices</strong>: the same work was invoiced twice.</li>
 </ul>
 
 <h2>Why not just edit the invoice?</h2>
 <p>Once an invoice has been sent, it exists in your client's records and probably in their accounting system. If you change it and re-send it with the same number, the two versions no longer match. Your sales records, tax reports and the client's books will disagree. In many tax systems, issued invoices must not be altered; a credit note is the expected correction method.</p>
-<p>A credit note keeps a clean trail: original invoice, credit note, and (if needed) a new correct invoice — each with its own number and date.</p>
+<p>A credit note keeps a clean trail: original invoice, credit note, and (if needed) a new correct invoice, each with its own number and date.</p>
 
 <h2>What a credit note should contain</h2>
 <ul>
 <li>The words "Credit Note" clearly at the top</li>
 <li>A unique credit note number (often with its own prefix, e.g. <code>CN-2026-0003</code>)</li>
 <li>Date of issue</li>
-<li>Your business details and the customer's details — matching the original invoice</li>
+<li>Your business details and the customer's details, matching the original invoice</li>
 <li>The number and date of the original invoice being credited</li>
 <li>A description of what is being credited and why</li>
 <li>The amount credited, with tax shown separately if the original invoice included tax</li>
@@ -1006,7 +1006,7 @@ jane@smithdesign.example</p>
 <tr><td>Tax at 20%</td><td>40.00</td></tr>
 <tr><td><strong>Total credit</strong></td><td><strong>240.00</strong></td></tr>
 </tbody></table>
-<p>The client now owes 1,200 − 240 = 960. If they had already paid 1,200, you either refund 240 or keep it as a credit on their account for the next invoice — say which in the credit note.</p>
+<p>The client now owes 1,200 − 240 = 960. If they had already paid 1,200, you either refund 240 or keep it as a credit on their account for the next invoice. Say which in the credit note.</p>
 
 <h2>Credit note vs refund vs debit note</h2>
 <table><thead><tr><th>Document / action</th><th>What it does</th></tr></thead><tbody>
@@ -1014,10 +1014,10 @@ jane@smithdesign.example</p>
 <tr><td>Refund</td><td>Returns money that was already paid (a payment)</td></tr>
 <tr><td>Debit note</td><td>Increases the amount owed, or is issued by a buyer to request a credit</td></tr>
 </tbody></table>
-<p>A refund often follows a credit note, but not always — the credit can instead be applied to future invoices.</p>
+<p>A refund often follows a credit note, but not always: the credit can instead be applied to future invoices.</p>
 
 <h2>Full cancellation</h2>
-<p>If an invoice should never have been issued — for example you billed the wrong company — issue a credit note for the full amount, then create a fresh invoice with a new number for the correct entity. Do not delete or reuse the original number; see <a href="/blog/invoice-numbering-system">invoice numbering</a> for why.</p>
+<p>If an invoice should never have been issued (for example you billed the wrong company), issue a credit note for the full amount, then create a fresh invoice with a new number for the correct entity. Do not delete or reuse the original number; see <a href="/blog/invoice-numbering-system">invoice numbering</a> for why.</p>
 
 <h2>Best practices</h2>
 <ul>
@@ -1040,8 +1040,8 @@ jane@smithdesign.example</p>
     author: "Invoice Creator Editorial Team",
     content: `
 <h2>The short answer</h2>
-<p>A <strong>proforma invoice</strong> is a preliminary document sent <em>before</em> a sale is completed. It tells the buyer exactly what they will be billed — items, prices, taxes, shipping and terms — so they can arrange payment, approvals or import paperwork. It is not a demand for payment in the accounting sense and is not usually recorded as a sale.</p>
-<p>A <strong>commercial invoice</strong> (or simply "invoice") is issued once goods are shipped or services delivered. It is the legal request for payment and the record of the sale used for accounting and tax. For exports, it is also the customs document — see our <a href="/blog/commercial-invoice-template">commercial invoice template</a> for the fields customs brokers expect.</p>
+<p>A <strong>proforma invoice</strong> is a preliminary document sent <em>before</em> a sale is completed. It tells the buyer exactly what they will be billed (items, prices, taxes, shipping and terms) so they can arrange payment, approvals or import paperwork. It is not a demand for payment in the accounting sense and is not usually recorded as a sale.</p>
+<p>A <strong>commercial invoice</strong> (or simply "invoice") is issued once goods are shipped or services delivered. It is the legal request for payment and the record of the sale used for accounting and tax. For exports, it is also the customs document. See our <a href="/blog/commercial-invoice-template">commercial invoice template</a> for the fields customs brokers expect.</p>
 
 <h2>Side-by-side comparison</h2>
 <table><thead><tr><th></th><th>Proforma invoice</th><th>Commercial invoice</th></tr></thead><tbody>
@@ -1050,7 +1050,7 @@ jane@smithdesign.example</p>
 <tr><td>Recorded as revenue?</td><td>No</td><td>Yes</td></tr>
 <tr><td>Valid for tax credit?</td><td>Generally no</td><td>Yes, if it meets local rules</td></tr>
 <tr><td>Numbering</td><td>Separate series (e.g. PF-2026-0005)</td><td>Main invoice sequence</td></tr>
-<tr><td>Can change?</td><td>Yes, until the sale is confirmed</td><td>No — corrected only with a credit note</td></tr>
+<tr><td>Can change?</td><td>Yes, until the sale is confirmed</td><td>No, corrected only with a credit note</td></tr>
 </tbody></table>
 
 <h2>When to use a proforma invoice</h2>
@@ -1058,7 +1058,7 @@ jane@smithdesign.example</p>
 <li><strong>Advance payment.</strong> The buyer must pay before you ship or start work, and their finance team needs a formal document to release funds.</li>
 <li><strong>International trade.</strong> Importers often need a proforma to apply for import licences, open a letter of credit, or arrange foreign currency.</li>
 <li><strong>Internal approvals.</strong> A buyer's procurement process may require a document showing exact costs before a purchase order can be raised.</li>
-<li><strong>Customs pre-clearance.</strong> Some shipments travel with a proforma when no sale is involved — for example samples or replacement parts — though rules vary by country.</li>
+<li><strong>Customs pre-clearance.</strong> Some shipments travel with a proforma when no sale is involved (for example samples or replacement parts), though rules vary by country.</li>
 </ul>
 
 <h2>How it differs from a quote or estimate</h2>
@@ -1066,7 +1066,7 @@ jane@smithdesign.example</p>
 
 <h2>What to include on a proforma invoice</h2>
 <ul>
-<li>The title "Proforma Invoice" — clearly, so it cannot be mistaken for a tax invoice</li>
+<li>The title "Proforma Invoice", clearly, so it cannot be mistaken for a tax invoice</li>
 <li>A proforma reference number and date</li>
 <li>Seller and buyer details, including addresses and tax IDs where relevant</li>
 <li>Detailed description of goods or services, quantities and unit prices</li>
@@ -1079,7 +1079,7 @@ jane@smithdesign.example</p>
 
 <h2>What happens after payment</h2>
 <p>Once the goods ship or the work is delivered, issue a proper commercial invoice with a number from your main invoice sequence. If the buyer has already paid in full against the proforma, mark the invoice as paid and reference the proforma number and payment date. Your accounting records and tax reports are based on the final invoice, not the proforma.</p>
-<p>In some jurisdictions, receiving an advance payment can itself create a tax obligation and may require an invoice at that point. If you take prepayments regularly, confirm the rules with an accountant — see our <a href="/blog/tax-invoice-guide">tax invoice guide</a> for background.</p>
+<p>In some jurisdictions, receiving an advance payment can itself create a tax obligation and may require an invoice at that point. If you take prepayments regularly, confirm the rules with an accountant. See our <a href="/blog/tax-invoice-guide">tax invoice guide</a> for background.</p>
 
 <h2>Common mistakes</h2>
 <ul>
@@ -1090,20 +1090,20 @@ jane@smithdesign.example</p>
 </ul>
 
 <h2>Creating one quickly</h2>
-<p>Because a proforma has the same structure as an invoice, you can draft the content — line items, totals, terms and validity date — in our <a href="/invoice-generator">invoice generator</a> and reuse it later. Make sure the final document is clearly titled "Proforma Invoice" and uses a proforma number (such as <code>PF-2026-0005</code>), then, when the sale completes, issue a standard invoice with your next invoice number.</p>
+<p>Because a proforma has the same structure as an invoice, you can draft the content (line items, totals, terms and validity date) in our <a href="/invoice-generator">invoice generator</a> and reuse it later. Make sure the final document is clearly titled "Proforma Invoice" and uses a proforma number (such as <code>PF-2026-0005</code>), then, when the sale completes, issue a standard invoice with your next invoice number.</p>
 `,
   },
   {
     slug: "recurring-invoices-guide",
     title: "Recurring Invoices: A Complete Guide for Retainers and Subscriptions",
     description:
-      "How to set up recurring invoices for retainers, maintenance plans and subscriptions — billing dates, line descriptions, price changes, and handling missed payments.",
+      "How to set up recurring invoices for retainers, maintenance plans and subscriptions: billing dates, line descriptions, price changes, and handling missed payments.",
     category: "guides",
     date: "2026-08-18",
     author: "Invoice Creator Editorial Team",
     content: `
 <h2>What a recurring invoice is</h2>
-<p>A recurring invoice bills the same client for the same (or similar) service on a regular schedule — weekly, monthly, quarterly or yearly. Typical examples include design or marketing retainers, <a href="/blog/web-development-invoice-template">website maintenance plans</a>, bookkeeping services, equipment rental, coaching packages, cleaning contracts and software subscriptions.</p>
+<p>A recurring invoice bills the same client for the same (or similar) service on a regular schedule: weekly, monthly, quarterly or yearly. Typical examples include design or marketing retainers, <a href="/blog/web-development-invoice-template">website maintenance plans</a>, bookkeeping services, equipment rental, coaching packages, cleaning contracts and software subscriptions.</p>
 <p>Recurring revenue is the most predictable income a small business can have. But it only stays predictable if the invoicing is consistent: the same day, the same format, the same clear description, every period.</p>
 
 <h2>Choosing the billing schedule</h2>
@@ -1121,17 +1121,17 @@ jane@smithdesign.example</p>
 <h2>Write descriptions that show the period</h2>
 <p>Every recurring invoice should make the service period obvious, so it can never be mistaken for a duplicate:</p>
 <ul>
-<li>"Website maintenance plan — October 2026 (1–31 Oct)"</li>
-<li>"Social media retainer: 12 posts + reporting — Q4 2026"</li>
-<li>"Bookkeeping, standard package — period ending 30 Sep 2026"</li>
+<li>"Website maintenance plan: October 2026 (1–31 Oct)"</li>
+<li>"Social media retainer: 12 posts + reporting, Q4 2026"</li>
+<li>"Bookkeeping, standard package, period ending 30 Sep 2026"</li>
 </ul>
 <p>Without the period, an AP clerk who sees two invoices for the same amount may hold one as a suspected duplicate.</p>
 
 <h2>Handling extras and variable work</h2>
-<p>When you do work outside the retainer, add it as separate, clearly labelled lines rather than changing the main retainer line: "Additional: landing page design (outside retainer scope) — 6 hours". This keeps the recurring amount stable and makes it easy for the client to see what is extra and why.</p>
+<p>When you do work outside the retainer, add it as separate, clearly labelled lines rather than changing the main retainer line: "Additional: landing page design (outside retainer scope): 6 hours". This keeps the recurring amount stable and makes it easy for the client to see what is extra and why.</p>
 
 <h2>Price changes</h2>
-<p>Give written notice before a price change — 30 days is a common courtesy, and your contract may set a specific period. State the effective date and the new amount. On the first invoice at the new price, add a short note: "Monthly rate updated from 1 November 2026 as notified on 1 October." Surprises on a recurring invoice are the fastest way to lose a retainer.</p>
+<p>Give written notice before a price change: 30 days is a common courtesy, and your contract may set a specific period. State the effective date and the new amount. On the first invoice at the new price, add a short note: "Monthly rate updated from 1 November 2026 as notified on 1 October." Surprises on a recurring invoice are the fastest way to lose a retainer.</p>
 
 <h2>Partial periods and pro-rating</h2>
 <p>If a client starts or ends mid-period, pro-rate fairly and show the maths. For example, a 900 monthly retainer starting on 11 September (20 days remaining out of 30) would be 900 × 20 ÷ 30 = 600. Write the dates on the line so the calculation is clear.</p>
@@ -1141,7 +1141,7 @@ jane@smithdesign.example</p>
 
 <h2>When a recurring payment is missed</h2>
 <ol>
-<li>Send a reminder promptly — recurring clients usually pay quickly once prompted. See <a href="/blog/payment-reminder-emails">payment reminder emails</a>.</li>
+<li>Send a reminder promptly, as recurring clients usually pay quickly once prompted. See <a href="/blog/payment-reminder-emails">payment reminder emails</a>.</li>
 <li>If the next period begins while the previous invoice is still unpaid, mention the outstanding balance on the new invoice.</li>
 <li>Your contract should say whether services pause when payment is overdue. Apply that rule calmly and consistently.</li>
 </ol>
@@ -1162,13 +1162,13 @@ jane@smithdesign.example</p>
     slug: "payment-reminder-emails",
     title: "Payment Reminder Emails: 6 Templates From Friendly to Final Notice",
     description:
-      "Copy-ready payment reminder emails for every stage — before the due date, on the due date, and overdue — plus timing, subject lines and tone tips.",
+      "Copy-ready payment reminder emails for every stage: before the due date, on the due date, and overdue, plus timing, subject lines and tone tips.",
     category: "guides",
     date: "2026-08-11",
     author: "Invoice Creator Editorial Team",
     content: `
 <h2>Why reminders work</h2>
-<p>Most overdue invoices are not refused — they are forgotten, stuck in an approval queue, or sitting in the wrong inbox. A short, polite reminder at the right time is the cheapest and most effective way to get paid. The key is to have a set sequence ready in advance, so you never have to decide what to write when you are already frustrated.</p>
+<p>Most overdue invoices are not refused. They are forgotten, stuck in an approval queue, or sitting in the wrong inbox. A short, polite reminder at the right time is the cheapest and most effective way to get paid. The key is to have a set sequence ready in advance, so you never have to decide what to write when you are already frustrated.</p>
 
 <h2>A simple reminder schedule</h2>
 <table><thead><tr><th>When</th><th>Tone</th><th>Goal</th></tr></thead><tbody>
@@ -1184,7 +1184,7 @@ jane@smithdesign.example</p>
 <h2>Tips for every reminder</h2>
 <ul>
 <li>Put the invoice number and amount in the subject line.</li>
-<li>Attach the invoice PDF again — never make the client search for it.</li>
+<li>Attach the invoice PDF again. Never make the client search for it.</li>
 <li>Include the payment details or link in the email itself.</li>
 <li>Keep it short. Three or four sentences is enough.</li>
 <li>Stay neutral. Assume an honest mistake until shown otherwise.</li>
@@ -1196,11 +1196,11 @@ jane@smithdesign.example</p>
 
 <h2>Template 2: On the due date</h2>
 <p><strong>Subject:</strong> Invoice 2026-0041 due today</p>
-<blockquote><p>Hi Sarah,</p><p>Invoice 2026-0041 for 1,200 is due today. If it has already been paid, thank you — please ignore this message. Otherwise, the invoice is attached with bank details.</p><p>Best regards,<br>Alex</p></blockquote>
+<blockquote><p>Hi Sarah,</p><p>Invoice 2026-0041 for 1,200 is due today. If it has already been paid, thank you, please ignore this message. Otherwise, the invoice is attached with bank details.</p><p>Best regards,<br>Alex</p></blockquote>
 
 <h2>Template 3: 7 days overdue</h2>
 <p><strong>Subject:</strong> Overdue: invoice 2026-0041 (7 days)</p>
-<blockquote><p>Hi Sarah,</p><p>I haven't yet received payment for invoice 2026-0041 (1,200), which was due on 14 October. Could you let me know if there's anything holding it up — a missing PO number or a different billing contact, for example? I'm happy to resend anything that's needed.</p><p>Thanks,<br>Alex</p></blockquote>
+<blockquote><p>Hi Sarah,</p><p>I haven't yet received payment for invoice 2026-0041 (1,200), which was due on 14 October. Could you let me know if there's anything holding it up (a missing PO number or a different billing contact, for example)? I'm happy to resend anything that's needed.</p><p>Thanks,<br>Alex</p></blockquote>
 
 <h2>Template 4: 14 days overdue</h2>
 <p><strong>Subject:</strong> Second reminder: invoice 2026-0041 now 14 days overdue</p>
@@ -1212,11 +1212,11 @@ jane@smithdesign.example</p>
 
 <h2>Template 6: Final notice</h2>
 <p><strong>Subject:</strong> Final notice: invoice 2026-0041</p>
-<blockquote><p>Dear Sarah,</p><p>This is a final notice regarding invoice 2026-0041 for 1,200, now 45 days overdue. If payment is not received by 30 November, we will pause further work and may refer the debt for collection. I would much prefer to resolve this directly — please reply or call me this week.</p><p>Regards,<br>Alex</p></blockquote>
+<blockquote><p>Dear Sarah,</p><p>This is a final notice regarding invoice 2026-0041 for 1,200, now 45 days overdue. If payment is not received by 30 November, we will pause further work and may refer the debt for collection. I would much prefer to resolve this directly, so please reply or call me this week.</p><p>Regards,<br>Alex</p></blockquote>
 <p>Only state consequences you are genuinely prepared to carry out, and make sure they are allowed under your contract and local law.</p>
 
 <h2>Beyond email</h2>
-<p>If two emails go unanswered, pick up the phone. A two-minute call often uncovers the real problem — a wrong address, a missing supplier form, or a cash-flow issue the client is embarrassed about. If the client is struggling, a written payment plan with fixed dates is usually better than waiting indefinitely.</p>
+<p>If two emails go unanswered, pick up the phone. A two-minute call often uncovers the real problem: a wrong address, a missing supplier form, or a cash-flow issue the client is embarrassed about. If the client is struggling, a written payment plan with fixed dates is usually better than waiting indefinitely.</p>
 
 <h2>Prevent the next reminder</h2>
 <p>Reminders treat the symptom. The cure is a clear invoice with agreed terms, a specific due date and visible payment details. Read <a href="/blog/how-to-get-paid-faster">how to get paid faster</a> and <a href="/blog/common-invoice-mistakes">common invoice mistakes</a>, then create your next invoice with the <a href="/invoice-generator">free invoice generator</a>.</p>
@@ -1233,7 +1233,7 @@ jane@smithdesign.example</p>
     content: `
 <h2>What payment terms are</h2>
 <p>Payment terms are the conditions under which a client must pay your invoice: how long they have, how they can pay, and what happens if they pay early or late. They belong in your contract or proposal first, and are then repeated on every invoice.</p>
-<p>Clear terms remove guesswork. Vague terms — or none at all — let the client's own default policy decide when you get paid, and large organisations often default to 45, 60 or even 90 days.</p>
+<p>Clear terms remove guesswork. Vague terms (or none at all) let the client's own default policy decide when you get paid, and large organisations often default to 45, 60 or even 90 days.</p>
 
 <h2>Common payment terms and what they mean</h2>
 <table><thead><tr><th>Term</th><th>Meaning</th></tr></thead><tbody>
@@ -1249,20 +1249,20 @@ jane@smithdesign.example</p>
 <tr><td>Stage / milestone payments</td><td>Payments tied to agreed project stages</td></tr>
 </tbody></table>
 
-<h2>"Due on receipt" — clear but not always fast</h2>
-<p>"Due on receipt" sounds like the fastest option, but many business clients treat it loosely because it has no specific date. For B2B work, a short fixed term with a date, such as "Net 7 — due 21 October 2026", often gets paid faster because it fits neatly into an approval workflow.</p>
+<h2>"Due on receipt": clear but not always fast</h2>
+<p>"Due on receipt" sounds like the fastest option, but many business clients treat it loosely because it has no specific date. For B2B work, a short fixed term with a date, such as "Net 7, due 21 October 2026", often gets paid faster because it fits neatly into an approval workflow.</p>
 
 <h2>How to choose your terms</h2>
 <ul>
 <li><strong>Your cash flow.</strong> If you pay staff or suppliers weekly, you cannot comfortably wait 60 days. Choose the shortest terms your clients will accept.</li>
-<li><strong>Your clients.</strong> Individuals and small businesses usually accept Net 7–14. Large companies often have fixed policies — ask during negotiation and price accordingly.</li>
+<li><strong>Your clients.</strong> Individuals and small businesses usually accept Net 7–14. Large companies often have fixed policies, so ask during negotiation and price accordingly.</li>
 <li><strong>Project size.</strong> Larger projects justify deposits and milestone payments rather than one invoice at the end.</li>
 <li><strong>Industry norms.</strong> Some sectors have established terms. Matching them reduces friction; beating them is a competitive advantage if you can afford it.</li>
 <li><strong>Local law.</strong> Some jurisdictions cap the maximum payment period in commercial contracts or give rights to late-payment interest. Check what applies to you.</li>
 </ul>
 
 <h2>Is an early-payment discount worth it?</h2>
-<p>A 2/10 Net 30 discount means the client saves 2% for paying 20 days early. That sounds small, but over a year it is equivalent to a very high annual interest rate — roughly 36% (2% × 365 ÷ 20). Offer it only when receiving cash early is genuinely worth that much to you, for example to avoid an expensive overdraft.</p>
+<p>A 2/10 Net 30 discount means the client saves 2% for paying 20 days early. That sounds small, but over a year it is equivalent to a very high annual interest rate: roughly 36% (2% × 365 ÷ 20). Offer it only when receiving cash early is genuinely worth that much to you, for example to avoid an expensive overdraft.</p>
 
 <h2>How to write terms on your invoice</h2>
 <p>Always include a calculated due date, not just the term. Examples:</p>
@@ -1276,7 +1276,7 @@ jane@smithdesign.example</p>
 
 <h2>Common mistakes</h2>
 <ul>
-<li>Writing "Net 30" with no actual date — clients count from different starting points</li>
+<li>Writing "Net 30" with no actual date, as clients count from different starting points</li>
 <li>Putting different terms on the invoice from the ones in the contract</li>
 <li>Accepting 60–90 day terms without adjusting your price</li>
 <li>Forgetting to state the currency on international invoices</li>
@@ -1298,30 +1298,30 @@ jane@smithdesign.example</p>
     author: "Invoice Creator Editorial Team",
     content: `
 <h2>The short definition</h2>
-<p>An invoice is a commercial document issued by a seller to a buyer that itemises goods or services supplied, states the amount owed, and sets a deadline for payment. It is simultaneously a request for money, a record of a transaction, and — in most countries — an accounting document you are legally required to keep for several years.</p>
+<p>An invoice is a commercial document issued by a seller to a buyer that itemises goods or services supplied, states the amount owed, and sets a deadline for payment. It is simultaneously a request for money, a record of a transaction, and (in most countries) an accounting document you are legally required to keep for several years.</p>
 <p>An invoice is not a receipt and it is not a quote. A quote or estimate comes before the work; an invoice comes after delivery (or at an agreed milestone); a receipt confirms the invoice was paid. Confusing these documents is one of the most common reasons clients delay payment or dispute a balance.</p>
-<p>If you sell products, charge for time, or bill retainers, a clear invoice is how you turn completed work into cash. Weak invoices — missing numbers, vague lines, no due date — sit in accounts-payable queues. Strong ones get approved in days.</p>
+<p>If you sell products, charge for time, or bill retainers, a clear invoice is how you turn completed work into cash. Weak invoices (missing numbers, vague lines, no due date) sit in accounts-payable queues. Strong ones get approved in days.</p>
 
 <h2>What every invoice must contain</h2>
 <p>Requirements vary slightly by country and industry, but professional invoices share a core set of fields. Missing any of these raises the chance of rejection:</p>
 <ul>
-<li><strong>The word "Invoice"</strong> — so the document cannot be mistaken for an estimate, quote, or packing slip.</li>
-<li><strong>A unique invoice number</strong> — sequential, never reused, easy to reference in email and bank transfers.</li>
-<li><strong>Issue date and due date</strong> — or clear terms such as Net 14 or Net 30.</li>
-<li><strong>Your business details</strong> — legal name, address, tax registration number where applicable, and a contact email.</li>
-<li><strong>Your client's details</strong> — the legal entity being billed, not only a person's first name or a trading nickname.</li>
-<li><strong>Line items</strong> — description, quantity, unit price, and line total for each product or service.</li>
-<li><strong>Subtotal, tax, discounts, and the final amount due</strong> — with arithmetic that matches the sum of the lines.</li>
-<li><strong>Payment instructions</strong> — bank details, payment link, or accepted methods, placed where they are easy to find.</li>
+<li><strong>The word "Invoice"</strong>, so the document cannot be mistaken for an estimate, quote, or packing slip.</li>
+<li><strong>A unique invoice number</strong>: sequential, never reused, easy to reference in email and bank transfers.</li>
+<li><strong>Issue date and due date</strong>, or clear terms such as Net 14 or Net 30.</li>
+<li><strong>Your business details</strong>: legal name, address, tax registration number where applicable, and a contact email.</li>
+<li><strong>Your client's details</strong>: the legal entity being billed, not only a person's first name or a trading nickname.</li>
+<li><strong>Line items</strong>: description, quantity, unit price, and line total for each product or service.</li>
+<li><strong>Subtotal, tax, discounts, and the final amount due</strong>, with arithmetic that matches the sum of the lines.</li>
+<li><strong>Payment instructions</strong>: bank details, payment link, or accepted methods, placed where they are easy to find.</li>
 </ul>
-<p>Many buyers also require a purchase order (PO) number, a cost centre, or a project code. Ask for those at kickoff and print them on the invoice — not in a follow-up email three weeks later.</p>
+<p>Many buyers also require a purchase order (PO) number, a cost centre, or a project code. Ask for those at kickoff and print them on the invoice, not in a follow-up email three weeks later.</p>
 
 <h2>Why the details matter</h2>
 <p>Accounts-payable teams reject invoices for surprisingly small reasons: a missing PO number, an ambiguous due date, a total that does not match the sum of the lines, or billing the wrong legal entity after a company rename. Every rejection adds days or weeks to your payment cycle because the invoice re-enters the approval queue from the start.</p>
 <p>A structured template removes much of that risk. When fields always appear in the same place, both you and the client know where to look. That is why tools like our <a href="/invoice-generator">free invoice generator</a> (see <a href="/blog/how-to-generate-an-invoice">how to generate an invoice online</a>) and ready-made <a href="/invoice-templates">invoice templates</a> outperform ad-hoc Word documents for anyone who invoices more than occasionally.</p>
 
 <h2>Invoice numbering that survives an audit</h2>
-<p>Use a predictable scheme such as <code>2026-0041</code> or <code>ACME-0041</code>. Prefixing with the year makes year-end filing obvious. Never restart numbering mid-year, never skip numbers without a logged void, and never issue two invoices with the same number — auditors treat duplicates as a red flag.</p>
+<p>Use a predictable scheme such as <code>2026-0041</code> or <code>ACME-0041</code>. Prefixing with the year makes year-end filing obvious. Never restart numbering mid-year, never skip numbers without a logged void, and never issue two invoices with the same number. Auditors treat duplicates as a red flag.</p>
 <p>If you void an invoice, keep a record of the voided number and why it was cancelled. If you need to correct a mistake after sending, issue a credit note that references the original number rather than silently editing the PDF and resending it.</p>
 
 <h2>Timing: when to issue the invoice</h2>
@@ -1329,7 +1329,7 @@ jane@smithdesign.example</p>
 <p>For larger projects, split billing into deposit, progress, and final invoices. Clients approve smaller, well-labelled amounts faster than one large bill after months of work. See our <a href="/blog/how-to-create-an-invoice">how to create an invoice</a> guide for a step-by-step field checklist.</p>
 
 <h2>How long to keep invoices</h2>
-<p>Retention rules vary by jurisdiction, but most expect between five and seven years of sales records. Store a PDF copy of every invoice you send — not only the data inside accounting software. PDFs are what banks, tax inspectors, and dispute mediators ask for when something goes wrong.</p>
+<p>Retention rules vary by jurisdiction, but most expect between five and seven years of sales records. Store a PDF copy of every invoice you send, not only the data inside accounting software. PDFs are what banks, tax inspectors, and dispute mediators ask for when something goes wrong.</p>
 <p>Organise files by year and client name so you can retrieve any document in seconds. Pair each paid invoice with its receipt or bank reference when you reconcile.</p>
 
 <h2>Invoice vs related documents</h2>
@@ -1340,13 +1340,13 @@ jane@smithdesign.example</p>
 <p>Freelancers use invoices to turn finished deliverables into receivables. Product sellers use them to document shipments and tax. Agencies use them for retainers, milestones, and out-of-scope extras. Consultants and nonprofits use them whenever a client or grant requires a formal billing artefact. In every case the document answers the same questions: who owes whom, for what, how much, and by when.</p>
 <p>Without invoices, cash collection becomes a chain of informal reminders that are hard to audit. With them, you can age receivables, forecast cash, and prove what was agreed when a dispute appears months later. That operational value is why even tiny businesses benefit from treating invoicing as a system rather than an afterthought.</p>
 <h2>Pro forma, commercial, and recurring invoices</h2>
-<p>A pro forma invoice is a preliminary bill used for customs, deposits, or planning — it is usually not a demand for final payment and should be labelled clearly so it is not confused with a tax invoice. A commercial invoice for goods trade may need Incoterms, country of origin, and HS codes in addition to ordinary billing fields. Recurring invoices repeat on a schedule for retainers or subscriptions; they still need unique numbers each period and an explicit service period on every PDF.</p>
+<p>A pro forma invoice is a preliminary bill used for customs, deposits, or planning. It is usually not a demand for final payment and should be labelled clearly so it is not confused with a tax invoice. A commercial invoice for goods trade may need Incoterms, country of origin, and HS codes in addition to ordinary billing fields. Recurring invoices repeat on a schedule for retainers or subscriptions; they still need unique numbers each period and an explicit service period on every PDF.</p>
 <p>Choose the document type that matches the moment in the sales cycle. Sending a full invoice before acceptance of a quote creates awkward credit notes later. Sending only chat messages when a client needs a PDF for their finance system creates unpaid work that feels invisible to their process.</p>
 <h2>Digital workflows and client portals</h2>
 <p>Many larger buyers insist you upload invoices to a vendor portal with coded fields. Treat the portal as the system of record for delivery, but keep your own PDF archive. Portal UIs change; your numbered PDF is what you attach in a chase email when something stalls. If a portal rejects a file, fix the rejected field rather than emailing a side-channel PDF that AP will never post.</p>
-<p>Electronic invoicing mandates in some countries add clearance, QR codes, or government IDs. Those rules sit on top of the ordinary commercial invoice — they do not replace the need for clear line items and payment instructions. When in doubt, ask the buyer what their AP checklist requires before your first bill.</p>
+<p>Electronic invoicing mandates in some countries add clearance, QR codes, or government IDs. Those rules sit on top of the ordinary commercial invoice. They do not replace the need for clear line items and payment instructions. When in doubt, ask the buyer what their AP checklist requires before your first bill.</p>
 <h2>Create one now</h2>
-<p>You can build a clear, professional invoice with every field above in a few minutes using our <a href="/invoice-generator">free invoice generator</a> — live preview, no watermark, instant PDF download. Pick a layout from <a href="/invoice-templates/modern">Modern</a>, <a href="/invoice-templates/corporate">Corporate</a>, or another style that matches how your clients file paperwork, fill in the details once, and send a document that is ready to approve.</p>
+<p>You can build a clear, professional invoice with every field above in a few minutes using our <a href="/invoice-generator">free invoice generator</a>: live preview, no watermark, instant PDF download. Pick a layout from <a href="/invoice-templates/modern">Modern</a>, <a href="/invoice-templates/corporate">Corporate</a>, or another style that matches how your clients file paperwork, fill in the details once, and send a document that is ready to approve.</p>
 `,
   },
   {
@@ -1360,45 +1360,45 @@ jane@smithdesign.example</p>
     author: "Invoice Creator Editorial Team",
     content: `
 <h2>Before you start</h2>
-<p>Gather three things before you open any template: your legal business details, the client's legal billing details, and an agreed scope with prices. Ninety percent of late payments trace back to a disagreement about one of those three — not to the invoice layout itself.</p>
+<p>Gather three things before you open any template: your legal business details, the client's legal billing details, and an agreed scope with prices. Ninety percent of late payments trace back to a disagreement about one of those three, not to the invoice layout itself.</p>
 <p>If the client uses purchase orders, get the PO number in writing before you invoice. If tax applies, confirm whether you must charge it and which registration number belongs on the document. A five-minute check now prevents a three-week rejection later.</p>
 
-<h2>Step 1 — Pick a template</h2>
+<h2>Step 1: Pick a template</h2>
 <p>Choose a layout that matches how your client files paperwork. Enterprise accounts payable teams prefer dense, reference-heavy layouts such as <a href="/invoice-templates/corporate">Corporate</a>. Creative clients often respond well to <a href="/invoice-templates/modern">Modern</a> or <a href="/invoice-templates/creative">Creative</a>. Solo consultants who want quiet clarity often choose <a href="/invoice-templates/minimal">Minimal</a>.</p>
 <p>The template should never hide the amount due, the due date, or the payment method. Those three facts should be findable in a few seconds. Browse more options on our <a href="/invoice-templates">invoice templates</a> page, then open the one you like inside the generator.</p>
 
-<h2>Step 2 — Add your business identity</h2>
+<h2>Step 2: Add your business identity</h2>
 <p>Upload your logo at a modest size, then add your legal business name, registered address, email, phone, and tax registration number if you have one. If you trade under a different name from your registered entity, show both: the registered name for legal clarity and the trading name for recognition.</p>
 <p>Inconsistent seller details across invoices make reconciliation harder for you and look unprofessional to finance teams. Keep one saved profile and reuse it.</p>
 
-<h2>Step 3 — Add the client</h2>
+<h2>Step 3: Add the client</h2>
 <p>Bill the legal entity named in the contract or purchase order. Include an attention line for the person who approves payment, and add their PO number, project code, or department if they use one. Billing a trading name when the contract is with a parent company is a frequent cause of "we never received this" replies.</p>
 <p>For international clients, confirm the country, tax ID format, and whether the billing address differs from the delivery address.</p>
 
-<h2>Step 4 — Set the invoice number and dates</h2>
-<p>Use your next sequential number — never reuse one. Set today's date (or the supply date, if different) as the issue date, and a due date that matches your agreed terms. "Due on receipt" is legitimate for new or one-off clients; Net 14 and Net 30 are more common for ongoing B2B work.</p>
+<h2>Step 4: Set the invoice number and dates</h2>
+<p>Use your next sequential number. Never reuse one. Set today's date (or the supply date, if different) as the issue date, and a due date that matches your agreed terms. "Due on receipt" is legitimate for new or one-off clients; Net 14 and Net 30 are more common for ongoing B2B work.</p>
 <p>Write the due date as a calendar date as well as a term. "Net 30" alone forces the client to calculate; "due 25 October 2026" removes ambiguity. For more on numbering discipline, see <a href="/blog/what-is-an-invoice">what an invoice is</a>.</p>
 
-<h2>Step 5 — Itemise the work</h2>
-<p>Write descriptions your client can approve without asking you a question. "Website redesign — homepage and four inner pages, phase 1 of 2" beats "Design work". Include units (hours, seats, units shipped), rates, and quantities so the maths is transparent.</p>
+<h2>Step 5: Itemise the work</h2>
+<p>Write descriptions your client can approve without asking you a question. "Website redesign: homepage and four inner pages, phase 1 of 2" beats "Design work". Include units (hours, seats, units shipped), rates, and quantities so the maths is transparent.</p>
 <ul>
 <li>For hourly work, list period covered and attach or summarise a timesheet.</li>
 <li>For products, include SKUs or product codes when the buyer tracks inventory.</li>
 <li>For retainers, name the month or period explicitly.</li>
-<li>For milestones, state "Phase 2 of 3 — 40% of contract value" and what remains.</li>
+<li>For milestones, state "Phase 2 of 3: 40% of contract value" and what remains.</li>
 </ul>
 <p>Real-world layouts for these scenarios are covered in our <a href="/blog/invoice-examples">invoice examples</a> guide.</p>
 
-<h2>Step 6 — Apply tax, discounts and shipping</h2>
+<h2>Step 6: Apply tax, discounts and shipping</h2>
 <p>Apply discounts before tax unless local rules say otherwise, then apply the correct tax rate to the taxable amount. Show tax as its own line (or lines, if multiple rates apply). If you are not registered for tax, say so explicitly so the client does not try to reclaim an amount that was never charged.</p>
 <p>Shipping, handling, and expenses should appear as separate lines when material. Mixing them into service fees makes audits and client reviews harder. For jurisdiction-specific fields, see our <a href="/blog/tax-invoice-guide">tax invoice</a>, <a href="/blog/gst-invoice-guide">GST</a>, and <a href="/blog/vat-invoice-guide">VAT</a> guides.</p>
 
-<h2>Step 7 — Add payment terms and notes</h2>
-<p>State accepted payment methods, bank details (or a payment link), any late-payment interest you agreed in the contract, and a short thank-you. Put bank details on the invoice itself — not only in the email body — so they survive filing systems that store the PDF alone.</p>
+<h2>Step 7: Add payment terms and notes</h2>
+<p>State accepted payment methods, bank details (or a payment link), any late-payment interest you agreed in the contract, and a short thank-you. Put bank details on the invoice itself (not only in the email body) so they survive filing systems that store the PDF alone.</p>
 <p>Optional notes that help: reference to the accepted proposal or quote number, wire fee responsibility for international transfers, and a reminder of the PO number. A polite, specific note measurably improves payment speed compared with a blank footer.</p>
 
-<h2>Step 8 — Download and send</h2>
-<p>Export as PDF — never an editable spreadsheet or word-processor file as your document of record. Name the file <code>Invoice-2026-0041-ClientName.pdf</code>. Email it to accounts payable with the invoice number and due date in the subject line, and CC your day-to-day contact so they can push approval internally.</p>
+<h2>Step 8: Download and send</h2>
+<p>Export as PDF, never an editable spreadsheet or word-processor file as your document of record. Name the file <code>Invoice-2026-0041-ClientName.pdf</code>. Email it to accounts payable with the invoice number and due date in the subject line, and CC your day-to-day contact so they can push approval internally.</p>
 <p>For subject lines, reminders, and escalation wording, use our companion guide: <a href="/blog/how-to-send-an-invoice">how to send an invoice</a>.</p>
 
 <h2>Common pitfalls at creation time</h2>
@@ -1413,15 +1413,15 @@ jane@smithdesign.example</p>
 
 <h2>Gathering inputs the day before you bill</h2>
 <p>Create a short intake checklist for every new client: legal name, billing address, AP email, tax IDs, PO rules, currency, and default terms. Store it where anyone on your team can find it. When a project ends on a Friday afternoon, you should not be hunting message threads for a PO number.</p>
-<p>Also gather proof of delivery or acceptance — a sign-off email, timesheet approval, or shipping confirmation. If a dispute arises, that evidence sits beside the invoice. Building the PDF without knowing what was accepted is how premature invoices get rejected and relationships cool.</p>
+<p>Also gather proof of delivery or acceptance: a sign-off email, timesheet approval, or shipping confirmation. If a dispute arises, that evidence sits beside the invoice. Building the PDF without knowing what was accepted is how premature invoices get rejected and relationships cool.</p>
 <h2>Discounts, retainers, and credit lines</h2>
 <p>Show discounts as their own lines or as clearly labelled adjustments so the client sees the journey from list price to amount due. If a deposit was already paid, add a credit line that references the deposit invoice number. Net total should be obvious: charges for this period, minus credits, plus tax, equals amount due now.</p>
 <p>For retainers, name the period and the included scope. For prepaid packages, show remaining balances in the notes when helpful. Transparency reduces clarification emails that freeze approval for days.</p>
 <h2>Quality check before export</h2>
-<p>Read the PDF as if you were a stranger in accounts payable. Can you see who you are, who you are billing, what you delivered, what to pay, how to pay, and by when — without endless scrolling? Open the file on your phone. Tiny logos and pale grey text that look fine in a design tool often fail in real inboxes.</p>
+<p>Read the PDF as if you were a stranger in accounts payable. Can you see who you are, who you are billing, what you delivered, what to pay, how to pay, and by when, without endless scrolling? Open the file on your phone. Tiny logos and pale grey text that look fine in a design tool often fail in real inboxes.</p>
 <p>Spell-check client names and bank account digits twice. A single wrong IBAN can bounce a wire and burn a week. When amounts are material, have a second person glance at entity, PO, tax, and totals before you hit send.</p>
 <h2>Do it now</h2>
-<p>Our <a href="/invoice-generator">free invoice generator</a> walks through every step above with a live preview and instant PDF download. Fill the fields once, check the totals, download, and send — without rebuilding the layout from scratch each time.</p>
+<p>Our <a href="/invoice-generator">free invoice generator</a> walks through every step above with a live preview and instant PDF download. Fill the fields once, check the totals, download, and send, without rebuilding the layout from scratch each time.</p>
 `,
   },
   {
@@ -1436,7 +1436,7 @@ jane@smithdesign.example</p>
     content: `
 <h2>The core difference</h2>
 <p>An invoice is issued before payment (or before the final payment clears) and asks for money. A receipt is issued after payment and confirms money was received. One creates a receivable on your books; the other marks that receivable as settled.</p>
-<p>Mixing the labels causes real operational problems. If you mark a paid document "Invoice", a client may pay twice — or their system may keep showing the balance as open. If you only ever issue receipts and never invoices, you lose a clear audit trail of what was owed and when it was due.</p>
+<p>Mixing the labels causes real operational problems. If you mark a paid document "Invoice", a client may pay twice, or their system may keep showing the balance as open. If you only ever issue receipts and never invoices, you lose a clear audit trail of what was owed and when it was due.</p>
 
 <h2>Side-by-side comparison</h2>
 <table><thead><tr><th>&nbsp;</th><th>Invoice</th><th>Receipt</th></tr></thead><tbody>
@@ -1451,7 +1451,7 @@ jane@smithdesign.example</p>
 
 <h2>When you need both</h2>
 <p>For most B2B work you issue an invoice first, then a receipt (or a paid stamp / payment confirmation) when the transfer clears. The receipt should reference the original invoice number so both parties can match documents during reconciliation.</p>
-<p>For retail, café, or instant online checkout, a receipt alone is often enough because payment and delivery happen at the same moment. There was never an unpaid balance to track. Even then, some business buyers still ask for a formal tax invoice for reclaim purposes — ask before you assume a till receipt is enough.</p>
+<p>For retail, café, or instant online checkout, a receipt alone is often enough because payment and delivery happen at the same moment. There was never an unpaid balance to track. Even then, some business buyers still ask for a formal tax invoice for reclaim purposes, so ask before you assume a till receipt is enough.</p>
 
 <h2>What each document should include</h2>
 <h3>On the invoice</h3>
@@ -1476,11 +1476,11 @@ jane@smithdesign.example</p>
 
 <h2>Common mistakes</h2>
 <ul>
-<li>Labelling a paid document "Invoice" without marking it paid — clients may pay twice or file it as unpaid.</li>
+<li>Labelling a paid document "Invoice" without marking it paid: clients may pay twice or file it as unpaid.</li>
 <li>Issuing a receipt with no reference to the original invoice number.</li>
 <li>Using receipts as your only sales record, which makes year-end reconciliation painful.</li>
 <li>Sending a receipt before funds clear (especially cheques or slow international wires).</li>
-<li>Changing totals on a "receipt" to match what the client paid when the invoice was wrong — fix the invoice with a credit note instead.</li>
+<li>Changing totals on a "receipt" to match what the client paid when the invoice was wrong. Fix the invoice with a credit note instead.</li>
 </ul>
 
 
@@ -1495,7 +1495,7 @@ jane@smithdesign.example</p>
 <p>Partial refunds should state the remaining balance explicitly. Ambiguous refund emails that never become documents are how both sides end up with different memories of what was settled.</p>
 
 <h2>Labelling paid invoices clearly</h2>
-<p>Some businesses stamp the original invoice PDF "PAID" instead of issuing a separate receipt. That can work if the stamp includes payment date and method, and if your client accepts it for their records. When in doubt, send a short separate receipt that references the invoice number — it takes a minute and prevents double-payment risk.</p>
+<p>Some businesses stamp the original invoice PDF "PAID" instead of issuing a separate receipt. That can work if the stamp includes payment date and method, and if your client accepts it for their records. When in doubt, send a short separate receipt that references the invoice number. It takes a minute and prevents double-payment risk.</p>
 <p>Never change the invoice total after payment to match a wrong transfer. Issue a credit or request the balance; altered history undermines audits.</p>
 <h2>Practical workflow</h2>
 <ol>
@@ -1524,7 +1524,7 @@ jane@smithdesign.example</p>
 
 <h2>When an estimate is the right call</h2>
 <ul>
-<li>Scope is not fully defined yet — discovery is incomplete.</li>
+<li>Scope is not fully defined yet: discovery is incomplete.</li>
 <li>Costs depend on site conditions, third-party pricing, or actual hours worked.</li>
 <li>The client is comparing suppliers and needs a ballpark quickly.</li>
 <li>Materials prices are volatile and you cannot lock a supplier quote yet.</li>
@@ -1538,9 +1538,9 @@ jane@smithdesign.example</p>
 <h2>Protecting yourself on estimates</h2>
 <p>Always include three protective elements:</p>
 <ol>
-<li><strong>Validity period</strong> — for example, "Valid for 30 days from the date above."</li>
-<li><strong>Assumptions list</strong> — what you assumed about access, materials, round trips, revisions, or third-party licences.</li>
-<li><strong>Variation rule</strong> — how extras will be priced ("additional hours at £X; materials at cost + 15%").</li>
+<li><strong>Validity period</strong>: for example, "Valid for 30 days from the date above."</li>
+<li><strong>Assumptions list</strong>: what you assumed about access, materials, round trips, revisions, or third-party licences.</li>
+<li><strong>Variation rule</strong>: how extras will be priced ("additional hours at £X; materials at cost + 15%").</li>
 </ol>
 <p>Without those lines, many clients treat estimates as fixed prices and argue when the final invoice is higher. State clearly that the estimate is not an invoice and does not request payment.</p>
 
@@ -1550,20 +1550,20 @@ jane@smithdesign.example</p>
 <li>Keep the same line-item structure so the client can compare estimate and invoice side by side.</li>
 <li>Add a unique invoice number, issue date, and due date.</li>
 <li>Replace projected quantities with actuals where they differ.</li>
-<li>Show variations as their own clearly labelled lines — never as a silent increase to an existing line.</li>
+<li>Show variations as their own clearly labelled lines, never as a silent increase to an existing line.</li>
 <li>Reference the estimate number in the notes: "Based on estimate EST-2026-012, approved 3 March 2026."</li>
 </ol>
 <p>If the final total is within the stated variance, say so. If it exceeds the variance, attach or cite the written approval for the change before you send the invoice.</p>
 
 <h2>Deposits and progress billing</h2>
 <p>You can invoice a deposit against an accepted estimate or quote before work starts. Label it clearly as a deposit invoice and state how it will be applied to the final bill. Progress invoices should name the milestone and the percentage of contract value they represent.</p>
-<p>Never send a document labelled "estimate" that includes bank details and a due date as if payment were already owed — that confuses filing systems and clients alike.</p>
+<p>Never send a document labelled "estimate" that includes bank details and a due date as if payment were already owed. That confuses filing systems and clients alike.</p>
 
 <h2>Communication tips</h2>
 <ul>
 <li>In email, say "I've attached an estimate (not an invoice)" when that distinction matters.</li>
 <li>Ask the client to confirm assumptions in writing before you schedule the work.</li>
-<li>Update the estimate if scope changes mid-discussion — do not silently carry an outdated PDF forward.</li>
+<li>Update the estimate if scope changes mid-discussion, and do not silently carry an outdated PDF forward.</li>
 </ul>
 
 
@@ -1572,7 +1572,7 @@ jane@smithdesign.example</p>
 <p>If a client says they need something so finance can reserve budget, an estimate is perfect. If they need a price they can raise a <a href="/blog/invoice-vs-purchase-order">purchase order</a> against, escalate to a quotation with firm scope. Matching document type to the buyer's internal process is part of getting paid later without drama.</p>
 <h2>Range estimates and capped estimates</h2>
 <p>A range communicates uncertainty honestly. A capped estimate that will not be exceeded without written approval protects the client while giving you a stop point for conversation. Either approach beats a single fake-precise number you cannot defend when conditions change.</p>
-<p>When you invoice inside a cap, show actuals and remaining headroom. When you need to exceed a cap, pause and get approval before continuing — then invoice the approved overrun as a clearly labelled variation line rather than quietly inflating an existing one.</p>
+<p>When you invoice inside a cap, show actuals and remaining headroom. When you need to exceed a cap, pause and get approval before continuing, then invoice the approved overrun as a clearly labelled variation line rather than quietly inflating an existing one.</p>
 <h2>Estimates in competitive bids</h2>
 <p>Buyers comparing suppliers often ask for estimates first. Keep formatting comparable: same categories of cost, clear exclusions, and validity dates. After you win, convert promptly to a quotation or order confirmation so the working relationship rests on a firm baseline rather than an informal message thread that nobody can find later.</p>
 <p>Archive every estimate you send with its version date. Mid-negotiation edits are normal; showing an outdated PDF as if it were current is how distrust starts before work even begins.</p>
@@ -1622,17 +1622,17 @@ jane@smithdesign.example</p>
 
 <h2>Practical workflow</h2>
 <ol>
-<li><strong>Quotation</strong> — send a firm, numbered offer with a validity window.</li>
-<li><strong>Written acceptance</strong> — email confirmation or signed acceptance block.</li>
-<li><strong>Deposit invoice</strong> — if your terms require one before work begins.</li>
-<li><strong>Work</strong> — deliver against the accepted scope.</li>
-<li><strong>Final (or milestone) invoice</strong> — mirror the quote; list variations separately.</li>
-<li><strong>Receipt</strong> — confirm payment when funds clear.</li>
+<li><strong>Quotation</strong>: send a firm, numbered offer with a validity window.</li>
+<li><strong>Written acceptance</strong>: email confirmation or signed acceptance block.</li>
+<li><strong>Deposit invoice</strong>: if your terms require one before work begins.</li>
+<li><strong>Work</strong>: deliver against the accepted scope.</li>
+<li><strong>Final (or milestone) invoice</strong>: mirror the quote; list variations separately.</li>
+<li><strong>Receipt</strong>: confirm payment when funds clear.</li>
 </ol>
 <p>Skipping the acceptance step is the single most common cause of scope disputes. A verbal "sounds good" is not enough when money and deadlines are involved. Ask for a short written "We accept quotation Q-2026-018" reply.</p>
 
 <h2>Handling changes after acceptance</h2>
-<p>When the client asks for extras, issue a short written variation (or updated quotation for the delta) and get acceptance again before doing the work. Then invoice the variation as its own line: "Variation V-03 — additional landing page — as approved 12 May 2026."</p>
+<p>When the client asks for extras, issue a short written variation (or updated quotation for the delta) and get acceptance again before doing the work. Then invoice the variation as its own line: "Variation V-03: additional landing page, as approved 12 May 2026."</p>
 <p>Do not absorb unlimited "small tweaks" without a process. Small tweaks accumulate into unpaid days. Your quotation's revision limit (for example, "two rounds of revisions included") should be visible and enforced politely.</p>
 
 <h2>Payment schedules on quotations</h2>
@@ -1651,7 +1651,7 @@ jane@smithdesign.example</p>
 <p>State whether prices are tax-inclusive or tax-exclusive on the quotation so the first invoice does not surprise anyone. Surprises at billing time are rarely forgiven quickly.</p>
 
 <h2>When a quotation should expire</h2>
-<p>Material prices, exchange rates, and your own utilisation change. A 14- or 30-day validity window is not unfriendly — it is honest. When a client accepts after expiry, re-issue or confirm the old price in writing before you schedule work. Honouring expired quotes silently trains late decisions and eats margin.</p>
+<p>Material prices, exchange rates, and your own utilisation change. A 14- or 30-day validity window is not unfriendly. It is honest. When a client accepts after expiry, re-issue or confirm the old price in writing before you schedule work. Honouring expired quotes silently trains late decisions and eats margin.</p>
 <p>Put the expiry date near the total where it will be seen, not only in fine print at the bottom of page two.</p>
 <p>If you need a ready layout for the quote itself, our <a href="/blog/quotation-format">quotation format guide</a> walks through every field with a worked sample.</p>
 
@@ -1663,7 +1663,7 @@ jane@smithdesign.example</p>
     slug: "best-invoice-templates",
     title: "The 18 Best Invoice Templates and When to Use Each",
     description:
-      "A practical tour of all 18 invoice layouts — Modern, Minimal, Corporate, Nordic, Emerald and more — with guidance on which industry each fits.",
+      "A practical tour of all 18 invoice layouts (Modern, Minimal, Corporate, Nordic, Emerald and more) with guidance on which industry each fits.",
     category: "design-templates",
     date: "2026-06-24",
     updated: "2026-10-12",
@@ -1671,7 +1671,7 @@ jane@smithdesign.example</p>
     content: `
 <h2>Why the template matters</h2>
 <p>An invoice is often the last document a client reads before deciding how quickly to pay you. Clarity beats decoration: the amount due, the due date, and the payment method should be findable in under three seconds. A good template is an information hierarchy problem solved once, then reused on every job.</p>
-<p>Brand personality still matters — especially for agencies and creatives — but never at the expense of scannability. Accounts payable staff process dozens of PDFs a day. They reward documents that look familiar and complete.</p>
+<p>Brand personality still matters, especially for agencies and creatives, but never at the expense of scannability. Accounts payable staff process dozens of PDFs a day. They reward documents that look familiar and complete.</p>
 
 <h2>What every strong template shares</h2>
 <ul>
@@ -1686,24 +1686,24 @@ jane@smithdesign.example</p>
 
 <h2>All 18 layouts</h2>
 <ol>
-<li><strong><a href="/invoice-templates/modern">Modern</a> · Freelance</strong> — Clean header, balanced type, flexible for most industries. The safe default when you are unsure.</li>
-<li><strong><a href="/invoice-templates/minimal">Minimal</a> · Design</strong> — Typography-led with little ornament. Ideal for solo creatives, writers, and consultants who want quiet professionalism.</li>
-<li><strong><a href="/invoice-templates/corporate">Corporate</a> · Enterprise</strong> — Dense reference fields (PO, project, tax IDs) that AP teams expect. Best for enterprise and government-adjacent work.</li>
-<li><strong><a href="/invoice-templates/elegant">Elegant</a> · Luxury</strong> — Serif headings and restrained spacing for premium services: interior design, events, high-end photography.</li>
-<li><strong><a href="/invoice-templates/blue">Blue</a> · Small Business</strong> — Familiar colour cue associated with trust and finance. Works well for trades, retail and consumer-facing services.</li>
-<li><strong><a href="/invoice-templates/dark">Dark</a> · Tech</strong> — High-contrast header that stands out in a crowded inbox preview and as a PDF thumbnail. Use when brand guidelines already favour dark UI.</li>
-<li><strong><a href="/invoice-templates/startup">Startup</a> · SaaS</strong> — Brand-forward and friendly without losing structure. Suits SaaS services, retainers, and productised freelance offers.</li>
-<li><strong><a href="/invoice-templates/agency">Agency</a> · Marketing</strong> — Side rail and strong sectioning keep long multi-line item lists readable across multi-page invoices.</li>
-<li><strong><a href="/invoice-templates/creative">Creative</a> · Creative Arts</strong> — Oversized total and colour-blocked header. Good for design studios billing other creatives who appreciate visual confidence.</li>
-<li><strong><a href="/invoice-templates/classic">Classic</a> · Accounting</strong> — Traditional ruled bookkeeping feel. Comfortable for wholesalers, accountants and clients who still print everything.</li>
-<li><strong><a href="/invoice-templates/nordic">Nordic</a> · Architecture</strong> — Thin colour band and calm whitespace for architects, product designers and craft-led studios.</li>
-<li><strong><a href="/invoice-templates/emerald">Emerald</a> · Healthcare</strong> — Fresh green bar for clinics, coaches and wellness brands that need to feel trustworthy.</li>
-<li><strong><a href="/invoice-templates/sunset">Sunset</a> · Hospitality</strong> — Warm stacked header for restaurants, hotels and event hosts.</li>
-<li><strong><a href="/invoice-templates/slate">Slate</a> · Legal</strong> — Restrained split layout for law firms, advisors and formal professional services.</li>
-<li><strong><a href="/invoice-templates/bold">Bold</a> · Sales</strong> — Corner accent that stands out in busy inboxes — useful for sales teams and course creators.</li>
-<li><strong><a href="/invoice-templates/lavender">Lavender</a> · Beauty</strong> — Soft stacked header for beauty studios, coaches and educators.</li>
-<li><strong><a href="/invoice-templates/ocean">Ocean</a> · Consulting</strong> — Teal side rail that leaves full width for long project descriptions.</li>
-<li><strong><a href="/invoice-templates/mono">Mono</a> · Software</strong> — Stark black-and-white band for developers, engineers and SaaS billing.</li>
+<li><strong><a href="/invoice-templates/modern">Modern</a> · Freelance</strong>: Clean header, balanced type, flexible for most industries. The safe default when you are unsure.</li>
+<li><strong><a href="/invoice-templates/minimal">Minimal</a> · Design</strong>: Typography-led with little ornament. Ideal for solo creatives, writers, and consultants who want quiet professionalism.</li>
+<li><strong><a href="/invoice-templates/corporate">Corporate</a> · Enterprise</strong>: Dense reference fields (PO, project, tax IDs) that AP teams expect. Best for enterprise and government-adjacent work.</li>
+<li><strong><a href="/invoice-templates/elegant">Elegant</a> · Luxury</strong>: Serif headings and restrained spacing for premium services: interior design, events, high-end photography.</li>
+<li><strong><a href="/invoice-templates/blue">Blue</a> · Small Business</strong>: Familiar colour cue associated with trust and finance. Works well for trades, retail and consumer-facing services.</li>
+<li><strong><a href="/invoice-templates/dark">Dark</a> · Tech</strong>: High-contrast header that stands out in a crowded inbox preview and as a PDF thumbnail. Use when brand guidelines already favour dark UI.</li>
+<li><strong><a href="/invoice-templates/startup">Startup</a> · SaaS</strong>: Brand-forward and friendly without losing structure. Suits SaaS services, retainers, and productised freelance offers.</li>
+<li><strong><a href="/invoice-templates/agency">Agency</a> · Marketing</strong>: Side rail and strong sectioning keep long multi-line item lists readable across multi-page invoices.</li>
+<li><strong><a href="/invoice-templates/creative">Creative</a> · Creative Arts</strong>: Oversized total and colour-blocked header. Good for design studios billing other creatives who appreciate visual confidence.</li>
+<li><strong><a href="/invoice-templates/classic">Classic</a> · Accounting</strong>: Traditional ruled bookkeeping feel. Comfortable for wholesalers, accountants and clients who still print everything.</li>
+<li><strong><a href="/invoice-templates/nordic">Nordic</a> · Architecture</strong>: Thin colour band and calm whitespace for architects, product designers and craft-led studios.</li>
+<li><strong><a href="/invoice-templates/emerald">Emerald</a> · Healthcare</strong>: Fresh green bar for clinics, coaches and wellness brands that need to feel trustworthy.</li>
+<li><strong><a href="/invoice-templates/sunset">Sunset</a> · Hospitality</strong>: Warm stacked header for restaurants, hotels and event hosts.</li>
+<li><strong><a href="/invoice-templates/slate">Slate</a> · Legal</strong>: Restrained split layout for law firms, advisors and formal professional services.</li>
+<li><strong><a href="/invoice-templates/bold">Bold</a> · Sales</strong>: Corner accent that stands out in busy inboxes, useful for sales teams and course creators.</li>
+<li><strong><a href="/invoice-templates/lavender">Lavender</a> · Beauty</strong>: Soft stacked header for beauty studios, coaches and educators.</li>
+<li><strong><a href="/invoice-templates/ocean">Ocean</a> · Consulting</strong>: Teal side rail that leaves full width for long project descriptions.</li>
+<li><strong><a href="/invoice-templates/mono">Mono</a> · Software</strong>: Stark black-and-white band for developers, engineers and SaaS billing.</li>
 </ol>
 
 <h2>Choosing quickly by client type</h2>
@@ -1733,7 +1733,7 @@ jane@smithdesign.example</p>
 <p>Prefer to start from scratch? Use a <a href="/blog/blank-invoice-template">blank invoice template</a> or a <a href="/blog/freelance-invoice-template">freelance invoice template</a>.</p>
 
 <h2>Matching template to content density</h2>
-<p>Short freelance invoices (three to five lines) look best on Minimal, Elegant, or Creative — sparse layouts that celebrate whitespace. Product invoices with SKUs, shipping, and tax columns need Corporate, Agency, or Classic so columns stay aligned. International invoices with IBAN/SWIFT notes benefit from Corporate or Modern, where the notes block is easy to find.</p>
+<p>Short freelance invoices (three to five lines) look best on Minimal, Elegant, or Creative: sparse layouts that celebrate whitespace. Product invoices with SKUs, shipping, and tax columns need Corporate, Agency, or Classic so columns stay aligned. International invoices with IBAN/SWIFT notes benefit from Corporate or Modern, where the notes block is easy to find.</p>
 <p>If you regularly mix invoice types, pick one primary template for brand consistency and only switch when the buyer's process demands it. Consistency helps clients recognise your PDFs instantly.</p>
 
 <h2>Practical setup tips</h2>
@@ -1761,14 +1761,14 @@ jane@smithdesign.example</p>
 <p>Thinking about designing your own? Read the honest pros and cons of a <a href="/blog/canva-invoice-template">Canva invoice template</a>, or start from a <a href="/blog/service-invoice-template">service invoice template</a> if you bill for time rather than products.</p>
 
 <h2>Preview and create</h2>
-<p>Preview every layout instantly inside the <a href="/invoice-generator">invoice generator</a>, then download a PDF when the fields are complete. For scenario-based line items to drop into these layouts, see <a href="/blog/invoice-examples">invoice examples</a>. For small-business process around templates — numbering, batching, reminders — read the <a href="/blog/small-business-invoice-guide">small business invoicing guide</a>.</p>
+<p>Preview every layout instantly inside the <a href="/invoice-generator">invoice generator</a>, then download a PDF when the fields are complete. For scenario-based line items to drop into these layouts, see <a href="/blog/invoice-examples">invoice examples</a>. For small-business process around templates (numbering, batching, reminders), read the <a href="/blog/small-business-invoice-guide">small business invoicing guide</a>.</p>
 `,
   },
   {
     slug: "invoice-examples",
     title: "Invoice Examples: 6 Real-World Scenarios Broken Down",
     description:
-      "See how freelance, agency, product, hourly, milestone and international invoices differ — with the exact lines and notes to use.",
+      "See how freelance, agency, product, hourly, milestone and international invoices differ, with the exact lines and notes to use.",
     category: "guides",
     date: "2026-06-17",
     updated: "2026-09-25",
@@ -1781,8 +1781,8 @@ jane@smithdesign.example</p>
 <h2>1. Freelance project invoice</h2>
 <p><strong>Pattern:</strong> one line per deliverable, fixed fee, Net 14 terms. Reference the accepted proposal or quotation number in the notes.</p>
 <ul>
-<li>Line: "Brand identity package — logo, colour system, basic guidelines"</li>
-<li>Line: "Social template set — 8 editable posts"</li>
+<li>Line: "Brand identity package: logo, colour system, basic guidelines"</li>
+<li>Line: "Social template set: 8 editable posts"</li>
 <li>Notes: "Per quotation Q-2026-014 accepted 2 June 2026. Includes two revision rounds."</li>
 <li>Terms: Net 14; deposit already paid shown as a credit line if applicable</li>
 </ul>
@@ -1791,8 +1791,8 @@ jane@smithdesign.example</p>
 <h2>2. Hourly invoice</h2>
 <p><strong>Pattern:</strong> quantity = hours, unit price = rate. Summarise the period and tasks; attach or embed a timesheet when the client asks.</p>
 <ul>
-<li>Line: "Consulting — week of 4–8 Aug 2026 (strategy calls + research)" — 6.5 hours × rate</li>
-<li>Line: "Implementation support — 11–12 Aug 2026" — 3 hours × rate</li>
+<li>Line: "Consulting: week of 4–8 Aug 2026 (strategy calls + research)": 6.5 hours × rate</li>
+<li>Line: "Implementation support: 11–12 Aug 2026": 3 hours × rate</li>
 <li>Notes: "Timesheet available on request. Rounded to nearest 0.25 hour."</li>
 </ul>
 <p>Clients dispute hours far less when dates and task themes are visible. If you have a weekly cap in the contract, mention remaining hours in the notes.</p>
@@ -1800,8 +1800,8 @@ jane@smithdesign.example</p>
 <h2>3. Agency retainer invoice</h2>
 <p><strong>Pattern:</strong> a single retainer line for the month, plus separate lines for out-of-scope work. Show the retainer period explicitly.</p>
 <ul>
-<li>Line: "Retainer — August 2026 — content + light design (up to 20 hours)"</li>
-<li>Line: "Out of scope — landing page illustration pack (approved 19 Aug)"</li>
+<li>Line: "Retainer: August 2026, content + light design (up to 20 hours)"</li>
+<li>Line: "Out of scope: landing page illustration pack (approved 19 Aug)"</li>
 <li>Notes: "Unused retainer hours do not roll over unless stated in MSA section 4."</li>
 </ul>
 <p>Separating out-of-scope work prevents the retainer from becoming an unlimited bucket. Use a structured layout such as <a href="/invoice-templates/agency">Agency</a> when lists get long.</p>
@@ -1809,9 +1809,9 @@ jane@smithdesign.example</p>
 <h2>4. Product / goods invoice</h2>
 <p><strong>Pattern:</strong> SKU, quantity, unit price, shipping, and tax. Add the delivery address if it differs from billing.</p>
 <ul>
-<li>Line: "SKU-4412 — Ceramic planter (large) — qty 12"</li>
-<li>Line: "SKU-4418 — Ceramic planter (small) — qty 24"</li>
-<li>Line: "Shipping — tracked freight to warehouse B"</li>
+<li>Line: "SKU-4412: Ceramic planter (large), qty 12"</li>
+<li>Line: "SKU-4418: Ceramic planter (small), qty 24"</li>
+<li>Line: "Shipping: tracked freight to warehouse B"</li>
 <li>Tax line(s) as required by your registration</li>
 </ul>
 <p>Warehouse and wholesale buyers reconcile by SKU. Omitting codes is a common reason goods invoices bounce. For tax presentation, see the <a href="/blog/tax-invoice-guide">tax invoice guide</a>.</p>
@@ -1819,7 +1819,7 @@ jane@smithdesign.example</p>
 <h2>5. Milestone invoice</h2>
 <p><strong>Pattern:</strong> name the phase, the percentage of contract value, and what remains so the client can forecast cash.</p>
 <ul>
-<li>Line: "Phase 2 of 3 — development complete — 40% of contract value (£8,000)"</li>
+<li>Line: "Phase 2 of 3: development complete, 40% of contract value (£8,000)"</li>
 <li>Notes: "Phase 1 invoice INV-2026-0033 paid. Phase 3 (final 20%) due on launch acceptance."</li>
 </ul>
 <p>Milestone invoices work best when the underlying quotation already defined the schedule. Cross-reference that quote number every time.</p>
@@ -1829,13 +1829,13 @@ jane@smithdesign.example</p>
 <ul>
 <li>Currency: clearly "USD" or "EUR" beside every total</li>
 <li>Bank block: account name, IBAN, BIC/SWIFT, bank address</li>
-<li>Notes: "Client bears intermediary bank fees. Reverse charge — customer to account for VAT." (only when true)</li>
+<li>Notes: "Client bears intermediary bank fees. Reverse charge: customer to account for VAT." (only when true)</li>
 </ul>
-<p>Wrong fee assumptions ("I thought you'd receive the full amount") create awkward balance chases. Spell fee responsibility out once on the invoice. VAT/GST cross-border rules differ — confirm with your accountant and skim our <a href="/blog/vat-invoice-guide">VAT</a> and <a href="/blog/gst-invoice-guide">GST</a> guides.</p>
+<p>Wrong fee assumptions ("I thought you'd receive the full amount") create awkward balance chases. Spell fee responsibility out once on the invoice. VAT/GST cross-border rules differ, so confirm with your accountant and skim our <a href="/blog/vat-invoice-guide">VAT</a> and <a href="/blog/gst-invoice-guide">GST</a> guides.</p>
 
 
 <h2>Hybrid example: fixed fee plus expenses</h2>
-<p>Many real projects mix a fixed creative fee with pass-through expenses. Keep them visually separate: fee lines first, then an expenses subheading with receipts available on request. Mark up policy should already live in the quotation — restate it briefly in the invoice notes so AP is not guessing.</p>
+<p>Many real projects mix a fixed creative fee with pass-through expenses. Keep them visually separate: fee lines first, then an expenses subheading with receipts available on request. Mark up policy should already live in the quotation. Restate it briefly in the invoice notes so AP is not guessing.</p>
 <p>Example lines might include a project fee, then travel, stock licences, and courier costs as individual expense lines. Totals should show fees subtotal, expenses subtotal, tax treatment per local rules, and amount due. Bundling expenses into the fee after the fact is a trust problem waiting to happen.</p>
 <h2>Subscription and seat-based billing</h2>
 <p>For software-style or membership billing, name the plan, seat count, and period. If seats changed mid-cycle, show the proration math in plain language. Clients accept proration when they can see it; they dispute it when it appears as a mysterious delta.</p>
@@ -1862,7 +1862,7 @@ jane@smithdesign.example</p>
     slug: "freelancer-invoice-guide",
     title: "The Freelancer's Invoice Guide: Get Paid Faster",
     description:
-      "Rates, terms, deposits, late fees and follow-ups — a complete invoicing playbook for freelancers and independent contractors.",
+      "Rates, terms, deposits, late fees and follow-ups: a complete invoicing playbook for freelancers and independent contractors.",
     category: "guides",
     date: "2026-06-10",
     updated: "2026-09-25",
@@ -1873,12 +1873,12 @@ jane@smithdesign.example</p>
 <p>If you only discuss rates verbally, you will eventually invoice someone who "remembered" a different number. Written scope plus written price is your first payment-protection tool.</p>
 
 <h2>Price for payment reality, not optimism</h2>
-<p>Build your rate assuming some invoices will land late. That does not mean padding dishonestly — it means knowing your floor, your target, and when a project is not worth the cash-flow risk. Prefer clients who accept deposits and Net 14 over those who insist on Net 60 with no PO process.</p>
+<p>Build your rate assuming some invoices will land late. That does not mean padding dishonestly. It means knowing your floor, your target, and when a project is not worth the cash-flow risk. Prefer clients who accept deposits and Net 14 over those who insist on Net 60 with no PO process.</p>
 <p>For fixed-fee work, break large jobs into milestones so you are never financing two months of unpaid labour. Examples of milestone lines appear in <a href="/blog/invoice-examples">invoice examples</a>.</p>
 
 <h2>Ask for a deposit</h2>
-<p>A 30–50% deposit filters out clients who were never going to pay and covers your opportunity cost. Invoice the deposit as its own document with a clear label ("Deposit invoice — 40% of Q-2026-021"). Do not start substantial work until it clears, unless you have a long trusted relationship.</p>
-<p>Deposits also force early confirmation of billing details — legal entity, PO needs, and tax IDs — before you are emotionally invested in the project.</p>
+<p>A 30–50% deposit filters out clients who were never going to pay and covers your opportunity cost. Invoice the deposit as its own document with a clear label ("Deposit invoice: 40% of Q-2026-021"). Do not start substantial work until it clears, unless you have a long trusted relationship.</p>
+<p>Deposits also force early confirmation of billing details (legal entity, PO needs, and tax IDs) before you are emotionally invested in the project.</p>
 
 <h2>Invoice immediately</h2>
 <p>Send the invoice the day the work is delivered or the milestone is signed off. Every week you delay pushes payment out by at least the same amount, because you slot into a later approval cycle. Month-end batching feels organised; it is often expensive.</p>
@@ -1905,19 +1905,19 @@ jane@smithdesign.example</p>
 <p>Copy-ready wording lives in <a href="/blog/how-to-send-an-invoice">how to send an invoice</a>. Stay factual and brief. Emotion rarely speeds payment; clarity does.</p>
 
 <h2>Late fees and pausing work</h2>
-<p>Late interest only helps if it was in the contract the client accepted. Mention it on the invoice footer as a reminder, not a surprise. Pausing work on overdue accounts is often more effective than fees — especially for retainers — but announce the pause in writing with a clear reactivation condition ("work resumes when INV-2026-0041 is paid").</p>
+<p>Late interest only helps if it was in the contract the client accepted. Mention it on the invoice footer as a reminder, not a surprise. Pausing work on overdue accounts is often more effective than fees, especially for retainers, but announce the pause in writing with a clear reactivation condition ("work resumes when INV-2026-0041 is paid").</p>
 
 <h2>Track everything in one place</h2>
 <p>Keep a simple sheet (or accounting tool) with: invoice number, client, amount, currency, date sent, date due, date paid, and status. That single list is your cash-flow forecast. Review it weekly. Unchased invoices are paid last.</p>
-<p>Store PDFs by year and client. When a payment lands, match it to an invoice number the same day so you never chase someone who already paid — a fast way to damage a relationship.</p>
+<p>Store PDFs by year and client. When a payment lands, match it to an invoice number the same day so you never chase someone who already paid, a fast way to damage a relationship.</p>
 
 <h2>Tax and admin without the spiral</h2>
-<p>Separate money you owe in tax from money you can spend. If you charge VAT/GST, learn the mandatory fields before your first taxed invoice — start with the <a href="/blog/tax-invoice-guide">tax invoice guide</a>. Keep personal and business accounts separate so reconciliation stays sane.</p>
+<p>Separate money you owe in tax from money you can spend. If you charge VAT/GST, learn the mandatory fields before your first taxed invoice. Start with the <a href="/blog/tax-invoice-guide">tax invoice guide</a>. Keep personal and business accounts separate so reconciliation stays sane.</p>
 
 
 <h2>Scope creep and how invoicing reveals it</h2>
 <p>If you repeatedly write long notes explaining extras that were never quoted, your scoping process is broken. Use invoices as a mirror: variation lines should be occasional, not the majority of every bill. When extras dominate, pause new work until the quotation is updated and accepted.</p>
-<p>Train clients gently. A short "happy to add this as a variation at £X — confirm and I will proceed" message protects both sides. Invoicing surprise extras after silent overwork trains clients to expect free labour.</p>
+<p>Train clients gently. A short "happy to add this as a variation at £X, confirm and I will proceed" message protects both sides. Invoicing surprise extras after silent overwork trains clients to expect free labour.</p>
 <h2>Retainers that actually pay on time</h2>
 <p>Bill retainers in advance when your market allows it, with the period named clearly. Send the invoice several business days before the period starts so AP can schedule payment. End-of-month retainer invoices for work already done turn you into an involuntary lender.</p>
 <p>Define unused-hour policy in the agreement and restate it annually. Roll-over ambiguity is one of the most common retainer disputes and it often surfaces only when someone cancels.</p>
@@ -1950,7 +1950,7 @@ jane@smithdesign.example</p>
 <p>Write the process down in half a page: triggers (delivery, month-end retainer, milestone sign-off), owner, checklist, and reminder schedule. New staff should be able to invoice correctly on day three.</p>
 
 <h2>Numbering and records</h2>
-<p>Use a year-prefixed sequential number (<code>2026-0001</code>, <code>2026-0002</code>…) and never reuse one. If you void an invoice, keep the number in a void log. Store a PDF of every invoice in a single folder structure by year and client — alongside credit notes and receipts.</p>
+<p>Use a year-prefixed sequential number (<code>2026-0001</code>, <code>2026-0002</code>…) and never reuse one. If you void an invoice, keep the number in a void log. Store a PDF of every invoice in a single folder structure by year and client, alongside credit notes and receipts.</p>
 <p>Cloud accounting tools help, but still export or save the PDFs you actually sent. Those are the artefacts clients and auditors recognise. For field basics, see <a href="/blog/what-is-an-invoice">what is an invoice</a>.</p>
 
 <h2>Choosing payment terms</h2>
@@ -1967,7 +1967,7 @@ jane@smithdesign.example</p>
 <p>What fails is "we'll invoice whenever we have time." That habit creates silent receivables you discover only when rent is due.</p>
 
 <h2>Approvals and internal controls</h2>
-<p>Even in a five-person company, separate creation from approval when amounts are material. A second pair of eyes catches wrong rates, missing POs, and transposed bank details — errors that are expensive after the email is sent.</p>
+<p>Even in a five-person company, separate creation from approval when amounts are material. A second pair of eyes catches wrong rates, missing POs, and transposed bank details: errors that are expensive after the email is sent.</p>
 <p>Maintain a short pre-send checklist: legal entity, PO, maths, tax, due date, payment block, filename. Many items overlap with <a href="/blog/common-invoice-mistakes">common invoice mistakes</a>.</p>
 
 <h2>Reminders without awkwardness</h2>
@@ -1975,28 +1975,28 @@ jane@smithdesign.example</p>
 <p>Assign an owner for chasing. When "everyone" owns receivables, nobody does.</p>
 
 <h2>Reconciliation</h2>
-<p>Match every incoming payment to an invoice number at least weekly. Unmatched payments are how businesses accidentally chase clients who already paid — and how duplicates slip through. Record partial payments explicitly against the open balance.</p>
+<p>Match every incoming payment to an invoice number at least weekly. Unmatched payments are how businesses accidentally chase clients who already paid, and how duplicates slip through. Record partial payments explicitly against the open balance.</p>
 <p>If you take card payments or payment links, reconcile fees so your books show net cash accurately.</p>
 
 <h2>Cash-flow tips that actually move the needle</h2>
 <ul>
 <li>Invoice on delivery for project work, not only at month end</li>
 <li>Split large projects into deposits and milestones</li>
-<li>Charge late interest only if it was contracted — and mention it before you need it</li>
+<li>Charge late interest only if it was contracted, and mention it before you need it</li>
 <li>Offer a small early-payment discount when accelerating cash matters more than margin</li>
 <li>Review the aged-receivables list every Monday</li>
 </ul>
 
 <h2>Templates and consistency</h2>
-<p>Pick one primary layout for brand recognition — <a href="/invoice-templates/corporate">Corporate</a> for formal B2B, <a href="/invoice-templates/blue">Blue</a> or <a href="/invoice-templates/classic">Classic</a> for general small business — and keep seller details identical across every PDF. Generate documents with the <a href="/invoice-generator">free invoice generator</a> so totals and structure stay consistent when different people send invoices.</p>
+<p>Pick one primary layout for brand recognition (<a href="/invoice-templates/corporate">Corporate</a> for formal B2B, <a href="/invoice-templates/blue">Blue</a> or <a href="/invoice-templates/classic">Classic</a> for general small business) and keep seller details identical across every PDF. Generate documents with the <a href="/invoice-generator">free invoice generator</a> so totals and structure stay consistent when different people send invoices.</p>
 <p>For tax-registered businesses, standardise how tax lines appear and train staff using the <a href="/blog/tax-invoice-guide">tax invoice guide</a>. Inconsistency here causes reclaim problems for your customers and support tickets for you.</p>
 
 
 <h2>Roles as you grow past one founder</h2>
-<p>When a second person starts invoicing, ambiguity explodes. Define who may edit bank details, who approves write-offs, and who sends reminder three. Put bank-detail changes behind a dual check — invoice fraud via altered PDFs is rare but devastating, and simple process beats expensive tools here.</p>
+<p>When a second person starts invoicing, ambiguity explodes. Define who may edit bank details, who approves write-offs, and who sends reminder three. Put bank-detail changes behind a dual check. Invoice fraud via altered PDFs is rare but devastating, and simple process beats expensive tools here.</p>
 <p>Give each role access to the same template and client profiles so invoices do not drift into personal formatting experiments. Brand and field consistency are internal controls, not vanity.</p>
 <h2>Handling partial payments and payment plans</h2>
-<p>Partial payments should update the open balance on your tracker the same day. Send a brief acknowledgment stating amount received, invoice referenced, and amount remaining. If you agree a payment plan, confirm dates in writing and invoice or schedule reminders accordingly — verbal plans evaporate.</p>
+<p>Partial payments should update the open balance on your tracker the same day. Send a brief acknowledgment stating amount received, invoice referenced, and amount remaining. If you agree a payment plan, confirm dates in writing and invoice or schedule reminders accordingly. Verbal plans evaporate.</p>
 <p>Do not keep sending full-balance reminders after a partial lands without acknowledging it; that single mistake creates unnecessary conflict with clients who believe they are cooperating.</p>
 <h2>Metrics worth glancing at monthly</h2>
 <p>Watch average days sales outstanding, percentage of invoices paid after reminder one, and the count of invoices waiting on missing POs. Those three numbers tell you whether the problem is terms, chasing, or intake quality. Fix the largest bucket first rather than buying new software as a substitute for process.</p>
@@ -2004,7 +2004,7 @@ jane@smithdesign.example</p>
 <h2>Seasonality and cash buffers</h2>
 <p>If your sales peak in one season, tighten terms before the quiet months and chase harder while cash is still incoming. Waiting until the quiet month to discover slow payers is a common small-business trap. Build a simple cash buffer target equal to a few weeks of fixed costs and watch receivables as closely as sales.</p>
 <h2>Grow the system deliberately</h2>
-<p>As volume rises, add: saved client profiles, recurring retainer drafts, and a shared tracker with statuses (draft, sent, overdue, paid). Do not wait for a crisis month to invent the process. The goal is boring reliability — invoices that leave on time, look the same, and get followed up without drama.</p>
+<p>As volume rises, add: saved client profiles, recurring retainer drafts, and a shared tracker with statuses (draft, sent, overdue, paid). Do not wait for a crisis month to invent the process. The goal is boring reliability: invoices that leave on time, look the same, and get followed up without drama.</p>
 `,
   },
   {
@@ -2019,44 +2019,44 @@ jane@smithdesign.example</p>
     content: `
 <h2>Send a PDF, always</h2>
 <p>PDFs render identically on every device and cannot be edited accidentally. Never send a spreadsheet or word-processor file as your invoice of record. Those formats break layouts, invite accidental edits, and sometimes get blocked by corporate email filters.</p>
-<p>Create the PDF from a proper template first — the <a href="/invoice-generator">invoice generator</a> exports a clean file you can attach immediately.</p>
+<p>Create the PDF from a proper template first. The <a href="/invoice-generator">invoice generator</a> exports a clean file you can attach immediately.</p>
 
 <h2>Name the file properly</h2>
 <p>Use a pattern like <code>Invoice-2026-0041-AcmeLtd.pdf</code>. Accounts-payable teams handle hundreds of files a week; a descriptive name gets yours filed instead of lost in a pile of <code>invoice(3).pdf</code> downloads. Include the client name as they know themselves, not your internal nickname for them.</p>
 
 <h2>Send it to the right person</h2>
-<p>Ask for the accounts-payable address at kickoff — not after the work is done. CC your day-to-day contact so they can approve internally. If the client uses a portal, follow their portal rules and still keep a PDF copy for your records.</p>
+<p>Ask for the accounts-payable address at kickoff, not after the work is done. CC your day-to-day contact so they can approve internally. If the client uses a portal, follow their portal rules and still keep a PDF copy for your records.</p>
 <p>Wrong inbox is one of the top reasons "we never got it" appears three weeks late. Confirm receipt with a one-line ask if the invoice is large: "Please confirm it landed with AP."</p>
 
 <h2>Subject lines that get opened and filed</h2>
 <p>Put the invoice number, client name, and due date in the subject. Avoid cute marketing language. Examples:</p>
 <ul>
-<li><code>Invoice 2026-0041 — Acme Ltd — due 14 Aug 2026</code></li>
-<li><code>Invoice 2026-0041 — £2,400 — PO 77821</code></li>
+<li><code>Invoice 2026-0041 | Acme Ltd | due 14 Aug 2026</code></li>
+<li><code>Invoice 2026-0041 | £2,400 | PO 77821</code></li>
 </ul>
-<p>When chasing, keep the same number visible: <code>Reminder — invoice 2026-0041 due today</code>.</p>
+<p>When chasing, keep the same number visible: <code>Reminder: invoice 2026-0041 due today</code>.</p>
 
-<h2>Email template — first send</h2>
-<p><em>Subject: Invoice 2026-0041 — Acme Ltd — due 14 Aug 2026</em></p>
+<h2>Email template: first send</h2>
+<p><em>Subject: Invoice 2026-0041 | Acme Ltd | due 14 Aug 2026</em></p>
 <p>Hi Sam,</p>
 <p>Please find attached invoice 2026-0041 for £2,400 covering the August retainer. Payment is due by 14 August; bank details are on the invoice. PO 77821 is referenced on the PDF.</p>
 <p>Happy to answer any questions from AP.</p>
 <p>Thanks,<br>Alex</p>
 
-<h2>Email template — polite reminder</h2>
-<p><em>Subject: Reminder — invoice 2026-0041 due today</em></p>
+<h2>Email template: polite reminder</h2>
+<p><em>Subject: Reminder: invoice 2026-0041 due today</em></p>
 <p>Hi Sam,</p>
 <p>A quick reminder that invoice 2026-0041 (£2,400) is due today. I have re-attached it for convenience. If it is already scheduled, please ignore this note.</p>
 <p>Thanks,<br>Alex</p>
 
-<h2>Email template — seven days overdue</h2>
-<p><em>Subject: Overdue — invoice 2026-0041 (£2,400)</em></p>
+<h2>Email template: seven days overdue</h2>
+<p><em>Subject: Overdue: invoice 2026-0041 (£2,400)</em></p>
 <p>Hi Sam,</p>
 <p>Invoice 2026-0041 for £2,400 was due on 14 August and appears unpaid on our side. Could you confirm whether it is with AP or if anything is missing for approval? Happy to resend in another format if needed.</p>
 <p>Thanks,<br>Alex</p>
 
-<h2>Email template — firm escalation</h2>
-<p><em>Subject: Action required — invoice 2026-0041 now 14 days overdue</em></p>
+<h2>Email template: firm escalation</h2>
+<p><em>Subject: Action required: invoice 2026-0041 now 14 days overdue</em></p>
 <p>Hi Sam,</p>
 <p>Invoice 2026-0041 (£2,400) is now 14 days past due. Per our agreement, late balances may incur interest as stated on the invoice. Please confirm a payment date this week or connect me with the person who can.</p>
 <p>I have re-attached the PDF. Once paid, I will send a receipt referencing this invoice number.</p>
@@ -2069,16 +2069,16 @@ jane@smithdesign.example</p>
 <h2>Portals, shared inboxes and international sends</h2>
 <ul>
 <li>Follow portal field requirements exactly (tax IDs, coding blocks).</li>
-<li>Do not rely on a Slack DM as the official send — always email or portal.</li>
+<li>Do not rely on a Slack DM as the official send. Always email or portal.</li>
 <li>For international clients, mention currency and fee responsibility in the body as well as on the PDF.</li>
 </ul>
 
 
 <h2>Attachments, links, and security filters</h2>
-<p>Prefer attaching the PDF directly. Links to expiring downloads create support burden and sometimes trigger corporate security reviews. Keep file size reasonable — compressed logos beat multi-megabyte background images that bounce from mail servers.</p>
+<p>Prefer attaching the PDF directly. Links to expiring downloads create support burden and sometimes trigger corporate security reviews. Keep file size reasonable: compressed logos beat multi-megabyte background images that bounce from mail servers.</p>
 <p>If you must use a portal link, still attach the PDF when the system allows it, or confirm the portal entry number in the email so everyone can cross-reference.</p>
 <h2>CC, BCC, and thread discipline</h2>
-<p>CC the project contact; avoid huge CC lists that encourage nobody to act. Do not BCC people who later need to reply-all with approval — invisible stakeholders create invisible delays. Start a clean email for the first send rather than burying the invoice under a long project thread where AP never looks.</p>
+<p>CC the project contact; avoid huge CC lists that encourage nobody to act. Do not BCC people who later need to reply-all with approval. Invisible stakeholders create invisible delays. Start a clean email for the first send rather than burying the invoice under a long project thread where AP never looks.</p>
 <p>When chasing, reply to your original send thread so history is visible, and re-attach the PDF every time. Assuming they still have the file is optimistic.</p>
 <h2>After-hours and time zones</h2>
 <p>Sending at the start of the client's business week often beats Friday evening drops that sit untouched. For international clients, aim for morning in their time zone. Timing will not fix a broken invoice, but it stops avoidable delay when everything else is correct.</p>
@@ -2094,14 +2094,14 @@ jane@smithdesign.example</p>
     slug: "common-invoice-mistakes",
     title: "12 Common Invoice Mistakes That Delay Your Payment",
     description:
-      "Missing PO numbers, vague descriptions, wrong tax rates — the errors that push invoices to the bottom of the pile, and how to avoid them.",
+      "Missing PO numbers, vague descriptions, wrong tax rates: the errors that push invoices to the bottom of the pile, and how to avoid them.",
     category: "invoicing-basics",
     date: "2026-05-20",
     updated: "2026-09-25",
     author: "Invoice Creator Editorial Team",
     content: `
 <h2>Why small errors cost weeks</h2>
-<p>Accounts payable is a gatekeeping function. When an invoice fails a checklist — missing PO, wrong entity, maths mismatch — it is rejected or parked. You rarely get a detailed coaching email; you get silence until you chase. Preventing mistakes is faster than curing them.</p>
+<p>Accounts payable is a gatekeeping function. When an invoice fails a checklist (missing PO, wrong entity, maths mismatch), it is rejected or parked. You rarely get a detailed coaching email; you get silence until you chase. Preventing mistakes is faster than curing them.</p>
 <p>Use the list below as a pre-send audit. A structured tool such as the <a href="/invoice-generator">free invoice generator</a> removes several of these automatically by keeping required fields visible and totals calculated.</p>
 
 <h2>The twelve mistakes</h2>
@@ -2147,14 +2147,14 @@ jane@smithdesign.example</p>
 <h2>What to do if an invoice is already rejected</h2>
 <ol>
 <li>Ask for the rejection reason in writing.</li>
-<li>Do not silently edit and resend under the same number if the document was formally issued — use a credit note plus a new invoice when required.</li>
+<li>Do not silently edit and resend under the same number if the document was formally issued. Use a credit note plus a new invoice when required.</li>
 <li>Fix the root data (entity, PO, tax) in your template so the error does not recur.</li>
 <li>Resend with a short note listing what changed.</li>
 </ol>
 
 
 <h2>Mistakes that look like client problems</h2>
-<p>Sometimes the invoice is fine and the buyer's process is slow. Still, rule out your own errors first: confirm delivery to AP, confirm PO match, confirm entity. Only then escalate. Approaching a late payer with "please check whether anything is missing" lands better than accusations — and occasionally surfaces a fixable defect you caused.</p>
+<p>Sometimes the invoice is fine and the buyer's process is slow. Still, rule out your own errors first: confirm delivery to AP, confirm PO match, confirm entity. Only then escalate. Approaching a late payer with "please check whether anything is missing" lands better than accusations, and occasionally surfaces a fixable defect you caused.</p>
 <p>Document every chase with dates. If you eventually need a collections letter or legal help, that timeline matters. Memory is not a ledger.</p>
 <h2>Template drift across the team</h2>
 <p>One founder uses a solid template; a contractor later pastes totals into a slide deck. Standardise on a single generator workflow and forbid ad-hoc invoices for anything above a trivial amount. Drift is how mistakes nine through twelve return after you thought you fixed them.</p>
@@ -2163,10 +2163,10 @@ jane@smithdesign.example</p>
 <p>When a client rejects an invoice, add the reason to their profile checklist. The second invoice to that client should not fail the same way. Institutional memory turns one painful reject into a permanent intake improvement.</p>
 
 <h2>Currency and rounding traps</h2>
-<p>Display currency explicitly on every total. Rounding tax to the nearest unit incorrectly — or rounding each line differently from the system that filed the return — creates one-cent disputes that still block payment in rigid ERPs. Let your generator calculate, and match the rounding mode your accountant expects.</p>
+<p>Display currency explicitly on every total. Rounding tax to the nearest unit incorrectly (or rounding each line differently from the system that filed the return) creates one-cent disputes that still block payment in rigid ERPs. Let your generator calculate, and match the rounding mode your accountant expects.</p>
 <p>Do not convert currencies by hand in a spreadsheet cell you forget to update. State one currency and stick to it for that invoice.</p>
 <h2>The fix going forward</h2>
-<p>A structured template eliminates many of the twelve automatically. Our <a href="/invoice-generator">free invoice generator</a> keeps totals consistent and required fields in view. Pair it with a layout that matches your buyer — <a href="/invoice-templates/corporate">Corporate</a> for strict AP teams, <a href="/invoice-templates/modern">Modern</a> for everyone else — and run the checklist above until it is muscle memory.</p>
+<p>A structured template eliminates many of the twelve automatically. Our <a href="/invoice-generator">free invoice generator</a> keeps totals consistent and required fields in view. Pair it with a layout that matches your buyer (<a href="/invoice-templates/corporate">Corporate</a> for strict AP teams, <a href="/invoice-templates/modern">Modern</a> for everyone else) and run the checklist above until it is muscle memory.</p>
 `,
   },
   {
@@ -2183,7 +2183,7 @@ jane@smithdesign.example</p>
 <p><strong>Important:</strong> Tax laws, rates, registration requirements, and invoicing rules can change and may vary by jurisdiction. This article provides general informational content and should not be considered professional tax, accounting, or legal advice. Verify current requirements with the relevant tax authority or a qualified professional.</p>
 
 <h2>What makes an invoice a tax invoice</h2>
-<p>A tax invoice is a standard invoice plus the specific information a tax authority requires so the buyer can claim an input-tax credit (or equivalent). Miss a mandatory field and your customer may lose the credit — which is why accounts-payable teams check these documents carefully.</p>
+<p>A tax invoice is a standard invoice plus the specific information a tax authority requires so the buyer can claim an input-tax credit (or equivalent). Miss a mandatory field and your customer may lose the credit, which is why accounts-payable teams check these documents carefully.</p>
 <p>Not every sales document is a tax invoice. Till receipts, pro forma invoices, and estimates usually do not qualify. If your customer needs to reclaim tax, ask what their authority requires before you bill.</p>
 
 <h2>Typical mandatory fields</h2>
@@ -2218,12 +2218,12 @@ jane@smithdesign.example</p>
 <p>Discount allocation matters. Many systems require discounts to be applied per line or per rate group before tax is calculated. Random "goodwill" discounts off the gross total can break compliance.</p>
 
 <h2>Exempt, zero-rated, and reverse-charge supplies</h2>
-<p>State the reason for exemption, zero rating, or reverse charge directly on the invoice. Examples of wording (always confirm locally): "Exempt supply — [reason]"; "Zero-rated — export of goods"; "Reverse charge — customer to account for tax."</p>
+<p>State the reason for exemption, zero rating, or reverse charge directly on the invoice. Examples of wording (always confirm locally): "Exempt supply: [reason]"; "Zero-rated: export of goods"; "Reverse charge: customer to account for tax."</p>
 <p>Leaving the rate blank without explanation creates ambiguity for both auditors and clients. Related deep-dives: <a href="/blog/gst-invoice-guide">GST invoice guide</a> and <a href="/blog/vat-invoice-guide">VAT invoice guide</a>.</p>
 
 <h2>Corrections and credit notes</h2>
 <p>Once a tax invoice is issued, do not quietly edit and resend it as if nothing happened. Most regimes expect a credit note (or debit note) that references the original invoice number, with a clear adjustment to net and tax. Keep both documents.</p>
-<p>If you discover undercharged tax, speak to your accountant before inventing a process — correcting tax after the fact can have filing implications.</p>
+<p>If you discover undercharged tax, speak to your accountant before inventing a process. Correcting tax after the fact can have filing implications.</p>
 
 <h2>Record-keeping</h2>
 <p>Retain tax invoices for the period your law requires (often five to seven years or more). Store searchable PDFs and ensure backup copies exist. When you change accounting systems, export historical invoices rather than trusting a vendor forever.</p>
@@ -2238,13 +2238,13 @@ jane@smithdesign.example</p>
 
 
 <h2>Who needs a tax invoice</h2>
-<p>Registered suppliers generally issue tax invoices for taxable supplies to customers who need them for reclaim or record-keeping. Thresholds, exceptions, and consumer versus business rules vary widely. If you recently crossed a registration threshold, update your templates immediately — charging tax without showing required fields, or failing to charge when you should, both create cleanup work.</p>
+<p>Registered suppliers generally issue tax invoices for taxable supplies to customers who need them for reclaim or record-keeping. Thresholds, exceptions, and consumer versus business rules vary widely. If you recently crossed a registration threshold, update your templates immediately. Charging tax without showing required fields, or failing to charge when you should, both create cleanup work.</p>
 <p>Buyers should tell you when they need a full tax invoice rather than a simplified receipt. Train your sales desk to ask for tax IDs at onboarding for business customers so the first invoice is not a scramble.</p>
 <h2>Alignment with filings</h2>
 <p>Your invoice-level tax totals should reconcilable to the returns you file. If staff issue ad-hoc credits without tax adjustments, filings drift from documents. Close each period with a quick match: invoices issued, credits issued, tax collected, tax on credits.</p>
 <p>When rates change mid-year, update product defaults on the day the new rate applies and double-check drafts created earlier. Old drafts with stale rates are a quiet source of errors.</p>
 <h2>Working with accountants</h2>
-<p>Send your accountant samples of domestic, reverse-charge, exempt, and mixed-rate invoices for a quick review once a year — or whenever you enter a new sales pattern. A thirty-minute review prevents months of brittle templates. Keep this guide as orientation only; their advice reflects your registration and jurisdiction.</p>
+<p>Send your accountant samples of domestic, reverse-charge, exempt, and mixed-rate invoices for a quick review once a year, or whenever you enter a new sales pattern. A thirty-minute review prevents months of brittle templates. Keep this guide as orientation only; their advice reflects your registration and jurisdiction.</p>
 
 <h2>Cross-border first invoices</h2>
 <p>The first time you sell into a new country, pause before reusing your domestic tax invoice layout. Ask whether reverse charge, local registration, or marketplace collection rules apply. A correctly unpaid VAT line with reverse-charge wording is often safer than charging domestic tax to a foreign VAT-registered business by habit.</p>
@@ -2280,7 +2280,7 @@ jane@smithdesign.example</p>
 <li>Recipient name, address, and GSTIN for registered recipients</li>
 <li>Place of supply and state / territory code where relevant</li>
 <li>HSN or SAC (or similar classification) code per line when required</li>
-<li>Taxable value, rate, and tax amount — split into components when applicable</li>
+<li>Taxable value, rate, and tax amount, split into components when applicable</li>
 <li>Whether tax is payable under reverse charge</li>
 <li>Signature or digital signature of the supplier where mandated</li>
 <li>Shipping / billing addresses when they differ for goods</li>
@@ -2288,14 +2288,14 @@ jane@smithdesign.example</p>
 <p>E-invoicing or e-way bill rules may add IRN/QR requirements for certain turnovers and document types. Check whether your invoices must pass through a government portal before they are valid for credit.</p>
 
 <h2>Intra-state vs inter-state supplies</h2>
-<p>In multi-component GST systems, intra-state supplies often split tax into two equal components (commonly labelled along the lines of central and state tax). Inter-state supplies often use a single integrated tax. Getting the place of supply wrong is one of the most common GST invoicing errors — it misclassifies the components and can break the buyer's credit flow.</p>
+<p>In multi-component GST systems, intra-state supplies often split tax into two equal components (commonly labelled along the lines of central and state tax). Inter-state supplies often use a single integrated tax. Getting the place of supply wrong is one of the most common GST invoicing errors. It misclassifies the components and can break the buyer's credit flow.</p>
 <p>Determine place of supply using the rules for goods versus services in your jurisdiction; do not guess based on where your office feels "mainly" located.</p>
 
 <h2>HSN / SAC and line clarity</h2>
 <p>Classification codes belong with your product and service list so they are never improvised at invoice time. Wrong codes create matching issues in returns and audits. Descriptions should still be human-readable: codes alone are not enough for a client approver.</p>
 
 <h2>Reverse charge</h2>
-<p>When reverse charge applies, the supplier may need to show that tax is payable by the recipient, often at a nil charge on the face of the invoice with explicit wording. Do not collect tax from the client if reverse charge means they self-account — and do not omit the disclosure.</p>
+<p>When reverse charge applies, the supplier may need to show that tax is payable by the recipient, often at a nil charge on the face of the invoice with explicit wording. Do not collect tax from the client if reverse charge means they self-account, and do not omit the disclosure.</p>
 <p>For a broader cross-border / reverse-charge framing in VAT systems, see the <a href="/blog/vat-invoice-guide">VAT invoice guide</a>. Concepts rhyme; forms differ.</p>
 
 <h2>Exports and special series</h2>
@@ -2304,7 +2304,7 @@ jane@smithdesign.example</p>
 
 <h2>Credit notes, debit notes, and amendments</h2>
 <p>Issue credit notes rather than editing an issued invoice. Reference the original invoice number, adjust taxable value and tax components, and keep both documents. Debit notes similarly document upward adjustments when allowed.</p>
-<p>Avoid duplicate invoice numbers when regenerating PDFs after a typo — void and reissue under a controlled process if your software does not manage amendments for you.</p>
+<p>Avoid duplicate invoice numbers when regenerating PDFs after a typo. Void and reissue under a controlled process if your software does not manage amendments for you.</p>
 
 <h2>Common GST invoicing errors</h2>
 <ul>
@@ -2327,7 +2327,7 @@ jane@smithdesign.example</p>
 
 
 <h2>B2B versus B2C documentation habits</h2>
-<p>Registered business customers usually need full GST details to claim credit. Consumers may need less on the face of the document, but your internal records should still explain the supply. Do not invent a "simpler" B2B format that drops GSTINs to save typing — that saving is expensive later.</p>
+<p>Registered business customers usually need full GST details to claim credit. Consumers may need less on the face of the document, but your internal records should still explain the supply. Do not invent a "simpler" B2B format that drops GSTINs to save typing. That saving is expensive later.</p>
 <p>Collect buyer GSTINs during onboarding and verify them when official validation tools exist. A single digit error can mean a document that looks fine to humans but fails automated matching.</p>
 <h2>Returns, advances, and continuous supply</h2>
 <p>Advances and periodic billing for continuous supplies often have specific timing and documentation rules. Align invoice dates with how you report in your return software. If you bill monthly for an ongoing service, name the service period every time so place-of-supply and rate decisions remain reviewable.</p>
@@ -2338,7 +2338,7 @@ jane@smithdesign.example</p>
 
 <h2>Create and cross-check</h2>
 <p>Use the notes and tax fields in our <a href="/invoice-generator">invoice generator</a> to capture registration IDs, rate lines, and reverse-charge statements. For general tax-invoice principles that apply across regimes, read the <a href="/blog/tax-invoice-guide">tax invoice guide</a>. Browse <a href="/invoice-templates">invoice templates</a> when you need a clearer AP-friendly layout.</p>
-<p>Always confirm current field lists, rates, and e-invoicing thresholds with your accountant or the relevant authority — this guide is informational, not a filing manual.</p>
+<p>Always confirm current field lists, rates, and e-invoicing thresholds with your accountant or the relevant authority. This guide is informational, not a filing manual.</p>
 `,
   },
   {
@@ -2368,7 +2368,7 @@ jane@smithdesign.example</p>
 <p>Unit prices and quantities should be clear enough that an auditor can reconstruct the totals. If you issue invoices in a foreign currency, follow local rules for showing exchange rates or VAT in the domestic currency when required.</p>
 
 <h2>Simplified invoices</h2>
-<p>Many jurisdictions allow a simplified VAT invoice below a value threshold — typically showing less detail, such as the gross amount and the VAT rate rather than a full buyer-address block. Retail till receipts often rely on these rules.</p>
+<p>Many jurisdictions allow a simplified VAT invoice below a value threshold, typically showing less detail, such as the gross amount and the VAT rate rather than a full buyer-address block. Retail till receipts often rely on these rules.</p>
 <p>Check your local threshold and content list before relying on a simplified form for B2B work. Business customers frequently still ask for a full invoice even when a simplified one would be legally allowed, because their reclaim process expects more detail.</p>
 
 <h2>Reverse charge</h2>
@@ -2379,15 +2379,15 @@ jane@smithdesign.example</p>
 <li>Add clear wording such as "Reverse charge: customer to account for VAT to HMRC/local authority"</li>
 <li>Still keep a full audit trail of the supply</li>
 </ul>
-<p>Reverse charge is easy to get wrong when you mix domestic and foreign customers in one template. Train whoever invoices to select the correct tax treatment deliberately — not by habit. Related reading: <a href="/blog/tax-invoice-guide">tax invoice guide</a> and, for GST-style systems, <a href="/blog/gst-invoice-guide">GST invoice guide</a>.</p>
+<p>Reverse charge is easy to get wrong when you mix domestic and foreign customers in one template. Train whoever invoices to select the correct tax treatment deliberately, not by habit. Related reading: <a href="/blog/tax-invoice-guide">tax invoice guide</a> and, for GST-style systems, <a href="/blog/gst-invoice-guide">GST invoice guide</a>.</p>
 
 <h2>Mixed rates</h2>
 <p>Subtotal by rate. Show standard-rated, reduced-rated, zero-rated, and exempt lines separately, each with its own VAT amount (zero where appropriate). Blending rates into one percentage confuses filings and reclaim.</p>
-<p>When a discount applies across mixed-rate goods, allocate it in line with local rules — often proportionally by net value per rate — rather than knocking an arbitrary amount off the final gross.</p>
+<p>When a discount applies across mixed-rate goods, allocate it in line with local rules (often proportionally by net value per rate) rather than knocking an arbitrary amount off the final gross.</p>
 
 <h2>Credit notes</h2>
 <p>To correct a VAT invoice, issue a credit note referencing the original invoice number. Show the adjustment to net and VAT clearly. Never amend and resend the original as if it were untouched; parallel versions of "the same number" create nightmares in audits and customer AP systems.</p>
-<p>If you under-billed VAT, get advice before issuing a further charge — timing and return corrections may be involved.</p>
+<p>If you under-billed VAT, get advice before issuing a further charge, as timing and return corrections may be involved.</p>
 
 <h2>Time of supply and deposits</h2>
 <p>VAT timing can follow invoice date, payment date, or supply date depending on local time-of-supply rules. Deposits may create a tax point before final delivery. Align your invoicing rhythm with how your VAT returns are prepared so you do not accidentally pull liability into the wrong period.</p>
@@ -2425,7 +2425,7 @@ jane@smithdesign.example</p>
     slug: "professional-invoice-design-tips",
     title: "15 Professional Invoice Design Tips That Improve Payment Speed",
     description:
-      "Typography, hierarchy, colour and whitespace choices that make an invoice easier to read, approve and pay — without sacrificing brand.",
+      "Typography, hierarchy, colour and whitespace choices that make an invoice easier to read, approve and pay, without sacrificing brand.",
     category: "design-templates",
     date: "2026-04-22",
     updated: "2026-09-25",
@@ -2433,7 +2433,7 @@ jane@smithdesign.example</p>
     content: `
 <h2>Design for approval speed, not decoration</h2>
 <p>An invoice has one job: get understood and paid. Visual design should accelerate that job. When hierarchy is clear, accounts payable finds the amount, due date, PO, and bank details in seconds. When hierarchy is muddy, your brand look becomes expensive noise.</p>
-<p>The fifteen tips below are practical rules you can apply in any template — including those in our <a href="/invoice-templates">invoice templates</a> gallery. If you are still deciding on a layout, start with <a href="/blog/choose-invoice-template-by-client">how to choose an invoice template based on who pays you</a>.</p>
+<p>The fifteen tips below are practical rules you can apply in any template, including those in our <a href="/invoice-templates">invoice templates</a> gallery. If you are still deciding on a layout, start with <a href="/blog/choose-invoice-template-by-client">how to choose an invoice template based on who pays you</a>.</p>
 
 <h2>Hierarchy first</h2>
 <ol>
@@ -2446,7 +2446,7 @@ jane@smithdesign.example</p>
 
 <h2>Colour and brand</h2>
 <ol start="6">
-<li><strong>Use one accent colour</strong>, applied to the header bar and totals emphasis only — not to every label.</li>
+<li><strong>Use one accent colour</strong>, applied to the header bar and totals emphasis only, not to every label.</li>
 <li><strong>Ensure text stays legible when printed in greyscale.</strong> Many offices still print; light grey on white fails.</li>
 <li><strong>Keep the logo modest (often under ~60px tall in the PDF).</strong> It identifies you; it is not the hero.</li>
 <li><strong>Avoid background images behind text.</strong> Watermarks and photos reduce contrast and compress poorly.</li>
@@ -2463,7 +2463,7 @@ jane@smithdesign.example</p>
 </ol>
 
 <h2>Typography details that matter</h2>
-<p>Choose a clean sans or a restrained serif and stick to it. Avoid novelty fonts for legal business names and bank details. Use tabular lining figures for money columns so digits align vertically. Keep line length for notes moderate — long paragraphs at the bottom get skipped.</p>
+<p>Choose a clean sans or a restrained serif and stick to it. Avoid novelty fonts for legal business names and bank details. Use tabular lining figures for money columns so digits align vertically. Keep line length for notes moderate. Long paragraphs at the bottom get skipped.</p>
 <p>Bold sparingly: client name, amount due, and section labels. If everything is bold, nothing is.</p>
 
 <h2>Mobile and PDF preview reality</h2>
@@ -2483,16 +2483,16 @@ jane@smithdesign.example</p>
 
 <h2>A simple self-test before you send</h2>
 <ul>
-<li>Cover the page with your hand, then reveal only the top third — can you name the supplier, invoice number, and client?</li>
-<li>Reveal the totals — is the amount due obvious within a second?</li>
-<li>Reveal the footer — can you pay without scrolling back up for missing IBAN digits?</li>
+<li>Cover the page with your hand, then reveal only the top third. Can you name the supplier, invoice number, and client?</li>
+<li>Reveal the totals. Is the amount due obvious within a second?</li>
+<li>Reveal the footer. Can you pay without scrolling back up for missing IBAN digits?</li>
 </ul>
 <p>If any answer is no, adjust hierarchy before you adjust decoration.</p>
 
 
 <h2>Whitespace is a feature</h2>
 <p>Crowding every edge with stamps, badges, and social icons makes the amount due harder to find. Leave margins that survive printer edge loss. Separate sections with space and light rules rather than boxes inside boxes. If removing a decorative element does not reduce clarity, remove it.</p>
-<p>Clients equate visual calm with administrative competence. Busy invoices feel risky even when the numbers are correct — an unfair bias you can use in your favour by simplifying.</p>
+<p>Clients equate visual calm with administrative competence. Busy invoices feel risky even when the numbers are correct, an unfair bias you can use in your favour by simplifying.</p>
 <h2>Localisation and long text</h2>
 <p>If you invoice in multiple languages or with long legal entity names, test the template with worst-case strings. Fixed-height header boxes that clip text look careless. Prefer layouts that wrap gracefully, such as <a href="/invoice-templates/modern">Modern</a> or <a href="/invoice-templates/corporate">Corporate</a>.</p>
 <p>Currency symbols and three-letter codes should be consistent. Mixing "$" without clarifying USD versus AUD is a design defect as much as a content defect.</p>
@@ -2501,17 +2501,17 @@ jane@smithdesign.example</p>
 <p>Good invoice design is boring on purpose. Boring gets paid.</p>
 
 <h2>Icons, QR codes, and payment links</h2>
-<p>A single payment-link QR code near the payment block can help consumer and small-business payers. Keep it secondary to readable bank details for clients who cannot scan. Do not scatter multiple QR codes or app-store badges across the page — they compete with the total and look promotional rather than financial.</p>
+<p>A single payment-link QR code near the payment block can help consumer and small-business payers. Keep it secondary to readable bank details for clients who cannot scan. Do not scatter multiple QR codes or app-store badges across the page. They compete with the total and look promotional rather than financial.</p>
 <p>If a link is present, also print the URL in plain text for accessibility and printouts.</p>
 <h2>Apply the principles in minutes</h2>
-<p>These design principles are baked into our <a href="/invoice-templates">18 invoice templates</a>. Create your next document with the <a href="/invoice-generator">free invoice generator</a>, pick a layout that fits your buyer, and let structure — not ornament — carry the payment request.</p>
+<p>These design principles are baked into our <a href="/invoice-templates">18 invoice templates</a>. Create your next document with the <a href="/invoice-generator">free invoice generator</a>, pick a layout that fits your buyer, and let structure, not ornament, carry the payment request.</p>
 `,
   },
   {
     slug: "choose-invoice-template-by-client",
     title: "How to Choose an Invoice Template Based on Who Pays You",
     description:
-      "Match invoice layout to the buyer: freelancers, enterprise AP, hospitality, legal and consumers. A practical decision guide with examples — not a generic template list.",
+      "Match invoice layout to the buyer: freelancers, enterprise AP, hospitality, legal and consumers. A practical decision guide with examples, not a generic template list.",
     category: "design-templates",
     date: "2026-10-19",
     author: "Invoice Creator Editorial Team",
@@ -2533,8 +2533,8 @@ jane@smithdesign.example</p>
 <h2>A five-minute selection test</h2>
 <ol>
 <li>Export a sample PDF with your real legal name and a long client name.</li>
-<li>Print or view greyscale — does the total still dominate?</li>
-<li>Cover everything except the top third — can you name supplier, number and buyer?</li>
+<li>Print or view greyscale. Does the total still dominate?</li>
+<li>Cover everything except the top third. Can you name supplier, number and buyer?</li>
 <li>Ask: would this look odd next to the proposals you already send?</li>
 </ol>
 <p>If step 3 fails, change hierarchy before you change accent colour.</p>
@@ -2550,7 +2550,7 @@ jane@smithdesign.example</p>
     slug: "invoice-pdf-print-checklist",
     title: "Invoice PDF Print Checklist: What Breaks on Paper (and How to Fix It)",
     description:
-      "A practical checklist for invoice PDFs that must survive printers, scanners and greyscale — margins, colour, logos, totals and payment details.",
+      "A practical checklist for invoice PDFs that must survive printers, scanners and greyscale: margins, colour, logos, totals and payment details.",
     category: "design-templates",
     date: "2026-10-19",
     author: "Invoice Creator Editorial Team",
@@ -2558,7 +2558,7 @@ jane@smithdesign.example</p>
 <p>Screen-perfect invoices often fail on paper: clipped logos, grey-on-grey totals, payment IBANs that wrap mid-digit. If any of your clients still print or scan, run this checklist before you send.</p>
 
 <h2>1. Margins and clip risk</h2>
-<p>Keep critical content inside a safe margin. Consumer printers crop edges. Put invoice number, totals and bank details away from the extreme footer edge. Our templates target A4 with print-safe spacing — do not shrink margins to “fit more branding.”</p>
+<p>Keep critical content inside a safe margin. Consumer printers crop edges. Put invoice number, totals and bank details away from the extreme footer edge. Our templates target A4 with print-safe spacing. Do not shrink margins to “fit more branding.”</p>
 
 <h2>2. Greyscale legibility</h2>
 <p>Print once in black and white. Accent bars should not be the only cue for hierarchy. Amount due must remain the darkest, largest number on the page. Neon or pastel text that looks fine on OLED often disappears on office printers.</p>
@@ -2570,7 +2570,7 @@ jane@smithdesign.example</p>
 <p>Hairline rules can vanish when scanned. Ensure quantity, rate and amount columns remain aligned after a phone-photo of the printout. Avoid placing important numbers only in coloured chips.</p>
 
 <h2>5. Payment block completeness</h2>
-<p>Bank name, account name, IBAN/account number and payment reference should be readable without zoom. If you add a QR code, also print the URL or account digits — scanners are not universal.</p>
+<p>Bank name, account name, IBAN/account number and payment reference should be readable without zoom. If you add a QR code, also print the URL or account digits, as scanners are not universal.</p>
 
 <h2>6. Long legal names</h2>
 <p>Test with worst-case strings (long LLC names, bilingual addresses). Fixed-height boxes that clip text look careless. Templates like <a href="/invoice-templates/corporate">Corporate</a> and <a href="/invoice-templates/modern">Modern</a> wrap more gracefully than decorative stacked headers when names are long.</p>

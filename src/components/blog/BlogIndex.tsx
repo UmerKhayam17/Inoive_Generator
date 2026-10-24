@@ -37,8 +37,8 @@ export function BlogIndex({ page = 1 }: { page?: number }) {
     <>
       <PageHeader
         eyebrow="Blog"
-        title={page > 1 ? `Invoicing guides — page ${page}` : "Invoicing, explained properly"}
-        lead={`${POSTS.length} in-depth guides on creating, sending and getting paid on invoices — written for freelancers and small businesses.`}
+        title={page > 1 ? `Invoicing guides: page ${page}` : "Invoicing, explained properly"}
+        lead={`${POSTS.length} in-depth guides on creating, sending and getting paid on invoices, written for freelancers and small businesses.`}
         crumbs={[{ label: "Home", href: "/" }, { label: "Blog" }]}
       />
 

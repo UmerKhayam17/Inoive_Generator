@@ -4,7 +4,7 @@ import { SearchPage } from "@/components/search/SearchPage";
 import { SITE } from "@/data/site";
 import { canonicalFor, pageSocial } from "@/lib/seo";
 
-const TITLE = `Search — Invoice Templates & Guides | ${SITE.name}`;
+const TITLE = `Search: Invoice Templates & Guides | ${SITE.name}`;
 const DESCRIPTION =
   "Search Invoice Creator for invoice templates, invoicing guides and tax explainers. Find the right template or article in seconds.";
 
