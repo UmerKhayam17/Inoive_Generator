@@ -18,7 +18,7 @@ const ALL = [
   },
   {
     q: "Can I download my invoice as a PDF?",
-    a: "Yes. After completing your invoice, you can download it as a PDF. The downloaded PDF contains only your content and your branding — no watermark.",
+    a: "Yes. After completing your invoice, you can download it as a PDF. The downloaded PDF contains only your content and your branding, with no watermark.",
   },
   {
     q: "Can I add my company logo?",
@@ -46,7 +46,7 @@ const ALL = [
   },
   {
     q: "Where is my invoice data stored?",
-    a: "Invoice drafts are stored only in your browser's local storage on this device — they are never uploaded to our servers. Your draft is auto-saved on every change and restored when you return in the same browser. Clearing your browser data removes drafts permanently. Separately, if you accept cookies, analytics and advertising partners may collect usage data as described in our Privacy Policy and Cookie Policy — that is not your invoice content.",
+    a: "Invoice drafts are stored only in your browser's local storage on this device. They are never uploaded to our servers. Your draft is auto-saved on every change and restored when you return in the same browser. Clearing your browser data removes drafts permanently. Separately, if you accept cookies, analytics and advertising partners may collect usage data as described in our Privacy Policy and Cookie Policy. That is not your invoice content.",
   },
   {
     q: "Can I create invoices in different currencies?",
@@ -74,7 +74,7 @@ const ALL = [
   },
 ];
 
-const TITLE = `Invoice Generator FAQ — ${SITE.name}`;
+const TITLE = `Invoice Generator FAQ | ${SITE.name}`;
 const DESCRIPTION =
   "Answers to the most common questions about our free invoice generator: pricing, signup, data storage, templates, currencies, tax and PDF downloads.";
 

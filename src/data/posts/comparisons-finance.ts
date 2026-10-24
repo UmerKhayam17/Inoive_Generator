@@ -159,7 +159,7 @@ export const COMPARISON_FINANCE_POSTS: PostDraft[] = [
     content: `
 <p><strong>Quick answer:</strong> Choosing between an invoice generator vs accounting software comes down to volume and scope. An invoice generator creates a professional invoice PDF in minutes for free, with no setup. Accounting software does that too, but also tracks payments, expenses, bank transactions and taxes for a monthly fee. If you mainly need to bill clients, start with a generator; if you need full books, choose accounting software.</p>
 
-<p>This comparison covers what each tool actually does, a side-by-side feature table, a cost illustration, and a checklist to decide which fits your business in 2026. You can try the lightweight option right now with our <a href="/invoice-generator">free online invoice generator</a> — no sign-up, no watermark — and see the full feature walkthrough in the <a href="/user-guide">user guide</a>.</p>
+<p>This comparison covers what each tool actually does, a side-by-side feature table, a cost illustration, and a checklist to decide which fits your business in 2026. You can try the lightweight option right now with our <a href="/invoice-generator">free online invoice generator</a> (no sign-up, no watermark) and see the full feature walkthrough in the <a href="/user-guide">user guide</a>.</p>
 
 <h2>What an invoice generator does</h2>
 <p>An invoice generator is a focused tool with one job: turning your details into a correct, good-looking invoice. You fill in a form, the tool calculates line totals, tax, discounts and the balance due, and you download a PDF to email or print. Good generators offer several templates, multiple currencies and country presets so tax labels match local expectations.</p>
@@ -182,7 +182,7 @@ export const COMPARISON_FINANCE_POSTS: PostDraft[] = [
 <h2>Invoice generator vs accounting software: side-by-side</h2>
 <table><thead><tr><th>Factor</th><th>Invoice generator</th><th>Accounting software</th></tr></thead><tbody>
 <tr><td>Price</td><td>Often free</td><td>Monthly or annual subscription, usually tiered by features or users</td></tr>
-<tr><td>Setup time</td><td>None — open and type</td><td>Hours to days for contacts, accounts and bank connections</td></tr>
+<tr><td>Setup time</td><td>None: open and type</td><td>Hours to days for contacts, accounts and bank connections</td></tr>
 <tr><td>Learning curve</td><td>Minimal</td><td>Moderate; basic accounting knowledge helps</td></tr>
 <tr><td>Invoice creation</td><td>Yes, with templates and automatic maths</td><td>Yes, from stored customer and product records</td></tr>
 <tr><td>Payment tracking</td><td>Manual (a spreadsheet or "PAID" watermark)</td><td>Automatic matching to bank transactions</td></tr>
@@ -201,7 +201,7 @@ export const COMPARISON_FINANCE_POSTS: PostDraft[] = [
 <li>Invoices per year: 6 × 12 = 72</li>
 <li>Software cost per invoice: $360 ÷ 72 = $5.00</li>
 </ul>
-<p>Now picture a small agency sending 60 invoices a month on a $60 plan: $60 × 12 = $720 a year across 720 invoices, or $1.00 per invoice — and that price also covers bank reconciliation, expenses and reports that would otherwise take hours by hand. The per-invoice cost falls as volume rises, and the time saved on bookkeeping grows. That is why low-volume billers often stay with a free generator and higher-volume businesses tend to move to software.</p>
+<p>Now picture a small agency sending 60 invoices a month on a $60 plan: $60 × 12 = $720 a year across 720 invoices, or $1.00 per invoice, and that price also covers bank reconciliation, expenses and reports that would otherwise take hours by hand. The per-invoice cost falls as volume rises, and the time saved on bookkeeping grows. That is why low-volume billers often stay with a free generator and higher-volume businesses tend to move to software.</p>
 
 <h2>How to decide: a quick checklist</h2>
 <h3>An invoice generator is probably enough if</h3>
@@ -297,7 +297,7 @@ export const COMPARISON_FINANCE_POSTS: PostDraft[] = [
     content: `
 <p><strong>Quick answer:</strong> Cash vs accrual accounting is a question of timing. The cash method records income when money arrives and expenses when you pay them. The accrual method records income when you earn it (usually when you invoice) and expenses when you incur them, even if no cash has moved. Cash is simpler; accrual shows true profitability.</p>
 
-<p>Below we compare the two methods side by side, run the same two months of invoices and bills through both, and summarize the general rules on who can use which. Whichever method you choose, it starts with accurate invoices — our <a href="/invoice-generator">invoice generator</a> gives every invoice a clear issue date and due date, which is exactly the information both methods depend on.</p>
+<p>Below we compare the two methods side by side, run the same two months of invoices and bills through both, and summarize the general rules on who can use which. Whichever method you choose, it starts with accurate invoices: our <a href="/invoice-generator">invoice generator</a> gives every invoice a clear issue date and due date, which is exactly the information both methods depend on.</p>
 
 <p><em>This is general information, not tax or accounting advice. Rules differ by country and change over time, so confirm your method with your tax authority or an accountant.</em></p>
 
@@ -306,7 +306,7 @@ export const COMPARISON_FINANCE_POSTS: PostDraft[] = [
 <p>The appeal is obvious: your books mirror your bank account, there is nothing to estimate, and for many self-employed people you pay income tax only on money you have actually received. The downside is that a busy month of invoicing can look like a bad month on paper if clients pay late.</p>
 
 <h2>What is accrual accounting?</h2>
-<p>Under accrual-basis accounting you record revenue when it is earned and expenses when they are incurred. Issuing an invoice for completed work creates revenue and an <a href="/blog/accounts-receivable-guide">accounts receivable</a> balance immediately. Receiving a supplier's bill creates an expense and an accounts payable balance, even before you pay it — the buyer-side document explained in <a href="/blog/invoice-vs-bill">invoice vs bill</a>.</p>
+<p>Under accrual-basis accounting you record revenue when it is earned and expenses when they are incurred. Issuing an invoice for completed work creates revenue and an <a href="/blog/accounts-receivable-guide">accounts receivable</a> balance immediately. Receiving a supplier's bill creates an expense and an accounts payable balance, even before you pay it, the buyer-side document explained in <a href="/blog/invoice-vs-bill">invoice vs bill</a>.</p>
 <p>Accrual matches income with the costs of earning it in the same period, so it gives a more accurate view of profit. It is also the basis of most formal financial statements. The trade-off is more bookkeeping and the need to track receivables and payables carefully.</p>
 
 <h2>Cash vs accrual accounting: side-by-side comparison</h2>
@@ -377,7 +377,7 @@ export const COMPARISON_FINANCE_POSTS: PostDraft[] = [
 <ul>
 <li><strong>Deposits received in advance.</strong> Under the cash method, a deposit is generally income when it is received. Under accrual, an advance payment for work not yet done is usually recorded as a liability (deferred or unearned revenue) and becomes revenue as the work is delivered.</li>
 <li><strong>Credit notes.</strong> Under accrual, a credit note reduces revenue and accounts receivable in the period it is issued. Under the cash method, it only affects your books if it changes what the customer actually pays or results in a refund.</li>
-<li><strong>Invoices that are never paid.</strong> Under the cash method, an unpaid invoice was never counted as income, so there is nothing to write off for income tax purposes. Under accrual, the revenue was already recorded, so a bad debt usually needs to be written off — and whether that is deductible depends on local rules.</li>
+<li><strong>Invoices that are never paid.</strong> Under the cash method, an unpaid invoice was never counted as income, so there is nothing to write off for income tax purposes. Under accrual, the revenue was already recorded, so a bad debt usually needs to be written off, and whether that is deductible depends on local rules.</li>
 <li><strong>Prepaid expenses.</strong> Paying a 12-month software plan of $600 upfront is a $600 expense in the month paid under the cash method. Under accrual, it is typically spread at $50 per month over the year the service covers.</li>
 <li><strong>Year-end timing.</strong> On the cash basis, a client paying on 2 January instead of 30 December moves that income into the next tax year. On the accrual basis, the invoice date decides the year.</li>
 </ul>
@@ -444,7 +444,7 @@ export const COMPARISON_FINANCE_POSTS: PostDraft[] = [
 <tr><td>Customer awareness</td><td>Usually notified</td><td>Often confidential</td></tr>
 <tr><td>How you get paid</td><td>Advance, then rebate after customer pays</td><td>Loan drawn against invoices, repaid when customers pay</td></tr>
 <tr><td>Typical cost structure</td><td>Factor fee per period the invoice is outstanding, plus possible service fees</td><td>Interest or a fee on the amount borrowed, plus possible service fees</td></tr>
-<tr><td>Credit control workload</td><td>Reduced — outsourced to factor</td><td>Unchanged — stays with you</td></tr>
+<tr><td>Credit control workload</td><td>Reduced: outsourced to factor</td><td>Unchanged: stays with you</td></tr>
 <tr><td>Often suits</td><td>Businesses without a credit control team</td><td>Established businesses with good collection processes</td></tr>
 </tbody></table>
 
@@ -464,7 +464,7 @@ export const COMPARISON_FINANCE_POSTS: PostDraft[] = [
 <li>Cost relative to cash advanced: $800 ÷ $17,000 = 4.71% for 45 days</li>
 <li>Rough annualized cost: 4.71% × (365 ÷ 45) ≈ 38% per year</li>
 </ul>
-<p>Notice the effect of the "part period" rule: if the customer had paid on day 30, you would have paid one period ($400), but paying on day 31 doubles it. Fee schedules, minimum fees and extra charges (setup, verification, bank transfer or termination fees) can change the result a lot, so model your own worst case — a customer paying late — before you commit.</p>
+<p>Notice the effect of the "part period" rule: if the customer had paid on day 30, you would have paid one period ($400), but paying on day 31 doubles it. Fee schedules, minimum fees and extra charges (setup, verification, bank transfer or termination fees) can change the result a lot, so model your own worst case (a customer paying late) before you commit.</p>
 
 <h2>Recourse vs non-recourse factoring</h2>
 <ul>
@@ -491,7 +491,7 @@ export const COMPARISON_FINANCE_POSTS: PostDraft[] = [
 <h2>Is your invoice ready to be factored?</h2>
 <p>Factors reject invoices that are vague, disputed or hard to verify. Before submitting, check that each invoice:</p>
 <ul>
-<li>Has a unique number in a clean sequence — use our <a href="/tools/invoice-number-generator">invoice number generator</a> if your numbering is messy</li>
+<li>Has a unique number in a clean sequence: use our <a href="/tools/invoice-number-generator">invoice number generator</a> if your numbering is messy</li>
 <li>Names the customer's correct legal entity and quotes any PO number</li>
 <li>Describes delivered goods or completed services, not future work</li>
 <li>Shows a clear due date and the correct payment details (often the factor's account, as instructed)</li>
@@ -505,7 +505,7 @@ export const COMPARISON_FINANCE_POSTS: PostDraft[] = [
 <li><strong>Invoice the same day</strong> work is approved and follow the tactics in <a href="/blog/how-to-get-paid-faster">how to get paid faster</a>.</li>
 <li><strong>Offer an early payment discount.</strong> A 2/10 net 30 discount costs you 2%; see our guide to the <a href="/blog/early-payment-discount">early payment discount</a> to compare its implied cost with a factoring offer.</li>
 <li><strong>Take deposits or milestone payments</strong> on large jobs with a <a href="/blog/deposit-invoice">deposit invoice</a>.</li>
-<li><strong>Enforce agreed late fees</strong> where your contract and local law allow — see <a href="/blog/late-payment-fees">late payment fees</a>.</li>
+<li><strong>Enforce agreed late fees</strong> where your contract and local law allow. See <a href="/blog/late-payment-fees">late payment fees</a>.</li>
 <li><strong>Tighten receivables management</strong> with a weekly review, explained in our <a href="/blog/accounts-receivable-guide">accounts receivable guide</a>.</li>
 </ul>
 <p>If you still need funding, factoring can be a sensible bridge. Treat it as one tool within broader <a href="/blog/cash-flow-management">cash flow management</a>, not a permanent fix.</p>
@@ -513,7 +513,7 @@ export const COMPARISON_FINANCE_POSTS: PostDraft[] = [
 <h2>Questions to ask before signing a factoring agreement</h2>
 <ol>
 <li><strong>What is the advance rate</strong>, and does it vary by customer?</li>
-<li><strong>How is the fee calculated</strong> — per day, per 10 days or per 30-day period, and on the invoice value or on the advance?</li>
+<li><strong>How is the fee calculated</strong>: per day, per 10 days or per 30-day period, and on the invoice value or on the advance?</li>
 <li><strong>What other fees apply?</strong> Ask about setup, due diligence, credit checks, bank transfers, minimum monthly volume and early termination.</li>
 <li><strong>Is it recourse or non-recourse</strong>, and exactly which events does any non-recourse cover?</li>
 <li><strong>Must you factor every invoice</strong>, or can you choose individual invoices (sometimes called spot or selective factoring)?</li>
@@ -564,7 +564,7 @@ export const COMPARISON_FINANCE_POSTS: PostDraft[] = [
 <p>This guide explains how accounts receivable works, shows the bookkeeping entries, lays out a repeatable AR process and walks through the two metrics that tell you whether it is healthy. Good AR starts with a clear invoice: our <a href="/invoice-generator">free invoice generator</a> puts the invoice number, due date and payment details where your customers' finance team expects them.</p>
 
 <h2>What is accounts receivable?</h2>
-<p>When you sell on credit — deliver now, get paid later — you create a receivable. A freelancer who finishes a project and sends an invoice on Net 30 terms has a receivable for the next 30 days. A wholesaler with 50 customers on account may have hundreds of open receivables at any time.</p>
+<p>When you sell on credit (deliver now, get paid later), you create a receivable. A freelancer who finishes a project and sends an invoice on Net 30 terms has a receivable for the next 30 days. A wholesaler with 50 customers on account may have hundreds of open receivables at any time.</p>
 <p>Receivables are valuable: they represent revenue you have earned. But they are not cash. A business can be profitable on paper and still struggle to pay its bills if too much money is tied up in unpaid invoices. That gap is what AR management is designed to close.</p>
 <p>On the balance sheet, accounts receivable usually appears among current assets, next to cash. Lenders often look at it closely, because the size and age of your receivables show how reliably your sales turn into money. A large AR balance made up mostly of recent, not-yet-due invoices is a good sign; the same balance made up of invoices several months overdue is a risk.</p>
 
@@ -584,7 +584,7 @@ export const COMPARISON_FINANCE_POSTS: PostDraft[] = [
 <tr><td>1 Oct 2026</td><td>Invoice INV-2026-0118 issued</td><td>Accounts receivable $2,400</td><td>Revenue $2,400</td></tr>
 <tr><td>26 Oct 2026</td><td>Customer pays by bank transfer</td><td>Bank $2,400</td><td>Accounts receivable $2,400</td></tr>
 </tbody></table>
-<p>After the payment, the receivable for that invoice is back to zero. If you later reduce an invoice because of a pricing error or returned goods, you issue a <a href="/blog/credit-note-guide">credit note</a>, which reduces both revenue and AR. If you use the cash method instead, revenue is recorded only on 26 October — our comparison of cash vs accrual accounting shows the difference with a worked example.</p>
+<p>After the payment, the receivable for that invoice is back to zero. If you later reduce an invoice because of a pricing error or returned goods, you issue a <a href="/blog/credit-note-guide">credit note</a>, which reduces both revenue and AR. If you use the cash method instead, revenue is recorded only on 26 October. Our comparison of cash vs accrual accounting shows the difference with a worked example.</p>
 
 <h2>The accounts receivable process, step by step</h2>
 <ol>
@@ -632,7 +632,7 @@ export const COMPARISON_FINANCE_POSTS: PostDraft[] = [
 <p>Strong AR habits are the backbone of <a href="/blog/cash-flow-management">cash flow management</a>, because collections are usually a small business's largest source of incoming cash.</p>
 
 <h2>Bad debts and write-offs</h2>
-<p>Sometimes an invoice is never paid. After reasonable efforts — reminders, calls, a final notice and perhaps a collections agency — you may decide the amount is uncollectible and write it off as a bad debt. Accrual-basis businesses often keep an allowance for doubtful accounts, estimated from the aging report, so expected losses show up before they happen. Tax treatment of bad debts depends on your accounting method and jurisdiction, so check with an accountant before claiming a deduction.</p>
+<p>Sometimes an invoice is never paid. After reasonable efforts (reminders, calls, a final notice and perhaps a collections agency), you may decide the amount is uncollectible and write it off as a bad debt. Accrual-basis businesses often keep an allowance for doubtful accounts, estimated from the aging report, so expected losses show up before they happen. Tax treatment of bad debts depends on your accounting method and jurisdiction, so check with an accountant before claiming a deduction.</p>
 
 <h2>Accounts receivable mistakes to avoid</h2>
 <ul>
@@ -642,7 +642,7 @@ export const COMPARISON_FINANCE_POSTS: PostDraft[] = [
 <li><strong>Letting one customer dominate.</strong> If a single client accounts for a large share of your AR, a late payment from them can create a cash crisis. Consider deposits or shorter terms for big accounts.</li>
 <li><strong>Unapplied payments and credits.</strong> Payments that aren't matched to invoices make customers look overdue when they aren't, which leads to awkward reminders.</li>
 <li><strong>Extending more credit to slow payers.</strong> Before starting new work for a client with overdue invoices, agree how the old balance will be cleared.</li>
-<li><strong>Waiting too long to escalate.</strong> The older an invoice gets, the harder it usually is to collect. A clear timeline — reminder, call, final notice — keeps you consistent and fair.</li>
+<li><strong>Waiting too long to escalate.</strong> The older an invoice gets, the harder it usually is to collect. A clear timeline (reminder, call, final notice) keeps you consistent and fair.</li>
 </ul>
 <p>Most of these problems are prevented by a disciplined routine: invoice immediately, record everything, review weekly and follow up on schedule. None of it requires expensive tools, just consistency.</p>
 
@@ -684,7 +684,7 @@ export const COMPARISON_FINANCE_POSTS: PostDraft[] = [
       },
     ],
     content: `
-<p><strong>Quick answer:</strong> An accounts receivable aging report is a table of every unpaid customer invoice, grouped by how long each one has been outstanding — usually current, 1–30, 31–60, 61–90 and over 90 days past due. It shows at a glance who owes you money, how much, and which balances are at risk, so you can prioritize collections.</p>
+<p><strong>Quick answer:</strong> An accounts receivable aging report is a table of every unpaid customer invoice, grouped by how long each one has been outstanding: usually current, 1–30, 31–60, 61–90 and over 90 days past due. It shows at a glance who owes you money, how much, and which balances are at risk, so you can prioritize collections.</p>
 
 <p>This guide shows how to build an aging report step by step, works through a full five-customer example with correct totals, explains how to estimate bad debts from it and lists what to do with each bucket. Clean aging starts with clean invoices, so make sure every invoice from our <a href="/invoice-generator">invoice generator</a> has a unique number and a real calendar due date.</p>
 
@@ -736,7 +736,7 @@ export const COMPARISON_FINANCE_POSTS: PostDraft[] = [
 <ul>
 <li>Half of receivables ($10,000) aren't due yet, which is healthy.</li>
 <li>Half are overdue ($10,000), and $3,200 (16%) is more than 60 days late.</li>
-<li>Customer C pays some invoices on time but has a $2,000 invoice over 60 days late — possibly a dispute worth investigating.</li>
+<li>Customer C pays some invoices on time but has a $2,000 invoice over 60 days late, possibly a dispute worth investigating.</li>
 <li>Customer D's $1,200 is over 90 days late and should be escalated now.</li>
 <li>Customer B has slipped into the 31–60 bucket and needs a call, not just another email.</li>
 </ul>
@@ -764,7 +764,7 @@ export const COMPARISON_FINANCE_POSTS: PostDraft[] = [
 
 <h2>Tips for a more useful aging report</h2>
 <ul>
-<li><strong>Use consistent invoice numbers</strong> so every line traces back to a document — see our <a href="/blog/invoice-numbering-system">invoice numbering system</a> guide.</li>
+<li><strong>Use consistent invoice numbers</strong> so every line traces back to a document. See our <a href="/blog/invoice-numbering-system">invoice numbering system</a> guide.</li>
 <li><strong>Apply payments the day they arrive</strong>, or the report will overstate what is overdue.</li>
 <li><strong>Add a notes column</strong> for promised payment dates and disputes.</li>
 <li><strong>Compare month to month.</strong> A growing 31–60 bucket is an early warning even if the total looks stable.</li>
@@ -792,7 +792,7 @@ export const COMPARISON_FINANCE_POSTS: PostDraft[] = [
 <p>If you are not using accounting software, an <a href="/blog/invoice-tracker-spreadsheet">invoice tracker spreadsheet</a> can produce the same aging buckets with a few formulas.</p>
 
 <h2>Keep your receivables current</h2>
-<p>The easiest aging report to manage is one where most balances sit in "current". Send clear, prompt invoices from the <a href="/invoice-generator">invoice generator</a> — the <a href="/invoice-templates/mono">Mono invoice template</a> keeps the due date and amount front and center — and review your aging report every week.</p>
+<p>The easiest aging report to manage is one where most balances sit in "current". Send clear, prompt invoices from the <a href="/invoice-generator">invoice generator</a> (the <a href="/invoice-templates/mono">Mono invoice template</a> keeps the due date and amount front and center) and review your aging report every week.</p>
 `,
   },
   {
@@ -869,10 +869,10 @@ export const COMPARISON_FINANCE_POSTS: PostDraft[] = [
 <tr><td><strong>Closing balance</strong></td><td><strong>$5,500</strong></td><td><strong>$2,500</strong></td><td><strong>$5,500</strong></td></tr>
 </tbody></table>
 <p>Check the maths: in Month 1, outflows are $10,000 + $2,500 + $1,000 + $3,000 = $16,500, so net cash flow is $14,000 − $16,500 = −$2,500 and the closing balance is $8,000 − $2,500 = $5,500. In Month 2, outflows are $15,000, so net is −$3,000 and closing is $2,500. In Month 3, outflows are $15,500, so net is +$3,000 and closing is $5,500.</p>
-<p>The forecast reveals a problem two months ahead: the balance falls to $2,500 in Month 2 — less than one month's rent and overheads combined with any surprise. With that warning, the owner can delay the laptop, chase a slow client, ask for a deposit on a new project or arrange a small credit line <em>before</em> it becomes urgent.</p>
+<p>The forecast reveals a problem two months ahead: the balance falls to $2,500 in Month 2, less than one month's rent and overheads combined with any surprise. With that warning, the owner can delay the laptop, chase a slow client, ask for a deposit on a new project or arrange a small credit line <em>before</em> it becomes urgent.</p>
 
 <h2>How slow collections tie up cash</h2>
-<p>Days sales outstanding (DSO) — the average time customers take to pay — directly controls how much of your money sits in other people's bank accounts. A simple approximation:</p>
+<p>Days sales outstanding (DSO), the average time customers take to pay, directly controls how much of your money sits in other people's bank accounts. A simple approximation:</p>
 <p><code>Cash tied up in receivables ≈ average daily credit sales × DSO</code></p>
 <p><strong>Worked example:</strong> A business invoices $30,000 a month, about $1,000 per day in a 30-day month.</p>
 <ul>
@@ -888,7 +888,7 @@ export const COMPARISON_FINANCE_POSTS: PostDraft[] = [
 <li><strong>Invoice the day work is done.</strong> Don't batch invoices to month end. More ideas in <a href="/blog/how-to-get-paid-faster">how to get paid faster</a>.</li>
 <li><strong>Use shorter, explicit terms.</strong> Show a real due date, and choose terms deliberately with our <a href="/blog/invoice-payment-terms">invoice payment terms</a> guide.</li>
 <li><strong>Take deposits</strong> on larger projects using a deposit invoice.</li>
-<li><strong>Offer an early payment discount</strong> selectively — see the <a href="/blog/early-payment-discount">early payment discount</a> guide to understand the true cost.</li>
+<li><strong>Offer an early payment discount</strong> selectively. See the <a href="/blog/early-payment-discount">early payment discount</a> guide to understand the true cost.</li>
 <li><strong>Bill retainers in advance</strong> and keep a steady schedule with <a href="/blog/recurring-invoices-guide">recurring invoices</a>.</li>
 <li><strong>Follow up consistently</strong> and apply agreed <a href="/blog/late-payment-fees">late payment fees</a> where your contract and local law allow.</li>
 </ul>
@@ -965,7 +965,7 @@ export const COMPARISON_FINANCE_POSTS: PostDraft[] = [
     content: `
 <p><strong>Quick answer:</strong> Bookkeeping for small business is the routine of recording every sale, expense and payment, organizing the supporting documents, and reconciling your records with your bank statements. Done weekly, it tells you what you earn, what you owe and what you are owed, and it makes tax time straightforward.</p>
 
-<p>This guide covers the core concepts, a starter chart of accounts, worked double-entry examples, bank reconciliation and a simple monthly routine. Bookkeeping starts with source documents, and your <a href="/blog/what-is-a-sales-invoice">sales invoices</a> are the most important ones — create consistent, numbered invoices with our <a href="/invoice-generator">free invoice generator</a> so every sale is easy to record.</p>
+<p>This guide covers the core concepts, a starter chart of accounts, worked double-entry examples, bank reconciliation and a simple monthly routine. Bookkeeping starts with source documents, and your <a href="/blog/what-is-a-sales-invoice">sales invoices</a> are the most important ones: create consistent, numbered invoices with our <a href="/invoice-generator">free invoice generator</a> so every sale is easy to record.</p>
 
 <p><em>This is general information, not accounting or tax advice. Requirements vary by country and business type; check with an accountant or your tax authority.</em></p>
 
@@ -1034,12 +1034,12 @@ export const COMPARISON_FINANCE_POSTS: PostDraft[] = [
 
 <h2>Bookkeeping best practices for invoices</h2>
 <ul>
-<li><strong>Number invoices sequentially</strong> with no gaps or duplicates — our <a href="/tools/invoice-number-generator">invoice number generator</a> and <a href="/blog/invoice-numbering-system">invoice numbering system</a> guide make this easy.</li>
+<li><strong>Number invoices sequentially</strong> with no gaps or duplicates. Our <a href="/tools/invoice-number-generator">invoice number generator</a> and <a href="/blog/invoice-numbering-system">invoice numbering system</a> guide make this easy.</li>
 <li><strong>Never edit a sent invoice.</strong> Correct it with a <a href="/blog/credit-note-guide">credit note</a> so the audit trail stays intact.</li>
-<li><strong>Know which document is which.</strong> An invoice records a sale; a receipt confirms payment — see <a href="/blog/invoice-vs-receipt">invoice vs receipt</a>.</li>
+<li><strong>Know which document is which.</strong> An invoice records a sale; a receipt confirms payment. See <a href="/blog/invoice-vs-receipt">invoice vs receipt</a>.</li>
 <li><strong>Show tax separately</strong> on each invoice so tax payable is easy to total.</li>
 <li><strong>Track unpaid invoices</strong> in your accounts receivable records, even on the cash basis.</li>
-<li><strong>Store PDFs in one folder</strong>, named by invoice number, and keep them for as long as required — see <a href="/blog/how-long-to-keep-invoices">how long to keep invoices</a>.</li>
+<li><strong>Store PDFs in one folder</strong>, named by invoice number, and keep them for as long as required. See <a href="/blog/how-long-to-keep-invoices">how long to keep invoices</a>.</li>
 </ul>
 
 <h2>A simple bookkeeping routine</h2>

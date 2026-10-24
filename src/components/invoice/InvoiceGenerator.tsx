@@ -78,7 +78,7 @@ function FieldError({ message }: { message?: string | undefined }) {
 export function InvoiceGenerator({
   localeSlug = null,
   heading = "Invoice generator",
-  lead = "Everything calculates live and autosaves to this browser. When it looks right, download the PDF — the export always matches the template shown in the preview.",
+  lead = "Everything calculates live and autosaves to this browser. When it looks right, download the PDF. The export always matches the template shown in the preview.",
   titleAs = "h1",
   crumbs = [
     { label: "Home", href: "/" },
@@ -466,11 +466,12 @@ export function InvoiceGenerator({
         </div>
       )}
 
-      <div className="mt-6 grid gap-8 lg:mt-8 xl:grid-cols-[minmax(0,0.9fr)_minmax(0,1.2fr)] lg:grid-cols-[minmax(0,1fr)_minmax(0,1.15fr)]">
+      {/* On desktop each column is its own scroll area so the form and preview scroll independently. */}
+      <div className="mt-6 grid gap-8 lg:mt-8 lg:items-start xl:grid-cols-[minmax(0,0.9fr)_minmax(0,1.2fr)] lg:grid-cols-[minmax(0,1fr)_minmax(0,1.15fr)]">
         {/* ------------------------------- Editor ------------------------------- */}
         <div
           className={cn(
-            "grid min-w-0 gap-5 sm:gap-6",
+            "grid min-w-0 gap-5 sm:gap-6 lg:sticky lg:top-28 lg:max-h-[calc(100dvh-8rem)] lg:content-start lg:overflow-y-auto lg:pr-3 lg:pb-4 lg:[scrollbar-gutter:stable] lg:[scrollbar-width:thin]",
             mobileTab !== "edit" && "hidden lg:grid",
           )}
         >
@@ -575,7 +576,7 @@ export function InvoiceGenerator({
                   Typography
                 </h2>
                 <p className="mt-1 text-xs text-muted-foreground">
-                  Optional — change font, size, bold, italic and title level (H1 / H2 / H3).
+                  Optional: change font, size, bold, italic and title level (H1 / H2 / H3).
                 </p>
               </div>
               <div className="flex items-center gap-3">
@@ -673,7 +674,7 @@ export function InvoiceGenerator({
                             {level.id.toUpperCase()}
                           </span>
                           <span className="mt-1 block text-[10px] text-muted-foreground">
-                            {level.label.replace(/^H\d — /, "")}
+                            {level.label.replace(/^H\d: /, "")}
                           </span>
                         </button>
                       );
@@ -747,7 +748,7 @@ export function InvoiceGenerator({
                   >
                     Invoice
                   </span>
-                  Preview sample — your PDF will use these settings.
+                  Preview sample: your PDF will use these settings.
                 </p>
               </div>
             )}
@@ -859,7 +860,7 @@ export function InvoiceGenerator({
                 >
                   {CURRENCIES.map((c) => (
                     <option key={c.code} value={c.code}>
-                      {c.code} — {c.label}
+                      {c.code}: {c.label}
                     </option>
                   ))}
                 </select>
@@ -877,11 +878,22 @@ export function InvoiceGenerator({
             <h2 className="text-sm font-bold uppercase tracking-[0.14em] text-muted-foreground">
               Line items
             </h2>
-            <div className="mt-4 grid gap-3">
+            {/* Column headings on wider screens; phones show a label above each field instead. */}
+            <div
+              aria-hidden="true"
+              className="mt-4 hidden gap-2 text-xs font-medium text-muted-foreground sm:grid sm:grid-cols-[1fr_80px_110px_96px_40px]"
+            >
+              <span>Description</span>
+              <span>Qty</span>
+              <span>Rate</span>
+              <span className="text-right">Amount</span>
+              <span />
+            </div>
+            <div className="mt-4 grid gap-3 sm:mt-2">
               {data.items.map((item, index) => (
                 <div
                   key={item.id}
-                  className="grid gap-2 rounded-lg border border-border/70 bg-muted/20 p-3 sm:grid-cols-[1fr_80px_110px_auto] sm:border-0 sm:bg-transparent sm:p-0"
+                  className="grid gap-2 rounded-lg border border-border/70 bg-muted/20 p-3 sm:grid-cols-[1fr_80px_110px_96px_40px] sm:items-center sm:border-0 sm:bg-transparent sm:p-0"
                 >
                   <div className="min-w-0">
                     <Label className="mb-1 text-xs text-muted-foreground sm:sr-only">
@@ -921,8 +933,8 @@ export function InvoiceGenerator({
                       />
                     </div>
                   </div>
-                  <div className="flex items-center justify-between gap-2 sm:justify-end">
-                    <p className="text-sm font-medium sm:hidden">
+                  <div className="flex items-center justify-between gap-2 sm:contents">
+                    <p className="text-sm font-medium tabular-nums sm:truncate sm:text-right">
                       {money((Number(item.quantity) || 0) * (Number(item.rate) || 0))}
                     </p>
                     <Button
@@ -1181,7 +1193,7 @@ export function InvoiceGenerator({
         {/* ------------------------------- Preview ------------------------------ */}
         <div
           className={cn(
-            "min-w-0 lg:sticky lg:top-24 lg:h-fit",
+            "min-w-0 lg:sticky lg:top-28 lg:max-h-[calc(100dvh-8rem)] lg:overflow-y-auto lg:pr-3 lg:pb-4 lg:[scrollbar-gutter:stable] lg:[scrollbar-width:thin]",
             mobileTab !== "preview" && "hidden lg:block",
           )}
         >

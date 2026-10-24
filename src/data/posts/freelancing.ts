@@ -109,7 +109,7 @@ export const FREELANCING_POSTS: PostDraft[] = [
 </ul>
 <p>A sample line set for the example above might look like this:</p>
 <table><thead><tr><th>Description</th><th>Qty</th><th>Rate</th><th>Amount</th></tr></thead><tbody>
-<tr><td>Website copywriting — 5 pages, 2 revision rounds</td><td>1</td><td>$2,050.00</td><td>$2,050.00</td></tr>
+<tr><td>Website copywriting: 5 pages, 2 revision rounds</td><td>1</td><td>$2,050.00</td><td>$2,050.00</td></tr>
 <tr><td>Additional revision round (requested 14 Oct)</td><td>3 hrs</td><td>$75.00</td><td>$225.00</td></tr>
 <tr><td><strong>Total due</strong></td><td></td><td></td><td><strong>$2,275.00</strong></td></tr>
 </tbody></table>
@@ -123,7 +123,7 @@ export const FREELANCING_POSTS: PostDraft[] = [
 <li>Explain briefly what has changed (more experience, broader services, rising costs) without over-apologising.</li>
 <li>Honour any fixed quotes or contracts already signed at the old rate.</li>
 </ol>
-<p>Rate increases of 5% to 15% a year are easy for most clients to absorb. Bigger jumps are usually better handled by repositioning your services or moving to project or value-based pricing. For the wider invoicing habits that protect your income — deposits, terms and follow-ups — read <a href="/blog/freelancer-invoice-guide">the freelancer's invoice guide</a>.</p>
+<p>Rate increases of 5% to 15% a year are easy for most clients to absorb. Bigger jumps are usually better handled by repositioning your services or moving to project or value-based pricing. For the wider invoicing habits that protect your income (deposits, terms and follow-ups), read <a href="/blog/freelancer-invoice-guide">the freelancer's invoice guide</a>.</p>
 
 <p>If you resell materials or subcontract work, learn the difference between <a href="/blog/markup-vs-margin">markup vs margin</a> so your percentages mean what you think they mean.</p>
 
@@ -195,7 +195,7 @@ export const FREELANCING_POSTS: PostDraft[] = [
 <p>Scope is the clause that does the most work. Vague scope ("website design") invites endless additions. Specific scope ("design of a five-page marketing website: home, about, services, pricing and contact; desktop and mobile layouts; two rounds of revisions per page") lets you say yes to extra requests while charging for them.</p>
 <p>Sample wording you can adapt:</p>
 <blockquote>Any work outside the scope described in Schedule A will be quoted separately in writing. Additional work starts only after the client approves the quote by email.</blockquote>
-<p>When a change request is approved, add it to the next invoice as its own line, for example "Change request CR-03: additional landing page — approved 12 October 2026". The reference makes the line easy for the client to check.</p>
+<p>When a change request is approved, add it to the next invoice as its own line, for example "Change request CR-03: additional landing page, approved 12 October 2026". The reference makes the line easy for the client to check.</p>
 
 <h2>Payment terms clauses that get you paid</h2>
 <p>Your payment clauses should match what appears on your invoices word for word. Ambiguity here is expensive. Common choices are summarised below.</p>
@@ -234,7 +234,7 @@ export const FREELANCING_POSTS: PostDraft[] = [
 <p>On every invoice, include the contract or project reference in the notes, for example "Per agreement FA-2026-014 dated 3 September 2026". That single line makes approval faster and gives you a clear paper trail. If you are an independent contractor billing US clients, our <a href="/blog/independent-contractor-invoice">independent contractor invoice</a> guide covers the extra details clients expect.</p>
 
 <h2>What to do if the client breaks the contract</h2>
-<p>If a client misses a payment, start politely: send a reminder that quotes the payment clause and the invoice number. If that fails, escalate in steps — a firm reminder, a pause on further work if your contract allows it, a final notice and then a formal demand. Our step-by-step guide for when a <a href="/blog/client-not-paying-invoice">client is not paying an invoice</a> walks through each stage. Again, this is general information: if a substantial amount is at stake, take advice from a lawyer in your jurisdiction before taking formal action.</p>
+<p>If a client misses a payment, start politely: send a reminder that quotes the payment clause and the invoice number. If that fails, escalate in steps: a firm reminder, a pause on further work if your contract allows it, a final notice and then a formal demand. Our step-by-step guide for when a <a href="/blog/client-not-paying-invoice">client is not paying an invoice</a> walks through each stage. Again, this is general information: if a substantial amount is at stake, take advice from a lawyer in your jurisdiction before taking formal action.</p>
 <p>For the broader invoicing habits that sit alongside a good contract, read <a href="/blog/freelancer-invoice-guide">the freelancer's invoice guide</a>, and if you have not yet worked out what to charge, start with <a href="/blog/how-to-set-freelance-rates">how to set freelance rates</a>.</p>
 
 <h2>Create invoices that match your contract</h2>
@@ -308,8 +308,8 @@ export const FREELANCING_POSTS: PostDraft[] = [
 <h2>Retainer invoice example: prepaid monthly hours</h2>
 <p>A freelance developer has a retainer of 20 hours a month at $90 an hour, billed in advance. In October the client used 23 hours, so 3 hours of overage are billed on the November invoice at the agreed overage rate of $100 an hour.</p>
 <table><thead><tr><th>Description</th><th>Qty</th><th>Rate</th><th>Amount</th></tr></thead><tbody>
-<tr><td>Monthly development retainer — 20 hours, 1–30 November 2026</td><td>20</td><td>$90.00</td><td>$1,800.00</td></tr>
-<tr><td>Overage — October 2026 (23 hours used, 20 included)</td><td>3</td><td>$100.00</td><td>$300.00</td></tr>
+<tr><td>Monthly development retainer: 20 hours, 1–30 November 2026</td><td>20</td><td>$90.00</td><td>$1,800.00</td></tr>
+<tr><td>Overage: October 2026 (23 hours used, 20 included)</td><td>3</td><td>$100.00</td><td>$300.00</td></tr>
 <tr><td><strong>Total due by 1 November 2026</strong></td><td></td><td></td><td><strong>$2,100.00</strong></td></tr>
 </tbody></table>
 <p>Attach or link a short timesheet showing the October hours so the overage line is easy to approve. If you need help presenting time, see <a href="/blog/how-to-invoice-for-hourly-work">how to invoice for hourly work</a>.</p>
@@ -317,7 +317,7 @@ export const FREELANCING_POSTS: PostDraft[] = [
 <h2>Retainer invoice example: drawdown balance</h2>
 <p>A marketing consultant agrees a $5,000 prepaid balance. The first invoice simply bills the balance:</p>
 <table><thead><tr><th>Description</th><th>Qty</th><th>Rate</th><th>Amount</th></tr></thead><tbody>
-<tr><td>Prepaid consulting retainer — drawdown balance per agreement RA-2026-07</td><td>1</td><td>$5,000.00</td><td>$5,000.00</td></tr>
+<tr><td>Prepaid consulting retainer: drawdown balance per agreement RA-2026-07</td><td>1</td><td>$5,000.00</td><td>$5,000.00</td></tr>
 <tr><td><strong>Total due</strong></td><td></td><td></td><td><strong>$5,000.00</strong></td></tr>
 </tbody></table>
 <p>Each month, the consultant sends a usage statement: 14 hours at $120 ($1,680) in month one leaves $3,320; 11 hours ($1,320) in month two leaves $2,000. When the balance falls below an agreed threshold, say $1,000, a top-up retainer invoice is issued. If the client ends the arrangement, any unused prepaid balance is usually refunded or credited according to the agreement, and a <a href="/blog/credit-note-guide">credit note</a> is the clean way to document that adjustment.</p>
@@ -424,7 +424,7 @@ export const FREELANCING_POSTS: PostDraft[] = [
 <p>If your contract allows it, tell the client that work on new tasks is paused until the overdue balance is settled. Continuing to deliver while unpaid increases what is at risk. A clear <a href="/blog/freelance-contract-template">freelance contract</a> makes this step much easier to justify.</p>
 
 <h3>Step 6: Offer a payment plan</h3>
-<p>If the client is struggling financially, a written plan — for example three monthly payments — may recover more than a confrontation. Confirm the instalment amounts and dates in writing and invoice or acknowledge each payment.</p>
+<p>If the client is struggling financially, a written plan (for example three monthly payments) may recover more than a confrontation. Confirm the instalment amounts and dates in writing and invoice or acknowledge each payment.</p>
 
 <h3>Step 7: Send a statement and a final notice (day 30)</h3>
 <p>Send a <a href="/blog/statement-of-account">statement of account</a> listing every open invoice and the total balance, along with a final notice stating that you will take further action if payment is not received by a specific date, often 7 days later.</p>
@@ -526,8 +526,8 @@ export const FREELANCING_POSTS: PostDraft[] = [
 <li><strong>No withholding.</strong> Clients generally pay the gross amount. You pay income tax and self-employment tax yourself, usually through quarterly estimated payments.</li>
 <li><strong>Your client reports what they paid you.</strong> Businesses that pay contractors above the federal reporting threshold in a year typically file Form 1099-NEC. That threshold was $600 for many years and was raised to $2,000 for payments made from 2026 onward; check the IRS website for the current figure.</li>
 </ul>
-<p>For general freelance invoicing habits — deposits, terms and follow-ups — see <a href="/blog/freelancer-invoice-guide">the freelancer's invoice guide</a>. This article focuses on what is specific to US contractor billing.</p>
-<p>One more point: whether you are legally an independent contractor depends on the working relationship, not on what the paperwork calls you. The IRS looks at factors such as who controls how and when the work is done, who provides the tools, and whether you can work for other clients. Sending invoices does not by itself make you a contractor, and some states apply stricter tests. If a client treats you like an employee — fixed hours, close supervision, their equipment — it is worth getting professional advice on your status.</p>
+<p>For general freelance invoicing habits (deposits, terms and follow-ups), see <a href="/blog/freelancer-invoice-guide">the freelancer's invoice guide</a>. This article focuses on what is specific to US contractor billing.</p>
+<p>One more point: whether you are legally an independent contractor depends on the working relationship, not on what the paperwork calls you. The IRS looks at factors such as who controls how and when the work is done, who provides the tools, and whether you can work for other clients. Sending invoices does not by itself make you a contractor, and some states apply stricter tests. If a client treats you like an employee (fixed hours, close supervision, their equipment), it is worth getting professional advice on your status.</p>
 
 <h2>Required fields on a 1099 contractor invoice</h2>
 <table><thead><tr><th>Field</th><th>What to enter</th><th>Why the client needs it</th></tr></thead><tbody>
@@ -551,7 +551,7 @@ export const FREELANCING_POSTS: PostDraft[] = [
 <h2>Independent contractor invoice example</h2>
 <p>A freelance UX researcher bills a software company for October work under a PO, with one approved expense.</p>
 <table><thead><tr><th>Description</th><th>Qty</th><th>Rate</th><th>Amount</th></tr></thead><tbody>
-<tr><td>User interviews — recruit, run and summarize (PO 45821)</td><td>8</td><td>$175.00</td><td>$1,400.00</td></tr>
+<tr><td>User interviews: recruit, run and summarize (PO 45821)</td><td>8</td><td>$175.00</td><td>$1,400.00</td></tr>
 <tr><td>Usability testing report and presentation</td><td>12 hrs</td><td>$110.00</td><td>$1,320.00</td></tr>
 <tr><td>Participant incentives (reimbursable, receipts attached)</td><td>8</td><td>$50.00</td><td>$400.00</td></tr>
 <tr><td>Subtotal</td><td></td><td></td><td>$3,120.00</td></tr>
@@ -561,7 +561,7 @@ export const FREELANCING_POSTS: PostDraft[] = [
 <p>The notes field would add: "Payment by ACH to the account below, or by card via the payment link. Per consulting agreement dated 4 August 2026." If you bill by the hour, our guide on <a href="/blog/how-to-invoice-for-hourly-work">how to invoice for hourly work</a> shows how to attach a timesheet.</p>
 
 <h2>Sales tax and independent contractors</h2>
-<p>Whether you charge sales tax depends on the state and the service. Many professional services — consulting, writing, design — are not taxable in many states, while some states tax a broader range of services and goods such as printed materials or software. If you are required to collect sales tax, you must register with the state first and show the tax as a separate line. Our guide to <a href="/blog/sales-tax-on-invoices-us">sales tax on invoices in the US</a> covers the basics, and you can check the numbers with our <a href="/tools/sales-tax-calculator">sales tax calculator</a>. When in doubt, ask your state's tax agency or an accountant.</p>
+<p>Whether you charge sales tax depends on the state and the service. Many professional services (consulting, writing, design) are not taxable in many states, while some states tax a broader range of services and goods such as printed materials or software. If you are required to collect sales tax, you must register with the state first and show the tax as a separate line. Our guide to <a href="/blog/sales-tax-on-invoices-us">sales tax on invoices in the US</a> covers the basics, and you can check the numbers with our <a href="/tools/sales-tax-calculator">sales tax calculator</a>. When in doubt, ask your state's tax agency or an accountant.</p>
 
 <h2>How to create an independent contractor invoice in 6 steps</h2>
 <ol>
@@ -615,7 +615,7 @@ export const FREELANCING_POSTS: PostDraft[] = [
       },
       {
         q: "What should I write in the description on a freelance invoice?",
-        a: "Describe the deliverable and scope specifically, for example 'Blog articles — 4 x 1,200 words, SEO briefs supplied by client', rather than vague phrases like 'writing services'.",
+        a: "Describe the deliverable and scope specifically, for example 'Blog articles: 4 x 1,200 words, SEO briefs supplied by client', rather than vague phrases like 'writing services'.",
       },
       {
         q: "Do freelancers need a logo on their invoice?",
@@ -666,8 +666,8 @@ export const FREELANCING_POSTS: PostDraft[] = [
 <h2>Freelance invoice example (filled in)</h2>
 <p>A freelance content writer invoices a software company for October work:</p>
 <table><thead><tr><th>Description</th><th>Qty</th><th>Rate</th><th>Amount</th></tr></thead><tbody>
-<tr><td>Blog articles — 4 x 1,200 words, incl. 1 revision round each</td><td>4</td><td>$320.00</td><td>$1,280.00</td></tr>
-<tr><td>Case study interview and write-up — customer: Northfield Ltd</td><td>1</td><td>$650.00</td><td>$650.00</td></tr>
+<tr><td>Blog articles: 4 x 1,200 words, incl. 1 revision round each</td><td>4</td><td>$320.00</td><td>$1,280.00</td></tr>
+<tr><td>Case study interview and write-up, customer: Northfield Ltd</td><td>1</td><td>$650.00</td><td>$650.00</td></tr>
 <tr><td>Extra revision round on case study (requested 18 Oct)</td><td>2 hrs</td><td>$70.00</td><td>$140.00</td></tr>
 <tr><td>Subtotal</td><td></td><td></td><td>$2,070.00</td></tr>
 <tr><td>Loyalty discount (5%)</td><td></td><td></td><td>-$103.50</td></tr>
@@ -678,10 +678,10 @@ export const FREELANCING_POSTS: PostDraft[] = [
 <h2>How to word freelance line items</h2>
 <p>Line items are where most invoice queries start. Compare:</p>
 <table><thead><tr><th>Vague</th><th>Clear</th></tr></thead><tbody>
-<tr><td>Design work</td><td>Logo design — 3 concepts, 2 revision rounds, final files in SVG and PNG</td></tr>
-<tr><td>Development</td><td>Checkout page bug fixes — tickets 214, 219, 222 (6.5 hrs)</td></tr>
-<tr><td>Consulting</td><td>Marketing strategy workshop — 1 day on site, 9 October 2026</td></tr>
-<tr><td>Expenses</td><td>Stock photo licences — 3 images, receipts attached</td></tr>
+<tr><td>Design work</td><td>Logo design: 3 concepts, 2 revision rounds, final files in SVG and PNG</td></tr>
+<tr><td>Development</td><td>Checkout page bug fixes: tickets 214, 219, 222 (6.5 hrs)</td></tr>
+<tr><td>Consulting</td><td>Marketing strategy workshop: 1 day on site, 9 October 2026</td></tr>
+<tr><td>Expenses</td><td>Stock photo licences: 3 images, receipts attached</td></tr>
 </tbody></table>
 <p>Clear lines answer the questions a finance team would otherwise send back to you. If your rate itself needs work, our guide to <a href="/blog/how-to-set-freelance-rates">how to set freelance rates</a> walks through the numbers.</p>
 
@@ -719,7 +719,7 @@ export const FREELANCING_POSTS: PostDraft[] = [
 <p>For the bigger picture on terms, deposits and chasing, read <a href="/blog/freelancer-invoice-guide">the freelancer's invoice guide</a>.</p>
 
 <h2>Use your free freelance invoice template now</h2>
-<p>Open the <a href="/invoice-generator">invoice generator</a>, pick the Minimal, Modern or Creative layout, fill in your details and line items, and download your freelance invoice template as a polished PDF in a few minutes — free, with no sign-up.</p>
+<p>Open the <a href="/invoice-generator">invoice generator</a>, pick the Minimal, Modern or Creative layout, fill in your details and line items, and download your freelance invoice template as a polished PDF in a few minutes, free, with no sign-up.</p>
 `,
   },
   {
@@ -756,7 +756,7 @@ export const FREELANCING_POSTS: PostDraft[] = [
     content: `
 <p><strong>Quick answer:</strong> You can invoice without a business by issuing the invoice in your own legal name. Include your name and contact details, the client's details, a unique invoice number, the date, a description of the work, the amount due, a due date and how to pay. In most countries an individual working for themselves is treated as a sole proprietor or sole trader automatically, but you may still need to register for tax and report the income.</p>
 
-<p>This guide explains how to invoice as an individual, what changes when you have no company or trading name, the tax and registration basics in the US and UK, and a worked example. You can create the invoice itself in minutes with our <a href="/invoice-generator">free invoice generator</a> — no business account or sign-up required. This is general information, not tax or legal advice.</p>
+<p>This guide explains how to invoice as an individual, what changes when you have no company or trading name, the tax and registration basics in the US and UK, and a worked example. You can create the invoice itself in minutes with our <a href="/invoice-generator">free invoice generator</a>, no business account or sign-up required. This is general information, not tax or legal advice.</p>
 
 <h2>Can you invoice as an individual?</h2>
 <p>Yes. An invoice is simply a request for payment that records what was supplied, by whom, to whom and for how much. Nothing about it requires a registered company. Freelancers, side-hustlers, tutors, babysitters, musicians, translators and people doing one-off consulting jobs send invoices in their own names every day. If you are new to the document itself, start with <a href="/blog/what-is-an-invoice">what an invoice is</a>.</p>
@@ -771,7 +771,7 @@ export const FREELANCING_POSTS: PostDraft[] = [
 <tr><td>Sales tax / VAT</td><td>Only if you are registered to charge it</td><td>Charged where registered and applicable</td></tr>
 <tr><td>Bank account</td><td>Personal account is often fine; a separate one is better</td><td>Business account</td></tr>
 </tbody></table>
-<p>The rest — invoice number, dates, line items, totals and payment terms — is the same for everyone.</p>
+<p>The rest (invoice number, dates, line items, totals and payment terms) is the same for everyone.</p>
 
 <h2>How to invoice without a business in 7 steps</h2>
 <h3>Step 1: Agree the price and terms first</h3>
@@ -792,8 +792,8 @@ export const FREELANCING_POSTS: PostDraft[] = [
 <h2>Example: invoice from an individual</h2>
 <p>Maria Lopez, a part-time photographer with no business entity, invoices a local café for a menu photo shoot.</p>
 <table><thead><tr><th>Description</th><th>Qty</th><th>Rate</th><th>Amount</th></tr></thead><tbody>
-<tr><td>Menu photography — on-site shoot, 14 October 2026</td><td>3 hrs</td><td>$85.00</td><td>$255.00</td></tr>
-<tr><td>Editing and retouching — 20 final images</td><td>20</td><td>$9.00</td><td>$180.00</td></tr>
+<tr><td>Menu photography: on-site shoot, 14 October 2026</td><td>3 hrs</td><td>$85.00</td><td>$255.00</td></tr>
+<tr><td>Editing and retouching: 20 final images</td><td>20</td><td>$9.00</td><td>$180.00</td></tr>
 <tr><td><strong>Total due by 5 November 2026</strong></td><td></td><td></td><td><strong>$435.00</strong></td></tr>
 </tbody></table>
 <p>The header reads "Maria Lopez" with her email and phone, the invoice number is <code>2026-004</code>, and the note says "Payment by bank transfer to the account below. Thank you!" There is no tax line because she is not registered to collect sales tax and the service is not taxable where she lives. That is all a professional invoice from an individual needs.</p>
@@ -809,7 +809,7 @@ export const FREELANCING_POSTS: PostDraft[] = [
 <p>If you do regular work for US companies, our <a href="/blog/independent-contractor-invoice">independent contractor invoice</a> guide covers what their finance teams expect. The <a href="/invoice-generator/usa">USA invoice generator</a> is preset for US dollars and US tax fields.</p>
 
 <h2>Tax and registration in the UK</h2>
-<p>In the UK, individuals who earn more than £1,000 in a tax year from self-employment (the trading allowance) generally need to register as self-employed with HMRC and file a Self Assessment tax return. You only need to register for VAT if your taxable turnover goes above the VAT threshold, which is £90,000 as of 2026 — check HMRC for the current figure. If you are not VAT registered, do not show VAT or a VAT number on your invoices.</p>
+<p>In the UK, individuals who earn more than £1,000 in a tax year from self-employment (the trading allowance) generally need to register as self-employed with HMRC and file a Self Assessment tax return. You only need to register for VAT if your taxable turnover goes above the VAT threshold, which is £90,000 as of 2026. Check HMRC for the current figure. If you are not VAT registered, do not show VAT or a VAT number on your invoices.</p>
 <p>Our full guide to <a href="/blog/sole-trader-invoice-uk">invoicing as a UK sole trader</a> covers the details, and the <a href="/invoice-generator/uk">UK invoice generator</a> sets GBP and UK-style fields for you. Other countries have their own rules on registration and <a href="/blog/tax-id-on-invoice">tax IDs on invoices</a>, so check with your local tax authority.</p>
 
 <h2>Practical tips for invoicing as an individual</h2>
@@ -822,7 +822,7 @@ export const FREELANCING_POSTS: PostDraft[] = [
 </ul>
 
 <h2>When to consider setting up a business</h2>
-<p>Invoicing as an individual is perfectly fine for many people. You might consider forming an entity — such as an LLC in the US or a limited company in the UK — when your income grows, when you want to separate personal liability from business risk, or when clients prefer to contract with a company. These choices have tax and legal consequences, so talk to an accountant before deciding. Whatever you choose, the invoice format barely changes; see our <a href="/blog/freelance-invoice-template">freelance invoice template</a> guide for a layout that works at any stage.</p>
+<p>Invoicing as an individual is perfectly fine for many people. You might consider forming an entity (such as an LLC in the US or a limited company in the UK) when your income grows, when you want to separate personal liability from business risk, or when clients prefer to contract with a company. These choices have tax and legal consequences, so talk to an accountant before deciding. Whatever you choose, the invoice format barely changes; see our <a href="/blog/freelance-invoice-template">freelance invoice template</a> guide for a layout that works at any stage.</p>
 
 <h2>Create your first invoice as an individual</h2>
 <p>You do not need a company to send a professional invoice. Open the <a href="/invoice-generator">invoice generator</a>, enter your own name and the client's details, add your services and payment details, and download a PDF. The understated <a href="/invoice-templates/mono">Mono invoice template</a> looks polished whether or not you have a logo.</p>
@@ -860,7 +860,7 @@ export const FREELANCING_POSTS: PostDraft[] = [
       },
     ],
     content: `
-<p><strong>Quick answer:</strong> Milestone payments divide a project's total fee into several payments, each due when a defined stage of work is completed and approved. Instead of waiting until the end to be paid, you invoice at each milestone — for example 30% upfront, 40% on design approval and 30% on final delivery. Milestone billing protects your cash flow and gives the client clear checkpoints.</p>
+<p><strong>Quick answer:</strong> Milestone payments divide a project's total fee into several payments, each due when a defined stage of work is completed and approved. Instead of waiting until the end to be paid, you invoice at each milestone, for example 30% upfront, 40% on design approval and 30% on final delivery. Milestone billing protects your cash flow and gives the client clear checkpoints.</p>
 
 <p>This guide explains how milestone billing works, how to choose milestones and percentages, what each milestone invoice should show, and two worked examples. You can produce every milestone invoice in our <a href="/invoice-generator">free invoice generator</a> and download each one as a PDF.</p>
 
@@ -907,7 +907,7 @@ export const FREELANCING_POSTS: PostDraft[] = [
 </tbody></table>
 <p>The second invoice might look like this:</p>
 <table><thead><tr><th>Description</th><th>Qty</th><th>Rate</th><th>Amount</th></tr></thead><tbody>
-<tr><td>Milestone 2 of 3: design approval (40% of $8,000 fixed fee) — approved 9 October 2026</td><td>1</td><td>$3,200.00</td><td>$3,200.00</td></tr>
+<tr><td>Milestone 2 of 3: design approval (40% of $8,000 fixed fee), approved 9 October 2026</td><td>1</td><td>$3,200.00</td><td>$3,200.00</td></tr>
 <tr><td><strong>Total due by 23 October 2026</strong></td><td></td><td></td><td><strong>$3,200.00</strong></td></tr>
 </tbody></table>
 <p>A notes line adds: "Project total $8,000.00. Paid to date $2,400.00. This invoice $3,200.00. Remaining after this invoice $2,400.00." That running summary stops anyone wondering how much is left.</p>
@@ -938,7 +938,7 @@ export const FREELANCING_POSTS: PostDraft[] = [
 <li>Agree what happens if the client pauses the project mid-milestone, such as billing the completed share of that stage.</li>
 <li>Keep milestone dates realistic. If a client's feedback is late, say in writing that later milestone dates move by the same amount.</li>
 </ul>
-<p>Watch for the warning signs too. A client who is slow to approve milestone one and slow to pay its invoice is likely to be slow at every stage that follows. Raise it early, politely and in writing, while the amount at risk is still small. If a milestone invoice does go overdue, pausing work on the next stage is usually the most effective — and the fairest — lever you have, provided your agreement allows it.</p>
+<p>Watch for the warning signs too. A client who is slow to approve milestone one and slow to pay its invoice is likely to be slow at every stage that follows. Raise it early, politely and in writing, while the amount at risk is still small. If a milestone invoice does go overdue, pausing work on the next stage is usually the most effective (and the fairest) lever you have, provided your agreement allows it.</p>
 
 <h2>Send your first milestone invoice</h2>
 <p>Set out your milestone schedule, then open the <a href="/invoice-generator">invoice generator</a> to create the invoice for the first stage, with the milestone name, share of the fee and running total in the notes. The <a href="/invoice-templates/startup">Startup invoice template</a> presents milestone payments clearly for tech and product clients.</p>
@@ -1021,7 +1021,7 @@ export const FREELANCING_POSTS: PostDraft[] = [
 
 <h3>One to two weeks overdue: the phone call</h3>
 <p>A short call is often the fastest way forward. A simple script:</p>
-<blockquote>Hi Sam, it is Alex. I am calling about invoice 072 from October. I wanted to check it reached the right person and whether anything is holding it up. ... Great — so I can expect it by next Wednesday? I will send a quick email to confirm.</blockquote>
+<blockquote>Hi Sam, it is Alex. I am calling about invoice 072 from October. I wanted to check it reached the right person and whether anything is holding it up. ... Great, so I can expect it by next Wednesday? I will send a quick email to confirm.</blockquote>
 <p>Always follow a call with an email recording what was agreed.</p>
 
 <h3>30 days or more overdue: a firm, polite request</h3>
@@ -1040,7 +1040,7 @@ export const FREELANCING_POSTS: PostDraft[] = [
 
 <h2>Asking friends, family and small clients for payment</h2>
 <p>Working for people you know makes money conversations harder. The fix is to be more formal, not less: agree the price in writing, send a proper invoice with a due date and follow up in the same way as any client. A short text can work for a small job:</p>
-<blockquote>Hi Jo, just sending over the invoice for the garden design — $350, due by the 30th. Bank details are on it. Thanks so much!</blockquote>
+<blockquote>Hi Jo, just sending over the invoice for the garden design: $350, due by the 30th. Bank details are on it. Thanks so much!</blockquote>
 <p>Clear paperwork prevents the awkward "I thought it was a favour" conversation later.</p>
 
 <h2>Make it easier to get paid in the first place</h2>

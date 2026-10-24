@@ -34,6 +34,17 @@ export type ChangelogEntry = {
 /** Reverse-chronological product / content updates — evidence of ongoing curation. */
 export const CHANGELOG: ChangelogEntry[] = [
   {
+    date: "2026-10-24",
+    title: "50 guides on 2026–2027 rule changes",
+    items: [
+      "US and UK tax: the $2,000 1099-NEC threshold, 1099 forms compared, no tax on tips for the self-employed, and Making Tax Digital for Income Tax",
+      "E-invoicing: Germany 2027, Spain and Verifactu, Croatia, ViDA, the 2027 mandate list, ZATCA Wave 25, GST 2.0 and IMS, Pakistan's Finance Act 2026, e-invoice vs PDF and Peppol vs clearance",
+      "Payments: stablecoins, FedNow vs RTP, the UK late payment bill, statutory interest, card surcharge rules, Raast and late payment statistics",
+      "Freelancing and finance: AI-assisted work, UGC invoices, kill fees, change orders, Net 60/90, cash flow forecasts, bad debt, Payday Super, and Zoho vs Wave and Xero vs QuickBooks",
+      "Guides and templates: ChatGPT invoices, invoice QR codes, sending Peppol invoices, Arabic-English invoices, email subject lines, EN 16931 fields, invoice notes, and personal trainer and videographer invoices",
+    ],
+  },
+  {
     date: "2026-10-23",
     title: "50 new guides",
     items: [

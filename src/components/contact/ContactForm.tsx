@@ -147,7 +147,7 @@ export function ContactForm() {
       </div>
       <p className="text-xs text-muted-foreground">
         “Email” opens your mail app with a draft to {SITE.email}. “Copy message” puts the same
-        content on your clipboard if mailto is blocked — then paste into Gmail, Outlook or any
+        content on your clipboard if mailto is blocked, then paste into Gmail, Outlook or any
         client. We do not operate a server-side inbox form; your message only reaches us when you
         send the email.
       </p>

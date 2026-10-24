@@ -106,7 +106,7 @@ export function SiteFooter() {
               {LOCALES.map((l) => (
                 <li key={l.slug}>
                   <Link href={l.path} className="hover:text-ink-foreground">
-                    Invoice generator — {l.country}
+                    Invoice generator: {l.country}
                   </Link>
                 </li>
               ))}

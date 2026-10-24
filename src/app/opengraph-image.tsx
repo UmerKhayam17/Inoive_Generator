@@ -1,7 +1,7 @@
 import { ImageResponse } from "next/og";
 import { SITE } from "@/data/site";
 
-export const alt = `${SITE.name} — Free Invoice Generator`;
+export const alt = `${SITE.name}: Free Invoice Generator`;
 export const size = { width: 1200, height: 630 };
 export const contentType = "image/png";
 
@@ -68,7 +68,7 @@ export default function Image() {
               maxWidth: 900,
             }}
           >
-            Live preview, tax & discounts, logo support — download a print-ready PDF.
+            Live preview, tax & discounts, logo support. Download a print-ready PDF.
           </div>
         </div>
 

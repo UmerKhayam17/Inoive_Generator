@@ -246,7 +246,7 @@ Goods once sold can be exchanged within 7 days with this bill.
 <h2>Mistakes to avoid on a bill</h2>
 <ul>
 <li><strong>Missing bill numbers or dates.</strong> Without them you cannot match payments or answer a customer query a month later.</li>
-<li><strong>Vague item names.</strong> "Material – Rs 3,000" leads to disputes. List what was sold.</li>
+<li><strong>Vague item names.</strong> "Material: Rs 3,000" leads to disputes. List what was sold.</li>
 <li><strong>Charging tax when you are not registered.</strong> In most countries you may only charge GST, VAT or sales tax if you are registered to collect it.</li>
 <li><strong>Not keeping a copy.</strong> Tax authorities generally expect you to keep sales records for several years. See how long to keep invoices.</li>
 </ul>

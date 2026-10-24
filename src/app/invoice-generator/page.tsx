@@ -15,7 +15,7 @@ import {
   localeLanguageAlternates,
 } from "@/lib/seo";
 
-const TITLE = `Create & Download a PDF Invoice — Live Preview | ${SITE.name}`;
+const TITLE = `Create & Download a PDF Invoice: Live Preview | ${SITE.name}`;
 const DESCRIPTION = `Fill in your details, add line items and download a print-ready PDF invoice. Live calculations, logo and signature upload, ${TEMPLATE_COUNT} templates and automatic local autosave.`;
 
 export const metadata: Metadata = {
@@ -56,7 +56,7 @@ const GENERATOR_FAQS = [
   },
   {
     q: "Where is my invoice data saved?",
-    a: "In your own browser's local storage on this device. Invoice content is not uploaded to our servers. Clearing your browser data, or using a private window, removes it, so keep a copy of every PDF you send. Analytics and ads (if you consent) are separate from invoice data — see the Privacy Policy.",
+    a: "In your own browser's local storage on this device. Invoice content is not uploaded to our servers. Clearing your browser data, or using a private window, removes it, so keep a copy of every PDF you send. Analytics and ads (if you consent) are separate from invoice data (see the Privacy Policy).",
   },
   {
     q: "Can I create an invoice on my phone?",
@@ -116,7 +116,7 @@ export default function InvoiceGeneratorPage() {
             </p>
             <p>
               There is no account, no trial and no watermark. Your invoice is saved in your own
-              browser, so you can close the tab and pick up where you left off — and nothing you
+              browser, so you can close the tab and pick up where you left off, and nothing you
               type is uploaded to our servers.
             </p>
 
@@ -127,8 +127,8 @@ export default function InvoiceGeneratorPage() {
                 email and, if you are registered, your tax number. Upload a logo if you have one.
               </li>
               <li>
-                <strong>Add your client&apos;s details.</strong> Bill the legal entity that pays you
-                — for companies, that is often different from the person who hired you.
+                <strong>Add your client&apos;s details.</strong> Bill the legal entity that pays you.
+                For companies, that is often different from the person who hired you.
               </li>
               <li>
                 <strong>Set the invoice number and dates.</strong> Use a unique, sequential number
@@ -137,7 +137,7 @@ export default function InvoiceGeneratorPage() {
               </li>
               <li>
                 <strong>List what you are charging for.</strong> One line per product, service or
-                period, with quantity and rate. For hourly work, enter the hours as the quantity —
+                period, with quantity and rate. For hourly work, enter the hours as the quantity;
                 decimals such as 7.5 work.
               </li>
               <li>

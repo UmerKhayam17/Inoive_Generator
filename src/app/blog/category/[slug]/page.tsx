@@ -22,7 +22,7 @@ export async function generateMetadata({
   const category = getCategory(slug);
   const name = category?.name ?? "Category";
   const count = POSTS.filter((p) => p.category === slug).length;
-  const title = `${name} — Invoicing Articles (${count}) | ${SITE.name}`;
+  const title = `${name}: Invoicing Articles (${count}) | ${SITE.name}`;
   const description =
     category?.description ??
     `Every ${name.toLowerCase()} article on ${SITE.name}: ${count} practical guides on invoicing for freelancers and small businesses.`;

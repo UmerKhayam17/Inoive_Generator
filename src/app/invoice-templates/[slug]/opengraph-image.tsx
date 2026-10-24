@@ -94,7 +94,7 @@ export default async function Image({
               maxWidth: 900,
             }}
           >
-            Free professional invoice layout — customize and download as PDF.
+            Free professional invoice layout. Customize and download as PDF.
           </div>
         </div>
 

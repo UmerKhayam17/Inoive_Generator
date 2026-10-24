@@ -1,11 +1,11 @@
 import type { Metadata } from "next";
 import { breadcrumbSchema } from "@/components/layout/Breadcrumbs";
 import { BlogIndex } from "@/components/blog/BlogIndex";
-import { POSTS } from "@/data/blog";
+import { blogPagePosts } from "@/data/blog";
 import { SITE } from "@/data/site";
 import { absoluteUrl, canonicalFor, pageSocial } from "@/lib/seo";
 
-const TITLE = `Invoicing Blog — Guides, Templates & Tax Explainers | ${SITE.name}`;
+const TITLE = `Invoicing Blog: Guides, Templates & Tax Explainers | ${SITE.name}`;
 const DESCRIPTION =
   "Practical invoicing guides for freelancers and small businesses: how to create and send invoices, invoice vs receipt, tax and VAT requirements, and template design tips.";
 
@@ -26,7 +26,7 @@ const jsonLd = {
   name: `${SITE.name} blog`,
   description: DESCRIPTION,
   url: absoluteUrl("/blog"),
-  blogPost: POSTS.slice(0, 10).map((p) => ({
+  blogPost: blogPagePosts(1).map((p) => ({
     "@type": "BlogPosting",
     headline: p.title,
     datePublished: p.date,

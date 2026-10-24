@@ -112,9 +112,9 @@ export const HEADING_LEVELS: {
   label: string;
   size: number;
 }[] = [
-  { id: "h1", label: "H1 — Large", size: 36 },
-  { id: "h2", label: "H2 — Medium", size: 28 },
-  { id: "h3", label: "H3 — Compact", size: 22 },
+  { id: "h1", label: "H1: Large", size: 36 },
+  { id: "h2", label: "H2: Medium", size: 28 },
+  { id: "h3", label: "H3: Compact", size: 22 },
 ];
 
 export function createDefaultTypography(): InvoiceTypography {
@@ -252,7 +252,7 @@ export function createDefaultInvoice(localeSlug?: string | null): InvoiceData {
       address: locale?.sampleToAddress ?? "480 Harbour Road\nClient city",
     }),
     items: (locale?.sampleItems ?? [
-      { description: "Website design — discovery & wireframes", quantity: 1, rate: 1200 },
+      { description: "Website design: discovery & wireframes", quantity: 1, rate: 1200 },
       { description: "Frontend development (hours)", quantity: 18, rate: 85 },
     ]).map((item) => ({ id: uid(), ...item })),
     taxRate: locale?.defaultTaxRate ?? 0,
@@ -332,7 +332,7 @@ export const invoiceSchema = z
     invoiceNumber: z
       .string()
       .trim()
-      .min(1, "Add an invoice number — accounts teams reject invoices without one.")
+      .min(1, "Add an invoice number. Accounts teams reject invoices without one.")
       .max(40, "Invoice number must be 40 characters or fewer."),
     issueDate: z.string().min(1, "Choose an issue date."),
     dueDate: z.string().min(1, "Choose a due date."),

@@ -3,7 +3,7 @@ import { LegalPage } from "@/components/layout/LegalPage";
 import { SITE } from "@/data/site";
 import { canonicalFor, pageSocial } from "@/lib/seo";
 
-const TITLE = `Terms & Conditions — ${SITE.name}`;
+const TITLE = `Terms & Conditions | ${SITE.name}`;
 const DESCRIPTION =
   "The terms that govern your use of the Invoice Creator free invoice generator, including acceptable use, intellectual property and liability.";
 
@@ -23,7 +23,7 @@ export default function Page() {
     <LegalPage
       title="Terms & Conditions"
       updated="12 October 2026"
-      lead="By using Invoice Creator you agree to these terms. They are written to be readable — please still read them."
+      lead="By using Invoice Creator you agree to these terms. They are written to be readable. Please still read them."
     >
       <h2>1. Acceptance</h2>
       <p>

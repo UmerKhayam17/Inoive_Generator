@@ -5,7 +5,7 @@ import { CHANGELOG, EDITORIAL } from "@/data/editorial";
 import { SITE } from "@/data/site";
 import { canonicalFor, pageSocial } from "@/lib/seo";
 
-const TITLE = `What’s New — Product & Content Updates | ${SITE.name}`;
+const TITLE = `What’s New: Product & Content Updates | ${SITE.name}`;
 const DESCRIPTION = `Changelog for ${SITE.name}: new tools, template improvements and content updates. Last reviewed ${EDITORIAL.lastReviewed}.`;
 
 export const metadata: Metadata = {
@@ -25,7 +25,7 @@ export default function Page() {
       <PageHeader
         eyebrow="Curation"
         title="What’s new"
-        lead={`We publish material changes here so visitors and reviewers can see ongoing maintenance — not a frozen launch dump. Last site review: ${EDITORIAL.lastReviewed}.`}
+        lead={`We publish material changes here so visitors and reviewers can see ongoing maintenance, not a frozen launch dump. Last site review: ${EDITORIAL.lastReviewed}.`}
         crumbs={[{ label: "Home", href: "/" }, { label: "What’s new" }]}
       />
 

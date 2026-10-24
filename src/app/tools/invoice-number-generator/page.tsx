@@ -43,7 +43,7 @@ export default function Page() {
       <PageHeader
         eyebrow="Free tool"
         title="Invoice number generator"
-        lead="Build a simple, collision-resistant numbering scheme — prefix, year and padded sequence — then copy values into the invoice generator. Nothing is uploaded."
+        lead="Build a simple, collision-resistant numbering scheme (prefix, year and padded sequence), then copy values into the invoice generator. Nothing is uploaded."
         crumbs={[
           { label: "Home", href: "/" },
           { label: "Tools", href: "/tools" },
@@ -67,20 +67,20 @@ export default function Page() {
           <h2 className="text-2xl font-bold text-foreground">A pattern that scales</h2>
           <ul>
             <li>
-              <strong className="text-foreground">Prefix</strong> — your brand or document type
+              <strong className="text-foreground">Prefix</strong>: your brand or document type
               (INV, FEE).
             </li>
             <li>
-              <strong className="text-foreground">Year</strong> — optional, helps archives.
+              <strong className="text-foreground">Year</strong>: optional, helps archives.
             </li>
             <li>
-              <strong className="text-foreground">Sequence</strong> — zero-padded so sorting stays
+              <strong className="text-foreground">Sequence</strong>: zero-padded so sorting stays
               chronological in folders.
             </li>
           </ul>
           <p>
             Example: <code>INV-2026-0042</code>. When you hit the end of a year, start a new
-            sequence or continue globally — pick one rule and stick to it. Read more in our{" "}
+            sequence or continue globally. Pick one rule and stick to it. Read more in our{" "}
             <Link href="/blog/invoice-numbering-system">invoice numbering guide</Link>.
           </p>
           <h2 className="text-2xl font-bold text-foreground">Next step</h2>

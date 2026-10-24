@@ -1,0 +1,8 @@
+User-agent: *
+Allow: /
+Disallow: /search
+
+Host: https://nextfreeinvoicegenerator.com
+
+Sitemap: https://nextfreeinvoicegenerator.com/sitemap-index.xml
+Sitemap: https://nextfreeinvoicegenerator.com/sitemap.xml

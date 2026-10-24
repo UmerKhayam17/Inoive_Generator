@@ -7,8 +7,8 @@ import { CONTACT_FAQS } from "@/data/faqs";
 import { SITE } from "@/data/site";
 import { absoluteUrl, canonicalFor, pageSocial } from "@/lib/seo";
 
-const TITLE = `Contact ${SITE.name} — Support for the Free Invoice Generator`;
-const DESCRIPTION = `Email ${SITE.email} for support, feature requests and bug reports. Invoices stay in your browser — we only see what you send us.`;
+const TITLE = `Contact ${SITE.name}: Support for the Free Invoice Generator`;
+const DESCRIPTION = `Email ${SITE.email} for support, feature requests and bug reports. Invoices stay in your browser. We only see what you send us.`;
 
 export const metadata: Metadata = {
   title: { absolute: TITLE },
@@ -51,7 +51,7 @@ export default function ContactPage() {
       <PageHeader
         eyebrow="Contact"
         title="Contact Invoice Creator"
-        lead={`${SITE.name} (${SITE.host}) is operated by ${SITE.operator}. Email ${SITE.email} for support, feature requests and bug reports — or use the form below to draft a message.`}
+        lead={`${SITE.name} (${SITE.host}) is operated by ${SITE.operator}. Email ${SITE.email} for support, feature requests and bug reports, or use the form below to draft a message.`}
         crumbs={[{ label: "Home", href: "/" }, { label: "Contact" }]}
       />
 
@@ -126,7 +126,7 @@ export default function ContactPage() {
                 </li>
                 <li>For a bug, tell us your browser, device and the steps that caused it.</li>
                 <li>
-                  Never send real bank details or client data — we do not need them to help you.
+                  Never send real bank details or client data. We do not need them to help you.
                 </li>
                 <li>We answer most messages within one business day, Monday to Friday.</li>
               </ul>

@@ -11,7 +11,7 @@ import { absoluteUrl, canonicalFor, pageSocial } from "@/lib/seo";
 
 const TITLE = `${TEMPLATES.length} Free Professional Invoice Templates by Industry | ${SITE.name}`;
 const DESCRIPTION =
-  "Browse professional industry invoice templates — freelance, design, legal, hospitality, healthcare, SaaS and more. Each shows its style name and industry. Preview and download as PDF.";
+  "Browse professional industry invoice templates: freelance, design, legal, hospitality, healthcare, SaaS and more. Each shows its style name and industry. Preview and download as PDF.";
 
 export const metadata: Metadata = {
   title: { absolute: TITLE },
@@ -55,7 +55,7 @@ export default function TemplatesIndexPage() {
       <PageHeader
         eyebrow="Templates"
         title={`${TEMPLATES.length} free professional invoice templates`}
-        lead="Professional designs for every industry — each template lists its style name and industry so you can pick by look or by the business you run. Preview with real numbers, then export the same layout to PDF."
+        lead="Professional designs for every industry. Each template lists its style name and industry so you can pick by look or by the business you run. Preview with real numbers, then export the same layout to PDF."
         crumbs={[{ label: "Home", href: "/" }, { label: "Invoice templates" }]}
       >
         <Button asChild size="lg" className="mt-8">

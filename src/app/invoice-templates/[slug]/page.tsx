@@ -26,7 +26,7 @@ export async function generateMetadata({
   const { slug } = await params;
   const template = TEMPLATES.find((t) => t.slug === slug);
   const title = template
-    ? `${template.name} Invoice Template — ${template.industry} | ${SITE.name}`
+    ? `${template.name} Invoice Template: ${template.industry} | ${SITE.name}`
     : `Invoice Template | ${SITE.name}`;
   const description = template
     ? `Create a professional ${template.industry.toLowerCase()} invoice with our free ${template.name} Invoice Template. Customize your invoice and download it as a PDF.`

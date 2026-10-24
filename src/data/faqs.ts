@@ -17,7 +17,7 @@ export const HOME_FAQS: Faq[] = [
   },
   {
     q: "Where is my invoice data stored?",
-    a: "Your invoice draft is saved in your own browser's local storage so you can return and continue later. Invoice content is never uploaded to our servers. Clearing your browser data removes it permanently. Analytics and advertising (if you consent) are separate from invoice data — see the Privacy Policy.",
+    a: "Your invoice draft is saved in your own browser's local storage so you can return and continue later. Invoice content is never uploaded to our servers. Clearing your browser data removes it permanently. Analytics and advertising (if you consent) are separate from invoice data. See the Privacy Policy.",
   },
   {
     q: "Can I add my company logo and brand colour?",
@@ -55,7 +55,7 @@ export const CONTACT_FAQS: Faq[] = [
     a: "Not yet. Both are on our roadmap alongside the other free business tools we are building.",
   },
   {
-    q: "I found a bug — where do I report it?",
-    a: `Use the form on this page — it opens your email app to ${SITE.email}. Include your browser and what you were doing. Bug reports get priority.`,
+    q: "I found a bug. Where do I report it?",
+    a: `Use the form on this page: it opens your email app to ${SITE.email}. Include your browser and what you were doing. Bug reports get priority.`,
   },
 ];

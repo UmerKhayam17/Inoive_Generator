@@ -62,14 +62,14 @@ export const LOCALES: InvoiceLocale[] = [
     sampleFromAddress: "Office 12, Plot 45\nShahrah-e-Faisal\nKarachi, Sindh",
     sampleToAddress: "Client office\nJail Road\nLahore, Punjab",
     sampleItems: [
-      { description: "Website design — discovery & wireframes", quantity: 1, rate: 85000 },
+      { description: "Website design: discovery & wireframes", quantity: 1, rate: 85000 },
       { description: "Frontend development (hours)", quantity: 18, rate: 4500 },
     ],
     defaultNotes:
       "Thank you for your business. Please pay in PKR by bank transfer. NTN and STRN are shown above.",
     defaultTerms:
-      "Payment due in 14 days. Late payments may incur a fee as agreed in the contract. This invoice is not tax advice — confirm GST/PST with your accountant or FBR.",
-    seoTitle: "Invoice Generator Pakistan — Free PKR Invoice with NTN & STRN",
+      "Payment due in 14 days. Late payments may incur a fee as agreed in the contract. This invoice is not tax advice. Confirm GST/PST with your accountant or FBR.",
+    seoTitle: "Invoice Generator Pakistan: Free PKR Invoice with NTN & STRN",
     seoDescription:
       "Free invoice generator for Pakistan. Create a PKR invoice with NTN and STRN fields, add GST, and download a print-ready PDF. No signup, no watermark.",
     keywords: [
@@ -80,7 +80,7 @@ export const LOCALES: InvoiceLocale[] = [
       "free invoice generator Pakistan",
     ],
     heroLead:
-      "Build a PKR invoice with NTN and STRN on the PDF — not a US dollar template with “Pakistan” written at the top. Download instantly. No account, no watermark.",
+      "Build a PKR invoice with NTN and STRN on the PDF, not a US dollar template with “Pakistan” written at the top. Download instantly. No account, no watermark.",
     heroBullets: [
       "Currency locked to PKR by default",
       "NTN + STRN fields print on the PDF",
@@ -92,14 +92,14 @@ export const LOCALES: InvoiceLocale[] = [
       {
         heading: "What a Pakistan invoice actually needs",
         paragraphs: [
-          "Pakistani clients and accounts teams look for the same commercial fields as anywhere else — who billed whom, what was supplied, the invoice number, dates, and a total in a currency they can pay. They also look for tax identifiers that a generic “invoice generator” often hides behind a single “Tax ID” label.",
+          "Pakistani clients and accounts teams look for the same commercial fields as anywhere else: who billed whom, what was supplied, the invoice number, dates, and a total in a currency they can pay. They also look for tax identifiers that a generic “invoice generator” often hides behind a single “Tax ID” label.",
           "This page pre-fills Pakistani Rupee (PKR), labels the seller and buyer tax fields as NTN (National Tax Number) and STRN (Sales Tax Registration Number), and starts the tax rate at 18% so you can edit it instead of hunting for a percentage box.",
         ],
       },
       {
-        heading: "NTN vs STRN — which number goes where",
+        heading: "NTN vs STRN: which number goes where",
         paragraphs: [
-          "NTN identifies you (or your company) as a taxpayer with the Federal Board of Revenue. Put your NTN on the “from” side. If you know the client’s NTN, add it on the “bill to” side — useful for B2B work and for the buyer’s own records.",
+          "NTN identifies you (or your company) as a taxpayer with the Federal Board of Revenue. Put your NTN on the “from” side. If you know the client’s NTN, add it on the “bill to” side, useful for B2B work and for the buyer’s own records.",
           "STRN is separate: it is the sales-tax registration, used when the supply is within the sales-tax net. If you are not sales-tax registered, leave STRN empty. Do not copy someone else’s number or type a placeholder onto a live invoice.",
         ],
       },
@@ -113,7 +113,7 @@ export const LOCALES: InvoiceLocale[] = [
       {
         heading: "PKR, numbering, and getting paid",
         paragraphs: [
-          "Keep the invoice in PKR when the contract is in rupees. If you agreed USD or another currency, switch the currency dropdown — do not write “USD” in the description while the total still shows ₨. Use a unique invoice number (year + sequence is enough for most freelancers). Put your bank title, account number and IBAN in the notes so the client does not have to email you for payment details.",
+          "Keep the invoice in PKR when the contract is in rupees. If you agreed USD or another currency, switch the currency dropdown. Do not write “USD” in the description while the total still shows ₨. Use a unique invoice number (year + sequence is enough for most freelancers). Put your bank title, account number and IBAN in the notes so the client does not have to email you for payment details.",
         ],
       },
     ],
@@ -138,11 +138,11 @@ export const LOCALES: InvoiceLocale[] = [
       },
       {
         q: "Does this file invoices with FBR or IRIS?",
-        a: "No. This tool produces a professional PDF for you to send to the client. It does not submit e-invoices to FBR, PRAL or IRIS. Digital invoicing rules change — confirm current filing requirements with your tax advisor.",
+        a: "No. This tool produces a professional PDF for you to send to the client. It does not submit e-invoices to FBR, PRAL or IRIS. Digital invoicing rules change. Confirm current filing requirements with your tax advisor.",
       },
       {
         q: "Should I charge 18% GST on every invoice?",
-        a: "No. The generator defaults to 18% as a common federal GST rate on many goods, but services can fall under provincial sales tax (Sindh SRB, Punjab PRA, KP, Balochistan) at different rates — or be exempt. Change the rate to match your supply, or set it to 0 if tax is not applicable.",
+        a: "No. The generator defaults to 18% as a common federal GST rate on many goods, but services can fall under provincial sales tax (Sindh SRB, Punjab PRA, KP, Balochistan) at different rates, or be exempt. Change the rate to match your supply, or set it to 0 if tax is not applicable.",
       },
     ],
     generatorHeading: "Create your Pakistan invoice",
@@ -165,14 +165,14 @@ export const LOCALES: InvoiceLocale[] = [
     sampleFromAddress: "Office 204, Business Bay\nDubai, United Arab Emirates",
     sampleToAddress: "Client company\nAl Maryah Island\nAbu Dhabi, UAE",
     sampleItems: [
-      { description: "Consulting — discovery workshop", quantity: 1, rate: 4500 },
+      { description: "Consulting: discovery workshop", quantity: 1, rate: 4500 },
       { description: "Implementation (hours)", quantity: 12, rate: 350 },
     ],
     defaultNotes:
       "Thank you for your business. Please pay in AED by bank transfer. TRN is shown above where provided.",
     defaultTerms:
       "Payment due in 14 days. Confirm applicable VAT treatment with your accountant or FTA. This invoice is not tax advice.",
-    seoTitle: "Invoice Generator UAE — Free AED Invoice with TRN & VAT",
+    seoTitle: "Invoice Generator UAE: Free AED Invoice with TRN & VAT",
     seoDescription:
       "Free invoice generator for the UAE. Create an AED invoice with TRN fields, add VAT, and download a print-ready PDF. No signup, no watermark.",
     keywords: [
@@ -183,7 +183,7 @@ export const LOCALES: InvoiceLocale[] = [
       "free invoice generator UAE",
     ],
     heroLead:
-      "Create an AED invoice with TRN on the PDF and a VAT field you control — built for freelancers and businesses billing in the United Arab Emirates.",
+      "Create an AED invoice with TRN on the PDF and a VAT field you control, built for freelancers and businesses billing in the United Arab Emirates.",
     heroBullets: [
       "Currency set to AED by default",
       "TRN fields for seller and client",
@@ -196,7 +196,7 @@ export const LOCALES: InvoiceLocale[] = [
         heading: "What a UAE invoice typically needs",
         paragraphs: [
           "UAE clients expect clear commercial details: who billed whom, what was supplied, invoice number, dates, and a total in AED when the contract is in dirhams. VAT-registered suppliers also need space for a Tax Registration Number (TRN).",
-          "This page pre-fills AED, labels tax ID fields as TRN, and starts VAT at 5% so you can adjust it to match the supply — including setting 0% for zero-rated or out-of-scope work when that applies.",
+          "This page pre-fills AED, labels tax ID fields as TRN, and starts VAT at 5% so you can adjust it to match the supply, including setting 0% for zero-rated or out-of-scope work when that applies.",
         ],
       },
       {
@@ -245,7 +245,7 @@ export const LOCALES: InvoiceLocale[] = [
       },
       {
         q: "Can I invoice a client outside the UAE?",
-        a: "Yes. Adjust the currency and VAT treatment to match your contract and advice from your accountant. Cross-border rules can differ — do not assume UAE domestic VAT always applies.",
+        a: "Yes. Adjust the currency and VAT treatment to match your contract and advice from your accountant. Cross-border rules can differ. Do not assume UAE domestic VAT always applies.",
       },
     ],
     generatorHeading: "Create your UAE invoice",
@@ -268,14 +268,14 @@ export const LOCALES: InvoiceLocale[] = [
     sampleFromAddress: "14 King Street\nManchester\nM2 6AG\nUnited Kingdom",
     sampleToAddress: "Client Ltd\n88 Commercial Road\nLondon\nE1 1AJ",
     sampleItems: [
-      { description: "Website design — discovery & wireframes", quantity: 1, rate: 1200 },
+      { description: "Website design: discovery & wireframes", quantity: 1, rate: 1200 },
       { description: "Frontend development (hours)", quantity: 18, rate: 85 },
     ],
     defaultNotes:
       "Thank you for your business. Please pay in GBP by bank transfer. VAT number is shown above where provided.",
     defaultTerms:
       "Payment due in 14 days. Confirm VAT treatment with your accountant or HMRC. This invoice is not tax advice.",
-    seoTitle: "Invoice Generator UK — Free GBP Invoice with VAT Number",
+    seoTitle: "Invoice Generator UK: Free GBP Invoice with VAT Number",
     seoDescription:
       "Free invoice generator for the UK. Create a GBP invoice with VAT number fields, add VAT, and download a print-ready PDF. No signup, no watermark.",
     keywords: [
@@ -286,7 +286,7 @@ export const LOCALES: InvoiceLocale[] = [
       "UK VAT invoice template",
     ],
     heroLead:
-      "Create a GBP invoice with VAT number fields and a VAT rate you control — built for freelancers and limited companies billing in the United Kingdom.",
+      "Create a GBP invoice with VAT number fields and a VAT rate you control, built for freelancers and limited companies billing in the United Kingdom.",
     heroBullets: [
       "Currency set to GBP by default",
       "VAT number + optional company number",
@@ -299,14 +299,14 @@ export const LOCALES: InvoiceLocale[] = [
         heading: "What a UK invoice typically needs",
         paragraphs: [
           "UK clients and accounts teams expect clear commercial details: who billed whom, what was supplied, a unique invoice number, dates, and a total in GBP when the contract is in pounds. VAT-registered suppliers also need space for a VAT number and a clear VAT breakdown.",
-          "This page pre-fills GBP, labels tax ID fields as VAT number (and optional company number), and starts VAT at 20% so you can adjust it — including reduced, zero-rated, or exempt treatment when that applies.",
+          "This page pre-fills GBP, labels tax ID fields as VAT number (and optional company number), and starts VAT at 20% so you can adjust it, including reduced, zero-rated, or exempt treatment when that applies.",
         ],
       },
       {
         heading: "VAT number and company number",
         paragraphs: [
           "If you are VAT-registered, put your VAT number on the “from” side. For B2B work, including the customer’s VAT number (when known) helps their accounts payable team.",
-          "Company number (Companies House) is optional on many invoices but useful for limited companies. Leave fields blank if they do not apply — do not invent registration numbers.",
+          "Company number (Companies House) is optional on many invoices but useful for limited companies. Leave fields blank if they do not apply. Do not invent registration numbers.",
         ],
       },
       {
@@ -371,14 +371,14 @@ export const LOCALES: InvoiceLocale[] = [
     sampleFromAddress: "1200 Market Street\nSuite 400\nAustin, TX 78701\nUnited States",
     sampleToAddress: "Client Company Inc\n500 Mission Street\nSan Francisco, CA 94105",
     sampleItems: [
-      { description: "Website design — discovery & wireframes", quantity: 1, rate: 1800 },
+      { description: "Website design: discovery & wireframes", quantity: 1, rate: 1800 },
       { description: "Frontend development (hours)", quantity: 20, rate: 120 },
     ],
     defaultNotes:
       "Thank you for your business. Please pay in USD by ACH or bank transfer. Tax IDs are shown above where provided.",
     defaultTerms:
       "Payment due in 14 days. Sales tax rules vary by state. Confirm with your accountant or state tax authority. This invoice is not tax advice.",
-    seoTitle: "Invoice Generator USA — Free USD Invoice with EIN & Sales Tax",
+    seoTitle: "Invoice Generator USA: Free USD Invoice with EIN & Sales Tax",
     seoDescription:
       "Free invoice generator for the USA. Create a USD invoice with EIN / Tax ID fields, add sales tax when needed, and download a print-ready PDF. No signup, no watermark.",
     keywords: [
@@ -389,7 +389,7 @@ export const LOCALES: InvoiceLocale[] = [
       "free invoice generator US",
     ],
     heroLead:
-      "Create a USD invoice with EIN / Tax ID fields and a sales-tax rate you control — built for freelancers and small businesses billing in the United States.",
+      "Create a USD invoice with EIN / Tax ID fields and a sales-tax rate you control, built for freelancers and small businesses billing in the United States.",
     heroBullets: [
       "Currency set to USD by default",
       "EIN / Tax ID + optional state tax ID",
@@ -402,7 +402,7 @@ export const LOCALES: InvoiceLocale[] = [
         heading: "What a US invoice typically needs",
         paragraphs: [
           "US clients and accounts payable teams expect clear commercial details: who billed whom, what was supplied, a unique invoice number, dates, and a total in USD when the contract is in dollars. Many businesses also show an EIN or other tax ID so the buyer can record the vendor correctly.",
-          "This page pre-fills USD, labels tax ID fields as EIN / Tax ID and optional state tax ID, and starts sales tax at 0% because rates and nexus rules vary widely by state — you set the rate that applies to this supply.",
+          "This page pre-fills USD, labels tax ID fields as EIN / Tax ID and optional state tax ID, and starts sales tax at 0% because rates and nexus rules vary widely by state. You set the rate that applies to this supply.",
         ],
       },
       {

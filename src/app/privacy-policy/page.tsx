@@ -3,7 +3,7 @@ import { LegalPage } from "@/components/layout/LegalPage";
 import { SITE } from "@/data/site";
 import { canonicalFor, pageSocial } from "@/lib/seo";
 
-const TITLE = `Privacy Policy — ${SITE.name}`;
+const TITLE = `Privacy Policy | ${SITE.name}`;
 const DESCRIPTION =
   "How Invoice Creator handles your data. Invoices are processed in your browser and never uploaded to our servers. Read our full privacy policy.";
 

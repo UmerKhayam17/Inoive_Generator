@@ -40,11 +40,11 @@ export const PAYMENTS_POSTS: PostDraft[] = [
 <h2>How credit card payments work</h2>
 <p>Every card payment involves the same handful of parties, even if you only ever deal with one company:</p>
 <ul>
-<li><strong>The cardholder</strong> — your customer.</li>
-<li><strong>The issuing bank</strong> — the bank that gave the customer their card and approves or declines the charge.</li>
-<li><strong>The card network</strong> — Visa, Mastercard, American Express, Discover and others, which route the transaction and set many of the rules.</li>
-<li><strong>The acquirer or processor</strong> — the company that accepts the payment on your behalf and pays it out to you.</li>
-<li><strong>You, the merchant</strong> — the business being paid.</li>
+<li><strong>The cardholder</strong>: your customer.</li>
+<li><strong>The issuing bank</strong>: the bank that gave the customer their card and approves or declines the charge.</li>
+<li><strong>The card network</strong>: Visa, Mastercard, American Express, Discover and others, which route the transaction and set many of the rules.</li>
+<li><strong>The acquirer or processor</strong>: the company that accepts the payment on your behalf and pays it out to you.</li>
+<li><strong>You, the merchant</strong>: the business being paid.</li>
 </ul>
 <p>When a customer pays, the processor asks the issuing bank to authorize the amount, then captures and settles it. After the processor deducts its fees, the net amount is deposited into your bank account on a payout schedule. Because the customer's bank stands behind the payment, cards are fast and convenient, but they can also be disputed later through a chargeback, which is one reason card payments cost more than a bank transfer.</p>
 
@@ -81,10 +81,10 @@ export const PAYMENTS_POSTS: PostDraft[] = [
 <h2>Understanding credit card processing fees</h2>
 <p>Card fees are the biggest ongoing cost of accepting card payments, and they are not standard. They vary by provider, by pricing model, by card type (business, rewards and international cards often cost more), and by whether the card is present or keyed in. Common pricing models include:</p>
 <ul>
-<li><strong>Flat-rate pricing</strong> — one percentage plus a fixed fee for most transactions. Easy to predict, common with aggregators.</li>
-<li><strong>Interchange-plus</strong> — the card network's underlying cost passed through, plus a disclosed markup. More transparent, more complex statements.</li>
-<li><strong>Tiered pricing</strong> — transactions grouped into "qualified" and "non-qualified" bands at different rates. Harder to compare.</li>
-<li><strong>Subscription or membership</strong> — a monthly fee in exchange for a lower per-transaction markup.</li>
+<li><strong>Flat-rate pricing</strong>: one percentage plus a fixed fee for most transactions. Easy to predict, common with aggregators.</li>
+<li><strong>Interchange-plus</strong>: the card network's underlying cost passed through, plus a disclosed markup. More transparent, more complex statements.</li>
+<li><strong>Tiered pricing</strong>: transactions grouped into "qualified" and "non-qualified" bands at different rates. Harder to compare.</li>
+<li><strong>Subscription or membership</strong>: a monthly fee in exchange for a lower per-transaction markup.</li>
 </ul>
 
 <h3>Worked example: what a card payment really costs</h3>
@@ -217,7 +217,7 @@ export const PAYMENTS_POSTS: PostDraft[] = [
 1. Pay online by card: pay.example.com/inv-2026-0157<br>
 2. Bank transfer: account details below, reference INV-2026-0157<br>
 Questions? Call 555-0142 before paying if anything on this invoice looks different from usual.</blockquote>
-<p>Offering two options — a quick card link and a lower-cost transfer — gives the client choice. For the transfer option, see what to include in <a href="/blog/bank-details-on-invoice">bank details on an invoice</a>.</p>
+<p>Offering two options (a quick card link and a lower-cost transfer) gives the client choice. For the transfer option, see what to include in <a href="/blog/bank-details-on-invoice">bank details on an invoice</a>.</p>
 
 <h2>Keep payment links secure</h2>
 <p>Payment links are also a favorite tool of scammers, who send fake invoices or "updated" links that lead to lookalike pages. Protect your clients, and your reputation, with a few habits:</p>
@@ -546,8 +546,8 @@ Our bank details will never change by email. If you receive a message saying the
 <h2>How ACH transfers work</h2>
 <p>ACH is the network US banks use for direct deposits, bill payments and most business-to-business transfers. Payments are collected and processed in batches, which keeps costs low. There are two directions:</p>
 <ul>
-<li><strong>ACH credit</strong> — your client pushes money from their account to yours. This is what most clients do when paying an invoice by "bank transfer" in the US.</li>
-<li><strong>ACH debit</strong> — you pull money from the client's account with their authorization, typically through a payment provider or for recurring billing.</li>
+<li><strong>ACH credit</strong>: your client pushes money from their account to yours. This is what most clients do when paying an invoice by "bank transfer" in the US.</li>
+<li><strong>ACH debit</strong>: you pull money from the client's account with their authorization, typically through a payment provider or for recurring billing.</li>
 </ul>
 <p>Because ACH has rules for returns and disputes, a payment that appears in your account can, in some limited situations, be returned afterwards, for example if it was a duplicate or unauthorized. That's rare for genuine business payments but worth knowing for first-time clients.</p>
 <h3>Why ACH payments take a day or two</h3>
@@ -678,7 +678,7 @@ Our bank details never change by email. Call 555-0187 to verify before sending a
 <tr><td>Payment method</td><td>ACH bank transfer, ref. HLB-88213</td></tr>
 <tr><td>Balance remaining</td><td>$1,400.00, due 20 November 2026</td></tr>
 </tbody></table>
-<p>When the second payment of $1,400.00 arrives, the next receipt (REC-2026-0052, for example) shows previously paid $1,000.00, amount received $1,400.00 and balance $0.00 — paid in full. The maths always follows the same pattern: invoice total minus all payments received equals the balance.</p>
+<p>When the second payment of $1,400.00 arrives, the next receipt (REC-2026-0052, for example) shows previously paid $1,000.00, amount received $1,400.00 and balance $0.00: paid in full. The maths always follows the same pattern: invoice total minus all payments received equals the balance.</p>
 
 <h2>Payment receipt template you can copy</h2>
 <p>If you want a plain-text version to paste into an email or a document, use this layout and replace the details in brackets:</p>

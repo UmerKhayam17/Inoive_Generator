@@ -31,7 +31,7 @@ export function defaultShareImage(alt?: string) {
     url: absoluteUrl("/opengraph-image"),
     width: 1200,
     height: 630,
-    alt: alt ?? `${SITE.name} — Free Invoice Generator`,
+    alt: alt ?? `${SITE.name}: Free Invoice Generator`,
   };
 }
 

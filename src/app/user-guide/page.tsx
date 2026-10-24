@@ -10,7 +10,7 @@ import { SITE } from "@/data/site";
 import { TEMPLATE_COUNT, TEMPLATES } from "@/data/templates";
 import { canonicalFor, pageSocial } from "@/lib/seo";
 
-const TITLE = `User Guide — How to Create & Download Invoices | ${SITE.name}`;
+const TITLE = `User Guide: How to Create & Download Invoices | ${SITE.name}`;
 const DESCRIPTION =
   "Complete Invoice Creator user manual: create invoices, edit details, choose templates, set typography, pick a country, upload logo and signature, and download a PDF.";
 
@@ -77,7 +77,7 @@ export default function UserGuidePage() {
       <PageHeader
         eyebrow="Help"
         title="Invoice Creator user guide"
-        lead="Everything you need to create, edit, and download a professional PDF invoice — templates, typography, country presets, branding, and more. No account required."
+        lead="Everything you need to create, edit, and download a professional PDF invoice: templates, typography, country presets, branding, and more. No account required."
         crumbs={[{ label: "Home", href: "/" }, { label: "User guide" }]}
       >
         <div className="mt-8 flex flex-wrap gap-3">
@@ -157,7 +157,7 @@ export default function UserGuidePage() {
                 <h2>3. Choose a country / location</h2>
                 <p>
                   Use a <strong>location page</strong> when you want currency and tax ID labels
-                  matched to a country — instead of a generic US-style form.
+                  matched to a country, instead of a generic US-style form.
                 </p>
                 <div className="not-prose my-6 overflow-x-auto rounded-xl border border-border">
                   <table className="w-full min-w-[36rem] text-left text-sm">
@@ -197,7 +197,7 @@ export default function UserGuidePage() {
                   On location pages, tax labels change (for example <strong>NTN / STRN</strong> in
                   Pakistan, <strong>TRN</strong> in the UAE, <strong>VAT number</strong> in the UK,{" "}
                   <strong>EIN / Tax ID</strong> in the USA). Default tax rates are starting points
-                  only — always edit them to match your supply. These tools do not file taxes with
+                  only. Always edit them to match your supply. These tools do not file taxes with
                   FBR, FTA, HMRC, or any state agency.
                 </p>
                 <p>
@@ -219,7 +219,7 @@ export default function UserGuidePage() {
                 <ul>
                   {TEMPLATES.map((t) => (
                     <li key={t.slug}>
-                      <Link href={`/invoice-templates/${t.slug}`}>{t.name}</Link> — {t.industry}
+                      <Link href={`/invoice-templates/${t.slug}`}>{t.name}</Link>: {t.industry}
                     </li>
                   ))}
                 </ul>
@@ -244,14 +244,14 @@ export default function UserGuidePage() {
                 </p>
                 <ul>
                   <li>
-                    <strong>Font style</strong> — Template default, Sans (Helvetica), Serif
+                    <strong>Font style</strong>: Template default, Sans (Helvetica), Serif
                     (Georgia), Mono (Courier), Classic (Times), or Rounded (Verdana)
                   </li>
                   <li>
-                    <strong>Body size</strong> — slider from Small (11px) to Large (18px)
+                    <strong>Body size</strong>: slider from Small (11px) to Large (18px)
                   </li>
                   <li>
-                    <strong>Title size (Invoice heading)</strong> — H1 Large, H2 Medium, or H3
+                    <strong>Title size (Invoice heading)</strong>: H1 Large, H2 Medium, or H3
                     Compact
                   </li>
                   <li>
@@ -276,17 +276,17 @@ export default function UserGuidePage() {
                 </p>
                 <ul>
                   <li>
-                    <strong>Logo</strong> — click Upload, choose PNG, JPG, or SVG (max 1.5 MB)
+                    <strong>Logo</strong>: click Upload, choose PNG, JPG, or SVG (max 1.5 MB)
                   </li>
                   <li>
-                    <strong>Signature</strong> — upload an image of your signature the same way
+                    <strong>Signature</strong>: upload an image of your signature the same way
                   </li>
                   <li>
                     Use <strong>Remove</strong> next to either thumbnail to clear it
                   </li>
                 </ul>
                 <p>
-                  Images stay in your browser draft only — they are not uploaded to our servers. On
+                  Images stay in your browser draft only. They are not uploaded to our servers. On
                   the PDF, the signature area is labelled <strong>Authorised signature</strong>.
                 </p>
               </section>
@@ -295,18 +295,18 @@ export default function UserGuidePage() {
                 <h2>7. Invoice details</h2>
                 <ul>
                   <li>
-                    <strong>Invoice number *</strong> — required (for example 2026-0001). Accounts
+                    <strong>Invoice number *</strong>: required (for example 2026-0001). Accounts
                     teams often reject invoices without a unique number.
                   </li>
                   <li>
-                    <strong>PO number</strong> — optional purchase order reference
+                    <strong>PO number</strong>: optional purchase order reference
                   </li>
                   <li>
-                    <strong>Issue date *</strong> and <strong>Due date *</strong> — due date cannot
+                    <strong>Issue date *</strong> and <strong>Due date *</strong>: due date cannot
                     be before the issue date
                   </li>
                   <li>
-                    <strong>Currency</strong> — USD, EUR, GBP, INR, AUD, CAD, AED, or PKR
+                    <strong>Currency</strong>: USD, EUR, GBP, INR, AUD, CAD, AED, or PKR
                   </li>
                 </ul>
               </section>
@@ -318,10 +318,10 @@ export default function UserGuidePage() {
                 </p>
                 <ul>
                   <li>
-                    <strong>Name *</strong> — at least 2 characters
+                    <strong>Name *</strong>: at least 2 characters
                   </li>
                   <li>
-                    <strong>Email</strong> — optional; if filled, it must be a valid address
+                    <strong>Email</strong>: optional; if filled, it must be a valid address
                   </li>
                   <li>
                     <strong>Address</strong>, <strong>Phone</strong>
@@ -351,8 +351,8 @@ export default function UserGuidePage() {
                   <li>At least one line needs a description before you can download a PDF</li>
                 </ul>
                 <p>
-                  Tip: write descriptions a client can approve without emailing you — for example
-                  “Website redesign — homepage and 4 inner pages” instead of “Design work”.
+                  Tip: write descriptions a client can approve without emailing you, for example
+                  “Website redesign: homepage and 4 inner pages” instead of “Design work”.
                 </p>
               </section>
 
@@ -360,18 +360,18 @@ export default function UserGuidePage() {
                 <h2>10. Tax, discount, shipping &amp; amount paid</h2>
                 <ul>
                   <li>
-                    <strong>Tax rate (%)</strong> — or the location label (Sales tax / GST, VAT,
+                    <strong>Tax rate (%)</strong>: or the location label (Sales tax / GST, VAT,
                     etc.). Value from 0 to 100.
                   </li>
                   <li>
-                    <strong>Discount</strong> — choose <strong>%</strong> of subtotal or a fixed
+                    <strong>Discount</strong>: choose <strong>%</strong> of subtotal or a fixed
                     amount in your currency
                   </li>
                   <li>
-                    <strong>Shipping / extra</strong> — optional flat amount
+                    <strong>Shipping / extra</strong>: optional flat amount
                   </li>
                   <li>
-                    <strong>Amount already paid</strong> — reduces the balance due (useful for
+                    <strong>Amount already paid</strong>: reduces the balance due (useful for
                     deposits)
                   </li>
                 </ul>
@@ -385,11 +385,11 @@ export default function UserGuidePage() {
                 <h2>11. Notes &amp; payment terms</h2>
                 <ul>
                   <li>
-                    <strong>Notes</strong> — thank-you message, bank details, IBAN, payment link,
+                    <strong>Notes</strong>: thank-you message, bank details, IBAN, payment link,
                     etc.
                   </li>
                   <li>
-                    <strong>Payment terms</strong> — Net 14, late fees, reverse-charge wording, and
+                    <strong>Payment terms</strong>: Net 14, late fees, reverse-charge wording, and
                     similar
                   </li>
                 </ul>
@@ -428,7 +428,7 @@ export default function UserGuidePage() {
                 <h3>Live preview</h3>
                 <p>
                   On desktop, the preview stays visible on the right and scales to fit the column.
-                  The PDF exports at full A4 size — what you see is the same layout, just scaled
+                  The PDF exports at full A4 size: what you see is the same layout, just scaled
                   down for the screen.
                 </p>
                 <h3>Download PDF</h3>
@@ -448,7 +448,7 @@ export default function UserGuidePage() {
                 </ol>
                 <p>
                   While exporting you will see <strong>Building PDF…</strong>. Success shows{" "}
-                  <strong>PDF downloaded — Check your downloads folder.</strong>
+                  <strong>PDF downloaded. Check your downloads folder.</strong>
                 </p>
                 <h3>Printing</h3>
                 <p>
@@ -470,7 +470,7 @@ export default function UserGuidePage() {
                   </li>
                   <li>
                     Returning later shows{" "}
-                    <strong>Draft restored — We picked up where you left off.</strong>
+                    <strong>Draft restored. We picked up where you left off.</strong>
                   </li>
                   <li>
                     <strong>Reset</strong> clears the draft and restores sample defaults for that
@@ -503,21 +503,21 @@ export default function UserGuidePage() {
                 <h2>16. Tips &amp; common fixes</h2>
                 <ul>
                   <li>
-                    <strong>“Fields need attention”</strong> — fill required names, invoice number,
+                    <strong>“Fields need attention”</strong>: fill required names, invoice number,
                     dates, and at least one described line item; fix any invalid email
                   </li>
                   <li>
-                    <strong>Due date error</strong> — due date cannot be before the issue date
+                    <strong>Due date error</strong>: due date cannot be before the issue date
                   </li>
                   <li>
-                    <strong>Image upload failed</strong> — use PNG, JPG, or SVG under 1.5 MB
+                    <strong>Image upload failed</strong>: use PNG, JPG, or SVG under 1.5 MB
                   </li>
                   <li>
-                    <strong>Wrong currency symbol</strong> — change Currency in Invoice details (or
+                    <strong>Wrong currency symbol</strong>: change Currency in Invoice details (or
                     open the matching country page)
                   </li>
                   <li>
-                    <strong>Lost draft</strong> — drafts do not sync across phones/computers;
+                    <strong>Lost draft</strong>: drafts do not sync across phones/computers;
                     download the PDF when finished
                   </li>
                 </ul>
@@ -529,7 +529,7 @@ export default function UserGuidePage() {
                   <li>Invoice data is processed in your browser and autosaved locally</li>
                   <li>We do not receive your invoice contents when you create or download a PDF</li>
                   <li>
-                    The tool is not tax, legal, or accounting advice — see our{" "}
+                    The tool is not tax, legal, or accounting advice; see our{" "}
                     <Link href="/disclaimer">Disclaimer</Link> and{" "}
                     <Link href="/privacy-policy">Privacy Policy</Link>
                   </li>

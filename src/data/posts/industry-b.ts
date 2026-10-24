@@ -38,7 +38,7 @@ export const INDUSTRY_POSTS_B: PostDraft[] = [
 <p>This guide covers what to put on a rent invoice, the line items landlords commonly bill, a worked example with prorated rent, and how to handle late fees, deposits and commercial tenants. You can build one in a few minutes with our <a href="/invoice-generator">free invoice generator</a>, then reuse it every month.</p>
 
 <h2>What is a rent invoice and when do landlords use one?</h2>
-<p>A rent invoice is a request for payment of rent for a specific period, usually a calendar month. The lease is the contract; the invoice is the monthly bill that puts the contract into numbers. For a single flat with fixed rent and no extras, some landlords skip invoices entirely. As soon as anything varies — utilities passed through to the tenant, a parking space, a one-off repair charge, a late fee — an invoice removes guesswork.</p>
+<p>A rent invoice is a request for payment of rent for a specific period, usually a calendar month. The lease is the contract; the invoice is the monthly bill that puts the contract into numbers. For a single flat with fixed rent and no extras, some landlords skip invoices entirely. As soon as anything varies (utilities passed through to the tenant, a parking space, a one-off repair charge, a late fee), an invoice removes guesswork.</p>
 <p>Rent invoices are especially common for:</p>
 <ul>
 <li><strong>Commercial tenants</strong>, whose finance teams often won't pay without an invoice and may require a purchase order number or a supplier reference.</li>
@@ -68,7 +68,7 @@ export const INDUSTRY_POSTS_B: PostDraft[] = [
 <ul>
 <li><strong>Base rent</strong> for the period, at the amount in the lease.</li>
 <li><strong>Prorated rent</strong> for a partial first or last month.</li>
-<li><strong>Utilities</strong> passed through to the tenant — water, sewer, trash, gas or electricity — ideally with the meter reading or bill reference.</li>
+<li><strong>Utilities</strong> passed through to the tenant (water, sewer, trash, gas or electricity), ideally with the meter reading or bill reference.</li>
 <li><strong>Parking, storage or garage</strong> fees if they are billed separately from rent.</li>
 <li><strong>Pet rent</strong>, where the lease allows it.</li>
 <li><strong>Common area or service charges</strong> for commercial tenancies.</li>
@@ -81,14 +81,14 @@ export const INDUSTRY_POSTS_B: PostDraft[] = [
 <h2>Worked example: a monthly rent invoice</h2>
 <p>Here is a sample rent invoice for an apartment, issued on 22 October 2026 for November rent, due on 1 November 2026. The tenant paid a plumber $120 for a repair the landlord agreed to cover, so it appears as a credit.</p>
 <table><thead><tr><th>Description</th><th>Qty</th><th>Rate</th><th>Amount</th></tr></thead><tbody>
-<tr><td>Rent — Unit 4B, 1–30 November 2026</td><td>1</td><td>$1,850.00</td><td>$1,850.00</td></tr>
-<tr><td>Parking space #12 — November 2026</td><td>1</td><td>$75.00</td><td>$75.00</td></tr>
-<tr><td>Water and sewer — September billing period (city bill #88213)</td><td>1</td><td>$62.40</td><td>$62.40</td></tr>
-<tr><td>Late fee — October rent paid after grace period (per lease clause 5)</td><td>1</td><td>$50.00</td><td>$50.00</td></tr>
-<tr><td>Credit — kitchen sink repair paid by tenant (receipt on file)</td><td>1</td><td>−$120.00</td><td>−$120.00</td></tr>
+<tr><td>Rent: Unit 4B, 1–30 November 2026</td><td>1</td><td>$1,850.00</td><td>$1,850.00</td></tr>
+<tr><td>Parking space #12: November 2026</td><td>1</td><td>$75.00</td><td>$75.00</td></tr>
+<tr><td>Water and sewer: September billing period (city bill #88213)</td><td>1</td><td>$62.40</td><td>$62.40</td></tr>
+<tr><td>Late fee: October rent paid after grace period (per lease clause 5)</td><td>1</td><td>$50.00</td><td>$50.00</td></tr>
+<tr><td>Credit: kitchen sink repair paid by tenant (receipt on file)</td><td>1</td><td>−$120.00</td><td>−$120.00</td></tr>
 <tr><td colspan="3"><strong>Total due by 1 November 2026</strong></td><td><strong>$1,917.40</strong></td></tr>
 </tbody></table>
-<p>The maths: $1,850.00 + $75.00 + $62.40 + $50.00 − $120.00 = $1,917.40. No tax is shown because residential rent is generally not taxed, but rules for commercial and short-term rentals differ — see the section on commercial tenants below.</p>
+<p>The maths: $1,850.00 + $75.00 + $62.40 + $50.00 − $120.00 = $1,917.40. No tax is shown because residential rent is generally not taxed, but rules for commercial and short-term rentals differ. See the section on commercial tenants below.</p>
 
 <h3>How to calculate prorated rent</h3>
 <p>When a tenant moves in mid-month, bill only the days they occupy the unit. The most common method is a daily rate based on the days in that month:</p>
@@ -101,7 +101,7 @@ export const INDUSTRY_POSTS_B: PostDraft[] = [
 
 <h2>Late fees, grace periods and local rules</h2>
 <p>A rent invoice can only include charges the lease allows. Late fees are the area where landlords most often get into trouble, because many US states and cities cap residential late fees, require a grace period, or require the fee to be stated in the lease. Some places outside the US restrict them further. Before adding a late fee, check your lease and your local landlord-tenant rules, and consult a local attorney or housing authority if you are unsure.</p>
-<p>When you do charge one, describe it plainly ("Late fee — October rent received 8 October, per lease clause 5") rather than burying it in the rent line. Our guide to <a href="/blog/late-payment-fees">charging late payment fees</a> explains how to word late terms clearly, and <a href="/blog/overdue-invoice">handling an overdue invoice</a> covers what to do when rent simply doesn't arrive.</p>
+<p>When you do charge one, describe it plainly ("Late fee: October rent received 8 October, per lease clause 5") rather than burying it in the rent line. Our guide to <a href="/blog/late-payment-fees">charging late payment fees</a> explains how to word late terms clearly, and <a href="/blog/overdue-invoice">handling an overdue invoice</a> covers what to do when rent simply doesn't arrive.</p>
 
 <h2>Rent invoice vs rent receipt</h2>
 <p>Landlords often need both documents, and they do different jobs:</p>
@@ -162,17 +162,17 @@ export const INDUSTRY_POSTS_B: PostDraft[] = [
       },
     ],
     content: `
-<p><strong>Quick answer:</strong> A medical invoice template is a billing layout that private practices, clinics and independent practitioners use to charge patients directly for care. It should show the practice and provider details, the patient and account number, dates of service, each service with a clear description (and procedure code if used), the fee, any payments or adjustments, the balance due and how to pay. It is for direct patient billing — not a replacement for insurance claim forms.</p>
+<p><strong>Quick answer:</strong> A medical invoice template is a billing layout that private practices, clinics and independent practitioners use to charge patients directly for care. It should show the practice and provider details, the patient and account number, dates of service, each service with a clear description (and procedure code if used), the fee, any payments or adjustments, the balance due and how to pay. It is for direct patient billing, not a replacement for insurance claim forms.</p>
 
 <p>This guide explains what belongs on a medical invoice, the typical line items in private practice, how superbills differ, privacy and pricing rules to be aware of, and a worked example. You can build a clean, professional patient invoice with our <a href="/invoice-generator">free invoice generator</a> and download it as a PDF.</p>
 
 <h2>When practices use a medical invoice template</h2>
-<p>Most insured care in the US is billed to insurers through standardized claim forms and electronic transactions. A medical invoice template is for everything else — the situations where the practice bills a person or organization directly:</p>
+<p>Most insured care in the US is billed to insurers through standardized claim forms and electronic transactions. A medical invoice template is for everything else: the situations where the practice bills a person or organization directly:</p>
 <ul>
 <li><strong>Self-pay and uninsured patients</strong>, including cash-pay clinics and direct primary care memberships.</li>
 <li><strong>Out-of-network care</strong>, where the patient pays and then claims reimbursement.</li>
 <li><strong>Services insurance doesn't cover</strong>, such as many cosmetic, wellness or elective treatments.</li>
-<li><strong>Patient balances</strong> after insurance — copays, coinsurance and deductibles.</li>
+<li><strong>Patient balances</strong> after insurance: copays, coinsurance and deductibles.</li>
 <li><strong>Third-party payers</strong>, such as employers paying for occupational health checks or attorneys requesting medical reports.</li>
 <li><strong>Independent practitioners</strong>: therapists, physiotherapists, chiropractors, dietitians, locum doctors and private nurses.</li>
 </ul>
@@ -189,7 +189,7 @@ export const INDUSTRY_POSTS_B: PostDraft[] = [
 <tr><td>Fees, adjustments, payments</td><td>Charge per service, discounts, insurance payments, amounts paid at visit</td></tr>
 <tr><td>Balance due and payment options</td><td>Amount the patient owes now and how to pay</td></tr>
 </tbody></table>
-<p>Keep invoice numbers separate from patient account numbers. A consistent scheme — explained in our <a href="/blog/invoice-numbering-system">invoice numbering system</a> guide — makes it easy to match payments without exposing patient details in the reference.</p>
+<p>Keep invoice numbers separate from patient account numbers. A consistent scheme (explained in our <a href="/blog/invoice-numbering-system">invoice numbering system</a> guide) makes it easy to match payments without exposing patient details in the reference.</p>
 
 <h2>Typical line items in private practice billing</h2>
 <p>An itemized medical invoice lists each service so the patient can see exactly what they are paying for. Common lines include:</p>
@@ -217,7 +217,7 @@ export const INDUSTRY_POSTS_B: PostDraft[] = [
 <tr><td colspan="5">Less: paid at visit (card)</td><td>−$100.00</td></tr>
 <tr><td colspan="5"><strong>Balance due by 28 October 2026</strong></td><td><strong>$232.55</strong></td></tr>
 </tbody></table>
-<p>The maths: $220.00 + $85.00 + $64.50 = $369.50. Ten percent of $369.50 is $36.95, leaving $332.55. Subtracting the $100.00 paid at the visit leaves $232.55. The codes shown are for illustration only — use the codes that accurately describe the care you provided. If you offer a discount, state the condition and the deadline clearly; our guide to <a href="/blog/early-payment-discount">early payment discounts</a> explains how to word one.</p>
+<p>The maths: $220.00 + $85.00 + $64.50 = $369.50. Ten percent of $369.50 is $36.95, leaving $332.55. Subtracting the $100.00 paid at the visit leaves $232.55. The codes shown are for illustration only. Use the codes that accurately describe the care you provided. If you offer a discount, state the condition and the deadline clearly; our guide to <a href="/blog/early-payment-discount">early payment discounts</a> explains how to word one.</p>
 
 <h2>Medical invoice vs superbill vs insurance claim</h2>
 <table><thead><tr><th>Document</th><th>Sent to</th><th>Purpose</th><th>Typical content</th></tr></thead><tbody>
@@ -228,22 +228,22 @@ export const INDUSTRY_POSTS_B: PostDraft[] = [
 <p>An invoice template can be adapted into a superbill by adding the codes and identifiers the patient's insurer asks for, but it cannot replace the standardized formats insurers require when the practice bills them directly.</p>
 
 <h2>Privacy, pricing and compliance notes</h2>
-<p>Healthcare billing comes with obligations a general business invoice does not. The points below are general information, not legal advice — check the rules that apply to your practice with a healthcare attorney, compliance adviser or professional body.</p>
+<p>Healthcare billing comes with obligations a general business invoice does not. The points below are general information, not legal advice. Check the rules that apply to your practice with a healthcare attorney, compliance adviser or professional body.</p>
 <ul>
 <li><strong>Patient privacy.</strong> An invoice that names a patient and describes their care can be protected health information under HIPAA in the US, and is personal health data under laws such as the UK and EU GDPR. Include only the detail the payer needs, send invoices through secure channels, and avoid putting diagnoses in email subject lines.</li>
 <li><strong>Good faith estimates.</strong> Under the US No Surprises Act, many providers must give uninsured or self-pay patients a good faith estimate of expected charges for scheduled care, and patients may dispute a bill that substantially exceeds it. Keep your invoice consistent with any estimate you gave.</li>
-<li><strong>Tax.</strong> Medical care is commonly exempt from VAT and sales tax, though exceptions exist — for example some cosmetic procedures and retail products. Confirm with an accountant before adding tax to a patient invoice.</li>
+<li><strong>Tax.</strong> Medical care is commonly exempt from VAT and sales tax, though exceptions exist, for example some cosmetic procedures and retail products. Confirm with an accountant before adding tax to a patient invoice.</li>
 <li><strong>Record retention.</strong> Billing records may need to be kept for several years, and medical records rules can be longer. Our guide on <a href="/blog/how-long-to-keep-invoices">how long to keep invoices</a> covers the general principles.</li>
 </ul>
 
 <h2>Adapting the template for therapists and independent practitioners</h2>
-<p>Solo practitioners — counselors, psychotherapists, physical therapists, chiropractors, dietitians, speech therapists, massage therapists and private nurses — often bill in simpler patterns than a multi-provider clinic. The same medical invoice template works if you adjust a few things:</p>
+<p>Solo practitioners (counselors, psychotherapists, physical therapists, chiropractors, dietitians, speech therapists, massage therapists and private nurses) often bill in simpler patterns than a multi-provider clinic. The same medical invoice template works if you adjust a few things:</p>
 <ul>
 <li><strong>Bill by session.</strong> One line per session, with the date, length and type of session, for example "Individual therapy session, 50 minutes". Monthly invoices that list every session in the period save time for clients who attend weekly.</li>
 <li><strong>Packages and prepayments.</strong> If a client buys a block of sessions, invoice the package once, then show sessions used and remaining on later statements so the client can track their balance.</li>
 <li><strong>Cancellation and no-show fees.</strong> Charge these only if your written policy allows them and the client agreed to it before treatment. Show them as a separate line with the date of the missed appointment.</li>
 <li><strong>Sliding-scale fees.</strong> Show your standard fee and the agreed reduction as a separate adjustment line, so the invoice reflects both the usual price and what the client actually pays.</li>
-<li><strong>Discretion.</strong> Some clients prefer that the invoice describes a service generically — "Professional services" rather than a specific therapy type — particularly if an employer or family member pays. Agree on wording with the client, but keep full detail in your clinical and billing records.</li>
+<li><strong>Discretion.</strong> Some clients prefer that the invoice describes a service generically ("Professional services" rather than a specific therapy type), particularly if an employer or family member pays. Agree on wording with the client, but keep full detail in your clinical and billing records.</li>
 </ul>
 <p>Whatever your discipline, keep the layout calm and easy to read. Patients and clients are not accountants, and an invoice they understand at a glance is one they are more likely to pay promptly.</p>
 
@@ -253,7 +253,7 @@ export const INDUSTRY_POSTS_B: PostDraft[] = [
 <li><strong>Send the invoice promptly</strong>, ideally the same day as the visit or as soon as lab charges are known.</li>
 <li><strong>Use clear terms.</strong> Many practices ask for payment within 14 or 30 days; see <a href="/blog/invoice-payment-terms">invoice payment terms explained</a>.</li>
 <li><strong>Give a receipt for every payment.</strong> Patients often need proof of payment for reimbursement or health spending accounts; our <a href="/blog/payment-receipt-template">payment receipt template</a> guide shows what to include.</li>
-<li><strong>Follow up kindly.</strong> Medical bills can be stressful. A courteous reminder, and an offer of a payment plan where appropriate, works better than a stern letter — see our <a href="/blog/payment-reminder-emails">payment reminder email templates</a>.</li>
+<li><strong>Follow up kindly.</strong> Medical bills can be stressful. A courteous reminder, and an offer of a payment plan where appropriate, works better than a stern letter. See our <a href="/blog/payment-reminder-emails">payment reminder email templates</a>.</li>
 </ol>
 
 <h2>Create your medical invoice now</h2>
@@ -323,10 +323,10 @@ export const INDUSTRY_POSTS_B: PostDraft[] = [
 <h3>Write time entries clients will approve</h3>
 <p>Vague entries are the most common reason legal invoices are questioned. Compare:</p>
 <ul>
-<li>Weak: "Research — 3.0"</li>
-<li>Strong: "Research case law on enforceability of non-compete clause in Texas; summarize findings for client — 3.0"</li>
+<li>Weak: "Research: 3.0"</li>
+<li>Strong: "Research case law on enforceability of non-compete clause in Texas; summarize findings for client: 3.0"</li>
 </ul>
-<p>Avoid "block billing" — lumping several tasks under one time entry — because many corporate clients and insurers reject it. Record each task separately with its own time.</p>
+<p>Avoid "block billing" (lumping several tasks under one time entry), because many corporate clients and insurers reject it. Record each task separately with its own time.</p>
 
 <h2>Worked example: an hourly legal invoice</h2>
 <p>A firm bills a business client for October 2026 work on a contract dispute. The client paid a $2,500 advance that the firm holds in its client trust account, and the engagement letter authorizes applying it to invoices.</p>
@@ -336,7 +336,7 @@ export const INDUSTRY_POSTS_B: PostDraft[] = [
 <tr><td>R. Diaz</td><td>Paralegal</td><td>3.0</td><td>$140.00</td><td>$420.00</td></tr>
 <tr><td colspan="4"><strong>Total professional fees (11.1 hours)</strong></td><td><strong>$3,067.50</strong></td></tr>
 <tr><td colspan="4">Disbursement: court filing fee (receipt attached)</td><td>$405.00</td></tr>
-<tr><td colspan="4">Disbursement: courier — service of documents</td><td>$38.00</td></tr>
+<tr><td colspan="4">Disbursement: courier, service of documents</td><td>$38.00</td></tr>
 <tr><td colspan="4"><strong>Total disbursements</strong></td><td><strong>$443.00</strong></td></tr>
 <tr><td colspan="4"><strong>Total for this invoice</strong></td><td><strong>$3,510.50</strong></td></tr>
 <tr><td colspan="4">Less: applied from client trust account</td><td>−$2,500.00</td></tr>
@@ -347,19 +347,19 @@ export const INDUSTRY_POSTS_B: PostDraft[] = [
 <h2>Flat-fee and contingency legal invoices</h2>
 <p>Not every attorney invoice is a list of time entries. Flat-fee and contingency matters need a different structure, though the same legal invoice template can handle both.</p>
 <h3>Flat-fee invoices</h3>
-<p>For a fixed-fee matter, describe the scope precisely so the client can see what the price covers. A line such as "Formation of Delaware LLC — includes certificate of formation, operating agreement and EIN application; state filing fee billed separately" is far clearer than "Corporate services". If you bill a flat fee in stages, invoice each stage when it is complete — for example 50% on engagement and 50% on filing — and reference the stage on each invoice. Third-party costs such as state filing fees are usually listed as separate disbursements so the client can see what goes to the government and what goes to the firm.</p>
+<p>For a fixed-fee matter, describe the scope precisely so the client can see what the price covers. A line such as "Formation of Delaware LLC: includes certificate of formation, operating agreement and EIN application; state filing fee billed separately" is far clearer than "Corporate services". If you bill a flat fee in stages, invoice each stage when it is complete, for example 50% on engagement and 50% on filing, and reference the stage on each invoice. Third-party costs such as state filing fees are usually listed as separate disbursements so the client can see what goes to the government and what goes to the firm.</p>
 <p>Some jurisdictions have rules about whether a flat fee paid in advance must be held in trust until earned, so check your professional conduct rules before treating advance flat fees as the firm's money.</p>
 <h3>Contingency fee statements</h3>
 <p>When a contingency matter settles, the closing statement typically shows the gross recovery, the agreed percentage fee, costs advanced by the firm, any liens or other deductions, and the net amount paid to the client. Many jurisdictions require a written closing statement for contingency matters and regulate how fees and costs are calculated, so follow your local rules. Present the calculation line by line so the client can follow every deduction from the gross amount to their net payment.</p>
 <p>Even in contingency cases, firms sometimes invoice clients periodically for costs, if the engagement letter says the client is responsible for them as they arise. In that case, a regular itemized cost invoice with receipts keeps the client informed and avoids a surprise at settlement.</p>
 
 <h2>Retainers and trust accounts</h2>
-<p>Retainers are where legal invoicing differs most from ordinary business billing. Funds a client pays in advance for future fees are generally client money until earned, and in many jurisdictions must be held in a separate client trust account — an IOLTA or similar account in the US, a client account under the SRA rules in England and Wales. You typically may only transfer funds to the firm's operating account once fees are earned and billed, and the invoice should show the transfer.</p>
+<p>Retainers are where legal invoicing differs most from ordinary business billing. Funds a client pays in advance for future fees are generally client money until earned, and in many jurisdictions must be held in a separate client trust account: an IOLTA or similar account in the US, a client account under the SRA rules in England and Wales. You typically may only transfer funds to the firm's operating account once fees are earned and billed, and the invoice should show the transfer.</p>
 <p>These rules are strict and vary by state and country, so follow the guidance of your bar association or regulator and take advice if you are unsure. For the general mechanics of billing against an advance, see our <a href="/blog/retainer-invoice">retainer invoice guide</a>. Many firms also send a periodic <a href="/blog/statement-of-account">statement of account</a> showing all invoices, payments and trust balances for a client.</p>
 
 <h2>Expenses, disbursements and tax</h2>
 <p>Show costs separately from fees, and only bill what the engagement letter allows. Attach receipts for larger items. Some firms mark up certain costs (such as in-house copying); if you do, disclose it in advance.</p>
-<p>Tax treatment varies. In the UK, legal services supplied by a VAT-registered firm are generally standard-rated at 20%, while some true disbursements paid on the client's behalf may be outside the scope of VAT — HMRC applies specific tests, so check with your accountant. Our <a href="/blog/vat-invoice-guide">VAT invoice guide</a> covers the fields a VAT invoice needs, and the <a href="/invoice-generator/uk">UK invoice generator</a> includes VAT number fields. Most US states do not tax legal services, but a few tax some professional services, so confirm locally.</p>
+<p>Tax treatment varies. In the UK, legal services supplied by a VAT-registered firm are generally standard-rated at 20%, while some true disbursements paid on the client's behalf may be outside the scope of VAT. HMRC applies specific tests, so check with your accountant. Our <a href="/blog/vat-invoice-guide">VAT invoice guide</a> covers the fields a VAT invoice needs, and the <a href="/invoice-generator/uk">UK invoice generator</a> includes VAT number fields. Most US states do not tax legal services, but a few tax some professional services, so confirm locally.</p>
 
 <h2>E-billing for corporate clients</h2>
 <p>Many large companies and insurers require law firms to submit invoices through an e-billing platform in a standardized format such as LEDES, with UTBMS task and activity codes on each time entry. They may also apply billing guidelines that cap rates, restrict who can bill for meetings or disallow certain expenses. If a client uses e-billing, you will usually need practice-management software that exports the required file; a PDF invoice from a generator is still useful for smaller clients and as a human-readable copy.</p>
@@ -415,7 +415,7 @@ export const INDUSTRY_POSTS_B: PostDraft[] = [
 
 <h2>How trucking billing works</h2>
 <p>Freight billing is document-driven. Before the truck moves, the broker or shipper issues a <strong>rate confirmation</strong> (often called a rate con) setting the agreed price and terms for the load. At pickup, the shipper signs a <strong>bill of lading (BOL)</strong> describing the freight. At delivery, the receiver signs the BOL or a separate <strong>proof of delivery (POD)</strong>. Your invoice turns those documents into a bill.</p>
-<p>Because brokers process hundreds of invoices, they match each one against the rate con and POD. If the load number, rate or accessorials don't match exactly, the invoice is held — which is the main reason carriers wait longer than their terms. Treat the load number the way an office supplier treats a <a href="/blog/po-number-on-invoice">PO number on an invoice</a>: it must be on the document, and it must be right.</p>
+<p>Because brokers process hundreds of invoices, they match each one against the rate con and POD. If the load number, rate or accessorials don't match exactly, the invoice is held, which is the main reason carriers wait longer than their terms. Treat the load number the way an office supplier treats a <a href="/blog/po-number-on-invoice">PO number on an invoice</a>: it must be on the document, and it must be right.</p>
 
 <h2>What to include on a trucking invoice template</h2>
 <table><thead><tr><th>Field</th><th>What to enter</th></tr></thead><tbody>
@@ -431,25 +431,25 @@ export const INDUSTRY_POSTS_B: PostDraft[] = [
 <p>Give every load its own invoice and its own number. A simple sequence such as <code>TRK-2026-0318</code> works well, and our <a href="/blog/invoice-numbering-system">invoice numbering system</a> guide explains how to keep it consistent.</p>
 
 <h2>Common freight charges and accessorials</h2>
-<p>Bill only charges that are on the rate confirmation or approved in writing by the broker — many will not pay an accessorial they did not authorize. Common lines include:</p>
+<p>Bill only charges that are on the rate confirmation or approved in writing by the broker. Many will not pay an accessorial they did not authorize. Common lines include:</p>
 <ul>
-<li><strong>Line haul</strong> — the base rate for moving the load, either a flat rate or a per-mile rate.</li>
-<li><strong>Fuel surcharge</strong> — often a per-mile amount tied to a fuel price index, or included in an all-in rate.</li>
-<li><strong>Detention</strong> — waiting time at the shipper or receiver beyond the free time stated on the rate con, billed hourly.</li>
-<li><strong>Lumper fee</strong> — reimbursement for paying a third-party crew to unload, supported by the lumper receipt.</li>
-<li><strong>Layover</strong> — a flat charge when the truck is held overnight or longer.</li>
-<li><strong>TONU (truck ordered, not used)</strong> — a fee when a load is cancelled after the truck is dispatched.</li>
-<li><strong>Stop-off charges</strong> — for extra pickups or drops.</li>
-<li><strong>Driver assist, tarping or other handling</strong> — where the rate con allows it.</li>
-<li><strong>Scale tickets, tolls or permits</strong> — where agreed as reimbursable.</li>
+<li><strong>Line haul:</strong> the base rate for moving the load, either a flat rate or a per-mile rate.</li>
+<li><strong>Fuel surcharge:</strong> often a per-mile amount tied to a fuel price index, or included in an all-in rate.</li>
+<li><strong>Detention:</strong> waiting time at the shipper or receiver beyond the free time stated on the rate con, billed hourly.</li>
+<li><strong>Lumper fee:</strong> reimbursement for paying a third-party crew to unload, supported by the lumper receipt.</li>
+<li><strong>Layover:</strong> a flat charge when the truck is held overnight or longer.</li>
+<li><strong>TONU (truck ordered, not used):</strong> a fee when a load is cancelled after the truck is dispatched.</li>
+<li><strong>Stop-off charges:</strong> for extra pickups or drops.</li>
+<li><strong>Driver assist, tarping or other handling:</strong> where the rate con allows it.</li>
+<li><strong>Scale tickets, tolls or permits:</strong> where agreed as reimbursable.</li>
 </ul>
 
 <h2>Worked example: a freight invoice for one load</h2>
 <p>An owner-operator hauls a dry van load 1,150 miles from Dallas, TX, to Atlanta, GA. The rate con sets $2.10 per mile line haul, a $0.48 per mile fuel surcharge, and detention at $75 per hour after two free hours. The truck waited five hours at the receiver, so three hours of detention apply. The driver paid a $185 lumper fee.</p>
 <table><thead><tr><th>Description</th><th>Qty</th><th>Rate</th><th>Amount</th></tr></thead><tbody>
-<tr><td>Line haul — Load #BRK-55821, Dallas TX to Atlanta GA (miles)</td><td>1,150</td><td>$2.10</td><td>$2,415.00</td></tr>
+<tr><td>Line haul: Load #BRK-55821, Dallas TX to Atlanta GA (miles)</td><td>1,150</td><td>$2.10</td><td>$2,415.00</td></tr>
 <tr><td>Fuel surcharge (miles)</td><td>1,150</td><td>$0.48</td><td>$552.00</td></tr>
-<tr><td>Detention at receiver — arrived 07:00, departed 12:00, 2 hours free (hours)</td><td>3</td><td>$75.00</td><td>$225.00</td></tr>
+<tr><td>Detention at receiver: arrived 07:00, departed 12:00, 2 hours free (hours)</td><td>3</td><td>$75.00</td><td>$225.00</td></tr>
 <tr><td>Lumper fee reimbursement (receipt #L-20931 attached)</td><td>1</td><td>$185.00</td><td>$185.00</td></tr>
 <tr><td colspan="3"><strong>Total due</strong></td><td><strong>$3,377.00</strong></td></tr>
 </tbody></table>
@@ -458,21 +458,21 @@ export const INDUSTRY_POSTS_B: PostDraft[] = [
 
 <h2>Paperwork to send with your trucking invoice</h2>
 <ol>
-<li><strong>Signed BOL or POD</strong> — clear and legible, showing the receiver's signature and any exceptions such as shortages or damage.</li>
-<li><strong>Rate confirmation</strong> — the signed version, so the broker can match the rate instantly.</li>
-<li><strong>Accessorial support</strong> — in and out times for detention, lumper receipts, scale tickets, and any written approval for extra charges.</li>
-<li><strong>Your invoice as a PDF</strong> — named with the load number, for example <code>Invoice-TRK-2026-0318-Load-BRK-55821.pdf</code>.</li>
+<li><strong>Signed BOL or POD:</strong> clear and legible, showing the receiver's signature and any exceptions such as shortages or damage.</li>
+<li><strong>Rate confirmation:</strong> the signed version, so the broker can match the rate instantly.</li>
+<li><strong>Accessorial support:</strong> in and out times for detention, lumper receipts, scale tickets, and any written approval for extra charges.</li>
+<li><strong>Your invoice as a PDF:</strong> named with the load number, for example <code>Invoice-TRK-2026-0318-Load-BRK-55821.pdf</code>.</li>
 </ol>
 <p>Many brokers ask for all documents in a single file or upload, and some have deadlines for submitting PODs. Read the carrier packet so you know their rules before the first load.</p>
 
 <h2>Invoicing brokers vs direct shippers</h2>
 <p>Most small carriers haul for freight brokers, but many also build direct relationships with shippers. The trucking invoice template is the same; what changes is the paperwork around it.</p>
 <ul>
-<li><strong>Broker loads</strong> are governed by the broker-carrier agreement and each rate confirmation. The broker usually sets the billing method — email, an online portal or a load board's payment system — and the documents required. Follow their process exactly, because invoices submitted the wrong way are often simply not processed.</li>
+<li><strong>Broker loads</strong> are governed by the broker-carrier agreement and each rate confirmation. The broker usually sets the billing method (email, an online portal or a load board's payment system) and the documents required. Follow their process exactly, because invoices submitted the wrong way are often simply not processed.</li>
 <li><strong>Direct shipper loads</strong> rely on your own terms. Agree on rates, fuel surcharge method, detention, payment terms and credit limits in writing before the first load, since there is no rate con from a broker to fall back on. Larger shippers may also issue purchase orders or require you to be set up as a vendor first, which can include submitting tax forms and insurance certificates.</li>
 <li><strong>Dedicated or recurring lanes</strong> can be invoiced per load or on a weekly statement listing every load, with each load's BOL attached. Even on a weekly statement, keep each load as a separate line with its own reference so the customer can reconcile it.</li>
 </ul>
-<p>Whoever you haul for, check the customer's credit before you accept a load — an unpaid freight bill on a long run can wipe out a week's profit.</p>
+<p>Whoever you haul for, check the customer's credit before you accept a load: an unpaid freight bill on a long run can wipe out a week's profit.</p>
 
 <h2>Payment terms, quick pay and factoring</h2>
 <p>Broker payment terms are set in your carrier agreement or on the rate con, and 30 days or longer is common. That gap is hard on small fleets that pay for fuel, insurance and maintenance up front. Carriers usually choose between three options:</p>
@@ -484,7 +484,7 @@ export const INDUSTRY_POSTS_B: PostDraft[] = [
 <p>If you factor, your invoice must usually show the factoring company's remit-to details, and the broker will have received a notice of assignment. Paying the wrong party causes long delays, so double-check the remit-to on every invoice. Our guide to <a href="/blog/invoice-factoring">invoice factoring</a> explains recourse vs non-recourse arrangements and what to look for in a contract. For bank payments, see <a href="/blog/ach-vs-wire-transfer">ACH vs wire transfer</a>, since most brokers pay by ACH.</p>
 
 <h2>Avoiding short pays and disputes</h2>
-<p>A short pay — the broker paying less than the invoice — usually comes from an unapproved accessorial, a missing document, or a claim for damaged freight. Reduce the risk by:</p>
+<p>A short pay (the broker paying less than the invoice) usually comes from an unapproved accessorial, a missing document, or a claim for damaged freight. Reduce the risk by:</p>
 <ul>
 <li>Getting written approval for any accessorial not on the original rate con before you bill it.</li>
 <li>Recording times at the dock and asking the shipper or receiver to note them on the BOL.</li>
@@ -552,11 +552,11 @@ export const INDUSTRY_POSTS_B: PostDraft[] = [
 
 <h2>How auto repair pricing works</h2>
 <h3>Labor: flat rate vs actual time</h3>
-<p>Most shops bill labor using a <strong>flat-rate</strong> method: a labor time guide lists the standard hours for each job on each vehicle, and the shop charges those "book hours" times its posted labor rate, whatever the actual time taken. Other shops — especially for diagnosis, custom work or older vehicles — bill <strong>actual time</strong>. Either is fine as long as you are consistent and transparent. State the hours and rate on every labor line rather than showing a single lump sum.</p>
+<p>Most shops bill labor using a <strong>flat-rate</strong> method: a labor time guide lists the standard hours for each job on each vehicle, and the shop charges those "book hours" times its posted labor rate, whatever the actual time taken. Other shops, especially for diagnosis, custom work or older vehicles, bill <strong>actual time</strong>. Either is fine as long as you are consistent and transparent. State the hours and rate on every labor line rather than showing a single lump sum.</p>
 <h3>Parts: markup and part type</h3>
 <p>Shops usually sell parts at a markup over their cost, which is a normal part of the business. What matters on the invoice is clarity: name each part, show its part number and quantity, and say whether it is new OEM, new aftermarket, used or rebuilt. Some states require that information, and customers increasingly ask for it.</p>
 <h3>Fees</h3>
-<p>Shop supplies and environmental fees are common. Disclose them on the estimate, show them as separate lines, and keep them reasonable — some states cap or regulate how they are charged.</p>
+<p>Shop supplies and environmental fees are common. Disclose them on the estimate, show them as separate lines, and keep them reasonable. Some states cap or regulate how they are charged.</p>
 
 <h2>Typical line items on a mechanic invoice</h2>
 <ul>
@@ -572,10 +572,10 @@ export const INDUSTRY_POSTS_B: PostDraft[] = [
 </ul>
 
 <h2>Worked example: front brake job invoice</h2>
-<p>A customer brings in a 2019 sedan with grinding brakes. The shop's labor rate is $135 per hour. The job is 1.8 book hours for front pads and rotors, plus 0.5 hours of diagnosis. In this example the shop's state taxes parts at 7.25% but not separately stated labor or the shop supplies fee — your state may differ.</p>
+<p>A customer brings in a 2019 sedan with grinding brakes. The shop's labor rate is $135 per hour. The job is 1.8 book hours for front pads and rotors, plus 0.5 hours of diagnosis. In this example the shop's state taxes parts at 7.25% but not separately stated labor or the shop supplies fee. Your state may differ.</p>
 <table><thead><tr><th>Description</th><th>Qty</th><th>Rate</th><th>Amount</th></tr></thead><tbody>
-<tr><td>Labor — inspect and diagnose brake noise (hours)</td><td>0.5</td><td>$135.00</td><td>$67.50</td></tr>
-<tr><td>Labor — replace front brake pads and rotors (book hours)</td><td>1.8</td><td>$135.00</td><td>$243.00</td></tr>
+<tr><td>Labor: inspect and diagnose brake noise (hours)</td><td>0.5</td><td>$135.00</td><td>$67.50</td></tr>
+<tr><td>Labor: replace front brake pads and rotors (book hours)</td><td>1.8</td><td>$135.00</td><td>$243.00</td></tr>
 <tr><td>Front brake pad set, ceramic, new aftermarket, part #BP-4471</td><td>1</td><td>$68.99</td><td>$68.99</td></tr>
 <tr><td>Front brake rotor, new aftermarket, part #BR-2290</td><td>2</td><td>$74.50</td><td>$149.00</td></tr>
 <tr><td>Brake fluid DOT 3, 32 oz</td><td>1</td><td>$14.99</td><td>$14.99</td></tr>
@@ -594,7 +594,7 @@ export const INDUSTRY_POSTS_B: PostDraft[] = [
 <p>US sales tax treatment of auto repair varies significantly by state. Many states tax parts but not repair labor when it is stated separately on the invoice; others tax labor as well; and treatment of shop supplies and disposal fees differs again. Some states also have specific tire or battery fees. Because a combined "parts and labor" line can make the whole amount taxable in some states, it is safer to keep them separate. Confirm your obligations with your state revenue department or an accountant, and see our overview of <a href="/blog/sales-tax-on-invoices-us">sales tax on invoices in the US</a> for the general principles.</p>
 
 <h2>Estimates, authorization and consumer rules</h2>
-<p>Auto repair is one of the more regulated consumer trades. Several states — California is a well-known example — require shops to be registered, to give a written estimate, to get the customer's authorization before work begins or before exceeding the estimate, and to provide an itemized invoice describing parts and labor. Many states also give customers the right to have replaced parts returned, unless they must be sent back for a warranty or core charge. Rules vary, so check with your state's consumer protection or automotive repair agency.</p>
+<p>Auto repair is one of the more regulated consumer trades. Several states (California is a well-known example) require shops to be registered, to give a written estimate, to get the customer's authorization before work begins or before exceeding the estimate, and to provide an itemized invoice describing parts and labor. Many states also give customers the right to have replaced parts returned, unless they must be sent back for a warranty or core charge. Rules vary, so check with your state's consumer protection or automotive repair agency.</p>
 <p>Good practice everywhere:</p>
 <ol>
 <li>Give a written estimate before starting and record the customer's approval, including any phone approvals with date, time and amount.</li>
@@ -606,7 +606,7 @@ export const INDUSTRY_POSTS_B: PostDraft[] = [
 <h2>Warranty work, comebacks and customer-supplied parts</h2>
 <p>Some situations need special handling on a mechanic invoice so your records stay clear and your margins stay intact.</p>
 <h3>Warranty repairs and comebacks</h3>
-<p>If a car comes back with a problem covered by your own parts and labor warranty, issue an invoice anyway — even if the total is zero. List the parts and labor at their normal prices, then show a warranty credit line that brings the balance to $0.00, and reference the original invoice number. This keeps a complete service history for the vehicle and shows you what comebacks cost. Where a parts supplier reimburses you for a failed part, record that separately in your books.</p>
+<p>If a car comes back with a problem covered by your own parts and labor warranty, issue an invoice anyway, even if the total is zero. List the parts and labor at their normal prices, then show a warranty credit line that brings the balance to $0.00, and reference the original invoice number. This keeps a complete service history for the vehicle and shows you what comebacks cost. Where a parts supplier reimburses you for a failed part, record that separately in your books.</p>
 <h3>Manufacturer and extended warranty claims</h3>
 <p>Work billed to a manufacturer or an extended warranty company usually follows that payer's own claim process and labor times. The customer's invoice should show only what they owe, such as a deductible, plus any work outside the coverage.</p>
 <h3>Customer-supplied parts</h3>
@@ -621,7 +621,7 @@ export const INDUSTRY_POSTS_B: PostDraft[] = [
 <li><strong>Take payment at pickup.</strong> Accept cards and digital payments; our guide to <a href="/blog/how-to-accept-credit-card-payments">accepting credit card payments</a> compares the options.</li>
 <li><strong>Take a deposit on large or special-order jobs.</strong> A <a href="/blog/deposit-invoice">deposit invoice</a> protects you when ordering expensive parts.</li>
 <li><strong>Print warranty terms</strong> on the invoice so the customer knows what is covered and for how long.</li>
-<li><strong>Avoid common errors</strong> such as wrong VINs, missing mileage or arithmetic slips — see <a href="/blog/common-invoice-mistakes">common invoice mistakes</a>.</li>
+<li><strong>Avoid common errors</strong> such as wrong VINs, missing mileage or arithmetic slips. See <a href="/blog/common-invoice-mistakes">common invoice mistakes</a>.</li>
 </ul>
 
 <p>For cosmetic work rather than repairs, see the <a href="/blog/car-detailing-invoice-template">car detailing invoice template</a>.</p>
@@ -688,18 +688,18 @@ export const INDUSTRY_POSTS_B: PostDraft[] = [
 <li><strong>Tax:</strong> only if you are registered and it applies.</li>
 <li><strong>Payment terms and methods</strong>, plus how intellectual property or code ownership transfers on payment, if your contract says so.</li>
 </ul>
-<p>Number invoices consistently across all clients and projects — our <a href="/tools/invoice-number-generator">invoice number generator</a> can create a format such as <code>WEB-2026-027</code>.</p>
+<p>Number invoices consistently across all clients and projects. Our <a href="/tools/invoice-number-generator">invoice number generator</a> can create a format such as <code>WEB-2026-027</code>.</p>
 
 <h2>Worked example: milestone invoice for a website build</h2>
 <p>A developer is building a small-business website for a fixed price of $12,000, billed in three milestones: 30% deposit, 40% on completion of design and front-end build, and 30% at launch. The deposit is paid. During the build, the client approved one change request for a booking form integration at six hours of work at $95 per hour, and the developer bought a premium plugin license and a domain on the client's behalf.</p>
 <table><thead><tr><th>Description</th><th>Qty</th><th>Rate</th><th>Amount</th></tr></thead><tbody>
-<tr><td>Milestone 2 of 3 — design and front-end build complete (40% of $12,000 fixed fee)</td><td>1</td><td>$4,800.00</td><td>$4,800.00</td></tr>
-<tr><td>Change request CR-03 — booking form integration (hours, approved 8 Oct 2026)</td><td>6</td><td>$95.00</td><td>$570.00</td></tr>
+<tr><td>Milestone 2 of 3: design and front-end build complete (40% of $12,000 fixed fee)</td><td>1</td><td>$4,800.00</td><td>$4,800.00</td></tr>
+<tr><td>Change request CR-03: booking form integration (hours, approved 8 Oct 2026)</td><td>6</td><td>$95.00</td><td>$570.00</td></tr>
 <tr><td>Premium forms plugin license, 1 year, passed through at cost</td><td>1</td><td>$249.00</td><td>$249.00</td></tr>
 <tr><td>Domain registration, 1 year, registered in client's name, at cost</td><td>1</td><td>$18.00</td><td>$18.00</td></tr>
 <tr><td colspan="3"><strong>Total due by 5 November 2026</strong></td><td><strong>$5,637.00</strong></td></tr>
 </tbody></table>
-<p>The maths: 40% of $12,000 is $4,800.00; the change request is 6 × $95 = $570.00; pass-through costs are $249.00 + $18.00 = $267.00. Total: $4,800.00 + $570.00 + $267.00 = $5,637.00. The final milestone invoice at launch will be 30% of $12,000 = $3,600.00, plus any further approved changes. A short note on the invoice — "Paid to date: $3,600.00 deposit (INV WEB-2026-019). Remaining after this invoice: $3,600.00 at launch" — helps the client follow the project budget. No tax is shown here; whether tax applies depends on your location and your client's (see below).</p>
+<p>The maths: 40% of $12,000 is $4,800.00; the change request is 6 × $95 = $570.00; pass-through costs are $249.00 + $18.00 = $267.00. Total: $4,800.00 + $570.00 + $267.00 = $5,637.00. The final milestone invoice at launch will be 30% of $12,000 = $3,600.00, plus any further approved changes. A short note on the invoice ("Paid to date: $3,600.00 deposit (INV WEB-2026-019). Remaining after this invoice: $3,600.00 at launch") helps the client follow the project budget. No tax is shown here; whether tax applies depends on your location and your client's (see below).</p>
 
 <h2>Billing change requests, hosting and licenses</h2>
 <h3>Change requests</h3>
@@ -707,14 +707,14 @@ export const INDUSTRY_POSTS_B: PostDraft[] = [
 <h3>Third-party costs</h3>
 <p>Hosting, domains, premium plugins and SaaS tools are best registered in the client's name and paid by the client directly, so they own their assets if you part ways. Where you do pay on their behalf, invoice each cost with its term ("1 year, renews 8 Oct 2027") and be transparent about whether you add a handling fee.</p>
 <h3>Ongoing maintenance</h3>
-<p>After launch, a monthly maintenance retainer — updates, backups, security monitoring and a few hours of small changes — gives clients peace of mind and you predictable income. Invoice it on the same date each month and list what the retainer covered.</p>
+<p>After launch, a monthly maintenance retainer (updates, backups, security monitoring and a few hours of small changes) gives clients peace of mind and you predictable income. Invoice it on the same date each month and list what the retainer covered.</p>
 
 <h2>Writing line items clients approve quickly</h2>
 <p>Clients who aren't technical often can't judge a development invoice from code-level detail, and finance teams can't judge it at all. The goal is a description that connects each charge to something the client asked for and can recognize. Compare these examples:</p>
 <table><thead><tr><th>Vague</th><th>Clear</th></tr></thead><tbody>
 <tr><td>Development work</td><td>Milestone 2: responsive front-end build of homepage and 6 page templates, approved in staging 15 Oct 2026</td></tr>
-<tr><td>Fixes</td><td>Fixed checkout error on mobile Safari and broken image uploads in admin (tickets #41, #44) — 3.5 hours</td></tr>
-<tr><td>Extras</td><td>Change request CR-03: booking form integrated with client's calendar tool — 6 hours, approved by email 8 Oct 2026</td></tr>
+<tr><td>Fixes</td><td>Fixed checkout error on mobile Safari and broken image uploads in admin (tickets #41, #44): 3.5 hours</td></tr>
+<tr><td>Extras</td><td>Change request CR-03: booking form integrated with client's calendar tool: 6 hours, approved by email 8 Oct 2026</td></tr>
 <tr><td>Hosting</td><td>Managed hosting, 12 months from 1 Nov 2026, passed through at cost</td></tr>
 </tbody></table>
 <p>A few habits make this easier:</p>
@@ -730,7 +730,7 @@ export const INDUSTRY_POSTS_B: PostDraft[] = [
 <p>Web developers often work for clients in other states or countries, which makes tax more complicated:</p>
 <ul>
 <li><strong>US sales tax:</strong> most states don't tax custom web development services, but some tax certain digital products, software or data processing services. Rules vary by state, so check with an accountant.</li>
-<li><strong>UK and EU VAT:</strong> if you are VAT-registered, domestic business clients are usually charged VAT. For business clients in another country, the reverse charge often applies, and the invoice needs specific wording — see our <a href="/blog/reverse-charge-invoice">reverse charge invoice</a> guide.</li>
+<li><strong>UK and EU VAT:</strong> if you are VAT-registered, domestic business clients are usually charged VAT. For business clients in another country, the reverse charge often applies, and the invoice needs specific wording. See our <a href="/blog/reverse-charge-invoice">reverse charge invoice</a> guide.</li>
 <li><strong>Currency and payments:</strong> state the currency explicitly, agree who pays transfer fees, and include the correct bank details. Our guide to <a href="/blog/invoice-international-clients">invoicing international clients</a> covers the practicalities.</li>
 </ul>
 
@@ -796,7 +796,7 @@ export const INDUSTRY_POSTS_B: PostDraft[] = [
 <h2>What to include on a tutoring invoice template</h2>
 <ul>
 <li><strong>Your details:</strong> name or business name, email, phone and, if registered, your tax ID.</li>
-<li><strong>Bill to:</strong> the parent or guardian who pays — not the child — with their email and address.</li>
+<li><strong>Bill to:</strong> the parent or guardian who pays (not the child), with their email and address.</li>
 <li><strong>Student name:</strong> essential if a family has more than one child in lessons.</li>
 <li><strong>Invoice number:</strong> a unique number for each invoice; our <a href="/tools/invoice-number-generator">invoice number generator</a> can create a simple format such as <code>TUT-2026-034</code>.</li>
 <li><strong>Billing period, issue date and due date.</strong></li>
@@ -824,8 +824,8 @@ export const INDUSTRY_POSTS_B: PostDraft[] = [
 <h2>Worked example: a monthly tutoring invoice</h2>
 <p>A math tutor charges $60 per hour and bills monthly in arrears. In October 2026 the student had seven one-hour algebra sessions and one 1.5-hour test-prep session, cancelled one session with less than 24 hours' notice (the tutor's policy is a 50% fee), and the tutor bought a practice workbook. The family has two children with the tutor, so a 5% sibling discount applies to tuition only.</p>
 <table><thead><tr><th>Description</th><th>Qty</th><th>Rate</th><th>Amount</th></tr></thead><tbody>
-<tr><td>Algebra tutoring, 1 hour — 1, 6, 8, 13, 20, 22, 27 Oct (sessions)</td><td>7</td><td>$60.00</td><td>$420.00</td></tr>
-<tr><td>SAT math test prep — 29 Oct (hours)</td><td>1.5</td><td>$60.00</td><td>$90.00</td></tr>
+<tr><td>Algebra tutoring, 1 hour: 1, 6, 8, 13, 20, 22, 27 Oct (sessions)</td><td>7</td><td>$60.00</td><td>$420.00</td></tr>
+<tr><td>SAT math test prep: 29 Oct (hours)</td><td>1.5</td><td>$60.00</td><td>$90.00</td></tr>
 <tr><td>Late cancellation, 15 Oct (50% of 1-hour session, per policy)</td><td>1</td><td>$30.00</td><td>$30.00</td></tr>
 <tr><td>SAT math practice workbook</td><td>1</td><td>$32.95</td><td>$32.95</td></tr>
 <tr><td colspan="3">Subtotal</td><td>$572.95</td></tr>
@@ -836,9 +836,9 @@ export const INDUSTRY_POSTS_B: PostDraft[] = [
 
 <h2>Packages, cancellations and discounts</h2>
 <h3>Prepaid packages</h3>
-<p>If you sell a package, invoice it once when sold — "10 × 1-hour English sessions, valid until 31 March 2027" — and keep a running tally of sessions used. Showing "Sessions used: 4 of 10" in the notes on later receipts or statements prevents confusion. Decide in advance what happens to unused sessions when the package expires or the student stops, and put it in your terms.</p>
+<p>If you sell a package, invoice it once when sold ("10 × 1-hour English sessions, valid until 31 March 2027") and keep a running tally of sessions used. Showing "Sessions used: 4 of 10" in the notes on later receipts or statements prevents confusion. Decide in advance what happens to unused sessions when the package expires or the student stops, and put it in your terms.</p>
 <h3>Cancellation policy</h3>
-<p>Late cancellations are the most common source of awkward conversations for tutors. A clear written policy — for example "Cancellations with less than 24 hours' notice are charged at 50%" — agreed before the first lesson makes the invoice line uncontroversial. Always show the cancellation as a separate line with the date, never hidden in a session total. If you cancel a lesson yourself, credit or reschedule it.</p>
+<p>Late cancellations are the most common source of awkward conversations for tutors. A clear written policy (for example "Cancellations with less than 24 hours' notice are charged at 50%") agreed before the first lesson makes the invoice line uncontroversial. Always show the cancellation as a separate line with the date, never hidden in a session total. If you cancel a lesson yourself, credit or reschedule it.</p>
 <h3>Discounts</h3>
 <p>Show discounts as their own line rather than lowering your rate. It keeps your standard price visible, and makes it easy to end the discount later without seeming to raise prices.</p>
 
@@ -846,7 +846,7 @@ export const INDUSTRY_POSTS_B: PostDraft[] = [
 <p>Most private tutors are self-employed, and the main tax obligation is reporting the income. Sales taxes rarely apply, but the details depend on where you work:</p>
 <ul>
 <li><strong>United States:</strong> most states do not apply sales tax to tutoring services. Self-employed tutors generally report the income on their tax return and may owe self-employment tax; check with the IRS or a tax professional.</li>
-<li><strong>United Kingdom:</strong> self-employed tutors usually register for Self Assessment. Private tuition provided by an individual tutor acting independently, in a subject ordinarily taught in schools or universities, is generally exempt from VAT — but tuition through some agencies or in other subjects may be treated differently, so check HMRC guidance or ask an accountant. The <a href="/invoice-generator/uk">UK invoice generator</a> defaults to GBP, and our guide to <a href="/blog/sole-trader-invoice-uk">invoicing as a sole trader in the UK</a> covers the required details.</li>
+<li><strong>United Kingdom:</strong> self-employed tutors usually register for Self Assessment. Private tuition provided by an individual tutor acting independently, in a subject ordinarily taught in schools or universities, is generally exempt from VAT, but tuition through some agencies or in other subjects may be treated differently, so check HMRC guidance or ask an accountant. The <a href="/invoice-generator/uk">UK invoice generator</a> defaults to GBP, and our guide to <a href="/blog/sole-trader-invoice-uk">invoicing as a sole trader in the UK</a> covers the required details.</li>
 <li><strong>No company needed:</strong> in many countries you can invoice in your own name. See <a href="/blog/how-to-invoice-without-a-business">how to invoice without a business</a> for what to include.</li>
 </ul>
 
@@ -867,7 +867,7 @@ export const INDUSTRY_POSTS_B: PostDraft[] = [
 <li><strong>Send a receipt.</strong> Some parents need proof of payment for childcare benefits or employer schemes; see our <a href="/blog/payment-receipt-template">payment receipt template</a>.</li>
 <li><strong>Follow up warmly.</strong> A friendly nudge usually works; our guide on <a href="/blog/how-to-ask-for-payment">how to ask for payment politely</a> has scripts that won't strain the relationship.</li>
 </ol>
-<p>A calm, friendly design suits tutoring well — the soft <a href="/invoice-templates/lavender">Lavender template</a> feels approachable while staying professional.</p>
+<p>A calm, friendly design suits tutoring well: the soft <a href="/invoice-templates/lavender">Lavender template</a> feels approachable while staying professional.</p>
 
 <p>Running regular childcare rather than lessons? The <a href="/blog/daycare-invoice-template">daycare invoice template</a> covers weekly tuition and the details parents need for tax purposes.</p>
 
@@ -914,11 +914,11 @@ export const INDUSTRY_POSTS_B: PostDraft[] = [
 <h2>How catering billing works</h2>
 <p>Catering is rarely a single invoice. A typical event goes through several documents:</p>
 <ol>
-<li><strong>Quote or proposal</strong> — the menu, estimated guest count and pricing. See <a href="/blog/invoice-vs-quotation">invoice vs quotation</a> for how the two differ.</li>
-<li><strong>Contract and deposit invoice</strong> — the client signs and pays a deposit to secure the date.</li>
-<li><strong>Interim payment</strong> — some caterers take a second payment closer to the event.</li>
-<li><strong>Final count</strong> — the client confirms the guaranteed guest count by a deadline, often one to two weeks before.</li>
-<li><strong>Final invoice</strong> — the full event cost, less all payments received, with the balance due before or shortly after the event.</li>
+<li><strong>Quote or proposal:</strong> the menu, estimated guest count and pricing. See <a href="/blog/invoice-vs-quotation">invoice vs quotation</a> for how the two differ.</li>
+<li><strong>Contract and deposit invoice:</strong> the client signs and pays a deposit to secure the date.</li>
+<li><strong>Interim payment:</strong> some caterers take a second payment closer to the event.</li>
+<li><strong>Final count:</strong> the client confirms the guaranteed guest count by a deadline, often one to two weeks before.</li>
+<li><strong>Final invoice:</strong> the full event cost, less all payments received, with the balance due before or shortly after the event.</li>
 </ol>
 <p>Our <a href="/blog/deposit-invoice">deposit invoice</a> guide explains how to bill the first stage, and how to show deposits on the final bill.</p>
 
@@ -935,28 +935,28 @@ export const INDUSTRY_POSTS_B: PostDraft[] = [
 <tr><td>Payments</td><td>Deposits and interim payments received with dates</td></tr>
 <tr><td>Balance and terms</td><td>Balance due, due date, payment methods, cancellation terms</td></tr>
 </tbody></table>
-<p>Give the deposit invoice and the final invoice separate numbers — our <a href="/tools/invoice-number-generator">invoice number generator</a> can set up a format like <code>CAT-2026-0087</code> — and reference the deposit invoice number on the final bill.</p>
+<p>Give the deposit invoice and the final invoice separate numbers (our <a href="/tools/invoice-number-generator">invoice number generator</a> can set up a format like <code>CAT-2026-0087</code>) and reference the deposit invoice number on the final bill.</p>
 
 <h2>Typical catering line items</h2>
 <ul>
-<li><strong>Menu packages</strong> priced per person, such as "Buffet dinner package — 2 mains, 3 sides, salad, bread".</li>
+<li><strong>Menu packages</strong> priced per person, such as "Buffet dinner package: 2 mains, 3 sides, salad, bread".</li>
 <li><strong>Per-item food</strong> such as platters, passed appetizers, desserts or late-night snacks.</li>
-<li><strong>Beverage service</strong> — soft drinks, coffee and tea, bar packages per person or per hour, where licensed.</li>
-<li><strong>Staffing</strong> — servers, bartenders, chefs and event captain by the hour, often with a minimum.</li>
-<li><strong>Rentals</strong> — linens, china, flatware, glassware, chafing dishes, tables and chairs.</li>
+<li><strong>Beverage service:</strong> soft drinks, coffee and tea, bar packages per person or per hour, where licensed.</li>
+<li><strong>Staffing:</strong> servers, bartenders, chefs and event captain by the hour, often with a minimum.</li>
+<li><strong>Rentals:</strong> linens, china, flatware, glassware, chafing dishes, tables and chairs.</li>
 <li><strong>Delivery, setup and breakdown</strong> fees, and travel fees for distant venues.</li>
 <li><strong>Cake cutting or corkage fees</strong> when the client supplies their own cake or wine.</li>
-<li><strong>Service charge</strong> — a percentage, typically of food and beverage.</li>
+<li><strong>Service charge:</strong> a percentage, typically of food and beverage.</li>
 <li><strong>Tax</strong> on taxable items.</li>
 </ul>
 
 <h2>Worked example: final wedding catering invoice</h2>
-<p>A caterer serves a wedding on 14 November 2026 with a guaranteed count of 120 guests. The contract sets an 18% service charge on food, and the client paid a $2,500 deposit when booking. In this example, sales tax of 8% applies to the full subtotal including the service charge — your state's rules may differ.</p>
+<p>A caterer serves a wedding on 14 November 2026 with a guaranteed count of 120 guests. The contract sets an 18% service charge on food, and the client paid a $2,500 deposit when booking. In this example, sales tax of 8% applies to the full subtotal including the service charge. Your state's rules may differ.</p>
 <table><thead><tr><th>Description</th><th>Qty</th><th>Rate</th><th>Amount</th></tr></thead><tbody>
 <tr><td>Buffet dinner package (per guest)</td><td>120</td><td>$48.00</td><td>$5,760.00</td></tr>
 <tr><td>Passed appetizers, 4 varieties (per guest)</td><td>120</td><td>$9.50</td><td>$1,140.00</td></tr>
-<tr><td>Servers — 5 staff × 6 hours (staff hours)</td><td>30</td><td>$35.00</td><td>$1,050.00</td></tr>
-<tr><td>Bartenders — 2 staff × 5 hours (staff hours)</td><td>10</td><td>$45.00</td><td>$450.00</td></tr>
+<tr><td>Servers: 5 staff × 6 hours (staff hours)</td><td>30</td><td>$35.00</td><td>$1,050.00</td></tr>
+<tr><td>Bartenders: 2 staff × 5 hours (staff hours)</td><td>10</td><td>$45.00</td><td>$450.00</td></tr>
 <tr><td>Linen, china and glassware rental (package)</td><td>1</td><td>$640.00</td><td>$640.00</td></tr>
 <tr><td colspan="3">Subtotal</td><td>$9,040.00</td></tr>
 <tr><td colspan="3">Service charge, 18% of food ($6,900.00)</td><td>$1,242.00</td></tr>
@@ -979,7 +979,7 @@ export const INDUSTRY_POSTS_B: PostDraft[] = [
 <h2>Corporate catering and drop-off orders</h2>
 <p>Not every catering job is a full-service event. Office lunches, boxed meals and drop-off platters are billed more like a product sale, and corporate clients have their own expectations:</p>
 <ul>
-<li><strong>Itemize by order.</strong> List each item with quantity and unit price — "Boxed lunch, turkey and avocado, 18 × $16.50" — plus delivery and any packaging or disposables fee.</li>
+<li><strong>Itemize by order.</strong> List each item with quantity and unit price ("Boxed lunch, turkey and avocado, 18 × $16.50"), plus delivery and any packaging or disposables fee.</li>
 <li><strong>Reference the order.</strong> Include the order date, delivery date and time, delivery address and the name of the person who ordered, so the company's accounts team can match the invoice to an internal request or purchase order.</li>
 <li><strong>Consolidate regular orders.</strong> For clients who order weekly, agree to a monthly statement-style invoice listing every order with its date and amount, instead of dozens of small invoices.</li>
 <li><strong>Agree payment terms.</strong> Businesses often expect 14 or 30 days to pay, unlike private event clients who pay before the day. Decide what credit you are comfortable giving, and take card payment at order time for new or occasional customers.</li>
@@ -987,7 +987,7 @@ export const INDUSTRY_POSTS_B: PostDraft[] = [
 </ul>
 
 <h2>Changes after the final invoice</h2>
-<p>Events change. If the actual guest count exceeded the guarantee, issue a supplementary invoice for the extra guests at the agreed per-person rate. If you need to refund or reduce something after the invoice was issued — for example a rental item that never arrived — issue a <a href="/blog/credit-note-guide">credit note</a> rather than editing the original invoice, so your records stay consistent. Lower actual attendance usually doesn't reduce the bill below the guaranteed count, which is exactly why the guarantee exists; make sure your contract says so.</p>
+<p>Events change. If the actual guest count exceeded the guarantee, issue a supplementary invoice for the extra guests at the agreed per-person rate. If you need to refund or reduce something after the invoice was issued (for example a rental item that never arrived), issue a <a href="/blog/credit-note-guide">credit note</a> rather than editing the original invoice, so your records stay consistent. Lower actual attendance usually doesn't reduce the bill below the guaranteed count, which is exactly why the guarantee exists; make sure your contract says so.</p>
 
 <h2>Tips to protect your cash flow as a caterer</h2>
 <ul>
@@ -1048,7 +1048,7 @@ export const INDUSTRY_POSTS_B: PostDraft[] = [
 <tr><td>Fixed-price installation</td><td>One quoted price for equipment, labor, materials and permits, often with a deposit</td><td>System replacements and new installs</td></tr>
 <tr><td>Maintenance agreement</td><td>Annual or monthly fee for scheduled tune-ups and member benefits</td><td>Residential and light commercial customers</td></tr>
 </tbody></table>
-<p>Whichever model you use, give the customer the price before the work. A written estimate for larger jobs protects both sides — see <a href="/blog/invoice-vs-estimate">invoice vs estimate</a> for how the two documents fit together.</p>
+<p>Whichever model you use, give the customer the price before the work. A written estimate for larger jobs protects both sides. See <a href="/blog/invoice-vs-estimate">invoice vs estimate</a> for how the two documents fit together.</p>
 
 <h2>What to include on an HVAC invoice template</h2>
 <ul>
@@ -1064,7 +1064,7 @@ export const INDUSTRY_POSTS_B: PostDraft[] = [
 <li><strong>Tax, total, payments and balance due.</strong></li>
 <li><strong>Warranty and recommendations:</strong> parts and labor warranty terms, and any recommended follow-up work.</li>
 </ul>
-<p>A consistent numbering format such as <code>HVAC-2026-0512</code> — easy to set up with our <a href="/tools/invoice-number-generator">invoice number generator</a> — lets you look up any unit's service history by invoice.</p>
+<p>A consistent numbering format such as <code>HVAC-2026-0512</code> (easy to set up with our <a href="/tools/invoice-number-generator">invoice number generator</a>) lets you look up any unit's service history by invoice.</p>
 
 <h2>Typical HVAC line items</h2>
 <ul>
@@ -1081,10 +1081,10 @@ export const INDUSTRY_POSTS_B: PostDraft[] = [
 </ul>
 
 <h2>Worked example: emergency AC repair invoice</h2>
-<p>A homeowner's AC stops working on a Saturday evening. The technician finds a failed run capacitor and condenser fan motor, plus a low refrigerant charge. The company charges a $149 after-hours service call, $115 per hour labor, and gives maintenance-plan members 10% off labor. In this example, the state applies 6% sales tax to parts and refrigerant but not to separately stated labor or the service call — your state may differ.</p>
+<p>A homeowner's AC stops working on a Saturday evening. The technician finds a failed run capacitor and condenser fan motor, plus a low refrigerant charge. The company charges a $149 after-hours service call, $115 per hour labor, and gives maintenance-plan members 10% off labor. In this example, the state applies 6% sales tax to parts and refrigerant but not to separately stated labor or the service call. Your state may differ.</p>
 <table><thead><tr><th>Description</th><th>Qty</th><th>Rate</th><th>Amount</th></tr></thead><tbody>
 <tr><td>After-hours service call and diagnosis</td><td>1</td><td>$149.00</td><td>$149.00</td></tr>
-<tr><td>Labor — replace capacitor and condenser fan motor, check charge (hours)</td><td>2.5</td><td>$115.00</td><td>$287.50</td></tr>
+<tr><td>Labor: replace capacitor and condenser fan motor, check charge (hours)</td><td>2.5</td><td>$115.00</td><td>$287.50</td></tr>
 <tr><td>Dual run capacitor 45/5 µF</td><td>1</td><td>$42.00</td><td>$42.00</td></tr>
 <tr><td>Condenser fan motor, 1/4 HP, 825 RPM</td><td>1</td><td>$238.00</td><td>$238.00</td></tr>
 <tr><td>Refrigerant R-410A added (lb)</td><td>2</td><td>$85.00</td><td>$170.00</td></tr>
@@ -1107,7 +1107,7 @@ export const INDUSTRY_POSTS_B: PostDraft[] = [
 <p>Large commercial installs may involve progress billing and retainage, as covered in our <a href="/blog/construction-invoice-guide">construction invoice guide</a>. Rebate and tax-credit programs for high-efficiency equipment change often; if a customer plans to claim one, include the model numbers and efficiency ratings they may need and point them to the program's own rules rather than promising eligibility.</p>
 
 <h2>Maintenance agreements and recurring billing</h2>
-<p>Maintenance plans smooth out the seasonal swings of HVAC work. Bill them either annually up front or monthly, and keep each invoice simple: the plan name, the period covered, the visits included and the member benefits. Monthly plans are a natural fit for recurring invoices — see our <a href="/blog/recurring-invoices-guide">recurring invoices guide</a>. When a member calls for a repair, show their discount as a separate line, as in the example above, so they can see the plan's value.</p>
+<p>Maintenance plans smooth out the seasonal swings of HVAC work. Bill them either annually up front or monthly, and keep each invoice simple: the plan name, the period covered, the visits included and the member benefits. Monthly plans are a natural fit for recurring invoices. See our <a href="/blog/recurring-invoices-guide">recurring invoices guide</a>. When a member calls for a repair, show their discount as a separate line, as in the example above, so they can see the plan's value.</p>
 
 <h2>Billing property managers and commercial accounts</h2>
 <p>Property managers, landlords and commercial clients often generate steady HVAC work, but they pay through an accounts payable process rather than at the door. To avoid delays:</p>
@@ -1124,7 +1124,7 @@ export const INDUSTRY_POSTS_B: PostDraft[] = [
 <ul>
 <li><strong>Licensing.</strong> Many states and localities require HVAC contractors to be licensed and to show the license number on contracts or invoices.</li>
 <li><strong>Refrigerant handling.</strong> In the US, technicians who service equipment containing refrigerants generally need EPA Section 608 certification, and there are recordkeeping requirements for some equipment. The AIM Act phasedown of HFCs is also shifting new systems toward lower-GWP refrigerants such as R-454B and R-32, and refrigerant prices can change quickly, so review your per-pound pricing regularly.</li>
-<li><strong>Sales tax.</strong> Treatment of repair parts, labor and installations varies widely by state — some treat installs as construction contracts where the contractor pays tax on materials instead of charging it. Our guide to <a href="/blog/sales-tax-on-invoices-us">sales tax on invoices in the US</a> explains the general picture; confirm with your state revenue department.</li>
+<li><strong>Sales tax.</strong> Treatment of repair parts, labor and installations varies widely by state. Some treat installs as construction contracts where the contractor pays tax on materials instead of charging it. Our guide to <a href="/blog/sales-tax-on-invoices-us">sales tax on invoices in the US</a> explains the general picture; confirm with your state revenue department.</li>
 <li><strong>Permits.</strong> Equipment replacements often require a permit and inspection; record them on the invoice.</li>
 </ul>
 <p>The structure of an HVAC invoice is close to other trades; our <a href="/blog/plumbing-invoice-template">plumbing invoice template</a> and <a href="/blog/electrician-invoice-template">electrician invoice template</a> guides cover overlapping details. A clean, technical layout such as the <a href="/invoice-templates/blue">Blue template</a> works well for service businesses.</p>
