@@ -31,6 +31,26 @@ export const PAYMENTS_POSTS: PostDraft[] = [
         q: "How long does it take to receive money from card payments?",
         a: "Payouts typically arrive in your bank account within one to a few business days, depending on the provider, your account history and the payout schedule you choose. New accounts sometimes have longer holds while the provider reviews them.",
       },
+      {
+        q: "What is the difference between a payment processor and a payment gateway?",
+        a: "A payment gateway is the technology that securely captures card details online and passes them on, while the processor moves the transaction through the card networks and settles the money to your account. Many all-in-one providers bundle both, so you never see the split. If you use a dedicated merchant account, you may need to choose a gateway separately and connect it to your website or invoicing tool.",
+      },
+      {
+        q: "Can I set a minimum purchase amount for credit card payments?",
+        a: "In the US, Visa's rules let merchants require a minimum of up to $10, but only on credit cards, never on debit or prepaid cards. Outside the US and its territories, Visa generally does not allow minimums at all. Other card networks have their own rules, so check your processor agreement before adding a minimum, and display it clearly so customers know before they pay.",
+      },
+      {
+        q: "How do I protect my business from chargebacks?",
+        a: "Prevention starts before the payment. Use a recognizable business name on card statements, describe the work precisely on the invoice, get written approval of quotes, and keep delivery confirmations and messages. Respond to complaints quickly, because a refund you offer is cheaper than a lost dispute. If a chargeback arrives, reply through your provider before its deadline with your invoice, contract and proof of delivery.",
+      },
+      {
+        q: "Can a sole proprietor accept credit cards without a business bank account?",
+        a: "Often, yes. Many payment providers let sole proprietors sign up with their own name, Social Security number or EIN, and a personal bank account for payouts. A separate business account is still worth having, because it keeps card deposits and fees apart from personal spending and makes bookkeeping and tax time much easier. Check each provider's requirements, as some ask for a business account.",
+      },
+      {
+        q: "Are credit card processing fees tax deductible?",
+        a: "In most tax systems, yes. Card processing fees are a normal cost of doing business, so US sole proprietors generally deduct them on Schedule C, and businesses elsewhere usually treat them as an expense too. Record the full invoice amount as income and the fee as a separate expense, rather than recording only the net deposit. Confirm the treatment with your accountant or tax authority.",
+      },
     ],
     content: `
 <p><strong>Quick answer:</strong> To accept credit card payments as a small business, sign up with a payment processor, connect it to your business bank account, and give customers a way to pay: a card reader in person, a checkout on your website, or a pay-now link on every invoice. You pay a fee on each transaction, usually a percentage plus a small fixed amount, and the money lands in your bank account a few business days later.</p>
@@ -167,6 +187,26 @@ export const PAYMENTS_POSTS: PostDraft[] = [
         q: "What is a pay now button on an invoice?",
         a: "A pay now button is a clickable button or link on an invoice that opens a secure checkout page where the client can pay by card, digital wallet or another supported method without typing bank details.",
       },
+      {
+        q: "Can I add a payment link to an invoice if I don't have a website?",
+        a: "Yes. Payment links are hosted by the payment provider, so you don't need a website, a shopping cart or any coding. You create the link in the provider's dashboard or app, copy it, and paste it into the payment section of your invoice. The client clicks it and pays on the provider's secure checkout page, and the money is paid out to your linked bank account.",
+      },
+      {
+        q: "Do invoice payment links expire?",
+        a: "It depends on the provider and the link type. Some links stay active until you deactivate them, some invoice links close automatically once paid, and some let you set an expiry date. Before resending an old invoice, open the link to make sure it still works and still shows the right amount. If a link has expired, create a new one and tell the client which link to use.",
+      },
+      {
+        q: "Who pays the processing fee when a client pays through a payment link?",
+        a: "By default, you do. The provider deducts its fee from the payment before paying out, so you receive slightly less than the invoice total. Some businesses add a surcharge, but card network rules and local laws restrict this, and surcharges on most consumer cards are banned in the UK and EU. Building the cost into your prices, or offering a cheaper bank transfer option, is usually simpler.",
+      },
+      {
+        q: "Should I shorten a payment link before putting it on an invoice?",
+        a: "Usually it's better not to. A full link on a payment provider's recognizable domain is easier for clients to trust, while a generic shortened link hides where it goes, which is exactly what scammers rely on. If the full address is very long, many providers offer their own shorter links on their own domain. Whatever you use, keep the format consistent so an unusual link stands out.",
+      },
+      {
+        q: "Can a client pay only part of an invoice through a payment link?",
+        a: "Only if the link allows it. An invoice-specific link with a fixed amount takes the full balance, while an open-amount payment page lets the client type any figure, including a partial payment. If you agree to instalments, create a separate link for each agreed amount, label it with the invoice number, and update the balance due on the invoice after each payment arrives.",
+      },
     ],
     content: `
 <p><strong>Quick answer:</strong> An invoice payment link is a secure web address, often shown as a "Pay now" button, that takes your client straight to a checkout page where they can pay the invoice by card or another supported method. To add one, create a link for the invoice amount in your payment provider, paste it into the payment section of the invoice, export a PDF and test that it opens correctly.</p>
@@ -289,6 +329,26 @@ Questions? Call 555-0142 before paying if anything on this invoice looks differe
         q: "Is the ACH routing number the same as the wire routing number?",
         a: "Not always. Some US banks use a different routing number for wires than for ACH transfers, so check with your bank and label each number clearly on your invoice.",
       },
+      {
+        q: "Can someone take money from my account with just my account and routing numbers?",
+        a: "They cannot simply withdraw cash, but in the US criminals sometimes use account and routing numbers to attempt unauthorized ACH debits or counterfeit checks. Consumer accounts have legal protections against unauthorized transfers, while business accounts usually have shorter windows to report problems. Review statements often, report anything unusual quickly, and ask your bank about tools such as ACH debit blocks or positive pay.",
+      },
+      {
+        q: "How do I find my IBAN?",
+        a: "Your IBAN is usually shown in your online banking or banking app, on bank statements, or in your account details on your bank's website. Copy it directly from one of those sources rather than generating it with an online calculator, since one wrong character can send a payment back. Banks in the US and some other countries do not issue IBANs, so use your account and routing numbers instead.",
+      },
+      {
+        q: "Do I need to include an intermediary bank on my invoice?",
+        a: "Only if your bank asks for it. Some banks need incoming international payments, often in US dollars or other foreign currencies, to pass through a named correspondent bank, and they publish its SWIFT code for that purpose. If your bank gives you intermediary instructions, add them under a clear heading for international payers. If not, leave them off to avoid confusing clients who pay domestically.",
+      },
+      {
+        q: "Should I include my bank's address on an invoice?",
+        a: "For international transfers, it helps. Many overseas payers' banks ask for the beneficiary bank's name and address along with the SWIFT/BIC code, and missing details can delay a wire. For domestic payments it's rarely needed, since the routing number, sort code or IBAN already identifies the bank. Put the address in the international section of your payment details so domestic clients can ignore it.",
+      },
+      {
+        q: "Can I put Wise or Payoneer account details on an invoice instead of my bank's?",
+        a: "Yes, if the service gives you receiving account details in your name. Copy the account holder name, account number and routing code, or IBAN and SWIFT/BIC, exactly as the app shows them, and state which currency each account accepts. Clients then pay as if paying a local supplier. Check the provider's receiving fees and limits first, and label the details clearly so nobody mistakes them for a change of bank.",
+      },
     ],
     content: `
 <p><strong>Quick answer:</strong> The bank details on an invoice should include the account holder name, bank name, and the identifiers your client's bank needs: a routing number and account number for US payments, a sort code and account number in the UK, an IBAN and BIC in Europe, and a SWIFT/BIC code plus IBAN or account number for international transfers. Add a payment reference, ideally your invoice number, so the payment can be matched.</p>
@@ -404,6 +464,26 @@ Our bank details will never change by email. If you receive a message saying the
       {
         q: "Is an early payment discount the same as a trade discount?",
         a: "No. A trade discount reduces the price before the invoice is issued and is shown on the invoice lines, while an early payment discount is conditional on when the client pays.",
+      },
+      {
+        q: "Should an early payment discount be calculated before or after tax?",
+        a: "Decide and state it in your terms, because practice varies. Many businesses apply the percentage to the net amount before tax, while others apply it to the full invoice total. Tax rules can also affect the answer: in the UK, VAT on a prompt payment discount is due on what the customer actually pays, and US states differ. Ask your accountant which method fits your tax position.",
+      },
+      {
+        q: "What does 2/10 EOM mean?",
+        a: "EOM stands for end of month. Under 2/10 EOM terms, the client can take a 2% discount if they pay within 10 days after the end of the month in which the invoice was issued, rather than 10 days from the invoice date. Because conventions vary between industries, spell out both the discount deadline and the final due date as calendar dates on the invoice.",
+      },
+      {
+        q: "What is dynamic discounting?",
+        a: "Dynamic discounting is a sliding-scale version of an early payment discount: the earlier the buyer pays, the bigger the discount, instead of one fixed rate and window. It is usually offered by large buyers through their procurement or accounts payable platforms. For a small supplier it can unlock cash quickly, but calculate the implied annual cost the same way you would for 2/10 net 30 before accepting.",
+      },
+      {
+        q: "Can I offer an early payment discount to some clients but not others?",
+        a: "Generally, yes. Payment terms are a commercial agreement, so you can offer a discount to a large, slow-paying account and keep standard terms for everyone else. Put the discount in that client's contract or quote, apply it consistently, and make sure each invoice shows the right terms for that client. If you sell goods in a regulated market, ask an adviser whether any pricing rules apply.",
+      },
+      {
+        q: "Can a client take the early payment discount if they pay by credit card?",
+        a: "Only if your terms allow it. Card fees can cancel out much of the benefit, so some businesses limit the discount to bank transfers or ACH payments and say so on the invoice, for example: 2% discount applies to bank transfers received by 1 November 2026. If you don't specify, a client may reasonably assume any payment method qualifies, so make the condition clear upfront.",
       },
     ],
     content: `
@@ -525,6 +605,26 @@ Our bank details will never change by email. If you receive a message saying the
         q: "What information do I need to receive an ACH or wire payment?",
         a: "For both, the payer needs your account name, bank name, routing number and account number. Some banks use a different routing number for wires, and international wires also need your bank's SWIFT code.",
       },
+      {
+        q: "Is there a limit on how much can be sent by same-day ACH?",
+        a: "Yes. Since March 2022, Nacha rules allow same-day ACH entries of up to $1 million per payment. Larger payments are not rejected but settle on the next-day schedule instead. Your bank may set lower limits of its own, and it may charge extra for same-day service, so check with your bank, or ask your client to check with theirs, before relying on same-day ACH for a large invoice.",
+      },
+      {
+        q: "What is the difference between ACH and EFT?",
+        a: "EFT, or electronic funds transfer, is a broad term for any money moved electronically, including ACH transfers, wires, card payments and instant payments. ACH is one specific US network for batch-processed bank transfers. When a US client says they will pay by EFT, they usually mean ACH, but confirm the method so you can give them the correct routing number and avoid delays.",
+      },
+      {
+        q: "Is Zelle an ACH payment or a wire transfer?",
+        a: "Neither, from your point of view as the payee. Zelle is a separate bank-owned network that moves money between enrolled US bank accounts, usually within minutes, and each bank sets its own sending limits. Like a wire, a Zelle payment is generally hard to reverse once sent. It suits smaller invoices from clients you know, while ACH or wires handle larger amounts.",
+      },
+      {
+        q: "Do ACH and wire transfers go through on weekends and holidays?",
+        a: "Generally not. ACH and Fedwire process only on business days, so a payment started on a Friday evening or just before a federal holiday usually moves on the next business day. Instant payment networks such as FedNow and RTP can run around the clock if both banks support them. Set due dates with this in mind and ask clients to pay a few days early around holidays.",
+      },
+      {
+        q: "What does it mean if an ACH payment is returned with code R01?",
+        a: "R01 means insufficient funds: the payer's account didn't have enough money to cover the debit. Returns like this usually come back within two banking days of settlement, so a payment that appeared in your account can be reversed. If it happens, tell the client, ask them to arrange payment again, and don't treat the invoice as paid until the funds have fully settled.",
+      },
     ],
     content: `
 <p><strong>Quick answer:</strong> In the ACH vs wire transfer choice, ACH is the cheaper, slower option: payments move in batches through the ACH network and usually arrive in one to two business days, with low or no fees. A wire transfer moves money individually and usually arrives the same day, but typically costs more and is very hard to reverse. For routine domestic invoices, ACH is usually best; for large, urgent or international payments, wires are common.</p>
@@ -639,6 +739,26 @@ Our bank details never change by email. Call 555-0187 to verify before sending a
       {
         q: "Should I issue a receipt for partial payments?",
         a: "Yes. A receipt for each partial payment or deposit, showing the amount received and the balance still due, avoids confusion and gives both sides a clear record.",
+      },
+      {
+        q: "Does a payment receipt need a signature?",
+        a: "Usually not. A receipt sent by email or generated by your payment provider is valid without a handwritten signature in most situations. A signature is most useful for cash payments, where it shows who received the money and gives the customer stronger proof. Some clients, landlords or grant programs may still ask for a signed receipt, so add one when it's requested.",
+      },
+      {
+        q: "Can I send a payment receipt by email instead of on paper?",
+        a: "Yes. A PDF receipt sent by email is widely accepted and easier to store and search than paper. Use a consistent file name built around the receipt number, keep a copy with the related invoice, and make sure the PDF shows the payment date, amount, method and any balance due. If a customer needs a printed copy, the same PDF can simply be printed.",
+      },
+      {
+        q: "What is the difference between a receipt and a remittance advice?",
+        a: "A receipt comes from you, the seller, and confirms that you received a payment. A remittance advice comes from the payer and tells you which invoices a payment covers, often sent by a client's accounts team alongside an ACH or bank transfer. Use the remittance advice to match the payment to the right invoices, then issue your receipt if the client needs one.",
+      },
+      {
+        q: "Do I need to send my own receipt if my payment provider already emails one?",
+        a: "Not always. Card processors and payment apps often email the customer an automatic receipt, which may be enough for small consumer sales. Send your own receipt when the provider's version doesn't show your business details, the invoice number or the remaining balance, or when the client needs a document for their own records or reimbursement. Keep a copy either way.",
+      },
+      {
+        q: "Is a bank statement enough proof of payment without a receipt?",
+        a: "A bank statement shows that money moved, but not what it paid for, so it is weaker evidence on its own. Paired with the invoice and a matching payment reference, it is often accepted as proof of payment. A receipt that names the invoice, amount and method avoids questions later, especially for partial payments, cash, or clients who need records for tax or expense claims.",
       },
     ],
     content: `
@@ -782,6 +902,26 @@ Thank you for your payment.</blockquote>
         q: "Should I stop work if a client has an overdue invoice?",
         a: "If your contract allows it, pausing further work until overdue invoices are paid is a common and reasonable step. Tell the client in writing beforehand and give them a chance to pay.",
       },
+      {
+        q: "Can I charge a late fee if it wasn't in my contract or invoice terms?",
+        a: "It depends on where you are. In the US, late fees and interest generally need to be agreed in advance, so adding one after the fact is hard to enforce. In the UK, businesses can claim statutory interest and fixed compensation on late business payments even if the contract is silent. Whatever applies to you, put clear late payment terms in future contracts and invoices.",
+      },
+      {
+        q: "What is an accounts receivable aging report?",
+        a: "An aging report lists every unpaid invoice grouped by how long it is overdue, typically current, 1–30, 31–60, 61–90 and over 90 days. It shows at a glance which clients need chasing and how much cash is tied up. Reviewing it weekly helps you act before an invoice becomes hard to collect. Most accounting software produces one, or you can keep a simple spreadsheet.",
+      },
+      {
+        q: "Should I change the date when I resend an overdue invoice?",
+        a: "No. Keep the original invoice number, issue date and due date so the client's records match yours and the overdue period stays clear. Send it again with a short cover note marking it as a reminder or overdue copy. Only issue a new invoice if the original contained an error, and then cancel the old one with a credit note so nothing is billed twice.",
+      },
+      {
+        q: "What should I do if a client says they never received the invoice?",
+        a: "Resend it straight away and confirm the right accounts payable email, contact name and any PO number they need. Ask them to confirm receipt and give you an expected payment date. To avoid the problem next time, send invoices to a shared accounts address as well as your day-to-day contact, and keep a record of when and where each invoice was sent.",
+      },
+      {
+        q: "Can I write off an overdue invoice for tax purposes?",
+        a: "It depends on your accounting method. If you use the cash method, as many freelancers do, you never reported the unpaid amount as income, so there is generally nothing to deduct. Businesses using the accrual method that already reported the income may be able to claim a bad debt deduction or relief once the debt is genuinely uncollectable. Rules vary by country, so check with your accountant.",
+      },
     ],
     content: `
 <p><strong>Quick answer:</strong> An overdue invoice is any invoice still unpaid after its due date. To handle it, first confirm the client received a correct invoice, then send a polite reminder, follow up by phone, and agree a firm payment date. If payment still doesn't arrive, apply any agreed late fees or statutory interest, pause further work, send a final notice, and escalate to collections or a small claims court as a last resort.</p>
@@ -902,6 +1042,26 @@ Thank you for your payment.</blockquote>
       {
         q: "Is small claims court better than a collection agency?",
         a: "It can be for smaller, well-documented debts, because fees are usually modest and you keep the full amount if you win and collect. However, it takes your time, and a judgment still has to be enforced if the client does not pay.",
+      },
+      {
+        q: "Does sending an invoice to collections affect the client's credit?",
+        a: "It can. Some collection agencies report unpaid debts to consumer or business credit bureaus, which may make it harder for the debtor to get credit later. Reporting is governed by law and by each agency's policy, and it is usually the agency, not you, that reports. Ask any agency how and when it reports debts before you sign, and make sure the amount is accurate and undisputed.",
+      },
+      {
+        q: "Can I add collection costs to the amount the client owes?",
+        a: "Only where your contract or the law allows it. Many contracts include a clause making the client liable for reasonable collection costs. In the UK, the late payment legislation lets businesses claim reasonable recovery costs on late business debts in addition to the fixed compensation, in some circumstances. Without a legal basis, adding fees can weaken your claim, so check before you add anything.",
+      },
+      {
+        q: "How long do I have to take legal action over an unpaid invoice?",
+        a: "Every jurisdiction sets a limitation period. In England and Wales, most contract debt claims must be brought within six years, and US states commonly set periods of roughly three to ten years depending on the state and type of contract. Once the period expires, the debt may become unenforceable in court, so don't let an unpaid invoice sit for years. Check the rule where your client is based.",
+      },
+      {
+        q: "Can I send an invoice to collections if the client is in another country?",
+        a: "Yes, but it is harder and often more expensive. Some agencies specialize in international commercial collections and work through partners in the debtor's country. Legal action usually has to follow local law and courts, and the costs can outweigh smaller debts. For overseas clients, deposits, milestone billing and clear contract terms on governing law are the most practical protection.",
+      },
+      {
+        q: "What happens to my invoice if the client goes bankrupt or becomes insolvent?",
+        a: "Collection activity usually has to stop, and you become a creditor in the insolvency process instead. File a claim with the trustee, administrator or liquidator, attach your invoice and supporting evidence, and follow any deadlines they set. Unsecured creditors often recover only part of what they are owed, if anything. An insolvency professional or lawyer can explain your options.",
       },
     ],
     content: `
@@ -1029,6 +1189,26 @@ Jordan Lee, Lee Analytics LLC</blockquote>
       {
         q: "How long does a client have to dispute an invoice?",
         a: "It depends on your contract. Many businesses set a dispute window, such as 7 or 14 days from receipt, after which the invoice is treated as accepted. Without such a clause, local law and the circumstances apply.",
+      },
+      {
+        q: "Can I charge late fees on a disputed invoice?",
+        a: "On the undisputed portion, usually yes, if your terms allow late fees and the client pays that portion late. For the disputed amount, it depends on your contract and the outcome: if the dispute is resolved in your favor, some contracts let you charge interest from the original due date. Charging fees on an amount you later credit looks unfair, so wait until the dispute is settled.",
+      },
+      {
+        q: "Should I keep working for a client while an invoice is disputed?",
+        a: "That depends on your contract and the relationship. If the dispute is genuine and specific, keeping work moving while you resolve it often protects the relationship. If the client is using a vague dispute to delay payment, a suspension clause lets you pause new work until undisputed amounts are paid. Tell the client in writing before you pause anything.",
+      },
+      {
+        q: "Can mediation help resolve an invoice dispute?",
+        a: "Yes. Mediation brings in a neutral person to help both sides reach an agreement, and it is usually quicker and cheaper than court. In England and Wales, many small money claims under £10,000 are referred to the free HMCTS Small Claims Mediation Service once a claim is filed. Private mediators and trade body schemes are other options, so check what applies where you and your client are based.",
+      },
+      {
+        q: "What should a dispute clause in my contract say?",
+        a: "A useful clause sets a window for raising disputes, such as 7 or 14 days from receipt, asks the client to identify the specific lines and reasons in writing, and requires them to pay undisputed amounts by the due date. It can also say that invoices not disputed within the window are treated as accepted. Have a lawyer review the wording for your jurisdiction.",
+      },
+      {
+        q: "What if a client disputes an invoice months after paying it?",
+        a: "Treat it seriously but ask for specifics, just as you would before payment. Check your contract, delivery records and any sign-off the client gave. If the client is right, issue a credit note or refund for the agreed amount. If they paid by card, they may try a chargeback instead, so keep your evidence ready. Card networks set time limits on chargebacks, but the exact windows vary.",
       },
     ],
     content: `

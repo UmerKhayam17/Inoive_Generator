@@ -31,6 +31,26 @@ export const FINANCE_ADVANCED_POSTS: PostDraft[] = [
         q: "What is the best Invoice2go alternative for a sole trader who sends a few invoices a month?",
         a: "If you only need a professional PDF a few times a month and you take payment by bank transfer, a free invoice generator is usually enough. If you want clients to pay by card from the invoice, a free plan from a payment-focused tool such as Square or PayPal may suit you better, because you pay per transaction rather than per month.",
       },
+      {
+        q: "How do I cancel my Invoice2go subscription?",
+        a: "Cancel through the same place you subscribed. If you paid through the Apple App Store or Google Play, cancel in your store account's subscription settings, because deleting the app does not stop billing. If you subscribed on the web, look for the billing settings in your Invoice2go account or ask its support team. Export your invoices and client list first, and check Invoice2go's help center for its current steps.",
+      },
+      {
+        q: "Who owns Invoice2go?",
+        a: "Invoice2go is owned by BILL (formerly Bill.com), which announced a deal to buy it in July 2021 for about $625 million in stock and cash. Invoice2go was founded in 2002 and has offices in Australia and the US. The ownership does not change your plan by itself, but it is useful to know when you compare it with other BILL products or check how your data is handled.",
+      },
+      {
+        q: "Which Invoice2go alternative suits a trade business that takes card payments on site?",
+        a: "Square Invoices is usually the closest fit, because one account handles in-person card readers and invoice payments, with a single dashboard and payout. Its free plan covers unlimited invoices and you pay a fee on each card transaction. Compare its current rates with Invoice2go's plan rates on both official pricing pages, using your own monthly card volume, before you switch.",
+      },
+      {
+        q: "What is the best Invoice2go alternative if I bill clients in different currencies?",
+        a: "Look for a tool that lets you set the currency on each invoice and shows the right tax fields for each client's country. Zoho Invoice supports multiple currencies on its free plan, while Wave is aimed mainly at US and Canadian businesses. Our free generator lets you pick from eight currencies for a PDF invoice, but it does not convert amounts or take payments, so agree the exchange rate with your client.",
+      },
+      {
+        q: "Do I need to tell clients when I change invoicing software?",
+        a: "Yes, briefly. Clients may have saved your old payment link, bank details or sender address, and a new invoice layout from an unfamiliar address can look like a scam to a careful accounts team. Send a short note saying invoices will now come from a new system, confirm whether your bank details have changed, and keep your invoice numbering continuous so nothing looks out of sequence.",
+      },
     ],
     content: `
 <p><strong>Quick answer:</strong> The best Invoice2go alternative depends on what you use it for. If you only need clean, professional invoices, a free browser-based invoice generator does the job with no subscription. If you want card payments built in, look at Square Invoices or PayPal. If you need bookkeeping too, Wave, Zoho Invoice, FreshBooks or QuickBooks cover invoicing plus accounting.</p>
@@ -161,6 +181,22 @@ export const FINANCE_ADVANCED_POSTS: PostDraft[] = [
       {
         q: "Should margin be calculated before or after sales tax?",
         a: "Before. Sales tax or VAT collected from customers is not your revenue, so remove it from the price before working out margin. If you only have a tax-inclusive total, back the tax out first.",
+      },
+      {
+        q: "What is keystone pricing?",
+        a: "Keystone pricing means setting the retail price at double the wholesale cost, which is a 100% markup and a 50% gross margin. An item that costs $25 sells for $50, leaving $25 of gross profit. It is a common starting point in retail, but it is only a rule of thumb: check that a 50% margin really covers your overheads, discounts and card fees before you rely on it.",
+      },
+      {
+        q: "What is the difference between gross margin and net margin?",
+        a: "Gross margin is selling price minus the direct cost of what you sold, divided by revenue. Net margin is what is left after all expenses, including rent, software, marketing, interest, taxes and your own pay, divided by revenue. A business can show a healthy 45% gross margin and still have a thin or negative net margin if overheads are high, so track both on your profit and loss report.",
+      },
+      {
+        q: "What is contribution margin and how is it different from gross margin?",
+        a: "Contribution margin is the selling price minus all variable costs of a sale, such as materials, card fees, commissions and shipping, often shown per unit. Gross margin subtracts only the cost of goods sold as reported in your accounts. Contribution margin is useful for break-even maths: divide your fixed costs by the contribution margin per unit to see how many sales you need to cover them.",
+      },
+      {
+        q: "Do I have to tell clients how much I mark up materials?",
+        a: "Usually not, unless your contract says so. On a fixed-price quote, the client agrees to the price, not to your cost. On a cost-plus or time-and-materials contract, you typically bill actual cost plus an agreed markup, so you may need to show receipts. Some industries and public contracts have their own disclosure rules, so read your contract and any local regulations before deciding how to show materials.",
       },
     ],
     content: `
@@ -319,6 +355,26 @@ export const FINANCE_ADVANCED_POSTS: PostDraft[] = [
         q: "Why does my reverse calculation come out a cent off?",
         a: "Tax is usually rounded to the nearest cent on the original sale, so dividing the rounded total back can produce a fraction of a cent. Round the pre-tax amount to the cent, recalculate the tax from it, and check that the two add back to the original total. Adjust the tax by a cent if needed.",
       },
+      {
+        q: "How do I find the tax rate if I know the total and the pre-tax price?",
+        a: "Divide the total by the pre-tax price, subtract 1 and multiply by 100. For example, a $540.00 total on a $500.00 pre-tax price gives 540 ÷ 500 = 1.08, so the rate is 8%. Expect small differences caused by rounding to the cent, and confirm the official rate with your tax authority before you use it on your own invoices.",
+      },
+      {
+        q: "How do I work out GST from a GST-inclusive price in Australia?",
+        a: "Divide the GST-inclusive price by 11. At Australia's 10% GST rate the GST fraction is 1/11, so a $1,100 price includes $100 of GST and $1,000 before GST. This works only when the whole amount is taxable; take GST-free items out first. The ATO publishes the rules for working out GST and for what a tax invoice must show.",
+      },
+      {
+        q: "How do I reverse calculate tax when a discount was applied before tax?",
+        a: "Use the same formula; the result is simply the discounted pre-tax price. Tax is normally charged on the price after a seller's discount, so dividing the total by 1 plus the rate gives the net amount after the discount. If you also need the original list price, divide that net figure by 1 minus the discount rate. Manufacturer coupons and rebates can be taxed differently by state, so check local rules.",
+      },
+      {
+        q: "Can I reclaim the tax I back out of a receipt?",
+        a: "It depends on the tax system. VAT and GST registered businesses can usually reclaim input tax on business purchases if they hold a valid tax invoice, so backing out the exact figure matters. US sales tax works differently: a business buyer generally cannot reclaim it and records it as part of the cost, unless it was charged in error or a resale or exemption certificate applied. Check with your tax authority.",
+      },
+      {
+        q: "How do I add tax to a pre-tax price?",
+        a: "Multiply the pre-tax price by 1 plus the tax rate as a decimal. A $500.00 price at 8.25% becomes $500.00 × 1.0825 = $541.25, of which $41.25 is tax. This is the forward version of the reverse calculation and how most invoices are built: list net amounts, add tax on its own line, then show the total. Our free invoice generator calculates the tax line for you when you enter a rate.",
+      },
     ],
     content: `
 <p><strong>Quick answer:</strong> To calculate sales tax from a total, divide the total by 1 plus the tax rate as a decimal. That gives the pre-tax price. Subtract it from the total to get the tax. Example: a $541.25 total at 8.25% tax is $541.25 ÷ 1.0825 = $500.00 before tax, so the sales tax is $41.25. The same method works for VAT and GST.</p>
@@ -472,6 +528,26 @@ export const FINANCE_ADVANCED_POSTS: PostDraft[] = [
         q: "What is the difference between DSO and the aging report?",
         a: "DSO is a single average number for the whole ledger, useful for tracking trends. An aging report lists each customer's unpaid invoices by how overdue they are, so it tells you who to chase. Use DSO to spot a problem and the aging report to fix it.",
       },
+      {
+        q: "What is the difference between DSO and DPO?",
+        a: "DSO measures how long your customers take to pay you; DPO (days payable outstanding) measures how long you take to pay your suppliers. DSO uses accounts receivable and credit sales, while DPO uses accounts payable and purchases or cost of goods sold. A business with a DSO of 45 days and a DPO of 30 days is funding a 15-day gap from its own cash.",
+      },
+      {
+        q: "What is average days delinquent?",
+        a: "Average days delinquent (ADD) is the gap between your actual DSO and your best possible DSO. It estimates how many days of delay come from customers paying late rather than from your payment terms. If DSO is 36 and best possible DSO is 20, ADD is 16 days. A rising ADD points to a collections problem, while a rising DSO with a flat ADD usually means your terms got longer.",
+      },
+      {
+        q: "How is DSO related to accounts receivable turnover?",
+        a: "They are two views of the same thing. Accounts receivable turnover is net credit sales divided by average receivables, which shows how many times a year you collect your whole ledger. DSO is the number of days in the period divided by that turnover. An annual turnover of 10 gives a DSO of 365 ÷ 10 = 36.5 days, and a higher turnover always means a lower DSO.",
+      },
+      {
+        q: "Why does my DSO go up when sales are growing?",
+        a: "Because a batch of new invoices raised near the end of a period swells receivables before customers have had time to pay, while the sales figure is spread over the whole period. DSO can rise even if everyone pays on time. Use average receivables, a rolling three-month figure or the countback method, and check the aging report before concluding that customers have slowed down.",
+      },
+      {
+        q: "Does invoice factoring lower DSO?",
+        a: "It usually lowers your reported DSO, because invoices sold to a factor leave your accounts receivable. Your customers do not pay any faster, though, and you pay fees for the early cash. Lenders may ask whether DSO fell because of factoring, so note it when you compare periods. Invoice financing that keeps the invoices on your books generally does not change DSO.",
+      },
     ],
     content: `
 <p><strong>Quick answer:</strong> Days sales outstanding (DSO) is the average number of days it takes to collect payment after a credit sale. The DSO formula is: accounts receivable ÷ credit sales for the period × number of days in the period. If you have $108,000 in receivables and made $270,000 of credit sales in a 90-day quarter, DSO = 108,000 ÷ 270,000 × 90 = 36 days.</p>
@@ -598,6 +674,22 @@ export const FINANCE_ADVANCED_POSTS: PostDraft[] = [
         q: "Do I also have to pay state estimated taxes?",
         a: "Most states with an income tax have their own estimated payment rules and deadlines, which often mirror the federal dates but not always. Check your state revenue department's website.",
       },
+      {
+        q: "What if I start freelancing partway through the year?",
+        a: "You make your first estimated payment for the period in which you first have income that creates a tax bill, then pay the remaining installments as normal. You do not owe payments for the earlier periods. If your income is uneven, the annualized income installment method on Form 2210 can lower the early payments. The Form 1040-ES instructions explain when your first payment is due.",
+      },
+      {
+        q: "Can I pay my estimated taxes for the whole year at once?",
+        a: "Yes. You can pay the full year's estimate with the first installment in April, or pay more often than quarterly, as long as enough has been paid by each due date. Paying early does not cause a penalty. Many freelancers prefer smaller regular payments for cash flow reasons, but a lump sum after a big contract can be simpler than tracking four separate amounts.",
+      },
+      {
+        q: "What happens if I overpay estimated taxes?",
+        a: "The extra counts toward your total tax when you file. On your return you can choose to get the overpayment back as a refund or apply all or part of it to next year's estimated tax, where it counts as an early payment for the following year. If you apply it forward, make sure your remaining installments still meet the safe harbor, or you could face a penalty later.",
+      },
+      {
+        q: "Do married couples make joint estimated tax payments?",
+        a: "They can, if they expect to file a joint return. Joint payments are treated as one, with both names and Social Security numbers on the payment. If you later file separately, you can divide the joint payments between you as you agree. Joint payments are not allowed if you are separated under a decree of divorce or separate maintenance, if either spouse is a nonresident alien, or if you have different tax years.",
+      },
     ],
     content: `
 <p><strong>Quick answer:</strong> Quarterly estimated taxes are payments self-employed people make to the IRS during the year because no tax is withheld from their income. For 2026, the federal due dates are April 15, June 15 and September 15, 2026, and January 15, 2027. You generally must pay if you expect to owe $1,000 or more, and you avoid penalties by paying at least 90% of this year's tax or 100% (sometimes 110%) of last year's.</p>
@@ -720,6 +812,26 @@ export const FINANCE_ADVANCED_POSTS: PostDraft[] = [
         q: "What should I do if my 1099-K is wrong?",
         a: "Contact the platform that issued it and ask for a corrected form. If it includes personal payments or items sold at a loss, keep records showing what each payment was, and follow the IRS guidance on how to report it so you are not taxed on money that is not income.",
       },
+      {
+        q: "When should I receive my Form 1099-K?",
+        a: "Platforms and card processors generally must send your copy by January 31 of the year after the payments, moving to the next business day if that date falls on a weekend or holiday. Many deliver it electronically in your account's tax documents section rather than by post. If you expected one and have nothing by early February, check that section before contacting the platform's support team.",
+      },
+      {
+        q: "Why does PayPal or Stripe ask for my Social Security number or EIN?",
+        a: "Platforms need your taxpayer identification number (TIN) to file accurate 1099-Ks. If you do not provide a valid TIN, they may have to apply backup withholding, currently 24% of your payments, and some limit your account until you do. A business can usually give its EIN instead of a personal Social Security number. Enter the name and number exactly as they appear on IRS records.",
+      },
+      {
+        q: "Is 1099-K income subject to self-employment tax?",
+        a: "If the payments are from your business, yes. Your net profit after expenses, not the gross amount on the form, is subject to self-employment tax of 15.3% on most earnings, on top of income tax. Payments that are not business income, such as personal reimbursements or used items sold at a loss, are not. Sole proprietors report business receipts on Schedule C and work out self-employment tax on Schedule SE.",
+      },
+      {
+        q: "What is a third-party settlement organization?",
+        a: "A third-party settlement organization (TPSO) is a payment network that settles payments between buyers and sellers who are not directly connected, such as payment apps and many online marketplaces. The $20,000 and 200 transaction threshold applies to these networks. Payment card processors are treated differently and can issue a 1099-K for card payments of any amount, so check how each platform you use classifies your payments.",
+      },
+      {
+        q: "Can I avoid getting a 1099-K?",
+        a: "Not legitimately for business sales, and avoiding the form would not avoid the tax anyway. You can keep forms accurate by separating personal and business accounts and tagging personal payments correctly. Asking clients to pay as friends and family breaks most platforms' terms and removes buyer and seller protection. The simpler route is to report all business income and keep a numbered invoice for every payment.",
+      },
     ],
     content: `
 <p><strong>Quick answer:</strong> The federal 1099-K threshold is more than $20,000 in payments for goods or services <em>and</em> more than 200 transactions in a calendar year. The One Big Beautiful Bill Act, signed in July 2025, restored this threshold retroactively and scrapped the planned drop to $600. Payments made directly by card have no threshold, some states report at lower amounts, and all business income is taxable whether or not you get a form.</p>
@@ -835,6 +947,26 @@ export const FINANCE_ADVANCED_POSTS: PostDraft[] = [
       {
         q: "What does ACH remittance mean?",
         a: "ACH remittance is information sent with an ACH bank payment that explains what the payment is for, such as invoice numbers and amounts. It can travel in addenda records attached to the payment itself or be emailed separately as a remittance advice.",
+      },
+      {
+        q: "What does remittance address mean on an invoice?",
+        a: "A remittance address is the address where the customer should send payment, which can differ from your office or registered address. Businesses that receive checks often use a separate mailing address or a bank lockbox that processes payments for them. If you have one, label it clearly as the remit-to address on your invoice so checks and remittance slips do not go to the wrong place.",
+      },
+      {
+        q: "Is a remittance advice legally required?",
+        a: "Generally no. It is a business courtesy and a practical matching tool, not a document most laws require. Many larger customers send one automatically from their accounts payable systems, and some suppliers ask for one in their payment terms. If your customers do not send them, ask them to quote the invoice number as the payment reference so you can still match each payment quickly.",
+      },
+      {
+        q: "How long after a remittance advice does the money arrive?",
+        a: "It depends on the payment method. Remittance advices are often sent on the day the payer releases the payment, and a US ACH credit typically settles within one or two banking days, or the same day if sent as Same Day ACH. Wires usually arrive the same day, while checks take as long as the post plus your bank's clearing time. Confirm the funds in your bank before marking invoices paid.",
+      },
+      {
+        q: "What is an electronic remittance advice in healthcare?",
+        a: "In US healthcare billing, an electronic remittance advice (ERA) is the electronic explanation an insurer sends a provider showing what was paid on each claim, any adjustments with reason codes, and what the patient still owes. It uses the HIPAA standard X12 835 format, so practice management software can post payments automatically. Providers usually have to enroll for ERAs with each payer separately.",
+      },
+      {
+        q: "Can a remittance advice be used instead of an invoice?",
+        a: "No. An invoice is the seller's request for payment and, in VAT and GST countries, usually the document that supports the buyer's tax claim. A remittance advice only explains a payment the buyer has already made. If a supplier has not invoiced you, ask for an invoice before paying, and keep the invoice and your remittance advice together in your records.",
       },
     ],
     content: `
@@ -965,6 +1097,26 @@ export const FINANCE_ADVANCED_POSTS: PostDraft[] = [
       {
         q: "Do small businesses on cash accounting have accounts payable and receivable?",
         a: "In the formal books, not usually, because cash accounting records income and expenses only when money moves. In practice you still need to track unpaid invoices and unpaid bills, even if only in a spreadsheet, so you know who owes you and what you owe.",
+      },
+      {
+        q: "What is the difference between accounts receivable and notes receivable?",
+        a: "Accounts receivable are informal amounts owed on normal credit terms, usually backed only by your invoice. Notes receivable are backed by a written promissory note that sets out a repayment schedule and often interest. If a slow-paying client signs a formal payment plan, the balance may move from accounts receivable to notes receivable, and any portion due after twelve months may be shown as non-current.",
+      },
+      {
+        q: "What is the difference between accounts payable and accrued expenses?",
+        a: "Accounts payable are amounts you owe on supplier bills you have already received. Accrued expenses are costs you have incurred but not yet been billed for, such as wages earned but unpaid, or utilities used before the bill arrives. Both are current liabilities under accrual accounting, but accruals are often estimates recorded at period end, while payables are backed by an actual invoice.",
+      },
+      {
+        q: "Is a customer deposit accounts receivable?",
+        a: "No. When a customer pays a deposit before you do the work, you have received cash you have not yet earned, so it is a liability, often called customer deposits or unearned revenue. It becomes revenue as you deliver. Receivables are amounts customers owe you after you have invoiced and earned them. How an unpaid deposit invoice is recorded depends on your accounting policy, so ask your accountant.",
+      },
+      {
+        q: "Is a high accounts payable balance bad?",
+        a: "Not necessarily. A large payables balance can simply mean you use normal credit terms well, or that you are buying more because sales are growing. It becomes a warning sign when bills are past due, suppliers are chasing you, or payables grow much faster than purchases. Compare your DPO with your suppliers' terms: paying on time is healthy, but stretching beyond terms can lead to late fees and damaged relationships.",
+      },
+      {
+        q: "Is payroll part of accounts payable?",
+        a: "Usually not. Wages owed to employees are normally recorded in a separate liability account, such as wages payable or accrued payroll, along with payroll taxes and withholdings owed to tax authorities. Accounts payable is generally kept for supplier and vendor bills. Contractors who invoice you are the exception: their invoices go through accounts payable like any other supplier bill.",
       },
     ],
     content: `
@@ -1101,6 +1253,26 @@ export const FINANCE_ADVANCED_POSTS: PostDraft[] = [
         q: "Can I get my money back after paying a scam invoice?",
         a: "Sometimes, especially if you report it to your bank within hours or a few days. Banks can try to recall wires and ACH payments, and the FBI's Recovery Asset Team works with banks to freeze funds in some domestic cases. There is no guarantee, which is why verification before paying matters most.",
       },
+      {
+        q: "Where do I report an invoice scam in the UK?",
+        a: "In England, Wales and Northern Ireland, report it to Report Fraud, the national service run by the City of London Police that replaced Action Fraud in December 2025, either online at reportfraud.police.uk or by phone. In Scotland, report it to Police Scotland on 101. Contact your bank first, though, because a fast call gives you the best chance of stopping the money.",
+      },
+      {
+        q: "Will my bank refund me if I paid a fake invoice in the UK?",
+        a: "Possibly. Since 7 October 2024, UK payment firms must reimburse most victims of authorised push payment scams made by Faster Payments or CHAPS, up to £85,000 per claim. The rules cover consumers, micro-enterprises and small charities, so larger businesses may not qualify. Exceptions apply, for example for gross negligence. Report the scam quickly and ask your bank how its reimbursement process works.",
+      },
+      {
+        q: "What is Confirmation of Payee?",
+        a: "Confirmation of Payee is a UK name-checking service. When you set up a new payee, your bank checks the name you entered against the account holder's name for that sort code and account number, and tells you whether it matches, nearly matches or does not match. A no-match result on a supplier's new bank details is a strong reason to stop and call the supplier on a number you already have.",
+      },
+      {
+        q: "Can scammers send invoices that look like they come from my email address?",
+        a: "Yes. Criminals can spoof your display name or sender address, register a lookalike domain, or use your real account if they have stolen the password. Turn on multi-factor authentication, and ask your email provider or IT support to set up SPF, DKIM and DMARC records for your domain, which help receiving mail servers reject forged messages. Warn your clients quickly if you suspect someone is impersonating you.",
+      },
+      {
+        q: "Do I have to pay an invoice for something I never ordered?",
+        a: "Generally no. An invoice on its own does not create a debt; there has to be an agreement to buy. Do not pay, click links or call numbers on the invoice. Check your purchase orders and contracts, ask whoever handles that supplier, and contact the company using details you find independently. If it is fake, report it and keep a copy in case further demands arrive.",
+      },
     ],
     content: `
 <p><strong>Quick answer:</strong> An invoice scam tricks a business into paying a fake invoice or sending a real payment to a criminal's account. Watch for invoices for things you didn't order, emails announcing new bank details, slightly misspelled sender addresses and pressure to pay fast. Before paying any changed or unfamiliar details, call the supplier on a number you already have. If you've paid, contact your bank immediately.</p>
@@ -1220,6 +1392,22 @@ export const FINANCE_ADVANCED_POSTS: PostDraft[] = [
       {
         q: "Do I need a lawyer for small claims court?",
         a: "Usually not. Small claims procedures are designed for people representing themselves, and some states restrict lawyers from appearing for parties at the hearing. You may still want legal advice for a complex contract or a large claim.",
+      },
+      {
+        q: "How long do I have to take an unpaid invoice to court?",
+        a: "It depends on where you are. In England and Wales the limit for a contract debt is generally six years from when payment became due, and a written acknowledgment or part payment can restart the clock. Scotland generally allows five years. In the US each state sets its own statute of limitations, often different for written and oral contracts, so check your state's law or court website.",
+      },
+      {
+        q: "Can I sue a client who is in another state or country?",
+        a: "Sometimes, but it is harder. Small claims courts usually require you to file where the defendant lives or does business, or where the contract was made or performed, so an out-of-state client may mean filing in their area. Cross-border claims raise questions of jurisdiction, service and enforcement. Check whether your contract names a governing law and court, and get advice before pursuing an international claim.",
+      },
+      {
+        q: "What if the client says my work was poor and counterclaims?",
+        a: "The court will hear both sides. In many systems the client can file a defense and a counterclaim, for example asking for a refund or damages for defects. Answer with evidence: the agreed scope, approval emails, sign-off, delivery records, and the timing of any complaint raised only after you asked for payment. If some criticism is fair, a partial settlement may cost less than a hearing.",
+      },
+      {
+        q: "Can my LLC or company file a small claim without a lawyer?",
+        a: "Usually yes, but the rules on who can appear for a business vary. In California, for example, a corporation or other entity must be represented by a regular employee, officer or director who was not hired only to go to court, and that person files form SC-01 to show their authority. Other states have their own rules, so check your court's small claims guidance before filing.",
       },
     ],
     content: `

@@ -35,6 +35,22 @@ export const FINANCE_2026_POSTS: PostDraft[] = [
         q: "What does an AI agent do in billing?",
         a: "An AI agent is software that can take a sequence of actions toward a goal, such as reading a timesheet, drafting an invoice, sending it and following up, with limited human input. In billing, agents are still new; most businesses keep an approval step before anything is sent to a client or money moves.",
       },
+      {
+        q: "Can AI read supplier invoices and enter them into my books?",
+        a: "Yes, this is one of the most mature uses of AI in billing. Document extraction tools read PDFs, photos and emails and pull the supplier, invoice number, dates, amounts and tax into a draft bill. Accuracy is usually best on clean digital PDFs and weaker on handwritten, blurry or unusual layouts, so keep an approval step and check the tax amount and supplier bank details before anything is paid.",
+      },
+      {
+        q: "What is three-way matching, and can AI automate it?",
+        a: "Three-way matching compares a supplier invoice with the purchase order and the delivery or receiving record before you pay, so you only pay for what you ordered and received. AI and rules-based software can match the three documents automatically and flag differences in quantity, price or tax. A person should still resolve the exceptions, because a mismatch can mean a partial delivery, a price change or a billing error.",
+      },
+      {
+        q: "Can AI spot duplicate or fraudulent invoices?",
+        a: "It can help. Software can flag invoices with the same number, amount or supplier as one already paid, and highlight unusual patterns such as a new bank account or an invoice from an unknown sender. It will not catch every scam, especially business email compromise that copies a real supplier. Always confirm any change of bank details by phoning the supplier on a number you already have, not one in the email.",
+      },
+      {
+        q: "Can I use AI-written line items in the free invoice generator?",
+        a: "Yes. You can ask a chatbot to tidy your work notes into clear line-item descriptions, then paste them into the invoice generator, where you enter the quantities and rates yourself and the tool calculates subtotals, tax, discounts and the balance due. It then creates a PDF in your browser. It does not send the invoice or chase payment, so you email the PDF to your client yourself.",
+      },
     ],
     content: `
 <p><strong>Quick answer:</strong> AI invoicing uses machine learning and language models to take routine work out of billing: reading documents, drafting invoices and emails, matching incoming payments to open invoices, predicting who will pay late and sending automated payment reminders. In 2026 it reliably automates data entry and follow-up. It does not replace human review of tax, pricing, disputes or legal e-invoicing compliance.</p>
@@ -157,6 +173,26 @@ export const FINANCE_2026_POSTS: PostDraft[] = [
       {
         q: "Can I build a 13-week cash flow forecast in Excel or Google Sheets?",
         a: "Yes. Put weeks across the columns and categories down the rows, with opening cash, total receipts, total payments, net cash flow and closing cash. Each week's opening cash equals the previous week's closing cash. A spreadsheet is enough for most small businesses; accounting software adds automatic bank and invoice data.",
+      },
+      {
+        q: "What is the difference between a cash flow forecast and a cash flow statement?",
+        a: "A cash flow statement looks backward: it reports the cash that actually moved during a past period and is one of the three main financial statements, alongside the income statement and balance sheet. A cash flow forecast looks forward, estimating future receipts and payments. Use the statement to check your history and to test the assumptions in your forecast, such as how quickly customers really pay.",
+      },
+      {
+        q: "How much cash buffer should a small business keep?",
+        a: "There is no official figure; it depends on how uneven your income is and how quickly you could raise cash. Many owners set a minimum based on fixed costs, such as enough to cover a full payroll and rent cycle, and raise it if a few large clients make up most of their receipts. Put your chosen minimum in the forecast as its own row and treat any week below it as a warning.",
+      },
+      {
+        q: "How do I forecast cash flow for a new business with no payment history?",
+        a: "Start with what is certain, such as signed contracts, deposits, rent, loan repayments and payroll, then add sales estimates you can justify. Without a track record, assume customers pay later than their terms, for example two or three weeks after the due date, and keep new sales modest. Replace assumptions with actual figures every week; after a couple of months you will have real payment habits to forecast from.",
+      },
+      {
+        q: "How do I handle foreign currency receipts in a cash flow forecast?",
+        a: "Forecast them in your home currency at a cautious exchange rate, then deduct the conversion and transfer fees your bank or payment provider charges. Put each receipt in the week the converted money is expected to reach your account, which can be a day or more after the customer pays. If a large share of receipts is in another currency, run a second scenario with a weaker rate to see how low your balance could go.",
+      },
+      {
+        q: "Will a lender ask to see a 13-week cash flow forecast?",
+        a: "Some will. Banks and specialist lenders often ask for cash flow projections when you apply for working capital finance, and a 13-week forecast is common in restructuring or when a business is under pressure. Even when it is not required, a clear weekly forecast shows how much you need, when you need it and how you will repay, which makes your application easier for the lender to assess.",
       },
     ],
     content: `
@@ -307,6 +343,26 @@ export const FINANCE_2026_POSTS: PostDraft[] = [
         q: "What is a qualifying earnings day?",
         a: "Under Payday Super, the qualifying earnings (QE) day is generally the day you pay an employee their qualifying earnings, which are based on ordinary time earnings. Each QE day starts its own deadline for the super contribution, so your obligations run pay run by pay run rather than quarter by quarter.",
       },
+      {
+        q: "When is the last quarterly super payment due before Payday Super?",
+        a: "The final quarterly payment, for the April to June 2026 quarter, is due in employees' funds by 28 July 2026. According to the ATO, contributions that reach a fund between 1 and 28 July are allocated first to that June quarter, while contributions arriving on or after 29 July count toward Payday Super obligations instead. Missing 28 July means lodging a super guarantee charge statement, so pay the June quarter early if you can.",
+      },
+      {
+        q: "Do wages paid in July for work done in June fall under Payday Super?",
+        a: "Yes, based on ATO guidance. From 1 July 2026, super is worked out on qualifying earnings according to the date you pay them, even if the work was done before 1 July. So if your last June pay run is actually paid on 2 July, that payday is a qualifying earnings day under Payday Super and the 7 business day deadline applies. Check the ATO's changeover guidance against your own pay dates.",
+      },
+      {
+        q: "Is there still a maximum super contribution base under Payday Super?",
+        a: "Yes, but it now works on an annual basis instead of quarterly. The ATO lists the maximum contributions base for 2026–27 as $270,830 of qualifying earnings. Once an employee's qualifying earnings for the year reach that amount, you generally do not have to pay further super guarantee for them that year, although an award, agreement or contract may still require more. Check the ATO page for the current figure.",
+      },
+      {
+        q: "Do I have to pay super for employees who earn less than $450 a month?",
+        a: "Yes. The old $450 a month threshold was removed from 1 July 2022, so the super guarantee generally applies to eligible employees whatever they earn. Employees under 18, and private or domestic workers, still need to work more than 30 hours in a week for super to be payable for that week. Under Payday Super, their contributions are due within 7 business days of each payday like anyone else's.",
+      },
+      {
+        q: "Do I pay super on overtime under Payday Super?",
+        a: "Generally not, for genuine overtime hours. Qualifying earnings are built on ordinary time earnings, and overtime payments are usually excluded from ordinary time earnings. Some awards, agreements or contracts require super on overtime anyway, and the ATO has detailed guidance on which payments count, such as allowances, bonuses and leave. Check that your payroll software maps each pay item correctly, because an error now repeats every pay run.",
+      },
     ],
     content: `
 <p><strong>Quick answer:</strong> Payday Super is the Australian rule, in force from 1 July 2026, that employers must pay employees' super guarantee contributions with each pay rather than quarterly. Contributions must be received by the employee's super fund within 7 business days of payday (20 business days for a new employee's first contribution). The super guarantee rate is 12% of qualifying earnings.</p>
@@ -428,6 +484,26 @@ export const FINANCE_2026_POSTS: PostDraft[] = [
       {
         q: "Which is cheaper, invoice financing or a line of credit?",
         a: "Usually a bank line of credit, when you can get one, because it is priced as an annual interest rate on what you draw. Invoice financing fees often look small per month but annualize higher. Convert every offer to a cost per year on the cash you actually use, and include all fees, before you compare.",
+      },
+      {
+        q: "What advance rate can I expect from invoice financing?",
+        a: "Advance rates commonly fall somewhere around 70% to 90% of the invoice value, although some providers advertise more and others less. The rate depends on your customers' credit, your industry, how often invoices are disputed and the length of your payment terms. The remainder, minus fees, is paid to you when the customer pays. Compare offers on total annualized cost, not just the headline advance.",
+      },
+      {
+        q: "What happens if my customer never pays a financed invoice?",
+        a: "Under a recourse arrangement, which is the most common type, you must repay the advance and fees or replace the invoice with another one. Under non-recourse terms, the lender takes on some of the credit risk, often only if the customer becomes insolvent, and charges more for it. Read exactly which risks a non-recourse agreement covers, because disputes and simple late payment are often excluded.",
+      },
+      {
+        q: "How fast can invoice financing pay out?",
+        a: "Once your account is set up, many providers advertise funding within one or two business days of approving an invoice. The first setup takes longer, because the lender checks your business, your customers and sometimes your contracts and aging report. A business line of credit can be quicker to draw once it is in place, but applying for one often involves more paperwork up front.",
+      },
+      {
+        q: "Can freelancers and sole traders use invoice financing?",
+        a: "Often, yes, if you invoice other businesses on credit terms. Some online platforms fund individual invoices for small businesses and sole traders, while larger whole-ledger facilities may set minimum turnover levels. Invoices to consumers rarely qualify. Lenders look closely at your client's creditworthiness, so an invoice to a large, reliable company is easier to fund than one to a small startup.",
+      },
+      {
+        q: "Does a business line of credit expire?",
+        a: "Often, yes, or at least it gets reviewed. Lines of credit are commonly reviewed or renewed periodically, often once a year, and some have a fixed draw period followed by a repayment period. The lender can usually reduce or freeze the limit if your finances weaken. Check the review date, renewal fees and conditions in the agreement, and avoid relying on a line of credit as permanent funding.",
       },
     ],
     content: `
@@ -587,6 +663,22 @@ export const FINANCE_2026_POSTS: PostDraft[] = [
         q: "Do I get back sales tax I paid on an invoice that was never paid?",
         a: "In many US states, yes. States commonly allow sellers to deduct or claim a refund of sales tax previously remitted on accounts later written off as bad debts, under conditions set by each state. Rules and forms differ, so check your state revenue department's guidance before claiming.",
       },
+      {
+        q: "Can I write off only part of an unpaid invoice?",
+        a: "Yes. If a customer pays some of the invoice or you agree a settlement for less, you can write off the remaining balance using the same journal entry for the smaller amount. For US income tax, the IRS allows a deduction for a business bad debt that is partly worthless, but a nonbusiness bad debt must be totally worthless. In the UK, VAT bad debt relief can be claimed on the unpaid part.",
+      },
+      {
+        q: "What records do I need to support a bad debt deduction?",
+        a: "Keep the original invoice, the contract or order, proof that you included the income in your books, and a record of your collection efforts such as reminders, call notes, a final demand and any agency report. The IRS says you must show you took reasonable steps to collect, although you do not have to go to court if a judgment would be uncollectible. Note the date and reason you decided the debt was worthless.",
+      },
+      {
+        q: "Is an unpaid personal loan treated the same as an unpaid invoice?",
+        a: "No, not in the US. Money you lent to a friend or relative outside your business is a nonbusiness bad debt. It is deductible only when totally worthless and is treated as a short-term capital loss, with a statement explaining your collection efforts. An unpaid business invoice follows the business bad debt rules instead. Loans to family are scrutinized closely, so keep written terms and evidence that it was a real loan, not a gift.",
+      },
+      {
+        q: "Do I need to tell the customer when I write off their invoice?",
+        a: "No. A write-off is an internal accounting entry and you are not required to tell the customer. Many businesses avoid announcing it, because a message that sounds like forgiveness could weaken a later claim. If you genuinely decide to release the customer from the debt, put that in writing and consider whether a credit note is needed. Local debt collection rules still apply if you keep chasing the balance.",
+      },
     ],
     content: `
 <p><strong>Quick answer:</strong> A bad debt write-off removes an unpaid invoice you no longer expect to collect from accounts receivable and records it as bad debt expense. Small businesses using the direct write-off method debit bad debt expense and credit accounts receivable. The write-off is an accounting entry; it does not cancel the customer's debt, and tax relief has separate rules.</p>
@@ -739,6 +831,26 @@ export const FINANCE_2026_POSTS: PostDraft[] = [
         q: "Which is better for recurring invoices and reminders on a free plan?",
         a: "Zoho Invoice, based on the published plans. Its free plan lists recurring invoices and automated payment reminders. Wave offers recurring invoices, but automated late payment reminders are listed as a Pro feature. If chasing payment is your biggest time cost, that difference matters.",
       },
+      {
+        q: "Can my accountant log in to Zoho Invoice or Wave for free?",
+        a: "On Zoho Invoice's free plan, usually yes: it allows two users, so your accountant can take the second seat. Wave lists additional user roles as a Pro feature, so on Starter you would normally share reports or exports with your accountant instead. Check each pricing page for current user limits, because they change, and never share your own login details with anyone.",
+      },
+      {
+        q: "Can I turn an estimate into an invoice in Zoho Invoice and Wave?",
+        a: "Yes. Both tools let you create estimates or quotes on their free plans and convert an accepted one into an invoice, so you do not retype the line items. Check the client name, quantities and tax again before you send it, because the scope often changes between quote and invoice. Keeping the estimate number on the invoice helps the client match the two documents.",
+      },
+      {
+        q: "What happens if I reach Zoho Invoice's 500 invoice limit?",
+        a: "Zoho's free plan is capped at 500 invoices a year at the time of writing, and Zoho points growing businesses to its paid products: Zoho Billing for advanced invoicing and Zoho Books for full accounting. Check Zoho's pricing page and help documents for exactly what happens at the cap before you rely on it. If you send close to 40 invoices a month, plan the move before your busy season.",
+      },
+      {
+        q: "Do Zoho Invoice and Wave handle sales tax, VAT or GST?",
+        a: "Both let you set up tax rates and apply them to invoice lines, and Zoho Invoice has regional tax settings for a number of countries. Neither free plan files your tax returns for you, and neither should be assumed to meet structured e-invoicing mandates. You remain responsible for charging the right rate and paying it to your tax authority, so confirm your settings with an accountant.",
+      },
+      {
+        q: "Can I customize invoice templates on the free plans?",
+        a: "Yes, within limits. Both let you set your business details, payment terms and notes on a choice of templates. Free Zoho Invoice invoices show \"Powered by Zoho Invoice\", and free Wave invoices carry Wave branding, which the Pro plan removes along with adding your brand colors, based on the published plans. If a branding-free PDF matters most, a free invoice generator that downloads a plain PDF is an alternative.",
+      },
     ],
     content: `
 <p><strong>Quick answer:</strong> In Zoho Invoice vs Wave, choose Zoho Invoice if you want the most complete free invoicing app, with automated reminders, recurring invoices and a client portal, and can live with a 500-invoice yearly cap. Choose Wave if you want free invoicing plus basic bookkeeping in one place and are based in the US or Canada. Both charge for online payments.</p>
@@ -861,6 +973,26 @@ export const FINANCE_2026_POSTS: PostDraft[] = [
       {
         q: "Does QuickBooks have a free plan?",
         a: "At the time of writing, QuickBooks Online's US pricing page lists a Free plan for one user with up to two invoices a month (unlimited if you qualify for and enable QuickBooks Payments), one connected bank account and no mobile app or third-party integrations. Xero offers a free trial but no free plan.",
+      },
+      {
+        q: "What happens to my data if I cancel QuickBooks Online or Xero?",
+        a: "QuickBooks Online's help pages say a cancelled company moves to read-only access for one year, during which you can view, export and print but not edit, after which the data may be deleted. Xero's help center explains its own process for cancelled organizations. With either product, export your reports, invoice PDFs and contact lists before cancelling, and keep them for as long as your tax authority requires.",
+      },
+      {
+        q: "Can I take online card payments with Xero and QuickBooks?",
+        a: "Yes. QuickBooks offers its own QuickBooks Payments service, and Xero connects to payment providers such as Stripe so clients can pay directly from the invoice. Processing fees are charged separately from the subscription and vary by payment method and country. Compare the fees for your typical invoice size on each official pricing page, because at higher volumes they can cost more than the plan itself.",
+      },
+      {
+        q: "Do accountants get discounts on Xero or QuickBooks?",
+        a: "Often, yes. Accountants and bookkeepers in partner programs, such as the Xero partner program and QuickBooks ProAdvisor, can often access discounted subscriptions for their clients. If your accountant manages your subscription, ask whether they pass on a lower price, who owns the file and what happens if you change accountants. Make sure the company file is in your name so you keep control of your records.",
+      },
+      {
+        q: "Which is easier to use, Xero or QuickBooks Online?",
+        a: "It depends on who you ask, so test both yourself. Both offer free trials, and the fairest test is to enter one real month of invoices, bills and bank transactions. Notice how quickly you can create and send an invoice, reconcile your bank feed and find the aging report. If your accountant uses one product every day, their familiarity often matters more than small interface differences.",
+      },
+      {
+        q: "Do I still need an invoice generator if I use Xero or QuickBooks?",
+        a: "Usually not. Both products create, send and track invoices, and invoices made inside them flow into your accounts receivable and reports automatically. A separate invoice generator is mainly useful before you choose software, for an occasional one-off invoice, or when you only need a PDF. If you make an invoice outside your accounting system, record it there too and keep the same number sequence.",
       },
     ],
     content: `

@@ -119,6 +119,48 @@ const CORE_POSTS: PostDraft[] = [
     category: "guides",
     date: "2026-10-22",
     author: "Invoice Creator Editorial Team",
+    faqs: [
+      {
+        q: "How long does it take to generate an invoice online?",
+        a: "Most people generate a simple invoice in about five minutes once their business details are saved. Your first invoice takes a little longer because you enter your name, address, tax ID and logo from scratch. After that, the main work is adding the client, the line items and the due date, then checking the preview before you download the PDF.",
+      },
+      {
+        q: "Is it safe to enter my business details into an online invoice generator?",
+        a: "It depends on the tool, so check where it stores your data. Our generator builds the PDF in your browser and saves your draft in your browser's local storage on that device, with no account required. That also means clearing your browser data or switching devices removes the draft, so keep a copy of every PDF you send in your own files.",
+      },
+      {
+        q: "Can I generate an invoice in a currency other than my own?",
+        a: "Yes. Choose the currency before you add line items so every amount, tax line and total uses the same one. Show the three-letter code, such as USD, EUR or GBP, because symbols like $ are shared by several currencies. Agree the currency with your client first, and record the exchange rate you used if your accounts are kept in your home currency.",
+      },
+      {
+        q: "What should I do if I find a mistake after sending an invoice?",
+        a: "Don't edit the PDF and resend it under the same number. If the error is minor and the client hasn't processed it, ask whether they can disregard it, then issue a corrected invoice with a new number. If it has already been recorded, issue a credit note that cancels the original and send a new, correct invoice. This keeps a clean audit trail for both sides.",
+      },
+      {
+        q: "Can I generate recurring invoices automatically?",
+        a: "Not with a simple browser-based generator: it creates one invoice at a time and does not schedule or send invoices for you. For a handful of retainer clients, reuse your saved details, update the number, dates and period, and send on the same day each month. If you bill many clients on a schedule, billing or accounting software with recurring invoices is the better fit.",
+      },
+      {
+        q: "Is a PDF invoice from a generator legally valid?",
+        a: "In many countries a PDF invoice is acceptable as long as it contains the details local law requires, such as a unique number, dates, both parties and any tax information. Some countries, however, require certain businesses to issue structured e-invoices through an approved system, for example Saudi Arabia, India for larger GST taxpayers, and an increasing number of EU countries. Check your tax authority's rules.",
+      },
+      {
+        q: "How should I store copies of the invoices I generate?",
+        a: "Save every PDF in one dedicated folder, named with the invoice number and client, and back it up to cloud storage. Keep a simple log of numbers, dates, amounts and payment status alongside it. Retention periods vary by country, often several years, so check what your tax authority expects, for example the IRS in the US or HMRC in the UK.",
+      },
+      {
+        q: "Can clients pay by card directly from a generated invoice?",
+        a: "Only if you add a way to pay. An invoice is a document, so it cannot take payments on its own. If you use a payment provider, create a payment link there and paste it into the notes or payment instructions, next to your bank details. Make sure the link shows the same amount and invoice number so the payment is easy to match.",
+      },
+      {
+        q: "Can I generate an invoice for work I did months ago?",
+        a: "Yes, you can bill for past work, but date the invoice honestly. The issue date should be the day you actually create and send it, while the description or a supply date field shows when the work was done. Backdating the issue date can cause problems with tax records and numbering, and the due date should run from the real issue date.",
+      },
+      {
+        q: "How do I generate an invoice when the client has already paid a deposit?",
+        a: "List the full value of the work as usual, then record the deposit so the invoice shows what is still owed. In our generator, enter the deposit in the amount paid field and the balance due is calculated for you. Mention the deposit invoice number in the notes, for example Deposit received on INV-2026-0040, so the client's finance team can reconcile both documents.",
+      },
+    ],
     content: `
 <p><strong>Quick answer:</strong> To generate an invoice, open a free online invoice generator, add your business details and your client's billing details, set a unique invoice number, issue date and due date, list each product or service with its quantity and rate, apply any tax or discount, add payment instructions, and then download the invoice as a PDF and email it to your client. With a good invoice maker, this takes about five minutes and you don't need any accounting software.</p>
 
@@ -239,6 +281,48 @@ const CORE_POSTS: PostDraft[] = [
     date: "2026-10-08",
     author: "Invoice Creator Editorial Team",
     jurisdiction: "Pakistan",
+    faqs: [
+      {
+        q: "How can I check whether a buyer's NTN or STRN is valid?",
+        a: "Use the FBR's online taxpayer verification and Active Taxpayer List (ATL) before you issue the invoice. For services, the relevant provincial authority, such as PRA or SRB, publishes its own registration lookup. Checking first matters because a wrong or inactive number can stop a registered buyer from claiming input tax, and the invoice may then need to be corrected through a credit or debit note.",
+      },
+      {
+        q: "Do I have to issue sales tax invoices through FBR's digital invoicing system?",
+        a: "Possibly. SRO 709(I)/2025 extended mandatory electronic invoicing to corporate and non-corporate sales tax registered persons, who must connect their invoicing, ERP or point-of-sale system to the FBR through a licensed integrator or PRAL. Deadlines were set in 2025 and have been revised over time, so confirm on the FBR website or with your tax adviser whether and when the requirement applies to you.",
+      },
+      {
+        q: "How long should I keep sales tax invoices in Pakistan?",
+        a: "Keep them for at least six years after the end of the tax period they relate to. The Sales Tax Act, 1990 sets this six-year period for records and documents, and it runs longer if an assessment, appeal or other proceeding about that period is still pending. Keep both issued and received invoices, plus credit notes, debit notes and bank records.",
+      },
+      {
+        q: "What is the difference between a sales tax invoice and a commercial invoice in Pakistan?",
+        a: "A sales tax invoice is issued by a registered person for a taxable supply and lets a registered buyer claim input tax. It must carry the prescribed details, including both parties' registration numbers and the tax charged. A commercial invoice is a normal request for payment that any business can issue, but it shows no sales tax and cannot support an input tax claim.",
+      },
+      {
+        q: "What changes when I sell to a buyer who is not registered for sales tax?",
+        a: "You still issue an invoice, but there is no buyer STRN to show and the buyer cannot claim input tax. For many taxable supplies of goods to unregistered persons, further tax at an additional rate may also apply on top of the normal sales tax. Rates, exemptions and documentation rules change in federal budgets, so check the current position with the FBR before invoicing.",
+      },
+      {
+        q: "Which authority do I register with if I provide services in more than one province?",
+        a: "Sales tax on services is largely provincial, so you may need to register with each provincial authority where you provide taxable services, such as PRA in Punjab, SRB in Sindh, KPRA in Khyber Pakhtunkhwa or BRA in Balochistan. Services in Islamabad fall under federal rules. Where a service is treated as provided can be complex, so take professional advice before you invoice.",
+      },
+      {
+        q: "Do I need to file a sales tax return if I issued no invoices in a month?",
+        a: "Yes, in general. Registered persons are normally expected to file a return for every tax period, even when there were no sales, which is usually called a nil return. Missing returns can lead to penalties and can affect your status on the Active Taxpayer List, which in turn affects how buyers deal with you. Check the current filing dates on the FBR or provincial portal.",
+      },
+      {
+        q: "Why does a buyer's input tax claim depend on my invoice and return?",
+        a: "A registered buyer can generally claim input tax only when the supply appears in your own sales tax return with their correct registration number. If you leave out their STRN, enter the wrong value or file late, their claim may be rejected even though they paid you the tax. Accurate invoices and timely returns are a big part of being a supplier buyers want to keep.",
+      },
+      {
+        q: "Do I issue a sales tax invoice for exports of goods?",
+        a: "Registered exporters still document export sales, but exports of goods are generally zero-rated, so the invoice shows sales tax at 0% rather than the standard rate. Export invoices are usually issued in the agreed foreign currency and supported by customs and shipping documents. The exact paperwork and refund rules are set by the FBR, so confirm them with your tax adviser or clearing agent.",
+      },
+      {
+        q: "Can I make a sales tax invoice with a free online invoice generator?",
+        a: "You can use a generator for the layout. Our Pakistan preset includes PKR, NTN and STRN fields and lets you set the tax rate per invoice. It produces a PDF, not an FBR-integrated digital invoice, so it does not add an FBR invoice number or QR code. If you fall under FBR's digital invoicing or integrated retailer rules, you must use an integrated system instead.",
+      },
+    ],
     content: `
 <p><strong>Important:</strong> Tax laws, rates, registration requirements, and invoicing rules can change and may vary by province and by type of supply. This article provides general informational content and should not be considered professional tax, accounting, or legal advice. Verify current requirements with the Federal Board of Revenue (FBR), the relevant provincial revenue authority, or a qualified tax adviser.</p>
 
@@ -305,6 +389,48 @@ const CORE_POSTS: PostDraft[] = [
     date: "2026-10-07",
     author: "Invoice Creator Editorial Team",
     jurisdiction: "United Arab Emirates",
+    faqs: [
+      {
+        q: "What is the VAT registration threshold in the UAE?",
+        a: "Registration is mandatory when your taxable supplies and imports exceeded AED 375,000 over the previous 12 months, or are expected to exceed it in the next 30 days. You can register voluntarily once supplies or expenses exceed AED 187,500. Thresholds and rules can change, so confirm the current figures on the Federal Tax Authority (FTA) website before you register or start issuing tax invoices.",
+      },
+      {
+        q: "Do UAE tax invoices have to be in Arabic?",
+        a: "Tax invoices issued in English are widely used and generally accepted for VAT purposes, and many businesses issue bilingual English and Arabic invoices. The FTA can ask for records to be translated into Arabic, and the data requirements for structured e-invoices may differ. Because guidance on language is still evolving with e-invoicing, check the FTA's current rules or ask your tax agent.",
+      },
+      {
+        q: "How long must I keep tax invoices in the UAE?",
+        a: "Keep tax invoices, credit notes and other VAT records for at least five years from the end of the relevant tax period. Records relating to real estate generally must be kept much longer, commonly cited as 15 years. Keep them in a form you can produce quickly if the FTA asks, and confirm current retention rules with the FTA or your tax agent.",
+      },
+      {
+        q: "When does mandatory e-invoicing start in the UAE?",
+        a: "At the time of writing, the rollout is phased. A voluntary pilot began on 1 July 2026, businesses with revenue of AED 50 million or more must go live on 1 January 2027, other businesses on 1 July 2027, and government entities later in 2027. Each group must appoint an accredited service provider first. Dates have already been amended once, so check the Ministry of Finance and FTA.",
+      },
+      {
+        q: "Is a PDF tax invoice still valid in the UAE?",
+        a: "Until the e-invoicing mandate applies to your business, a PDF tax invoice that contains all the required details is generally valid. Once your phase goes live, B2B and B2G invoices must be exchanged as structured e-invoices through an accredited service provider. A PDF generator, including ours, does not create those structured e-invoices, so plan the switch before your go-live date.",
+      },
+      {
+        q: "What is the penalty for not issuing a proper tax invoice in the UAE?",
+        a: "Failing to issue a tax invoice or tax credit note can attract an administrative penalty for each document under the UAE's VAT penalty rules, and penalty amounts have been revised over the years. Published summaries quote different figures, so check the FTA's current penalty schedule rather than relying on a number from a blog. Issuing correct invoices on time is the simplest protection.",
+      },
+      {
+        q: "Can a business that is not VAT-registered issue an invoice in the UAE?",
+        a: "Yes. You can issue a normal commercial invoice to request payment, but it must not be titled Tax Invoice, show a TRN or charge VAT. Include your name, the customer, a unique number, the date, a description and the amount due. Once your supplies approach the mandatory threshold, monitor your turnover so you register on time and switch to tax invoices.",
+      },
+      {
+        q: "What should a tax invoice to an overseas customer show instead of a TRN?",
+        a: "An overseas customer usually has no UAE TRN, so show their full legal name and address, including the country. Apply the correct VAT treatment for each line, which for qualifying exports may be zero-rating at 0%. Zero-rating depends on meeting specific conditions and keeping evidence, such as proof the goods left the UAE or the customer is outside it, so check with your tax agent.",
+      },
+      {
+        q: "What should I do if I receive a tax invoice without my TRN?",
+        a: "Ask the supplier to correct it, ideally through a tax credit note and a new tax invoice. When you buy as a registered business, input tax recovery generally depends on holding a valid tax invoice with the required details, and a full tax invoice for a registered recipient should show your TRN. Don't alter the supplier's invoice yourself.",
+      },
+      {
+        q: "Do I need to issue a tax invoice for an advance payment in the UAE?",
+        a: "Usually, yes. Under UAE VAT rules, receiving payment before you deliver can create a date of supply for the amount received, so VAT becomes due on that advance and a tax invoice should normally be issued within the usual 14-day window. Then invoice the balance when the supply is completed. Confirm the timing for your contracts with a tax agent.",
+      },
+    ],
     content: `
 <p><strong>Important:</strong> Tax laws, rates, registration requirements, and invoicing rules can change. This article provides general informational content and should not be considered professional tax, accounting, or legal advice. Verify current requirements with the UAE Federal Tax Authority (FTA) or a qualified tax agent. The UAE has also announced a move to mandatory e-invoicing, which will change how invoices are issued for many businesses, so check the FTA's latest timeline.</p>
 
@@ -371,6 +497,48 @@ const CORE_POSTS: PostDraft[] = [
     date: "2026-10-06",
     author: "Invoice Creator Editorial Team",
     jurisdiction: "United Kingdom",
+    faqs: [
+      {
+        q: "Do I need a business bank account as a sole trader?",
+        a: "There is no legal requirement for a sole trader to have a separate business bank account, but it makes bookkeeping and your Self Assessment much easier. Some banks' terms also restrict using a personal account for business transactions, so check yours. Whichever account you use, show the account name, sort code and account number exactly as they appear on every invoice.",
+      },
+      {
+        q: "Should I put my UTR on my invoices?",
+        a: "No. Your Unique Taxpayer Reference is not required on a sole trader invoice and is best kept private, as it is used for dealing with HMRC. The exception is the Construction Industry Scheme, where contractors ask subcontractors for their UTR to verify them, but that is shared directly with the contractor rather than printed on each invoice.",
+      },
+      {
+        q: "What is the current VAT registration threshold for sole traders?",
+        a: "At the time of writing, you must register for VAT if your VAT-taxable turnover goes over £90,000 in any rolling 12-month period, or you expect it to in the next 30 days alone. The threshold has been £90,000 since April 2024. It can change at a Budget, so check the current figure on GOV.UK before relying on it.",
+      },
+      {
+        q: "Does Making Tax Digital change how I invoice as a sole trader?",
+        a: "It does not change what goes on an invoice, but it changes your record keeping. Making Tax Digital for Income Tax applies from April 2026 to sole traders and landlords with qualifying income over £50,000, from April 2027 over £30,000 and from April 2028 over £20,000. If it applies, you must keep digital records and send quarterly updates using compatible software.",
+      },
+      {
+        q: "How much statutory interest can I claim on a late business payment?",
+        a: "For business-to-business debts, you can usually claim simple interest at 8% above the Bank of England base rate, plus fixed compensation of £40 for debts under £1,000, £70 for £1,000 to £9,999.99, and £100 for £10,000 or more. These rights do not apply to consumers. Check GOV.UK for the base rate that applies to your debt's period.",
+      },
+      {
+        q: "Can I invoice private individuals as a sole trader?",
+        a: "Yes. The same invoice details apply, but consumers have stronger legal protections than businesses, and statutory late payment interest does not apply to them. Set out your price, payment terms and any deposit clearly before you start, ideally in writing. For some work agreed away from your premises, consumers may also have cancellation rights, so check the Consumer Contracts Regulations guidance.",
+      },
+      {
+        q: "Do I need to register as self-employed before I send my first invoice?",
+        a: "No, you can invoice before registering, but you must tell HMRC you are self-employed. Generally, you need to register for Self Assessment by 5 October after the end of the tax year in which you started trading. If your gross trading income is £1,000 or less in a tax year, the trading allowance may mean you do not need to register.",
+      },
+      {
+        q: "Can a UK sole trader invoice in euros or dollars?",
+        a: "Yes, you can invoice in any currency agreed with your client. For your tax records, convert the income to pounds using a reasonable and consistent exchange rate. If you are VAT-registered and charge UK VAT, the VAT amount must also be shown in sterling on the invoice. Show the currency code clearly, such as EUR or USD, to avoid confusion.",
+      },
+      {
+        q: "Do I have to put my home address on my invoices?",
+        a: "Your invoice should show an address where you can be contacted and where documents can be served, which for many sole traders is their home. If you prefer not to share it, you can use a genuine business address, such as a rented office or a business address service, as long as post sent there reaches you. Check any service's terms before using it.",
+      },
+      {
+        q: "What payment terms should a UK sole trader use?",
+        a: "Many sole traders use 14 or 30 days, agreed in writing before the work starts. If you invoice a business and no payment date was agreed, the late payment rules generally treat the debt as late 30 days after the customer receives the invoice or the goods or services, whichever is later. Always write the actual due date on the invoice.",
+      },
+    ],
     content: `
 <p><strong>Important:</strong> Tax laws, rates, registration requirements, and invoicing rules can change. This article provides general informational content and should not be considered professional tax, accounting, or legal advice. Check GOV.UK and HMRC guidance, or speak to an accountant, for your situation.</p>
 
@@ -439,6 +607,48 @@ jane@smithdesign.example</p>
     category: "guides",
     date: "2026-10-03",
     author: "Invoice Creator Editorial Team",
+    faqs: [
+      {
+        q: "How do I convert minutes to decimal hours on an invoice?",
+        a: "Divide the minutes by 60 and add the result to the whole hours. For example, 15 minutes is 0.25 hours, 30 minutes is 0.5, 45 minutes is 0.75, and 1 hour 20 minutes is about 1.33 hours. Multiply the decimal hours by your rate for the line total. Round to two decimal places consistently so your timesheet and invoice always match.",
+      },
+      {
+        q: "Should I show my hourly rate on the invoice or just the total?",
+        a: "Show the hours, the rate and the total on each line. Clients approve hourly invoices more quickly when they can check the maths themselves, and many finance teams will query a lump sum with no breakdown. Showing the rate also reminds clients of what was agreed, which helps when you later need to discuss a rate increase.",
+      },
+      {
+        q: "What should I do if a client disputes the hours on my invoice?",
+        a: "Respond quickly and share the detailed time records behind the disputed lines, including dates and task descriptions. Offer a short call to walk through them. If only part of the invoice is disputed, ask the client to pay the undisputed amount now while you resolve the rest. If you made an error, correct it with a credit note rather than editing the original.",
+      },
+      {
+        q: "What is the difference between an hourly rate and a day rate?",
+        a: "An hourly rate bills each hour you work, while a day rate is a fixed charge for a working day, regardless of the exact hours. Day rates suit on-site or full-day engagements and are simpler to invoice. Define what a day means in your contract, for example 7.5 hours, and how partial days and overtime are charged.",
+      },
+      {
+        q: "Should I bill for meetings, emails and phone calls?",
+        a: "You can, as long as your contract says so. Many professionals bill all client time, including calls and meetings, while others include short emails in their rate. Decide your policy before you start and apply it consistently. On the invoice, list meetings and calls as their own entries, such as Client call: project scope review, 0.5 h, so nothing looks hidden.",
+      },
+      {
+        q: "How do I raise my hourly rate for an existing client?",
+        a: "Give written notice before the change takes effect, commonly 30 to 60 days, and say exactly when the new rate starts. Check your contract first, as it may set rules on rate changes. On the first invoice at the new rate, add a short note confirming the change so the client's finance team is not surprised by a different number.",
+      },
+      {
+        q: "Can I put hourly and fixed-fee items on the same invoice?",
+        a: "Yes. List each type on separate lines so the client can see what is billed by time and what is a fixed price. For example, show Website maintenance retainer, October as a fixed amount, then Additional development work: 6 h at your hourly rate. Keep the billing period consistent for both types so the invoice matches your contract and timesheet.",
+      },
+      {
+        q: "How do I invoice hourly work done by a subcontractor?",
+        a: "Bill the subcontractor's hours on separate lines with their rate, or with your agreed resale rate if you add a markup. Check that your contract with the client allows subcontracting and any markup. Keep the subcontractor's own invoice and timesheet on file so you can support your figures if the client asks, and make sure their hours match what you bill.",
+      },
+      {
+        q: "Should I charge for time spent fixing my own mistakes?",
+        a: "Generally, no. Most clients expect you to fix your own errors at your cost, and billing for them is a common cause of disputes. Rework caused by the client, such as changed requirements or late feedback, is different and is usually billable if your contract says so. Label that work clearly, for example Rework after scope change approved on 3 October.",
+      },
+      {
+        q: "How do I work out what hourly rate to charge?",
+        a: "Start with the income you want each year, add your business expenses, taxes and time off, then divide by the hours you can realistically bill. Billable hours are usually far fewer than hours worked, because admin, sales and learning are unpaid. Then compare the result with typical rates in your field and adjust for your experience and the value you deliver.",
+      },
+    ],
     content: `
 <h2>When hourly billing makes sense</h2>
 <p>Hourly billing suits work where the scope is hard to predict: <a href="/blog/consulting-invoice-template">consulting</a>, support, maintenance, <a href="/blog/legal-invoice-template">legal</a> or bookkeeping work, <a href="/blog/tutoring-invoice-template">tutoring</a> and many trades. It protects you from unlimited scope creep, and clients pay only for time actually spent. The trade-off is that clients need to trust your time records, so the invoice must make your hours easy to understand and verify.</p>
@@ -509,6 +719,48 @@ jane@smithdesign.example</p>
     category: "guides",
     date: "2026-10-01",
     author: "Invoice Creator Editorial Team",
+    faqs: [
+      {
+        q: "Do I need to register for VAT or sales tax in my client's country?",
+        a: "Often not for business-to-business services, because many countries use a reverse charge so the client accounts for the tax. Selling digital services or goods to consumers abroad can be different and may require registration in the customer's country, sometimes from the first sale. The rules depend on both countries and what you sell, so check with an accountant or the relevant tax authority.",
+      },
+      {
+        q: "What is a W-8BEN form and do I need one for US clients?",
+        a: "A W-8BEN is an IRS form that a non-US individual gives to a US client to certify foreign status for tax purposes. It is usually requested before payment and helps avoid US backup withholding on payments for services performed outside the US. You give it to the client, not the IRS. Businesses use the W-8BEN-E version instead.",
+      },
+      {
+        q: "What payment terms work best for international clients?",
+        a: "Shorter terms and deposits reduce your risk, because chasing an overseas debt is harder and costlier. Many freelancers ask for a deposit on new clients, then bill by milestone or monthly. Allow for bank processing times and time zones when setting the due date, and write it as a full date, such as 15 November 2026, so there is no ambiguity.",
+      },
+      {
+        q: "Is a commercial invoice the same as a regular invoice for international clients?",
+        a: "Not quite. A regular invoice requests payment for goods or services. A commercial invoice travels with goods across a border and gives customs the information it needs, such as the value, origin, quantities and tariff details, to assess duties. If you only sell services, you usually need a normal invoice. If you ship goods, you typically need both.",
+      },
+      {
+        q: "How can I reduce currency conversion losses on international invoices?",
+        a: "Compare the exchange rate and fees your bank or payment service offers against the mid-market rate. Multi-currency accounts let you receive money in the client's currency and convert when it suits you. Agreeing the invoice currency in your contract, and stating who pays transfer fees, also prevents short payments. For large or long contracts, consider pricing in a stable currency.",
+      },
+      {
+        q: "What can I do if an international client doesn't pay?",
+        a: "Start with polite reminders, then a firm final notice that refers to your contract. If that fails, options include a collection agency in the client's country or legal action, which can be slow and expensive across borders. That is why prevention matters: deposits, milestone billing, clear contracts that name the governing law, and stopping work when payments are overdue.",
+      },
+      {
+        q: "What do OUR, SHA and BEN mean on an international wire transfer?",
+        a: "They are SWIFT charge codes that decide who pays the bank fees. OUR means the sender pays all charges, so you should receive the full amount. SHA means the fees are shared: the sender pays their bank, and you pay receiving and often intermediary fees. BEN means you, the beneficiary, pay all charges. Ask clients to use OUR when your contract says so.",
+      },
+      {
+        q: "Do I need my client's VAT number on an international invoice?",
+        a: "Usually yes when you invoice a business under a reverse charge, for example a VAT-registered business in the EU. The client's VAT number helps show the supply is business to business. EU VAT numbers can be checked with the European Commission's VIES service, and keeping a record of that check is good practice. Rules differ outside the EU, so confirm locally.",
+      },
+      {
+        q: "How do I prove income from foreign clients for tax purposes?",
+        a: "Keep a complete trail for every job: the contract or order, the invoice, and the bank or payment service record showing the money received. In some countries, banks issue specific certificates for foreign remittances, which may be needed for tax benefits on exported services. Store everything by invoice number so each payment can be matched to its invoice quickly.",
+      },
+      {
+        q: "Can I use a free invoice generator for international clients?",
+        a: "Yes, for standard PDF invoices. Our generator supports USD, EUR, GBP, INR, AUD, CAD, AED and PKR, and lets you add tax notes such as a reverse charge statement and full bank details. It does not create structured e-invoices, so if your client's country or a large client's system requires a specific e-invoicing format, you will need a compliant e-invoicing provider.",
+      },
+    ],
     content: `
 <h2>Why cross-border invoices are different</h2>
 <p>Billing a client in another country adds three questions that domestic invoices rarely raise: which currency to use, whether any tax applies, and how the money will actually reach you. Getting these right up front prevents the most common problems: short payments due to fees, bounced transfers, and tax queries months later.</p>
@@ -577,6 +829,48 @@ jane@smithdesign.example</p>
     category: "invoicing-basics",
     date: "2026-09-29",
     author: "Invoice Creator Editorial Team",
+    faqs: [
+      {
+        q: "Is a PO number legally required on an invoice?",
+        a: "Generally, no. Tax and invoicing laws rarely require a purchase order number, so it is usually a contractual or procedural requirement set by the buyer. In practice, that can be just as important: many larger organizations will not pay an invoice without a valid PO number. If your client uses purchase orders, treat the PO number as mandatory for that client.",
+      },
+      {
+        q: "What does a PO number usually look like?",
+        a: "There is no standard format. PO numbers are generated by the buyer's procurement or accounting system, so they may be purely numeric, include letters, or carry a prefix such as PO- or a department code. Copy the number exactly as it appears on the purchase order, including any leading zeros or prefixes, because a small difference can prevent automatic matching.",
+      },
+      {
+        q: "What is the difference between a purchase order and a quote?",
+        a: "A quote is your offer to the buyer, showing what you will supply and at what price. A purchase order is the buyer's formal acceptance and commitment to buy, usually raised after they approve your quote. When the PO is issued, check that its items, quantities, prices and terms match your quote, and raise any differences before you start work.",
+      },
+      {
+        q: "What is a blanket purchase order?",
+        a: "A blanket purchase order covers repeated purchases over a set period, often with a maximum value, instead of a new PO for every order. You quote the same PO number on each invoice raised against it. Track how much of the blanket PO you have already billed, because invoices that would take the total over its limit or past its end date are often rejected.",
+      },
+      {
+        q: "Can I start work before I receive a PO number?",
+        a: "You can, but it is risky with organizations that use purchase orders. Without a PO, the purchase may not be approved in their system, and your invoice may be held until someone raises one. If the work is urgent, get written confirmation from an authorized person that a PO is coming, and ask for the number before you invoice.",
+      },
+      {
+        q: "What is three-way matching?",
+        a: "Three-way matching is a check accounts payable runs before paying: it compares the purchase order, the goods receipt or delivery record, and your invoice. Quantities, prices and items should agree across all three. If you invoice for more than was received or at a different price, the invoice is held. Two-way matching compares only the PO and the invoice.",
+      },
+      {
+        q: "What happens if I put the wrong PO number on an invoice?",
+        a: "The invoice will usually fail matching and be rejected or put on hold. Contact accounts payable to ask how they want it fixed. Many will ask you to cancel the original with a credit note and issue a new invoice with the correct PO number. Don't edit and resend the same invoice number with different details, as that confuses both sets of records.",
+      },
+      {
+        q: "Do government clients always require a PO number?",
+        a: "Public sector bodies very often use purchase orders and may refuse to pay without one, but requirements vary by country and organization. Many government buyers also require invoices to be submitted through a specific e-invoicing or procurement portal. Ask during onboarding what they need on the invoice and where to send it, and follow their instructions exactly.",
+      },
+      {
+        q: "What is the difference between a supplier number and a PO number?",
+        a: "A supplier or vendor number identifies you in the buyer's system and stays the same across all your orders. A PO number identifies one specific approved purchase. Some buyers ask you to show both on every invoice. Your supplier number is usually assigned when you complete their new supplier setup, so ask for it if you haven't received one.",
+      },
+      {
+        q: "Can I split one PO across several invoices?",
+        a: "Yes, partial invoicing against one PO is common for phased projects or staggered deliveries. Quote the same PO number on each invoice and describe which part of the order it covers, such as Phase 2 of 3. Make sure the combined total of your invoices never exceeds the PO value, and keep a running record of what has been billed.",
+      },
+    ],
     content: `
 <h2>The short answer</h2>
 <p>A PO (purchase order) number is a reference created by the <em>buyer</em> when they approve a purchase. When you put that number on your invoice, the buyer's accounts-payable team can match your invoice to the approved order and pay it. Without it, many organisations cannot process the invoice at all.</p>
@@ -633,6 +927,48 @@ jane@smithdesign.example</p>
     category: "guides",
     date: "2026-09-26",
     author: "Invoice Creator Editorial Team",
+    faqs: [
+      {
+        q: "What is an AIA G702 pay application?",
+        a: "The AIA G702 is a standard Application and Certificate for Payment form used on many US commercial construction projects, usually paired with the G703 continuation sheet. Together they show the contract sum, work completed to date, stored materials, retainage and the amount due. If your contract calls for AIA forms, a simple invoice may not be accepted on its own.",
+      },
+      {
+        q: "What is a lien waiver and when do I need one?",
+        a: "In the US, a lien waiver is a document in which a contractor or supplier gives up some or all of their right to file a mechanics lien, usually in exchange for payment. Conditional waivers take effect only once payment clears, while unconditional waivers take effect immediately. Some states require specific statutory forms, so check your state's rules before signing.",
+      },
+      {
+        q: "What is a schedule of values?",
+        a: "A schedule of values breaks the total contract price into line items, such as site work, foundations, framing and electrical, each with its own value. It is agreed at the start of the job and used to calculate progress billing, because each invoice claims the percentage completed on each line. A clear schedule makes progress invoices faster to approve.",
+      },
+      {
+        q: "Can I invoice for materials stored on site but not yet installed?",
+        a: "Sometimes. Many commercial contracts allow you to bill for materials delivered and stored on site, or in an approved off-site location, before installation. The client usually asks for supplier invoices, proof of delivery and insurance. Check your contract before billing, and list stored materials on their own line so they are not confused with completed work.",
+      },
+      {
+        q: "How does the Construction Industry Scheme affect my invoices in the UK?",
+        a: "Under CIS, contractors deduct money from subcontractors' payments and pass it to HMRC: 20% for registered subcontractors, 30% for unregistered ones, or nothing if you hold gross payment status. Deductions apply to labour, not to materials, so show labour and materials separately on your invoice. The contractor should give you a statement showing what was deducted.",
+      },
+      {
+        q: "What is the UK VAT domestic reverse charge for construction?",
+        a: "Since 1 March 2021, many supplies of construction services between VAT and CIS registered businesses use the domestic reverse charge. The subcontractor's invoice shows the VAT rate and amount that would apply but does not add it to the total, and states that the customer must account for the VAT to HMRC. It does not apply to end users, so check HMRC guidance.",
+      },
+      {
+        q: "Is there a limit on how much deposit a contractor can take?",
+        a: "In some places, yes. Several US states limit deposits on home improvement contracts. California, for example, generally caps the down payment at 10% of the contract price or $1,000, whichever is less. Commercial work and other countries often have no fixed cap, so the contract governs. Check your state or local licensing rules before setting deposit terms.",
+      },
+      {
+        q: "What is the difference between retainage and a deposit?",
+        a: "A deposit is money the client pays you before work starts, while retainage is money the client holds back from your progress payments until the job is finished. A deposit improves your cash flow, and retainage delays part of it. Show them differently: deduct the deposit from later invoices as a payment received, and show retainage as a held amount you will invoice for release.",
+      },
+      {
+        q: "How do I invoice a time and materials job compared with a fixed-price job?",
+        a: "On a time and materials job, bill labour hours at the agreed rates plus materials at cost or with an agreed markup, ideally with timesheets and receipts. On a fixed-price job, bill agreed milestones or percentages of the contract value, regardless of hours spent. Some contracts set a not-to-exceed cap on time and materials work, so track costs against it.",
+      },
+      {
+        q: "How long can a client hold retainage?",
+        a: "It depends on the contract and local law. Retainage is usually released at substantial completion or after a defects period, often in two stages. Many US states have prompt payment laws that limit the retainage percentage on some projects or require release within a set time. In the UK, retention terms are mainly set by the contract, so read the release conditions before signing.",
+      },
+    ],
     content: `
 <h2>Why construction invoicing is different</h2>
 <p>Construction and trade jobs often run for weeks or months, involve large material costs up front, and change as work progresses. A single invoice at the end would leave the contractor financing the whole job. Instead, the industry uses deposits, progress billing and, on larger projects, retainage. Clear invoices protect your cash flow and reduce disputes with clients and main contractors.</p>
@@ -708,6 +1044,48 @@ jane@smithdesign.example</p>
     category: "comparisons",
     date: "2026-09-24",
     author: "Invoice Creator Editorial Team",
+    faqs: [
+      {
+        q: "Is a bill the same as a receipt?",
+        a: "No. A bill asks for payment, while a receipt confirms that payment has been made. At a restaurant, you get the bill first, pay it, and may then get a receipt. In business, the invoice or bill comes before payment and the receipt follows it. Keep both, because the receipt is your proof that the bill was paid.",
+      },
+      {
+        q: "Is a bill of sale the same as a bill?",
+        a: "No. A bill of sale is a document that transfers ownership of an item, such as a vehicle, boat or equipment, from seller to buyer. It records the transaction and the price but does not request payment like an invoice does. You might issue both: an invoice to request payment, and a bill of sale to record the change of ownership.",
+      },
+      {
+        q: "What is a bill of lading?",
+        a: "A bill of lading is a shipping document issued by a carrier when it receives goods for transport. It acts as a receipt for the goods, sets out the terms of carriage and, in some forms, serves as a document of title. Despite the name, it is not a request for payment. International shipments often need a bill of lading and a commercial invoice.",
+      },
+      {
+        q: "What is the difference between billing and invoicing?",
+        a: "The terms overlap, but invoicing usually means creating and sending invoices, while billing describes the whole process of charging customers, including pricing, issuing invoices or bills, taking payments and following up. A billing system might also handle subscriptions and card payments. For a small business, the core task is the same: send a clear, accurate request for payment.",
+      },
+      {
+        q: "How do I record a bill I receive in my accounts?",
+        a: "Enter it as a bill or supplier invoice in accounts payable, with the supplier, date, amount, tax and due date. That records what you owe and can let you reclaim eligible tax. When you pay, record the payment against that bill so it shows as settled. Keep the original document as your evidence for the expense.",
+      },
+      {
+        q: "Should I pay from a statement or from the invoice?",
+        a: "Pay from the invoices. A statement summarizes every invoice, payment and credit on your account over a period, so it is useful for spotting missing or unpaid items, but it is not usually a request for a new payment. Paying from a statement can lead to paying an invoice twice. Match each payment to an invoice number.",
+      },
+      {
+        q: "Is a utility bill an invoice?",
+        a: "Functionally, yes: a utility bill is a request for payment for services you used, just called a bill in everyday language. Whether it can support a business tax claim depends on what it shows. For VAT, for example, it generally needs the supplier's details and VAT number, and should be addressed to your business. Check your tax authority's rules.",
+      },
+      {
+        q: "What is a debit note and how does it relate to a bill?",
+        a: "A debit note is a document that adjusts an amount owed, typically to increase it. A seller may issue one to charge for something left off the original invoice, and in some countries a buyer issues one to request a reduction, for example for returned goods. It references the original invoice or bill rather than replacing it.",
+      },
+      {
+        q: "Is a bill or invoice legally binding?",
+        a: "On its own, an invoice or bill is usually evidence of a debt rather than the source of it. The obligation to pay generally comes from the agreement between the parties, such as a contract, an accepted quote or the order itself. A clear invoice that matches what was agreed makes the debt much easier to prove if you ever need to recover it.",
+      },
+      {
+        q: "What do Bill To and Ship To mean on an invoice?",
+        a: "Bill To is the customer responsible for paying, usually the legal entity named in the contract or purchase order. Ship To is where the goods are delivered, which can be a warehouse, site or different branch. They are often different for larger companies. Getting the Bill To details right is especially important, because invoices addressed to the wrong entity are often rejected.",
+      },
+    ],
     content: `
 <h2>The short answer</h2>
 <p>An invoice and a bill are usually the <strong>same document seen from opposite sides</strong>. The seller sends an <em>invoice</em> to request payment. The buyer receives it and records it as a <em>bill</em> to pay. In accounting software, "invoices" are money coming in (accounts receivable) and "bills" are money going out (accounts payable).</p>
@@ -760,6 +1138,48 @@ jane@smithdesign.example</p>
     category: "guides",
     date: "2026-09-22",
     author: "Invoice Creator Editorial Team",
+    faqs: [
+      {
+        q: "How do I calculate days sales outstanding (DSO)?",
+        a: "Divide your accounts receivable at the end of a period by your credit sales for that period, then multiply by the number of days in it. For example, 15,000 outstanding against 30,000 of sales in a 30-day month gives a DSO of 15 days. Compare your DSO with your own payment terms and track it monthly to see the trend.",
+      },
+      {
+        q: "Does offering more payment methods help me get paid faster?",
+        a: "Usually, yes, because every option you add removes an excuse to delay. Bank transfer suits most business clients, while a card or online payment link helps smaller clients pay the moment they open the invoice. Card and online payments often carry fees, so decide whether to absorb them or build them into your prices, and check local rules on surcharging.",
+      },
+      {
+        q: "Can I invoice before the work is finished?",
+        a: "Yes, if your contract allows it. Common approaches are deposits before work starts, milestone invoices as each stage is completed, and retainers billed at the start of each month. Billing in stages means you are never owed for a whole project at once. Agree the schedule up front so each invoice is expected rather than a surprise.",
+      },
+      {
+        q: "What day is best to send an invoice?",
+        a: "There is no reliable universal best day. What matters more is sending it as soon as the work is delivered and before the client's next payment run. Ask your client's accounts team when they pay suppliers, for example weekly on Thursdays or at month end, and make sure your invoice arrives, approved, before that cut-off.",
+      },
+      {
+        q: "Is it okay to phone a client about an overdue invoice?",
+        a: "Yes. A short, friendly call often resolves in minutes what several emails have not, because you can find out whether the invoice was received, approved or is stuck. Have the invoice number, amount and due date ready, ask when payment is scheduled, and follow up with an email confirming what was agreed so you have a written record.",
+      },
+      {
+        q: "What is invoice factoring and can it help me get paid faster?",
+        a: "Invoice factoring means selling your unpaid invoices to a finance company for an advance on their value, minus a fee. You get cash quickly, and the factor collects from your client, or in some arrangements you still collect. It can help cash flow, but fees reduce your margin and clients may be told. Compare costs carefully before signing.",
+      },
+      {
+        q: "Can I stop work if a client hasn't paid?",
+        a: "Often, if your contract allows you to suspend work for non-payment. Give the client clear written notice with the overdue amount and the date work will pause. Without a suspension clause, stopping could put you in breach, so check your contract first, and in some industries, such as construction in certain countries, there are specific statutory rules on suspension.",
+      },
+      {
+        q: "How can I get paid faster by large companies with long payment terms?",
+        a: "Negotiate terms before you sign, because large companies sometimes agree shorter terms for small suppliers when asked. Complete their supplier setup early, follow their invoicing rules exactly and submit invoices on the first possible day. Some large buyers also offer early payment programs in exchange for a small discount. Weigh the cost against the value of having cash sooner.",
+      },
+      {
+        q: "Should I use automated payment reminders?",
+        a: "Automated reminders help because they go out on schedule without you having to remember or feel awkward. Accounting and billing software can usually send them for you. Our invoice generator creates PDF invoices but does not send emails or reminders, so if you use it, set calendar reminders for each due date and send your follow-ups from your own email.",
+      },
+      {
+        q: "What should I do when a client says the invoice is in process?",
+        a: "Ask for specifics politely: the expected payment date, which payment run it is in, and whether anything is missing, such as a PO number or supplier details. Note the date they give you and follow up the day after if the money has not arrived. Asking for the accounts payable contact's name also helps you avoid starting over each time.",
+      },
+    ],
     content: `
 <h2>Why payment speed matters more than price</h2>
 <p>A business can be profitable on paper and still run out of cash. The gap between delivering work and receiving payment, often called days sales outstanding (DSO), is the single number that decides whether you can pay rent, suppliers and yourself on time. Cutting an average payment cycle from 45 days to 20 days is the equivalent of an interest-free loan worth almost a month of revenue.</p>
@@ -825,6 +1245,48 @@ jane@smithdesign.example</p>
     date: "2026-09-15",
     author: "Invoice Creator Editorial Team",
     jurisdiction: "General",
+    faqs: [
+      {
+        q: "What is the statutory late payment interest rate in the UK?",
+        a: "For business-to-business debts in the UK, statutory interest is 8 percentage points above the Bank of England base rate, charged as simple interest. You can also claim fixed compensation per invoice: £40 for debts under £1,000, £70 for £1,000 to £9,999.99 and £100 for £10,000 or more. It does not apply to consumers. Check GOV.UK for the reference rate.",
+      },
+      {
+        q: "What does the EU Late Payment Directive allow businesses to charge?",
+        a: "The EU Late Payment Directive sets minimum standards for commercial transactions: statutory interest of at least 8 percentage points above the European Central Bank reference rate, plus a minimum fixed sum of €40 for recovery costs. Each member state applies it through its own national law, so rates, calculation rules and payment periods differ. Check the rules in your country.",
+      },
+      {
+        q: "Are late payment fees legal in the US?",
+        a: "Generally, yes, if they were agreed in advance and are reasonable, but there is no single national rule. States set their own limits on interest rates and fees, and consumer transactions face stricter rules than business ones. A fee that exceeds a state's limit may be unenforceable. Check your state's law, or ask an attorney, before setting your late fee.",
+      },
+      {
+        q: "Can I charge late fees to consumers?",
+        a: "Sometimes, but consumer customers usually have much stronger legal protection than businesses. The fee typically must be disclosed clearly before the sale, agreed by the customer and kept reasonable, and many places cap it or ban certain charges. Statutory late payment interest schemes, such as the UK's, normally cover only business debts. Check consumer protection rules before charging.",
+      },
+      {
+        q: "Do I charge VAT on a late payment fee?",
+        a: "In the UK, HMRC generally treats late payment interest and compensation as outside the scope of VAT, because they compensate for delay rather than pay for a supply, so VAT is usually not added. Other countries may treat certain administrative fees differently. Check your tax authority's guidance, and show any late fee as a clearly labeled separate line.",
+      },
+      {
+        q: "What is a reasonable late payment fee?",
+        a: "A reasonable fee reflects your genuine cost of waiting and chasing, not a penalty. Many businesses use modest monthly interest on the overdue balance, such as 1% to 1.5%, or a small flat fee per overdue invoice. Whatever you choose, check any legal maximum where you operate, write it into your terms before work starts, and apply the same rate to every client.",
+      },
+      {
+        q: "Should late payment interest be simple or compound?",
+        a: "Simple interest is easier to explain, easier to check and less likely to be disputed, and statutory schemes such as the UK's use simple interest. Compound interest, where interest is charged on unpaid interest, can quickly look excessive and may be restricted by law in some places. Unless your contract and local law clearly allow compounding, use simple interest.",
+      },
+      {
+        q: "When should a late payment fee start?",
+        a: "Interest usually starts the day after the due date, which is why a specific due date on the invoice matters. Some businesses add a short grace period, such as seven days, before applying a fee. If you offer one, write it into your terms so clients know exactly when the fee applies, and apply the same grace period to everyone.",
+      },
+      {
+        q: "How do I record late payment fees in my books?",
+        a: "Record the fee as separate income, often under interest or other income, when you invoice it, rather than changing the original sale. Keep it linked to the overdue invoice in your records. If the client never pays the fee, or you waive it, record that too, so your accounts receivable shows only what you genuinely expect to collect.",
+      },
+      {
+        q: "What should I do if a client refuses to pay a late fee?",
+        a: "Decide what matters most. Usually the priority is collecting the original amount, so you might waive the fee in exchange for prompt payment of the balance. If the fee was clearly agreed and the amount is worth pursuing, you can include it in a formal demand or small claims action. Keep every message factual and refer to your agreed terms.",
+      },
+    ],
     content: `
 <p><strong>Important:</strong> Rules on late-payment interest and fees differ by country, by state and by whether you sell to businesses or consumers. This article is general information, not legal advice. Check the rules that apply to you, or ask a qualified professional, before charging fees.</p>
 
@@ -895,6 +1357,48 @@ jane@smithdesign.example</p>
     category: "guides",
     date: "2026-09-08",
     author: "Invoice Creator Editorial Team",
+    faqs: [
+      {
+        q: "Can my first invoice number start somewhere other than 0001?",
+        a: "Usually, yes. Many businesses start at a higher number, such as 1001, or use a year-based format like 2026-0001. What matters is that each number is unique and the sequence continues in order from wherever you start. Record your starting number in your invoice log so anyone checking your records understands the series. Check local rules if your country prescribes a format.",
+      },
+      {
+        q: "Should my invoice numbers restart every year?",
+        a: "If the year is part of the number, such as 2026-0001 followed by 2027-0001, restarting each year keeps numbers unique because the year prefix differs. Many tax systems accept this. Some countries prefer one continuous series or tie numbering to the financial year, so check your local rules. Without a year prefix, never restart, or you will create duplicates.",
+      },
+      {
+        q: "Can I use the date as my invoice number?",
+        a: "You can, for example 20261024, but add a sequence suffix such as 20261024-01 in case you issue more than one invoice on the same day. Date-based numbers are unique and sort well, but they make gaps harder to spot because the numbers jump. If your tax authority expects a continuous sequence, a year plus sequence format is usually safer.",
+      },
+      {
+        q: "Do invoice numbers have to be consecutive by law?",
+        a: "In many countries, yes. EU VAT rules require a sequential number based on one or more series that uniquely identifies each invoice. India's GST rules require a consecutive serial number of up to 16 characters, unique for each financial year. Elsewhere the rule may simply be that numbers are unique. Check your tax authority's requirements before choosing a format.",
+      },
+      {
+        q: "Can I use letters and symbols in invoice numbers?",
+        a: "Letters and hyphens are widely used, for example INV-2026-0041. Avoid characters such as spaces, slashes or symbols that break file names or bank payment references, and keep the number short enough to fit a bank reference field. Some countries limit the characters allowed: India's GST rules, for example, allow only letters, numbers, hyphens and slashes.",
+      },
+      {
+        q: "How do I number deposit and final invoices for the same project?",
+        a: "Give each invoice its own number from your normal sequence, even when they belong to one project. For example, the deposit invoice might be INV-2026-0040 and the final invoice INV-2026-0047. On the final invoice, reference the deposit invoice and deduct the amount already paid. Suffixes such as 0040-A can confuse sequences and some tax systems, so avoid them.",
+      },
+      {
+        q: "How do I keep my numbering consistent if I use more than one tool?",
+        a: "Choose one master record of issued numbers, such as a spreadsheet or your accounting software, and check it before creating every invoice. Our invoice generator lets you type any invoice number, but it does not track your sequence across devices or tools, so the master log is what keeps numbers unique. Note the source tool beside each entry.",
+      },
+      {
+        q: "What should I do if I sent two invoices with the same number?",
+        a: "Fix it as soon as you notice. Keep the first invoice as issued, cancel the second with a credit note, and reissue that work on a new invoice with the next available number. Tell the affected client what happened and which number to pay against. Record the correction in your log so the duplicate is explained in any audit.",
+      },
+      {
+        q: "Can invoice numbers be random?",
+        a: "Random numbers, such as A7X29Q, are unique but not sequential, so they fail rules that require a continuous series and make it impossible to spot missing invoices. Clients and accountants also find them harder to search and sort. If you want to avoid revealing your invoice volume, use a year prefix or a higher starting number rather than random codes.",
+      },
+      {
+        q: "Should I include the invoice number in my PDF file name and email subject?",
+        a: "Yes. Naming the file with the invoice number and client, such as Invoice-INV-2026-0041-Acme.pdf, and putting the number in the email subject makes the invoice easy to find in a busy inbox and easy to match when payment arrives. Ask clients to use the same number as their payment reference, so every transfer can be traced back to one invoice.",
+      },
+    ],
     content: `
 <h2>Why invoice numbers matter</h2>
 <p>An invoice number is the unique identifier that ties together the document, the payment, the accounting entry and any later correction. Clients use it as the payment reference. Your accountant uses it to check nothing is missing. Tax authorities in many countries require invoice numbers to be unique and follow a continuous sequence, so that gaps or duplicates can signal missing sales.</p>
@@ -967,6 +1471,48 @@ jane@smithdesign.example</p>
     category: "invoicing-basics",
     date: "2026-09-01",
     author: "Invoice Creator Editorial Team",
+    faqs: [
+      {
+        q: "Can I issue a credit note after the client has already paid the invoice?",
+        a: "Yes. A credit note can be issued whether the original invoice is unpaid, partly paid or fully paid. If the client has already paid, the credit note should say whether you will refund the difference or keep it as a credit on their account. Some tax authorities only let you reduce the tax you owe once a refund has actually been made, so check your local VAT or GST rules before adjusting a return.",
+      },
+      {
+        q: "Is there a time limit for issuing a credit note?",
+        a: "There is no single worldwide deadline, but tax rules often set one. In India, for example, GST credit notes for a financial year generally have to be declared by 30 November of the following year, and other countries have their own periods for correcting tax. Even where no deadline applies, issue the credit note as soon as the correction is agreed so both sets of books match. Check your tax authority's guidance for the exact rule.",
+      },
+      {
+        q: "Can I reuse the original invoice number with a suffix, like INV-0041-A, for the credit note?",
+        a: "It is better not to. A suffix makes the credit note look like a revised version of the invoice, which is exactly what you are trying to avoid. Give the credit note its own unique number from a dedicated series, such as CN-2026-0003, and quote the original invoice number in the body. That way each document stays traceable and your invoice sequence has no gaps or look-alike numbers.",
+      },
+      {
+        q: "How do I record a credit note in my accounting records?",
+        a: "As the seller, you record a credit note as a reduction of sales and of the amount the customer owes you, plus a reduction of the tax you collected if tax was charged. The buyer does the reverse: it reduces its purchases, the amount it owes you and any input tax it planned to reclaim. Most accounting software has a dedicated credit note feature that posts these entries and links them to the original invoice.",
+      },
+      {
+        q: "Can the buyer issue the credit note instead of the seller?",
+        a: "Normally no. The seller issues the credit note because it corrects the seller's own invoice. A buyer who wants a reduction usually sends a debit note or a written request explaining what should be credited and why. The exception is a formal self-billing arrangement, where the buyer creates invoices and credit notes on the seller's behalf under an agreement that some tax authorities require to be documented in advance.",
+      },
+      {
+        q: "Can I apply a credit note to a different invoice from the one it corrects?",
+        a: "Yes, if the client agrees. A credit note always references the invoice it corrects, but the resulting credit can be offset against another open invoice or a future one instead of being refunded. Write down which invoice the credit is being applied to, for example in the notes of the next invoice or on a statement of account, so both sides can reconcile the balance without confusion.",
+      },
+      {
+        q: "Should the amounts on a credit note be shown as negative numbers?",
+        a: "Either approach is acceptable as long as the document is clearly titled Credit Note. Many businesses show positive amounts under a Credit Note heading, because the title already tells the reader the figures reduce what is owed. Others show negative amounts so totals can be added straight into a ledger. Pick one style and use it consistently so your client's accounts team never has to guess.",
+      },
+      {
+        q: "Does a credit balance on a customer's account expire?",
+        a: "There is no universal expiry rule for a credit note balance between businesses. Unless your terms say otherwise, the credit remains owed to the customer until it is used against a future invoice or refunded. If you want credits to lapse or be refunded after a set period, state that in your terms and on the credit note. Consumer protection laws in some countries limit how credits can expire, so check locally.",
+      },
+      {
+        q: "Do I still need a credit note if I am not registered for VAT or GST?",
+        a: "Yes, it is still good practice. Even without tax registration, a credit note keeps your sales records, numbering and client balances accurate, and it gives your client a document to file against the original invoice. Simply leave out the tax lines and registration number. If you later register for tax, your clean correction history will make the transition and any review of past records much easier.",
+      },
+      {
+        q: "When can I void an invoice instead of issuing a credit note?",
+        a: "Voiding is generally only appropriate when the invoice has not yet been sent to the client or recorded anywhere outside your own system. In that case, mark it void, keep the number in your records with a short reason, and move on. Once an invoice has reached the client, it may already be in their accounts, so a credit note is the safer, auditable way to cancel or reduce it.",
+      },
+    ],
     content: `
 <h2>The short definition</h2>
 <p>A credit note (sometimes called a credit memo) is a document a seller issues to a buyer to reduce, partly or fully, the amount of an invoice that has already been issued. It is the correct, auditable way to fix an invoice after it has been sent, instead of editing or deleting the original.</p>
@@ -1038,6 +1584,48 @@ jane@smithdesign.example</p>
     category: "comparisons",
     date: "2026-08-25",
     author: "Invoice Creator Editorial Team",
+    faqs: [
+      {
+        q: "Is a proforma invoice legally binding?",
+        a: "Generally, a proforma invoice is not a binding demand for payment on its own. It is a good-faith statement of the terms you intend to invoice. However, if the buyer accepts it in writing or pays against it, the prices and terms it shows can become part of your agreement. Treat every proforma as carefully as a contract offer, and include a validity date so old prices cannot be held against you later.",
+      },
+      {
+        q: "Can a buyer pay against a proforma invoice?",
+        a: "Yes. Paying against a proforma invoice is one of its main uses, especially when you require payment before you ship goods or start work. Put your bank details, the proforma number to use as a payment reference and the validity date on the document. Once payment arrives and the supply happens, issue the final commercial invoice and reference the proforma number and payment date on it.",
+      },
+      {
+        q: "Should I charge VAT or GST on a proforma invoice?",
+        a: "You should show any tax the buyer will be charged, so the total they pay is accurate. Showing it does not usually create a tax liability by itself, because a proforma is not a tax invoice. However, receiving an advance payment can create a tax point in many VAT systems, including the UK's, which may mean you must issue a proper tax invoice and account for tax at that moment. Check your tax authority's rules.",
+      },
+      {
+        q: "Can a proforma invoice be used for customs clearance?",
+        a: "Sometimes. Customs authorities in many countries accept a proforma invoice when no commercial invoice exists, for example for free samples, replacements or goods not being sold. US Customs and Border Protection, for instance, has a set format for pro forma invoices in its regulations. Rules differ by country and shipment type, so confirm with your freight forwarder or customs broker before relying on a proforma instead of a commercial invoice.",
+      },
+      {
+        q: "What should I do if prices change after I have sent a proforma invoice?",
+        a: "Issue a revised proforma invoice with a new reference or version number, such as PF-2026-0005-v2, and tell the buyer what changed and why. You do not need a credit note, because a proforma is not recorded as a sale. If the buyer has already paid or opened a letter of credit based on the old figures, agree the change with them in writing before you ship.",
+      },
+      {
+        q: "Is a proforma invoice the same as a sales order or order confirmation?",
+        a: "They are close but not identical. An order confirmation or sales order confirms that you have accepted the buyer's order and will supply it. A proforma invoice looks like the final invoice and is mainly used so the buyer can pay in advance, get internal approval or arrange import paperwork. Some businesses send both; others use the proforma as the confirmation. Label each document clearly to avoid confusion.",
+      },
+      {
+        q: "Does a proforma invoice need a signature or company stamp?",
+        a: "Most commercial dealings do not require one. However, banks processing letters of credit, import licensing offices and some customs authorities may ask for a signed or stamped proforma, so check what the buyer's bank or importing country expects. Adding an authorized signature costs little and can prevent a rejected application. Make sure the details match the final commercial invoice exactly.",
+      },
+      {
+        q: "What is the difference between a proforma invoice and a deposit invoice?",
+        a: "A proforma invoice previews the final bill and is not recorded as a sale. A deposit or advance invoice is a real invoice from your main sequence that asks for part of the price up front and is recorded in your books. Where an advance payment triggers a tax obligation, some businesses issue a deposit invoice instead of a proforma so the tax paperwork is in place from the start.",
+      },
+      {
+        q: "What happens if the buyer pays a proforma invoice and then cancels the order?",
+        a: "You normally refund the prepayment, minus any cancellation charges your terms allow. Because no sale was recorded, there is usually no invoice to correct. If you issued a tax invoice when the advance payment arrived, you will also need a credit note to reverse it and adjust your tax records. Put your cancellation and refund policy on the proforma so both sides know the rules beforehand.",
+      },
+      {
+        q: "Is it spelled proforma, pro forma or pro-forma?",
+        a: "All three spellings are widely used and mean the same thing. The term comes from the Latin pro forma, meaning \"as a matter of form\". Pro forma (two words) is common in dictionaries, while proforma (one word) is popular in international trade documents. Whichever you choose, use it consistently in the document title, your numbering prefix and your emails so the buyer knows it is not a final invoice.",
+      },
+    ],
     content: `
 <h2>The short answer</h2>
 <p>A <strong>proforma invoice</strong> is a preliminary document sent <em>before</em> a sale is completed. It tells the buyer exactly what they will be billed (items, prices, taxes, shipping and terms) so they can arrange payment, approvals or import paperwork. It is not a demand for payment in the accounting sense and is not usually recorded as a sale.</p>
@@ -1101,6 +1689,48 @@ jane@smithdesign.example</p>
     category: "guides",
     date: "2026-08-18",
     author: "Invoice Creator Editorial Team",
+    faqs: [
+      {
+        q: "What is the difference between a recurring invoice and automatic payment?",
+        a: "A recurring invoice is a request for payment sent on a schedule; the client still has to pay it. Automatic payment means you collect the money yourself on each due date, for example by card on file, direct debit or ACH, with the client's authorization. Many businesses combine both: the invoice documents the charge and the automatic payment settles it, so the client receives a record without having to act.",
+      },
+      {
+        q: "Can I ask a retainer client to pay by standing order or direct debit?",
+        a: "Yes. With a standing order or recurring bank transfer, the client sets up a fixed payment from their side, which works well for unchanging retainers. With a direct debit or ACH debit, you pull the payment under a signed mandate, which handles varying amounts. Either way, keep sending a numbered invoice each period if the client needs it for their records or tax reclaim.",
+      },
+      {
+        q: "What happens if a retainer client uses fewer hours than they paid for?",
+        a: "It depends entirely on your agreement, so decide before you start. Common options are use-it-or-lose-it hours, a limited rollover into the next period, or a credit against future work. Whatever you choose, state it in the contract and show it on the invoice, for example \"8 of 10 hours used; 2 hours roll over to November\". Unclear rules on unused time are a frequent source of retainer disputes.",
+      },
+      {
+        q: "Do I need a written contract for recurring billing?",
+        a: "It is strongly advisable. A short written agreement should state the amount, the billing schedule, whether you bill in advance or arrears, what is included, how extra work is charged, the notice period for price changes and how either side can cancel. Without it, each recurring invoice depends on memory and goodwill. Some payment methods, such as card-on-file or direct debit, also require the client's documented authorization.",
+      },
+      {
+        q: "How do I end a recurring billing arrangement properly?",
+        a: "Give or accept notice as your contract requires, confirm the end date in writing, and send a final invoice for the last period, pro-rated if it ends mid-cycle. If the client paid in advance for time you will not deliver, refund or credit it. Cancel any automatic payments or scheduled invoices in your software so nothing is charged after the agreement ends.",
+      },
+      {
+        q: "Can I send one invoice that covers several months?",
+        a: "Yes. Billing quarterly or annually in advance is common and reduces paperwork for both sides. List the full service period, such as \"Maintenance plan: January to March 2027\", and consider showing the monthly breakdown so the client can match it to their budget. Some businesses offer a small discount for upfront payment. Make sure your contract covers what happens if the client cancels part way through.",
+      },
+      {
+        q: "How should I handle a tax rate change on recurring invoices?",
+        a: "Apply the tax rate that is in force for each supply under your local rules, which may depend on the invoice date, the payment date or the period of service. Update your template or software settings on the effective date, and check any invoices already scheduled. If a period straddles the change, you may need to split the charge. Confirm the transitional rules with your tax authority or accountant.",
+      },
+      {
+        q: "Can I use the free invoice generator for recurring invoices?",
+        a: "Yes, but manually. The generator creates PDF invoices in your browser and saves your draft in local storage, so you can reopen it each period, update the invoice number, date and service period, and download a fresh PDF. It does not schedule, send or charge recurring invoices automatically, so you will need to email each one yourself or use accounting software if you want full automation.",
+      },
+      {
+        q: "Should I send retainer clients a statement of account?",
+        a: "A statement is helpful when a client has several open invoices or has paid some periods late. It lists every invoice, payment and credit over a period and shows the running balance, so their finance team can see exactly what is outstanding. It does not replace individual invoices. Many businesses send one monthly or quarterly to recurring clients, or whenever an overdue balance needs to be discussed.",
+      },
+      {
+        q: "How do invoices billed in advance affect my accounts?",
+        a: "Under accrual accounting, money billed for a future period is usually recorded as deferred income at first, then recognized as revenue as you deliver the service. For example, an annual plan billed in January is earned month by month across the year. Under cash accounting, you generally record income when you receive payment. Ask your accountant which method and rules apply to your business.",
+      },
+    ],
     content: `
 <h2>What a recurring invoice is</h2>
 <p>A recurring invoice bills the same client for the same (or similar) service on a regular schedule: weekly, monthly, quarterly or yearly. Typical examples include design or marketing retainers, <a href="/blog/web-development-invoice-template">website maintenance plans</a>, bookkeeping services, equipment rental, coaching packages, cleaning contracts and software subscriptions.</p>
@@ -1166,6 +1796,48 @@ jane@smithdesign.example</p>
     category: "guides",
     date: "2026-08-11",
     author: "Invoice Creator Editorial Team",
+    faqs: [
+      {
+        q: "Is it rude to send a payment reminder before the invoice is due?",
+        a: "No, as long as it is framed as a courtesy. A short note a few days before the due date simply confirms the invoice has arrived and is in the approval queue. Most finance teams welcome it because it gives them time to fix a missing PO number or wrong contact before the deadline. Keep the tone light, attach the invoice and avoid any hint of blame.",
+      },
+      {
+        q: "What should I do if a client ignores every payment reminder?",
+        a: "Escalate step by step. Call the client, then send a formal letter before action stating the amount, the deadline and what you will do next. After that, options include a collection agency, mediation or a small claims court, depending on the amount and your country. Each jurisdiction has its own process and limits, so check your local court service or get legal advice before filing a claim.",
+      },
+      {
+        q: "Can I add late fees in a reminder if my contract does not mention them?",
+        a: "Usually only if the law gives you that right. In general, you need agreed terms to charge a late fee. An exception is UK business-to-business sales, where the Late Payment of Commercial Debts (Interest) Act lets you claim statutory interest at 8% above the Bank of England base rate, plus fixed compensation of £40, £70 or £100 depending on the debt. Rules differ elsewhere, so check locally first.",
+      },
+      {
+        q: "Should I send payment reminders by email, text or WhatsApp?",
+        a: "Email is the best default because it creates a dated written record and lets you attach the invoice. A text or messaging-app reminder can work for small clients who have communicated with you that way, but keep it brief and professional and follow up by email so the trail is complete. Avoid personal social media channels, and never discuss a client's debt where others can see it.",
+      },
+      {
+        q: "What is a letter before action for an unpaid invoice?",
+        a: "It is a formal final letter warning that you will start legal proceedings if the debt is not paid by a set date. It usually states the invoice details, the amount owed including any interest, and a deadline. In England and Wales, a pre-action protocol for debt claims applies when the debtor is an individual or sole trader and sets out what the letter must contain. Check your own jurisdiction's requirements.",
+      },
+      {
+        q: "How do I chase a payment from a friend or long-standing client without damaging the relationship?",
+        a: "Keep it factual and assume an honest mistake. Use the same short, polite reminder you would send anyone, refer to the invoice number and amount, and offer to help if something is blocking payment. Treating every client consistently actually protects relationships, because the reminder feels like a process rather than a personal complaint. If they are struggling, a written payment plan with fixed dates keeps things friendly.",
+      },
+      {
+        q: "Can I withhold work or files until an overdue invoice is paid?",
+        a: "Often yes, if your contract allows it. Many agreements let you pause work when invoices are overdue, or state that ownership of deliverables only passes on full payment. Without such a clause, withholding work could put you in breach yourself. Give written notice before pausing, apply the rule calmly, and add a clear payment and ownership clause to future contracts.",
+      },
+      {
+        q: "Can I automate my payment reminder emails?",
+        a: "Yes, most accounting and invoicing platforms can send reminders automatically on a schedule you set. If you create invoices with our free generator, note that it makes PDFs only and does not send emails or reminders, so you would schedule reminders in your email client or calendar instead. Whichever method you use, check each automated reminder still makes sense, for example that the invoice has not just been paid.",
+      },
+      {
+        q: "What should I do if a client replies to a reminder by disputing the invoice?",
+        a: "Stop the standard reminder sequence and ask exactly which items are disputed and why. Ask the client to pay any undisputed part now while you resolve the rest. If the complaint is valid, issue a credit note for the agreed amount; if not, share the evidence, such as the accepted quote, timesheets or delivery confirmation. Confirm the outcome in writing before you resume chasing.",
+      },
+      {
+        q: "What if the client says they paid but the money has not arrived?",
+        a: "Ask politely for the remittance details: payment date, amount, method and transaction reference. Check your bank account and any payment platform for pending or misallocated funds, and confirm the client used the correct account details. International transfers can take several business days and may lose fees on the way. If the payment cannot be traced, the client's bank can usually trace or recall it.",
+      },
+    ],
     content: `
 <h2>Why reminders work</h2>
 <p>Most overdue invoices are not refused. They are forgotten, stuck in an approval queue, or sitting in the wrong inbox. A short, polite reminder at the right time is the cheapest and most effective way to get paid. The key is to have a set sequence ready in advance, so you never have to decide what to write when you are already frustrated.</p>
@@ -1230,6 +1902,48 @@ jane@smithdesign.example</p>
     category: "invoicing-basics",
     date: "2026-08-04",
     author: "Invoice Creator Editorial Team",
+    faqs: [
+      {
+        q: "Does Net 30 mean 30 calendar days or 30 business days?",
+        a: "Net 30 is normally read as 30 calendar days, counted from the invoice date unless your terms say otherwise. Weekends and public holidays are included. Because some clients count from the date they receive the invoice instead, it is safest to define the starting point in your contract and always print the actual due date on the invoice so there is no room for interpretation.",
+      },
+      {
+        q: "What happens if an invoice due date falls on a weekend or public holiday?",
+        a: "There is no universal rule. Many businesses treat payment on the next working day as on time, while others expect payment by the previous working day. If it matters to you, say so in your terms, for example \"if the due date is not a business day, payment is due the preceding business day\". Simplest of all, choose a due date that falls on a working day when you create the invoice.",
+      },
+      {
+        q: "Can a large client insist on longer payment terms than mine?",
+        a: "They can ask, and many large organizations have standard 45, 60 or 90 day policies, but terms are a negotiation. Some laws limit how long payment terms can be. Under the EU Late Payment Directive, for example, business-to-business terms generally cannot exceed 60 days unless expressly agreed and not grossly unfair, and public authorities usually must pay within 30 days. If you accept longer terms, build the cost into your price.",
+      },
+      {
+        q: "What payment terms apply if none were agreed?",
+        a: "That depends on local law. In the UK, if no payment date was agreed in a business-to-business contract, statutory late payment interest can generally start 30 days after the later of delivery or receipt of the invoice. EU countries have similar default rules under the Late Payment Directive. In other places, a court may simply look for a \"reasonable\" time. Agreeing terms in writing avoids the uncertainty.",
+      },
+      {
+        q: "Can I change payment terms for an existing client?",
+        a: "Yes, but do it by agreement and in writing. Tell the client what is changing, why and from which date, and apply the new terms only to invoices issued after that date. Check your contract first, because it may fix the terms or require a notice period. Shortening terms suddenly can strain a relationship, so many businesses introduce changes at contract renewal or alongside a new project.",
+      },
+      {
+        q: "What does \"Net 10th Prox\" mean on an invoice?",
+        a: "\"Prox\" is short for the Latin proximo, meaning the next month. Net 10th Prox means payment is due on the 10th day of the month following the invoice date. So an invoice dated 18 October would be due on 10 November. Terms like this suit clients who pay suppliers in a monthly run. Because not everyone knows the abbreviation, also print the calculated due date on the invoice.",
+      },
+      {
+        q: "Should new clients get different payment terms from established ones?",
+        a: "It is common and reasonable. With a new client you have no payment history, so a deposit, payment on receipt or a short term such as Net 7 limits your risk. Once a client has paid reliably for a while, you can offer longer terms as a goodwill gesture or to win more work. Whatever you offer, record it in writing so each client knows exactly what applies to them.",
+      },
+      {
+        q: "Are payment terms printed only on the invoice legally binding?",
+        a: "Not always. Terms are strongest when they are agreed before the work starts, in a contract, accepted quote or signed proposal. Terms that first appear on an invoice, after the work is done, may not bind a client who never agreed to them, particularly for late fees. Put your terms in your quote or contract first, then repeat them on every invoice so the two always match.",
+      },
+      {
+        q: "What is retainage or retention in payment terms?",
+        a: "Retainage, also called retention, means the client holds back a percentage of each payment until the project is finished and any defects are fixed. It is common in construction. Your invoices should show the gross amount, the retention deducted, and the amount due now, and you then invoice the retained sum once the release conditions are met. Some jurisdictions regulate retention, so check the rules for your sector.",
+      },
+      {
+        q: "Are payment terms different when invoicing consumers?",
+        a: "Often, yes. Consumers are usually protected by consumer law, which may restrict late fees, interest and automatic charges, and business late payment laws, such as the UK's statutory interest regime, typically do not apply to them. Consumers also tend to expect payment at the time of purchase or on receipt. Keep consumer terms short and clear, and check your local consumer protection rules before adding penalties.",
+      },
+    ],
     content: `
 <h2>What payment terms are</h2>
 <p>Payment terms are the conditions under which a client must pay your invoice: how long they have, how they can pay, and what happens if they pay early or late. They belong in your contract or proposal first, and are then repeated on every invoice.</p>
@@ -1296,6 +2010,48 @@ jane@smithdesign.example</p>
     date: "2026-07-28",
     updated: "2026-09-25",
     author: "Invoice Creator Editorial Team",
+    faqs: [
+      {
+        q: "Is an invoice legally binding?",
+        a: "An invoice is not usually a contract by itself. It is evidence of a debt that arises from the agreement between you and your client, whether written, emailed or verbal. If the client agreed to buy the goods or services, the invoice records what is owed and on what terms. That is why it should match the accepted quote or contract, and why keeping both together strengthens your position in a dispute.",
+      },
+      {
+        q: "Do I need to be a registered business to send an invoice?",
+        a: "In most countries, no. Freelancers and sole traders can invoice under their own legal name without forming a company. You may, however, need to register for tax with your local authority once you start trading or reach a turnover threshold, and some countries require a tax number on every invoice. Check the requirements of your tax authority, such as the IRS, HMRC or ATO, for your situation.",
+      },
+      {
+        q: "Is a handwritten invoice valid?",
+        a: "Generally, yes. A handwritten invoice is acceptable in many countries as long as it contains all the required information, is legible and you keep a copy. However, an increasing number of countries require structured electronic invoices for some or all business transactions, and handwritten invoices are harder to number, total and archive correctly. A typed PDF is usually clearer for clients and their accounts teams.",
+      },
+      {
+        q: "What is the difference between an invoice and a bill?",
+        a: "They are usually the same document seen from different sides. The seller issues an invoice to request payment; the buyer receives it and often records it as a bill to pay. In everyday speech, \"bill\" is also used for restaurant checks and utility statements. In accounting, invoices you send are accounts receivable and bills you receive are accounts payable.",
+      },
+      {
+        q: "What is the difference between a tax invoice and a regular invoice?",
+        a: "A tax invoice includes the extra details a tax system requires, such as the seller's tax registration number, the tax rate and the tax amount, so the buyer can claim the tax back. In many VAT and GST countries, registered businesses must issue tax invoices to business customers. A regular invoice may simply request payment. Requirements vary by country, so check your tax authority's rules for what must appear.",
+      },
+      {
+        q: "What are accounts receivable and accounts payable?",
+        a: "Accounts receivable is the money customers owe you for invoices you have sent but have not been paid yet. Accounts payable is the money you owe suppliers for invoices you have received but not yet paid. Tracking receivables shows you who to chase and when cash will arrive; tracking payables helps you plan outgoing payments. Both rely on accurate, numbered invoices.",
+      },
+      {
+        q: "Can I send an invoice before the work is done?",
+        a: "Yes, if the client has agreed to it. Invoicing in advance is normal for deposits, subscriptions, retainers billed in advance and goods paid for before shipping. Label the invoice clearly, for example \"Deposit: 50% of quoted price\" or \"Retainer: November 2026\", so nobody mistakes it for payment for completed work. If you only want to show what will be charged, a proforma invoice may be more suitable.",
+      },
+      {
+        q: "Is a PDF invoice legally valid, or do I need an e-invoice?",
+        a: "A PDF invoice is accepted in many countries for many types of transaction. However, a growing number of countries require structured e-invoices in certain cases, such as Saudi Arabia's ZATCA system, India's IRN system for larger businesses and Italy's SDI exchange. Our free generator creates PDF invoices only, not structured XML or government-cleared e-invoices, so check your tax authority's current rules if a mandate may apply to you.",
+      },
+      {
+        q: "What happens if an invoice is never paid?",
+        a: "You can send reminders, charge late fees or interest if your terms or local law allow, use a collection agency, or pursue the debt through a small claims court. If the debt eventually proves uncollectible, many tax systems let you write it off as a bad debt and, in some VAT systems, reclaim the tax you paid on it. Conditions vary, so check with your accountant or tax authority.",
+      },
+      {
+        q: "Can I issue an invoice in a foreign currency?",
+        a: "Yes, invoicing in your client's currency is common and often makes payment easier. State the currency code clearly, such as USD, EUR or GBP, next to the total. Some tax systems require the tax amount to be shown in local currency as well; UK VAT invoices, for example, must show the VAT total in sterling. Agree beforehand who pays bank and currency conversion fees.",
+      },
+    ],
     content: `
 <h2>The short definition</h2>
 <p>An invoice is a commercial document issued by a seller to a buyer that itemises goods or services supplied, states the amount owed, and sets a deadline for payment. It is simultaneously a request for money, a record of a transaction, and (in most countries) an accounting document you are legally required to keep for several years.</p>
@@ -1358,6 +2114,48 @@ jane@smithdesign.example</p>
     date: "2026-07-22",
     updated: "2026-09-25",
     author: "Invoice Creator Editorial Team",
+    faqs: [
+      {
+        q: "Can I create an invoice in Word, Excel or Google Docs?",
+        a: "Yes. Word, Excel and Google Docs templates can produce a perfectly good invoice. The risks are manual: broken formulas, copied numbers that are not updated, and editable files that clients can change. If you use them, keep a numbering log, double-check totals, and always send the final invoice as a PDF. A dedicated generator calculates totals automatically and keeps the layout consistent each time.",
+      },
+      {
+        q: "How do I create an invoice if I do not have a business name?",
+        a: "Use your own legal name as the seller. Sole traders and freelancers in most countries can invoice without a separate business name or company. Add your address, contact email and any tax number you hold. If you trade under a brand name, you can show it too, but your legal name should appear so the client knows exactly who they are paying and contracting with.",
+      },
+      {
+        q: "What number should my first invoice start with?",
+        a: "You can start with any number, as long as you continue in sequence without gaps or duplicates. Common choices are 0001, a year-based format such as 2026-001, or a client prefix such as ACME-001. Starting at a higher number like 1001 is generally fine. What matters is that every invoice gets a unique number and you never reuse one, even after a cancellation.",
+      },
+      {
+        q: "Do I have to put my home address on an invoice?",
+        a: "Many tax and company rules require a business address on invoices, but it does not always have to be your home. Depending on your country and business type, you may be able to use a registered office, a coworking address or a virtual office service that accepts mail. Check what your tax authority and company registry accept before you use an alternative address.",
+      },
+      {
+        q: "Can I create an invoice on my phone?",
+        a: "Yes. Our free invoice generator runs in your mobile browser, so you can fill in the details, preview the layout and download a PDF without installing an app or creating an account. Your draft is saved in your browser's local storage on that device. For long invoices with many line items, a larger screen is easier, but for quick jobs a phone works well.",
+      },
+      {
+        q: "How do I show a deposit or partial payment that has already been received?",
+        a: "List the full charges as normal, then show the amount already paid as a separate line and the balance due underneath. Reference the deposit invoice or payment date so the client can match it. Our free generator has dedicated amount paid and balance due fields that calculate this for you. Make sure the final figure the client must pay is the most prominent number on the invoice.",
+      },
+      {
+        q: "Should I show my hourly rate and hours, or just a total?",
+        a: "Show the hours and rate whenever you bill by time. Clients approve invoices faster when they can see how the total was calculated, and many finance teams require it for hourly work. For fixed-price projects, a description of the deliverable and the agreed price is usually enough. Follow whatever your contract or quote set out, so the invoice mirrors what the client accepted.",
+      },
+      {
+        q: "How do I create an invoice for a client in another country?",
+        a: "Add the client's full legal name, address and tax ID if they have one, choose the currency you agreed, and include international bank details such as IBAN and SWIFT or BIC codes. Check whether you need to charge tax or whether a reverse charge or export rule applies, as this differs by country. State who pays transfer fees so you receive the full amount.",
+      },
+      {
+        q: "Does an invoice need to be signed?",
+        a: "In most countries, no. An invoice is valid without a signature as long as it contains the required details. Some clients, government bodies or local rules do ask for a signed or stamped invoice, so check with the client if you are unsure. Adding a scanned signature is quick and can make the document feel more formal for clients who expect it.",
+      },
+      {
+        q: "Can I edit an invoice after I have sent it?",
+        a: "You should not change an invoice that has already reached the client, because their copy will no longer match yours. Instead, issue a credit note that cancels or reduces the original, then send a corrected invoice with a new number if needed. If you spot a mistake before sending, simply fix it. Small typos in contact details can usually be resolved by a quick confirmation email.",
+      },
+    ],
     content: `
 <h2>Before you start</h2>
 <p>Gather three things before you open any template: your legal business details, the client's legal billing details, and an agreed scope with prices. Ninety percent of late payments trace back to a disagreement about one of those three, not to the invoice layout itself.</p>
@@ -1433,6 +2231,48 @@ jane@smithdesign.example</p>
     date: "2026-07-15",
     updated: "2026-09-25",
     author: "Invoice Creator Editorial Team",
+    faqs: [
+      {
+        q: "Is a business legally required to give a receipt?",
+        a: "It depends on your country and the type of sale. Many jurisdictions require retailers to provide a receipt for consumer sales, and tax rules may require businesses to issue receipts or simplified invoices for cash transactions. In business-to-business work, receipts are usually given on request. Even where no rule applies, providing one is good practice because it helps the customer and reduces disputes.",
+      },
+      {
+        q: "Can I issue a receipt without first sending an invoice?",
+        a: "Yes. When payment and delivery happen at the same moment, such as a shop sale, a café order or an instant online checkout, a receipt alone is usually enough because there was never an unpaid balance to track. If a business customer needs to reclaim tax, they may still ask for a tax invoice or a receipt that contains the required tax details.",
+      },
+      {
+        q: "Does a receipt need to show tax?",
+        a: "If you are registered for VAT, GST or sales tax and the customer may need to reclaim it, the receipt should show the tax charged and your registration number. Some countries allow a simplified invoice for small retail sales. In the UK, for example, a less detailed VAT invoice can be used for supplies of up to £250 including VAT. Check your tax authority's rules for what your receipts must contain.",
+      },
+      {
+        q: "Is an emailed or digital receipt as valid as a paper one?",
+        a: "In most countries, yes. Tax authorities generally accept electronic receipts as long as they are complete, legible and retained for the required period. A PDF or email receipt is often easier to store and search than paper. Make sure it still includes the essentials: your details, the date, the amount received, the payment method and the invoice or order it relates to.",
+      },
+      {
+        q: "Do I need receipts to claim business expenses on my taxes?",
+        a: "Usually you need some evidence, and receipts are the most reliable kind. In the US, for example, IRS guidance generally requires documentary evidence such as receipts for travel and gift expenses of $75 or more, and for lodging regardless of amount, while other expenses still need adequate records. Other tax authorities have their own rules, so check with the IRS, HMRC or your local authority.",
+      },
+      {
+        q: "What is the difference between a sales receipt, a payment receipt and an acknowledgement receipt?",
+        a: "A sales receipt records a sale paid for on the spot, listing items and the amount paid. A payment receipt confirms money received against an earlier invoice and references that invoice number. An acknowledgement receipt confirms you received something, such as documents, goods or a deposit, and may not involve full payment at all. Use the title that matches what actually happened.",
+      },
+      {
+        q: "Should receipts have their own numbers?",
+        a: "Yes, it is good practice. Give receipts a unique, sequential number from their own series, such as RCT-2026-0015, separate from your invoice numbers. That makes it easy to find a receipt, prove it is genuine and match it to the invoice or sale it relates to. Some tax systems require numbered receipts or receipts from approved point-of-sale systems, so check local requirements.",
+      },
+      {
+        q: "What is a cash memo, and is it an invoice or a receipt?",
+        a: "A cash memo is a document used in some countries, including Pakistan and India, for cash sales where payment is made on the spot. It works as both a bill and proof of payment, because it lists the goods and confirms the cash was received at the same time. For credit sales, where the customer pays later, a proper invoice is used instead, followed by a receipt on payment.",
+      },
+      {
+        q: "Who keeps the original receipt, the buyer or the seller?",
+        a: "The buyer keeps the original receipt as proof of payment, for expense claims, returns, warranties and tax records. The seller keeps a copy, either on paper or electronically, as part of its sales records. Both sides should retain them for the period their tax authority requires, which in many countries is several years. Digital copies make it easy for both parties to keep identical records.",
+      },
+      {
+        q: "Can I issue a receipt for a deposit?",
+        a: "Yes. A deposit receipt should state the amount received, the date, the payment method, what the deposit is for and the quote, order or invoice it relates to. Also show the remaining balance and whether the deposit is refundable. In some VAT systems, receiving a deposit can create a tax obligation, so if you are tax-registered, check whether a tax invoice is needed at that point.",
+      },
+    ],
     content: `
 <h2>The core difference</h2>
 <p>An invoice is issued before payment (or before the final payment clears) and asks for money. A receipt is issued after payment and confirms money was received. One creates a receivable on your books; the other marks that receivable as settled.</p>
@@ -1517,6 +2357,48 @@ jane@smithdesign.example</p>
     date: "2026-07-08",
     updated: "2026-09-25",
     author: "Invoice Creator Editorial Team",
+    faqs: [
+      {
+        q: "Is an estimate legally binding?",
+        a: "Generally, an estimate is not a fixed price; it is a reasoned projection. However, consumer protection laws in some places limit how far a final bill can exceed a written estimate without the customer's consent, for example for auto repairs in some US states. Clients may also rely on your estimate when deciding to hire you. Keep estimates realistic, state assumptions, and get approval before going significantly over.",
+      },
+      {
+        q: "Should I charge for preparing an estimate?",
+        a: "It depends on your industry and the effort involved. Simple estimates are usually free, as they help win work. When an estimate needs a site visit, diagnosis, survey or detailed design work, many businesses charge a fee and credit it against the final invoice if the client goes ahead. Tell the client about any fee before you start, and state whether it will be deducted later.",
+      },
+      {
+        q: "Can I convert an estimate into an invoice automatically?",
+        a: "Many accounting and invoicing tools can turn an approved estimate into an invoice with one click, copying the line items. If you prepare documents manually, start from the same line items and update quantities to actuals. Either way, the invoice needs its own number from your invoice sequence, an issue date and a due date, and it should reference the estimate number for easy comparison.",
+      },
+      {
+        q: "What if the client refuses to pay because the invoice is higher than the estimate?",
+        a: "Explain the difference line by line and show any written approvals for extra work or changed scope. If the increase falls within the variance you stated on the estimate, point to that. If you went over without approval, consider a compromise, such as a partial credit note. To prevent this, pause and get written approval as soon as you see costs heading above the estimate.",
+      },
+      {
+        q: "Should an estimate include tax?",
+        a: "Yes, it should at least say how tax will be treated. Either show the expected tax as a separate line or state clearly that prices exclude tax. Consumers in particular tend to read an estimate total as the full amount they will pay, so leaving tax unclear can cause friction when the invoice arrives. Use the same tax treatment on the estimate and the final invoice.",
+      },
+      {
+        q: "Should estimates be numbered?",
+        a: "Yes. Give each estimate a unique number from its own series, such as EST-2026-012, and a version number if you revise it. Numbering makes it easy to refer to the right version in emails, link the final invoice to the approved estimate and find documents quickly in a dispute. Keep estimate numbers separate from your invoice sequence, since estimates are not sales records.",
+      },
+      {
+        q: "What is the difference between an estimate, a bid and a proposal?",
+        a: "An estimate is an approximate cost for a job. A bid is a price submitted in competition with other suppliers, often in response to a tender, and may be firm. A proposal is a broader sales document that explains your approach, timeline and value, and usually includes pricing as one section. Use the term your client asked for, and make clear whether the price is fixed.",
+      },
+      {
+        q: "What should I do if the job costs less than the estimate?",
+        a: "Invoice the actual amount. Billing the lower figure, with a short note that the job came in under estimate, builds trust and makes clients more likely to hire you again. The exception is a fixed-price quotation, where the agreed price applies regardless of actual cost. That is one more reason to label documents accurately as an estimate or a quotation.",
+      },
+      {
+        q: "Is a verbal estimate enough?",
+        a: "A verbal estimate can work for tiny jobs, but it is risky. Memories differ, and without a record you cannot show what assumptions or ranges you gave. Follow up any verbal figure with a short written estimate or email that states the price range, what is included and how long it is valid. That written record protects you if the final invoice is questioned.",
+      },
+      {
+        q: "Does a client need to sign an estimate?",
+        a: "A signature is not usually required, but written approval is very useful. Ask the client to confirm by email or signature that they accept the estimate and its assumptions before you schedule the work. That approval shows the client agreed to go ahead on that basis, which helps if the final invoice is questioned. For larger jobs, convert the approved estimate into a quotation or contract.",
+      },
+    ],
     content: `
 <h2>Definitions</h2>
 <p>An <strong>estimate</strong> is a good-faith projection of what a job will cost. It is not a fixed contract price. It usually carries a validity window and, ideally, a stated variance range (for example, "±10% depending on site conditions"). An <strong>invoice</strong> is a definite request for a specific amount, issued once work is delivered or a milestone is met.</p>
@@ -1590,6 +2472,48 @@ jane@smithdesign.example</p>
     date: "2026-07-01",
     updated: "2026-09-25",
     author: "Invoice Creator Editorial Team",
+    faqs: [
+      {
+        q: "Can I withdraw a quotation after sending it?",
+        a: "In many legal systems, you can withdraw a quotation before the client accepts it, as long as you tell them clearly. Once accepted, it usually becomes binding. The position can differ if you promised to keep the offer open for a set period, or under some countries' laws, so check locally. A clear validity date and a statement that prices are subject to availability give you more flexibility.",
+      },
+      {
+        q: "Is a quotation the same as a proforma invoice?",
+        a: "No. A quotation is an offer made before the client has agreed to buy. A proforma invoice usually comes after the client has agreed in principle and shows exactly what the final invoice will look like, often so they can pay in advance or arrange import paperwork. Neither is a demand for payment recorded as a sale; that is the role of the final invoice.",
+      },
+      {
+        q: "Can a client negotiate a quotation?",
+        a: "Yes. If the client proposes different prices or terms, that is usually treated as a counteroffer rather than acceptance. If you agree to the changes, issue a revised quotation with a new version number, such as Q-2026-018-v2, and ask the client to accept that version in writing. That way your invoice can reference the exact version both sides agreed.",
+      },
+      {
+        q: "What if my costs go up after the client accepts a fixed quotation?",
+        a: "In general, you bear the extra cost, because a quotation is a firm price for the defined scope. You can only raise the price if the client agrees, if the scope changed, or if your quotation included a price adjustment clause, for example for material costs or exchange rates. For long or volatile projects, include such a clause and keep validity periods short.",
+      },
+      {
+        q: "Does a client have to sign a quotation for it to be accepted?",
+        a: "Not always. In many places, a clear written acceptance, such as an email saying \"We accept quotation Q-2026-018\", is enough to form an agreement, and sometimes conduct, like asking you to start work, can count too. A signature is stronger evidence and some clients require one. To avoid doubt, state on the quotation how it should be accepted.",
+      },
+      {
+        q: "Can I invoice the full quoted amount if the client cancels part way through?",
+        a: "Usually only if your terms allow it. Without a cancellation clause, you can normally invoice for work completed and costs already incurred, but not the full price. Many quotations include a cancellation clause that sets fees for cancelling at each stage, or make deposits non-refundable. Put those terms on the quotation so they form part of the accepted agreement.",
+      },
+      {
+        q: "What is an RFQ?",
+        a: "RFQ stands for request for quotation. It is a document a buyer sends to suppliers asking them to quote for specific goods or services, usually so it can compare prices on the same basis. Respond in the format and by the deadline the buyer sets, answer every question, and include your validity period and terms. If you win, the buyer may issue a purchase order that references your quote.",
+      },
+      {
+        q: "Can I send an invoice without sending a quotation first?",
+        a: "Yes. Many small or routine jobs are agreed verbally or by email at published prices, and the invoice is the first formal document. A quotation is most useful when the job is large, custom or likely to be disputed. If you skip it, make sure the price and scope were clearly agreed beforehand, so the invoice does not come as a surprise.",
+      },
+      {
+        q: "Does a quotation turn into a purchase order?",
+        a: "Not directly. The quotation is your offer as the seller. If the client accepts, their purchasing team may issue a purchase order, which is the buyer's own document confirming the order and the price, often referencing your quotation number. You then put the PO number on your invoice. Many large clients will not pay an invoice that does not show a valid PO number.",
+      },
+      {
+        q: "Do I charge tax on a quotation?",
+        a: "No tax is charged on a quotation itself, because no sale has happened yet. The quotation should simply show how tax will apply, either as a separate estimated line or with a clear statement that prices exclude or include tax. Tax becomes due under your local rules when the supply happens, an invoice is issued or payment is received, depending on your tax system.",
+      },
+    ],
     content: `
 <h2>A quotation is an offer</h2>
 <p>Unlike an estimate, a quotation is a firm price for a defined scope. Once the client accepts it in writing, most legal systems treat that acceptance as forming (or confirming) a contract. You generally cannot raise the price later without agreement. That precision is exactly why quotations must be written carefully: vague scope plus a firm number is how disputes start.</p>
@@ -1668,6 +2592,48 @@ jane@smithdesign.example</p>
     date: "2026-06-24",
     updated: "2026-10-12",
     author: "Invoice Creator Editorial Team",
+    faqs: [
+      {
+        q: "Are these invoice templates free to use, and can I match them to my brand?",
+        a: "Yes. All 18 templates are free to use in our invoice generator with no account and no watermark on the PDF. You can upload your logo and signature, and pick a custom accent color so the template matches your brand. Your draft is saved in your browser's local storage, so you can come back and reuse your details on the same device.",
+      },
+      {
+        q: "Can I switch to a different template after I have filled in my invoice?",
+        a: "Yes. In our generator, your business details, client details, line items and totals stay in place when you switch templates, so you can compare layouts in the live preview before downloading. Choosing a new template resets the accent color to that template's default, so reapply your brand color afterwards if you had customized it.",
+      },
+      {
+        q: "Which invoice template is best for printing in black and white?",
+        a: "Layouts with white backgrounds, dark text and little color, such as Classic, Minimal or Mono, usually print most cleanly in grayscale. Templates with dark or heavily colored headers can still work, but test a printout first to check the totals, due date and bank details stay readable. If your client archives invoices on paper or grayscale scans, choose a light layout.",
+      },
+      {
+        q: "Does using a professional template make my invoice legally valid?",
+        a: "Not on its own. A template only controls the layout; legal validity depends on the content, such as the required seller and buyer details, invoice number, dates and tax information for your country. Some countries also require structured e-invoices in certain cases, which a PDF template cannot provide. Check your tax authority's rules for what your invoices must include.",
+      },
+      {
+        q: "Should I use a Word or Excel invoice template or an online generator?",
+        a: "Word and Excel templates are flexible and work offline, but you must update numbers and formulas by hand, which invites errors. An online generator calculates totals, tax and discounts automatically and keeps the layout consistent, then exports a PDF. Accounting software adds tracking, reminders and payments. Choose based on how many invoices you send and how much automation you need.",
+      },
+      {
+        q: "Does the template design affect how quickly clients pay?",
+        a: "Design alone will not guarantee faster payment, but clarity removes common reasons for delay. A layout that makes the amount due, due date, invoice number, PO number and payment details easy to find helps accounts teams approve it without questions. Decorative designs that hide key figures can slow things down. Choose for readability first and brand personality second.",
+      },
+      {
+        q: "Can I use an invoice template for a quote, estimate or receipt?",
+        a: "You can adapt the layout, but the document must be correctly labeled and contain the right fields. A quote needs a validity date and acceptance terms instead of a due date; a receipt needs the payment date and method. Never send a document titled \"Invoice\" when you mean a quote or receipt, because clients may pay early, pay twice or record it incorrectly.",
+      },
+      {
+        q: "Do I need a logo on my invoice template?",
+        a: "No, a logo is optional. Invoices are valid without one, and a clean text header with your business name works well for many freelancers. A logo does help clients recognize your invoices quickly and supports a consistent brand across quotes, invoices and receipts. If you add one, keep it small so the amount due and payment details remain the focus.",
+      },
+      {
+        q: "Should my invoice template use A4 or US Letter paper size?",
+        a: "Use the paper size your clients use. A4 is the standard in most countries, while US Letter is standard in the United States and Canada. The two sizes differ slightly in width and height, so a layout designed for one can lose margins or spill onto a second page when printed on the other. Check a test print or PDF preview before sending invoices abroad.",
+      },
+      {
+        q: "Can I design my own invoice template from scratch?",
+        a: "Yes, as long as it includes the essentials: the word Invoice, a unique number, issue and due dates, your details and the client's, itemized lines, tax, the total due and payment instructions. Design tools like Canva or word processors give you full creative control, but you must handle numbering and calculations yourself. Test your design on screen, on a phone and in a grayscale printout.",
+      },
+    ],
     content: `
 <h2>Why the template matters</h2>
 <p>An invoice is often the last document a client reads before deciding how quickly to pay you. Clarity beats decoration: the amount due, the due date, and the payment method should be findable in under three seconds. A good template is an information hierarchy problem solved once, then reused on every job.</p>
@@ -1773,6 +2739,48 @@ jane@smithdesign.example</p>
     date: "2026-06-17",
     updated: "2026-09-25",
     author: "Invoice Creator Editorial Team",
+    faqs: [
+      {
+        q: "What does a deposit invoice look like?",
+        a: "A deposit invoice usually has one line, such as \"Deposit: 40% of quotation Q-2026-021\", plus the amount, due date and payment details. Give it its own invoice number. When you send the final invoice, list the full project value and then show the deposit already paid as a deduction, so the client can see exactly how the balance due was calculated.",
+      },
+      {
+        q: "How do I show a partial payment on an invoice?",
+        a: "List the full invoice total, then add an \"Amount paid\" line with the date and amount received, and finish with a clear \"Balance due\". Keep the original invoice number so the client's accounts team can match both payments. If the remaining balance has a new due date agreed in writing, put that calendar date beside the balance due.",
+      },
+      {
+        q: "How do I add a late fee to an invoice?",
+        a: "Add the late fee as a separate line, such as \"Late payment charge per agreement section 6\", instead of quietly raising the original amount. Reference the overdue invoice number and the date it was due. Only charge fees or interest your contract or local law allows, and note that rules on late charges vary by country and, in the US, by state.",
+      },
+      {
+        q: "How do I invoice for a cancelled project or kill fee?",
+        a: "Invoice the cancellation fee your contract specifies, with a line like \"Cancellation fee: 25% of contract value per clause 9\", plus any completed work or non-refundable costs already incurred. Credit any deposit the client paid. If your contract has no cancellation clause, agree the amount in writing with the client before you send the invoice, so it is not disputed on arrival.",
+      },
+      {
+        q: "What should an invoice look like if I am not registered for tax?",
+        a: "Leave the tax lines out entirely and do not show a tax rate, tax amount or tax number you do not hold. Your invoice still needs your name, the client's details, an invoice number, the date, line items, a total and payment instructions. Some countries expect a short note explaining why no tax is charged, so check with your local tax authority.",
+      },
+      {
+        q: "Can one invoice cover several purchase orders?",
+        a: "It is usually better to send one invoice per purchase order. Many accounts-payable systems match each invoice against a single PO, and an invoice that mixes several can be rejected or held for manual checking. If a client explicitly asks for a combined invoice, group the lines under a heading for each PO number and show a subtotal for each group.",
+      },
+      {
+        q: "How do I invoice for travel or mileage?",
+        a: "Put travel on separate expense lines below your fees, with the date, route or purpose, and the cost. For mileage, show the distance as the quantity and the agreed rate per mile or kilometer as the unit price. Keep receipts and logs available on request, and only bill travel your quotation or contract says the client will cover.",
+      },
+      {
+        q: "What is the difference between an invoice example and an invoice template?",
+        a: "A template is the empty layout: header, client block, item table, totals and payment section. An example is a template filled in for a particular situation, such as a retainer or a goods sale, showing the kind of wording and lines that fit. Use examples to decide what to write, and a template to make every invoice look consistent.",
+      },
+      {
+        q: "Can I copy these examples into a free invoice generator?",
+        a: "Yes. You can recreate any of these scenarios in the free invoice generator by entering the line items, notes and terms, then choosing a template and currency. It calculates tax, discount, shipping, amount paid and balance due, and downloads a PDF in your browser without an account. You then attach and send the PDF yourself, because the generator does not email invoices.",
+      },
+      {
+        q: "How should I write the date range for a service period?",
+        a: "Write the period in the line description using unambiguous dates, such as \"Support services: 1–31 August 2026\" or \"Week of 4–8 Aug 2026\". Spelling out the month avoids confusion between day-first and month-first date formats used in different countries. A clear period helps the client match the charge to their budget month and stops duplicate-billing questions.",
+      },
+    ],
     content: `
 <h2>How to use these examples</h2>
 <p>Each scenario below shows the line-item pattern, the notes that prevent disputes, and the terms that usually fit. Copy the structure, not the dollar amounts. Always match the legal names and tax treatment that apply to your contract.</p>
@@ -1867,6 +2875,48 @@ jane@smithdesign.example</p>
     date: "2026-06-10",
     updated: "2026-09-25",
     author: "Invoice Creator Editorial Team",
+    faqs: [
+      {
+        q: "Do I need a registered business to send invoices as a freelancer?",
+        a: "In many countries you do not. You can often invoice as a sole proprietor or sole trader under your own name, as long as you report the income for tax. Some places require registration, a license or a tax number once you start trading or pass a threshold. Check the rules with your local tax authority or business registry before your first invoice.",
+      },
+      {
+        q: "Should I put my Social Security number on an invoice?",
+        a: "No. In the US, avoid printing your Social Security number on invoices because PDFs get forwarded and stored widely. Many freelancers get a free Employer Identification Number (EIN) from the IRS and use that instead. Clients who need your taxpayer details usually request them separately on Form W-9, which you should send through a secure channel.",
+      },
+      {
+        q: "What can I do if a client never pays my invoice?",
+        a: "Start with a formal demand letter that states the amount, the invoice number and a final payment date. If that fails, your options usually include small claims court, a collections agency, or a lawyer, depending on the amount and where the client is based. Keep your contract, invoices and every reminder, because that paper trail is what supports a claim.",
+      },
+      {
+        q: "Can I charge interest on late payments as a freelancer?",
+        a: "Usually yes, if your contract allows it and the rate is lawful where you work. In the UK, business-to-business debts can also carry statutory interest of 8% above the Bank of England base rate under late payment law, even without a contract clause. In the US, limits vary by state. State your late-payment terms on the contract and invoice.",
+      },
+      {
+        q: "Do freelancers have to charge sales tax, VAT or GST?",
+        a: "It depends on where you are, what you sell and how much you earn. Many VAT and GST countries require registration once your turnover passes a threshold, while in the US, sales tax rules on services vary by state and many services are not taxed. Check with your tax authority, and do not add tax to invoices until you are registered.",
+      },
+      {
+        q: "How long should freelancers keep copies of invoices?",
+        a: "Keep invoices for at least as long as your tax authority can review your returns. In the US, the IRS generally recommends three years from filing, and longer in some situations. Many other countries require five to seven years or more. Store PDFs by year and client, back them up, and check the exact period with your local authority.",
+      },
+      {
+        q: "What should I do if a client asks me to change an invoice after I sent it?",
+        a: "For small details like a missing PO number, you can usually reissue the same invoice with the correction and a short note, provided it has not been paid or recorded. If amounts or tax change, issue a credit note for the original and a new invoice with a new number. Never keep two different versions under one invoice number.",
+      },
+      {
+        q: "Should I invoice hourly or by project?",
+        a: "Hourly billing suits work with unclear scope, because you are paid for every hour you spend. Project pricing suits well-defined work, rewards efficiency and is easier for clients to budget. Many freelancers combine them: a fixed fee for the defined scope and an hourly rate for extra requests. Whichever you choose, write it into the quotation before work starts.",
+      },
+      {
+        q: "Do I need accounting software to invoice as a freelancer?",
+        a: "Not at the start. A free invoice generator that downloads professional PDFs, plus a spreadsheet tracking sent and paid invoices, is enough for many freelancers. Our generator keeps drafts in your browser and needs no account, but it does not send emails, take payments or send reminders. Consider accounting software once volume, tax filing or bank reconciliation becomes time-consuming.",
+      },
+      {
+        q: "How do I invoice a client in another country as a freelancer?",
+        a: "Agree the currency upfront, show it beside every total, and include international bank details such as IBAN and SWIFT or BIC. State who pays transfer fees. Tax treatment for cross-border services varies, and some business clients may need to account for tax themselves under reverse charge rules, so confirm with an accountant before you send the first invoice.",
+      },
+    ],
     content: `
 <h2>Set terms before you start</h2>
 <p>Agree payment terms in writing at proposal stage: deposit percentage, payment schedule, accepted methods, and late-payment interest. An invoice cannot enforce terms the client never saw. Put the same terms on the quotation and repeat the due date on every invoice.</p>
@@ -1944,6 +2994,48 @@ jane@smithdesign.example</p>
     date: "2026-06-03",
     updated: "2026-09-25",
     author: "Invoice Creator Editorial Team",
+    faqs: [
+      {
+        q: "When should a small business move from templates to accounting software?",
+        a: "Consider switching when invoicing takes hours each week, when you need recurring invoices or automatic reminders, or when matching payments to invoices becomes error-prone. Growth in staff, tax registration or multiple currencies are also good triggers. Templates and a tracker work well for low volume. Software earns its cost once it saves more time than it takes to run.",
+      },
+      {
+        q: "Is it a problem to have gaps in my invoice numbers?",
+        a: "Occasional gaps are usually fine if you can explain them, for example with a void log showing which numbers were cancelled and why. Unexplained gaps can raise questions during a tax audit, especially in VAT and GST countries that expect sequential numbering. Never delete a cancelled invoice from your records, and never reuse its number for a different sale.",
+      },
+      {
+        q: "How should I handle a customer who disputes part of an invoice?",
+        a: "Ask the customer to pay the undisputed amount now while you resolve the rest. Get the dispute in writing, check it against the quotation, delivery records and contract, and respond with facts. If you agree to reduce the bill, issue a credit note referencing the original invoice instead of editing it, so both sets of records stay aligned.",
+      },
+      {
+        q: "What is days sales outstanding and how do I calculate it?",
+        a: "Days sales outstanding (DSO) is the average number of days it takes customers to pay you. A common formula is accounts receivable divided by credit sales for the period, multiplied by the number of days in that period. If DSO rises month after month, look at your payment terms, reminder schedule and how quickly invoices go out.",
+      },
+      {
+        q: "Is a 2/10 Net 30 early payment discount worth offering?",
+        a: "It can be, but it is expensive. Giving 2% to be paid 20 days early works out to an annualized cost of roughly 37%, so it only makes sense when cash now matters more than margin. Make the discount terms clear on the invoice, and decide in advance how you will handle customers who take the discount after the deadline.",
+      },
+      {
+        q: "Should a small business accept card payments for invoices?",
+        a: "Card payments and payment links often get invoices paid faster, but processors charge fees on each transaction. If you want to pass fees on as a surcharge, check the rules first, because surcharging is restricted in some places, including on many consumer card payments in the UK. Record fees separately so your books show the net cash you actually received.",
+      },
+      {
+        q: "How do I write off an invoice that will never be paid?",
+        a: "First document your collection attempts. Then record the amount as a bad debt in your accounts, usually with a journal entry or a write-off feature in your software, and keep the original invoice. Whether you can claim tax relief on the bad debt, or recover tax already paid on that sale, depends on your country's rules, so ask your accountant.",
+      },
+      {
+        q: "How can I protect customers from fake invoices sent in my name?",
+        a: "Keep your bank details identical on every invoice, and tell customers you will never change them by email alone. Ask them to confirm any change by phone using a number they already have. Send invoices from a consistent business email address. If a customer reports a suspicious invoice using your name, warn your other customers and report it to your bank.",
+      },
+      {
+        q: "What is invoice factoring and should my small business use it?",
+        a: "Invoice factoring means selling unpaid invoices to a finance company for an immediate advance, minus fees. A related option, invoice financing, lets you borrow against invoices while keeping control of collection. Both can ease cash gaps, but the fees reduce your margin and some arrangements tell your customers. Compare total costs carefully and fix slow invoicing habits first.",
+      },
+      {
+        q: "Can a free invoice generator work for a small business team?",
+        a: "It can for low to moderate volume. A browser-based generator like ours gives everyone the same templates, consistent totals and PDF downloads without accounts. Drafts are saved in each person's own browser, though, so you will still need a shared folder and a tracker for numbering and payment status. It does not send invoices, reminders or recurring bills automatically.",
+      },
+    ],
     content: `
 <h2>Design the process, not just the document</h2>
 <p>Most small businesses have a template but no process. Decide who raises invoices, when they go out, who chases overdue balances, and where PDFs are stored. A mediocre template with a reliable weekly rhythm outperforms a beautiful PDF sent whenever someone remembers.</p>
@@ -2016,6 +3108,48 @@ jane@smithdesign.example</p>
     date: "2026-05-27",
     updated: "2026-09-25",
     author: "Invoice Creator Editorial Team",
+    faqs: [
+      {
+        q: "Can I send an invoice by text message or WhatsApp?",
+        a: "You can send a quick heads-up or a PDF by text or messaging app, and some small clients prefer it. For business clients, still email the PDF or upload it to their portal, because accounts teams need a formal copy they can file and approve. Messaging apps are hard to search later and are rarely treated as the official send.",
+      },
+      {
+        q: "Should I send an invoice before or after the work is done?",
+        a: "It depends on your agreement. Send deposit or retainer invoices before work begins, milestone invoices when each phase is signed off, and final invoices on the day you deliver. Sending promptly matters more than the exact moment, because every day you wait moves you into a later payment cycle. Agree the billing schedule in your quotation.",
+      },
+      {
+        q: "How do I confirm my client actually received the invoice?",
+        a: "For large invoices, ask in the email for a one-line confirmation that it reached accounts payable. If the client uses a supplier portal, check its status screen for receipt or approval. Email read receipts are unreliable because many systems block them. If you hear nothing within a few business days, send a short follow-up asking whether anything is needed for approval.",
+      },
+      {
+        q: "Is it unprofessional to send invoices from a personal Gmail address?",
+        a: "It is acceptable for many sole traders, but an address on your own domain looks more established and is less likely to be flagged as suspicious by corporate filters. Whatever address you use, keep it consistent so clients recognize genuine invoices. If you trade as a company, make sure the invoice shows the company's legal name, not just your personal name.",
+      },
+      {
+        q: "Can I send an invoice directly from the free invoice generator?",
+        a: "No. The generator creates and downloads your invoice as a PDF in your browser, but it does not send emails. Download the PDF, name it with the invoice number and client name, and attach it to an email from your own account, or upload it to the client's portal. Keeping sending in your own inbox also gives you a record of when it went.",
+      },
+      {
+        q: "Should I mail a paper invoice?",
+        a: "Only when a client specifically asks for one, which still happens with some government bodies, older firms and individual customers. Print from the same PDF you keep on file so both copies match, and consider including a tear-off remittance slip with the invoice number. Note the posting date in your tracker, and allow extra days for delivery before the due date.",
+      },
+      {
+        q: "What should I do if my invoice email bounces or goes to spam?",
+        a: "If it bounces, check the address with your contact and resend immediately, noting the original send date. To reduce spam filtering, use a plain subject line with the invoice number, keep the attachment small, avoid link-heavy emails and send from a consistent address. For important invoices, ask the client to confirm receipt rather than assuming it arrived.",
+      },
+      {
+        q: "How do I submit an invoice through a client's supplier portal?",
+        a: "Complete the client's supplier onboarding first, including bank and tax details, because portals often reject invoices from unregistered suppliers. Then enter the invoice exactly as the portal asks, matching the PO number, line amounts and tax to your PDF. Upload the PDF if the portal allows it, and record the portal reference number in your tracker.",
+      },
+      {
+        q: "Should I password-protect my invoice PDF?",
+        a: "Usually not. Password-protected PDFs often fail in accounts-payable tools that read invoices automatically, and staff may not have the password when your contact is away. Instead, send to the confirmed accounts-payable address and avoid putting sensitive personal data on the invoice. If a client's policy requires encryption, follow their preferred secure upload method.",
+      },
+      {
+        q: "What is a customer statement and when should I send one?",
+        a: "A customer statement lists all invoices, payments and credit notes for one client over a period, ending with the total balance owed. It is useful for clients with several open invoices, often sent monthly. A statement is not a replacement for invoices, but it helps both sides spot missing payments, duplicates or invoices that never arrived.",
+      },
+    ],
     content: `
 <h2>Send a PDF, always</h2>
 <p>PDFs render identically on every device and cannot be edited accidentally. Never send a spreadsheet or word-processor file as your invoice of record. Those formats break layouts, invite accidental edits, and sometimes get blocked by corporate email filters.</p>
@@ -2099,6 +3233,48 @@ jane@smithdesign.example</p>
     date: "2026-05-20",
     updated: "2026-09-25",
     author: "Invoice Creator Editorial Team",
+    faqs: [
+      {
+        q: "Is an invoice still valid if it contains a mistake?",
+        a: "Usually it still works as a request for payment, but the client may refuse to pay until the error is fixed. Mistakes on tax invoices are more serious, because a missing or wrong tax field can stop your customer from reclaiming tax. Correct the problem with a credit note and a new invoice, or a reissue, according to your local rules.",
+      },
+      {
+        q: "What should I do if I sent an invoice to the wrong client?",
+        a: "Contact the recipient immediately, explain the error, and ask them to delete it and not pay it. Void the invoice in your records or issue a credit note against it, then send a correct invoice to the right client with a new number. If the invoice contained another client's personal data, check whether your privacy rules require you to report it.",
+      },
+      {
+        q: "What if I undercharged a client on an invoice?",
+        a: "Tell the client promptly and explain the error. If the invoice is unpaid and not yet recorded, you may be able to cancel it and issue a corrected one. Otherwise, send a supplementary invoice or debit note for the difference, referencing the original number. Whether the client must pay depends on your agreement, so be polite and specific.",
+      },
+      {
+        q: "What should I do if a client overpaid or paid an invoice twice?",
+        a: "Confirm the duplicate payment against your bank statement, then tell the client. Offer either a refund or a credit toward their next invoice, and do what they choose in writing. Record the overpayment in your books so it is not mistaken for income. Paying it back quickly protects trust and avoids reconciliation problems for both sides.",
+      },
+      {
+        q: "Can I still send an invoice months after I did the work?",
+        a: "Usually yes, but late invoices are more likely to be questioned, fall outside the client's budget year or get pushed down the queue. Legal time limits for recovering unpaid debts exist and vary by country and state, often several years. Tax rules may also set deadlines for issuing invoices, so send late invoices as soon as you notice them.",
+      },
+      {
+        q: "Should the invoice date be the day I did the work or the day I send it?",
+        a: "Usually the invoice date is the day you issue it, and payment terms count from that date. If the work happened on a different date, show the supply date or service period separately. In VAT and GST systems, the supply date can affect when tax is due, so make sure both dates are correct rather than backdating the invoice.",
+      },
+      {
+        q: "Does an invoice need a signature to be valid?",
+        a: "In most countries a signature is not required on an ordinary invoice, and a missing one rarely delays payment. Some tax regimes or clients do ask for a signature or digital signature, for example on certain GST invoices. If a client's policy requires one, add it. Otherwise, an empty signature line can make the document look unfinished.",
+      },
+      {
+        q: "What happens if I use the same invoice number twice?",
+        a: "Duplicate numbers confuse both your records and your client's. Their accounts system may reject the second invoice as a duplicate, or someone may pay the wrong one. In tax audits, repeated numbers can raise questions about missing sales. If it happens, keep the first invoice, cancel the duplicate with a note, and reissue it under the next unused number.",
+      },
+      {
+        q: "What if my client paid into the wrong bank account because of a typo?",
+        a: "Contact your bank and the client's bank as soon as possible, because a quick recall request has the best chance of recovering funds. Then send a corrected invoice with the right details. To prevent this, copy bank details from a saved profile instead of retyping them, and use payee name-checking services where your country's banks offer them.",
+      },
+      {
+        q: "Is rounding hours on an invoice a mistake?",
+        a: "Rounding is fine if it is consistent, fair and agreed. State your policy, such as rounding to the nearest quarter hour, in the contract and the invoice notes. Problems arise when rounding always goes up, is applied differently each time, or makes line totals disagree with the timesheet. Let your invoice tool calculate totals from the rounded hours.",
+      },
+    ],
     content: `
 <h2>Why small errors cost weeks</h2>
 <p>Accounts payable is a gatekeeping function. When an invoice fails a checklist (missing PO, wrong entity, maths mismatch), it is rejected or parked. You rarely get a detailed coaching email; you get silence until you chase. Preventing mistakes is faster than curing them.</p>
@@ -2179,6 +3355,48 @@ jane@smithdesign.example</p>
     updated: "2026-09-25",
     author: "Invoice Creator Editorial Team",
     jurisdiction: "General",
+    faqs: [
+      {
+        q: "When do I have to issue a tax invoice?",
+        a: "The deadline depends on your country. In the UK, VAT invoices are generally due within 30 days of the supply. In Australia, you must provide a tax invoice within 28 days if a customer asks, unless the sale is $82.50 or less including GST. India sets its own time limits for goods and services. Check your tax authority's current rules.",
+      },
+      {
+        q: "Can I issue a tax invoice if I am not registered for tax?",
+        a: "No. Only a business registered for VAT, GST or a similar tax should issue a tax invoice or charge that tax. If you are not registered, send an ordinary invoice with no tax lines or tax number. Charging tax while unregistered can create penalties and problems for customers trying to claim credits, so register first if you are required to.",
+      },
+      {
+        q: "Does the US use tax invoices?",
+        a: "Not in the VAT or GST sense. The US has no federal VAT, and sales tax is set by states and local areas, usually collected once on the final sale to the end customer. Business buyers generally do not reclaim sales tax through invoices. Instead, resellers often give suppliers a resale or exemption certificate. Rules vary by state.",
+      },
+      {
+        q: "What is the difference between tax-inclusive and tax-exclusive prices?",
+        a: "A tax-exclusive price is the amount before tax, with tax added on top. A tax-inclusive price already contains the tax. For example, 100 plus 10% tax is 110 tax-inclusive. Tax invoices usually show the net amount, the rate and the tax separately so buyers can claim credit. Consumer prices are often quoted tax-inclusive, so be clear which one you mean.",
+      },
+      {
+        q: "Can a tax invoice be issued in a foreign currency?",
+        a: "Usually yes, but many countries require the tax amount, and sometimes the net total, to be shown in the local currency too. In the UK, for example, a VAT invoice in another currency must still show the net total and VAT at each rate in sterling. Note the exchange rate you used and check your authority's rules.",
+      },
+      {
+        q: "What is a simplified tax invoice?",
+        a: "A simplified tax invoice is a shorter version allowed for lower-value sales, often without the buyer's details. In the UK, a simplified VAT invoice is generally allowed for supplies of up to £250 including VAT. In Australia, tax invoices under $1,000 do not need the buyer's identity. Thresholds and required fields differ by country, so confirm locally.",
+      },
+      {
+        q: "Do I need a tax invoice to claim back the tax I paid?",
+        a: "In most VAT and GST systems, yes. A valid tax invoice from your supplier is the main evidence for claiming input tax credits. Some systems relax this for very small purchases, such as Australia's rule for purchases of $82.50 or less including GST, where other records can be enough. Keep supplier invoices for the period your law requires.",
+      },
+      {
+        q: "Can my customer create the tax invoice instead of me?",
+        a: "In some countries, yes, under self-billing rules. The buyer issues the invoice on the supplier's behalf, which is common in industries like agriculture and haulage. In the UK this needs a self-billing agreement, and in Australia these documents are called recipient-created tax invoices. Both sides must meet specific conditions, so check the official guidance first.",
+      },
+      {
+        q: "Is a PDF tax invoice legally acceptable?",
+        a: "In many countries a PDF sent by email is acceptable if it is authentic, readable and kept for the required period. A growing number of countries now require structured e-invoices that pass through a government or network system, in which case a PDF alone is not enough. Our generator creates PDF invoices, not structured e-invoices, so check your local mandate.",
+      },
+      {
+        q: "What happens if a tax invoice is missing a required field?",
+        a: "Your customer may be unable to claim the tax back and will likely ask for a corrected document before paying. Tax authorities can also question invoices that do not meet the rules during an audit. Fix it promptly by issuing a corrected invoice or a credit note and replacement, depending on what your local rules allow.",
+      },
+    ],
     content: `
 <p><strong>Important:</strong> Tax laws, rates, registration requirements, and invoicing rules can change and may vary by jurisdiction. This article provides general informational content and should not be considered professional tax, accounting, or legal advice. Verify current requirements with the relevant tax authority or a qualified professional.</p>
 
@@ -2266,6 +3484,48 @@ jane@smithdesign.example</p>
     updated: "2026-09-25",
     author: "Invoice Creator Editorial Team",
     jurisdiction: "GST jurisdictions (e.g. India)",
+    faqs: [
+      {
+        q: "What are the current GST rates in India?",
+        a: "Since 22 September 2025, India's GST mainly uses two rates, 5% and 18%, after the GST Council removed the 12% and 28% slabs. A higher 40% rate applies to a small list of demerit and luxury goods, and some items remain nil-rated or exempt. Rates depend on the HSN or SAC code, so check the latest CBIC notifications for your products.",
+      },
+      {
+        q: "What is the difference between a tax invoice and a bill of supply under GST?",
+        a: "A tax invoice is issued for taxable supplies and shows the GST charged. A bill of supply is issued when no GST is charged, for example by composition taxpayers or for exempt supplies. A bill of supply does not show tax and the buyer cannot use it to claim input tax credit. Using the wrong document confuses returns and credits.",
+      },
+      {
+        q: "Within how many days must I issue a GST invoice?",
+        a: "In India, a tax invoice for goods is generally issued at or before the time of removal or delivery. For services, the general rule is within 30 days of supply, with a longer period for certain banks and financial institutions. Late invoicing can change your time of supply, so check the current rules on the GST portal or with your accountant.",
+      },
+      {
+        q: "How many digits of HSN code must a GST invoice show?",
+        a: "Under India's current rules, businesses with aggregate annual turnover up to ₹5 crore must show at least a 4-digit HSN code on B2B invoices, while those above ₹5 crore must show at least 6 digits. Services use SAC codes. Requirements can change, so confirm the current notification on the GST portal and keep codes saved with your product list.",
+      },
+      {
+        q: "Can a composition dealer issue a GST tax invoice?",
+        a: "No. Under India's composition scheme, a dealer cannot collect GST from customers and issues a bill of supply instead of a tax invoice. The bill should state that the supplier is a composition taxable person not eligible to collect tax. Buyers cannot claim input tax credit on purchases from composition dealers, which can matter to business customers.",
+      },
+      {
+        q: "How many copies of a GST invoice are needed?",
+        a: "In India, a GST invoice for goods is generally prepared in triplicate: the original for the recipient, the duplicate for the transporter and the triplicate for the supplier. Invoices for services are prepared in duplicate. Mark each copy accordingly. Where e-invoicing and e-way bills apply, the digital records also matter, so check the latest rules.",
+      },
+      {
+        q: "Are there rules for GST invoice numbers?",
+        a: "Yes. In India, an invoice number must be consecutive and unique for each financial year, and can be up to 16 characters long. It may use letters, numbers, hyphens and slashes, so a format like INV/25-26/0001 works. Many businesses start a new series each April. Keep separate series, such as exports, clearly labeled and documented.",
+      },
+      {
+        q: "Do I need to issue GST e-invoices?",
+        a: "In India, businesses above the turnover threshold, currently ₹5 crore aggregate turnover, must report B2B invoices to the Invoice Registration Portal to get an IRN and QR code. Larger taxpayers face a deadline for reporting invoices after issue. A PDF from a standard invoice generator, including ours, is not an e-invoice, so use IRP-compatible software if you are covered.",
+      },
+      {
+        q: "How can I check if a customer's GSTIN is valid?",
+        a: "Use the Search Taxpayer tool on India's official GST portal to confirm the GSTIN is active and that the legal name matches your customer. A GSTIN has 15 characters: the first two show the state code and the next ten are the holder's PAN. Checking before your first invoice prevents rejected credits and corrections later.",
+      },
+      {
+        q: "Do other GST countries split tax into CGST, SGST and IGST?",
+        a: "Not usually. The central, state and integrated split is specific to India's dual GST system. Countries such as Australia, New Zealand and Singapore use a single GST rate on invoices. Canada combines federal GST with provincial taxes or a harmonized HST, depending on the province. Follow the invoice rules of the country where the supply is taxed.",
+      },
+    ],
     content: `
 <p><strong>Important:</strong> Tax laws, rates, registration requirements, and invoicing rules can change and may vary by jurisdiction. This article provides general informational content and should not be considered professional tax, accounting, or legal advice. Verify current requirements with the relevant tax authority or a qualified professional.</p>
 
@@ -2351,6 +3611,48 @@ jane@smithdesign.example</p>
     updated: "2026-09-25",
     author: "Invoice Creator Editorial Team",
     jurisdiction: "VAT jurisdictions (e.g. UK / EU)",
+    faqs: [
+      {
+        q: "When do I have to register for VAT in the UK?",
+        a: "You must register for VAT when your VAT-taxable turnover goes over £90,000 in a rolling 12-month period, or you expect it to exceed that in the next 30 days alone. That threshold has applied since 1 April 2024. You can also register voluntarily below it. Thresholds change, so check HMRC's current guidance before deciding.",
+      },
+      {
+        q: "How quickly must I issue a VAT invoice?",
+        a: "In the UK, you generally need to issue a VAT invoice within 30 days of the date of supply, or of payment if you were paid in advance. In the EU, rules differ by country, and invoices for cross-border supplies to other member states are commonly due by the 15th day of the following month. Check your local tax authority's rules.",
+      },
+      {
+        q: "What is the UK limit for a simplified VAT invoice?",
+        a: "In the UK, you can generally issue a simplified VAT invoice for retail supplies of £250 or less including VAT. It still needs your name, address and VAT number, the time of supply, a description and the VAT rate, but not the customer's details. If the customer asks for a full VAT invoice, you should provide one.",
+      },
+      {
+        q: "Can I issue a UK VAT invoice in euros or dollars?",
+        a: "Yes, you can invoice in any currency. However, where UK VAT is charged, the invoice must show the total net value and the VAT amount at each rate in pounds sterling. You can use the exchange rate at the time of supply or HMRC's published period rates. Note which rate you used so your records can be checked.",
+      },
+      {
+        q: "How do I check a customer's VAT number?",
+        a: "For EU VAT numbers, use the European Commission's VIES service, which confirms whether a number is valid for cross-border trade. For UK VAT numbers, use HMRC's online VAT number checker. Save the result, with the date, in the client file. This evidence matters when you apply reverse charge and charge no VAT on cross-border B2B supplies.",
+      },
+      {
+        q: "Do I need to give a VAT invoice to customers who are not VAT registered?",
+        a: "In the UK, you generally do not have to issue a VAT invoice to customers who are not VAT registered, such as members of the public, though you can still give them one or a receipt. They cannot reclaim the VAT anyway. Rules in EU countries vary, and some require invoices for certain consumer sales, so check locally.",
+      },
+      {
+        q: "What is the difference between zero-rated and exempt supplies?",
+        a: "Both carry no VAT on the invoice, but they are treated differently. Zero-rated supplies are taxable at 0%, so they count towards your VAT turnover and you can usually reclaim VAT on related costs. Exempt supplies are outside the VAT charge, and you generally cannot reclaim the related input VAT. Label each one clearly on the invoice.",
+      },
+      {
+        q: "Does the domestic reverse charge apply to UK construction work?",
+        a: "Yes. Since 1 March 2021, the UK domestic reverse charge applies to many building and construction services reported under the Construction Industry Scheme, between VAT-registered businesses. The supplier shows the VAT rate and amount but does not charge it, and adds wording stating that the customer must account for the VAT to HMRC. End users are excluded, so check HMRC's guidance.",
+      },
+      {
+        q: "How long must I keep VAT invoices?",
+        a: "In the UK, you must generally keep VAT records, including copies of invoices, for at least six years. Other countries set their own periods, often between five and ten years, and some require longer for property. Store digital copies securely with backups, and keep them readable even if you change accounting software.",
+      },
+      {
+        q: "Is a PDF VAT invoice still acceptable?",
+        a: "In the UK, a PDF sent by email is generally acceptable as a VAT invoice. Across the EU, more countries now require structured e-invoices for B2B sales, and an EU reform package called VAT in the Digital Age will add digital reporting for cross-border trade. Our generator creates PDF invoices, not structured e-invoices, so check whether a mandate applies to you.",
+      },
+    ],
     content: `
 <p><strong>Important:</strong> Tax laws, rates, registration requirements, and invoicing rules can change and may vary by jurisdiction. This article provides general informational content and should not be considered professional tax, accounting, or legal advice. Verify current requirements with the relevant tax authority or a qualified professional.</p>
 
@@ -2430,6 +3732,48 @@ jane@smithdesign.example</p>
     date: "2026-04-22",
     updated: "2026-09-25",
     author: "Invoice Creator Editorial Team",
+    faqs: [
+      {
+        q: "What font is best for a professional invoice?",
+        a: "Choose a clean, widely available sans serif, such as Arial, Helvetica, Inter or Roboto, or a restrained serif for premium brands. Body text around 9 to 11 points is usually readable in print. Pick a font with clear numerals, so 1, 7 and 0 cannot be confused, and use the same font across your quotations and invoices.",
+      },
+      {
+        q: "Should my invoice use my brand colors?",
+        a: "Yes, but sparingly. Use your main brand color for one accent, such as the header bar or the amount due label, and keep body text black or dark gray. That keeps the invoice recognizable without hurting legibility. Check that your color still prints well in grayscale and has enough contrast against white.",
+      },
+      {
+        q: "Where should the logo go on an invoice?",
+        a: "Most invoices place the logo in the top left, with the word \"Invoice\", the number and the date on the right. That matches how readers scan a page and keeps reference details where accounts teams expect them. Centered logos can work in minimal layouts. Wherever it goes, keep it modest so the amount due remains the focal point.",
+      },
+      {
+        q: "How large should an invoice PDF file be?",
+        a: "Aim to keep a typical one or two-page invoice well under 1 MB. Small files send reliably, open quickly on phones and are less likely to be blocked by email or portal size limits. Oversized logos and background images are the usual cause of large files, so compress images before uploading them to your template.",
+      },
+      {
+        q: "Is it unprofessional to use a free invoice template?",
+        a: "No. Clients care about clarity, accuracy and consistency, not whether you paid for the design. A free template with your logo, correct legal details, clear line items and visible payment instructions looks professional. Problems come from mixing templates, cluttered layouts or missing information, not from the price of the tool.",
+      },
+      {
+        q: "Where should payment terms appear on an invoice?",
+        a: "Put the due date as a calendar date next to the amount due, then repeat the terms, such as Net 14, in the payment block or footer with your bank details and any late-payment terms. Keeping terms close to the total means the approver sees what to pay and when in one glance, without reading the small print.",
+      },
+      {
+        q: "How do I make an invoice accessible?",
+        a: "Use real text rather than an image of text, so screen readers and search tools can read it. Keep strong contrast: accessibility guidelines recommend at least 4.5:1 for normal text. Avoid relying on color alone to show status, use readable font sizes, and label sections clearly. Accessible invoices are also easier for automated accounts-payable tools to scan.",
+      },
+      {
+        q: "Should I add a thank-you message to my invoice?",
+        a: "A short thank-you line in the notes or footer is a nice touch and costs no space. Keep it to one sentence, such as \"Thank you for your business\", and place it below the payment details, not above the total. It should never push key information like bank details or the due date onto a second page.",
+      },
+      {
+        q: "How should I mark an invoice as paid?",
+        a: "Keep the original invoice unchanged and record the payment date and method in your tracker. If the client wants proof, send a receipt or a copy of the invoice showing the amount paid and a zero balance due, clearly labeled as paid. Avoid large decorative paid stamps that cover numbers, because they can make copies hard to read.",
+      },
+      {
+        q: "Can I customize templates in the free invoice generator?",
+        a: "Yes. You can choose from the generator's templates, upload your logo and signature, pick one of eight currencies, and add tax, discount, shipping and notes. The layouts already follow the hierarchy principles in this guide, so the amount due and payment details stay prominent. Download a test PDF and review it on screen and in print before sending.",
+      },
+    ],
     content: `
 <h2>Design for approval speed, not decoration</h2>
 <p>An invoice has one job: get understood and paid. Visual design should accelerate that job. When hierarchy is clear, accounts payable finds the amount, due date, PO, and bank details in seconds. When hierarchy is muddy, your brand look becomes expensive noise.</p>
@@ -2515,6 +3859,48 @@ jane@smithdesign.example</p>
     category: "design-templates",
     date: "2026-10-19",
     author: "Invoice Creator Editorial Team",
+    faqs: [
+      {
+        q: "Can I use different invoice templates for different clients?",
+        a: "Yes, as long as each client sees the same template every time. Many businesses use a formal layout for corporate buyers and a lighter one for creative or consumer clients. Keep one numbering sequence across all templates and the same seller details, so your records stay consistent. Switching layouts for the same client is what causes confusion.",
+      },
+      {
+        q: "Which invoice template is best for a new freelancer?",
+        a: "A simple, clean layout like Minimal or Modern is a safe start. It looks professional, prints well and suits most clients, from small businesses to agencies. Focus first on clear line items, payment details and a visible due date. You can move to a more formal template later if you start billing enterprise clients that need PO and tax fields.",
+      },
+      {
+        q: "Does the template I choose affect whether my invoice is legally valid?",
+        a: "Generally no. Legal and tax requirements depend on what the invoice contains, such as names, numbers, dates, amounts and any required tax details, not on colors or layout. A plain template with every required field is better than a stylish one missing a tax number. If your country requires structured e-invoices, a visual template alone does not meet that rule.",
+      },
+      {
+        q: "What invoice template suits government or public-sector clients?",
+        a: "Choose a conservative, formal layout with plenty of room for reference fields, such as contract numbers, purchase orders and cost centers. Public bodies often have strict supplier rules and may require invoices through a specific portal or as structured e-invoices, especially in parts of Europe. Read the buyer's supplier guidance before your first invoice and match it exactly.",
+      },
+      {
+        q: "What should an invoice for homeowners or consumers look like?",
+        a: "Keep it friendly and plain: your business name and contact details, the job address, an itemized list of work and materials, and the total clearly marked. Consumers appreciate simple wording instead of accounting terms, clear payment options and any warranty notes. A familiar layout such as Blue or Modern works well and prints cleanly for household records.",
+      },
+      {
+        q: "Should I use a dark-background invoice template?",
+        a: "Dark templates can look striking on screen and suit tech or creative brands, but they use a lot of ink and can print poorly or become hard to read when scanned. If clients are likely to print your invoices, choose a light body with a dark header instead. Always test a grayscale print before using a dark design.",
+      },
+      {
+        q: "Which template works best for international clients?",
+        a: "Pick a layout with room for long addresses, tax IDs, currency codes and full bank details such as IBAN and SWIFT. Clean, structured templates like Corporate or Modern handle long text better than decorative ones. Show the currency code beside totals, and test the template with the longest company name and address you expect to use.",
+      },
+      {
+        q: "How do I find out what invoice format a client prefers?",
+        a: "Ask at kickoff. Many larger companies send a supplier onboarding pack listing invoice requirements, such as PO placement, tax details, file format and the accounts-payable email or portal. For smaller clients, ask your contact who approves invoices and what they need to see. One short question can save weeks of rejected invoices.",
+      },
+      {
+        q: "Should my invoice template match my quotes and proposals?",
+        a: "Yes. Using the same fonts, colors and logo on proposals, quotes and invoices makes your documents instantly recognizable and helps clients connect each invoice to the work they approved. Matching structure also helps: if the quote lists deliverables in a certain order, the invoice should follow it, which makes approval faster.",
+      },
+      {
+        q: "How do I switch invoice templates without confusing clients?",
+        a: "Change templates at a natural break, such as a new financial year or a new contract, and keep your invoice numbering sequence going. Keep your legal name, bank details and reference fields exactly the same. For regular clients, a one-line note saying your invoices have a new look reassures their accounts team that the invoice is genuine.",
+      },
+    ],
     content: `
 <p>Most “best template” articles rank designs by colour. Buyers do not. Accounts payable, homeowners and brand clients each scan a PDF differently. Choosing a template by <em>who pays you</em> cuts revision emails and speeds approval.</p>
 
@@ -2554,6 +3940,48 @@ jane@smithdesign.example</p>
     category: "design-templates",
     date: "2026-10-19",
     author: "Invoice Creator Editorial Team",
+    faqs: [
+      {
+        q: "Should invoices be A4 or US Letter size?",
+        a: "Use the paper size your clients use. A4 (210 × 297 mm) is standard in most of the world, while US Letter (8.5 × 11 inches) is standard in the US and Canada. The sizes differ slightly, so a layout designed for one can clip or shrink on the other. Keep generous margins if clients may print on either size.",
+      },
+      {
+        q: "Why does my invoice print with edges cut off?",
+        a: "Most printers cannot print right to the edge of the page, so content placed in the outer few millimeters can be clipped. Printing at a different paper size than the PDF was designed for also causes cropping. Keep important details away from the edges, and in the print dialog, try Fit to page or confirm the paper size matches.",
+      },
+      {
+        q: "What resolution should my logo be for a printed invoice?",
+        a: "A common print guideline is around 300 pixels per inch at the size the logo appears. For example, a logo printed about 1 inch wide works best at roughly 300 pixels wide or more. Use a transparent PNG or a simple, high-contrast version of your logo, and avoid tiny images that will look blurry when stretched.",
+      },
+      {
+        q: "Why do colors on my printed invoice look different from the screen?",
+        a: "Screens display color with light (RGB), while printers mix ink or toner (CMYK), so bright on-screen colors often print duller or darker. Office printers also vary widely. Do not rely on precise color shades to communicate information. Choose an accent color that still looks acceptable when printed, and make sure everything important reads clearly in black and white.",
+      },
+      {
+        q: "Should fonts be embedded in my invoice PDF?",
+        a: "Yes. Embedded fonts make the PDF look the same on every computer and printer, even if the recipient does not have your font installed. Without embedding, the viewer may substitute a different font, which can shift text, break alignment or change how numbers look. Most good PDF generators embed fonts automatically, but check if text looks wrong.",
+      },
+      {
+        q: "What is PDF/A and do I need it for invoices?",
+        a: "PDF/A is an ISO standard version of PDF designed for long-term archiving, with fonts and other resources embedded so the file stays readable for years. It is not usually required for sending ordinary invoices, but some organizations and archiving systems prefer or require it. If you keep invoices for many years, saving archive copies as PDF/A can help.",
+      },
+      {
+        q: "Will a client's scanning software read my printed invoice correctly?",
+        a: "It is more likely to if you use plain fonts, strong contrast, clear labels like \"Invoice number\" and \"Total due\", and avoid text over images or colored backgrounds. Many accounts teams use text recognition to capture invoice data from scans. Print a test copy, scan or photograph it, and check whether every number is still easy to read.",
+      },
+      {
+        q: "Should a printed invoice include page numbers?",
+        a: "Yes, if the invoice runs longer than one page. Use \"Page 1 of 2\" so readers know if a page is missing, and repeat the invoice number and client name on every page. Keep the totals and payment details together on the final page. A single-page invoice does not need page numbers.",
+      },
+      {
+        q: "What should I include when mailing a printed invoice?",
+        a: "Send the printed invoice with a tear-off remittance slip or a note asking the client to quote the invoice number with payment. Include your return address and any payment instructions they need for check or bank transfer. Keep the PDF version on file, record the mailing date, and allow time for postal delivery before the due date.",
+      },
+      {
+        q: "How do I test-print an invoice from the free invoice generator?",
+        a: "Fill in your invoice, download the PDF, then open it in your PDF viewer and print it at actual size on your usual paper. Check margins, logo sharpness, totals and bank details in black and white. If anything looks wrong, adjust the template or logo in the generator, download again, and repeat before sending to a client.",
+      },
+    ],
     content: `
 <p>Screen-perfect invoices often fail on paper: clipped logos, grey-on-grey totals, payment IBANs that wrap mid-digit. If any of your clients still print or scan, run this checklist before you send.</p>
 

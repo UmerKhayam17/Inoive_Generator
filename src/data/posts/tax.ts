@@ -33,6 +33,26 @@ export const TAX_POSTS: PostDraft[] = [
         q: "Is shipping subject to sales tax?",
         a: "Shipping and delivery charges are taxable in some states and not in others, and the answer can change depending on whether the charge is separately stated. List shipping on its own line and check the rules for the state where the sale is sourced.",
       },
+      {
+        q: "What is use tax and who pays it?",
+        a: "Use tax is the companion to sales tax. It applies when you buy taxable items for use in a state without paying that state's sales tax, for example from an out-of-state seller who had no obligation to collect it. The buyer then generally owes use tax directly to their state, usually at the same rate. Businesses typically report it on their sales and use tax return.",
+      },
+      {
+        q: "What should I do if I forgot to charge sales tax on an invoice?",
+        a: "You may still owe the tax to the state even though you didn't collect it. Options include issuing a separate invoice for the tax, if your agreement allows it, or paying the tax yourself and adjusting future pricing. Don't edit the original invoice; use a corrected document that references it. Check your state's guidance or ask a tax adviser, especially if several invoices are affected.",
+      },
+      {
+        q: "Can I include sales tax in my prices instead of adding it on top?",
+        a: "Some states allow tax-included pricing in certain situations, often with a requirement to state that tax is included, while others expect tax to be separately stated. Adding tax as its own line is the safest and most common US practice, and it makes returns easier to reconcile. If you want to advertise tax-inclusive prices, check your state's rules first.",
+      },
+      {
+        q: "Do I charge sales tax on software, SaaS or digital products?",
+        a: "It depends on the state. Some states tax SaaS, digital downloads or streaming, others exempt them, and some tax only certain types or treat business and personal use differently. These rules have changed often in recent years. Check each state where you have nexus, and use separate line items on your invoice so taxable and non-taxable parts are clear.",
+      },
+      {
+        q: "How often do I need to file sales tax returns?",
+        a: "Your state assigns a filing frequency, usually monthly, quarterly or annually, based mainly on how much tax you collect, with higher-volume sellers filing more often. You generally must file a return for each period even if you made no taxable sales, and late filing can bring penalties. Check the filing schedule in your state account and set reminders for each due date.",
+      },
     ],
     content: `
 <p><strong>Quick answer:</strong> Sales tax on invoices in the US is charged by the seller at the combined state and local rate that applies to the sale, but only in states where you have nexus and only on items or services that state taxes. Show the taxable subtotal, the tax rate and the sales tax amount as separate lines, then add them to reach the total due. There is no federal sales tax, so the rules depend on each state you sell into.</p>
@@ -160,6 +180,26 @@ export const TAX_POSTS: PostDraft[] = [
         q: "What is the 1099-NEC deadline?",
         a: "Form 1099-NEC is generally due to both the recipient and the IRS by January 31 of the year after payment. If January 31 falls on a weekend or holiday, the deadline moves to the next business day.",
       },
+      {
+        q: "Do I need to issue a 1099-NEC to an LLC?",
+        a: "It depends on how the LLC is taxed, which it states on its W-9. A single-member LLC treated as a disregarded entity, or an LLC taxed as a partnership, generally receives a 1099-NEC if you pay it enough for services. An LLC taxed as a C or S corporation is generally exempt, with exceptions such as payments to attorneys. Collect a W-9 to know which applies.",
+      },
+      {
+        q: "What should I do if a contractor won't give me a W-9?",
+        a: "Explain that you need it to pay them and to meet IRS reporting rules. If they still don't provide a correct taxpayer identification number, you may be required to apply backup withholding, currently 24%, to reportable payments and pay it to the IRS. Request the W-9 before the first payment so the issue never arises, and keep your requests in writing.",
+      },
+      {
+        q: "Does a W-9 expire?",
+        a: "No, a W-9 doesn't have an expiry date. A client can keep using the one on file until something changes, such as your name, business entity, tax classification, address or taxpayer identification number. When anything changes, send an updated W-9 promptly. Some businesses also ask vendors for a fresh form every few years to keep their records current, which is good practice.",
+      },
+      {
+        q: "What should I do if my 1099-NEC shows the wrong amount?",
+        a: "Contact the payer first and ask them to file a corrected form with the IRS and send you a copy. Share your invoices and payment records showing when and how much you were actually paid, since differences often come from timing or card payments. Report your correct income on your return and keep the evidence in case the IRS asks about the mismatch.",
+      },
+      {
+        q: "Can I file Form 1099-NEC online for free?",
+        a: "Yes. The IRS offers the IRIS Taxpayer Portal, a free online service for filing Forms 1099 by manual entry or CSV upload. You need an IRIS Transmitter Control Code first, and the IRS says the application can take up to 45 days, so apply well before January. Businesses filing 10 or more information returns in total are generally required to file electronically.",
+      },
     ],
     content: `
 <p><strong>Quick answer:</strong> In the W-9 vs 1099 question, the W-9 comes first: a contractor completes Form W-9 to give a client their legal name, tax classification and taxpayer identification number. The client then uses that information to file Form 1099-NEC with the IRS and send a copy to the contractor if total payments for the year reach the reporting threshold. The W-9 is collected and kept; the 1099 is filed.</p>
@@ -283,6 +323,26 @@ export const TAX_POSTS: PostDraft[] = [
         q: "Is reverse charge the same as zero-rated?",
         a: "No. A zero-rated supply is taxable at 0%. Under the reverse charge, VAT is still due at the normal rate; it is simply paid by the customer instead of the supplier.",
       },
+      {
+        q: "Can I use the reverse charge if I'm not VAT registered?",
+        a: "Not in the usual sense, because you cannot issue a VAT invoice without a VAT number. A non-registered UK business supplying B2B services to an overseas customer simply issues a normal invoice without VAT, and the customer may still have to self-account in their own country. Check whether those sales affect your own registration position, and take advice before relying on this.",
+      },
+      {
+        q: "How does a UK business record a reverse charge purchase on its VAT return?",
+        a: "Generally, you enter the VAT you calculate on the purchase as output tax in box 1 and, if you can recover it, the same amount as input tax in box 4, so the net effect is often nil. How the purchase value goes into boxes 6 and 7 depends on whether it is a service bought from abroad or a domestic reverse charge, so check HMRC's guidance for your case.",
+      },
+      {
+        q: "What should I do if my customer's EU VAT number fails a VIES check?",
+        a: "Don't apply the reverse charge until the problem is resolved. Ask the customer to confirm the number and their registration status, as typos, recent registrations and deactivated numbers are common causes. If they can't provide a valid number, you may have to treat the sale as a supply to a non-business customer and charge VAT where it is due. Keep a record of every check.",
+      },
+      {
+        q: "Do UK businesses still file an EC Sales List?",
+        a: "Mostly not. Businesses in Great Britain stopped submitting EC Sales Lists for supplies made from 1 January 2021, after the Brexit transition period ended. Northern Ireland businesses still report certain goods supplied to VAT-registered customers in the EU under the Windsor Framework arrangements. EU businesses continue to file recapitulative statements for intra-EU B2B supplies under their national rules.",
+      },
+      {
+        q: "Does the reverse charge apply to digital services sold to consumers in the EU?",
+        a: "No. Consumers cannot self-account, so the supplier usually charges VAT at the rate of the customer's country. Many businesses use the EU One Stop Shop (OSS), or its non-Union scheme for suppliers outside the EU, to report and pay that VAT through one registration rather than registering in every member state. Check the thresholds and conditions that apply to your business.",
+      },
     ],
     content: `
 <p><strong>Quick answer:</strong> A reverse charge VAT invoice is an invoice on which the supplier does not charge VAT because the customer must account for it on their own VAT return. It shows a net total with no VAT added, includes both parties' VAT numbers where required, and carries clear wording such as "Reverse charge". It is used mainly for cross-border business-to-business services and for specific domestic sectors such as UK construction.</p>
@@ -403,6 +463,26 @@ export const TAX_POSTS: PostDraft[] = [
       {
         q: "What does 'outside the scope of VAT' mean?",
         a: "It means the transaction is not a supply for VAT purposes at all, for example a statutory fee, a pure donation or many business-to-business services supplied to overseas customers. It is different from both zero-rated and exempt supplies.",
+      },
+      {
+        q: "Can I register for VAT voluntarily if most of my sales are zero-rated?",
+        a: "Yes. If your taxable turnover is below the threshold, you can usually register voluntarily, and a business making mainly zero-rated sales often benefits because it can reclaim VAT on its costs while charging 0% to customers. HMRC may also let such businesses apply for an exception from registration. Weigh the admin of regular returns against the repayments you expect.",
+      },
+      {
+        q: "What is the reduced rate of VAT in the UK?",
+        a: "The UK reduced rate is 5% and applies to a limited list of goods and services, such as domestic fuel and power, children's car seats and certain mobility aids for older people. Reduced-rated supplies are taxable, so they count towards the registration threshold and allow input VAT recovery, just like zero-rated and standard-rated ones. Check HMRC guidance for each item you sell.",
+      },
+      {
+        q: "Are private school fees still exempt from VAT in the UK?",
+        a: "No. Since 1 January 2025, fees charged by UK private schools for education and closely related boarding services have been subject to VAT at the standard rate of 20%, and schools that were not VAT-registered had to register under the normal rules. Many other education services, such as those provided by eligible bodies, can still be exempt, so check HMRC guidance for your situation.",
+      },
+      {
+        q: "What is the partial exemption de minimis limit?",
+        a: "Under HMRC's partial exemption rules, a business can recover VAT on costs relating to exempt supplies if that exempt input tax is no more than £625 a month on average and no more than half of its total input tax for the period. Both conditions must be met. VAT Notice 706 explains the tests, including simplified versions, and when they can be applied annually.",
+      },
+      {
+        q: "Can I get VAT repayments more often if I mainly make zero-rated sales?",
+        a: "Usually, yes. Businesses that regularly receive VAT repayments, which is common when most sales are zero-rated, can ask HMRC to let them submit monthly rather than quarterly VAT returns. That gets repayments into your account sooner and helps cash flow, at the cost of filing more often. Make sure your records and software can keep up before you switch.",
       },
     ],
     content: `
@@ -544,6 +624,26 @@ export const TAX_POSTS: PostDraft[] = [
         q: "What is a clearance model?",
         a: "In a clearance model, the invoice is sent to or validated by a tax authority platform before or as it reaches the buyer. Italy, Mexico and Brazil are long-standing examples.",
       },
+      {
+        q: "What is the difference between e-invoicing and EDI?",
+        a: "EDI (electronic data interchange) is an older way for trading partners to exchange business documents in agreed formats, often through private connections set up one partner at a time. Modern e-invoicing uses standardized formats such as EN 16931, UBL or CII and open networks like Peppol, so one connection can reach many buyers. Both are structured data, but mandates specify particular formats and channels.",
+      },
+      {
+        q: "How do I get a Peppol ID?",
+        a: "You get a Peppol ID by registering with a certified Peppol access point provider, often through your accounting or invoicing software. The provider registers your business identifier, such as a VAT or company number, in the network directory so others can find you and send you e-invoices. Costs and setup vary by provider, and some accounting packages include Peppol access in their plans.",
+      },
+      {
+        q: "What happens if I send a PDF invoice where e-invoicing is mandatory?",
+        a: "The invoice may not count as a valid invoice for tax purposes. Depending on the country, that can mean penalties for you, a buyer who won't pay until they receive a compliant e-invoice, or a customer who cannot deduct the VAT. Some countries allow transition periods or exceptions, so check the rules and timelines in each country where you're registered.",
+      },
+      {
+        q: "Can a free invoice generator create a legally valid e-invoice?",
+        a: "Usually not. Most free generators, including ours, create PDF invoices, which are fine where no mandate applies but are not the structured XML files or platform submissions that mandates require. They also don't add clearance stamps, IRNs or tax authority QR codes. Where e-invoicing is compulsory, use software that supports the required format or a certified service provider.",
+      },
+      {
+        q: "Are there free e-invoicing options for small businesses?",
+        a: "Some governments offer free basic tools. Malaysia's MyInvois Portal lets businesses submit e-invoices online, and Italy's tax agency provides free tools for creating and sending invoices through its exchange system. Elsewhere, low-cost accounting software often includes e-invoicing. Check your tax authority's website first, because a free official portal may be enough if you send only a few invoices.",
+      },
     ],
     content: `
 <p><strong>Quick answer:</strong> E-invoicing is the exchange of invoices as structured, machine-readable data, such as UBL or CII XML files, rather than as PDFs or paper. A growing number of countries now require it for business-to-business or business-to-government sales, often through a government platform or a network such as Peppol. A PDF emailed to a client is an electronic document, but under most mandates it is not an "e-invoice".</p>
@@ -664,6 +764,26 @@ export const TAX_POSTS: PostDraft[] = [
         q: "Do I need to keep invoices I received as well as invoices I issued?",
         a: "Yes. Purchase invoices support your expense deductions and any input tax you reclaim, so they are just as important as sales invoices.",
       },
+      {
+        q: "Do I need to keep invoices after I close my business?",
+        a: "Yes. Retention periods keep running after a business closes, because the tax authority can still review returns for the years you traded. Keep your invoices, bank statements and other records for the full period that applies to your final returns, and make sure someone can still access them, especially if a company is dissolved. Check the local rules for closed businesses.",
+      },
+      {
+        q: "What should I do if I've lost some invoices?",
+        a: "Reconstruct what you can. Download copies from your invoicing tool or email, ask clients and suppliers for duplicates, and use bank and payment processor statements to confirm amounts and dates. Write a short note explaining what was lost and how you rebuilt the records. Tax authorities may accept reasonable reconstructions, but missing records can still cost you deductions, so improve your backups.",
+      },
+      {
+        q: "Is a photo or scan of an invoice acceptable as a record?",
+        a: "In many countries, yes, if the copy is complete, legible and stored securely for the full retention period. The IRS, HMRC and many other authorities accept electronic records that meet their conditions, though some countries set specific rules before you can destroy paper originals. Check that each image is readable, including small print and totals, and back it up in more than one place.",
+      },
+      {
+        q: "How long should I keep bank statements?",
+        a: "Generally for the same period as your invoices, because statements prove when invoices were paid and support the income and expenses you report. In practice, that means following the longest retention period that applies to your business records in your country. Download statements regularly rather than relying on your bank's online history, which may only go back a limited number of years.",
+      },
+      {
+        q: "Does Making Tax Digital change how I keep invoices in the UK?",
+        a: "It can. Making Tax Digital for Income Tax began on 6 April 2026 for sole traders and landlords with qualifying income over £50,000, and the threshold falls to £30,000 from April 2027. Those in scope must keep digital records in compatible software and send quarterly updates. VAT-registered businesses already keep digital VAT records. Retention periods are unchanged, so check GOV.UK for your position.",
+      },
     ],
     content: `
 <p><strong>Quick answer:</strong> How long to keep invoices depends on where you are taxed, but most countries require five to ten years. The US IRS generally asks for three to seven years depending on the situation, the UK generally six years for companies and VAT records, Canada six years, Australia five years, and Germany eight years for invoices. Keep both the invoices you issue and the invoices you receive.</p>
@@ -780,6 +900,26 @@ export const TAX_POSTS: PostDraft[] = [
         q: "How do I check a customer's EU VAT number?",
         a: "The European Commission's VIES service lets you check whether an EU VAT number is valid. For UK VAT numbers, HMRC offers its own checking service.",
       },
+      {
+        q: "Is an EIN the same as a tax ID number?",
+        a: "An EIN is one kind of tax identification number. In the US, TIN is the umbrella term that covers Employer Identification Numbers, Social Security numbers and Individual Taxpayer Identification Numbers. Businesses use an EIN, while individuals may use an SSN or ITIN. When a client asks for your tax ID, they usually want it on a Form W-9 rather than printed on an invoice.",
+      },
+      {
+        q: "How do I get an EIN?",
+        a: "US businesses can apply for an EIN for free on the IRS website, and an online application usually gives you the number immediately. Sole proprietors can get one too, which lets you share an EIN with clients instead of your Social Security number. Be careful of websites that charge a fee to apply on your behalf, because the IRS service itself costs nothing.",
+      },
+      {
+        q: "What happens in Australia if I don't put my ABN on an invoice?",
+        a: "A business paying you may have to withhold 47% of the payment and send it to the ATO if you don't quote your ABN, unless an exception applies, such as a total payment of $75 or less excluding GST. If you are registered for GST, your ABN must also appear on your tax invoices. Never put your tax file number on an invoice.",
+      },
+      {
+        q: "How can I check a UAE TRN?",
+        a: "The UAE Federal Tax Authority provides an online TRN verification service on its website, where you can enter a 15-digit TRN and see whether it belongs to a registered business. Check a supplier's TRN before reclaiming input VAT on their invoice, and check a customer's when it must appear on your tax invoice. Keep a record of each check with the invoice.",
+      },
+      {
+        q: "Do I need a tax ID to send an invoice at all?",
+        a: "Not always. In many countries you can invoice before you have a VAT, GST or sales tax registration, as long as you don't charge that tax or show a number you don't hold. Some systems still expect a basic business identifier, such as an ABN in Australia to avoid withholding. Once you register, add the number to every invoice where the rules require it.",
+      },
     ],
     content: `
 <p><strong>Quick answer:</strong> The tax ID on an invoice is the registration number that identifies your business to the tax authority: for example an EIN in the US, a VAT number in the UK and EU, a TRN in the UAE, or an NTN and STRN in Pakistan. If you are registered for VAT, GST or sales tax, showing your number is usually mandatory on tax invoices; for business customers, many regimes also require theirs. Place it in your business details block, labelled clearly.</p>
@@ -893,6 +1033,22 @@ export const TAX_POSTS: PostDraft[] = [
       {
         q: "What is the simplified home office deduction?",
         a: "The simplified method lets you deduct $5 per square foot of qualifying home office space, up to 300 square feet, for a maximum of $1,500. The space must be used regularly and exclusively for business.",
+      },
+      {
+        q: "What is the 2026 IRS standard mileage rate?",
+        a: "At the time of writing, the IRS business rate for 2026 is 72.5 cents per mile for driving from January 1 to June 30, and 76 cents per mile from July 1, 2026, after a mid-year increase the IRS made because of rising fuel prices. Use the rate for the period when each trip took place, and keep a log of dates, destinations, purposes and miles.",
+      },
+      {
+        q: "Can I deduct expenses from before my business started?",
+        a: "Partly. US rules generally let you deduct up to $5,000 of startup costs in the year your business begins, reduced once total startup costs pass $50,000, and amortize the rest over 180 months. Costs such as market research, pre-launch advertising and training can qualify. Keep receipts showing what you spent and the date your business actually began operating.",
+      },
+      {
+        q: "Can a self-employed loss reduce my other income?",
+        a: "Often, yes. A genuine Schedule C loss can generally offset other income, such as wages from a job, which lowers your total taxable income. Limits apply, including the at-risk rules, passive activity rules and the excess business loss limit, and the IRS may treat an activity as a hobby if there's no real profit motive. Keep records showing you run it like a business.",
+      },
+      {
+        q: "Can I deduct meals I eat alone while working?",
+        a: "Generally not. Everyday meals are personal expenses, even if you eat at your desk or in a cafe while working. Meals can be partly deductible when you're traveling away from home overnight for business, or when you meet a client or business contact and the meal has a clear business purpose, usually at 50%. Keep the receipt and note who attended and why.",
       },
     ],
     content: `

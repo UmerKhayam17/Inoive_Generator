@@ -31,6 +31,26 @@ export const INDUSTRY_POSTS_A: PostDraft[] = [
         q: "When should a contractor send an invoice?",
         a: "Send it as soon as the job or billing milestone is complete and approved. For longer projects, invoice at the stages set out in your contract, such as on signing, at rough-in and at completion, rather than waiting for the end.",
       },
+      {
+        q: "What is the difference between a contractor estimate and an invoice?",
+        a: "An estimate is the price you propose before work starts, and an invoice is the bill you send once the work or a milestone is done. An estimate is not a request for payment and can change if the scope changes. Your invoice should reference the estimate number and match it line for line, with approved change orders listed separately so the client can see why the total differs.",
+      },
+      {
+        q: "How much deposit can a contractor legally ask for?",
+        a: "It depends on your state. Some states cap down payments on home improvement contracts; California, for example, limits it to $1,000 or 10% of the contract price, whichever is less. Many other states set no cap or treat commercial work differently. Check with your state contractor licensing board before setting a deposit, and write the amount and timing into your contract.",
+      },
+      {
+        q: "How do I show retainage on a contractor invoice?",
+        a: "Show the full amount earned for the period, deduct the retainage percentage your contract sets on its own line, and carry a running total of retainage held to date. Retainage of 5% to 10% is common, and several states now cap it, often at 5%, on certain projects. At completion, send a separate retainage release invoice for the accumulated amount, following any conditions in the contract.",
+      },
+      {
+        q: "Will my client send me a 1099 for contract work?",
+        a: "Possibly. US businesses that pay an independent contractor for services usually ask for a W-9 and must file Form 1099-NEC once payments reach the federal threshold, which rose from $600 to $2,000 for payments made from 2026. Homeowners paying for work on their own home generally do not issue one. Either way, you must report all your income, so keep every invoice and payment record.",
+      },
+      {
+        q: "What can I do if a client does not pay a contractor invoice?",
+        a: "Start with a polite reminder quoting the invoice number and due date, then a firmer follow-up referencing any late-fee terms in your contract. Many states also give contractors mechanic's lien rights against the property, but these usually require preliminary notices and strict filing deadlines that vary by state. Check your state's lien law early in the job, and consider small claims court or an attorney for larger debts.",
+      },
     ],
     content: `
 <p><strong>Quick answer:</strong> A contractor invoice template is a ready-made layout for billing construction, renovation or repair work. It should show your business and license details, the client and job site, a unique invoice number and due date, separate lines for labor, materials, subcontractors and permits, any tax, deposits already paid, and the balance due. Fill it in, download it as a PDF, and send it as soon as the work or milestone is complete.</p>
@@ -161,6 +181,26 @@ export const INDUSTRY_POSTS_A: PostDraft[] = [
       {
         q: "When should a wedding photographer send the final invoice?",
         a: "Most photographers send the balance invoice a few weeks before the wedding date, with payment due before or on the day, so they are not chasing money after the gallery is delivered. Follow whatever schedule your contract sets out.",
+      },
+      {
+        q: "Who owns the copyright to photos after the client pays the invoice?",
+        a: "In the US and many other countries, the photographer usually keeps the copyright by default and the client receives a license to use the images. Copyright passes to the client only if a signed written agreement assigns it, or if the work counts as work made for hire, such as photos taken by an employee. State on the invoice exactly what license the client receives once it is paid.",
+      },
+      {
+        q: "Can I charge for travel on a photography invoice?",
+        a: "Yes, if your package or contract says so. Many photographers include a set radius and bill mileage, flights, hotels or parking beyond it on separate lines at the agreed rate. Itemizing travel shows the client a real cost rather than a padded package price. Agree the method in advance, such as a per-mile rate from your studio, and keep receipts for any expenses you pass on.",
+      },
+      {
+        q: "How should a second shooter invoice the lead photographer?",
+        a: "A second shooter working as an independent contractor usually invoices the lead photographer, not the couple or event client. The invoice should list the event date, hours of coverage at the agreed rate, any culling or editing, travel and the payment terms you agreed. Note any agreed limits on portfolio use, since second-shooter agreements often restrict how you can show the images.",
+      },
+      {
+        q: "Can I charge a late fee on an unpaid photography invoice?",
+        a: "Yes, if your contract sets one and it complies with local law. State the fee or interest rate, when it applies and any grace period, then repeat the terms in the invoice notes. Apply it only after the due date, show it as a separate line, and send a reminder first. Many photographers find that holding the final gallery until payment, where the contract allows, works better than fees.",
+      },
+      {
+        q: "Should I send an invoice for a free or portfolio-building shoot?",
+        a: "It is a good idea. An invoice showing your normal fee with a 100% discount line records what you delivered, the license you granted and the real value of the work. It reminds the client what the shoot is normally worth if they hire you again, and gives you a clean bookkeeping record. If you traded services rather than working for free, ask an accountant how to report it.",
       },
     ],
     content: `
@@ -297,6 +337,26 @@ export const INDUSTRY_POSTS_A: PostDraft[] = [
         q: "Can I charge a cancellation fee for a cleaning visit?",
         a: "Yes, if your service agreement includes one and the client agreed to it. Show it on the invoice as its own line with the date of the cancelled visit, such as 'Late cancellation, 9 Oct 2026, per service agreement'.",
       },
+      {
+        q: "How much should I charge for a house cleaning?",
+        a: "There is no single standard rate, so build yours from your costs. Work out how long a typical clean takes by home size and condition, multiply by an hourly rate that covers wages, supplies, travel, insurance and profit, then round it into flat prices per visit. Check what local competitors charge, price first and deep cleans higher, and review your rates at least once a year.",
+      },
+      {
+        q: "Should cleaners charge more for the first clean?",
+        a: "Many do, because a first or deep clean usually takes much longer than a maintenance visit. You can quote it as a separate one-off price or add a heavy-soil surcharge line, then switch to your regular rate from the second visit. Explain this in the quote so the client is not surprised, and label the invoice line clearly, such as 'Initial deep clean, 3-bed home'.",
+      },
+      {
+        q: "Can I charge a fee if I am locked out of a client's home?",
+        a: "Yes, if your service agreement says so. A lockout or no-access fee, often all or part of the visit price, covers the time you reserved and the trip you made. Record the date and time you arrived and any attempts to reach the client, then show the fee on its own invoice line with a reference to the clause in your agreement.",
+      },
+      {
+        q: "Should I give receipts to cleaning clients who pay cash?",
+        a: "Yes. A receipt confirms the amount, date and payment method, and protects both you and the client if there is a disagreement later. It also keeps your income records complete for tax purposes, since cash is easy to lose track of. You can mark the invoice as paid with the date and amount received, or issue a separate receipt that references the invoice number.",
+      },
+      {
+        q: "How do I invoice a client who pays for cleaning in advance?",
+        a: "Issue an invoice for the prepaid visits, for example four weekly cleans in November, with the service period and planned visit dates listed. Nothing more is billed when each visit happens. If a visit is skipped, apply the credit to the next invoice or refund it according to your agreement. Clear prepaid invoices make it easy for both sides to see what has been used.",
+      },
     ],
     content: `
 <p><strong>Quick answer:</strong> A cleaning invoice template is a billing layout for house cleaning, janitorial and commercial cleaning businesses. It should list each visit or service with its date, the pricing basis (per visit, per hour or per square foot), any add-ons or supplies, tax where it applies and the total due. Most cleaners send one invoice per visit for homes and one monthly invoice for commercial clients.</p>
@@ -422,6 +482,26 @@ export const INDUSTRY_POSTS_A: PostDraft[] = [
         q: "Do consultants charge sales tax?",
         a: "In many US states professional consulting services are not subject to sales tax, but some states tax certain services. Outside the US, consultants registered for VAT or GST normally charge it. Check the rules where you and your client are based.",
       },
+      {
+        q: "Should I charge for travel time as a consultant?",
+        a: "Agree it in your engagement letter before you travel. Common approaches are billing travel time at your full rate, at a reduced rate such as half, only beyond a set number of hours, or not at all and building it into your day rate. Whichever you choose, show travel time as its own line with dates and the agreed rate, separate from the travel expenses themselves.",
+      },
+      {
+        q: "Can I charge interest on a late consulting invoice?",
+        a: "Usually, if your contract allows it. In the US, your engagement letter can set a late fee or interest rate within state legal limits. In the UK, business clients can be charged statutory interest at 8% above the Bank of England base rate plus fixed compensation under late payment legislation, unless the contract sets a substantial alternative remedy. State your late terms on every invoice.",
+      },
+      {
+        q: "Should I invoice in my currency or the client's currency?",
+        a: "Either works if you agree it in advance. Billing in your own currency protects you from exchange-rate swings, while billing in the client's currency makes approval easier for them. Show the currency code, such as USD or EUR, next to amounts, say who pays transfer fees, and include correct international bank details. Our free invoice generator lets you pick the currency for each invoice.",
+      },
+      {
+        q: "What should I do if a client disputes hours on my consulting invoice?",
+        a: "Respond quickly with your time log for the disputed entries and the engagement terms that apply, such as the agreed rate and billing increments. Ask which entries concern them rather than defending the whole invoice. If you agree an adjustment, issue a credit note referencing the original invoice instead of editing it. Detailed, dated time entries sent with each invoice prevent most of these disputes.",
+      },
+      {
+        q: "How do I invoice a success fee?",
+        a: "Invoice it separately once the trigger in your agreement has happened, such as a deal closing or a savings target being confirmed. Describe the trigger event, the date it occurred and how the fee is calculated, for example a stated percentage of confirmed savings, and attach or reference the evidence. Keeping it off your regular monthly invoices helps the client approve it through the right budget.",
+      },
     ],
     content: `
 <p><strong>Quick answer:</strong> A consulting invoice template is a professional billing layout for consultants and advisers. It should show your business details, the client's legal name and PO or engagement reference, a unique invoice number and due date, itemized fees (hours, days, milestones or retainer), reimbursable expenses on separate lines, any tax and the total due. Send it on the schedule set in your engagement letter, usually monthly or at each milestone.</p>
@@ -545,6 +625,26 @@ export const INDUSTRY_POSTS_A: PostDraft[] = [
         q: "Can I charge for stock photos and fonts?",
         a: "Yes. Licensed stock images and fonts bought for the client's project are normally passed through as separate lines, at cost or with a small handling fee as agreed. Make sure the license type allows the client's intended use.",
       },
+      {
+        q: "How much should a graphic designer charge for a logo?",
+        a: "Logo prices vary enormously with experience, market and scope, so price the project rather than copying a number. Estimate the hours for research, concepts, revisions and file preparation, multiply by your target hourly rate, then adjust for the client's size and how widely the logo will be used. Put the scope, number of concepts and included revisions in the quote so the invoice matches it.",
+      },
+      {
+        q: "Do graphic designers charge sales tax on digital files?",
+        a: "It depends on your state. Many US states do not tax design services, but some tax digital products or finished artwork, and printed goods are often taxable even when the design work is not. The answer can also change depending on whether you deliver files electronically or on physical media. Check your state revenue department's guidance or ask an accountant before adding tax.",
+      },
+      {
+        q: "How do I invoice a monthly design retainer?",
+        a: "Invoice the retainer at the start of each month for the agreed fee, stating the period and what it covers, such as up to 20 hours of design time. List any overage hours from the previous month as a separate line at your agreed rate. Say whether unused hours roll over, and include a short summary of tasks completed so the client can see the value each month.",
+      },
+      {
+        q: "Can I pause a design project if the client stops paying?",
+        a: "Yes, if your contract allows it, and a clear pause clause makes this much easier. Tell the client in writing which invoice is overdue, that work will pause from a stated date, and what is needed to restart. Avoid releasing final files while invoices are unpaid. If the project stalls for a long time, your kill fee or termination clause sets out what you can invoice.",
+      },
+      {
+        q: "What payment terms should a graphic designer use?",
+        a: "Net 14 or net 30 is common for business clients, while deposits and milestone payments protect you on larger projects. Individuals and small clients are often asked to pay on receipt or before final files are released. Whatever you choose, write the terms in your proposal and show an actual due date on each invoice, not just 'net 30', so there is no doubt when payment is late.",
+      },
     ],
     content: `
 <p><strong>Quick answer:</strong> A graphic design invoice template is a billing layout for designers and studios that lists each deliverable (such as logo concepts, brand guidelines or social assets) along with included and extra revision rounds, stock or font licenses, the deposit already paid and the balance due. It should also state when usage rights transfer. Send it at each agreed milestone or when final files are ready for handover.</p>
@@ -661,6 +761,26 @@ export const INDUSTRY_POSTS_A: PostDraft[] = [
       {
         q: "Should I include a warranty on a plumbing invoice?",
         a: "It is good practice to state your workmanship warranty and note that manufacturer warranties apply to parts. Include the warranty period and any conditions, so the customer has it in writing on the same document as the work performed.",
+      },
+      {
+        q: "How much should a plumber charge per hour?",
+        a: "Rates vary widely by region, license level and whether the call is routine or an emergency, so there is no reliable national figure. To set yours, add up wages, vehicle, insurance, tools, licensing and overhead, divide by the hours you can realistically bill in a year, and add your profit margin. Compare with local competitors and set a higher rate for nights, weekends and holidays.",
+      },
+      {
+        q: "Can a plumber charge for a call-out if nothing was fixed?",
+        a: "Yes, if the customer agreed to a service call or diagnostic fee before the visit. That fee pays for travel and the time spent diagnosing the problem, even if the customer decides not to go ahead or the job needs a specialist. Explain the fee when booking, show it as its own invoice line and describe what you found, so the customer sees what they paid for.",
+      },
+      {
+        q: "Should a plumbing invoice include photos?",
+        a: "It is not required, but photos are very useful. A picture of the failed part, the leak or the finished installation helps homeowners who were not present, landlords approving tenant call-outs and insurers handling water damage claims. Attach them to the email with the PDF invoice or note that photos are available, and keep copies in the job file in case the work is questioned later.",
+      },
+      {
+        q: "What should I write on a plumbing invoice for an insurance claim?",
+        a: "Give a clear, factual account: the date of the call, the cause you found, such as a burst supply line, its location, the work done and the parts used. Keep emergency work to stop the damage separate from permanent repairs, because insurers often assess them differently. Avoid comments about coverage. The homeowner deals with the insurer, but a precise invoice and photos make their claim easier.",
+      },
+      {
+        q: "Should I bill the tenant or the landlord for a plumbing repair?",
+        a: "Bill whoever booked the job and agreed to pay for it. For rental properties that is usually the landlord or property manager, even if the tenant let you in, unless the tenant arranged and agreed to pay for the work. Confirm the bill-to party before you start, put the service address and unit number on the invoice, and quote the work order number if the manager issued one.",
       },
     ],
     content: `
@@ -780,6 +900,26 @@ export const INDUSTRY_POSTS_A: PostDraft[] = [
       {
         q: "Can I ask for a deposit on electrical work?",
         a: "Yes, deposits are common on larger jobs where you buy materials in advance, such as panels, EV chargers or generators. Some states limit deposits on home improvement contracts, so check local rules, and deduct the deposit clearly on the final invoice.",
+      },
+      {
+        q: "How much should an electrician charge for a service call?",
+        a: "Service call fees vary by region and company, so base yours on your actual costs: average drive time, the first part of diagnostic labor, vehicle costs and overhead per visit. Some electricians include the first half hour or hour of labor in the fee, and some credit it against the repair if the customer goes ahead. Tell customers the fee and what it covers when they book.",
+      },
+      {
+        q: "Should I charge more for after-hours electrical calls?",
+        a: "Many electricians do, either with a higher hourly rate or a flat emergency surcharge for nights, weekends and holidays. Quote it before you dispatch, then show it clearly on the invoice, for example 'Emergency call-out, Sunday 11:40 pm, per rate quoted by phone'. Matching the invoice to what the customer was told is the best way to avoid disputes over emergency work.",
+      },
+      {
+        q: "How do I invoice an EV charger installation?",
+        a: "List the charger, or note that the customer supplied it, then the circuit materials such as breaker and wire, labor, any panel or load management work, the permit and inspection fee and any utility coordination. Include the charger's make, model and serial number so the customer can register the warranty and apply for any utility rebate, but let them confirm eligibility with the program directly.",
+      },
+      {
+        q: "What should an electrician do on the invoice if a job fails inspection?",
+        a: "Record the failed item, what was corrected and the re-inspection date in your job notes and on the invoice where relevant. Whether you charge for the correction and any re-inspection fee depends on the cause. If the failure was your workmanship, absorbing the cost is normal, but extra work caused by customer changes or hidden conditions can be billed if your contract allows it.",
+      },
+      {
+        q: "Should an electrical invoice include a warranty?",
+        a: "It is not always required, but it is good practice. State your workmanship warranty period and conditions, and note that manufacturer warranties cover products such as breakers, fixtures and chargers. List exclusions too, such as customer-supplied parts or damage from power surges. Putting the warranty on the invoice gives the customer one document showing what was done and how it is covered.",
       },
     ],
     content: `
@@ -901,6 +1041,26 @@ export const INDUSTRY_POSTS_A: PostDraft[] = [
       {
         q: "Should I take a deposit for a landscape installation?",
         a: "Yes, deposits are common for installation projects because you buy plants, stone and other materials before the job starts. Issue a deposit invoice, then deduct the amount on the final invoice with a reference to it.",
+      },
+      {
+        q: "How much should I charge per lawn mowing visit?",
+        a: "Price by the time each property takes rather than a flat number. Time a typical visit for each lot size, including travel, edging and cleanup, then multiply by an hourly rate covering crew wages, fuel, equipment wear, insurance and profit. Add extra for steep slopes, obstacles or overgrown first cuts. Compare with local competitors and review prices each season as fuel and labor costs change.",
+      },
+      {
+        q: "How do I invoice snow removal?",
+        a: "Snow removal is usually billed per push or visit, per inch over a trigger depth, hourly for equipment, or as a fixed seasonal contract. Whichever you use, list each event with the date, snowfall or trigger, the service provided and any salt or ice melt as a separate materials line. Dated records protect you if a client or property manager questions how often you came out.",
+      },
+      {
+        q: "Can I charge for skipped visits on a seasonal lawn care contract?",
+        a: "That depends on your agreement. Many fixed monthly contracts spread the season's price evenly, so clients pay the same amount even when weather cuts visits one month, because other months have extra visits. If your contract bills per visit, bill only completed visits. Spell out how rain-outs, drought and skipped cuts are handled before the season starts, and note skipped dates on the invoice.",
+      },
+      {
+        q: "How do I bill for irrigation repairs?",
+        a: "Bill irrigation work separately from your maintenance contract unless the contract includes it. List diagnostic time, each repair such as a replaced head, valve or broken line, the parts used and labor hours. For property managers, quote the approval or work order number, since irrigation repairs often need written approval first. Seasonal start-up and winterization are usually separate fixed-price lines.",
+      },
+      {
+        q: "Do landscapers need a license to apply pesticides or fertilizer?",
+        a: "Often yes for pesticides. Most US states require a license or certification for commercial pesticide application, and some also regulate fertilizer application. Requirements vary by state and by the products you use, so check with your state department of agriculture. If you hold a license, show the number on your invoice or service record and note the product and area treated.",
       },
     ],
     content: `
@@ -1025,6 +1185,26 @@ export const INDUSTRY_POSTS_A: PostDraft[] = [
       {
         q: "Can I charge a minimum fee for small handyman jobs?",
         a: "Yes, a minimum charge is common because travel and setup take time even for a five-minute fix. Tell the customer about the minimum when booking and show it clearly on the invoice.",
+      },
+      {
+        q: "How much should a handyman charge per hour?",
+        a: "There is no fixed national rate, so work it out from your costs and local market. Total your yearly expenses, including insurance, vehicle, tools, phone and taxes, add the income you want, and divide by the hours you can realistically bill, which is usually far fewer than the hours you work. Then compare with local handymen and adjust for specialist skills and travel distance.",
+      },
+      {
+        q: "Should a handyman charge for time spent buying materials?",
+        a: "Many do, because shopping and returns take real time. Common approaches are a materials pickup fee, a small markup on materials, or billing shopping time at your hourly rate. Pick one, tell the customer when quoting, and show it on the invoice as its own line, such as 'Materials pickup and return trip'. Avoid charging both a markup and full shopping time without explaining it.",
+      },
+      {
+        q: "Should I give a warranty on handyman work?",
+        a: "Offering a short workmanship guarantee, such as 30 or 90 days, builds trust and is common, but it is your choice unless local law requires one. State the period and what it covers in the invoice notes, and exclude customer-supplied materials and damage from misuse. Manufacturer warranties cover products such as faucets or locks, so tell the customer to keep the receipt.",
+      },
+      {
+        q: "Can I charge more if a quoted handyman job takes longer than expected?",
+        a: "Only if your quote allows for it. A fixed-price quote usually means you absorb extra time unless the scope changed or you found a hidden problem and the customer approved the extra work. For hourly jobs, bill actual time, but warn the customer as soon as it starts running over. Note any approved changes on the invoice with the date they were agreed.",
+      },
+      {
+        q: "Should I invoice before or after finishing a handyman job?",
+        a: "For most single-visit jobs, finish the work, walk the customer through it, then present the invoice and take payment on the spot. For multi-day jobs or ones needing expensive materials, invoice a deposit before you start and the balance on completion. Our free invoice generator works in your phone's browser, so you can create and download the PDF before you leave.",
       },
     ],
     content: `

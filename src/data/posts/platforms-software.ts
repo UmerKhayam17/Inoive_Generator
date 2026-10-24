@@ -31,6 +31,26 @@ export const PLATFORM_SOFTWARE_POSTS: PostDraft[] = [
         q: "Can I pass PayPal fees on to my client?",
         a: "In many places you can add a separate convenience or processing line, but surcharging rules vary by US state and by card network, and PayPal's own policies also apply. A safer approach is to build your payment costs into your rates or offer a cheaper payment method such as bank transfer.",
       },
+      {
+        q: "Why is my PayPal invoice payment on hold?",
+        a: "PayPal can hold payments for new sellers or accounts with little selling history, and its help pages say these holds generally last up to 21 days. For services, PayPal says funds can be released sooner, for example after the order is marked as completed. Confirming your identity and building a history of successful transactions usually reduces holds. Check the payment details in your account for the release date.",
+      },
+      {
+        q: "Does PayPal return its fee if I refund an invoice payment?",
+        a: "Generally, no. PayPal's help pages say there's no fee to issue a refund for goods or services, but the fees you paid when you received the payment are not returned. On a full refund you are therefore out of pocket by the original fee. Check the current fee terms in your account before agreeing to refunds, and factor this into your cancellation terms.",
+      },
+      {
+        q: "Can I send a PayPal invoice in a currency other than US dollars?",
+        a: "Yes. PayPal Invoicing lets you bill in many currencies, with PayPal's pages citing more than 20 at the time of writing. If you receive a currency you don't hold, PayPal may convert it and charge a currency conversion fee, and a different fixed fee applies to non-USD payments. Agree the currency with your client first and check PayPal's fee page for your country.",
+      },
+      {
+        q: "How do I withdraw money from PayPal to my bank account?",
+        a: "You transfer your PayPal balance to a linked bank account. Standard transfers are free and usually arrive within a few business days, while instant transfers arrive faster for a percentage fee that differs between personal and business accounts. Check the fee shown before you confirm. In your books, record the gross invoice as income and any transfer fee as a separate expense.",
+      },
+      {
+        q: "Can a client pay my invoice as a friends and family payment on PayPal?",
+        a: "You shouldn't ask them to. Friends and family payments are meant for personal transfers, and using them for paid work goes against PayPal's rules and leaves the client without purchase protection. A PayPal invoice or goods and services payment carries a fee, but it gives you both an itemized, trackable record of the business transaction. Always bill clients through a business payment.",
+      },
     ],
     content: `
 <p><strong>Quick answer:</strong> To send a PayPal invoice, log in to a PayPal business account, open the invoicing section, add your client's email, enter line items, tax and a due date, then click send. PayPal emails the client a link to pay by PayPal, card or bank. Sending is free; you pay a fee only when the invoice is paid, and US rates currently start at 1% for bank payments.</p>
@@ -137,6 +157,30 @@ export const PLATFORM_SOFTWARE_POSTS: PostDraft[] = [
       {
         q: "Does Stripe Invoicing work for freelancers?",
         a: "It works, but it is built for businesses with developers or many invoices, and the dashboard has a learning curve. A freelancer sending a handful of invoices a month may find a free invoice PDF with a payment link simpler and cheaper.",
+      },
+      {
+        q: "Does Stripe refund its fees if I refund a paid invoice?",
+        a: "No. Stripe's help center says processing fees and any currency conversion fees from the original payment are not returned when you refund it, so a full refund still costs you the original fee. Some refunds of bank transfer payments can carry an extra fee as well. Check Stripe's refund documentation for the payment method your client used, and reflect this in your cancellation terms.",
+      },
+      {
+        q: "What happens if a client disputes a Stripe invoice payment?",
+        a: "The disputed amount is pulled back while the card issuer reviews it, and Stripe charges a dispute fee. At the time of writing, Stripe's US pricing page lists $15 per dispute, plus a $15 counter fee if you respond manually, which is refunded if you win. Respond in the Dashboard before the deadline with your invoice, contract and proof of delivery, and check Stripe's pricing page for current fees.",
+      },
+      {
+        q: "Can I use Stripe Invoicing if I live in Pakistan?",
+        a: "Not directly at the time of writing. Pakistan does not appear on Stripe's list of countries where businesses can open an account, and India is listed only as a preview market. Freelancers in unsupported countries usually invoice with their own PDF and receive payment through a bank wire or a service such as Payoneer. Check Stripe's global availability page, as the list changes.",
+      },
+      {
+        q: "Can Stripe calculate sales tax or VAT on my invoices?",
+        a: "Yes, through Stripe Tax, which is an add-on. At the time of writing, Stripe's pricing page lists 0.5% per transaction for no-code use with Invoicing, charged only in places where you are registered to collect tax. Stripe Tax calculates the tax, but you are still responsible for registering, filing and paying it. You can instead add tax rates manually without the Stripe Tax fee.",
+      },
+      {
+        q: "Can I bill a client in another currency with Stripe?",
+        a: "Yes. Stripe supports payments in more than 135 currencies. If a payment has to be converted to your payout currency, Stripe's US pricing lists an extra 1% at the time of writing, and international cards carry an additional percentage. Agreeing the currency upfront and quoting your price in it avoids surprises for both sides. Check Stripe's pricing page for your country.",
+      },
+      {
+        q: "Does Stripe charge extra for recurring invoices?",
+        a: "Recurring billing runs through Stripe Billing, which has its own fee. At the time of writing, Stripe's US pricing page lists pay-as-you-go Billing at 0.7% of billing volume, separate from the Invoicing fee on one-off invoices, with normal payment processing fees on top. If you only bill a few fixed monthly retainers, a reusable Payment Link pasted into your own invoice may cost less.",
       },
     ],
     content: `
@@ -262,6 +306,26 @@ export const PLATFORM_SOFTWARE_POSTS: PostDraft[] = [
         q: "Is Zelle safe for receiving business payments?",
         a: "Zelle is fast and usually free for the person receiving money, and once a payment lands it is generally final. That suits you as the seller, but it also means there is no purchase protection for your customer, so some clients will be reluctant to pay a business they don't know with Zelle.",
       },
+      {
+        q: "Can I use Venmo to get paid by clients outside the US?",
+        a: "Generally not. Venmo is a US service: accounts need a US phone number and a US bank account or card, so most overseas clients can't use it. For international clients, a PayPal invoice, a bank wire or a multi-currency service is usually a better fit. List those options in the payment section of your invoice so overseas clients have a clear way to pay.",
+      },
+      {
+        q: "Does my client pay a fee if they pay my Venmo business profile with a credit card?",
+        a: "No, according to Venmo's help center. Personal payments funded by a credit card normally carry a 3% sender fee, but payments to a business profile are exempt from it. Instead, you pay the seller fee, listed at 1.9% + $0.10 per payment at the time of writing. Venmo also says business profile fees are not refunded if you later refund a payment.",
+      },
+      {
+        q: "Can I still use the Zelle app if my bank doesn't offer Zelle?",
+        a: "No. Zelle stopped processing payments in its standalone app in April 2025, so you now need a bank or credit union that offers Zelle inside its own app or online banking. If your business bank doesn't support it, list bank transfer or another method on your invoice instead. More than 2,000 banks and credit unions offer Zelle, so check with yours first.",
+      },
+      {
+        q: "Can I use a personal Cash App account for business payments?",
+        a: "Cash App expects regular business payments to go through a business account, which charges a fee on each payment received. Using a personal account for business income can lead to account restrictions and mixes business and personal records. A business account also makes your income easier to track at tax time. Check Cash App's terms and the fee shown in your account before you start.",
+      },
+      {
+        q: "What happens if a client sends a Zelle payment to the wrong person?",
+        a: "The money usually can't be pulled back, because Zelle payments are generally final once sent. The client should contact their bank immediately and ask whether anything can be done, but recovery is not guaranteed. To prevent mistakes, put the exact email address or phone number registered to your Zelle account on the invoice and ask new clients to send a small test payment first.",
+      },
     ],
     content: `
 <p><strong>Quick answer:</strong> Zelle has no invoicing feature, so you send your own invoice and list your Zelle details on it. Venmo has no full invoice tool either, but a Venmo business profile lets you request and accept payments for 1.9% + $0.10. Cash App business accounts also take a fee per payment. In every case, a proper invoice with a payment link or handle works best.</p>
@@ -385,6 +449,26 @@ export const PLATFORM_SOFTWARE_POSTS: PostDraft[] = [
         q: "Is Square cheaper than PayPal for invoices?",
         a: "It depends on how customers pay. For US card payments, Square Free's 3.3% + 30 cents is higher than PayPal's 2.99% + 49 cents on invoices for most amounts, while Square Plus at 2.9% + 30 cents is lower. For bank payments, both charge about 1% with caps that differ by plan.",
       },
+      {
+        q: "How fast does Square deposit invoice payments?",
+        a: "On Square's standard schedule, transfers to your bank are free and funds are usually available as soon as the next business day, or the second business day for payments taken late in the day. Instant and same-day transfers cost extra, listed at 1.95% per transfer on Square's US help center at the time of writing. Check your dashboard, because limits and fees change.",
+      },
+      {
+        q: "Does Square return processing fees when I refund an invoice?",
+        a: "No. Since 2023, Square has kept the original processing fee when a US seller issues a full or partial refund, although the refund itself has no extra charge. The refunded amount comes out of your Square balance, or your linked bank account if the balance is too low. Factor this into your cancellation policy, especially on large card-paid invoices.",
+      },
+      {
+        q: "Does Square charge a fee for chargebacks?",
+        a: "Square says it doesn't add a separate dispute fee. If a customer disputes a card payment, the amount is held while the dispute is reviewed. If you win, Square releases the funds, including the processing fee; if you lose, the fee isn't returned. Respond quickly with your invoice, signed estimate, photos and messages, since good evidence is your best chance of winning.",
+      },
+      {
+        q: "Can I use Square Invoices outside the United States?",
+        a: "Yes, in the countries where Square operates, such as Canada, the UK, Australia, Ireland, France, Spain and Japan, but each country has its own fees and features. The rates in this article are US rates only. Check Square's pricing page for your country before quoting fees to customers, and make sure your invoices show any local tax details your customers need.",
+      },
+      {
+        q: "Can customers pay a Square invoice without a Square account?",
+        a: "Yes. Customers receive an email, text or link that opens the invoice in their browser, where they can pay with the methods you've enabled, such as card or bank transfer, without creating an account. Turning on ACH gives them a cheaper option to choose. Make sure the email address or phone number is correct, and check the invoice page yourself before sending it to a new customer.",
+      },
     ],
     content: `
 <p><strong>Quick answer:</strong> Square invoice fees in the US are 3.3% + 30¢ for card payments on Square Free and 2.9% + 30¢ on Square Plus. Card on file is 3.5% + 15¢, ACH bank transfer is 1% with a $1 minimum (capped at $10 on Plus), and Afterpay is 6% + 30¢. Sending invoices is free; you pay when the customer pays.</p>
@@ -507,6 +591,26 @@ export const PLATFORM_SOFTWARE_POSTS: PostDraft[] = [
         q: "Do I still need an invoice if I use Wise or Payoneer?",
         a: "Yes. Wise and Payoneer move the money, but your client still needs an invoice for their records, and you need one for your own tax records and, in some countries, for bank export documentation.",
       },
+      {
+        q: "Does Payoneer charge an annual fee?",
+        a: "It can. At the time of writing, Payoneer's pricing page lists an annual account fee of $29.95 that applies only if your account receives less than $6,000 in any 12 consecutive months. Some older Payoneer pages cite a lower threshold, and fees can vary by region and account type. Check the Fees section in your own account for the terms that apply to you.",
+      },
+      {
+        q: "How long do Wise and Payoneer payments take to arrive?",
+        a: "Local payments into receiving accounts often arrive within a day or two, while SWIFT wires can take longer, depending on the currency, the banks involved and any compliance checks. Withdrawing to your own bank adds more time, often up to a few business days. Both providers show estimated delivery times in their apps, so ask clients to pay a few days before the due date.",
+      },
+      {
+        q: "Can I withdraw Upwork earnings to Wise or Payoneer?",
+        a: "Payoneer is a built-in Upwork withdrawal method for freelancers outside the US and India, according to Upwork's help center, and Payoneer adds its own fees. Some freelancers instead add Wise's local account details as a bank withdrawal method where Upwork supports that currency and country. Upwork's fees depend on the method and your tax address, so check its help center before choosing.",
+      },
+      {
+        q: "Are Wise and Payoneer safe to use for client payments?",
+        a: "Both are established payment companies that are regulated in the countries where they operate and protect accounts with identity checks and two-factor authentication. Neither is a traditional bank in most countries, so money held with them may not have the same deposit protection as a bank account. Keep working balances modest, withdraw regularly, and download statements in case your account is ever limited.",
+      },
+      {
+        q: "Can a client pay me by card through Wise or Payoneer?",
+        a: "Payoneer lets you send payment requests that clients can pay by card or bank debit, for a higher fee than a bank transfer to your receiving account. Wise is built mainly around bank transfers, though some Wise Business accounts in certain countries can accept card payments through payment links. Fees vary, so compare the cost with a card link from another provider before offering cards.",
+      },
     ],
     content: `
 <p><strong>Quick answer:</strong> In the Wise vs Payoneer choice, Wise usually wins on exchange rates because it converts at the mid-market rate and charges a visible fee, while Payoneer wins on marketplace integration, especially with Fiverr, Upwork and Amazon. Availability matters most: Payoneer works for freelancers in Pakistan and India, while Wise is limited for Pakistan residents.</p>
@@ -625,6 +729,26 @@ export const PLATFORM_SOFTWARE_POSTS: PostDraft[] = [
         q: "Can freelancers keep dollars in a Pakistani bank account?",
         a: "Yes, within State Bank of Pakistan limits. Current SBP rules let freelancers and IT exporters retain the higher of USD 5,000 a month or 50% of export proceeds in an Exporters' Special Foreign Currency Account, with the rest converted to PKR. Your bank can confirm how it applies the rule.",
       },
+      {
+        q: "What documents do I need to open a freelancer account in Pakistan?",
+        a: "Banks usually ask for your CNIC and some proof of freelance work, such as a marketplace profile, client contract, invoices or earnings statements. Many banks let you apply online for a freelancer digital account with a linked foreign currency account. Exact requirements vary by bank, so check its website or call a branch before applying, and keep your details consistent with your CNIC.",
+      },
+      {
+        q: "Should I register with PSEB as a freelancer?",
+        a: "If you earn from exports of IT or IT-enabled services, it can matter, because the reduced 0.25% final tax rate applies to PSEB-registered exporters, while others are taxed at 1%. Registration with the Pakistan Software Export Board is done online and must be renewed. Check PSEB's website for current requirements and any fee, and confirm the tax treatment with the FBR or a tax adviser.",
+      },
+      {
+        q: "Do I still need to file a tax return if the bank deducts tax on my export proceeds?",
+        a: "Usually yes. Even when tax on export proceeds is final and deducted at source, filing a return keeps you on the FBR's Active Taxpayers List, which affects the withholding rates applied to many other transactions. Filing also creates a record of your income for visas, loans and property purchases. Check current FBR guidance or ask a tax adviser about your filing obligations.",
+      },
+      {
+        q: "Can I receive freelance payments in a Roshan Digital Account?",
+        a: "Generally no. Roshan Digital Accounts are designed for non-resident Pakistanis and people of Pakistani origin living abroad. If you live in Pakistan, use a freelancer account or an exporters' foreign currency account with a local bank instead, which is set up to receive export proceeds and provide the documentation you need, such as a PRC. Your bank can confirm which account type fits you.",
+      },
+      {
+        q: "Should I invoice foreign clients in US dollars or Pakistani rupees?",
+        a: "Most freelancers invoice foreign clients in US dollars or the client's own currency, because that's what the client expects to pay and it keeps the amount fixed on their side. Invoicing in PKR shifts the currency risk to the client and can confuse their accounts team. Whatever you choose, state the currency clearly, match it in your bank details and keep the bank's PRC with each invoice.",
+      },
     ],
     content: `
 <p><strong>Quick answer:</strong> To receive payment from abroad in Pakistan, most freelancers use a bank wire into their own Pakistani bank account, Payoneer for marketplace and client payments, or a remittance service the client uses to send PKR. PayPal is not available to Pakistan residents. Routing income through banking channels and keeping each PRC matters for the reduced tax rate on IT export income.</p>
@@ -733,6 +857,26 @@ export const PLATFORM_SOFTWARE_POSTS: PostDraft[] = [
       {
         q: "What records should a Fiverr or Upwork freelancer keep?",
         a: "Keep the annual earnings statement or transaction reports, platform fee records, withdrawal records from Payoneer or your bank, and any tax forms. If clients need invoices, keep copies in a clear numbering sequence alongside the matching order or contract.",
+      },
+      {
+        q: "How much does Fiverr take from sellers?",
+        a: "Fiverr's help center says freelancers receive 80% of the client's cleared payment for a completed order, which works out to a 20% service fee. In your books, record the full order amount as income and the fee as a business expense, rather than recording only what you withdraw. Fees and terms can change, so check Fiverr's help pages for the current figures.",
+      },
+      {
+        q: "When can I withdraw my Fiverr earnings?",
+        a: "Revenue from a completed order becomes available after a clearance period. At the time of writing, Fiverr's help center lists 14 days for most sellers and 7 days for Seller Plus, Top Rated and Pro freelancers, and some eligible sellers can use Early Payout for a fee. Once funds clear, you can withdraw them using the payout methods available in your country, such as Payoneer or a bank transfer.",
+      },
+      {
+        q: "What does Upwork charge to withdraw earnings?",
+        a: "It depends on the method and your country. At the time of writing, Upwork's help center lists $0.99 per direct to local bank withdrawal and $50 per US dollar wire, while direct to US bank is free with a US tax address. From September 1, 2026, a $2.99 fee applies to direct to US bank withdrawals for users with a tax address outside the US. Payoneer adds its own fees.",
+      },
+      {
+        q: "How does a buyer get their company name on a Fiverr invoice?",
+        a: "Buyers can usually add billing details, such as a company name and address, in the billing settings of their Fiverr account, and these then appear on invoices for future orders. Invoices already issued may not update automatically, so an older invoice may need a request to Fiverr Customer Support. As the seller, you can point the client to these settings rather than creating a separate invoice.",
+      },
+      {
+        q: "Can my client use a Fiverr or Upwork invoice for their business expense records?",
+        a: "In most cases, yes. The invoice issued through the platform documents what the client paid and is commonly used for bookkeeping and expense records. Whether it also works as a VAT or GST invoice depends on the client's country and how the platform treats the sale. If their accountant needs something different, the client should check the platform's billing settings and help pages first.",
       },
     ],
     content: `
@@ -859,6 +1003,26 @@ export const PLATFORM_SOFTWARE_POSTS: PostDraft[] = [
       {
         q: "Can I use free invoicing software for a business?",
         a: "Yes. Free tools are widely used by freelancers and small businesses. Make sure the invoices include what your tax rules require, that you can export your data, and that you keep copies of every invoice for the required retention period.",
+      },
+      {
+        q: "Can I just use Excel or Google Docs instead of invoicing software?",
+        a: "Yes, many small businesses start with a spreadsheet or document template. The downsides are manual numbering, easy-to-miss formula errors and no tracking of what's been paid. If you go this route, lock the template, keep a separate log of invoice numbers and payments, and save each sent invoice as a PDF. A free invoice generator handles the layout and totals for you without an account.",
+      },
+      {
+        q: "Does Wave work outside the United States and Canada?",
+        a: "Only to a limited extent. Wave announced in 2020 that it would focus on the US and Canada, and its support pages say users elsewhere can no longer send invoices or reminders through Wave. Online payments also depend on your business being located in the US or Canada. If you're based elsewhere, Zoho Invoice or Invoice Ninja are more practical free options.",
+      },
+      {
+        q: "Which free invoicing software supports recurring invoices?",
+        a: "Zoho Invoice includes recurring invoices and automated reminders on its free plan at the time of writing, which is a big reason freelancers choose it. Other tools keep some automation for paid plans; Wave, for example, reserves automated reminders for Pro. Browser-based invoice generators, including ours, don't send invoices automatically, so you would recreate and send each recurring invoice yourself.",
+      },
+      {
+        q: "What happens to my invoices if a free invoicing tool shuts down or changes its plans?",
+        a: "You could lose access or be pushed onto a paid plan, which is why your own copies matter. Download a PDF of every invoice you send, export client and item lists regularly, and keep everything in your own storage. Some providers also delete long-inactive accounts. Treat any free tool as a workspace rather than your only archive, and you can switch whenever you need to.",
+      },
+      {
+        q: "Which free invoicing software works for businesses in the UAE, Pakistan or India?",
+        a: "Tools without country restrictions, such as Zoho Invoice and Invoice Ninja, are used internationally, and Zoho offers regional editions with local tax fields in some countries. Wave is focused on the US and Canada. Where structured e-invoicing is mandatory, such as India's IRN system for businesses above the turnover threshold, you need software that connects to the official system, not just a PDF.",
       },
     ],
     content: `
@@ -989,6 +1153,30 @@ export const PLATFORM_SOFTWARE_POSTS: PostDraft[] = [
         q: "How do I move my invoices out of Invoice Simple?",
         a: "Download PDFs of your past invoices and export any client or item lists the app allows before you cancel. Keep the PDFs for your tax records and continue your invoice numbering in the new tool so there are no gaps or duplicates.",
       },
+      {
+        q: "Is Invoice2go the same as Invoice Simple?",
+        a: "No. They are separate apps from different companies, although both are mobile-first invoicing tools aimed at tradespeople and small businesses. Invoice2go is owned by the payments company BILL. Both use paid subscription plans with different feature sets and limits. If you're comparing the two, check each one's current pricing page and invoice limits before deciding, or consider the free options in this guide.",
+      },
+      {
+        q: "Which Invoice Simple alternatives can create estimates?",
+        a: "Most of the main options can. Zoho Invoice offers quotes, Wave has estimates, Square Invoices supports estimates, and Invoice Ninja includes quotes that can be converted into invoices. Check how each handles client approval and conversion, because some let the client accept an estimate online. If you use a simple PDF generator, keep a separate quote template and copy the details into the invoice once approved.",
+      },
+      {
+        q: "Which Invoice Simple alternative works best outside the US?",
+        a: "Zoho Invoice and Invoice Ninja are used internationally and support multiple currencies and tax settings. Wave focuses on US and Canadian businesses, and Square Invoices is available only in the countries where Square operates. Check whether the tool supports your local tax fields, currency and any e-invoicing rules before switching, especially if you are VAT or GST registered.",
+      },
+      {
+        q: "Should I tell clients when I switch invoicing apps?",
+        a: "Yes, briefly. A new tool may send emails from a different address and change how your invoices look, which can make careful clients suspect fraud. Tell them which address invoices will come from, confirm that your bank details have not changed, and keep your invoice numbering continuous. If your payment details do change, confirm them by phone rather than by email alone.",
+      },
+      {
+        q: "Are browser-based invoice generators safe for storing my invoices?",
+        a: "They are fine for creating invoices, but browser storage is not a long-term archive. Our generator keeps drafts in your browser's local storage on that device, so clearing browser data or switching devices means the drafts aren't there. Download each finished invoice as a PDF and save it to your own folders or cloud storage. That gives you a permanent copy for clients, accountants and tax records.",
+      },
+      {
+        q: "Is it worth paying for an invoicing app if I send fewer than ten invoices a month?",
+        a: "Often not, unless you rely on features like automatic reminders, online payments or syncing across devices. For a handful of invoices, a free app or a browser generator covers the core job. Work out the annual subscription cost and compare it with the time the app would save you. If it helps you get paid noticeably faster, it can still pay for itself.",
+      },
     ],
     content: `
 <p><strong>Quick answer:</strong> The best Invoice Simple alternative depends on why you're switching. For a free app with reminders, try Zoho Invoice. For free invoicing plus bookkeeping, try Wave. For a handful of clients, Invoice Ninja's free plan. For card payments built in, Square or PayPal. For a quick PDF with no account, use a free browser invoice generator. Larger businesses may prefer FreshBooks or QuickBooks.</p>
@@ -1113,6 +1301,26 @@ export const PLATFORM_SOFTWARE_POSTS: PostDraft[] = [
       {
         q: "Do I need FreshBooks or QuickBooks if I only send a few invoices?",
         a: "Not necessarily. If you send a handful of invoices a month and keep simple records, a free invoice generator and a spreadsheet may be enough. Accounting software earns its cost when you need reconciliation, reports, payroll or an accountant working in your books.",
+      },
+      {
+        q: "Do FreshBooks and QuickBooks offer free trials?",
+        a: "Yes. Both have typically offered a 30-day free trial, and FreshBooks' trial is widely reported as not requiring a credit card. Trials and introductory discounts are sometimes offered as alternatives, so check which offer you're signing up for. Use the trial to recreate a real month of invoices and expenses, then compare the regular price rather than the promotional one.",
+      },
+      {
+        q: "What payment processing fees do FreshBooks and QuickBooks charge on invoices?",
+        a: "At the time of writing, FreshBooks' US help center lists 2.9% + $0.30 for standard cards and 1% for ACH bank transfers, with higher rates for Amex and business cards. QuickBooks lists 2.99% for invoice card payments and 1% for ACH. International cards cost extra on both. Rates change and can differ by plan, so check each provider's payments page before choosing.",
+      },
+      {
+        q: "Can I still buy QuickBooks Desktop instead of QuickBooks Online?",
+        a: "Mostly not, if you're a new US small business. Intuit stopped selling new US subscriptions to QuickBooks Desktop Pro Plus, Premier Plus, Mac Plus and Enhanced Payroll after September 30, 2024, although existing subscribers can renew and Enterprise is still sold. For most new US users, the realistic choice is QuickBooks Online or another cloud tool such as FreshBooks.",
+      },
+      {
+        q: "Do FreshBooks and QuickBooks work outside the United States?",
+        a: "Both are sold in several countries, including Canada, the UK and Australia, but plans, prices, payment options and tax features differ by country. The prices in this comparison are US prices only. If you're outside the US, check the local pricing page and make sure the software handles your VAT or GST rules, currency and any e-invoicing requirements.",
+      },
+      {
+        q: "Which is better for payroll, FreshBooks or QuickBooks?",
+        a: "QuickBooks has its own payroll product closely tied to its accounting ledger, which suits businesses with several employees. FreshBooks offers payroll in the US through a partner integration. Both are priced separately from the main subscription. If you have employees or plan to hire, compare the full monthly cost of software plus payroll, and ask your accountant which they prefer to work with.",
       },
     ],
     content: `

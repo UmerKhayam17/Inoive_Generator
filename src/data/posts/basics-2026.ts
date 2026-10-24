@@ -31,6 +31,26 @@ export const BASICS_2026_POSTS: PostDraft[] = [
         q: "Do I need a new invoice number for each interim invoice?",
         a: "Yes. Every interim invoice and the final invoice need their own unique number from your normal sequence. You can add a project code or a suffix such as 'Interim 2 of 4' in the description, but the invoice number itself should never repeat.",
       },
+      {
+        q: "What is retention on an interim invoice?",
+        a: "Retention, also called retainage, is a percentage of each interim payment that the client holds back as security until the work is finished and any defects are fixed. It is still money you have earned, so show it as a separate line on every interim invoice. The contract should say the percentage, when it is released and whether part of it is kept for a defects period.",
+      },
+      {
+        q: "What is the difference between an interim invoice and a proforma invoice?",
+        a: "An interim invoice is a real demand for payment for work already done, so it normally goes into your sales records and creates a tax point. A proforma invoice is only a preview or quote of what you will bill. It is not a request for payment and usually has no tax effect. Send a proforma when the client needs approval before you issue the actual invoice.",
+      },
+      {
+        q: "How do I add a change order to an interim invoice?",
+        a: "Once the client has signed the change order, add it to the invoice for the period in which the extra work was done, ideally as its own line with the change order number. Increase the adjusted contract value by the same amount so the percentage complete still makes sense. Never bill a variation that has not been approved in writing, because it is the first line a client will dispute.",
+      },
+      {
+        q: "What can I do if a client pays an interim invoice late?",
+        a: "Follow your contract first: it may set interest, a late fee or a right to suspend work. Many countries also have their own rules. In the UK, for example, businesses can claim statutory interest on late B2B payments, and the Construction Act gives a right to suspend work after notice if payment is not made. Check the law where the work takes place before you suspend anything.",
+      },
+      {
+        q: "Can I issue the final invoice before the defects period ends?",
+        a: "Yes. Most contracts expect the final invoice at completion, with part of the retention held until the defects or warranty period ends. In that case the final invoice shows the retention still held, and you issue a short separate invoice to release it when the period is over. Write the release date on the final invoice so the client's accounts team can diary it.",
+      },
     ],
     content: `
 <p><strong>Quick answer:</strong> An interim invoice bills for part of a project while work is still in progress, based on work completed, a milestone or a schedule of payments. A final invoice is issued when the job is finished: it shows the full contract value, deducts every interim invoice already billed, releases any retention and asks for the remaining balance.</p>
@@ -179,6 +199,22 @@ export const BASICS_2026_POSTS: PostDraft[] = [
         q: "Can I use self-billing with suppliers outside the UK?",
         a: "HMRC says suppliers can be based outside the UK, but other countries may set their own conditions for self-billing, and the agreement must meet those too. If you send electronic self-billed invoices overseas, both sides must be able to accept the format.",
       },
+      {
+        q: "Can the self-billing agreement be part of my main contract with the supplier?",
+        a: "Yes. The agreement does not have to be a standalone document, as long as it contains everything HMRC lists: the supplier's authority for you to issue invoices, their promise not to issue their own VAT invoices, the duration and the notification duties. If it sits inside a longer contract, its duration can match the contract's end date. Keep a signed copy you can show HMRC on request.",
+      },
+      {
+        q: "Can I send self-billed invoices electronically?",
+        a: "Yes. The UK does not require paper self-billed invoices, and many customers email a PDF or make invoices available through a supplier portal. The supplier must agree to receive them that way, and both of you need to be able to store and retrieve them for your record-keeping period. The content rules, including the HMRC statement on output tax, are the same whatever the format.",
+      },
+      {
+        q: "What records does the supplier need to keep under self-billing?",
+        a: "The supplier should keep a copy of every self-billed invoice and credit note it receives, because these are its sales invoices for VAT purposes. It should also keep a copy of the signed agreement and check each invoice against its own delivery or work records. If the figures are wrong, the supplier should raise it quickly, as errors flow straight into its VAT return.",
+      },
+      {
+        q: "What is the difference between self-billing and the reverse charge?",
+        a: "Self-billing changes who prepares the invoice: the customer writes it, but the supplier still owes any VAT shown. The reverse charge changes who accounts for the VAT: the customer declares it instead of the supplier. The two can apply together, for example in construction, where a self-billed invoice must show reverse charge wording and no VAT for the supplier to pay over.",
+      },
     ],
     content: `
 <p><strong>Quick answer:</strong> A self billing invoice is an invoice the customer prepares on behalf of the supplier, then sends to the supplier with payment. In the UK it is allowed for VAT when both parties sign a written self-billing agreement, the invoice shows the supplier's VAT details and the statement "The VAT shown is your output tax due to HMRC", and the customer keeps proper records.</p>
@@ -322,6 +358,26 @@ export const BASICS_2026_POSTS: PostDraft[] = [
         q: "What if the client pays more than the balance due?",
         a: "Do not keep the overpayment silently. Either refund it or, with the client's agreement, hold it as a credit on their account and apply it to the next invoice. Record it clearly so your receivables and the client's statement both show the credit.",
       },
+      {
+        q: "Does accepting a partial payment mean I give up the rest of the balance?",
+        a: "Usually not. Accepting part of the money normally leaves the remaining balance owed. Be careful, though, if a client sends a payment marked 'payment in full' for a disputed amount, because in some places, including some US states, cashing it can settle the debt. Reply in writing that you accept it only as part payment, and take advice if a large sum is involved.",
+      },
+      {
+        q: "What if the client deducted withholding tax from the payment?",
+        a: "In some countries business clients must withhold tax from certain payments and pay it to the tax authority on your behalf. Ask for the withholding tax certificate or receipt, then treat the withheld amount as paid on the invoice, not as a short payment. You can usually claim it as a credit against your own tax. Check the rules with your local tax authority or accountant.",
+      },
+      {
+        q: "How do I show a deposit already paid on the final invoice?",
+        a: "Bill the full value of the work, then show the deposit as an amount already paid, with the deposit invoice number and date. The balance due is the total minus the deposit. If you issued a separate tax invoice for the deposit, check how your tax system wants the tax on the deposit shown, so it is not charged twice on the final invoice.",
+      },
+      {
+        q: "What should I do if the client never pays the remaining balance?",
+        a: "Keep chasing in writing with dated reminders, then consider a formal letter before action, a collection agency or a small claims court, depending on the amount. If you decide the debt is unrecoverable, your accountant can write it off as a bad debt in your books. Do not delete or edit the original invoice, and check whether you can reclaim any tax paid on it.",
+      },
+      {
+        q: "Can I stop work until the outstanding balance is paid?",
+        a: "Only if your contract allows it, or the law gives you that right. Many freelance and service contracts let you pause work on overdue invoices after written notice. Some construction laws also give a statutory right to suspend. Stopping without that right could put you in breach of contract, so check the terms and give the client a clear deadline in writing first.",
+      },
     ],
     content: `
 <p><strong>Quick answer:</strong> A partial payment invoice shows the invoice total, each amount the client has already paid with its date, and the balance due that remains. Keep the original invoice number, add an "Amount paid" line under the total, show "Balance due" in bold, and restate the due date for the remainder or the agreed installment schedule.</p>
@@ -456,6 +512,26 @@ export const BASICS_2026_POSTS: PostDraft[] = [
         q: "Is an invoice reference number the same as a transaction ID?",
         a: "No. A transaction ID is created by your bank or payment provider for a specific payment, while the invoice number identifies the bill. When a payment arrives, you match the transaction ID or payment reference to the invoice number to mark the invoice as paid.",
       },
+      {
+        q: "Is an invoice number legally required?",
+        a: "In most VAT and GST systems, yes. The UK, the EU and India all require a unique, sequential invoice number on tax invoices. The US has no federal law requiring one, but clients, auditors and the IRS expect consistent records, so a unique number on every invoice is standard practice everywhere. Check your local tax authority's invoice rules if you are registered for VAT or GST.",
+      },
+      {
+        q: "Can an invoice number include letters and symbols?",
+        a: "Usually yes, as long as it stays unique and follows a logical sequence. Prefixes such as INV- or a year code are common. Some countries set limits: India's GST rules, for example, allow up to 16 characters made of letters, numbers, hyphens and slashes, unique for each financial year. Avoid characters that cause typing errors in bank references.",
+      },
+      {
+        q: "Should I restart invoice numbers every year?",
+        a: "You can if your tax rules allow it and each number remains unique, which is why a year prefix such as 2026-0001 is popular. In India a series must be unique within the financial year, so many businesses restart on 1 April with a new prefix. If you simply restart at 0001 with no prefix, you will have duplicate numbers, which tax authorities and clients dislike.",
+      },
+      {
+        q: "What should I do if I skipped or duplicated an invoice number?",
+        a: "For a skipped number, keep a short note in your records explaining the gap, for example that the number was voided before issue. For a duplicate that has already been sent, cancel one of the invoices with a credit note and reissue it under a new, unique number. Tell the client which number to use for payment so their records match yours.",
+      },
+      {
+        q: "What is the difference between the IRN and the acknowledgement number in India?",
+        a: "When the Invoice Registration Portal accepts an e-invoice, it returns the 64-character IRN, a signed QR code, and an acknowledgement number with an acknowledgement date. The IRN identifies the invoice itself, while the acknowledgement number and date confirm when the IRP registered it. Your own invoice number stays on the invoice too. Details are on the GST e-invoice portal.",
+      },
     ],
     content: `
 <p><strong>Quick answer:</strong> An invoice reference number is the unique code that identifies an invoice, most often the invoice number itself, such as INV-2026-0142. The term is also used for related codes on the same document: the customer's PO or job reference, the payment reference to quote on a bank transfer, and government-issued IDs such as India's IRN or a ZATCA UUID.</p>
@@ -583,6 +659,26 @@ export const BASICS_2026_POSTS: PostDraft[] = [
       {
         q: "Is prorated rent required by law?",
         a: "It depends on the jurisdiction and the lease. Many leases set out how partial months are charged, and some local rules affect how rent is calculated when a tenancy starts or ends mid-month. Check the lease and local landlord-tenant rules before deciding which method to use.",
+      },
+      {
+        q: "Should I bill a prorated amount in advance or in arrears?",
+        a: "Follow the same timing as the normal charge. If you bill monthly in advance, invoice the prorated part period when the service starts, often together with the next full month. If you bill in arrears, include the partial period on the first regular invoice. Showing both lines on one invoice reduces admin and makes the calculation easy for the customer to check.",
+      },
+      {
+        q: "How do I prorate with the annual method in a leap year?",
+        a: "Decide whether your contract uses 365 days every year or the actual days in the year. In a leap year the actual-days version divides by 366, which gives a slightly lower daily rate. Either approach is fine if it is written down and applied consistently. Mixing them between customers or years is what causes disputes over small differences.",
+      },
+      {
+        q: "Can I charge a full month instead of prorating?",
+        a: "Yes, if your contract or terms say so. Many subscriptions and memberships charge the full period regardless of start date, or start the first billing period on the sign-up day so no proration is needed. What you cannot do is charge a full month when the agreement promised proration. Consumer protection rules may also apply, so state your policy clearly before the customer signs.",
+      },
+      {
+        q: "How do I prorate a price increase that starts mid-month?",
+        a: "Split the month at the effective date. Bill the days before the change at the old daily rate and the days from the change at the new daily rate, then add the two amounts. Show them as two lines with dates, such as 1 to 14 March at the old price and 15 to 31 March at the new price, so the customer can see exactly when the increase applied.",
+      },
+      {
+        q: "How do I prorate an annual or quarterly fee for a partial period?",
+        a: "Use the same formula with a longer period. Divide the annual fee by 365, or the quarterly fee by the days in that quarter, then multiply by the days used. Some contracts prorate annual fees by whole months instead, dividing by 12. Whichever method you use, state the period, the basis and the full fee on the invoice line.",
       },
     ],
     content: `
@@ -732,6 +828,26 @@ export const BASICS_2026_POSTS: PostDraft[] = [
       {
         q: "Can I change the invoice currency after sending it?",
         a: "Do not edit an issued invoice. If the client asks to pay in a different currency, either agree to accept payment in that currency against the original invoice at a stated rate, or cancel the original with a credit note and issue a new invoice in the new currency.",
+      },
+      {
+        q: "Does invoicing in a foreign currency change whether I charge VAT or sales tax?",
+        a: "No. The currency you bill in does not decide the tax treatment. Whether you charge VAT, GST or sales tax depends on where the supply is taxed, who the customer is and whether you are registered. A UK supply billed in USD can still need UK VAT, while an export service billed in GBP may be outside the scope. Check your tax authority's place-of-supply rules.",
+      },
+      {
+        q: "How can I receive payment in a currency my bank account does not hold?",
+        a: "Options include a multi-currency account with local receiving details in the client's currency, a payment platform, or letting your bank convert the payment when it arrives. Each has different exchange spreads and fees, so compare them before you choose. Whatever you use, put the correct receiving details for that currency on the invoice so the client's bank does not convert the payment unexpectedly.",
+      },
+      {
+        q: "What is the difference between a realized and an unrealized exchange gain?",
+        a: "A realized gain or loss happens when the client actually pays and the money you receive differs from the amount you recorded at invoice. An unrealized gain or loss is an estimate at a reporting date, such as year end, for invoices that are still unpaid. Tax treatment of each varies by country, so ask your accountant how to record them.",
+      },
+      {
+        q: "What if the client pays in the wrong currency?",
+        a: "Your bank will usually convert the payment, and the amount you receive may not match the invoice. Compare the converted amount with the balance due. If it is short, tell the client and ask for the difference, quoting the invoice. If you agree to accept the shortfall, close the gap with a credit note rather than editing the invoice, and record the exchange rate used.",
+      },
+      {
+        q: "Can I add a fee to cover currency conversion costs?",
+        a: "You can build conversion costs into your price or agree a separate charge in your contract, as long as the client knows in advance. Surprise surcharges added only on the invoice are hard to enforce. Some countries restrict certain payment surcharges, particularly card fees for consumers, so check local rules. A clear clause stating who pays bank and transfer charges usually works better.",
       },
     ],
     content: `

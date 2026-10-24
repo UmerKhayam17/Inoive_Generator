@@ -36,6 +36,22 @@ export const EINVOICING_2027_POSTS: PostDraft[] = [
         q: "What happens if I issue a PDF when an e-invoice was required?",
         a: "The invoice does not meet the legal requirements for an invoice, which can put your customer's input VAT deduction at risk and may be treated as an administrative offence. In practice, larger buyers are likely to reject the PDF and ask for a compliant e-invoice, which delays payment.",
       },
+      {
+        q: "Do invoices to customers in other EU countries have to be e-invoices from 2027?",
+        a: "No. The German obligation covers domestic B2B supplies between businesses established in Germany. Invoices to customers in France, Austria or elsewhere in the EU, and to customers outside the EU, can still be PDF or paper under German rules, unless the customer's country requires otherwise. That changes for intra-EU B2B sales from 1 July 2030 under the EU's ViDA reform.",
+      },
+      {
+        q: "Do invoices to freelancers and sole traders count as B2B?",
+        a: "Yes, if the customer buys as a business (Unternehmer) for its business. A freelance designer, a doctor's practice or a sole trader is a business customer, so the e-invoice rules apply if you are above the €800,000 threshold, or from 2028 in any case. Sales to private individuals are B2C and are not covered. When in doubt, ask whether the purchase is for business use.",
+      },
+      {
+        q: "Do self-billing invoices (Gutschriften) have to be e-invoices?",
+        a: "Yes. A self-billed invoice, where the buyer issues the invoice on the supplier's behalf, is still an invoice for VAT purposes, so the e-invoice rules apply to it in the same way. Which transition date applies is generally linked to the supplier whose sale is being invoiced. If you use self-billing, for example with commission agents, confirm the details with your Steuerberater.",
+      },
+      {
+        q: "Do down-payment invoices have to be e-invoices?",
+        a: "Yes. Invoices for advance payments or deposits (Anzahlungsrechnungen) are invoices under German VAT law, so they follow the same rules as final invoices. If you are in scope from 2027, down-payment, partial and final invoices for domestic B2B work all need to be in a structured format. Make sure your software handles the link between advance payments and the final invoice correctly.",
+      },
     ],
     content: `
 <p><strong>Quick answer:</strong> For e-invoicing in Germany, the key date is 1 January 2027. From then, any business established in Germany whose total turnover in 2026 exceeded €800,000 must issue structured e-invoices (EN 16931 formats such as XRechnung or ZUGFeRD) for domestic B2B sales. Smaller businesses can keep using PDF or paper until 31 December 2027, and everyone must issue e-invoices from 1 January 2028.</p>
@@ -182,6 +198,26 @@ export const EINVOICING_2027_POSTS: PostDraft[] = [
         q: "What are the penalties for non-compliant billing software?",
         a: "The anti-fraud law (Law 11/2021) introduced penalties for using billing software that does not meet the requirements, reported as up to €50,000 per financial year for users, with higher amounts for software producers. Confirm the current amounts on the AEAT website or with an adviser before relying on them.",
       },
+      {
+        q: "What does the QR code on a Verifactu invoice do?",
+        a: "Invoices created with Verifactu-compliant software must show a QR code, and in Verifactu mode the legend \"VERI*FACTU\". Your customer can scan the code to check the invoice with the AEAT. It does not make the invoice an e-invoice; it is a verification feature of the billing software rules. Your software should generate it automatically, so check where it is placed on your invoice layout.",
+      },
+      {
+        q: "How do I know if my billing software meets the Verifactu rules?",
+        a: "Software producers must issue a responsible declaration (declaración responsable) stating that their system meets the technical requirements. Ask your provider for it, check which version and mode it covers, and make sure you update before your deadline. Using non-compliant software can lead to penalties for the user, not only the producer, so do not rely on a vague claim of compliance.",
+      },
+      {
+        q: "Does the AEAT offer a free invoicing application?",
+        a: "Yes. The AEAT offers a free VERI*FACTU invoicing application in its electronic office, aimed mainly at self-employed people and businesses with low invoice volumes. At the time of writing, the official page says it has no limit on the number of invoices, but it cannot issue simplified invoices (tickets) and is not designed for large volumes. Check the AEAT website for the current features.",
+      },
+      {
+        q: "Does Verifactu apply to simplified invoices and receipts?",
+        a: "Yes. Verifactu covers billing records for invoices created by a computerised billing system, including simplified invoices (facturas simplificadas) used for retail sales. That is why shops, bars and other retailers with POS systems are affected. Note that simplified invoices are excluded from the separate B2B e-invoicing mandate, so a retailer may need Verifactu but not B2B e-invoicing for those sales.",
+      },
+      {
+        q: "Will Spain's B2B e-invoicing system track whether invoices are paid?",
+        a: "Yes, that is one of its aims. The royal decree approved in March 2026, which develops the Crea y Crece law, records the status of each invoice, including when it is accepted and paid, so that payment deadlines can be monitored. This is different from Verifactu, which focuses on the integrity of billing records. Check the final technical rules once the ministerial order is published.",
+      },
     ],
     content: `
 <p><strong>Quick answer:</strong> Verifactu is Spain's set of rules for billing software: every invoice record must be hashed, chained and, in Verifactu mode, sent to the tax agency (AEAT). After a one-year delay it applies from 1 January 2027 for corporate taxpayers and 1 July 2027 for the self-employed. Separately, B2B e-invoicing under the Crea y Crece law is expected from October 2027 for companies above €8 million.</p>
@@ -320,6 +356,26 @@ export const EINVOICING_2027_POSTS: PostDraft[] = [
       {
         q: "What was Fiscalization 1.0?",
         a: "Croatia introduced fiscalization of cash transactions in 2013: cash registers had to send each receipt to the Tax Administration in real time and print a unique code on the receipt. Fiscalization 2.0 extends the idea to e-invoices between businesses and to non-cash payments.",
+      },
+      {
+        q: "What format must a Croatian eRačun use?",
+        a: "A Croatian eRačun must follow the European standard EN 16931 with the Croatian specification (CIUS), and it is typically exchanged as UBL 2.1 XML. Your information intermediary or software converts your invoice data into this format and validates it. A PDF, a scanned invoice or a Word document does not meet the requirement for domestic B2B and B2G invoices under Fiscalization 2.0.",
+      },
+      {
+        q: "What is the KPD code on Croatian e-invoices?",
+        a: "KPD is the Croatian product and service classification. Since 1 January 2026, each line on an e-invoice must carry a KPD code of at least six digits describing the goods or services. You can look up codes with the Croatian Bureau of Statistics classification search tool. Set the correct codes in your item list once, so your software applies them automatically on every invoice.",
+      },
+      {
+        q: "What is the AMS address register?",
+        a: "AMS is the metadata service address register where businesses record the address at which they receive e-invoices, usually linked to their information intermediary. Senders use it to route invoices to the right recipient. Businesses were expected to register their receiving address by the end of 2025. If your entry is missing or out of date, suppliers may be unable to deliver e-invoices to you.",
+      },
+      {
+        q: "Does the buyer also fiscalize e-invoices it receives?",
+        a: "Yes. Under Fiscalization 2.0, both the issuer and the recipient fiscalize each domestic e-invoice, so the Tax Administration can cross-check the two sides. In practice your information intermediary or software usually handles the recipient-side fiscalization when the invoice arrives. Check that your provider does this automatically, because receiving an e-invoice without fiscalizing it is a compliance gap.",
+      },
+      {
+        q: "Do non-VAT-registered businesses need to do anything before 2027?",
+        a: "Yes. Although they only have to issue e-invoices from 1 January 2027, businesses outside the VAT system have had to be able to receive e-invoices since 1 January 2026. That means having a receiving address registered and a way to view and store incoming eRačun files, for example through MIKROeRAČUN or an intermediary. Confirm details with the Croatian Tax Administration.",
       },
     ],
     content: `
@@ -466,6 +522,26 @@ export const EINVOICING_2027_POSTS: PostDraft[] = [
         q: "Will the EU harmonise all these mandates?",
         a: "Partly. Under ViDA, from 1 July 2030 intra-EU B2B transactions need EN 16931 e-invoices and near real-time digital reporting, and national systems must converge with the EU model by 2035. Domestic mandates will still differ in channels and timing.",
       },
+      {
+        q: "Which e-invoice format do most mandates use?",
+        a: "Most European mandates are based on the EU standard EN 16931, usually expressed as UBL or CII XML, often with national rules on top, such as XRechnung in Germany or Factur-X in France. Outside Europe formats vary more: Peppol PINT in the UAE, UBL-based XML in Saudi Arabia and JSON schemas in India and Malaysia. Your software provider should handle the format for each country.",
+      },
+      {
+        q: "Do e-invoicing mandates cover sales to consumers?",
+        a: "Mostly not. The mandates expanding in 2027 focus on B2B and B2G invoices. Consumer sales are often handled differently, through e-reporting (France), cash register or receipt rules (Croatia, Spain's Verifactu) or consolidated e-invoices (Malaysia). Italy is an exception where invoices to consumers also pass through its central system. Check each country's B2C rules separately.",
+      },
+      {
+        q: "Do mandates apply to sole traders and freelancers?",
+        a: "Usually yes, if they are established and VAT-registered in the country, because most mandates cover all taxable businesses regardless of legal form. Some countries exempt small businesses from issuing, such as Germany's Kleinunternehmer, while France includes micro-entrepreneurs. Even exempt businesses are often required to receive e-invoices. Check your own country's threshold and exemptions.",
+      },
+      {
+        q: "Which European country was first to make B2B e-invoicing mandatory?",
+        a: "Italy, which made B2B e-invoicing through its Sistema di Interscambio (SdI) clearance platform mandatory from 1 January 2019. Its experience, including a reported reduction in VAT fraud, has influenced many later mandates in Europe. Italy also extended e-invoicing to most flat-rate small businesses in 2024, so it is one of the most complete systems in the EU.",
+      },
+      {
+        q: "How can I keep track of e-invoicing mandate changes?",
+        a: "Use official sources first: each country's tax authority or finance ministry, and the European Commission's eInvoicing country pages for EU states. Many deadlines have been moved at short notice, so diarise reviews every quarter and ask your software provider for their compliance roadmap. Treat dates in vendor blogs, including this list, as a starting point to verify rather than a final answer.",
+      },
     ],
     content: `
 <p><strong>Quick answer:</strong> E-invoicing mandates in 2027 expand across Europe and the Gulf. Germany requires businesses over €800,000 to issue e-invoices from 1 January 2027; France extends issuing to SMEs from 1 September 2027; Spain's B2B mandate starts for companies above €8 million in October 2027 (reported); Poland adds micro-businesses; Croatia adds non-VAT businesses; Slovakia and the UAE go live; and Saudi Arabia's Wave 25 integrates by 1 February 2027.</p>
@@ -611,6 +687,26 @@ export const EINVOICING_2027_POSTS: PostDraft[] = [
         q: "Is the UK affected by ViDA?",
         a: "Not directly, because the UK is outside the EU VAT system (Northern Ireland has special rules for goods). UK businesses that are VAT-registered in an EU country, or that sell through EU platforms, may be affected by the registration and platform parts of the package.",
       },
+      {
+        q: "Does ViDA require e-invoices for sales to consumers?",
+        a: "No. ViDA's mandatory e-invoicing and digital reporting from 1 July 2030 apply to intra-EU B2B transactions. Sales to consumers are not covered by that obligation, although member states may set their own domestic rules, and ViDA's platform rules affect consumer sales made through online platforms. Your existing B2C invoicing practices continue unless your country changes them.",
+      },
+      {
+        q: "When was ViDA adopted and when did it enter into force?",
+        a: "The EU Council adopted the ViDA package on 11 March 2025. It was published in the Official Journal on 25 March 2025 and entered into force on 14 April 2025. Most practical obligations start later, with platform and single registration changes from 2027 to 2028 and intra-EU e-invoicing from 1 July 2030. The Directive changes must be transposed into each member state's law.",
+      },
+      {
+        q: "Does ViDA cover services as well as goods?",
+        a: "Yes. The digital reporting requirements apply to intra-EU B2B supplies of goods and to cross-border B2B services where the customer accounts for VAT under the reverse charge. These are the transactions currently listed on EC Sales Lists. If you are a consultant or agency selling services to business clients in other EU countries, ViDA will affect how you invoice from 2030.",
+      },
+      {
+        q: "Will I have to use Peppol for ViDA e-invoices?",
+        a: "No. ViDA requires e-invoices to follow the European standard EN 16931, but it does not prescribe a transmission network. Peppol is likely to be a popular option because it is already widely used in Europe, but email or other channels can work as long as the invoice is in a compliant structured format and your country does not impose a specific channel.",
+      },
+      {
+        q: "Will I still need my customer's agreement to send an e-invoice?",
+        a: "For intra-EU B2B sales under ViDA, no. Under the old rules an e-invoice needed the recipient's acceptance, but ViDA makes structured e-invoices the default and removes that consent requirement. Member states can also require domestic e-invoicing without asking the customer. For intra-EU B2B sales from 1 July 2030, your customers will be expected to receive compliant e-invoices.",
+      },
     ],
     content: `
 <p><strong>Quick answer:</strong> ViDA (VAT in the Digital Age) is the EU's 2025 VAT reform package. Its biggest change: from 1 July 2030, invoices for intra-EU B2B transactions must be structured e-invoices based on EN 16931, issued within 10 days, with transaction data reported to tax authorities in near real time. ViDA also adds platform deemed-supplier rules and extends single VAT registration from 2027-2028.</p>
@@ -752,6 +848,26 @@ export const EINVOICING_2027_POSTS: PostDraft[] = [
         q: "Do I need special software to open an e-invoice?",
         a: "To read a pure XML e-invoice comfortably, yes: accounting software, an e-invoicing portal or a free viewer turns the XML into a readable layout. Hybrid formats such as ZUGFeRD and Factur-X are easier because they include a PDF view that opens in any PDF reader.",
       },
+      {
+        q: "Can my customer refuse a PDF invoice?",
+        a: "Yes, where an e-invoicing mandate applies to the sale, because a PDF does not meet the legal requirement and your customer may lose the right to deduct VAT. Outside mandates it depends on your contract: large buyers often insist on e-invoices or portal uploads as a condition of payment. Agree the invoice format before you start work to avoid payment delays.",
+      },
+      {
+        q: "Is a scanned paper invoice an e-invoice?",
+        a: "No. A scan is an image of a paper invoice, so it has no structured data that software can process automatically. Under the broad EU VAT Directive definition a scanned invoice sent electronically can be an electronic invoice, but under e-invoicing mandates it does not count. The buyer may use OCR to read it, but that is data capture, not an e-invoice.",
+      },
+      {
+        q: "Are e-invoices harder to fake than PDF invoices?",
+        a: "Generally yes. In many mandates e-invoices travel through registered networks or are validated by a tax authority, so a fraudster cannot simply edit amounts or bank details in a file and email it. PDFs are easy to alter, which is why fake invoices and changed bank details are common scams. With PDFs, confirm any change in bank details by phone.",
+      },
+      {
+        q: "Can I create an e-invoice for free?",
+        a: "Sometimes. Several governments offer free tools for low volumes, such as Malaysia's MyInvois Portal, India's IRP tools and Croatia's MIKROeRAČUN, and some accounting packages include e-invoicing in their plans. Our free generator is not one of them: it creates PDF invoices only and does not produce XML, Peppol or government-registered e-invoices. Check official pricing pages for current costs.",
+      },
+      {
+        q: "Is it enough to keep a printed or PDF copy of an e-invoice?",
+        a: "No. Where the e-invoice is the legal original, you must archive the structured file itself, unchanged and readable, for the period your country requires. A PDF view or printout is fine as an extra copy, but tax authorities can ask for the original XML. Check that your software or provider stores it and lets you export it if you change systems.",
+      },
     ],
     content: `
 <p><strong>Quick answer:</strong> E-invoice vs PDF comes down to structure. An e-invoice is a structured data file, such as UBL or CII XML following EN 16931, that software can read and process automatically. A PDF is a picture of an invoice for people to read. Under e-invoicing mandates in Germany, France, Belgium, Poland and elsewhere, a PDF is not an e-invoice, even when emailed.</p>
@@ -888,6 +1004,26 @@ export const EINVOICING_2027_POSTS: PostDraft[] = [
       {
         q: "What happens if the clearance platform is down?",
         a: "Clearance countries publish contingency procedures, such as issuing offline and submitting once the system is available again, or extended deadlines. The details differ by country, so check your tax authority's fallback rules and make sure your software supports them.",
+      },
+      {
+        q: "What is a post-audit model of e-invoicing?",
+        a: "In a post-audit model, businesses exchange invoices directly, on paper, by PDF or as e-invoices, and the tax authority only checks them later through VAT returns and audits. It is the traditional approach and still applies in many countries without mandates, such as the US and, for now, the UK. Peppol can operate inside a post-audit model, adding structure without real-time reporting.",
+      },
+      {
+        q: "What is a decentralized CTC model?",
+        a: "A decentralized continuous transaction control (DCTC) model combines Peppol-style exchange between certified service providers with reporting of invoice data to the tax authority. The authority receives data as invoices flow but is not a gatekeeper before delivery. The UAE's five-corner model is an example, and France uses approved platforms that exchange invoices and transmit data in a similar way.",
+      },
+      {
+        q: "Who can see my invoice data in each model?",
+        a: "In a clearance model the tax authority sees every invoice, usually in full, before or as it reaches your customer. In a pure Peppol exchange, your access point, your customer's access point and your customer handle the invoice, and the tax authority sees it only if a fifth corner or reporting rule applies. Check each provider's data storage and privacy terms either way.",
+      },
+      {
+        q: "Can one software provider handle both Peppol and clearance countries?",
+        a: "Yes, many e-invoicing providers support several countries, connecting to Peppol as an access point and to clearance platforms such as Italy's SdI, Poland's KSeF or Saudi Arabia's Fatoora. This is useful if you trade in several countries. Check which countries each provider actually covers today, rather than on its roadmap, and whether it handles receiving as well as sending.",
+      },
+      {
+        q: "When is an invoice legally issued in a clearance model?",
+        a: "Usually only after the tax authority's platform has validated it and assigned an identifier, such as a KSeF number in Poland or clearance by ZATCA in Saudi Arabia. A document sent before clearance is not a valid invoice, even if it looks complete. That affects when your customer can deduct VAT and how you handle errors, so follow your country's rules carefully.",
       },
     ],
     content: `
