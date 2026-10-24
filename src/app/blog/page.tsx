@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import { breadcrumbSchema } from "@/components/layout/Breadcrumbs";
 import { BlogIndex } from "@/components/blog/BlogIndex";
-import { POSTS } from "@/data/blog";
+import { blogPagePosts } from "@/data/blog";
 import { SITE } from "@/data/site";
 import { absoluteUrl, canonicalFor, pageSocial } from "@/lib/seo";
 
@@ -26,7 +26,7 @@ const jsonLd = {
   name: `${SITE.name} blog`,
   description: DESCRIPTION,
   url: absoluteUrl("/blog"),
-  blogPost: POSTS.slice(0, 10).map((p) => ({
+  blogPost: blogPagePosts(1).map((p) => ({
     "@type": "BlogPosting",
     headline: p.title,
     datePublished: p.date,

@@ -2617,6 +2617,15 @@ export const POSTS: Post[] = POST_DRAFTS.map((p) => ({
   readingTime: estimateReadingTime(p.content),
 }));
 
+/** Blog index order: newest first; posts sharing a date keep their authored order. */
+export const POSTS_BY_DATE: Post[] = [...POSTS].sort((a, b) => b.date.localeCompare(a.date));
+
+export const BLOG_PAGE_SIZE = 12;
+export const BLOG_PAGE_COUNT = Math.ceil(POSTS.length / BLOG_PAGE_SIZE);
+export const blogPageHref = (page: number) => (page <= 1 ? "/blog" : `/blog/page/${page}`);
+export const blogPagePosts = (page: number) =>
+  POSTS_BY_DATE.slice((page - 1) * BLOG_PAGE_SIZE, page * BLOG_PAGE_SIZE);
+
 export const getPost = (slug: string) => POSTS.find((p) => p.slug === slug);
 export const getCategory = (slug: string) => CATEGORIES.find((c) => c.slug === slug);
 export const relatedPosts = (post: Post, limit = 3) => {
