@@ -31,6 +31,26 @@ export const PAYMENTS_2026_POSTS: PostDraft[] = [
         q: "Does the GENIUS Act mean stablecoins are now legal tender?",
         a: "No. The GENIUS Act creates a federal licensing and reserve framework for payment stablecoin issuers in the United States. It does not make stablecoins legal tender, and no business is required to accept them. Accepting them remains a commercial choice you agree with each client.",
       },
+      {
+        q: "What if a client sends less or more USDC than the invoice amount?",
+        a: "Treat it like any short payment or overpayment. If they sent less, often because network fees came out of the amount, record what arrived and ask for the difference as a separate transfer, pointing to your \"sender pays network fees\" term. If they sent too much, agree whether to refund the excess to a confirmed address or credit it to the next invoice, and document the choice on a statement or credit note.",
+      },
+      {
+        q: "Should I accept USDT as well as USDC?",
+        a: "Only if you're comfortable with both issuers and your wallet or provider supports both on the same network. USDC and USDT are different tokens from different companies, with different reserve disclosures and regulatory status, so they aren't interchangeable. Many businesses accept one token only to keep records simple. Whichever you choose, name it on the invoice and say that payments in other tokens may be returned at the sender's cost.",
+      },
+      {
+        q: "Can I accept stablecoin payments in the UK or EU?",
+        a: "Generally yes, but the rules differ from the US. In the EU, the MiCA regulation means regulated platforms can only offer stablecoins from authorized issuers: USDC is issued under MiCA, while USDT was removed from regulated EU exchanges after Tether chose not to seek authorization. The UK's crypto regime is still being developed by the FCA. Income is still taxable and VAT works as normal, so check HMRC or your national tax authority first.",
+      },
+      {
+        q: "Can I pay my own contractors in stablecoins?",
+        a: "You can if they agree, but your obligations don't change. In the US, payments to contractors in digital assets are reported at their dollar value, so you may still need a W-9 and a Form 1099-NEC once the annual threshold is met. Record the dollar value on the payment date, the transaction hash and the invoice it settles. Check the IRS digital assets guidance, and local rules if the contractor is abroad.",
+      },
+      {
+        q: "How do I record a USDC payment if my business doesn't use US dollars?",
+        a: "Record it at its value in your own currency on the day you receive it, using a consistent, documented exchange rate source. For example, a UK freelancer paid 2,400 USDC would convert it to pounds at the rate on the receipt date for their income records, and any later gain or loss when converting is dealt with separately. Keep the invoice in your normal currency where possible, and check your tax authority's guidance on crypto valuation.",
+      },
     ],
     content: `
 <p><strong>Quick answer:</strong> Stablecoin payments let a client settle your invoice in a dollar-pegged token such as USDC instead of a card or bank transfer. You invoice in your normal currency, state the token, the blockchain network and your wallet address, and the client sends the exact amount. Funds usually arrive in minutes, at any hour, but transfers cannot be reversed.</p>
@@ -187,6 +207,22 @@ export const PAYMENTS_2026_POSTS: PostDraft[] = [
         q: "Will instant payments replace ACH?",
         a: "Not soon. ACH remains cheaper and well suited to batch payroll, recurring bills and low-urgency vendor payments. Instant payments suit time-sensitive invoices, weekend payments and cases where certainty of final settlement matters. Most businesses will use both.",
       },
+      {
+        q: "How can I check whether my bank is on FedNow?",
+        a: "The Federal Reserve publishes a downloadable list of financial institutions live on the FedNow Service, with their routing numbers, on its FedNow participants page. The Clearing House publishes participant information for RTP. A listed bank may only receive, not send, and may not enable it on every account, so ask your bank directly whether your business account can receive instant payments and at what limit.",
+      },
+      {
+        q: "Can international clients pay me through FedNow or RTP?",
+        a: "Not directly. Both networks move US dollars between accounts at participating US financial institutions. A client abroad would need to pay by international wire, a cross-border payment provider or card, and while some providers may use instant rails for the final US leg, you won't usually see that. For foreign clients, list an international payment option on the invoice alongside your US bank details.",
+      },
+      {
+        q: "Is pay by bank the same as FedNow or RTP?",
+        a: "Not exactly. Pay by bank is a checkout or invoice payment option that lets a customer pay straight from their bank account instead of by card. Behind the scenes it may run on ACH, which takes a day or more, or on an instant network like RTP or FedNow, depending on the provider and the banks involved. If speed matters, ask your provider which rail it uses and when funds become available.",
+      },
+      {
+        q: "Are business accounts protected if an instant payment is fraudulent?",
+        a: "Less than consumer accounts. Regulation E's protections for unauthorized electronic transfers apply to consumer accounts, so business accounts mostly rely on the bank's account agreement. Payments you authorized yourself, even if a scammer tricked you, are generally not reversible. Ask your bank about payee confirmation, limits and alerts, and verify any change of bank details by phone before sending money.",
+      },
     ],
     content: `
 <p><strong>Quick answer:</strong> FedNow vs RTP comes down to who runs the network. RTP is operated by The Clearing House (live since 2017) and FedNow by the Federal Reserve (live since July 2023). Both move money between US bank accounts in seconds, 24/7, with final settlement, a $10 million network limit and request for payment. Your bank chooses which one it joins.</p>
@@ -342,6 +378,26 @@ export const PAYMENTS_2026_POSTS: PostDraft[] = [
         q: "Who is the Small Business Commissioner?",
         a: "The Small Business Commissioner is an independent public office in England, set up under the Enterprise Act 2016, that helps small businesses with payment disputes involving larger firms and promotes better payment practice. The Bill would give the Commissioner powers to investigate, adjudicate and fine persistent late payers.",
       },
+      {
+        q: "Is the Small Business Commissioner's service free?",
+        a: "Yes, for small businesses. The Office of the Small Business Commissioner's guidance and complaints scheme are free for businesses with fewer than 50 employees that have a payment dispute with a larger business, and you can use them now, before the Bill becomes law. Gather your contract, invoices and correspondence first. Remember the Commissioner currently reviews complaints and makes recommendations; it cannot yet issue binding rulings or fines.",
+      },
+      {
+        q: "What is the Fair Payment Code?",
+        a: "The Fair Payment Code is a voluntary scheme run by the Office of the Small Business Commissioner that replaced the Prompt Payment Code. Signatories commit to treating suppliers fairly and are awarded Gold, Silver or Bronze status depending on how quickly they pay, for example within 30 or 60 days. Checking whether a large customer has signed up, and at what level, is a quick way to judge how it is likely to pay you.",
+      },
+      {
+        q: "What could replace cash retentions if they are banned in construction?",
+        a: "Main contractors are likely to look at alternatives such as retention bonds, parent company guarantees or other security that doesn't involve withholding cash from each payment. The final Act and any guidance will decide what is allowed. If you are a subcontractor, review the retention clauses in your current contracts and keep tracking release dates, because existing retentions remain payable under the terms you signed.",
+      },
+      {
+        q: "Will the Bill set a deadline for customers to dispute invoices?",
+        a: "That is proposed. Reporting on the Bill describes a new statutory time limit for raising invoice disputes, with compensation payable to the supplier if a customer raises a dispute late. The consultation suggested 30 days, but the final period depends on the Act's wording and any regulations. Until then, ask customers to raise queries promptly, keep proof of delivery, and state on your invoice how long they have to query it under your contract.",
+      },
+      {
+        q: "Will claiming statutory interest damage my relationship with a big customer?",
+        a: "It can, which is why many suppliers use the right selectively. Government research found that 15% of businesses have avoided particular customers because of how they pay, so you are not alone in weighing it up. Reserving your right to interest on every invoice sets expectations without confrontation, and you can waive it if the customer pays promptly after a reminder. Mandatory interest, as proposed, is meant to make claiming it routine rather than personal.",
+      },
     ],
     content: `
 <p><strong>Quick answer:</strong> New late payment legislation in the UK is on its way but not yet law. The Small Business Protections Bill, introduced in May 2026, would cap payment terms at 60 days when large firms pay smaller suppliers, make statutory interest of 8% over Bank of England base rate mandatory, ban cash retentions in construction and let the Small Business Commissioner fine late payers.</p>
@@ -470,6 +526,26 @@ export const PAYMENTS_2026_POSTS: PostDraft[] = [
       {
         q: "Can I use these statistics in my own content or pitch?",
         a: "Yes, as long as you cite the original publisher and the year, and describe what the figure measures. Link to the source report rather than to this summary, and avoid mixing figures from different countries or methods as if they were comparable.",
+      },
+      {
+        q: "What is a good DSO for a small business?",
+        a: "A good days sales outstanding figure is one close to your own payment terms. If you offer 30-day terms, a DSO in the low 30s means most customers pay roughly on time, while a figure well above that points to late payment. Comparing yourself with national averages is less useful than tracking your own DSO monthly and watching the trend, because industries with longer standard terms naturally run higher.",
+      },
+      {
+        q: "Is it true that 82% of businesses fail because of cash flow problems?",
+        a: "Treat that figure with caution. It's widely quoted and usually credited to a U.S. Bank study, but we couldn't trace the original research, its method or exactly what it measured, and it's often reworded, for example as 82% of failed businesses citing cash flow. That's why it isn't in our roundup. If you use it, present it as an attributed claim and prefer sourced data, such as government research on late payment.",
+      },
+      {
+        q: "How often are late payment statistics updated?",
+        a: "The main sources publish on different cycles. The QuickBooks and Atradius reports covered here come out yearly, large UK companies publish payment practices reports every six months, and government research such as the Department for Business and Trade's cost estimate is updated irregularly. Check the publication date before quoting any figure, and look for a newer edition of the same report rather than mixing years.",
+      },
+      {
+        q: "How can I see how a specific UK company pays its suppliers?",
+        a: "Search the government's payment practices reporting service. Large UK companies and LLPs must publish a report every six months showing their average time to pay, the share of invoices paid within 30 days, 31 to 60 days and over 60 days, and their standard terms. It's free to search by company name. Check it before agreeing terms with a big customer, so you know how it really pays rather than how it says it pays.",
+      },
+      {
+        q: "What is the difference between a late payment and a bad debt?",
+        a: "A late payment is an invoice paid after its due date; a bad debt is an invoice you no longer expect to collect, so you write it off. Atradius reports that US companies often lose 1% to 2% of B2B invoices to bad debt. The older an overdue invoice gets, the more likely it is to become a bad debt, which is why chasing early matters more than chasing hard later.",
       },
     ],
     content: `
@@ -621,6 +697,22 @@ export const PAYMENTS_2026_POSTS: PostDraft[] = [
       {
         q: "Can I charge a fee for paying by PayPal or bank transfer?",
         a: "In the UK, the consumer surcharge ban also covers many other payment methods, including some digital wallets. In the EU, rules vary by member state. In the US, fees on non-card methods are mainly governed by state consumer law and your contract. Check the rules for each method and disclose any fee before the customer pays.",
+      },
+      {
+        q: "Do I charge sales tax on a credit card surcharge?",
+        a: "In many US states, yes, if the underlying sale is taxable. States often treat a surcharge as part of the sale price, so sales tax is calculated on the total including the surcharge, and if the sale is exempt the surcharge usually is too. Rules differ by state, so check your state revenue department's guidance and make sure your payment system calculates tax on the right amount.",
+      },
+      {
+        q: "Can I surcharge American Express cards?",
+        a: "Generally yes in the US, but under American Express's own merchant rules rather than Visa's or Mastercard's. Amex expects the surcharge to be clearly disclosed and not to exceed what you charge on other credit cards. State law still applies, and Amex said it would remove surcharging in Australia from 1 October 2026. Check the current Amex merchant regulations and your processor's settings before you start.",
+      },
+      {
+        q: "Can businesses surcharge credit cards in Canada?",
+        a: "Yes, in most provinces. Since October 2022, Visa and Mastercard rules have allowed Canadian merchants to surcharge credit cards up to 2.4% or their cost of acceptance, whichever is lower, after giving their processor notice and with clear disclosure. Quebec prohibits surcharges under its consumer protection law, and debit and prepaid cards can't be surcharged. Check current network rules and provincial law before adding a fee.",
+      },
+      {
+        q: "Can I set a minimum amount for credit card payments instead?",
+        a: "In the US, yes. Federal law lets merchants require a minimum purchase of up to $10 for credit cards, as long as it applies equally to all card networks and issuers. You can't set a minimum for debit cards. A minimum can be simpler than a surcharge for small counter sales, though it rarely matters on invoices, which are usually larger. Rules outside the US differ, so check local law.",
       },
     ],
     content: `
@@ -782,6 +874,26 @@ export const PAYMENTS_2026_POSTS: PostDraft[] = [
       {
         q: "Can a Raast payment be reversed?",
         a: "Raast transfers settle instantly and are generally final. If a customer sends money to the wrong account, they must raise a complaint with their own bank, which can contact the receiving bank, but recovery is not guaranteed. This is why you should confirm your Raast ID or IBAN on every invoice and warn clients about fake account-change messages.",
+      },
+      {
+        q: "Can customers pay my Raast ID or QR from a mobile wallet?",
+        a: "In most cases, yes. Electronic money institutions and branchless banking wallets participate in Raast alongside banks, so a customer using a wallet app such as Easypaisa can send to a Raast ID or scan a Raast P2M QR, depending on what their provider has enabled. Wallet account limits are often lower than bank account limits, so for larger invoices check that the customer's limit covers the amount.",
+      },
+      {
+        q: "How do I get a Raast QR code for my business?",
+        a: "Ask your bank or payment provider to onboard you for Raast P2M. You will usually need an eligible business or merchant account and the standard know-your-customer documents, such as your CNIC and business registration details. The bank then issues a static QR, a merchant alias or both, and some offer dynamic QR or request to pay through a merchant app or portal. Ask about fees and settlement before printing the QR on invoices.",
+      },
+      {
+        q: "What if a customer's banking app doesn't show a Raast option?",
+        a: "Most banks, microfinance banks and many wallets are connected to Raast, but the option may be named differently in the app, such as \"send via Raast ID\" or \"IBAN transfer.\" If the customer can't find it, they can usually pay to your IBAN, which may route through Raast or IBFT depending on their bank. Keep your IBAN on every invoice as a fallback so the payment method never holds up payment.",
+      },
+      {
+        q: "What should I do if a customer says they paid by Raast but nothing arrived?",
+        a: "Ask for the transaction ID and time of payment, then check your account statement rather than an app notification or screenshot. Raast payments normally arrive in seconds, so a missing credit usually means the payment failed, went to a different account or is still pending at the sender's bank. The customer should raise it with their own bank using the transaction ID. Don't release goods or mark the invoice paid until the credit appears.",
+      },
+      {
+        q: "Is a Raast payment record enough for my tax records?",
+        a: "It's a good start, because Raast payments run through the regulated banking system and appear on your bank statement with a transaction ID. You still need the invoice itself, and if you're registered for sales tax, it must carry the required fields such as NTN and STRN. Match each transaction ID to its invoice and keep both. Check FBR or your provincial revenue authority's rules on how long to keep records.",
       },
     ],
     content: `
@@ -947,6 +1059,22 @@ export const PAYMENTS_2026_POSTS: PostDraft[] = [
       {
         q: "Is there statutory late payment interest in the United States?",
         a: "There is no general federal rule giving businesses automatic interest on late invoices. Late fees or interest normally have to be agreed in the contract and must respect state usury and consumer laws, and courts may award prejudgment interest under state law. Federal agencies paying contractors late must pay interest under the Prompt Payment Act.",
+      },
+      {
+        q: "How do I calculate interest if the customer pays part of the invoice?",
+        a: "Calculate interest on whatever is outstanding in each period. Charge interest on the full debt from the day after the due date until the part payment, then on the reduced balance from that date until the rest is paid. For example, if half of a £4,800 invoice is paid 20 days late, the later days run on £2,400. The fixed compensation is still claimed only once for that invoice.",
+      },
+      {
+        q: "How long do I have to claim statutory interest on an old invoice?",
+        a: "In England and Wales, you generally have six years from when the debt fell due to bring a claim for an unpaid contract debt, including interest, under the Limitation Act 1980. Northern Ireland also uses six years for contract claims, while in Scotland the prescriptive period is usually five years. Older claims are harder to prove, so act sooner, and take legal advice if a debt is close to the deadline.",
+      },
+      {
+        q: "Do I have to warn customers before charging statutory interest?",
+        a: "No. The right to statutory interest arises automatically under the 1998 Act, so it applies even if your contract and invoice never mention it. In practice, a line on your invoices reserving your rights avoids surprises and encourages customers to pay on time. When you do claim, send a written statement showing the calculation so the customer can check the figures before paying.",
+      },
+      {
+        q: "Is statutory interest I receive taxable?",
+        a: "Yes. Late payment interest and compensation you receive generally form part of your business income and are taxed with your other profits, whether you are a sole trader or a company. They are not subject to VAT. Record them separately from sales in your accounts so the figures are easy to trace, and check HMRC guidance or ask your accountant if you are unsure how to report them.",
       },
     ],
     content: `

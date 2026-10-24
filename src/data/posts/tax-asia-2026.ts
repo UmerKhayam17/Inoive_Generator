@@ -36,6 +36,22 @@ export const TAX_ASIA_2026_POSTS: PostDraft[] = [
         q: "What happens to invoices I issue on the go-live day if my integration fails?",
         a: "Plan for this before go-live. Ask your vendor how its solution queues simplified invoices for reporting within the 24-hour window and how it handles standard invoices that cannot be cleared immediately. ZATCA's technical guidelines describe expected behavior, so make sure your provider has tested outage scenarios.",
       },
+      {
+        q: "How much does a ZATCA Phase 2 solution cost?",
+        a: "It depends on the vendor and how many invoicing units you need. Pricing models include per invoice, per device or branch, and monthly subscriptions, sometimes with setup fees. Compare at least two providers on their official pricing pages at the time of writing, and ask what is included, such as onboarding support, archiving and credit note handling.",
+      },
+      {
+        q: "Does Phase 2 apply to non-resident businesses registered for Saudi VAT?",
+        a: "Generally no. ZATCA's e-invoicing regulation applies to resident taxable persons and to those issuing invoices on their behalf, and non-residents are reported to be outside its scope. Non-resident suppliers still have VAT obligations, though. If your business has a Saudi branch or other presence, take advice on whether you are treated as resident.",
+      },
+      {
+        q: "Do I need to resubmit invoices issued before my integration date?",
+        a: "No. Phase 2 clearance and reporting apply to invoices issued from your integration date. Invoices issued before then remain under the Phase 1 rules and should be kept in your records for the required retention period. Credit or debit notes issued after go-live that relate to older invoices should go through your integrated system.",
+      },
+      {
+        q: "Do credit notes and debit notes go through ZATCA too?",
+        a: "Yes. After integration, credit and debit notes follow the same route as the invoice they adjust: notes linked to standard tax invoices are cleared by ZATCA, and notes linked to simplified invoices are reported within 24 hours. Each note must reference the original invoice and give a reason. Check that your solution supports partial returns before go-live.",
+      },
     ],
     content: `
 <p><strong>Quick answer:</strong> ZATCA Phase 2 Wave 25 covers VAT-registered businesses in Saudi Arabia whose VAT-taxable revenue exceeded SAR 187,500 in any of 2022, 2023, 2024 or 2025. They must integrate their e-invoicing solution with ZATCA's Fatoora platform by 1 February 2027. That leaves roughly 14 weeks from late October 2026 to choose a compliant system, onboard every invoicing unit and test.</p>
@@ -178,6 +194,26 @@ export const TAX_ASIA_2026_POSTS: PostDraft[] = [
       {
         q: "Do I have to pass the GST rate cut on to customers?",
         a: "The government asked businesses to pass on the benefit through lower prices, and anti-profiteering scrutiny has applied to earlier rate cuts. Beyond the legal question, customers can see the old and new rates, so a price that stays the same while GST falls will be noticed. Document how you repriced.",
+      },
+      {
+        q: "Where can I check the official GST rate for my HSN or SAC code?",
+        a: "Use official sources: the CBIC rate notifications and the GST rate tools on CBIC's website, and the HSN and SAC search on the GST portal. Blogs and supplier price lists can be out of date or simplified. Note any condition attached to a rate, such as 'without ITC', and keep a dated record of the rate you relied on.",
+      },
+      {
+        q: "Do I need to change my GST registration because of the new rates?",
+        a: "Generally no. A rate change does not change your GSTIN or registration. You only need to amend your registration if your business details change, such as your address, business type or the goods and services you supply. What you must change is the rate in your item master, price lists and billing software.",
+      },
+      {
+        q: "How is the 40% GST rate shown on an invoice?",
+        a: "The same way as other rates. For an intra-state sale, it is split equally into CGST at 20% and SGST or UTGST at 20%. For an inter-state sale, you charge IGST at 40%. Show the taxable value, rate and tax amount for each line, and check whether any other levy also applies to the product.",
+      },
+      {
+        q: "Did GST 2.0 change the e-invoicing threshold?",
+        a: "No. GST 2.0 changed rates, not the e-invoicing rules. Businesses whose aggregate turnover exceeds the e-invoicing limit, currently Rs 5 crore, still need to generate an IRN for eligible B2B invoices. The rate on each line in the e-invoice must match the new rates. Check our e-invoice limit guide and the GST portal for any later changes.",
+      },
+      {
+        q: "What should I do if my supplier still charges the old GST rate?",
+        a: "Ask the supplier to correct it with a credit note or a revised invoice at the correct rate. You can keep the record pending or reject it in IMS while it is being fixed. Do not claim more input tax credit than the tax that is legally due. Keep the correspondence in case the difference is queried later.",
       },
     ],
     content: `
@@ -329,6 +365,26 @@ export const TAX_ASIA_2026_POSTS: PostDraft[] = [
         q: "How long can I keep an invoice pending in IMS?",
         a: "For ordinary invoices, you can generally keep them pending until the time limit for claiming ITC under Section 16(4) of the CGST Act. From the October 2025 tax period, credit notes and certain amendments can be kept pending for only one tax period: one month for monthly filers and one quarter for quarterly filers.",
       },
+      {
+        q: "Can quarterly QRMP filers use IMS?",
+        a: "Yes. Records your suppliers upload through IFF or GSTR-1 appear on your IMS dashboard whether you file monthly or quarterly. If you are a QRMP taxpayer receiving invoices, you act on them in the same way, and your actions flow into the GSTR-2B used for your quarterly return. Check the IMS user manual on the GST portal for timing details.",
+      },
+      {
+        q: "What if a supplier has not uploaded an invoice yet?",
+        a: "It will not appear in IMS or your GSTR-2B, so you generally cannot claim the input tax credit for that period. Ask the supplier to report it in GSTR-1 or IFF. Once it appears, you can accept it in a later period, as long as you are within the time limit for claiming ITC under Section 16(4) of the CGST Act.",
+      },
+      {
+        q: "Can I accept only part of an invoice in IMS?",
+        a: "No. IMS actions apply to the whole record: you accept, reject or keep it pending. If only part of an invoice is wrong, such as one line at the wrong rate, keep it pending or reject it with a remark and ask the supplier to correct it with a credit note or amendment. The October 2025 changes allow partial ITC reversal declarations only for certain credit notes.",
+      },
+      {
+        q: "Does rejecting an invoice in IMS mean I do not have to pay the supplier?",
+        a: "No. IMS only decides what input tax credit appears in your GSTR-2B. Whether you owe the supplier money depends on your contract and what was actually supplied. If you reject an invoice because it is wrong, sort out the commercial side directly with the supplier, usually by agreeing a corrected invoice or credit note.",
+      },
+      {
+        q: "Do e-invoices with an IRN show up in IMS automatically?",
+        a: "Details of e-invoices registered on the IRP are auto-populated into the supplier's GSTR-1, so they normally reach your IMS dashboard without the supplier retyping them. The supplier still has to file the return, and you still need to act on the record. If an IRN invoice is missing, ask the supplier to check their GSTR-1.",
+      },
     ],
     content: `
 <p><strong>Quick answer:</strong> The invoice management system (IMS) on the GST portal lets you, as a buyer, accept, reject or keep pending each invoice your suppliers report. Accepted records flow into GSTR-2B as eligible input tax credit (ITC), rejected ones are excluded, pending ones wait for a later period, and untouched records are deemed accepted. GSTR-2B then feeds your GSTR-3B.</p>
@@ -463,6 +519,26 @@ export const TAX_ASIA_2026_POSTS: PostDraft[] = [
       {
         q: "Do freelancers need to worry about these sales tax changes?",
         a: "Most freelancers exporting IT services are not registered for federal sales tax, so FBR digital invoicing does not apply to them. Provincial sales tax on services is a separate question. Income tax changes for IT exporters, such as the reported extension of the 0.25% final tax regime, are covered in our freelancer tax guide.",
+      },
+      {
+        q: "How can I check whether a supplier is a registered and active taxpayer?",
+        a: "Use FBR's online Active Taxpayer List search or its SMS verification service, and check the supplier's sales tax registration number before you buy. Repeat the check regularly, not just at onboarding, because a supplier's status can change. Keep screenshots or records of each check with your purchase file as evidence of due diligence.",
+      },
+      {
+        q: "What must a sales tax invoice in Pakistan show?",
+        a: "Under section 23 of the Sales Tax Act, a tax invoice must include, among other things, the names, addresses and registration numbers of the supplier and the buyer, the date, a serial number, a description and quantity of the goods, the value excluding tax, the tax rate and amount, and the value including tax. FBR integration adds its own invoice number and QR code. Confirm current requirements with FBR.",
+      },
+      {
+        q: "Do provincial sales tax authorities follow FBR's e-invoicing rules?",
+        a: "Not automatically. Sales tax on services is collected by provincial authorities such as the Punjab Revenue Authority, Sindh Revenue Board, KPRA and BRA, and each sets its own registration and invoicing rules. Some run their own electronic invoicing or monitoring systems. If you supply services, check the rules of each province where you are registered.",
+      },
+      {
+        q: "What is PRAL's role in FBR e-invoicing?",
+        a: "PRAL, Pakistan Revenue Automation (Private) Limited, is the company that runs FBR's IT systems. Registered persons can integrate with FBR's digital invoicing system through PRAL or through a licensed integrator. Compare the options for cost, support and compatibility with your existing billing software, and check FBR's website for the current list of licensed integrators.",
+      },
+      {
+        q: "Is extra tax charged when I sell to an unregistered buyer?",
+        a: "Often yes. The Sales Tax Act provides for further tax on taxable supplies to persons who are not registered, on top of the standard rate, subject to exceptions. The rate and exceptions can change in each Finance Act, so check the current section 3(1A) and related notifications on FBR's website or with your tax practitioner before invoicing.",
       },
     ],
     content: `

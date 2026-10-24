@@ -31,6 +31,26 @@ export const INDUSTRY_POSTS_B: PostDraft[] = [
         q: "Should commercial rent invoices include tax?",
         a: "Sometimes. In some places commercial rent can be subject to VAT or a local tax, for example where a UK landlord has opted to tax a commercial property. Residential rent is usually exempt, but confirm with an accountant for your property and location.",
       },
+      {
+        q: "Do landlords need rent invoices for tax purposes?",
+        a: "There is usually no rule that you must issue rent invoices, but you do need records of rent received and expenses for your tax return. Invoices and receipts make that record easy to keep and to match against bank deposits. US landlords report rental income to the IRS; UK landlords report to HMRC, and some must now keep digital records under Making Tax Digital. Ask an accountant what applies.",
+      },
+      {
+        q: "Do I have to protect a tenant's security deposit?",
+        a: "In many places, yes. In England, most deposits for assured tenancies must be placed in a government-approved protection scheme within 30 days, and the tenant must be given prescribed information. Many US states set their own rules on where deposits are held, interest and return deadlines. Check your local landlord-tenant law, and keep the deposit off your monthly rent invoices.",
+      },
+      {
+        q: "What should I do if a tenant pays only part of the rent?",
+        a: "Record the partial payment with its date, give a receipt for the amount received, and show the remaining balance as overdue on the next invoice or a statement. Be careful: in some places, accepting partial rent can affect your right to start eviction proceedings for that period. Check your local landlord-tenant law or ask an attorney before accepting partial payments if legal action is likely.",
+      },
+      {
+        q: "Can I add a card processing fee to a rent invoice?",
+        a: "Possibly, but check the rules first. Card surcharges are restricted in some US states and by card network rules, and in the UK surcharges on consumer card payments are banned. Some landlords offer free bank transfer and accept cards only through a platform that charges a disclosed fee. Make sure any fee is allowed by your lease and local law before adding it to an invoice.",
+      },
+      {
+        q: "How far in advance should I send a rent invoice?",
+        a: "Sending it a week or two before the due date works well for most tenants, because it gives them time to arrange payment without forgetting. Consistency matters more than the exact day: pick one, such as the 20th of each month for rent due on the 1st, and stick to it. If your lease or local law sets notice periods for new charges or rent increases, follow those.",
+      },
     ],
     content: `
 <p><strong>Quick answer:</strong> A rent invoice template is a reusable layout landlords use to bill tenants for rent and related charges. It should show the landlord and tenant names, the property address, the rental period, the rent amount, any extra charges such as utilities or parking, the due date and how to pay. Send it on the same day each month so tenants know exactly what they owe and when.</p>
@@ -159,6 +179,26 @@ export const INDUSTRY_POSTS_B: PostDraft[] = [
       {
         q: "Are medical services subject to VAT or sales tax?",
         a: "Medical care is commonly exempt from VAT and sales tax, but there are exceptions, such as some cosmetic treatments and products. Treatment varies by country and service, so confirm with an accountant before invoicing.",
+      },
+      {
+        q: "Can patients use an HSA or FSA to pay a medical invoice?",
+        a: "Often yes, for qualified medical expenses. Patients usually need an itemized invoice or receipt showing the provider, patient name, date of service, a description of each service and the amount paid, because plan administrators can ask for proof. Whether a service qualifies depends on IRS rules and the plan, so patients should confirm with their administrator rather than rely on the practice.",
+      },
+      {
+        q: "When can a self-pay patient dispute a bill that exceeds the good faith estimate?",
+        a: "Under the No Surprises Act process, an uninsured or self-pay patient can generally dispute a bill that is at least $400 more than the provider's good faith estimate, within 120 days of the date on the initial bill. An independent reviewer then decides the amount owed. Keep invoices consistent with your estimate and explain unexpected charges. CMS publishes the current rules.",
+      },
+      {
+        q: "Can I offer a discount to self-pay patients?",
+        a: "Many practices do, such as a cash-pay or prompt-pay discount, and showing it as a separate adjustment line keeps your standard fee visible. Be careful with insured patients: routinely waiving copays or deductibles can breach insurer contracts and, for government programs, raise fraud and abuse concerns. Write a consistent discount policy and check it with a healthcare attorney or compliance adviser.",
+      },
+      {
+        q: "Can I email a medical invoice to a patient?",
+        a: "You can, but take care with privacy. In the US, HIPAA allows email communication with reasonable safeguards, and patients can choose unencrypted email after being told of the risks. Use a secure portal or encrypted email where possible, keep clinical detail to the minimum the patient needs, and never put diagnoses or treatment names in the subject line.",
+      },
+      {
+        q: "Can I set up a payment plan for a patient's balance?",
+        a: "Yes. Agree the plan in writing: the total balance, the number and amount of payments, due dates and what happens if a payment is missed. Then send each installment as its own invoice, or a statement showing the original balance, payments received and the amount remaining. Some states regulate medical debt, interest and collection practices, so check local rules before adding interest or fees.",
       },
     ],
     content: `
@@ -290,6 +330,26 @@ export const INDUSTRY_POSTS_B: PostDraft[] = [
         q: "Do lawyers charge VAT or sales tax on legal fees?",
         a: "In the UK and EU, legal services are generally subject to VAT if the firm is registered, with special rules for international clients and some disbursements. Most US states do not tax legal services, though a few tax some services. Check with your accountant.",
       },
+      {
+        q: "Does a contingency fee agreement need to be in writing?",
+        a: "Under the ABA Model Rules, which most US states follow in some form, a contingent fee agreement must be in writing and signed by the client, and must explain how the fee is calculated and how expenses are handled. At the end of the matter, the lawyer gives the client a written closing statement showing the outcome and the calculation. State rules can add requirements, so check your jurisdiction.",
+      },
+      {
+        q: "Can lawyers charge interest on unpaid invoices?",
+        a: "In many jurisdictions, yes, if the client agreed to it in the engagement letter and the rate complies with local law and professional conduct rules. Some bars expect interest terms to be disclosed in advance and applied only to overdue amounts. State the rate and when it starts on each invoice, and check your bar or regulator's guidance before charging it.",
+      },
+      {
+        q: "Can a client challenge a legal bill?",
+        a: "Yes. Clients can query entries directly, and many US state bars run fee arbitration programs for disputes between lawyers and clients. In England and Wales, clients can also ask the court to assess a solicitor's bill in certain circumstances. Clear time entries, rates that match the engagement letter and a prompt, factual response to questions resolve most challenges long before they reach that stage.",
+      },
+      {
+        q: "Should lawyers bill for short emails and phone calls?",
+        a: "If you bill hourly, client communication is generally billable at your minimum increment, as long as your engagement letter explains how you record time. Describe each entry specifically, such as 'Call with client re settlement offer: 0.2', rather than 'Phone call'. Some lawyers write off very short contacts as goodwill; whatever your policy, apply it consistently so clients are not surprised.",
+      },
+      {
+        q: "Can lawyers accept credit card payments for invoices?",
+        a: "Generally yes, but trust accounting rules apply. Payments of earned fees can go to the operating account, while advance fees belong in the client trust account, and card processing fees should not be taken out of client trust funds. Use a processor that can keep operating and trust deposits separate, and check your bar's guidance on surcharges and card payments.",
+      },
     ],
     content: `
 <p><strong>Quick answer:</strong> A legal invoice template is a billing layout attorneys and law firms use to charge clients for legal work. It should identify the firm, the client and the matter, list each time entry with date, timekeeper, task description, hours and rate, show expenses and disbursements separately, apply any retainer or trust funds, and state the balance due and payment terms. Clear, detailed entries are what get legal bills approved without challenge.</p>
@@ -406,6 +466,26 @@ export const INDUSTRY_POSTS_B: PostDraft[] = [
       {
         q: "Should my MC and DOT numbers be on the invoice?",
         a: "Yes. Brokers and shippers use your MC and USDOT numbers to match the invoice to your carrier profile, so include them in your business details on every freight invoice.",
+      },
+      {
+        q: "What can I do if a broker never pays my freight invoice?",
+        a: "Follow up in writing with the invoice, rate confirmation and POD. If the broker still does not pay, you can usually file a claim against the $75,000 surety bond or trust fund that every licensed freight broker must maintain, and you can find the surety through FMCSA records. For larger amounts, a freight collections agency or transportation attorney may help.",
+      },
+      {
+        q: "How long do I have to collect unpaid freight charges?",
+        a: "Under federal law, a motor carrier generally has 18 months from when the claim accrues to start a lawsuit to recover charges for interstate transportation. That is the outer limit, not a target: broker and shipper agreements often set much shorter deadlines for submitting invoices and paperwork. Invoice promptly after delivery and diary follow-ups well before any deadline passes.",
+      },
+      {
+        q: "Can I see what the shipper paid the broker for my load?",
+        a: "Federal rules require brokers to keep a record of each transaction and give each party to a brokered transaction the right to review it. In practice, some brokers argue the carrier is not a party or ask carriers to waive the right in the carrier agreement, and FMCSA has been working on broker transparency rules. Read your agreement before signing, and request the record in writing.",
+      },
+      {
+        q: "How should I invoice a load with multiple stops?",
+        a: "Show the line haul for the full move, then list each extra pickup or drop as a stop-off charge with its location and date, at the rate set on the rate confirmation. Attach a BOL or POD for every stop. If detention happened at more than one stop, list each separately with in and out times, so the broker can match every charge to a document.",
+      },
+      {
+        q: "How do I invoice a rate change agreed after the rate confirmation?",
+        a: "Ask the broker for a revised rate confirmation or written approval, such as an email, before billing the new amount. Then invoice at the revised rate and attach the updated rate con with your paperwork. If you bill more than the signed rate con without written support, expect the invoice to be held or short paid. Reference the revision or approval date in the line description.",
       },
     ],
     content: `
@@ -528,6 +608,26 @@ export const INDUSTRY_POSTS_B: PostDraft[] = [
       {
         q: "What is flat-rate labor in auto repair?",
         a: "Flat-rate labor charges a standard number of hours for each job from a labor time guide, regardless of how long the technician actually takes. The invoice shows the book hours multiplied by the shop's hourly labor rate.",
+      },
+      {
+        q: "Can a repair shop hold a vehicle until the invoice is paid?",
+        a: "In many US states, yes. Repair shops typically have a possessory lien that lets them keep a vehicle until authorized repairs are paid for, and some states allow a sale after notice periods. Storage fees and lien procedures depend on state law and your written terms. Check your state's garage keeper or mechanic's lien statute, and get legal advice before holding or selling a vehicle.",
+      },
+      {
+        q: "Can I charge a diagnostic fee if the customer declines the repair?",
+        a: "Yes, if you disclosed the fee before diagnosing and the customer approved it. Diagnosis takes skilled time and equipment whether or not the repair goes ahead. Show the fee as its own line, describe what you tested and found, and list the recommended repair with its estimated price. Some shops credit the fee toward the repair if the customer books it within a set period.",
+      },
+      {
+        q: "Does using aftermarket parts void a customer's car warranty?",
+        a: "Not automatically in the US. The Magnuson-Moss Warranty Act generally stops manufacturers from voiding a warranty just because aftermarket or recycled parts were used, although they can deny a claim if that part caused the failure. Label each part on the invoice as OEM, aftermarket, used or rebuilt, so the customer has a clear record if a warranty question comes up later.",
+      },
+      {
+        q: "How should I invoice a tire sale and installation?",
+        a: "List the tires with brand, size and quantity, then mounting and balancing, valve stems or TPMS service kits, and any road hazard warranty as separate lines. Many states charge a fee on new tire sales, which belongs on its own line. Record the tire identification numbers if you can, since they help the customer with recalls and warranty claims.",
+      },
+      {
+        q: "Should an auto repair invoice show the technician's name?",
+        a: "It is not always required, but many shops show the technician's name or number on each labor line. It helps with comebacks, warranty claims and internal quality checks, and customers often like knowing who worked on their car. Some states require specific certifications for certain work, such as emissions inspections, so recording the certified technician on those jobs is especially important.",
       },
     ],
     content: `
@@ -660,6 +760,26 @@ export const INDUSTRY_POSTS_B: PostDraft[] = [
         q: "Do I charge sales tax or VAT on web development?",
         a: "It depends on where you and your client are. Some US states tax certain digital or software services, and VAT may apply in the UK and EU, with reverse charge rules for many business clients abroad. Check with an accountant.",
       },
+      {
+        q: "How much should I charge for a website?",
+        a: "Website prices vary with scope, so estimate rather than picking a number. Break the project into tasks such as discovery, design, templates, content entry, integrations, testing and launch, estimate hours for each, multiply by your rate and add a buffer for unknowns. Price hosting and maintenance separately. Put the scope and assumptions in your proposal so change requests are easy to spot.",
+      },
+      {
+        q: "Who owns the website code after the client pays?",
+        a: "Your contract decides. Many developers assign ownership of custom code to the client once the final invoice is paid, while keeping rights to reusable libraries, frameworks and tools they built before the project. Third-party themes and plugins stay under their own licenses. Set out ownership in the contract and repeat in the invoice notes that the transfer takes effect on full payment.",
+      },
+      {
+        q: "Should I invoice weekly or monthly for hourly development work?",
+        a: "Weekly or every two weeks suits new clients and long hourly projects, because it limits how much unpaid work builds up and gives the client regular visibility. Monthly invoicing is simpler for established clients and retainers. Whichever cycle you choose, put it in the contract, attach the time log for the period and invoice on the same day each cycle.",
+      },
+      {
+        q: "What can I do if a client never pays the final website invoice?",
+        a: "Send polite reminders, then a formal final notice referencing the contract. If your contract allows, you can delay launch, withhold the ownership transfer or suspend services you host and manage, but avoid taking down or altering a live site without clear contractual rights, as that can expose you to legal claims. Small claims court or a collections agency are options for unpaid amounts.",
+      },
+      {
+        q: "Should I bill clients for my own software subscriptions?",
+        a: "Usually not. Your own tools, such as your code editor, design software or project management apps, are business overheads covered by your rate. Bill a subscription to the client only when it is bought specifically for their project and they will keep using it, such as a premium plugin or SaaS account in their name. Agree pass-through costs in the proposal before buying.",
+      },
     ],
     content: `
 <p><strong>Quick answer:</strong> A web development invoice template is a billing layout developers and agencies use to charge for building and maintaining websites and web apps. It should show the project name, the billing basis (milestone, hours or retainer), a clear description of what was delivered, any approved change requests, pass-through costs such as hosting or plugin licenses, tax where applicable, the total and payment terms. Linking each invoice to a milestone or approved estimate is what keeps payments on schedule.</p>
@@ -776,6 +896,26 @@ export const INDUSTRY_POSTS_B: PostDraft[] = [
       {
         q: "Should tutors take payment in advance?",
         a: "Taking payment in advance, through monthly prepayment or session packages, reduces late payments and no-shows. Whatever you choose, state the due date clearly on each invoice and in your terms.",
+      },
+      {
+        q: "How much should I charge for tutoring?",
+        a: "Rates vary by subject, level, location and experience, so set yours from local research and your costs. Check what tutors with similar qualifications charge nearby or on platforms, then adjust for exam specialisms, travel time for home visits and marking outside lessons. Many tutors charge more for exam preparation and advanced levels. Review rates yearly and give families written notice of changes.",
+      },
+      {
+        q: "Can parents pay for tutoring with a 529 plan?",
+        a: "In the US, a 2025 federal law expanded qualified K-12 expenses for 529 plans to include certain tutoring, for withdrawals from July 5, 2025, within an annual K-12 limit. Conditions apply, including rules about who provides the tutoring, and state tax treatment can differ. Parents should confirm with their plan administrator, and your invoice should clearly show your name, session dates and amounts.",
+      },
+      {
+        q: "Should I send separate tutoring invoices for siblings?",
+        a: "Either works, so ask the family what they prefer. One combined invoice with a section per child is simpler for parents who pay together, while separate invoices help when different relatives pay for each child or a school or scheme funds one child's lessons. Always show each student's name on the session lines so the family can check dates quickly.",
+      },
+      {
+        q: "What if a parent disputes a session on my tutoring invoice?",
+        a: "Check your records first: the lesson date, start and end time, and any messages confirming or cancelling it. Share them calmly with the parent. If you made an error, correct it with a credit on the next invoice or a corrected invoice with a new number, rather than altering the old one. A simple lesson log with dates and topics prevents most disagreements.",
+      },
+      {
+        q: "Should tutors charge for lesson preparation time?",
+        a: "Most tutors build normal preparation into their session rate rather than billing it separately. Extra work beyond a regular lesson, such as marking full practice papers, writing a custom revision plan or preparing for an unfamiliar exam specification, can be billed as its own line if the family agreed in advance. Put this in your terms so parents know what the rate covers.",
       },
     ],
     content: `
@@ -905,6 +1045,26 @@ export const INDUSTRY_POSTS_B: PostDraft[] = [
         q: "Do caterers charge sales tax?",
         a: "In many US states, catered food and related charges are subject to sales tax, and service charges may be taxable too. In the UK, catering is generally standard-rated for VAT. Rules vary, so confirm with your tax authority or accountant.",
       },
+      {
+        q: "How should caterers set a per-person price?",
+        a: "Start with your food cost per guest for the menu, then add labor, equipment, transport, overhead and profit. Many caterers aim to keep food cost at a set share of the per-person price, but the right share depends on your menu and service style. Price staffing, rentals and service charges separately so clients can see exactly what the per-person rate covers.",
+      },
+      {
+        q: "What happens to a catering deposit if the event is cancelled?",
+        a: "That depends on your contract. Many catering contracts make the deposit non-refundable because the date was reserved and other bookings turned away, and some scale cancellation fees by how close to the event it is cancelled. Local consumer law can limit what you keep if it far exceeds your actual loss. Send a statement showing the deposit, any fee retained and any refund due.",
+      },
+      {
+        q: "Should caterers charge for menu tastings?",
+        a: "Many caterers charge for tastings, especially for large events, then credit the fee against the final invoice if the client books. Some offer tastings free only after the contract is signed. Whatever you choose, state it in your proposal and show it on the invoice, either as its own line or as a credit on the final bill, such as 'Tasting fee credit, 12 Aug 2026'.",
+      },
+      {
+        q: "Do I need a sales tax permit to cater events?",
+        a: "In US states that tax catered food, you generally need a seller's permit or sales tax registration before collecting tax, and you must file returns on the schedule your state sets. Events in another state or city may carry different rates or rules. Show your permit number on invoices where your state expects it, and check with your state revenue department before your first event.",
+      },
+      {
+        q: "Can I charge a fee if the client changes the menu late?",
+        a: "Yes, if your contract sets a deadline for menu changes and explains the fee. Late changes can waste ingredients already bought and require extra prep, so many caterers charge for wasted food plus any price difference. Show it as a separate line with the date the change was requested, and confirm the cost with the client in writing before you invoice it.",
+      },
     ],
     content: `
 <p><strong>Quick answer:</strong> A catering invoice template is a billing layout caterers use to charge clients for food and event services. It should show the event details and guaranteed guest count, menu items priced per person or per item, staffing hours, equipment and linen rentals, any service charge, sales tax, deposits already received, the balance due and the due date. Because most catering is billed in stages, the invoice should always make clear what has been paid and what remains.</p>
@@ -1033,6 +1193,26 @@ export const INDUSTRY_POSTS_B: PostDraft[] = [
       {
         q: "Do HVAC contractors charge sales tax?",
         a: "It depends on the state and the job. Some states tax parts and equipment on repairs, some tax repair labor, and new installations may be treated as construction contracts. Check your state revenue department's rules or ask an accountant.",
+      },
+      {
+        q: "How should I invoice a repair on an R-22 system?",
+        a: "Show the R-22 as its own line with the quantity in pounds and your per-pound price. US production and import of R-22 ended on January 1, 2020, so servicing relies on reclaimed or previously produced refrigerant, and prices can be high and change quickly. Recommend the customer consider replacement options if the system keeps leaking, and record the amount added.",
+      },
+      {
+        q: "How much should I charge for an HVAC maintenance plan?",
+        a: "Build the price from the work included: the number of tune-up visits a year, the average time and materials each takes, travel, and the cost of member benefits such as priority service or repair discounts. Then compare with local competitors. Monthly pricing is usually the annual price divided by 12, sometimes slightly higher to cover billing costs. Review prices when labor costs change.",
+      },
+      {
+        q: "Can customers still get the federal tax credit for a new heat pump?",
+        a: "The federal 25C energy efficient home improvement credit ended for property placed in service after December 31, 2025, so 2026 installations generally do not qualify. State, local and utility rebates may still be available. Put the make, model, serial numbers and efficiency ratings on the invoice so customers can apply, but point them to each program's rules rather than promising eligibility.",
+      },
+      {
+        q: "How do I bill for ductwork repairs or duct cleaning?",
+        a: "List ductwork as its own section: the scope, such as replacing flex duct to one bedroom or sealing joints in the attic, the materials used, labor hours or a fixed price, and any testing performed. For duct cleaning, state the number of vents or system size you priced. Before and after photos or airflow readings help customers see the value of work they cannot easily inspect.",
+      },
+      {
+        q: "Can I charge more for HVAC service during a heat wave?",
+        a: "You can set higher rates for after-hours or emergency calls, as long as customers are told before you dispatch. Raising prices sharply during a declared emergency can breach price-gouging laws in some states, particularly for essential services. Keep your standard rate card consistent, state emergency surcharges clearly, and check your state's rules whenever a state of emergency is declared.",
       },
     ],
     content: `

@@ -35,6 +35,22 @@ export const GUIDES_2026_POSTS: PostDraft[] = [
         q: "Can ChatGPT number my invoices automatically?",
         a: "No. ChatGPT does not keep a reliable record of numbers you have already issued, so it can repeat or skip numbers between chats. Keep your own sequence in a log or spreadsheet, or use a tool such as an invoice number generator, and give ChatGPT the exact number to print.",
       },
+      {
+        q: "Can ChatGPT turn a photo of a timesheet or receipt into invoice lines?",
+        a: "Often yes, if your plan supports image or file uploads. ChatGPT can read many typed and clear handwritten documents and draft line items from them. It can also misread numbers, dates and names, especially on blurry photos. Compare every extracted figure with the original before you use it, and do not upload documents containing personal or financial data you do not need to share.",
+      },
+      {
+        q: "Can ChatGPT write a payment reminder email for an overdue invoice?",
+        a: "Yes, this is one of its strengths. Give it the invoice number, amount, original due date, how many days overdue it is and the tone you want, from friendly to firm. Ask for a short email with a clear payment date. Check that it has not added late fees, legal threats or deadlines you did not ask for before you send it.",
+      },
+      {
+        q: "Can ChatGPT build an Excel invoice template with formulas?",
+        a: "It can write the formulas and, on plans with file features, may produce a spreadsheet file you can download. Ask for formulas for line totals, subtotal, tax and total due, then test them with simple numbers you can check by hand. Lock or protect the formula cells so they are not overwritten when you type in a new invoice.",
+      },
+      {
+        q: "Do I have to tell my client I used AI to make the invoice?",
+        a: "Generally no. What matters is that the invoice is accurate and contains the details your client and tax rules require, not which tool helped you write it. A contract may have its own rules about AI use for the work itself, so check your agreement. You remain responsible for every figure and statement on the invoice you send.",
+      },
     ],
     content: `
 <p><strong>Quick answer:</strong> To make a ChatGPT invoice, give the chatbot your business and client details, a unique invoice number, dates, each line item with quantity and rate, the exact tax rate and your payment terms, and ask for a formatted table or file. Then check every calculation, the tax rate and the required fields yourself before you export a PDF and send it.</p>
@@ -169,6 +185,26 @@ export const GUIDES_2026_POSTS: PostDraft[] = [
       {
         q: "Where should the QR code go on an invoice?",
         a: "Place it near the total or in the payment section, at a size that scans easily when printed or viewed on screen, with clear white space around it. Tax QR codes such as ZATCA or FBR codes are usually placed near the invoice number or footer. Do not shrink a QR so much that a phone camera struggles to read it.",
+      },
+      {
+        q: "Can I put a PayPal or Stripe payment link QR code on an invoice?",
+        a: "Yes. A QR code that opens a payment page is optional and can make card payments easier. It is a plain URL QR, so it has no tax role. Test that the link opens the right amount and invoice, and print the payment link or alternative methods as text too. Tell clients how to verify your payment details to reduce fraud risk.",
+      },
+      {
+        q: "Does a QR code on an invoice expire?",
+        a: "The QR image itself does not expire, but what it points to might. An EPC or static UPI QR keeps working as long as the account details are valid. A QR that opens a hosted payment link stops working if the provider expires or cancels that link. Check the expiry settings of your payment provider and create a new code for each invoice with an amount.",
+      },
+      {
+        q: "Is the Swiss QR-bill mandatory on invoices?",
+        a: "The QR-bill replaced Switzerland's old orange and red payment slips, which were withdrawn on 30 September 2022. If you include a payment slip with an invoice in Switzerland, it now has to be a QR-bill. You are not obliged to include a payment slip at all, though, and can simply print bank details. Swiss banks and SIX publish the technical specification.",
+      },
+      {
+        q: "Can I use an EPC QR code for invoices in currencies other than euros?",
+        a: "No. The EPC QR code is designed for SEPA credit transfers, which are in euros only. For other currencies, use your bank's own payment QR if it offers one, a payment link, or plain bank details. Some countries have their own payment QR standards, such as the Swiss QR-bill or UPI in India, so use the format that matches the currency.",
+      },
+      {
+        q: "Do Malaysian e-invoices include a QR code?",
+        a: "Yes. Under Malaysia's e-invoicing system, once the tax authority's MyInvois system validates an e-invoice, the visual copy should include a QR code that links to the validated record so the buyer can check it. The code comes from the validation process, not from a generic generator. Confirm the current rules and phase-in dates with the Inland Revenue Board of Malaysia.",
       },
     ],
     content: `
@@ -318,6 +354,22 @@ export const GUIDES_2026_POSTS: PostDraft[] = [
         q: "Can I convert a PDF invoice into a Peppol invoice?",
         a: "Some access points offer a portal where you type invoice details or upload a document that they convert to Peppol BIS. The result is a new structured XML invoice; the PDF itself is not sent as the legal invoice, though it may be attached as a supporting document. Check the extracted data before sending.",
       },
+      {
+        q: "How long does it take to start sending Peppol invoices?",
+        a: "With accounting software that has Peppol built in, setup can be quick: you enable e-invoicing, confirm your company details and the provider registers your ID, which may take from minutes to a few days while it checks your details. API integrations take longer because your billing system must map its data to Peppol BIS. Start well before any mandate date.",
+      },
+      {
+        q: "Can I send Peppol invoices to customers in other countries?",
+        a: "Yes. Peppol is an international network, so you can send to any buyer registered with an access point, wherever they are. Your invoice still has to meet the VAT rules of the transaction and any national rules in the buyer's country, so check that your provider validates for that country. Cross-border VAT treatment, such as the reverse charge, is unchanged by Peppol.",
+      },
+      {
+        q: "Does a Peppol invoice need a digital signature?",
+        a: "Generally no signature is applied to the invoice itself. Security comes from the network: access points exchange messages over the AS4 protocol using certificates issued under Peppol, which confirms who sent the message and that it was not altered in transit. Some countries add their own requirements, so check national rules, but most small businesses do not need to sign invoices themselves.",
+      },
+      {
+        q: "Can I attach a timesheet or PDF to a Peppol invoice?",
+        a: "Usually yes. Peppol BIS Billing 3.0 allows supporting documents to be attached to the invoice, for example a timesheet or a PDF copy for reference. The XML invoice remains the legal invoice. Access points and buyers may limit file types or sizes, so check your provider's rules and keep attachments small and relevant.",
+      },
     ],
     content: `
 <p><strong>Quick answer:</strong> To send a Peppol invoice, sign up with a certified Peppol access point (often built into your accounting software), register your Peppol ID, look up your customer's Peppol ID in the Peppol Directory, create the invoice in Peppol BIS Billing 3.0 format with all required fields, then send it through the access point and confirm it was delivered.</p>
@@ -459,6 +511,26 @@ export const GUIDES_2026_POSTS: PostDraft[] = [
       {
         q: "How should I translate my business name on an Arabic invoice?",
         a: "Use the Arabic name exactly as it appears on your commercial registration or trade licence, if one is registered, rather than translating it yourself. If you only have an English registered name, many businesses show it in Latin script or a consistent transliteration. Your VAT number must be identical on both language versions.",
+      },
+      {
+        q: "Which font should I use for a bilingual Arabic-English invoice?",
+        a: "Choose one font family that includes both Latin and Arabic characters, such as Noto Sans with Noto Sans Arabic, or another typeface designed for both scripts, and make sure it is embedded in the PDF. Mixing unrelated fonts can make letters disconnect or fall back to a system font. Check the final PDF on another device before sending.",
+      },
+      {
+        q: "Should dates on a Saudi invoice be Hijri or Gregorian?",
+        a: "Gregorian dates are widely used on Saudi tax invoices, and ZATCA's e-invoice XML uses standard Gregorian date formats. Adding the Hijri date alongside is optional and sometimes preferred by customers or government bodies. Whatever you choose, make sure the invoice date and supply date are consistent between the Arabic and English text. Confirm any specific requirement with ZATCA or your adviser.",
+      },
+      {
+        q: "Which language prevails if the Arabic and English versions differ?",
+        a: "Avoid the question by making both versions match exactly. In Saudi Arabia, authorities and courts work in Arabic, so the Arabic text is likely to be given weight in a dispute. Many businesses add a clause to their contracts stating which language prevails. Have a native speaker check your template and any custom item descriptions before you use them.",
+      },
+      {
+        q: "Do other Gulf countries need Arabic invoices?",
+        a: "Rules differ by country. Bahrain and Oman have VAT systems with their own invoice requirements, while Qatar and Kuwait had not introduced VAT at the time of writing. Language rules for tax invoices are set by each tax authority, so check with the relevant authority, such as Bahrain's NBR or Oman's Tax Authority, before assuming the Saudi or UAE approach applies.",
+      },
+      {
+        q: "What are the Arabic terms for quotation, proforma invoice and receipt?",
+        a: "Common terms are عرض سعر for a quotation, فاتورة مبدئية for a proforma invoice and إيصال or سند قبض for a receipt. Usage varies between countries and industries, so have a native speaker or your accountant confirm the wording for your market. Make sure documents that are not tax invoices are not titled فاتورة ضريبية.",
       },
     ],
     content: `
@@ -617,6 +689,26 @@ export const GUIDES_2026_POSTS: PostDraft[] = [
       {
         q: "Can I automate invoice emails and reminders?",
         a: "Yes, with accounting or invoicing software that sends invoices and scheduled reminders. Our free generator creates the PDF but does not send emails or reminders, so you would send the invoice from your own email account using the subject lines in this guide and set calendar reminders for follow-ups.",
+      },
+      {
+        q: "Who should I send the invoice email to?",
+        a: "Send it to the person or address the client told you to use, which for larger companies is often an accounts payable mailbox or supplier portal. Copy your project contact so they can approve it quickly. If you are unsure, ask before the first invoice. Sending only to your day-to-day contact is a common reason invoices sit unpaid in someone's inbox.",
+      },
+      {
+        q: "When is the best time to send an invoice email?",
+        a: "Send it as soon as the work or milestone is complete, or on the billing date in your contract. There is no reliable universal best hour, but sending during the client's business hours on a working day makes it more likely to be seen and forwarded. For monthly billing, sending on the same date each month helps clients expect it.",
+      },
+      {
+        q: "Should I attach the invoice as a PDF or send a link?",
+        a: "A PDF attachment is the safest default because the client can file and forward it, and many accounts teams will not click unknown links. A secure payment or viewing link is useful alongside it if your software provides one. Keep the PDF small and name it to match the subject line, so it is easy to find later.",
+      },
+      {
+        q: "What should I do if my invoice emails go to spam?",
+        a: "Ask the client to check their spam folder and add your address to their safe senders. Send from a business domain set up with email authentication such as SPF, DKIM and DMARC, avoid all caps and excessive punctuation in the subject, and keep attachments small. For important invoices, follow up by phone or message to confirm the email arrived.",
+      },
+      {
+        q: "What subject line should I use for a quote or estimate?",
+        a: "Use the same structure as an invoice, with the document type changed: 'Quote Q-2026-031 from Brightline Studio: website redesign, valid until 30 Nov 2026'. Including the quote number, project and expiry date makes it easy to find and approve. When the client accepts, reference the quote number in the invoice subject line so the two documents link up.",
       },
     ],
     content: `

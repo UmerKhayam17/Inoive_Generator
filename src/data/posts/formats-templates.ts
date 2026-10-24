@@ -31,6 +31,26 @@ export const FORMAT_TEMPLATE_POSTS: PostDraft[] = [
         q: "Should a quotation include VAT or GST?",
         a: "If you are registered for VAT or GST and the supply is taxable, show the tax separately and the tax-inclusive total, so the customer knows exactly what they will pay. If you quote prices excluding tax, say so clearly next to the total to avoid disputes later.",
       },
+      {
+        q: "Can I change the price after a customer accepts my quotation?",
+        a: "Not on your own, once the customer has accepted within the validity period. An accepted quotation can bind you to the quoted price, so any change needs the customer's written agreement. If costs could move, say so on the quote, for example 'Steel prices subject to change after 7 days', or quote a shorter validity. For genuine scope changes, issue a revised quotation and get it accepted before you do the extra work.",
+      },
+      {
+        q: "Does a quotation need a signature or company stamp?",
+        a: "Usually it is not a legal requirement, but many buyers expect one. In India, Pakistan and the Gulf, corporate and government purchasers often want quotations on letterhead with a signature and company stamp before they will consider them. Elsewhere a typed name and title is normally enough. If the buyer has a vendor form or tender instructions, follow those exactly, because an unsigned quote can be rejected on a technicality.",
+      },
+      {
+        q: "What is the difference between a quotation and a proforma invoice?",
+        a: "A quotation offers a price before the customer has decided to buy. A proforma invoice comes after the customer has agreed, and shows exactly what the final invoice will contain so they can arrange payment, approvals or an import license. Neither is a tax invoice or a demand for payment in the legal sense. Send the quote first, then a proforma only if the buyer asks for one.",
+      },
+      {
+        q: "How do I write a quotation for services instead of goods?",
+        a: "Use the same layout, but describe the work in deliverables rather than items. State the scope, the number of revision rounds or visits included, the timeline and what is excluded. Price it per hour, per day or as a fixed fee, and say what happens if the work runs over, for example 'Additional hours billed at AED 250 per hour'. A clear scope is what stops a service quote turning into a dispute.",
+      },
+      {
+        q: "How should I number a revised quotation?",
+        a: "Keep the original number and add a revision suffix, such as QT-2026-045-R1, then R2 for the next change. Put a new date and validity date on each revision and write 'This revision replaces QT-2026-045' near the top. The buyer can then see which version is current, and your records show how the offer changed. Never reuse the same number for a different customer or job.",
+      },
     ],
     content: `
 <p><strong>Quick answer:</strong> A quotation format is a fixed layout for offering a price before work starts. It shows your business details, the title "Quotation", a quote number, the issue date and a valid-until date, the customer's details, an itemised table of quantities, rates and amounts, tax, the total, your terms (payment, delivery, exclusions) and how the customer accepts the quote.</p>
@@ -151,6 +171,30 @@ export const FORMAT_TEMPLATE_POSTS: PostDraft[] = [
       {
         q: "Can I write a bill by hand?",
         a: "Yes, many small shops still use printed bill books with carbon copies. Make sure the books are pre-numbered and you keep the duplicate copy. If you are registered for sales tax or GST, check whether your tax authority requires a particular format or electronic invoicing for your business type.",
+      },
+      {
+        q: "What is the difference between a cash memo and a credit bill?",
+        a: "A cash memo is a bill for a sale paid on the spot, so it doubles as proof of payment. A credit bill is issued when the customer will pay later, and it should show a due date and stay in your list of amounts owed until it is settled. Many shops in South Asia print both types in separate, numbered books so cash and credit sales are easy to tell apart.",
+      },
+      {
+        q: "How do I number bills if I have more than one counter or bill book?",
+        a: "Give each counter or book its own prefix and keep each series unbroken, for example A-1001 onward for counter one and B-1001 onward for counter two. That way two cashiers never issue the same number on the same day. Record which range each book covers. If you are registered for GST or sales tax, check whether your tax authority allows multiple series and how they must be reported.",
+      },
+      {
+        q: "Can I send a bill on WhatsApp instead of handing over paper?",
+        a: "Yes, for most small businesses a PDF bill shared on WhatsApp or email works fine, as long as it contains the same details as a paper bill and you keep your own copy. Send a PDF rather than a photo so the figures stay sharp. If you are registered for tax, check whether your country requires a specific electronic invoicing system, because a plain PDF may not satisfy that rule.",
+      },
+      {
+        q: "What should I do if I make a mistake on a bill?",
+        a: "Do not overwrite or scratch out figures. Mark the wrong bill 'Cancelled', keep all copies so the number sequence has no gap, and issue a new bill with the correct details. If the customer has already paid or the bill has gone into tax records, a credit note or debit note may be the right way to correct it. Registered businesses should follow their tax authority's correction rules.",
+      },
+      {
+        q: "Do I have to give a bill for every small sale?",
+        a: "It depends on your country and tax status. Unregistered shops often have no strict legal duty, but a bill is still good practice and many customers ask for one. Registered businesses usually must document every sale, although some systems relax this for small amounts. In India, for example, GST rules allow a daily consolidated invoice for certain low-value sales to unregistered buyers who do not request one. Check your tax authority's current rules.",
+      },
+      {
+        q: "Should prices on a shop bill include or exclude tax?",
+        a: "Either can work if you are clear about it. Retail customers usually expect tax-inclusive prices, so many shops show the inclusive price and state the tax included at the bottom. Business customers often prefer prices before tax with the tax on its own line. If you are not registered for GST, VAT or sales tax, do not show a tax line at all, because you cannot charge tax you are not registered to collect.",
       },
     ],
     content: `
@@ -286,6 +330,26 @@ Goods once sold can be exchanged within 7 days with this bill.
         q: "Is a delivery note the same as a delivery challan?",
         a: "They do a similar job. 'Delivery challan' is the term used in India and Pakistan, and in India it has specific GST requirements. 'Delivery note' is the general international term for a document that lists goods delivered and is signed by the receiver as proof of delivery.",
       },
+      {
+        q: "How long can goods sent for job work stay with the job worker?",
+        a: "Under Section 143 of the CGST Act, inputs must come back, or be supplied from the job worker's premises, within one year, and capital goods within three years, of being sent. The Commissioner can extend these periods on sufficient cause. Moulds, dies, jigs, fixtures and tools are not covered by the time limit. If the deadline is missed, the original dispatch is treated as a supply on the date the goods were sent.",
+      },
+      {
+        q: "Do I need an e-way bill for inter-state job work below ₹50,000?",
+        a: "Generally, yes. The ₹50,000 consignment value threshold that applies to most movements does not help with inter-state job work: when a principal or registered job worker moves goods for job work to another state, an e-way bill is typically required whatever the value. Intra-state job work movements follow state-specific rules, which vary. Because these provisions are amended from time to time, check the current position on the e-way bill portal before dispatch.",
+      },
+      {
+        q: "When must a tax invoice replace a challan for goods sent on approval?",
+        a: "Goods sent on approval or sale-or-return basis can move on a delivery challan. Under Section 31(7) of the CGST Act, the tax invoice must be issued when the customer confirms the purchase or six months from the date of removal, whichever comes first. So if a customer keeps approval goods beyond six months without deciding, you should treat them as sold and invoice them. Track approval challans in a register with their removal dates.",
+      },
+      {
+        q: "Can I send goods to my branch in another state on a delivery challan?",
+        a: "Usually not. Under GST, branches registered in different states have separate GSTINs and are treated as distinct persons, so an inter-state branch transfer is generally a taxable supply that needs a tax invoice, even without consideration. A delivery challan suits movements within the same registration, such as to a godown in the same state that is listed on your GST registration. Confirm the treatment with your tax adviser for your specific setup.",
+      },
+      {
+        q: "What is the difference between a returnable and a non-returnable delivery challan?",
+        a: "A returnable challan covers goods you expect to come back, such as items sent for job work, repair, testing, exhibition or approval. You track it until the goods return. A non-returnable challan covers goods that will not come back, such as supplies where the invoice follows later or certain free samples. These are business labels rather than terms in Rule 55, but marking the type on the challan keeps your register and follow-up simple.",
+      },
     ],
     content: `
 <p><strong>Quick answer:</strong> A delivery challan format records goods being moved without a tax invoice. Under India's GST, Rule 55 of the CGST Rules requires a serially numbered challan (up to 16 characters) showing the date, consignor and consignee details with GSTINs, HSN code and description, quantity, taxable value, tax details where it is a supply, place of supply for inter-state moves, and a signature.</p>
@@ -409,6 +473,26 @@ Vehicle: [vehicle number] · Transporter: Own vehicle</p>
       {
         q: "What is better than Canva for invoices?",
         a: "If design is your priority, Canva is excellent. If you send invoices often, a tool that calculates totals and tax automatically, such as a free invoice generator or a spreadsheet template, reduces errors. Many people use Canva only to design the look, then use a calculating tool for the actual invoices.",
+      },
+      {
+        q: "Can I make and edit a Canva invoice on my phone?",
+        a: "Yes. Canva has mobile apps for iPhone and Android, so you can open an invoice design, change the text and download a PDF on the go. The small screen makes it easier to miss a wrong total or an old client name, so zoom in and check every figure before you share it. For frequent invoicing on a phone, a form-based tool that calculates totals is usually quicker.",
+      },
+      {
+        q: "How do I add VAT, GST or sales tax to a Canva invoice?",
+        a: "Work it out yourself and type the figures in. Calculate the subtotal after any discount, multiply by the tax rate, round to two decimals, and show the rate, the tax amount and the tax-inclusive total on separate lines. Add your tax registration number in the header. Only include tax if you are registered to charge it, and check your country's rules on what a tax invoice must show.",
+      },
+      {
+        q: "Which download format should I use for a Canva invoice?",
+        a: "Choose PDF. Canva offers a standard PDF and a print-quality PDF; the standard one gives a smaller file that is ideal for email, while the print version suits professional printing. Avoid sending a PNG or JPG, because images are harder for accounts teams to file and the text cannot be searched or copied. Open the downloaded PDF and check it before sending.",
+      },
+      {
+        q: "Can I send an invoice to a client directly from Canva?",
+        a: "You can share a view link to a design, but Canva is not a billing system. It will not log invoices as sent, record payments or send reminders. Most businesses download the PDF and email it from their own account, with the invoice number and due date in the subject line, then record it in a tracker. That gives you a clear sent record if the client later says it never arrived.",
+      },
+      {
+        q: "How do I reuse my Canva invoice design for every new invoice?",
+        a: "Keep one master design, named something like 'Invoice MASTER', with blank or placeholder figures, and never edit it directly. For each new invoice, duplicate the master, then fill in the client, number, dates and lines. Starting from a clean master rather than last month's invoice reduces the risk of sending old details to a new client, which is the most common mistake with duplicated designs.",
       },
     ],
     content: `
@@ -541,6 +625,30 @@ Vehicle: [vehicle number] · Transporter: Own vehicle</p>
       {
         q: "Can I use a simple invoice template if I am not a registered business?",
         a: "Yes. Individuals and sole traders can invoice under their own name. Use your legal name, and include any tax registration only if you actually have one. Our guide on invoicing without a business explains the details.",
+      },
+      {
+        q: "Can I use the same simple invoice template for every client?",
+        a: "Yes, and you should. Using one consistent layout makes your invoices recognizable and quicker for clients to approve. For each invoice, change only the client details, the invoice number, the dates and the line items. Our generator keeps your last draft in your browser on that device, so your own details stay filled in. Just double-check that nothing from the previous client's invoice is left behind.",
+      },
+      {
+        q: "What is the difference between a simple invoice and a receipt?",
+        a: "An invoice asks the client to pay and shows a due date. A receipt confirms that payment has already been received, with the date and method. If a client pays on the spot, you can mark the invoice 'Paid' with the payment date, or issue a separate receipt. Keep both documents numbered so you can match payments to invoices later.",
+      },
+      {
+        q: "Do I need to put my address on a simple invoice?",
+        a: "In most cases, yes. Business clients usually need your address for their supplier records, and VAT or GST invoices in many countries must show the supplier's address by law. If you work from home and prefer privacy, a business mailing address or PO box may be acceptable where your tax rules allow it. Check what your tax authority requires if you are registered for tax.",
+      },
+      {
+        q: "What payment terms should I put on a simple invoice?",
+        a: "Pick one clear term and pair it with a real date. 'Due on receipt' suits small jobs for individuals, while Net 14 or Net 30 is common for business clients. Write it as 'Due 6 November 2026 (Net 14)' so nobody has to count days. If you agreed terms in a contract or quote, use exactly the same terms on the invoice to avoid confusion.",
+      },
+      {
+        q: "How can I make a simple invoice look professional without a logo?",
+        a: "Use your name or business name in a larger, bold font as the header, keep one readable typeface, and leave plenty of white space. Align the numbers in the amount column and make the total due stand out in bold. Correct spelling, consistent dates and complete payment details matter more to a client than graphics. A clean minimal template does most of this for you.",
+      },
+      {
+        q: "Can a simple invoice have just one line item?",
+        a: "Yes. A single line is fine for a fixed-fee job, as long as the description is specific, such as 'Website homepage redesign, 2 revision rounds, delivered 20 October 2026'. Avoid one vague line like 'Services' for a large amount, because the client's accounts team may send it back for detail. If the client asked for a breakdown, split the work into several lines instead.",
       },
     ],
     content: `
@@ -690,6 +798,26 @@ Bill to: Northpoint Marketing Ltd, Accounts Payable</p>
         q: "Should I send an invoice as a PDF or a Word file?",
         a: "Send a PDF. It looks the same on every device, it is harder to alter by accident, and accounts teams can file it directly. Keep the Word or spreadsheet version for yourself as the editable source.",
       },
+      {
+        q: "How do I turn a Word, Excel or Google Docs invoice into a PDF?",
+        a: "In Word or Excel, use File, then Save As or Export, and choose PDF. In Google Docs or Sheets, use File, then Download, then PDF document. Before exporting a spreadsheet, set the print area and choose to fit the sheet to one page wide so columns are not cut off. Open the PDF afterwards and check that every total and page break looks right.",
+      },
+      {
+        q: "Can I sign an invoice PDF electronically?",
+        a: "Yes. Most PDF readers have a fill and sign tool that lets you add a typed, drawn or image signature before sending. In our generator you can upload a signature image so it appears on every PDF automatically. Most countries do not require invoices to be signed at all, but some clients, especially in South Asia and the Gulf, still expect a signature or stamp.",
+      },
+      {
+        q: "How do I stop my PDF invoice emails going to spam?",
+        a: "Send from a professional address, ideally on your own domain, and use a plain subject line with the invoice number, such as 'Invoice INV-2026-031 from Maya Collins'. Write a short message in the email body rather than sending a bare attachment, avoid link shorteners, and keep the PDF small. Ask new clients to add your address to their contacts and confirm which inbox handles invoices.",
+      },
+      {
+        q: "How big should an invoice PDF file be?",
+        a: "As small as possible while still readable, ideally well under a few megabytes. Large files can be blocked or slow to open, and email providers set attachment limits, often around 20 to 25 MB. The usual cause of a bloated invoice is a high-resolution logo, so resize your logo image before adding it. If you attach timesheets or receipts, compress them or send them as a separate file.",
+      },
+      {
+        q: "Can someone alter a PDF invoice after I send it?",
+        a: "Yes, anyone with a PDF editor can change a copy, which is why invoice fraud often involves altered bank details. Protect yourself by keeping the original PDF you sent, numbering every invoice, and telling clients that your bank details will never change by email alone. Ask clients to confirm any change by phone. If there is a dispute, your saved original shows what you actually issued.",
+      },
     ],
     content: `
 <p><strong>Quick answer:</strong> An invoice template PDF comes in three forms. A fillable PDF has form fields you type into. A printable PDF is a blank layout you fill by hand. A generated PDF is created from a template tool after you enter the details, so totals are already calculated. For most small businesses, the generated PDF is the quickest and least error-prone option.</p>
@@ -813,6 +941,26 @@ Bill to: Northpoint Marketing Ltd, Accounts Payable</p>
       {
         q: "How do I show a deposit on a service invoice?",
         a: "List the full work on the final invoice as normal, then subtract the deposit already received to show the balance due. Refer to the deposit invoice number or payment date so the client can match it.",
+      },
+      {
+        q: "How do I charge for travel time on a service invoice?",
+        a: "Show travel as its own line so the client can see it separately from the work itself. You can bill it hourly, sometimes at a reduced rate, as a flat charge per visit, or as mileage at an agreed rate per mile or kilometer. Whatever method you use, agree it before the job starts and state it in your quote or terms, so the line does not surprise the client.",
+      },
+      {
+        q: "Can I charge a minimum call-out fee on a service invoice?",
+        a: "Yes, if the client agreed to it before you attended. Many trades and IT support businesses charge a minimum, such as the first hour or a fixed call-out fee, even for very short jobs. Show it on the invoice as a clear line, for example 'Call-out charge, includes first 60 minutes on site', then bill any further time separately. Put the policy in your quote or booking confirmation.",
+      },
+      {
+        q: "How do I invoice a client who cancels a service at short notice?",
+        a: "You can invoice a cancellation fee only if your terms said so before the booking, for example '50% of the booking fee for cancellations within 24 hours'. Issue a normal invoice with one line describing the cancelled appointment, its date and the fee, and refer to the terms the client accepted. If there was no cancellation clause, you can ask, but the client may not be obliged to pay.",
+      },
+      {
+        q: "Should I invoice materials separately from labour?",
+        a: "Usually, yes. Listing parts or materials on their own lines, with quantities and prices, shows the client exactly what they paid for and makes queries easier to answer. It also matters for tax, because in some places goods are taxed differently from labour. If you add a markup to materials, agree it in advance. Keep supplier receipts in case the client asks to see them.",
+      },
+      {
+        q: "How do I invoice recurring services such as monthly maintenance?",
+        a: "Invoice on the same date each month, give each invoice a new number in your normal sequence, and state the service period, such as '1 to 30 November 2026'. Keep the description the same so the client's accounts team recognizes it. Our generator does not create recurring invoices automatically, but it saves your draft in the browser, so each month you can update the number, dates and period and download a new PDF.",
       },
     ],
     content: `
@@ -955,6 +1103,26 @@ Bill to: Larkspur Dental Clinic · PO: LDC-4471 · Service dates: 19–21 Octobe
         q: "What is a three-way match?",
         a: "A three-way match is an accounts payable check that compares the purchase order, the goods received note or delivery note, and the supplier's invoice. Payment is approved only when quantities and prices agree across all three.",
       },
+      {
+        q: "Can a supplier send an invoice without a purchase order?",
+        a: "Yes, unless the buyer requires one. Many small businesses buy without POs. Larger companies often have a 'no PO, no pay' policy, though, and their accounts payable team will return an invoice that does not quote a valid PO number. If you are the supplier, ask before starting work whether a PO is needed, and wait for the number so your invoice can be matched and paid.",
+      },
+      {
+        q: "What happens if the invoice amount does not match the purchase order?",
+        a: "The buyer's accounts team will usually put the invoice on hold until the difference is explained. Some companies allow a small tolerance, but anything larger needs action: either the buyer issues an amended PO for the extra quantity or price, or the supplier issues a corrected invoice or credit note. Agree any changes in writing before delivery so the documents still match at the end.",
+      },
+      {
+        q: "Can a purchase order be changed or cancelled after it is sent?",
+        a: "Usually by agreement. Before the supplier accepts it, a buyer can normally withdraw or amend a PO freely. After acceptance, changes are normally made with a written change order or amended PO that both sides accept, and cancellation may involve costs for work already done, depending on the PO terms and local law. Give the amended PO a revision number so everyone works from the latest version.",
+      },
+      {
+        q: "What is the difference between a purchase order and a sales order?",
+        a: "They describe the same deal from opposite sides. The buyer issues a purchase order to place the order with the supplier. The supplier then often creates a sales order in its own system to confirm the order internally, plan stock and schedule delivery. A sales order may be sent back to the buyer as an order confirmation, quoting the buyer's PO number.",
+      },
+      {
+        q: "How do I invoice a partial delivery against a purchase order?",
+        a: "Invoice only what you have delivered, quote the same PO number, and show the quantity shipped against the PO line. Note in the invoice what remains outstanding, for example '60 of 100 units delivered; balance to follow'. Each later delivery gets its own invoice quoting the PO. Check that the total invoiced never exceeds the PO value, because over-billed invoices are usually blocked.",
+      },
     ],
     content: `
 <p><strong>Quick answer:</strong> A purchase order template is the buyer's ordering document. A standard purchase order format includes a unique PO number, the date, buyer and supplier details, the delivery address, an item table with quantities and agreed unit prices, tax and total, the required delivery date, payment terms, a reference to the supplier's quote and an authorised signature.</p>
@@ -1096,6 +1264,26 @@ Quote ref: Q-88412 dated 20 October 2026 · Deliver by: 30 October 2026 · Terms
       {
         q: "When should I move from a spreadsheet to software?",
         a: "A spreadsheet works well for dozens of invoices a month. Consider accounting software when you have many clients paying part amounts, several people updating the tracker, or you need bank reconciliation and automatic reminders.",
+      },
+      {
+        q: "How do I calculate end-of-month or business-day due dates in a tracker?",
+        a: "Use date functions instead of adding days by hand. For a due date 30 business days after the issue date, use =WORKDAY(C2,30). For 'end of month following', use =EOMONTH(C2,1), which returns the last day of the next month. Both functions work in Excel and Google Sheets. Format the result as a date, and make sure the terms you calculate match those printed on the invoice.",
+      },
+      {
+        q: "Can I track invoices in different currencies in one spreadsheet?",
+        a: "Yes. Add a Currency column and never mix currencies in a single total. Use SUMIFS with the currency as a condition, such as =SUMIFS(G:G,N:N,\"USD\"), to total balances per currency. If you want one combined figure, add an exchange rate column and a converted balance column, and record the rate date. Remember that the amount you finally receive may differ because of exchange rates and fees.",
+      },
+      {
+        q: "How do I see which clients take the longest to pay?",
+        a: "First add a 'days to pay' column for paid invoices, using =IF(I2=\"\",\"\",I2-C2). Then calculate the average for each client with AVERAGEIFS, for example =AVERAGEIFS(N:N,B:B,\"Acme Ltd\"), where N holds days to pay. A pivot table with Client as rows and the average of days to pay as values does the same for every client at once. Use the result to adjust deposits or terms.",
+      },
+      {
+        q: "How can I spot duplicate invoice numbers in my tracker?",
+        a: "Add a conditional formatting rule to the invoice number column with the custom formula =COUNTIF($A:$A,$A2)>1 and a bright fill. Any number that appears more than once will be highlighted immediately. You can also sort by invoice number to see gaps. Duplicates cause double payments and confusion with clients, so fix them at once by correcting the record or reissuing the invoice with a new number.",
+      },
+      {
+        q: "Is an invoice tracker spreadsheet enough for my tax records?",
+        a: "No, not on its own. A tracker is a summary that helps you manage cash flow, but tax authorities generally expect you to keep the invoices themselves, plus receipts and bank records, for a set number of years. Keep every invoice PDF alongside the tracker, and back up both. Check your tax authority's record-keeping rules, such as those from the IRS or HMRC, for the period that applies to you.",
       },
     ],
     content: `
@@ -1247,6 +1435,26 @@ Quote ref: Q-88412 dated 20 October 2026 · Deliver by: 30 October 2026 · Terms
       {
         q: "Do I need a packing slip for every order?",
         a: "It is not usually a legal requirement for domestic orders, but it is good practice. It helps the customer check the delivery, reduces 'missing item' claims and makes returns easier. Some marketplaces and business customers require one.",
+      },
+      {
+        q: "Who creates the packing slip, the seller or the warehouse?",
+        a: "The seller is responsible for it, but it is usually printed by whoever packs the order. That might be you, your e-commerce platform's fulfillment tools, or a third-party logistics warehouse working on your behalf. The invoice, by contrast, normally comes from your sales or accounts side. Make sure both documents are generated from the same order record so the order numbers and quantities always match.",
+      },
+      {
+        q: "Can a packing slip be used as proof of delivery?",
+        a: "Not by itself. A packing slip shows what you packed, not what the customer received. Proof of delivery is usually a signed delivery note, a carrier's signature record or tracking confirmation, sometimes with a photo. If you deliver goods yourself, ask the receiver to sign and date a copy of the packing slip or delivery note, noting any damage or shortages, and keep that signed copy.",
+      },
+      {
+        q: "What is a blind packing slip for dropshipping?",
+        a: "A blind packing slip leaves out the supplier's name and prices, so a dropshipped order looks as if it came straight from your shop. You ask your supplier to include either a plain slip or one with your own branding and returns address. The customer still gets the invoice or order confirmation from you, while the supplier invoices you separately for the goods at wholesale prices.",
+      },
+      {
+        q: "What is the difference between a packing slip and a bill of lading?",
+        a: "A packing slip is the seller's list of what is inside the package, mainly for the receiver. A bill of lading is the carrier's document for freight shipments: it acts as a receipt for the goods, sets out the terms of carriage and, for some ocean shipments, works as a document of title. Parcel shipments usually use a shipping label and tracking record instead of a bill of lading.",
+      },
+      {
+        q: "What documents do I need to post or courier a parcel abroad?",
+        a: "Commercial courier shipments usually need a commercial invoice showing the goods, their value and their origin, and larger consignments often add a packing list. Postal parcels use a customs declaration form, such as CN22 or CN23, depending on value and destination. A packing slip alone is never enough for customs. Requirements vary by country and carrier, so check your carrier's guidance and the destination's customs rules before shipping.",
       },
     ],
     content: `

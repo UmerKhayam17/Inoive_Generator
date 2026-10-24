@@ -35,6 +35,26 @@ export const HOW_TO_POSTS_A: PostDraft[] = [
         q: "Is it better to make an invoice in Word or Excel?",
         a: "Excel is better if you want formulas to calculate line totals and tax. Word is fine for very simple invoices with one or two lines. Many people now skip both and use a free online invoice generator that handles layout and maths for them.",
       },
+      {
+        q: "Can I make an invoice in Word for free?",
+        a: "Yes, if you use Word for the web. At the time of writing, Microsoft offers a free browser version of Word with a free Microsoft account, and files save to OneDrive. It has tables, templates and PDF download, but fewer features than the desktop app. Check Microsoft's current plans before relying on it, as what is included in the free tier can change.",
+      },
+      {
+        q: "How do I save a Word invoice as a reusable template?",
+        a: "Save your master copy as a Word Template (.dotx) instead of a normal document. When you open a .dotx file, Word creates a new untitled copy, so you can't overwrite your master by accident. Fill in the copy, save it with the invoice number in the file name, and export it to PDF. Keep only your business details and empty tables in the template.",
+      },
+      {
+        q: "How do I stop my logo from moving around in a Word invoice?",
+        a: "Place the logo inside the document header or inside a borderless table cell, then set its text wrapping to in line with text. Floating images with square or tight wrapping tend to jump when you add lines to the table. Resize the logo before inserting it if you can, and preview the PDF to confirm nothing has shifted onto a second page.",
+      },
+      {
+        q: "How do I convert a Word invoice to PDF on Windows or Mac?",
+        a: "Use Save As or Export and choose PDF as the file type. On a Mac you can also use the print dialog's Save as PDF option. Before sending, open the PDF and check that fonts, the logo and the totals look exactly as they did in Word, because unusual fonts can be substituted if they are not embedded in the file.",
+      },
+      {
+        q: "Can I add my signature to a Word invoice?",
+        a: "Yes. Sign on plain white paper, scan or photograph it, crop it tightly and insert the image above your name. A signature is usually not legally required on an invoice, but some clients like it. Store the signature image somewhere private and send the invoice as a PDF, which makes the signature harder to copy than an editable .docx file.",
+      },
     ],
     content: `
 <p><strong>Quick answer:</strong> To make an invoice in Word, open a new document, either pick an invoice template from Word's template gallery or insert a table for your line items, then add your business details, the client's billing details, a unique invoice number, the issue and due dates, each service with its quantity and rate, the total due and your payment instructions. Check every calculation by hand, then save the file as a PDF and email the PDF to your client.</p>
@@ -164,6 +184,26 @@ export const HOW_TO_POSTS_A: PostDraft[] = [
       {
         q: "Can I send an Excel invoice to a client?",
         a: "Send a PDF export rather than the .xlsx file. A PDF cannot be edited by accident, looks the same on any device, and does not expose your formulas or other sheets in the workbook.",
+      },
+      {
+        q: "Can I use Excel to make invoices for free?",
+        a: "Yes, through Excel for the web. At the time of writing, Microsoft offers a free browser version of Excel with a free Microsoft account, saving files to OneDrive. The formulas in this guide, such as SUM, ROUND and TEXT, work there too, although some advanced desktop features are missing. Check Microsoft's current pricing page for what the free version includes.",
+      },
+      {
+        q: "Can Excel number my invoices automatically?",
+        a: "Not reliably on its own. A common approach is to keep a log sheet of issued invoices and use a formula such as =MAX(Log!A2:A500)+1 to suggest the next sequence number, which you then type into B4. Macros can increment the number on save, but they need a macro-enabled .xlsm file and can fail silently. Always check the number against your log.",
+      },
+      {
+        q: "How do I charge tax on only some line items in Excel?",
+        a: "Add a Taxable column (for example column E) and mark each line Y or N. Then calculate tax only on the taxable lines with a formula such as =ROUND(SUMIF(E12:E21,\"Y\",D12:D21)*C25,2). This keeps non-taxable items, such as some services or exempt goods, out of the tax base. Which items are taxable depends on your local rules, so confirm with your tax authority.",
+      },
+      {
+        q: "How do I show a different currency on an Excel invoice?",
+        a: "Format the rate and amount cells as Currency and pick the symbol you need, such as euro or pound, rather than typing the symbol into the cell. Typed symbols turn numbers into text and break your formulas. It also helps to add the three-letter currency code, for example EUR, next to the total due so international clients can't misread it.",
+      },
+      {
+        q: "What is the difference between an Excel template file and a normal workbook?",
+        a: "An Excel template (.xltx) opens as a new, unsaved copy every time, so your blank master stays untouched. A normal workbook (.xlsx) opens the file itself, which makes it easy to type over last month's invoice by mistake. Save your finished layout as a template, then save each new invoice under its own file name with the invoice number.",
       },
     ],
     content: `
@@ -311,6 +351,30 @@ export const HOW_TO_POSTS_A: PostDraft[] = [
         q: "How do I reuse a Google Docs invoice for the next client?",
         a: "Keep a master invoice document with only your business details filled in, then make a copy for each new invoice and rename it with the invoice number and client name. Never edit an invoice you have already sent.",
       },
+      {
+        q: "Can I email a Google Docs invoice as a PDF without downloading it?",
+        a: "Yes. Google Docs has an email option in the File menu that sends the document as an attachment, and you can choose PDF as the format. It sends from your Google account, so check the recipient and subject line carefully. Menu names change from time to time, and downloading the PDF first lets you check it before you send.",
+      },
+      {
+        q: "Can I make a Google Docs invoice on my phone?",
+        a: "Yes, the Google Docs app on iPhone and Android can open and edit your invoice, and its share and export options let you send a copy as a PDF. Editing tables on a small screen is fiddly, though, so it helps to build the master on a computer and only change the client, dates and line items on your phone.",
+      },
+      {
+        q: "How do I add a logo to a Google Docs invoice?",
+        a: "Insert the image into the document header or into the left cell of a borderless table at the top of the page. A PNG with a transparent background usually looks cleanest. Keep the logo small, set the image to sit in line with the text so it doesn't drift, and check the downloaded PDF to make sure it hasn't pushed the line items onto a second page.",
+      },
+      {
+        q: "Is an invoice made in Google Docs legally valid?",
+        a: "Generally yes. What makes an invoice valid is its content, not the software: a unique number, dates, both parties' details, what was supplied, the amount due and any tax details your rules require. If you are registered for VAT or GST, or work in a country that mandates structured e-invoices, check your tax authority's requirements, because a PDF from Docs may not be enough.",
+      },
+      {
+        q: "Can I use Google Docs to make invoices offline?",
+        a: "Yes, if you turn on offline access before you lose your connection. At the time of writing, this works in the Chrome or Microsoft Edge browser with Google's Docs Offline extension, and you enable it in your Google Drive settings. Changes sync when you reconnect. On a phone, you can mark individual files as available offline in the Docs or Drive app.",
+      },
+      {
+        q: "How do I stop my Google Docs invoice table from splitting across pages?",
+        a: "Open the table's properties and look for the option that controls whether a row can overflow across pages, and turn it off. You can also pin the header row so it repeats if the table does continue. Reducing spare rows, cutting top and bottom margins slightly or shrinking the logo often keeps a short invoice on one page.",
+      },
     ],
     content: `
 <p><strong>Quick answer:</strong> To make an invoice in Google Docs, open a new document or an invoice template from the template gallery, add your business details and the client's billing details, insert a table for line items with Description, Qty, Rate and Amount columns, and type in the subtotal, any tax and the total due. Add your invoice number, issue date, due date and payment instructions, then download the document as a PDF and email the PDF to your client.</p>
@@ -435,6 +499,26 @@ export const HOW_TO_POSTS_A: PostDraft[] = [
       {
         q: "Can Google Sheets track which invoices are paid?",
         a: "Yes. Add a log tab listing each invoice number, client, issue date, due date, amount and paid date. A simple formula such as =IF(F2=\"\",\"Unpaid\",\"Paid\") shows the status at a glance.",
+      },
+      {
+        q: "How do I add a dropdown of products with automatic prices in Google Sheets?",
+        a: "Create a Products tab with item names in column A and prices in column B. Use data validation on A12:A21 to show a dropdown from that list, then put a lookup in the rate column, for example =IFERROR(VLOOKUP(A12,Products!A:B,2,FALSE),\"\"). Choosing an item fills in its price, which saves typing and avoids rate mistakes.",
+      },
+      {
+        q: "Can Google Sheets convert currencies on my invoice?",
+        a: "Yes. The GOOGLEFINANCE function can fetch an exchange rate, for example =GOOGLEFINANCE(\"CURRENCY:USDEUR\"). Google notes that its data may be delayed and is not for trading purposes, so treat it as a guide. Once an invoice is issued, paste the rate in as a fixed value so the total doesn't change every time the file recalculates.",
+      },
+      {
+        q: "How do I back out tax from a tax-inclusive price in Google Sheets?",
+        a: "If your prices already include tax, divide by one plus the rate to find the net amount. With the gross total in D23 and the rate in C24, use =ROUND(D23/(1+C24),2) for the net figure and =D23 minus that net figure for the tax. Show net, tax and gross separately, as many VAT and GST rules expect.",
+      },
+      {
+        q: "Can I open my Google Sheets invoice template in Excel?",
+        a: "Yes. Download the file in Microsoft Excel (.xlsx) format and most formulas, such as SUM, ROUND, IF and TEXT, carry across. Google-specific functions like ARRAYFORMULA and GOOGLEFINANCE may not convert cleanly, so replace them with ordinary fill-down formulas and fixed values, then test the totals with a sample invoice before you rely on the Excel copy.",
+      },
+      {
+        q: "Who should I share my Google Sheets invoice file with?",
+        a: "Only people who need it, such as your bookkeeper or accountant, added by email with the lowest access level that works for them. Avoid link sharing set to anyone with the link, because the file usually holds every invoice and client you have. Use protected ranges for formulas, and send clients the PDF of their own invoice only.",
       },
     ],
     content: `
@@ -586,6 +670,26 @@ export const HOW_TO_POSTS_A: PostDraft[] = [
         q: "What should I write in the notes section of an invoice?",
         a: "Use the notes for payment instructions, a reminder of the due date, any late-fee terms you agreed, the payment reference to quote, and a short thank-you line.",
       },
+      {
+        q: "What is the difference between a quote and an invoice?",
+        a: "A quote, or estimate, proposes a price before any work is done and creates no obligation to pay. An invoice requests payment for goods or services that have been supplied or agreed, with a due date. Don't label an invoice as a quote, or the other way round. When you invoice, reference the accepted quote number so the client can match the two.",
+      },
+      {
+        q: "Do I need a registered business to write an invoice?",
+        a: "No. Sole traders and freelancers can invoice in their own legal name, adding a trading name if they use one. Whether you need to register a business, or register for sales tax, VAT or GST, depends on your country, your turnover and what you sell. Check with your tax authority, such as the IRS, HMRC or ATO, if you're unsure.",
+      },
+      {
+        q: "Can I write an invoice before the work is finished?",
+        a: "Yes, if your agreement allows it. Deposit, advance and milestone invoices are all billed before the whole job is complete. Label the invoice clearly, describe which stage or percentage it covers, and reference the contract. In VAT and GST systems, issuing an invoice or receiving payment can create a tax point, so check the tax timing with your accountant.",
+      },
+      {
+        q: "How long after finishing work can I send an invoice?",
+        a: "For most private sales there is no single legal deadline, but sending it promptly gets you paid sooner. Tax rules can set limits: for example, UK VAT invoices are generally due within 30 days of the tax point, and India's GST rules generally require invoices for services within 30 days of supply. Check the rules where you're registered.",
+      },
+      {
+        q: "Can I add interest for late payment if it isn't written on the invoice?",
+        a: "It depends on your contract and local law. In the UK, businesses can generally claim statutory interest of 8 percentage points above the Bank of England base rate on late business-to-business payments, plus fixed compensation, even without a written clause. Elsewhere you usually need agreed terms. Stating your late-payment terms on the invoice avoids surprises either way.",
+      },
     ],
     content: `
 <p><strong>Quick answer:</strong> To write an invoice, start with the word Invoice and a unique invoice number, add the issue date and a specific due date, then list your business details and your client's billing details. Write one line for each product or service with a clear description, quantity, rate and amount, show the subtotal, any tax or discount and the total due, and finish with payment instructions and terms. Send the invoice as a PDF and keep a copy.</p>
@@ -727,6 +831,26 @@ export const HOW_TO_POSTS_A: PostDraft[] = [
       {
         q: "Should I fill out an invoice by hand or digitally?",
         a: "Digitally, in most cases. A typed invoice is easier to read, the totals can be calculated automatically, and a PDF copy is easy to store and resend. Handwritten invoices are acceptable if complete and legible.",
+      },
+      {
+        q: "How do I fill out quantity and rate for a flat fee?",
+        a: "Enter a quantity of 1 and put the full agreed fee in the rate box, so the amount equals the fee. In the description, name the deliverable and reference the quote or contract, for example Logo design package per quote Q-2026-014. If you bill a flat fee in stages, add the stage, such as 50% on approval of concepts.",
+      },
+      {
+        q: "How do I fill out hours and minutes on an invoice?",
+        a: "Convert minutes to decimal hours before you enter the quantity: 15 minutes is 0.25, 30 minutes is 0.5 and 45 minutes is 0.75. So 3 hours 45 minutes becomes 3.75, and at 60.00 an hour the amount is 225.00. Use the same rounding rule every time, such as the nearest quarter hour, and agree it with your client.",
+      },
+      {
+        q: "Which date goes on the invoice, the work date or the day I send it?",
+        a: "The invoice date is the day you issue it. Put the date or period the work was done in the line description, or in a separate service or supply date field if your template has one. In VAT and GST systems the date of supply can affect when tax is due, so show it whenever it differs from the invoice date.",
+      },
+      {
+        q: "What do I put in the PO number box if the client never gave me one?",
+        a: "Leave it blank, or remove the box, rather than inventing a number or writing N/A. Before sending, it is worth asking the client whether they need a purchase order, because many companies' accounts payable systems reject invoices without one. If they send a PO later, it usually goes on the invoice they will actually pay.",
+      },
+      {
+        q: "How do I fill out an invoice for expenses or mileage?",
+        a: "Put each expense on its own line, labeled at cost or with any agreed markup, and keep the receipts. For mileage, enter the miles or kilometers as the quantity and your agreed per-mile rate as the rate. Government mileage rates, such as the IRS standard rate, are for tax purposes and don't set what you can bill, so agree a rate first.",
       },
     ],
     content: `
@@ -872,6 +996,26 @@ export const HOW_TO_POSTS_A: PostDraft[] = [
         q: "Can I take a photo of a handwritten invoice instead?",
         a: "You can, but it often looks unprofessional, may be hard to read and is easy to lose. A typed PDF invoice with calculated totals is clearer and easier for clients to approve and file.",
       },
+      {
+        q: "Can I add my logo and signature to an invoice from my phone?",
+        a: "Yes. In our free generator you can upload a logo and a signature image straight from your photo library. For the signature, sign on plain white paper, photograph it in good light and crop it tightly. A PNG logo with a transparent background looks cleanest. Do this once while setting up, and the saved draft keeps it for next time on that phone.",
+      },
+      {
+        q: "Will my invoice draft still be there if I close the browser on my phone?",
+        a: "In our generator, yes, as long as you use the same browser on the same phone. Drafts are saved in your browser's local storage, not in an online account. That means private browsing, clearing site data or switching phones will lose the draft, and it won't sync to your laptop. Download the PDF of every invoice you send as your permanent copy.",
+      },
+      {
+        q: "Can a client pay me directly from an invoice made on my phone?",
+        a: "Only if you include a way to pay. A PDF invoice is a document, and our generator doesn't process payments, so add a payment link from a provider you already use, such as your bank or card processor, or your bank transfer details in the notes. For on-the-spot card payments, you would need a separate card reader or payment app.",
+      },
+      {
+        q: "How do I print an invoice from my phone?",
+        a: "Open the downloaded PDF and use the share or print option. iPhones print to AirPrint-compatible printers, and Android phones use a print service built in or supplied by your printer maker. Your phone and printer usually need to be on the same Wi-Fi network. Check the paper size, A4 or US Letter, before printing so nothing is cut off.",
+      },
+      {
+        q: "Is it safe to send bank details in an invoice from my phone?",
+        a: "It is common practice, but take care. Invoice fraud often works by sending fake invoices with changed bank details, so send only to an email address you have verified, and tell clients that your bank details will never change by email alone. If a client asks to confirm your details, do it by phone using a number you already know.",
+      },
     ],
     content: `
 <p><strong>Quick answer:</strong> To make an invoice on your phone, open a free online invoice generator in your iPhone or Android browser, enter your business details and the client's details, add an invoice number, dates and line items, check the preview, then download the PDF and send it by email or your phone's share menu. It works on any modern phone, takes about five minutes and doesn't require installing an app.</p>
@@ -991,6 +1135,26 @@ export const HOW_TO_POSTS_A: PostDraft[] = [
       {
         q: "Should I ask a new client for a deposit?",
         a: "For larger or longer projects, a deposit of 25 to 50 percent is common and reduces your risk. Issue a deposit invoice before starting, then deduct the deposit on the final invoice.",
+      },
+      {
+        q: "What should I do if a new US client asks me for a W-9?",
+        a: "If you are a US person, a client paying you as a contractor will often ask for Form W-9 so they can report your payments to the IRS. It asks for your name and taxpayer identification number, such as an SSN or EIN. Fill it in from the official IRS form and send it securely, not as a plain email attachment, if possible.",
+      },
+      {
+        q: "Can I invoice a client without a signed contract?",
+        a: "Yes. An invoice can be issued for any work the client agreed to, and an email thread confirming scope and price can serve as evidence. Without written terms, though, disputes about price, deadlines or payment timing are harder to settle. For a first project, at least get the client to reply to an email confirming the quote and payment terms before you start.",
+      },
+      {
+        q: "What should I do if a new client doesn't pay the first invoice?",
+        a: "First check they received it and that nothing is missing, such as a PO number or supplier form. Then send polite reminders, call the accounts payable contact and restate the amount and due date. Pause further work if your contract allows. If it remains unpaid, options include agreed late fees, a formal demand letter, small claims court or a collection agency.",
+      },
+      {
+        q: "How do I invoice a client that uses a supplier portal?",
+        a: "Register as a supplier when invited, then submit each invoice through the portal exactly as instructed, often by uploading a PDF and typing key details such as the PO number and amount. Emailed invoices may be ignored. If the portal requires a structured format, such as XML or a Peppol e-invoice, you will need software that produces it, as a PDF alone won't do.",
+      },
+      {
+        q: "Should I invoice a new overseas client in my currency or theirs?",
+        a: "Agree it before you start. Billing in your own currency moves exchange-rate risk to the client; billing in theirs may make you easier to pay but your income will vary. Either way, show the currency code on the invoice, say who pays transfer fees, and give the right bank details for international payments, such as IBAN and SWIFT where relevant.",
       },
     ],
     content: `
@@ -1134,6 +1298,26 @@ export const HOW_TO_POSTS_A: PostDraft[] = [
       {
         q: "Do I need to tell the client when I void an invoice?",
         a: "Yes, if they have received it. Send a short note explaining that the invoice is cancelled, why, and whether a corrected invoice or credit note will follow, so they don't pay it or keep it in their system.",
+      },
+      {
+        q: "Can I void an invoice that has been partly paid?",
+        a: "Generally no. A payment needs somewhere to sit in your records, so voiding a partly paid invoice would leave it unexplained. Instead, issue a credit note for the unpaid or incorrect amount, or credit the invoice in full and either refund the payment or apply it to a replacement invoice. Many accounting systems block voids once a payment is applied.",
+      },
+      {
+        q: "How does voiding an invoice affect my sales tax or VAT return?",
+        a: "If you void an invoice before it is included in any tax return, it simply drops out of that period's figures. If it has already been reported, you normally adjust through a credit note in the current period rather than reopening the old return. The exact method and any deadlines vary by country, so check with your tax authority or accountant.",
+      },
+      {
+        q: "What should I write on a voided invoice?",
+        a: "Mark it VOID clearly, add the date you voided it, a short reason such as duplicate of INV-2026-0108 or sent to the wrong entity, and the number of any replacement invoice. Some businesses also add the initials of the person who approved it. Keep the original untouched alongside the marked copy so the full history is clear.",
+      },
+      {
+        q: "Can I void an invoice from a previous year?",
+        a: "Usually not, if that year's books are closed or its tax returns are filed. In that case, issue a credit note dated today that references the old invoice, so the correction falls in the current period. Reopening a closed year can create mismatches with filed returns and the client's records. Ask your accountant how your local rules treat prior-period adjustments.",
+      },
+      {
+        q: "Can I mark an invoice as void in a free invoice generator?",
+        a: "Yes, in ours. Recreate or reopen the invoice with the same details, turn on the watermark option and change its text to VOID, then download that copy and file it next to the original PDF. Our generator doesn't keep an invoice history online, so your own invoice log remains the official record: update it with the void status, date and reason.",
       },
     ],
     content: `

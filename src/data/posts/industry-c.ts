@@ -31,6 +31,26 @@ export const INDUSTRY_POSTS_C: PostDraft[] = [
         q: "How much deposit can a roofer ask for?",
         a: "It depends on the state. Some states cap home-improvement deposits at a fixed amount or a percentage of the contract, and others leave it to the contract. Check your state contractor licensing rules, then put the agreed deposit and the remaining payment schedule in writing.",
       },
+      {
+        q: "When does the insurer release recoverable depreciation on a roof claim?",
+        a: "Usually after the work is finished and the insurer sees proof of completion. Most replacement cost policies pay the actual cash value first, then release the withheld depreciation once the final invoice is submitted, sometimes with a certificate of completion or photos. Policies often set a deadline for finishing the work and claiming it, so check the policy wording or ask the adjuster, and send your final invoice promptly so the homeowner can claim.",
+      },
+      {
+        q: "How should I invoice a small roof repair instead of a full replacement?",
+        a: "Bill repairs by time and materials or as a flat repair price, not by the square. List the problem found, the work done (for example, replacing 12 shingles and resealing a pipe boot), the materials used, labor hours and any service call or minimum charge. Add photos of the repaired area and note anything you saw but did not fix, such as worn flashing elsewhere, so the homeowner has a record if a leak appears later.",
+      },
+      {
+        q: "Is a roof replacement tax deductible for the property owner?",
+        a: "It depends on the property. On a rental or business property, a new roof is usually a capital improvement that is depreciated over several years rather than deducted at once, while a small repair may be deductible as an expense. On a main home, a new roof generally isn't deductible but can add to the home's cost basis. Either way, your itemized invoice is the owner's evidence, so point them to a tax professional or IRS guidance.",
+      },
+      {
+        q: "What can I do if a homeowner keeps the insurance money and doesn't pay my invoice?",
+        a: "Follow your contract and your state's lien process. Send a written demand with the invoice, contract and payments received, then consider a mechanic's lien, which usually has strict notice and filing deadlines that vary by state, often counted from your last day of work. Small claims court or a collection attorney are other routes. Because deadlines can be short, check your state's lien law or speak to a construction lawyer as soon as payment is clearly late.",
+      },
+      {
+        q: "Can I charge for a roof inspection or estimate?",
+        a: "Yes, if you tell the homeowner before you go out. Many roofers give free estimates for replacements but charge for detailed inspections, leak investigations or reports for a home sale. If you charge, invoice it as its own job with the date, what you inspected and any report delivered. Some roofers credit the inspection fee against the job if the homeowner signs within a set period; if you do, state that rule on the invoice.",
+      },
     ],
     content: `
 <p><strong>Quick answer:</strong> A roofing invoice template should list the roof size in squares (one square is 100 square feet), tear-off and disposal, each material with its quantity, installation labor, extras such as decking replacement found during tear-off, permits, the deposit already paid and the balance due. On insurance jobs, also show the claim number and keep any supplement on its own line.</p>
@@ -162,6 +182,26 @@ export const INDUSTRY_POSTS_C: PostDraft[] = [
         q: "Do painters charge sales tax?",
         a: "It depends on the state. In many states, painting real property is treated as a contractor service and the painter pays tax on paint when buying it, while some states tax certain services or separately stated materials. Confirm with your state revenue department.",
       },
+      {
+        q: "How do I measure wall square footage for a painting invoice?",
+        a: "Measure the perimeter of the room, multiply by the wall height, then subtract large openings if your pricing excludes them. A 12 by 14 foot room with 8 foot walls has 52 feet of perimeter and about 416 square feet of wall area. Ceilings are length times width. Say on the estimate and invoice whether you measure wall area or floor area, and whether openings are deducted, so the client can check your quantities.",
+      },
+      {
+        q: "Do I need to follow lead-safe rules when painting an older home?",
+        a: "Often, yes. In the US, the EPA's Renovation, Repair and Painting rule applies to paid work that disturbs 6 square feet or more of painted surface inside, or 20 square feet or more outside, in homes and child-occupied facilities built before 1978. Firms must be certified, use lead-safe practices and give the Renovate Right pamphlet before work starts. Keep those records, and show any extra containment cost as its own line.",
+      },
+      {
+        q: "How should I invoice cabinet painting?",
+        a: "Most painters price cabinets per door and per drawer front, with cabinet boxes, end panels and any new hardware as separate lines. Show the prep (degreasing, sanding, priming), the finish product and number of coats, and whether doors were sprayed off site. If you remove and rehang doors, say so. Cabinet finishes take days to cure, so a deposit and a clear completion date on the invoice help avoid disputes about when the balance is due.",
+      },
+      {
+        q: "Should I charge for touch-ups after the job is finished?",
+        a: "Touch-ups found during the final walkthrough are normally part of the job and shouldn't be billed. Later visits are different: if the client asks you back months later for scuffs or damage caused by movers or others, invoice it as a new small job, often with a minimum charge. If you offer a workmanship warranty, state its length and what it covers, such as peeling caused by your prep, so everyone knows which return visits are free.",
+      },
+      {
+        q: "How do commercial painting invoices differ from residential ones?",
+        a: "Commercial jobs are often billed in progress payments against a schedule of values, sometimes on AIA-style pay applications, with retainage held back until completion. Expect to quote the client's purchase order or job number, provide lien waivers with each payment, carry a certificate of insurance and accept Net 30 or longer terms. Residential jobs are simpler, usually a deposit and a balance due on completion. Agree the billing format in the contract before you start.",
+      },
     ],
     content: `
 <p><strong>Quick answer:</strong> A painting invoice template should list each area painted with its pricing basis (square feet, per room or linear feet of trim), number of coats, prep work, paint by product and gallons, supplies, any approved change orders, the deposit paid and the balance due. Show colors and sheen so the client can match the invoice to the work they see.</p>
@@ -282,6 +322,30 @@ export const INDUSTRY_POSTS_C: PostDraft[] = [
       {
         q: "When should a pressure washing customer pay?",
         a: "Residential jobs are commonly due on completion or on receipt of the invoice, often paid by card on site. Commercial and property management clients usually expect Net 15 or Net 30 and may need a purchase order or vendor setup forms first.",
+      },
+      {
+        q: "Who pays for the water used on a pressure washing job?",
+        a: "On most residential jobs the customer supplies water from an outdoor spigot, and that cost isn't invoiced. If you bring your own water because there is no access, or the job needs a hydrant meter, you can charge for it as a separate line. State the water arrangement on your quote and confirm the spigot works before the job day, so there is no argument about a surprise water charge on the invoice.",
+      },
+      {
+        q: "Should I note pre-existing damage on a pressure washing invoice?",
+        a: "Yes. Washing can reveal problems hidden under dirt, such as cracked concrete, loose mortar, oxidized siding or failing paint. Note what you saw before starting, take dated photos, and repeat the key points in the invoice notes, for example \"Oxidation on south wall siding noted before cleaning; chalking may remain.\" That record protects you if the customer later says the washing caused the damage.",
+      },
+      {
+        q: "How do I invoice paver sealing after a wash?",
+        a: "Treat sealing as a separate service from cleaning. Put the wash on one line, then add joint sand replacement and sealing on their own lines, each priced per square foot, with the sealer product named. Note the curing time and any foot or vehicle traffic restrictions. Because sealing needs dry weather and sometimes a second visit, many companies take a deposit for sealing jobs and invoice the balance once the final coat is applied.",
+      },
+      {
+        q: "Will my commercial clients send me a 1099?",
+        a: "They may, if you're an unincorporated US business and they pay you enough during the year. Business clients report payments for services on Form 1099-NEC, and 2025 legislation raised the reporting threshold from $600 to $2,000 for payments made from 2026. That's why many ask for a W-9 before paying. You must report all your income whether or not you receive a 1099, so keep every invoice, and confirm current thresholds on the IRS website.",
+      },
+      {
+        q: "Can I take a deposit for a pressure washing job?",
+        a: "You can, though most small residential washes are simply paid on completion. Deposits make more sense for large or multi-day jobs, paver sealing, commercial projects where you buy chemicals in bulk, or new customers booking peak-season dates. Invoice the deposit separately, state whether it's refundable if weather forces a reschedule, and subtract it on the final invoice so the customer sees exactly what remains due.",
+      },
+      {
+        q: "How do I invoice a customer who wasn't home when I finished the job?",
+        a: "Prepare the invoice the same day, attach before and after photos, and send it by email or text with clear payment instructions and a due date, such as on receipt or within 7 days. Note any areas you couldn't reach or stains that didn't fully lift. With our free generator you can download the PDF on your phone and send it yourself, then issue a receipt when the payment arrives.",
       },
     ],
     content: `
@@ -411,6 +475,26 @@ export const INDUSTRY_POSTS_C: PostDraft[] = [
         q: "Should tips go on a detailing invoice?",
         a: "Tips can be added at payment, but keep them separate from your service charges. If you use a card reader, the tip is usually captured there and shown on the receipt rather than the invoice.",
       },
+      {
+        q: "How do I invoice a multi-stage paint correction?",
+        a: "Name the stage on the invoice, for example \"Two-stage paint correction: compound and polish,\" along with the panels covered, the hours or package price and the products used. Note the condition before you started, such as heavy swirls, and the expected result, because deep scratches may remain after correction. If you add a coating afterward, bill it on its own line so the customer can see what the correction cost compared with the protection.",
+      },
+      {
+        q: "How should I price and invoice detailing for RVs and boats?",
+        a: "Most detailers price RVs and boats by length, often per foot, because size drives the time far more than the package name does. Put the length, the service (wash, oxidation removal, wax, interior) and the rate per foot on separate lines, plus any lift, ladder or marina access charges. Note the vessel or RV name or registration and the location, especially if you work at a marina or storage yard.",
+      },
+      {
+        q: "How do I handle gift certificates on a detailing invoice?",
+        a: "Record the gift certificate as a payment on the invoice, not as a discount. When it's redeemed, list the full package price, add a line such as \"Gift certificate GC-0142 applied: -$150.00\" and show any balance due. Keep a list of certificates sold with their numbers and amounts so you know which are still outstanding, and check whether your state has rules on gift certificate expiry before printing a date on them.",
+      },
+      {
+        q: "Does a ceramic coating warranty require maintenance visits?",
+        a: "Often it does, depending on the coating product. Many professional coatings carry a warranty that requires periodic inspections or maintenance washes by an approved installer, and missed visits can void it. Check the manufacturer's terms, list the coating and warranty period on the original invoice, and bill each maintenance visit on its own dated invoice, so the customer has a service history to show if they make a warranty claim.",
+      },
+      {
+        q: "Can I add a credit card fee to a detailing invoice?",
+        a: "In most US states you can surcharge credit cards if you follow card network rules: notify your processor first, disclose the fee before payment, show it as a separate line and keep it within the cap (3% for Visa, or your cost if lower). You can't surcharge debit cards, and a few states restrict surcharges. Many detailers simply build card costs into package prices instead. Our credit card surcharge guide covers the rules by state.",
+      },
     ],
     content: `
 <p><strong>Quick answer:</strong> A car detailing invoice template should show the vehicle (year, make, model, color), the package performed, each add-on with its price, any condition surcharge for pet hair or heavy soiling, a mobile service fee if you came to the customer, deposits paid, the total and payment method. Keep tips separate from service charges.</p>
@@ -538,6 +622,26 @@ export const INDUSTRY_POSTS_C: PostDraft[] = [
         q: "Who issues a 1099 for booth rent?",
         a: "Generally, a business that pays rent above the reporting threshold in the course of its trade files Form 1099-MISC for the landlord, so a booth renter may need to issue one to the salon owner rather than the other way round. Exceptions apply, for example for payments to corporations, so confirm with a tax professional.",
       },
+      {
+        q: "Is sales tax charged on booth rent?",
+        a: "In most states, renting a booth or chair isn't subject to sales tax, because it's treated as renting space rather than selling goods or taxable services. A few states or cities tax commercial rent or similar license fees, and extras on the booth rent invoice, such as products resold to the renter, may be taxable. Check with your state revenue department before adding tax to a booth rent invoice.",
+      },
+      {
+        q: "What should a booth rental agreement include?",
+        a: "At minimum: the station or suite, the rent amount and due date, the rental period, what the rent includes (utilities, laundry, backbar products, Wi-Fi), late fees, the notice needed to end the agreement and any security deposit. It should also confirm that the renter sets their own prices, hours and products and keeps their own clients. Your booth rent invoices should match the agreement line by line, so refer to clause numbers where helpful.",
+      },
+      {
+        q: "Can a booth renter deduct booth rent as a business expense?",
+        a: "Generally, yes. A self-employed stylist who rents a booth for their business can usually deduct the rent as an ordinary business expense, alongside products, tools, insurance and education. Keep every booth rent invoice and proof of payment, because they're the evidence for the deduction. This is general information, so confirm with a tax professional, especially if part of your arrangement is commission-based or you also work as an employee.",
+      },
+      {
+        q: "How do I invoice a salon for teaching a class?",
+        a: "Bill the salon or academy that hired you, not the attendees, unless you agreed to collect from students directly. List the class name and date, the length or number of attendees, your teaching fee, any kit or product costs and travel. If the host pays you a share of ticket sales instead of a fee, show the calculation. Ask whether they need a W-9 or a PO number before the class so the invoice isn't held up.",
+      },
+      {
+        q: "How should I bill for hair extensions?",
+        a: "Many stylists take a deposit at booking that covers the cost of the hair, because it's ordered for that client and often can't be returned. On the final invoice, show the hair as a product line (length, method and quantity) and the installation as a service line, then subtract the deposit. Bill move-ups or maintenance appointments separately, and print your refund policy for custom-ordered hair on the deposit invoice.",
+      },
     ],
     content: `
 <p><strong>Quick answer:</strong> A salon invoice template has two common uses. Stylists use it to bill clients for services such as bridal hair, color or event styling, listing each service, products, travel and deposits. Salon owners use it as a booth rent invoice, billing renters for the station, the rental period, any product purchases and agreed fees, with a clear due date.</p>
@@ -660,6 +764,26 @@ export const INDUSTRY_POSTS_C: PostDraft[] = [
         q: "When should the final event planner invoice be paid?",
         a: "Many planners require the final planning payment before the event, often two to four weeks out, so they're not chasing money after the day. A small post-event invoice then covers overtime or reimbursables incurred on the day.",
       },
+      {
+        q: "How do I invoice a destination wedding or a client in another country?",
+        a: "Agree the invoice currency in the contract, show the currency code next to every amount and say who pays transfer and conversion fees. If vendors are paid in a local currency, state the exchange rate used for any reimbursables and the date it applied. Milestone dates may need to move earlier to allow for international transfers. Our free generator supports 8 currencies, so each milestone invoice can be issued in the currency the client agreed to pay.",
+      },
+      {
+        q: "What does a force majeure clause mean for my invoices?",
+        a: "A force majeure clause sets out what happens when an event can't go ahead because of something outside anyone's control, such as a natural disaster or government restrictions. It usually decides whether payments already made are kept, refunded or moved to a new date, and your invoices should follow it exactly. Number the clause in your contract, and if you rely on it, cite it in the notes of the credit note or rescheduling invoice.",
+      },
+      {
+        q: "Should I charge for an initial consultation?",
+        a: "Many planners offer a short free discovery call, then charge for detailed consultations, design sessions or venue walkthroughs before a contract is signed. If you charge, invoice it as its own service with the date and time spent. A common approach is to credit the consultation fee against the planning package if the client books within a set period. State that rule on the invoice so the credit is clear later.",
+      },
+      {
+        q: "How do I bill for extra meetings or hours beyond my package?",
+        a: "Define in the contract how many meetings, site visits and hours of event-day coverage the package includes, and set an hourly rate for anything beyond it. Log the extra time as it happens, tell the client when they're close to the limit, and bill the overage on the next milestone invoice as a separate line with dates and hours. Clients accept extra charges far more easily when they saw them coming.",
+      },
+      {
+        q: "How long should I keep event planning invoices and receipts?",
+        a: "In the US, the IRS generally expects you to keep records that support your tax return for at least three years after filing, and longer in some cases, such as six years if income was substantially underreported. Keep every invoice, vendor receipt, contract and reimbursement record together for each event. Outside the US, follow your own tax authority's rules, which often require five or six years.",
+      },
     ],
     content: `
 <p><strong>Quick answer:</strong> An event planner invoice template should show your planning fee and how it's calculated (flat, percentage of budget or hourly), the retainer already paid, which milestone payment this invoice covers, any reimbursable vendor costs paid on the client's behalf, overtime, gratuities you distributed, and the balance with a due date. Keep your fees and pass-through costs in separate sections.</p>
@@ -781,6 +905,26 @@ export const INDUSTRY_POSTS_C: PostDraft[] = [
         q: "Is a commission invoice the same as a commission disbursement authorization?",
         a: "Not exactly. A commission disbursement authorization, or CDA, is an instruction from the brokerage to the title or escrow company telling it how to pay the commission at closing. It functions like an invoice to closing, while a referral or commercial lease commission invoice is a direct bill to the paying party.",
       },
+      {
+        q: "When is a real estate commission paid?",
+        a: "On a sale, the commission is normally paid at closing by the title or escrow company, following the instructions in the CDA and settlement statement. The money goes to the brokerage, which then pays the agent their split, often within a few days depending on brokerage policy. Commercial lease commissions are usually paid on the schedule in the commission agreement, for example half on lease signing and half on occupancy.",
+      },
+      {
+        q: "Is a commission owed if the sale falls through?",
+        a: "Usually not. Most listing and buyer agreements make the commission payable only when the transaction closes. Some agreements include exceptions, for example where the seller backs out without a valid reason after accepting an offer, or sells to a buyer the agent introduced during a protection period after the listing ends. What is owed depends on the agreement's wording and state law, so read it and ask your broker before sending any demand.",
+      },
+      {
+        q: "Can a buyer pay their own agent's commission after the NAR settlement?",
+        a: "Yes. Since the 2024 settlement changes, buyers working with an MLS participant sign a written agreement that sets the agent's compensation. That amount can be paid by the buyer, by the seller as a concession negotiated in the offer, or by a mix of both. The settlement statement and CDA should show who pays what, and loan programs may limit seller concessions, so confirm the arrangement early in the transaction.",
+      },
+      {
+        q: "Can a real estate agent rebate part of the commission to a client?",
+        a: "In most states, yes, provided it's disclosed to all parties and the lender approves it, usually as a credit on the settlement statement. A small number of states ban or restrict rebates, and those rules have changed over time, so check your state real estate commission's current position. The rebate comes out of the brokerage's commission, so it should appear on the CDA as a credit to the client rather than as a payment from the agent personally.",
+      },
+      {
+        q: "Can an agent with an inactive or referral-only license collect a referral fee?",
+        a: "In many states, yes, provided the license is held with a broker or referral company and the fee is paid to that brokerage, which then pays the agent. Some states have a specific referral-only status that limits what the licensee can do. A fully lapsed license usually means no fee can be paid. Check your state's rules, and make sure the referral agreement names the brokerages rather than the individual agents.",
+      },
     ],
     content: `
 <p><strong>Quick answer:</strong> A real estate commission invoice is a bill for a commission earned on a sale, lease or referral. In most US states agents can't invoice clients directly: the brokerage bills the commission, often through a commission disbursement authorization (CDA) sent to title or escrow, then pays the agent their split. Referral fees are invoiced broker to broker under a written agreement.</p>
@@ -901,6 +1045,26 @@ export const INDUSTRY_POSTS_C: PostDraft[] = [
       {
         q: "Do unused retainer hours roll over?",
         a: "Only if your agreement says so. Many VAs let a limited number of hours roll into the next month, or none at all, because the retainer pays for reserved availability. State the rule on the contract and on each retainer invoice.",
+      },
+      {
+        q: "Can I bill for onboarding, meetings and learning a client's tools?",
+        a: "Yes, if your contract says so. Time spent in client meetings, onboarding calls and learning systems the client asked you to use is real work and is normally billable at your usual rate. Some VAs give the first hour of onboarding free as goodwill. Whatever you decide, state it before you start and show these hours as their own category on the time log, such as \"Onboarding and tool setup: 2.5 hrs.\"",
+      },
+      {
+        q: "Do I need to register a business before I can invoice as a VA?",
+        a: "Usually not to start. In the US, you can invoice as a sole proprietor under your own name and report the income on your tax return, though a trade name may need a DBA filing and some cities require a business license. Many VAs get a free EIN so they don't share their Social Security number. Rules differ in other countries, so check with your local tax authority about registration and when you must charge sales tax or VAT.",
+      },
+      {
+        q: "Do I charge VAT or GST when invoicing clients in another country?",
+        a: "Often not, but it depends on your own country's rules. Many tax systems treat services supplied to business clients abroad as outside the scope of local VAT or GST, or as zero-rated, though you may still need to register once your income passes a threshold and note the reason on the invoice. Rules for consumer clients can differ. Check with your tax authority, such as HMRC or the ATO, before your first international invoice.",
+      },
+      {
+        q: "How do I raise my rate with existing clients?",
+        a: "Give written notice before the change, commonly 30 days or one full billing cycle, and say when the new rate starts and what it applies to. Then show the new rate clearly on the first invoice after the change, with a note such as \"Rate updated to $40/hour from 1 January 2027, as notified on 1 December 2026.\" If you're on a retainer, update the retainer amount and the overage rate together so they stay consistent.",
+      },
+      {
+        q: "Should each client get its own invoice numbering?",
+        a: "Use one continuous numbering sequence for all your invoices rather than restarting at 1 for each client. That keeps your records complete and makes gaps easy to spot, which tax authorities in many countries expect. If it helps you filter, add a client code next to the number, such as INV-0148 (ACME). Send each client a separate invoice for their own work, even when you bill several clients on the same day.",
       },
     ],
     content: `
@@ -1039,6 +1203,26 @@ export const INDUSTRY_POSTS_C: PostDraft[] = [
         q: "Can a daycare charge late pick-up fees?",
         a: "Generally yes, if the fee is in your written enrollment policy that parents signed. Charge it per minute or in blocks, record the actual pick-up time, and show it as a separate line on the next invoice.",
       },
+      {
+        q: "Can a daycare charge an enrollment deposit to hold a spot?",
+        a: "Yes, many do, as long as it's in the enrollment agreement. Common versions are a deposit applied to the first or last month's tuition, or a nonrefundable fee that holds a place on the waitlist. Say whether it's refundable and when, issue an invoice or receipt for it, and show it as a credit when it's applied to tuition. Some states regulate childcare fees, so check your licensing agency's rules.",
+      },
+      {
+        q: "What should I do if a family stops paying tuition?",
+        a: "Follow your written policy consistently. Send a reminder soon after the due date, then a written notice with the amount owed, any late fee and the date care will be suspended if it isn't paid. Requiring tuition before the week or month begins limits how much can build up. If a subsidy program pays part, contact the program before ending care. Unpaid balances can go to small claims court if needed.",
+      },
+      {
+        q: "Which daycare fees count toward the dependent care credit or an FSA?",
+        a: "Generally, amounts paid for care so the parent can work count, including some indirect fees, such as registration fees, that must be paid to get care. Separately billed items like field trips, and education costs for kindergarten and above, may be treated differently. The IRS explains the rules in Publication 503. Itemizing tuition and fees separately on your invoices helps parents and their tax preparers, but leave the decision on what qualifies to them.",
+      },
+      {
+        q: "Can I charge a fee for a returned check or failed payment?",
+        a: "Usually, yes, if your enrollment agreement says so. Many providers pass on the bank's returned payment charge or set a flat returned payment fee, and some move families with repeated failed payments to card or cash. Many states cap returned check fees, so check your state's limit before choosing an amount. Show the fee on the next invoice with the date and the payment it relates to.",
+      },
+      {
+        q: "Do home daycare providers pay tax on tuition income?",
+        a: "Yes. Tuition and fees you receive are business income. In the US, a sole proprietor running a home daycare typically reports it on Schedule C and pays self-employment tax. You may be able to deduct part of your home costs based on how much of the home is used for care and for how long, using the method in IRS Publication 587. Keep every invoice and receipt, and consider a tax professional familiar with childcare.",
+      },
     ],
     content: `
 <p><strong>Quick answer:</strong> A daycare invoice template should list the provider's name, address and EIN or SSN, the parent and each child, the care period (week or month), tuition, fees such as registration or late pick-up, discounts, payments received and the due date. Parents need the provider's name, address and taxpayer ID to claim the child and dependent care credit on IRS Form 2441.</p>
@@ -1164,6 +1348,26 @@ export const INDUSTRY_POSTS_C: PostDraft[] = [
       {
         q: "Should a moving invoice include valuation coverage?",
         a: "For interstate moves, the valuation option the customer chose should appear on the paperwork. Federal rules provide full value protection and a lower-cost released value option limited to 60 cents per pound per article. Local valuation rules vary by state.",
+      },
+      {
+        q: "Should tips for the moving crew go on the invoice?",
+        a: "Keep tips separate from the moving charges. If the customer tips in cash, nothing changes on the invoice. If they add a tip by card, record it on the receipt or as a clearly labeled gratuity line after the invoice total, and pass it on to the crew. Don't build a mandatory crew gratuity into the bill unless you call it a service charge, because tips and service charges are treated differently for tax.",
+      },
+      {
+        q: "What is the difference between a bill of lading and a moving invoice?",
+        a: "On an interstate move, the bill of lading is the contract between you and the customer and the receipt for their goods. It records the services, the estimate type, the valuation choice and the delivery terms, and the customer signs it before loading. The invoice, or freight bill, is the demand for payment of the resulting charges. The two must match, so reference the bill of lading number on the invoice.",
+      },
+      {
+        q: "How long does an interstate customer have to file a damage claim?",
+        a: "Under federal rules, a customer generally has nine months from delivery to file a written claim for loss or damage. The mover must acknowledge it within 30 days and then pay, deny or make a firm settlement offer within 120 days. A claim is separate from the invoice, so the customer still owes the moving charges. Intrastate moves follow state rules. Check FMCSA's Protect Your Move guidance and your tariff for details.",
+      },
+      {
+        q: "How do I invoice storage in transit?",
+        a: "Storage in transit, often called SIT, is temporary storage between pickup and delivery when the new home isn't ready. Show it as its own section: the warehouse location, the weight or number of vaults, the dates in and out, the daily or monthly rate, and handling charges for moving goods into and out of storage. If storage runs past the agreed period, it may convert to permanent storage billed on a separate recurring invoice.",
+      },
+      {
+        q: "When can I bill the rest if I collected 110% of a non-binding estimate at delivery?",
+        a: "Not straight away. Under FMCSA rules for interstate moves, you can't bill the remaining charges until at least 30 days after delivery. Your follow-up invoice should show the original estimate, the actual charges, the amount collected at delivery and the deferred balance, with a due date that respects that wait. Confirm the exact timing in the current 49 CFR Part 375 and your tariff.",
       },
     ],
     content: `

@@ -32,6 +32,26 @@ export const EINVOICING_POSTS: PostDraft[] = [
         q: "What does the ZATCA QR code contain?",
         a: "In Phase 1 the QR code holds basic fields such as the seller name, VAT number, invoice timestamp, invoice total and VAT total. In Phase 2 it also carries cryptographic elements, including the invoice hash and digital signature data, so the invoice can be verified.",
       },
+      {
+        q: "Do foreign businesses registered for VAT in Saudi Arabia have to follow ZATCA e-invoicing?",
+        a: "Generally no. The e-invoicing rules are aimed at resident VAT-registered taxpayers, and non-resident taxable persons are commonly described as outside the mandate. A non-resident still has VAT record-keeping duties, usually handled through its tax representative. If you have a branch, fixed establishment or other presence in the Kingdom, your position may differ, so confirm it against ZATCA's e-invoicing regulation or with a Saudi tax adviser.",
+      },
+      {
+        q: "Can a Saudi tax invoice be issued in English only?",
+        a: "No. ZATCA requires e-invoices to be capable of being issued in Arabic, and the Arabic content is what counts for compliance. You can show English or another language alongside the Arabic, which is common for international clients. Make sure your e-invoicing solution prints both languages consistently, because a translation that differs from the Arabic text can cause disputes and audit questions.",
+      },
+      {
+        q: "How long do I have to keep e-invoices in Saudi Arabia?",
+        a: "The basic period for keeping invoices and VAT records is generally six years from the end of the tax period they relate to, and longer periods apply to some records, such as those for capital assets and real estate. The legal record in Phase 2 is the XML file, so archive that, not just a printed copy. Check ZATCA's VAT implementing regulations for the current periods and storage location rules.",
+      },
+      {
+        q: "What happens if ZATCA rejects a standard tax invoice during clearance?",
+        a: "A rejected invoice is not valid and must not be shared with the buyer as a tax invoice. Your system receives error messages explaining which validation failed, such as a wrong buyer VAT number or totals that do not reconcile. You fix the data and submit a new invoice for clearance. Repeated rejections usually point to master data or configuration problems worth fixing before your volumes grow.",
+      },
+      {
+        q: "Does ZATCA provide free e-invoicing software?",
+        a: "No. ZATCA sets the technical rules and runs the Fatoora portal for onboarding, but it does not supply invoicing software to taxpayers, and it does not certify or endorse vendors. You need an ERP, accounting or POS solution that meets the Phase 1 and Phase 2 requirements. Ask providers for evidence of successful onboarding with ZATCA and check pricing on their official pages, as it varies widely.",
+      },
     ],
     content: `
 <p><strong>Quick answer:</strong> ZATCA e-invoicing (the Fatoora program) requires VAT-registered businesses in Saudi Arabia to issue tax invoices from a compliant electronic system. Phase 1, live since 4 December 2021, bans handwritten and editable invoices and requires QR codes on simplified invoices. Phase 2 adds integration with ZATCA's platform in waves: standard B2B invoices are cleared in real time, and simplified B2C invoices are reported within 24 hours.</p>
@@ -165,6 +185,26 @@ export const EINVOICING_POSTS: PostDraft[] = [
         q: "Will a PDF invoice still be valid in the UAE after the mandate?",
         a: "Once your business is in scope, a PDF alone will not satisfy the e-invoicing requirement for in-scope transactions, because the legal e-invoice is the structured PINT AE file exchanged through your ASP. A PDF can still be sent as a readable copy, and remains normal for out-of-scope sales until rules change.",
       },
+      {
+        q: "Do I also have to receive e-invoices through an ASP in the UAE?",
+        a: "Yes. The mandate is about exchanging invoices, so an in-scope business needs to be able to receive PINT AE e-invoices from its suppliers as well as send its own. Your ASP normally handles both directions. Plan how received invoices will flow into your accounting system, because manual re-keying of incoming XML defeats much of the benefit and creates errors in your input VAT records.",
+      },
+      {
+        q: "How do credit notes work under UAE e-invoicing?",
+        a: "Credit notes for in-scope transactions are exchanged electronically in the same way as invoices: created in your system, validated and sent through your ASP, and reported to the FTA. Each credit note should reference the original e-invoice. Avoid cancelling or editing an issued invoice outside the system, and test your returns and refund process with your ASP before your go-live date.",
+      },
+      {
+        q: "How is UAE e-invoicing different from Saudi Arabia's ZATCA system?",
+        a: "The UAE uses a decentralized, Peppol-based five-corner model: invoices travel between the seller's and buyer's Accredited Service Providers, and tax data is reported to the FTA. Saudi Arabia uses a centralized model where standard B2B invoices are cleared by ZATCA before they reach the buyer. If you trade in both countries, you will usually need two separate compliance setups, even if one software vendor covers both.",
+      },
+      {
+        q: "How much does an Accredited Service Provider cost?",
+        a: "There is no single price, because each ASP sets its own pricing. Common models are per invoice, per month or per legal entity, sometimes with setup fees for ERP integration. Compare at least two or three providers from the Ministry of Finance's accredited list, ask what is included (receiving, credit notes, support, archiving), and check each provider's official pricing page at the time you sign.",
+      },
+      {
+        q: "How long should I keep e-invoices in the UAE?",
+        a: "UAE tax law generally requires business and VAT records to be kept for at least five years, with longer periods for some records such as those relating to real estate. Under e-invoicing, the structured PINT AE file is the record, so make sure your ASP or your own archive stores it in a retrievable form. Confirm the current retention and storage rules with the FTA or your adviser.",
+      },
     ],
     content: `
 <p><strong>Quick answer:</strong> UAE e-invoicing becomes mandatory in phases: businesses with annual revenue of AED 50 million or more must go live on 1 January 2027 (after appointing an Accredited Service Provider by 30 October 2026), other businesses on 1 July 2027 (ASP by 31 March 2027) and government entities on 1 October 2027. Invoices are exchanged as PINT AE XML over a Peppol-based five-corner network.</p>
@@ -290,6 +330,26 @@ export const EINVOICING_POSTS: PostDraft[] = [
         q: "What are the penalties for not integrating with FBR?",
         a: "FBR's FAQs say registered persons who miss integration timelines or otherwise contravene the rules face penalties under section 33 of the Sales Tax Act, 1990. Penalties for Tier-1 retailers who fail to integrate can also include disallowance of input tax and, in some cases, sealing of business premises.",
       },
+      {
+        q: "What is PRAL?",
+        a: "PRAL (Pakistan Revenue Automation Private Limited) is the IT company owned by FBR that builds and runs many of its systems. For digital invoicing, PRAL can act as your integrator, and FBR's FAQs say it provides integration free of cost on request. Businesses with complex ERP setups often still choose a licensed private integrator for more hands-on support, so compare both routes.",
+      },
+      {
+        q: "How do I find a licensed integrator for FBR digital invoicing?",
+        a: "FBR publishes the list of licensed integrators on its website. Use only providers on that list, and check that the licence is current before signing. Ask each one whether it already supports your ERP or POS system, how long a typical go-live takes, what it charges (FBR caps integrator fees), and how it handles invoice errors and the 72-hour correction window.",
+      },
+      {
+        q: "Do I still need to file a sales tax return after integrating with FBR?",
+        a: "Yes. Digital invoicing does not replace your monthly sales tax return, which you still file through IRIS. The invoice data you transmit in real time feeds what FBR expects to see in your return, so mismatches between your digital invoices and your declared sales are easier for FBR to spot. Reconcile your integrated invoice records with your return every month before filing.",
+      },
+      {
+        q: "How can a customer check that an FBR-integrated invoice is genuine?",
+        a: "Receipts from integrated Tier-1 retailers carry an FBR invoice number and a QR code, which customers can scan or check through FBR's verification channels, such as the Tax Asaan mobile app. If the number cannot be verified, the sale may not have been reported. Businesses buying from registered suppliers should also check that purchase invoices carry a valid FBR identifier before claiming input tax.",
+      },
+      {
+        q: "Do I still give the buyer a copy of the invoice under digital invoicing?",
+        a: "Yes. Integration changes how the invoice is reported, not the need to give your customer an invoice. The buyer still receives a printed or electronic invoice, which carries the FBR identifier generated when your software transmitted it. Make sure the copy shows the required sales tax invoice details, such as your NTN and STRN, the buyer's details, quantities, values and tax amounts.",
+      },
     ],
     content: `
 <p><strong>Quick answer:</strong> FBR e-invoicing (digital invoicing) requires sales tax registered persons in Pakistan to issue invoices from software integrated with FBR's system, through a licensed integrator or PRAL, so each invoice reaches FBR in real time. S.R.O. 709(I)/2025 set the original deadlines in 2025. Separately, Tier-1 retailers must integrate their point-of-sale systems and print FBR-verified invoices with a QR code.</p>
@@ -412,6 +472,22 @@ export const EINVOICING_POSTS: PostDraft[] = [
       {
         q: "Can I cancel an e-invoice after generating the IRN?",
         a: "An IRN can be cancelled on the IRP within 24 hours of generation, and only in full. After 24 hours you correct the transaction with a credit or debit note, which is itself reported to the IRP.",
+      },
+      {
+        q: "Is it free to generate an IRN for an e-invoice?",
+        a: "Yes. Reporting invoices to the government-notified Invoice Registration Portals and receiving an IRN does not attract a government fee. Small taxpayers can use the free web and offline tools offered on the IRP portals, while larger businesses usually connect their ERP or accounting software through APIs, sometimes via a paid GST Suvidha Provider. Any cost comes from the software or service provider, not the IRP.",
+      },
+      {
+        q: "Can I generate an e-way bill along with the e-invoice?",
+        a: "Yes. If you include the transport details (Part B, such as vehicle number or transporter ID) when you report the invoice, the e-way bill can be generated together with the IRN. If transport details are not ready, you can generate the e-way bill later using the IRN. E-way bill rules still depend on the value and type of goods moved, so check the current thresholds.",
+      },
+      {
+        q: "Does an e-invoice automatically appear in GSTR-1?",
+        a: "Yes, details of e-invoices reported to the IRP are passed to the GST system and auto-populated in your GSTR-1, and they flow to your buyers' GSTR-2B. You should still review GSTR-1 before filing, add any supplies not covered by e-invoicing, such as B2C sales, and check that cancelled IRNs and credit notes are reflected correctly.",
+      },
+      {
+        q: "What is the penalty for not generating an e-invoice when it is required?",
+        a: "An invoice issued without a valid IRN by a business that must e-invoice is not treated as a valid tax invoice, which can be treated as failing to issue an invoice. Under section 122 of the CGST Act that can attract a penalty of Rs 10,000 or the tax involved, whichever is higher. Your buyer may also lose input tax credit. Check current provisions with your GST adviser.",
       },
     ],
     content: `
@@ -537,6 +613,26 @@ export const EINVOICING_POSTS: PostDraft[] = [
         q: "Can I still use a PDF invoice in Malaysia?",
         a: "If you are below the exemption threshold, yes, a normal invoice or receipt remains acceptable. If you are in scope, the legal e-invoice is the validated record on MyInvois with a unique identifier and QR code, and a PDF alone does not meet the requirement.",
       },
+      {
+        q: "How do I issue an e-invoice to a foreign buyer without a Malaysian TIN?",
+        a: "Use the general TIN that LHDN provides for foreign buyers, EI00000000020, in place of the buyer's TIN. You still need to include the buyer's other details, such as name, address and passport or business registration number, and a separate general TIN (EI00000000010) is used for local buyers who do not provide a TIN. Check LHDN's specific guideline for the full list of codes.",
+      },
+      {
+        q: "Can a validated e-invoice be cancelled or rejected in Malaysia?",
+        a: "Yes, but only within 72 hours after MyInvois marks it as valid. In that window the supplier can cancel it, and the buyer can request a rejection, which the supplier then acts on. Once the 72 hours have passed, you correct the transaction with a credit note, debit note or refund note instead. Make sure staff check invoice details quickly after issuing.",
+      },
+      {
+        q: "Do I need an e-invoice from suppliers to claim a tax deduction?",
+        a: "If you are in scope for e-invoicing, LHDN expects an e-invoice to support your business expenses, so ask in-scope suppliers to issue one in your name with your TIN rather than relying on a normal receipt. Where your supplier is exempt or the sale was consolidated, other documents may be acceptable under LHDN's rules. Check the latest guideline or ask your tax agent for edge cases.",
+      },
+      {
+        q: "Can I issue an e-invoice in a foreign currency?",
+        a: "Yes, MyInvois accepts invoices in other currencies, but you must state the currency code and, where the invoice is not in ringgit, the exchange rate used. Tax amounts and totals must reconcile correctly. Keep your exchange rate source consistent so your e-invoices match your accounts and tax returns, and check LHDN's guideline for any specific requirements on exchange rates.",
+      },
+      {
+        q: "Can an exempt business adopt e-invoicing voluntarily?",
+        a: "Yes. Businesses below the RM3 million exemption threshold can choose to issue e-invoices through the MyInvois Portal or their software. Some do it because larger customers prefer e-invoices for their own tax deductions. Once you start, follow the same rules as in-scope businesses for each e-invoice you issue, and check LHDN's guideline on whether you can later stop.",
+      },
     ],
     content: `
 <p><strong>Quick answer:</strong> LHDN e-invoicing requires in-scope Malaysian businesses to submit invoices to the MyInvois system for validation, receiving a unique ID and QR code for each one. It was phased in by turnover from August 2024 to January 2026. Since LHDN's guideline update of 30 August 2026, businesses with annual revenue under RM3 million are exempt, and the relaxation period runs to 31 December 2027.</p>
@@ -654,6 +750,26 @@ export const EINVOICING_POSTS: PostDraft[] = [
       {
         q: "Does the reform apply to auto-entrepreneurs?",
         a: "Yes. Micro-entrepreneurs, including those under the VAT franchise (franchise en base), are taxable persons and must be able to receive e-invoices from 1 September 2026. Their obligation to issue e-invoices and e-report starts on 1 September 2027.",
+      },
+      {
+        q: "Can an SME still send PDF invoices to French business customers until 2027?",
+        a: "Generally yes. Between 1 September 2026 and 31 August 2027, small and medium-sized businesses and micro-enterprises are not yet obliged to issue e-invoices, so they can usually keep sending PDF or paper invoices, although they must already be able to receive e-invoices. Many choose to start issuing early through their approved platform to avoid a rushed switch. Check the timetable on impots.gouv.fr before relying on it.",
+      },
+      {
+        q: "Does Chorus Pro still apply to invoices sent to the French public sector?",
+        a: "Yes. Invoices to French public bodies continue to go through Chorus Pro, the government's B2G invoicing portal, which has been mandatory for suppliers to the public sector for several years. The 2026 reform deals with B2B invoicing and e-reporting. If you sell to both businesses and public bodies, check that your approved platform or software can also submit invoices to Chorus Pro.",
+      },
+      {
+        q: "What is the central directory (annuaire) in the French reform?",
+        a: "The central directory lists every business subject to the reform and the approved platform it has chosen to receive invoices. Your platform consults it to route each invoice to the right recipient platform. This is why you must choose a plateforme agréée and make sure your company identifiers, such as your SIREN, are registered correctly. Errors in the directory can mean invoices are misrouted or rejected.",
+      },
+      {
+        q: "Do I need to send e-invoices to business customers in other EU countries?",
+        a: "Not under the French mandate. Cross-border B2B sales fall under e-reporting, where your platform sends transaction data to the tax authority, rather than the domestic e-invoicing obligation. You can still send a PDF to a client in Germany or Spain, unless their own country's rules or the client require otherwise. From July 2030 the EU's ViDA rules will change this for intra-EU B2B sales.",
+      },
+      {
+        q: "How long must I keep e-invoices in France?",
+        a: "French commercial law generally requires accounting documents, including invoices, to be kept for 10 years, and tax law requires them to be available for at least six years. E-invoices should be kept in their original electronic form, with the structured data intact, not only as a printout. Many approved platforms offer archiving, but check how long they store your invoices and how you can export them.",
       },
     ],
     content: `
@@ -776,6 +892,26 @@ export const EINVOICING_POSTS: PostDraft[] = [
       {
         q: "Do I need Peppol to send an XRechnung?",
         a: "Not for B2B. German law does not prescribe a transmission channel, so email with an attached XML file is allowed. Peppol is one option and is used for invoices to many federal public authorities.",
+      },
+      {
+        q: "What is a Leitweg-ID?",
+        a: "A Leitweg-ID is a routing identifier used for e-invoices to German public authorities. The authority gives it to you, often in the order or contract, and you must include it in the XRechnung so the invoice reaches the right office. It is not needed for B2B invoices between private businesses. Missing or wrong Leitweg-IDs are a common reason public-sector invoices are rejected.",
+      },
+      {
+        q: "How can I open and read an XRechnung file?",
+        a: "An XRechnung is pure XML, so it is hard to read in a text editor. Most German accounting and ERP software displays it in a readable layout, and free viewers and visualisation tools are available online. Check that the viewer shows all invoice data, including notes and attachments. ZUGFeRD files are easier because the embedded PDF opens in any PDF reader.",
+      },
+      {
+        q: "How long must e-invoices be archived in Germany?",
+        a: "Invoices must generally be kept for eight years, a period shortened from ten years from 2025. For e-invoices, the XML is the original that must be archived, unchanged and in a GoBD-compliant way, even if you also keep a PDF view. For a ZUGFeRD invoice, the structured XML part is the tax-relevant element. Ask your Steuerberater about records with longer retention needs, such as property.",
+      },
+      {
+        q: "If the PDF and XML in a ZUGFeRD invoice differ, which one counts?",
+        a: "The structured XML data takes priority for tax purposes, because that is what makes the file an e-invoice. The PDF is only a visual representation. If the two parts contain different amounts or details, treat the invoice as faulty and ask the supplier for a corrected one rather than booking the PDF figures. Good software flags these mismatches automatically.",
+      },
+      {
+        q: "Does a German e-invoice need a digital signature?",
+        a: "No. German law does not require a qualified electronic signature on e-invoices. What matters is that the authenticity of origin, integrity of content and legibility of the invoice are ensured, which a reliable audit trail between invoice and supply, plus proper archiving, can provide. Some public portals have their own technical requirements, so check those when invoicing authorities.",
       },
     ],
     content: `
@@ -903,6 +1039,26 @@ export const EINVOICING_POSTS: PostDraft[] = [
       {
         q: "Can I send a PDF over Peppol?",
         a: "Not as the invoice itself. Peppol carries structured XML documents such as Peppol BIS Billing 3.0 invoices. A PDF can be attached to the XML as a supporting document, but the XML is what the buyer's system processes.",
+      },
+      {
+        q: "Who runs Peppol?",
+        a: "Peppol is governed by OpenPeppol, an international non-profit association based in Belgium, founded in 2012 after an EU-funded project. OpenPeppol maintains the specifications and agreements, while national Peppol Authorities supervise access points in their countries. No single company owns the network, which is why you can choose any certified access point and still reach every other participant.",
+      },
+      {
+        q: "What documents can be sent over Peppol besides invoices?",
+        a: "Peppol supports a range of procurement documents, including credit notes, purchase orders, order responses, despatch advice and catalogues. Invoices and credit notes are by far the most widely used. Whether you can exchange other documents depends on what your access point supports and what your trading partner has registered to receive in the Peppol directory.",
+      },
+      {
+        q: "Is Peppol secure?",
+        a: "Peppol is designed for secure exchange. Access points must be certified, use digital certificates issued within the Peppol trust framework, and send documents with the AS4 messaging protocol, which supports encryption and signed delivery receipts. That makes Peppol much harder to spoof than emailed PDFs, although you still need good security practices inside your own accounting system and access point account.",
+      },
+      {
+        q: "How do I check whether a customer can receive invoices on Peppol?",
+        a: "Search the public Peppol Directory by company name or identifier, such as a VAT, enterprise or ABN number. If the customer appears, the listing shows which document types it can receive. Your access point can also check this automatically before sending. If the customer is not registered, you will usually need to send another way, such as a PDF by email.",
+      },
+      {
+        q: "Can I switch to a different Peppol access point?",
+        a: "Yes. Your Peppol ID belongs to your business, not to the access point, so you can move to another provider. The old provider must remove your registration so the new one can register your ID for the same document types, otherwise invoices may be routed to the wrong place. Plan the switch with both providers and test receiving before cancelling the old contract.",
       },
     ],
     content: `
@@ -1033,6 +1189,26 @@ export const EINVOICING_POSTS: PostDraft[] = [
         q: "What are the penalties for not using e-invoicing in Belgium?",
         a: "Belgium set graduated fines for failing to issue or receive structured e-invoices, starting at EUR 1,500 for a first infringement and rising for repeat infringements (EUR 3,000 and EUR 5,000 are the commonly cited amounts). A tolerance period ran until 31 March 2026 for businesses that could show they had taken reasonable steps to comply.",
       },
+      {
+        q: "Is there a tax incentive for e-invoicing software in Belgium?",
+        a: "Yes. Belgium introduced an increased cost deduction of 120% for qualifying e-invoicing costs, such as software subscriptions and related advice, for SMEs and self-employed people, covering tax years 2024 to 2027. Where a package does more than e-invoicing, such as a full ERP, only the e-invoicing part may qualify. Check the conditions with your accountant or SPF Finances.",
+      },
+      {
+        q: "Does the Belgian mandate cover invoices to foreign customers?",
+        a: "No. Belgium's structured e-invoicing obligation applies to domestic B2B transactions between businesses established in Belgium. Invoices to customers in other countries, and to consumers, are outside the mandate, so a PDF is generally still acceptable unless the customer or their country requires otherwise. Belgian businesses must still be able to receive Peppol invoices from domestic suppliers.",
+      },
+      {
+        q: "What happens if KSeF is unavailable when I need to issue an invoice?",
+        a: "Poland's rules provide offline procedures. In offline24 mode you can issue the invoice outside KSeF and upload it by the next business day, and separate rules cover KSeF outages and total failure situations announced by the Ministry of Finance. Invoices delivered outside KSeF in these modes generally need verification QR codes. Check the current Ministry guidance and your software's offline support.",
+      },
+      {
+        q: "What is the QR code on a KSeF invoice for?",
+        a: "When an invoice is shown or delivered outside KSeF, for example to a consumer or a foreign customer, or as a printed copy, it carries a QR code that lets the recipient check the invoice against KSeF. Invoices issued in offline modes may need an additional certificate QR code. Your invoicing software should generate these automatically, so check it supports the current KSeF 2.0 requirements.",
+      },
+      {
+        q: "Do foreign companies have to use KSeF?",
+        a: "Foreign businesses with a fixed establishment in Poland that takes part in the sale generally fall under KSeF. Foreign businesses registered for Polish VAT without a fixed establishment are generally not obliged to issue invoices in KSeF, though they can choose to. They may still need to deal with KSeF when receiving invoices. Confirm your status with a Polish tax adviser.",
+      },
     ],
     content: `
 <p><strong>Quick answer:</strong> Belgium made structured B2B e-invoicing mandatory on 1 January 2026, using the Peppol network, with a tolerance period to 31 March 2026 and fines from €1,500. Poland's KSeF became mandatory for issuing invoices on 1 February 2026 for taxpayers with 2024 sales above PLN 200 million and on 1 April 2026 for everyone else, with penalties deferred to 1 January 2027.</p>
@@ -1152,6 +1328,26 @@ export const EINVOICING_POSTS: PostDraft[] = [
       {
         q: "Is e-invoicing mandatory in Australia?",
         a: "As of October 2026 there is no general B2B e-invoicing mandate. Australia uses Peppol for e-invoicing, Commonwealth government agencies must be able to receive Peppol e-invoices, and businesses can adopt it voluntarily through an accredited access point.",
+      },
+      {
+        q: "How long must I keep tax invoices in Australia?",
+        a: "The ATO generally requires you to keep tax invoices and other business records for five years from when you prepared or obtained them, or from when you completed the transaction, whichever is later. Records can be paper or digital as long as they are complete, legible and can be produced if the ATO asks. Some records, such as those for capital gains, may need to be kept longer.",
+      },
+      {
+        q: "Can I issue an Australian tax invoice in a foreign currency?",
+        a: "Yes, but the GST payable must be clearly ascertainable. You can show the GST amount in Australian dollars, or show it in the foreign currency with enough information, such as the exchange rate used, for the GST in Australian dollars to be worked out. GST is reported in Australian dollars on your BAS, so keep your conversion method consistent.",
+      },
+      {
+        q: "When do I have to register for GST in Australia?",
+        a: "You must register when your GST turnover reaches $75,000 or more ($150,000 for non-profit organisations), and taxi and ride-sourcing drivers must register regardless of turnover. Below the threshold registration is optional. Once registered, you charge GST on taxable sales and issue tax invoices. Check the ATO website for the current thresholds and special cases.",
+      },
+      {
+        q: "Can I claim GST credits without a tax invoice?",
+        a: "For purchases over $82.50 including GST, you generally need a valid tax invoice before you can claim the GST credit. For purchases of $82.50 or less, other documents such as a receipt showing the GST can be enough. If a supplier has not given you a tax invoice, ask for one, because they must provide it within 28 days of your request.",
+      },
+      {
+        q: "Can one document be both a tax invoice and a receipt?",
+        a: "Yes. If the customer has already paid, a single document can serve as both, as long as it includes all the tax invoice details and shows that payment was received. Many businesses label it \"Tax invoice\" and mark it as paid with the payment date. Our free generator lets you add the amount paid and balance due, so a paid tax invoice is easy to produce.",
       },
     ],
     content: `

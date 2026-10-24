@@ -36,6 +36,22 @@ export const TAX_US_UK_2026_POSTS: PostDraft[] = [
         q: "Can I file a 1099-NEC for a contractor I paid less than $2,000?",
         a: "Generally you are not required to, and filing unnecessary forms creates extra admin for you and the contractor. The main exception is when you withheld federal income tax under backup withholding: the instructions say you must file for any person you withheld from, regardless of the amount paid.",
       },
+      {
+        q: "Does the $2,000 threshold apply to foreign contractors?",
+        a: "No, because Forms 1099-NEC and 1099-MISC are for US persons. A foreign contractor should give you Form W-8BEN or W-8BEN-E instead of a W-9. If all the work is done outside the US, there is generally no 1099 and no US withholding. Work performed in the US by a nonresident follows different rules, so get advice in that case.",
+      },
+      {
+        q: "If I paid one contractor partly by check and partly by PayPal, do I file?",
+        a: "Count only the direct payments, such as check, ACH or cash. Card and payment network payments are reported by the processor on Form 1099-K. For example, if you paid $1,500 by check and $1,000 through PayPal goods and services, your direct total is $1,500, which is under $2,000, so no 1099-NEC is required for 2026.",
+      },
+      {
+        q: "Do expense reimbursements count toward the $2,000 total?",
+        a: "They can. Reimbursements a contractor did not account to you for, such as a flat travel allowance without receipts, are generally treated as part of their compensation. Reimbursements that were properly substantiated may be treated differently. Check the current IRS instructions for Forms 1099-MISC and 1099-NEC, and ask your tax professional how to handle your own reimbursement policy.",
+      },
+      {
+        q: "Does the threshold change affect Forms 1099-INT or 1099-DIV?",
+        a: "No. The $2,000 change covers Form 1099-NEC and most Form 1099-MISC boxes. Forms 1099-INT and 1099-DIV have their own reporting thresholds, generally $10 for most interest and dividends. Check the instructions for each form for the year you are filing, as each has its own rules and exceptions.",
+      },
     ],
     content: `
 <p><strong>Quick answer:</strong> The 1099 threshold for 2026 is $2,000. For payments made on or after January 1, 2026, you only have to file Form 1099-NEC, and most Form 1099-MISC categories such as rents, when you pay one person $2,000 or more in the year. It replaces the $600 rule in place since 1954 and will be indexed for inflation from 2027.</p>
@@ -176,6 +192,26 @@ export const TAX_US_UK_2026_POSTS: PostDraft[] = [
       {
         q: "Is a 1099-K issued for personal payments like splitting rent?",
         a: "It should not be. Form 1099-K covers payments for goods and services. Personal transfers between friends and family are not income and should be marked as personal in the payment app. If you receive a 1099-K that includes personal amounts, keep records showing what they were so you can explain the difference on your return.",
+      },
+      {
+        q: "Do I have to file 1099s if I am a freelancer paying subcontractors?",
+        a: "Yes, if you pay them in the course of your trade or business and the other conditions are met. Sole proprietors and single-member LLCs have the same filing duty as larger businesses. If you pay a subcontractor $2,000 or more directly in 2026, collect a W-9 and file Form 1099-NEC unless an exception applies, such as payment to a corporation.",
+      },
+      {
+        q: "What is the difference between a 1099 and a W-2?",
+        a: "A W-2 reports wages paid to an employee, with income, Social Security and Medicare taxes withheld by the employer. A 1099-NEC reports payments to an independent contractor, who pays their own taxes, including self-employment tax. Whether someone is an employee or a contractor depends on the working relationship, not on which form you choose, so check the IRS guidance on worker classification.",
+      },
+      {
+        q: "Can I file 1099 forms for free?",
+        a: "Yes. The IRS's Information Returns Intake System (IRIS) lets businesses e-file Forms 1099 for free, and you generally must e-file if you file 10 or more information returns in total. Many accounting and payroll products also file 1099s, often for a fee. You still need to send copies to each recipient by the deadline.",
+      },
+      {
+        q: "What should I do if I have not received a 1099 I expected?",
+        a: "Report the income anyway, using your invoices and bank records. The payee copy of Form 1099-NEC is due by January 31, or the next business day, so allow a little time and then ask the client. Not receiving a form does not change what you owe, and the IRS may still receive its copy from the payer.",
+      },
+      {
+        q: "Do I need a 1099 for payments for goods or supplies?",
+        a: "Generally no. Forms 1099-NEC and 1099-MISC cover payments for services, rent and the other listed categories, not routine purchases of goods or merchandise. If an invoice mixes goods and services, such as installation work, only the service part is normally reportable. Ask suppliers to separate the two on their invoices to make year-end reporting easier.",
       },
     ],
     content: `
@@ -323,6 +359,22 @@ export const TAX_US_UK_2026_POSTS: PostDraft[] = [
       {
         q: "Is a tip the same as a gratuity on an invoice?",
         a: "Only if the customer chose to pay it. A gratuity line the customer can skip or change can be a tip. An automatic gratuity added to every bill, or a fixed percentage the customer cannot remove, is treated as a service charge and is not a qualified tip under the Treasury regulations.",
+      },
+      {
+        q: "What records should I keep to support the tips deduction?",
+        a: "Keep a record of each tip with the date, amount, client or job and how it was paid. Save card reader, booking app and payment platform statements that show tips separately from service fees, and keep any Form 1099-NEC, 1099-MISC or 1099-K you receive. Receipts or paid invoices with a separate 'Tip (voluntary)' line make the amounts easy to prove.",
+      },
+      {
+        q: "Do tips paid by a business count toward the $2,000 1099-NEC threshold?",
+        a: "Yes. For 2026, cash tips a business pays you as a non-employee are included in box 1a nonemployee compensation on Form 1099-NEC, with the tip portion also shown in box 1b. So tips are part of the total that is tested against the $2,000 threshold. Tips paid through a card processor or app are reported on Form 1099-K instead.",
+      },
+      {
+        q: "Can I claim the deduction if I get tips as both an employee and a self-employed worker?",
+        a: "Yes, but the $25,000 cap applies to the total qualified tips on your return, not to each job separately. Self-employed tips are also limited to the net income of the business where you earned them. If you have both types of tip income, keep the records separate and check the IRS guidance or a tax professional before you file.",
+      },
+      {
+        q: "Do I charge sales tax on tips?",
+        a: "In many states, voluntary tips the customer chooses are not subject to sales tax, but mandatory service charges may be taxable as part of the sale price. Rules vary by state and by type of service. Check your state revenue department's guidance and keep tips on a separate line from taxable charges on your invoices and receipts.",
       },
     ],
     content: `
@@ -477,6 +529,26 @@ export const TAX_US_UK_2026_POSTS: PostDraft[] = [
       {
         q: "Can I sign up for MTD for Income Tax voluntarily?",
         a: "Yes. HMRC has allowed voluntary sign-up, which can be useful if you want to get used to the software and quarterly rhythm before your income makes it mandatory. Check the eligibility conditions on GOV.UK, as some income types and circumstances could not join voluntarily at first.",
+      },
+      {
+        q: "Can my accountant send my quarterly updates for me?",
+        a: "Yes. An accountant or other agent can sign you up and submit quarterly updates and your tax return on your behalf through their HMRC agent services account, once you have authorised them. You remain responsible for the accuracy of the figures, so agree who records transactions and by when, so your agent has your records in time for each deadline.",
+      },
+      {
+        q: "Do I need a separate business bank account for MTD for Income Tax?",
+        a: "No, MTD for Income Tax does not require a separate business account. Using one is still sensible, because it makes digital records much easier to keep and bank feeds in bookkeeping software cleaner. If you use one account for everything, you must still identify and record each business transaction separately from your personal spending.",
+      },
+      {
+        q: "How do I correct a mistake in a quarterly update?",
+        a: "You do not usually need to resubmit an old quarter. Quarterly updates are cumulative for the tax year, so correcting the figures in your records means your next update will carry the right year-to-date totals. Final adjustments can also be made in your tax return. Check HMRC's current guidance or your software's help pages for how your product handles corrections.",
+      },
+      {
+        q: "Will HMRC sign me up for MTD for Income Tax automatically?",
+        a: "No. HMRC has written to people it expects to be in scope, but you or your agent need to sign up through GOV.UK and authorise compatible software. Do not rely on receiving a letter: work out your qualifying income from your Self Assessment return and sign up before your first quarterly period ends.",
+      },
+      {
+        q: "Does MTD for Income Tax change what I put on my invoices?",
+        a: "No. MTD changes how you record and report income, not the content of your invoices. Your invoices still need your details, the client's details, a unique number, dates, a description and the amount, plus VAT details if you are registered. The difference is that each sale must also be recorded digitally in your software or linked spreadsheet.",
       },
     ],
     content: `

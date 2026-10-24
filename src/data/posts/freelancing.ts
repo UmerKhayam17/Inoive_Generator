@@ -31,6 +31,26 @@ export const FREELANCING_POSTS: PostDraft[] = [
         q: "Should I publish my rates on my website?",
         a: "It depends on your market. Publishing a starting price filters out clients who cannot afford you, while keeping prices private lets you quote each project on its scope.",
       },
+      {
+        q: "How do I convert my hourly rate into a day rate?",
+        a: "Multiply your hourly rate by the hours in your working day, usually 7 to 8. At $75 an hour, a 7.5-hour day is $562.50, which you might round to $560 or $575. Some freelancers offer a small discount for booking full days because it guarantees the time. State in writing how many hours a day covers and how extra hours are billed.",
+      },
+      {
+        q: "Should I charge international clients a different rate?",
+        a: "You can, but your minimum rate should still come from your own costs and income target. Clients in higher-cost markets often budget more, so charging their local market rate can be reasonable. Quote in a clear currency, decide who pays transfer and conversion fees, and factor in exchange rate swings. Your invoice should show the agreed currency code, such as USD or EUR, to avoid confusion.",
+      },
+      {
+        q: "What is value-based pricing for freelancers?",
+        a: "Value-based pricing sets your fee from what the work is worth to the client, rather than the hours it takes. If a new checkout flow could add significant revenue, a fee tied to that outcome can be well above your hourly figure. It works best when you can estimate the client's gain and have proof of results. Keep your hourly rate as an internal floor so you never quote below it.",
+      },
+      {
+        q: "Should I charge for meetings, calls and revisions?",
+        a: "Build them into your price one way or another. On hourly work, meetings and calls are normally billable time. On fixed-price work, include an allowance for a set number of calls and revision rounds, then charge for anything beyond it at your hourly rate. Short introductory sales calls are usually free. Write the rules into your quote so extra time is not a surprise.",
+      },
+      {
+        q: "What should I say when a client says my rate is too high?",
+        a: "Stay calm and reduce scope rather than your rate. Ask what budget they have, then offer a version of the project that fits it, such as fewer pages, fewer revision rounds or a longer timeline. Explain briefly what your price includes and the results you deliver. If the budget is far below your minimum rate, it is usually better to decline politely than to work at a loss.",
+      },
     ],
     content: `
 <p><strong>Quick answer:</strong> To set freelance rates, work out how much revenue you need in a year (your target take-home pay plus business costs plus a tax allowance), then divide it by the hours you can realistically bill. That gives you a minimum hourly rate. Adjust it up or down for your market, experience and the value of the work, and then decide whether to present it as an hourly, day, project or retainer price.</p>
@@ -161,6 +181,26 @@ export const FREELANCING_POSTS: PostDraft[] = [
         q: "Can I use a free freelance contract template?",
         a: "A template is a useful starting point and checklist, but it should be adapted to your services, your client and your jurisdiction. For high-value or complex work, have a lawyer review the final version.",
       },
+      {
+        q: "Can I sign a freelance contract electronically?",
+        a: "In most countries, yes. In the US, the federal ESIGN Act and state laws based on the UETA generally give electronic signatures the same effect as handwritten ones, and the UK and EU also recognize electronic signatures for most commercial contracts. A typed name, a drawn signature or an e-signature service usually works. A few document types have special rules, so check if your agreement is unusual.",
+      },
+      {
+        q: "What is the difference between a master services agreement and a statement of work?",
+        a: "A master services agreement (MSA) sets the general terms for your whole relationship with a client, such as payment terms, intellectual property, confidentiality and liability. A statement of work (SOW) covers one specific project: its scope, deliverables, timeline and fee. With an MSA in place, each new project only needs a short SOW, which saves you renegotiating the legal terms every time.",
+      },
+      {
+        q: "Should a freelance contract include a non-compete clause?",
+        a: "Be careful about agreeing to one. A broad non-compete can stop you working for other clients in your field, which is a serious risk for a freelancer. Enforceability varies widely: California, for example, generally voids non-compete clauses, while other places allow limited ones. A narrower non-solicitation or confidentiality clause usually protects the client well enough. Get legal advice before signing a restrictive clause.",
+      },
+      {
+        q: "Do I need a limitation of liability clause?",
+        a: "It is strongly recommended. A limitation of liability clause caps what you could owe if something goes wrong, often at the fees paid under the contract, and usually excludes indirect losses such as lost profits. Without one, a client could in theory claim losses far larger than your fee. Some liabilities cannot be limited by law, so have a lawyer check the wording for your jurisdiction.",
+      },
+      {
+        q: "What if I start work before the contract is signed?",
+        a: "You take on more risk, because there is less clear evidence of what was agreed. If you must start early, at least get the scope, price and payment terms confirmed in a written email reply, and ideally take a deposit first. Note in the signed contract that it covers work already done from the start date. Avoid delivering final files until the agreement is in place.",
+      },
     ],
     content: `
 <p><strong>Quick answer:</strong> A freelance contract template should cover who the parties are, the exact scope of work, deliverables and deadlines, the fee and payment schedule, invoice terms, revisions, change requests, intellectual property, confidentiality, termination and how disputes are handled. A clear contract makes your invoices easier to approve and gives you something concrete to point to if a client pays late.</p>
@@ -270,6 +310,26 @@ export const FREELANCING_POSTS: PostDraft[] = [
       {
         q: "How do I record a retainer payment in my books?",
         a: "Under accrual accounting, a retainer for work not yet performed is typically recorded as unearned revenue and recognised as income as the work is delivered. Under cash accounting it is usually recorded when received. Ask your accountant which applies to you.",
+      },
+      {
+        q: "How much should I charge for a monthly retainer?",
+        a: "Start from the hours or deliverables the client needs each month and multiply by your rate. For example, 20 hours at $90 an hour is $1,800 a month. Many freelancers offer a modest discount on the rate in return for guaranteed monthly income, and charge a higher rate for overage. Review the figure every few months against the time you actually spend.",
+      },
+      {
+        q: "Can a client cancel a retainer at any time?",
+        a: "Only on the terms in your agreement. Most retainer agreements require written notice, commonly 30 days or one full billing period, and some set a minimum term such as three months. Say what happens to prepaid but unused time or balances when the arrangement ends, whether that is a refund, a credit or expiry. Without a notice clause, cancellations can leave you with an unexpected gap in income.",
+      },
+      {
+        q: "Should I offer a retainer to a brand-new client?",
+        a: "It is often better to start with a small fixed-price project first. That lets you both test the working relationship, response times and payment habits before committing to monthly fees. Once the trial goes well, propose a retainer based on the work you now know they need. If a new client asks for a retainer straight away, consider a shorter initial term with a review date.",
+      },
+      {
+        q: "How do I raise the price of an existing retainer?",
+        a: "Give written notice, often 30 to 60 days, before the new fee applies, and time the change for the renewal date or a quarterly review. Explain briefly what has changed, such as more scope or higher costs, and show the client their recent usage. Offer options, such as keeping the price with fewer hours. Update the agreement reference on the first invoice at the new rate.",
+      },
+      {
+        q: "Can I set up automatic recurring retainer invoices with this generator?",
+        a: "No. Our free generator does not send invoices or create recurring billing on a schedule. What it does do is save your draft in your browser, so each month you can open it, update the invoice number, service period and any overage line, and download a new PDF to send yourself. If you want fully automatic monthly invoices and card charging, you will need accounting or billing software.",
       },
     ],
     content: `
@@ -387,6 +447,26 @@ export const FREELANCING_POSTS: PostDraft[] = [
       {
         q: "Is it worth sending an unpaid invoice to collections?",
         a: "Collection agencies typically keep a percentage of what they recover, so it often makes sense only for older debts where direct chasing has failed. Weigh the fee against the amount owed and the client relationship.",
+      },
+      {
+        q: "What happens if a client goes out of business before paying me?",
+        a: "If the client enters insolvency, administration or bankruptcy, you usually become an unsecured creditor. You can submit a claim with the insolvency practitioner, administrator or bankruptcy trustee, attaching your invoices and contract, but unsecured creditors often recover only part of the debt, or nothing. Act quickly, because claim deadlines apply. Stop any further work immediately and take advice on the process in your country.",
+      },
+      {
+        q: "Can I write off an unpaid invoice for tax purposes?",
+        a: "Sometimes. It depends on your accounting method and country. In the US, cash-basis taxpayers generally cannot deduct unpaid fees, because the income was never reported. Accrual-basis businesses may be able to claim a bad debt deduction. In the UK, VAT-registered businesses may claim VAT bad debt relief once a debt is over six months overdue and written off in their accounts. Ask an accountant before writing anything off.",
+      },
+      {
+        q: "How long do I have to take legal action over an unpaid invoice?",
+        a: "There is a time limit, and it varies by country and state. In England and Wales, most contract debt claims must be brought within six years under the Limitation Act 1980. In the US, limits for contract claims are set by each state and differ for written and oral agreements. Do not wait until the deadline approaches, because evidence gets harder to gather and clients become harder to trace.",
+      },
+      {
+        q: "Can I hold back the work until the client pays?",
+        a: "Often, yes, if your contract supports it. Many freelance agreements say ownership of the final work or a license to use it transfers only on full payment, and that work pauses when invoices are overdue. Be careful not to damage or delete a client's own data or systems, or breach confidentiality, because that can create legal liability for you. Check your contract and take advice in serious cases.",
+      },
+      {
+        q: "Should I name and shame a non-paying client online?",
+        a: "It is risky and rarely recovers the money. Public posts can expose you to defamation claims if anything you say is inaccurate or exaggerated, and aggressive pressure on a debtor may breach harassment or debt collection rules in some places. Stick to private, factual communication and formal steps such as a demand letter or small claims. Leaving honest, measured reviews on official platforms is a separate matter, but get the facts right.",
       },
     ],
     content: `
@@ -513,6 +593,26 @@ export const FREELANCING_POSTS: PostDraft[] = [
         q: "Does a client withhold taxes from a contractor invoice?",
         a: "Normally no. Clients usually pay independent contractors the full invoice amount without withholding, and you are responsible for paying your own income and self-employment taxes, often through quarterly estimated payments.",
       },
+      {
+        q: "Will I get a 1099-NEC if a client pays me less than $2,000?",
+        a: "Possibly not. For payments made from 2026 onward, the 1099-NEC reporting threshold rose from $600 to $2,000 per payee per calendar year, so a client paying you less may not have to file one. The income is still taxable either way. Report all your self-employment income from your own invoices and bank records, not just the amounts on 1099 forms. Check the IRS website for current thresholds.",
+      },
+      {
+        q: "What if a client pays my invoice through PayPal or by card?",
+        a: "Payments made by card or through a third-party payment network are generally reported by the payment platform on Form 1099-K rather than by the client on Form 1099-NEC. That means you may receive a 1099-K instead. Use your invoices to reconcile the forms, so the same income is not counted twice on your return. Thresholds for 1099-K have changed several times, so check the IRS website.",
+      },
+      {
+        q: "When are quarterly estimated taxes due for independent contractors?",
+        a: "The IRS normally sets four due dates: April 15, June 15 and September 15 of the tax year, and January 15 of the following year. If a date falls on a weekend or legal holiday, it moves to the next business day. You can calculate payments with Form 1040-ES and pay online. Many states have their own estimated tax schedule, so check with your state tax agency too.",
+      },
+      {
+        q: "Why would a client withhold 24% from my contractor payment?",
+        a: "That is backup withholding. If you do not give the client a correct taxpayer identification number on Form W-9, or the IRS notifies them that your TIN is wrong, they may be required to withhold 24% from reportable payments and send it to the IRS. You can usually avoid it by returning an accurate W-9 promptly. Any amount withheld is credited against your tax when you file.",
+      },
+      {
+        q: "Can I add a late fee to an independent contractor invoice?",
+        a: "Yes, if the client agreed to it in your contract or written terms before the work began. State the fee on the invoice, for example '1.5% per month on balances more than 30 days overdue, per agreement dated 4 August 2026'. Some states cap interest rates or regulate late charges, so keep the fee reasonable and check your state's rules. Adding a fee nobody agreed to is usually unenforceable.",
+      },
     ],
     content: `
 <p><strong>Quick answer:</strong> An independent contractor invoice is the bill a self-employed 1099 worker sends a client to request payment for services. It should show your name or business name, the client's legal name, a unique invoice number, issue and due dates, itemized services with rates, the total, and how to pay. No taxes are normally withheld, so the client pays the full amount and you handle your own taxes.</p>
@@ -620,6 +720,26 @@ export const FREELANCING_POSTS: PostDraft[] = [
       {
         q: "Do freelancers need a logo on their invoice?",
         a: "A logo is not required, but it makes your invoice easier to recognize and look more professional. A clear name and consistent design work just as well if you do not have a logo yet.",
+      },
+      {
+        q: "How should I number my invoices as a new freelancer?",
+        a: "Choose a simple format you can keep forever, such as a year and sequence like 2026-001, or your initials plus a sequence like JD-2026-001. You do not have to start at 001 if you prefer not to signal that you are new, but every number must be unique and follow on from the last. Keep a log so you never reuse or skip a number by accident.",
+      },
+      {
+        q: "Can I invoice a freelance client in a different currency?",
+        a: "Yes. Agree the currency before you start, then show every amount on the invoice in that currency with its code, such as USD, GBP or EUR, because symbols like $ are ambiguous. Add bank details that can receive that currency, or a payment link that accepts foreign cards. Our generator supports eight currencies, and the currency you pick applies to every amount on the invoice.",
+      },
+      {
+        q: "How do I show a discount on a freelance invoice?",
+        a: "List your services at your full rate, then show the discount as its own line or in the discount field, with a label such as 'Loyalty discount (5%)' or 'Launch offer'. The client sees the real value of your work and knows the discount is a choice, which makes it easier to remove later. Calculate any tax on the amount after the discount, if you charge tax.",
+      },
+      {
+        q: "Do I need to put a tax number on my freelance invoice?",
+        a: "Only in certain cases. If you are registered for VAT, GST or sales tax, your registration number is usually required on invoices where you charge that tax. If you are not registered, leave tax numbers off and do not charge tax. US freelancers normally give their SSN or EIN on Form W-9 instead of printing it on invoices. Check your tax authority's rules for your country.",
+      },
+      {
+        q: "What should I do if I sent a freelance invoice with a mistake?",
+        a: "Tell the client promptly and correct it properly. If the invoice has not been paid or entered into their system, many freelancers simply send a corrected version, clearly marked as replacing the original. If it has been paid or recorded, or you are registered for VAT or GST, issue a credit note and a new invoice instead. Never quietly change a sent invoice and keep the same number.",
       },
     ],
     content: `
@@ -752,6 +872,26 @@ export const FREELANCING_POSTS: PostDraft[] = [
         q: "Can I invoice for a one-off job?",
         a: "Yes. A one-off invoice works the same way as any other: give it a unique number, describe the work, state the amount and due date, and include payment details. Keep a copy for your tax records.",
       },
+      {
+        q: "Can I receive invoice payments into my personal bank account?",
+        a: "Often, yes, especially when you are starting out. Some banks' terms do not allow regular business use of personal accounts, though, so check yours. A separate account, even a second personal one used only for this work, makes it much easier to track income and expenses at tax time. Put the account name exactly as it appears at the bank on your invoice to avoid failed transfers.",
+      },
+      {
+        q: "Does Making Tax Digital apply to me if I invoice as an individual in the UK?",
+        a: "It might. From 6 April 2026, sole traders and landlords with qualifying income over £50,000 must keep digital records and send quarterly updates to HMRC using compatible software. The threshold is due to fall to £30,000 from April 2027 and £20,000 from April 2028. Qualifying income means gross self-employment and property income before expenses. Check HMRC's current guidance to see if and when you are in scope.",
+      },
+      {
+        q: "Can I invoice for side work while I have a full-time job?",
+        a: "Yes. Many people invoice for freelance or side work alongside a salaried job. Check your employment contract first, because some restrict outside work, conflicts of interest or use of your employer's equipment. The side income is usually taxable on top of your salary, so you may need to register as self-employed and file a tax return. Set money aside, because no tax is withheld from your invoices.",
+      },
+      {
+        q: "What if a client asks for my company registration number?",
+        a: "Explain that you trade as an individual, so you have no company registration number. A sole proprietor or sole trader does not have one, and that is perfectly normal. The client may ask for other details instead, such as a W-9 in the US or your full legal name and address in the UK. If you are registered for VAT, give your VAT number, but never invent a number.",
+      },
+      {
+        q: "Do I need an invoice if the client pays me in cash?",
+        a: "It is still a good idea. An invoice, or a receipt marked as paid in cash, records what the work was, who paid and how much, which protects both of you if there is a query later. It also gives you a record of income for your tax return, because cash payments leave no bank trail. Number it in your normal sequence and keep a copy.",
+      },
     ],
     content: `
 <p><strong>Quick answer:</strong> You can invoice without a business by issuing the invoice in your own legal name. Include your name and contact details, the client's details, a unique invoice number, the date, a description of the work, the amount due, a due date and how to pay. In most countries an individual working for themselves is treated as a sole proprietor or sole trader automatically, but you may still need to register for tax and report the income.</p>
@@ -857,6 +997,26 @@ export const FREELANCING_POSTS: PostDraft[] = [
       {
         q: "Is milestone billing the same as progress billing?",
         a: "They are similar. Milestone billing ties payments to defined deliverables, while progress billing, common in construction, usually bills a percentage of work completed in each period.",
+      },
+      {
+        q: "Should the first milestone payment be due before work starts?",
+        a: "In most cases, yes. Making the first milestone a deposit paid before you begin, often 25% to 50%, confirms the client is committed and covers your early work. Present it as standard practice rather than a sign of distrust. If a large client cannot pay in advance, make the first milestone small and early, such as on delivery of an initial plan within the first week.",
+      },
+      {
+        q: "Can I change milestone amounts in the middle of a project?",
+        a: "Only if both sides agree in writing. If the scope grows, add a change request with its own price rather than quietly increasing a later milestone. If the client wants to re-split the payments, record the new schedule in an email or contract amendment and update the running total in the notes of each later invoice. That keeps the paper trail clear if there is a dispute.",
+      },
+      {
+        q: "How do milestone payments work on freelance platforms such as Upwork?",
+        a: "On fixed-price contracts, Upwork lets clients split the project into milestones and fund each one into escrow before you start that stage. When you submit the work, the client approves it and the funds are released to you, subject to the platform's review rules and fees. Platform procedures and charges change, so check the platform's current help pages. Off-platform work needs your own written milestone schedule.",
+      },
+      {
+        q: "How is tax handled on milestone payments?",
+        a: "Each milestone invoice is normally treated as its own taxable event. If you are registered for VAT, GST or sales tax, you generally charge tax on each milestone invoice at the rate that applies at that time, and tax may become due when you invoice or receive payment, depending on local rules. For income tax, timing depends on your accounting method. Ask your accountant how this applies to you.",
+      },
+      {
+        q: "What is retainage in milestone billing?",
+        a: "Retainage, also called retention, is a percentage of each payment that the client holds back until the whole project is finished and accepted, often around 5% to 10%. It is most common in construction and large contracts. If a client asks for it, agree the percentage and the release date in writing, and show the retained amount as a separate deduction on each invoice so the balance is clear.",
       },
     ],
     content: `
@@ -973,6 +1133,26 @@ export const FREELANCING_POSTS: PostDraft[] = [
       {
         q: "Is it OK to ask for payment upfront?",
         a: "Yes. Asking for a deposit or full payment upfront is normal, especially for new clients or small jobs. Present it as your standard policy rather than a special condition.",
+      },
+      {
+        q: "What subject line should I use when asking for payment by email?",
+        a: "Keep it factual and easy to search: include the invoice number, the amount and the status. For example, 'Invoice INV-2026-072 for $2,850.00, due 14 November' before the due date, or 'Overdue: Invoice INV-2026-072, due 14 November' afterwards. Avoid vague subjects like 'Quick question' or alarming ones in capital letters. A clear subject helps the right person find and process the email quickly.",
+      },
+      {
+        q: "Is it OK to ask for payment by text message or WhatsApp?",
+        a: "For small clients and individuals, a short, friendly message is often fine and can get a faster reply. For business clients, use email for the main request, because accounts teams work from inboxes and need a written record. If you do message someone, keep it brief, mention the invoice number and amount, and follow up by email so the request is documented.",
+      },
+      {
+        q: "How do I ask for a partial payment when the full amount is late?",
+        a: "Ask for the undisputed or affordable part now and agree dates for the rest. For example: 'Could you pay $1,000 this week, with the remaining $1,850 by 30 November?' Confirm the plan in writing, acknowledge each payment as it arrives, and show the amount paid and balance due on any updated invoice or statement. A partial payment now is usually better than waiting for the full sum.",
+      },
+      {
+        q: "How do I ask for payment when I sent the invoice late?",
+        a: "Send it now, without a long apology. A short line such as 'Apologies for the delay in sending this' is enough. Give the client a fair due date from the date you actually send it, rather than backdating the deadline, and follow your normal reminder schedule from there. Then set yourself a habit of invoicing on delivery so it does not happen again.",
+      },
+      {
+        q: "What should I do if my contact stops replying to payment requests?",
+        a: "Try a different route before escalating. Call them, or email their accounts payable team or a more senior contact, politely explaining that you have not been able to reach your usual contact about the invoice, quoting its number. Keep copies of every attempt. If nobody responds after a final notice with a firm date, move to the formal steps in your collection process, such as a demand letter.",
       },
     ],
     content: `

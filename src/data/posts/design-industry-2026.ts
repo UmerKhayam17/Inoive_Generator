@@ -36,6 +36,22 @@ export const DESIGN_INDUSTRY_2026_POSTS: PostDraft[] = [
         q: "Which VAT category code should I use for reverse charge?",
         a: "In EN 16931 the VAT category code for reverse charge is AE, and the invoice must then show the buyer's VAT identifier (BT-48) and a VAT exemption reason, as text (BT-120) or code (BT-121). Other common codes are S for standard rate, Z for zero rated, E for exempt and K for intra-community supply of goods.",
       },
+      {
+        q: "What is a CIUS in e-invoicing?",
+        a: "A CIUS, or core invoice usage specification, is a set of extra rules that tightens EN 16931 for a particular country, sector or network. It can make optional fields mandatory or restrict code lists, but it cannot add data the core model does not allow. Peppol BIS Billing 3.0 and Germany's XRechnung are well-known examples. Check which CIUS your customer's country expects.",
+      },
+      {
+        q: "What is the difference between UBL and CII?",
+        a: "UBL 2.1 and UN/CEFACT CII are the two XML syntaxes that can carry an EN 16931 invoice. They hold the same business information but use different element names and structures. Peppol BIS Billing 3.0 normally uses UBL, while ZUGFeRD and Factur-X embed CII inside a PDF/A-3. You rarely choose directly: your software or access point picks the syntax the format requires.",
+      },
+      {
+        q: "How do I check that an EN 16931 invoice is valid?",
+        a: "E-invoices are checked against the published validation artefacts, which test the structure and the business rules, such as totals that must add up. Most e-invoicing software and Peppol access points validate automatically before sending. National bodies also publish validators, for example for XRechnung in Germany. If an invoice fails, fix the source data in your system rather than editing the XML by hand.",
+      },
+      {
+        q: "Do small businesses have to send EN 16931 e-invoices?",
+        a: "It depends on the country. Belgium has required structured B2B e-invoices since 1 January 2026. Germany has required businesses to be able to receive e-invoices since 2025, with issuing phased in from 2027 for larger firms and 2028 for everyone. France is phasing in reception and issuing from September 2026. Confirm the current dates with your national tax authority.",
+      },
     ],
     content: `
 <p><strong>Quick answer:</strong> An e-invoice template built on EN 16931 must carry the core business terms: invoice number (BT-1), issue date (BT-2), type code (BT-3), currency (BT-5), seller and buyer names and countries, at least one invoice line with quantity, unit, price and VAT category, a VAT breakdown, and the document totals (BT-106 to BT-115).</p>
@@ -205,6 +221,26 @@ export const DESIGN_INDUSTRY_2026_POSTS: PostDraft[] = [
         q: "What should I put in an invoice footer?",
         a: "The footer is for information that is the same on every invoice: your legal business name, registered address, company and VAT numbers, contact email and website, and sometimes your bank details. Many countries require company registration details on business documents, so the footer is a good permanent home for them.",
       },
+      {
+        q: "What should I write in the notes of an overdue invoice?",
+        a: "Keep it factual and polite: the original due date, the amount still outstanding, how to pay and a new date by which you expect payment. If your contract allows late fees or interest, mention that they now apply. For example: 'This invoice was due on 16 November 2026. Please pay the balance of $1,800 by 30 November.' Save firmer wording for later reminders.",
+      },
+      {
+        q: "Do invoice notes appear on structured e-invoices?",
+        a: "Yes, but in a defined field. EN 16931 e-invoices, including Peppol BIS Billing 3.0, have an invoice note field (BT-22) for free text, and payment terms have their own field. The buyer's software may show the note on screen or ignore it, so put information the client must act on, such as a PO number or due date, in the proper structured fields as well.",
+      },
+      {
+        q: "Should I put a returns or refund policy in the invoice notes?",
+        a: "If you sell products, a one-line summary is helpful, such as 'Returns accepted within 30 days in original condition. See our full returns policy at [link].' The full policy should live on your website or in your terms, where the customer saw it before buying. Consumer law in many countries sets minimum return rights you cannot remove, so check local rules.",
+      },
+      {
+        q: "What language should invoice notes be in for international clients?",
+        a: "Usually the language you use with the client, which is often English for cross-border work. Some countries have language rules for tax invoices: Saudi Arabia requires Arabic, for example, and other countries may require the local language for certain documents. If you are unsure, write the notes in both languages and check with the client's accounts team or the local tax authority.",
+      },
+      {
+        q: "Can I save standard invoice notes so I do not retype them?",
+        a: "Yes. Keep your standard wording in a text file and paste it into each new invoice. In our free invoice generator, drafts are saved in your browser's local storage, so you can keep a draft with your usual notes and payment terms and reuse it as a starting point. Update dates, names and references each time so stale details do not slip through.",
+      },
     ],
     content: `
 <p><strong>Quick answer:</strong> Good invoice notes examples are short and specific: a thank you, the payment terms and due date, how to pay, the late fee policy, any tax wording such as reverse charge, and a project reference. Put job-specific notes above the totals or below the line items, and standing details like company and VAT numbers in the footer.</p>
@@ -372,6 +408,26 @@ export const DESIGN_INDUSTRY_2026_POSTS: PostDraft[] = [
         q: "What happens to unused sessions in a package?",
         a: "That is up to your terms, within consumer law. Many trainers set an expiry date, such as 10 sessions to be used within 3 months, and some allow pauses for illness. Some places restrict expiry on prepaid services or require refunds in certain cases, so check local consumer rules and state the policy clearly before the client pays.",
       },
+      {
+        q: "Do I need to give a receipt when a client pays in cash?",
+        a: "It is good practice, even where the law does not require it. A receipt with the date, amount, what it covers and sessions remaining protects both of you if there is a dispute later. It also gives you a record of cash income for your taxes, which is easy to lose track of. Number your receipts or link each one to its invoice.",
+      },
+      {
+        q: "When should I send an invoice for personal training?",
+        a: "Send package and membership invoices before the first session or period, so payment arrives in advance. For pay-as-you-go clients, many trainers ask for payment before or at each session, or invoice weekly. Corporate and wellness program clients usually expect an invoice after the class block with Net 30 terms. Whatever you choose, put the timing in your written terms.",
+      },
+      {
+        q: "Can I raise my prices for clients partway through a package?",
+        a: "Not for sessions already paid for. A prepaid package should be honored at the price the client paid until it is used or expires under your terms. You can apply a new rate to the next package or membership period, but give clients reasonable notice in writing, such as 30 days, so the change does not come as a surprise on their next invoice.",
+      },
+      {
+        q: "Can clients pay for personal training with an HSA or FSA?",
+        a: "Usually not. Under IRS rules, general fitness costs such as gym memberships and personal training are not medical expenses. An exception can apply when training treats a specific diagnosed condition, often supported by a letter of medical necessity from a doctor. The client's plan administrator decides, so tell clients to check with them and show the dates and services clearly on your invoice.",
+      },
+      {
+        q: "What business expenses can a self-employed personal trainer deduct?",
+        a: "In the US, common deductible costs include certifications and continuing education, liability insurance, equipment, gym or studio rental fees, booking and payment app fees, marketing, and business mileage between client locations. Expenses must be ordinary and necessary for your business and supported by receipts. Rules differ in other countries, so check with your tax authority or an accountant before claiming.",
+      },
     ],
     content: `
 <p><strong>Quick answer:</strong> A personal trainer invoice template should show your business and client details, the service type (single session, package or membership), the session dates or package size, the rate, any discount, sessions used and remaining, your cancellation policy, payment terms and how to pay. Bill packages upfront and attach a session log so clients can see what they used.</p>
@@ -512,6 +568,26 @@ export const DESIGN_INDUSTRY_2026_POSTS: PostDraft[] = [
       {
         q: "Should videographers charge sales tax?",
         a: "It depends on the state and on what you deliver. Some US states tax video production or the transfer of finished video, others exempt services, and some distinguish between digital delivery and physical media. Equipment rental passed through to clients can also be taxable. Check with your state revenue department and use a sales tax calculator if tax applies.",
+      },
+      {
+        q: "How much deposit should a videographer ask for?",
+        a: "Many videographers ask for 25% to 50% of the quoted price to book the date, with the balance due on delivery or before the event. A larger deposit makes sense when you must hire crew or equipment early. State in the contract whether the deposit is refundable, and check local consumer law, which can limit non-refundable deposits for consumer clients.",
+      },
+      {
+        q: "Should I charge for travel days?",
+        a: "Yes, if travel stops you taking other work. Many videographers charge a reduced day rate or half-day rate for travel days, plus mileage, flights, accommodation and per diems at cost. List each as a separate line and attach receipts for larger items. Agree the travel policy in the quote so the client is not surprised by a travel day on the final invoice.",
+      },
+      {
+        q: "Should I deliver final files before the client pays?",
+        a: "Many videographers share watermarked or low-resolution previews for approval and release the final high-resolution files once the balance is paid. If you do deliver first, make the usage licence conditional on full payment, and say so on the invoice. That gives you leverage and a clear position if the client uses the video without paying.",
+      },
+      {
+        q: "Can I use a client's video in my portfolio?",
+        a: "Only if your contract allows it. Many videographers include a clause permitting portfolio and showreel use, often after the client has published the video. Some corporate and advertising clients ask for confidentiality or exclusivity, which may cost extra or rule out portfolio use. Agree it in writing before the shoot and mention any restriction in the licence summary on the invoice.",
+      },
+      {
+        q: "How do I invoice for drone footage?",
+        a: "Show drone work as its own line, priced per day, per flight or per deliverable, separately from the main camera package. In the US, commercial drone flights generally require an FAA Part 107 remote pilot certificate, and other countries have their own aviation rules and permissions. Add any permit or location fees as separate lines, and note who holds the required licence.",
       },
     ],
     content: `

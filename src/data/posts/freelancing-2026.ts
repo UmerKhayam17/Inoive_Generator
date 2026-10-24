@@ -31,6 +31,26 @@ export const FREELANCING_2026_POSTS: PostDraft[] = [
         q: "How do I show AI-assisted work on an invoice?",
         a: "Describe the deliverable, not the tool: for example, five 1,200-word SEO articles, researched, edited and fact-checked. If you pass through project-specific AI costs, list them on a separate line marked as reimbursable at cost, and keep the receipt. That keeps your professional fee clear and the costs auditable.",
       },
+      {
+        q: "Can I deduct my AI tool subscriptions as a business expense?",
+        a: "Usually, yes, if you use them for your business. In the US, subscriptions that are ordinary and necessary for your work are generally deductible on Schedule C, and in the UK they are typically allowable expenses if used wholly and exclusively for the business. Split any personal use, keep receipts, and check the rules with your tax authority (such as the IRS or HMRC) or an accountant.",
+      },
+      {
+        q: "How do I bill hourly work when AI does part of the task?",
+        a: "Bill only the time you actually spent, including prompting, reviewing, editing and testing. Do not charge the hours the job used to take before you used AI, because that misrepresents your timesheet. If the work is now much faster, that is a sign to quote it per deliverable or as a project fee instead, so you keep the benefit honestly.",
+      },
+      {
+        q: "Can a client refuse to pay if they find out I used AI?",
+        a: "It depends on your contract. If the agreement banned or limited AI and you used it anyway, the client may have a breach claim and grounds to withhold payment. If the contract was silent and the work met the brief, refusing payment is much harder to justify. The safest protection is agreeing AI use in writing before you start.",
+      },
+      {
+        q: "Who is responsible if AI-generated content in my deliverable infringes someone's rights?",
+        a: "In most freelance contracts, you are, because you deliver the work and usually give warranties about originality. Reduce the risk by checking generated images and text for close similarity to existing work, limiting your warranties for AI-generated material in the contract, and reading your tool's terms, since some providers offer IP indemnities only on certain paid plans. Professional indemnity insurance can also help.",
+      },
+      {
+        q: "How should I price AI automation or chatbot projects for clients?",
+        a: "Price the build as a fixed project or value-based fee tied to the time or money the automation saves the client. Then add a separate monthly retainer for monitoring, prompt updates and fixes, and agree who pays ongoing usage costs such as API calls. Putting usage on the client's own account, or passing it through at cost, avoids surprise bills landing on you.",
+      },
     ],
     content: `
 <p><strong>Quick answer:</strong> AI freelance pricing works best when you charge for the outcome rather than the minutes. Price AI-assisted work per deliverable or by value, keep a minimum floor based on your old hourly maths, treat general AI subscriptions as overhead, pass through project-specific AI costs at cost, and add an AI disclosure clause to your contract so the client knows how the work was made.</p>
@@ -171,6 +191,22 @@ export const FREELANCING_2026_POSTS: PostDraft[] = [
       {
         q: "When should I send a UGC invoice?",
         a: "Send the deposit invoice when the contract is signed and the final invoice when the brand approves the content or when the deadline for feedback passes, whichever your contract specifies. Include a due date, such as net 15, rather than leaving payment open-ended.",
+      },
+      {
+        q: "Can I use the UGC I made for a brand in my own portfolio?",
+        a: "Only if your contract allows it. Many brands are happy for creators to show work in a portfolio once the content is live, but some require approval or ban sharing because of unreleased products or exclusivity. Add a clause that lets you display the content on your website and portfolio after publication, and respect any embargo date the brand sets.",
+      },
+      {
+        q: "Should I invoice the agency or the brand directly?",
+        a: "Invoice whoever signed the contract with you and is responsible for paying. If an agency hired you, the invoice goes to the agency's legal entity, often with the brand and campaign name in the description. Ask for the correct billing name, address, PO number and any supplier portal before you send, because agencies often reject invoices addressed to the brand.",
+      },
+      {
+        q: "Do I charge VAT or sales tax on UGC for a brand in another country?",
+        a: "Often not, but it depends on where you and the brand are. In the UK and EU, business-to-business services supplied to a customer abroad are usually outside the scope of your local VAT, though invoice wording rules still apply. In the US, sales tax on services and digital content varies by state. Check with your tax authority or an accountant if you are registered.",
+      },
+      {
+        q: "How do brands usually pay UGC creators, and who covers the fees?",
+        a: "Brands commonly pay by bank transfer, PayPal or through a creator platform or agency system. Card and PayPal-style payments carry processing fees that normally come out of what you receive unless your contract says otherwise. State your preferred method and bank details on the invoice, and add a line such as \"transfer fees to be paid by the sender\" for international payments.",
       },
     ],
     content: `
@@ -316,6 +352,26 @@ export const FREELANCING_2026_POSTS: PostDraft[] = [
         q: "What if the client refuses to pay the kill fee?",
         a: "Send a polite reminder that quotes the clause, then a formal demand with a deadline. If that fails, your options include small claims court or a collections agency, depending on the amount and where the client is. Our guide to a client not paying an invoice walks through each step.",
       },
+      {
+        q: "Does a kill fee apply if the client puts the project on hold instead of cancelling?",
+        a: "Not unless your contract says so. A pause is not a cancellation, so add a hold clause: for example, if the project is paused for more than 30 days, you may invoice work completed to date, and if it does not restart within an agreed period, the kill fee applies. Without that wording, an open-ended pause can leave you unpaid indefinitely.",
+      },
+      {
+        q: "What happens to the kill fee if the client restarts the project later?",
+        a: "Agree it in the contract or in writing at restart. A common approach is to credit some or all of the kill fee against the new project price, since the client has already paid for the early work. If a long time has passed, you may need to quote again for rework, updated research or a new schedule.",
+      },
+      {
+        q: "Do I owe the client anything if I am the one who cancels?",
+        a: "You do not earn a kill fee if you walk away, and you may need to refund any deposit for work not done, depending on your contract. Most kill fee clauses only apply when the client cancels for reasons other than your breach. If you must withdraw, give written notice, hand over agreed work in progress and settle the money promptly.",
+      },
+      {
+        q: "What should I say in an email when I invoice a kill fee?",
+        a: "Keep it short and factual: confirm the cancellation date, name the stage reached, quote the kill fee clause and its percentage, and attach the invoice with the deposit deducted and a due date. Thank the client for the work so far. A neutral tone keeps the door open for future projects and makes a dispute less likely.",
+      },
+      {
+        q: "Do freelance platforms like Upwork or Fiverr enforce kill fees?",
+        a: "Not reliably. Work arranged through a platform is governed by its own terms, escrow and dispute process, so a kill fee written into your proposal may not be applied if the client cancels. On those platforms, protect yourself by working in smaller funded milestones and only starting each stage once the client has funded it.",
+      },
     ],
     content: `
 <p><strong>Quick answer:</strong> A kill fee is a payment a client owes a freelancer when it cancels a project before completion. Contracts commonly set it as a percentage of the total fee, with figures of 25% to 50% often cited, or tiered by project stage up to 100% of work already done. You invoice it as a separate line citing the contract clause, minus any deposit already paid.</p>
@@ -457,6 +513,26 @@ export const FREELANCING_2026_POSTS: PostDraft[] = [
       {
         q: "Does a change order need a signature?",
         a: "A signature or clear written approval is strongly recommended. Many freelancers accept an email reply saying approved, or an e-signature. Check what your original contract says about amendments, because some agreements require changes to be in a signed document.",
+      },
+      {
+        q: "What is the difference between scope creep and feature creep?",
+        a: "Feature creep is a type of scope creep. Scope creep covers any uncontrolled growth in a project, such as extra pages, revisions, meetings or deliverables. Feature creep refers specifically to adding more functions or options to a product, often in software, until it becomes late, over budget or harder to use. Both are handled the same way: through a change order.",
+      },
+      {
+        q: "What is gold plating in a project?",
+        a: "Gold plating is when you add extras the client never asked for, such as additional features or polish, hoping to impress them. It is the mirror image of client-driven scope creep, and it still eats your margin and can introduce bugs or delays. If you think an extra would help, propose it as an optional change order instead of quietly doing it.",
+      },
+      {
+        q: "How do I handle scope creep on an Upwork fixed-price contract?",
+        a: "Ask the client to add and fund a new milestone for the extra work, because on fixed-price contracts the client adds and activates milestones, not the freelancer. Agree the scope and price in the contract messages first, then wait until the milestone is funded before starting. Upwork's fixed-price protection generally covers only funded milestones, so check its current help pages.",
+      },
+      {
+        q: "Does scope creep matter if I bill hourly?",
+        a: "Yes, though it shows up differently. Extra requests add billable hours, but they can push the project past the client's budget or a cap in your contract, which leads to disputes at invoice time. When a request is new work, send a quick estimate of the added hours and get written approval, just as you would with a change order.",
+      },
+      {
+        q: "What if the scope creep is partly my fault because the proposal was vague?",
+        a: "Be fair about it. If the extra work comes from ambiguous wording you wrote, consider absorbing a reasonable part or splitting the cost, and explain that in writing. Then tighten the scope for the rest of the project with a change order that lists deliverables clearly. Fix your proposal template so the same gap does not appear again.",
       },
     ],
     content: `
@@ -630,6 +706,22 @@ export const FREELANCING_2026_POSTS: PostDraft[] = [
         q: "What is the tax year for freelancers in Pakistan?",
         a: "Pakistan's tax year runs from 1 July to 30 June and is named after the year it ends. Tax Year 2027 therefore covers 1 July 2026 to 30 June 2027. Returns for individuals are generally due by 30 September after the year ends, though the FBR often extends deadlines.",
       },
+      {
+        q: "How much of my foreign freelance earnings can I keep in dollars?",
+        a: "Under State Bank of Pakistan rules, freelancers can keep the greater of USD 5,000 a month or 50% of their export proceeds in an Exporters' Special Foreign Currency Account (ESFCA) opened alongside their PKR account. Many banks offer this as a freelancer digital account. Check the current limits and documents with your bank, as SBP rules can change.",
+      },
+      {
+        q: "Can I claim business expenses against my freelance export income?",
+        a: "Generally not, under the final tax regime. The 0.25% or 1% deducted by your bank is treated as your full tax liability on that export income, so expenses such as laptops, internet or software are not deducted from it. Income taxed under normal rules, such as payments from local clients, is treated differently. Confirm your position with a tax adviser.",
+      },
+      {
+        q: "What should I do if my bank deducts 1% even though I am registered with PSEB?",
+        a: "Contact your bank straight away and share your valid PSEB certificate and NTN so it can update your account to the reduced rate for future remittances. Ask whether anything can be corrected for amounts already deducted, and keep the deduction certificates for your return. Check that your PSEB registration has not expired, because a lapsed certificate is a common cause.",
+      },
+      {
+        q: "Do I need to register a company to get the freelancer tax rates?",
+        a: "No. The reduced rates described in this guide are available to individuals, provided you meet the conditions, such as PSEB registration and receiving proceeds into your own account through banking channels. Some freelancers later form a sole proprietorship or company for larger teams or contracts, but that brings extra compliance. Discuss the trade-offs with a tax adviser first.",
+      },
     ],
     content: `
 <p><strong>Quick answer:</strong> Freelancer tax in Pakistan for IT and IT-enabled export income received through banking channels is a final tax deducted by your bank: 0.25% if you are registered with the Pakistan Software Export Board (PSEB) and 1% if you are not. Budget 2026-27 reportedly extended the 0.25% concession through Tax Year 2029. Income from local clients is taxed under normal rules.</p>
@@ -767,6 +859,26 @@ export const FREELANCING_2026_POSTS: PostDraft[] = [
       {
         q: "Should freelancers ever accept net 90?",
         a: "Sometimes, when the client is large, reliable and the project is worth the wait. If you do, price the delay in, ask for a deposit or milestone payments, and confirm the invoice approval process so the clock does not restart because of a missing PO number or wrong address.",
+      },
+      {
+        q: "What happens if day 60 falls on a weekend or public holiday?",
+        a: "It depends on your contract. Many agreements say payment is due on the next business day, while others expect payment on the last business day before. If the contract is silent, the buyer's payment run schedule usually decides in practice. To avoid confusion, write the exact due date on the invoice, and check the supplier agreement for any business day rule.",
+      },
+      {
+        q: "Is net 60 normal for freelancers?",
+        a: "It is less common than net 15 or net 30 for freelancers, but it is standard with many large companies, agencies and public bodies whose procurement policies apply the same terms to every supplier. Smaller clients rarely need it. If a small client asks for net 60, treat it as a negotiation point and offer a deposit or a shorter term instead.",
+      },
+      {
+        q: "Do any US laws require clients to pay freelancers faster?",
+        a: "Some do. New York State and New York City have Freelance Isn't Free laws that require written contracts for many freelance jobs of $800 or more and payment by the agreed date, or within 30 days of completing the work if no date is set. Other cities and states have similar rules. Check your local labor department for current requirements.",
+      },
+      {
+        q: "Can I change the payment terms for an existing client?",
+        a: "Only by agreement for work already contracted. For new work, you can propose new terms, such as moving from net 60 to net 30, with written notice before the next project or renewal. Explain the reason briefly, offer a trade such as a small early payment discount if needed, and update your contract and invoice wording once the client agrees.",
+      },
+      {
+        q: "Does the net 60 clock start when the client receives the invoice or when it is dated?",
+        a: "Normally from the invoice date, unless the contract says from receipt or from approval. That is why you should send the invoice on the day it is dated and keep proof of delivery, such as a portal confirmation. Never backdate invoices to start the clock earlier, and expect buyers on receipt-based terms to count from when a correct invoice is logged.",
       },
     ],
     content: `

@@ -31,6 +31,26 @@ export const HOW_TO_POSTS_B: PostDraft[] = [
         q: "How many copies of a commercial invoice do I need?",
         a: "Requirements vary by carrier and destination. Many couriers ask for three signed copies attached to the package, or an electronic copy uploaded through their paperless trade system, so confirm with your carrier before shipping.",
       },
+      {
+        q: "Do I still need a commercial invoice for low-value shipments to the US?",
+        a: "Usually yes. The US duty-free de minimis exemption for imports of 800 dollars or less has been suspended since 2025, so low-value parcels now go through formal or informal customs entry, which relies on accurate invoice data. US law also eliminates the exemption from July 2027. Rules have changed often, so confirm current requirements with your carrier or US Customs and Border Protection.",
+      },
+      {
+        q: "When do US exporters need to file Electronic Export Information?",
+        a: "Generally when the value of goods under a single Schedule B number exceeds 2,500 dollars, or when an export license is required regardless of value. The filing is made through the Automated Export System (AES) and is separate from your commercial invoice. Many shipments to Canada are exempt. Check the Census Bureau and trade.gov guidance for current rules and exemptions.",
+      },
+      {
+        q: "Does a commercial invoice need to be signed?",
+        a: "Often, yes. Many carriers and destination countries expect a signed declaration that the information is true and correct, and the signature makes the exporter accountable for it. When you use a carrier's paperless trade service, an uploaded or electronic signature is usually accepted. Requirements differ by carrier and country, so check before shipping.",
+      },
+      {
+        q: "What language and currency should a commercial invoice use?",
+        a: "English is widely accepted, but some countries require the invoice in, or translated into, their official language, so check with your broker. Use the currency of the actual sale and show its ISO code, such as USD or EUR, on every value. Customs converts the value into local currency at its own official exchange rate.",
+      },
+      {
+        q: "What is an EORI number and does it go on a commercial invoice?",
+        a: "An EORI (Economic Operators Registration and Identification) number identifies businesses that move goods into or out of the UK or the EU customs territory. UK exporters usually need one starting with GB, and EU importers need their own EU EORI. Showing the relevant EORI numbers on the commercial invoice helps the shipment clear customs without delay.",
+      },
     ],
     content: `
 <p><strong>Quick answer:</strong> A commercial invoice template is a pre-built layout for the export document that customs uses to identify, value and tax your goods. It must show the exporter and importer, a full description of each item with its HS code, country of origin, quantity, unit value and currency, the Incoterms of sale, package weights, and a signed declaration that the information is true. Fill it in for every international shipment and send it with the goods and to the buyer.</p>
@@ -151,6 +171,26 @@ export const HOW_TO_POSTS_B: PostDraft[] = [
       {
         q: "Does a sales invoice need to show tax?",
         a: "Only if you are registered to collect sales tax, VAT or GST on that sale. If you are registered, show the tax as a separate line with the rate and amount; check local rules with your tax authority or accountant.",
+      },
+      {
+        q: "What is the difference between a sales invoice and a sales order?",
+        a: "A sales order confirms what the seller has agreed to deliver after accepting the buyer's order, but it doesn't ask for payment. The sales invoice comes later, usually on or after delivery, and requests payment with a due date. Referencing the sales order or the buyer's PO number on the invoice helps both sides match the documents quickly.",
+      },
+      {
+        q: "Does a sales invoice need a signature or stamp?",
+        a: "Generally no. In most countries an invoice is valid without a signature or company stamp, provided it contains the required details. Some customers or industries still ask for a signed or stamped invoice, and customs paperwork often needs a signed declaration. If a buyer requests a signature, add one, but it rarely affects whether the invoice is legally valid.",
+      },
+      {
+        q: "Can I issue a sales invoice in a foreign currency?",
+        a: "Yes, if you and the customer agree. Show the currency code on the invoice and record the sale in your home currency in your books at the exchange rate your accountant recommends. Some VAT systems, including the UK's, require the VAT amount to also be shown in the local currency on a foreign-currency invoice, so check your tax authority's rules.",
+      },
+      {
+        q: "How long should I keep copies of sales invoices?",
+        a: "It depends on where you are registered. In the UK, limited companies generally keep records for six years from the end of the financial year, and sole traders for at least five years after the 31 January filing deadline. The IRS generally expects at least three years, longer in some cases. Check your own tax authority's guidance.",
+      },
+      {
+        q: "What happens if a customer never pays a sales invoice?",
+        a: "The invoice stays in accounts receivable until you collect it or decide it is unrecoverable. After reminders and collection efforts, you may write it off as a bad debt. Some systems let you reclaim tax you paid on it: for example, UK VAT bad debt relief generally applies once a debt is more than six months overdue. Check the conditions with your accountant.",
       },
     ],
     content: `
@@ -288,6 +328,26 @@ export const HOW_TO_POSTS_B: PostDraft[] = [
         q: "Should debit notes and credit notes have their own numbering?",
         a: "Yes. Most businesses use a separate sequence for each, such as CN-0012 and DN-0004, and always show the original invoice number they adjust.",
       },
+      {
+        q: "Can a seller issue a credit note without goods being returned?",
+        a: "Yes. Returns are only one reason. A seller can also issue a credit note for an overcharge, a pricing error, a post-sale discount, a cancelled service or a goodwill gesture after a complaint. The credit note should state the reason, reference the original invoice and, where tax was charged, show the tax being reduced along with the net amount.",
+      },
+      {
+        q: "Is there a deadline for issuing credit or debit notes under GST?",
+        a: "In India, yes. A credit note generally has to be declared in a return no later than 30 November following the end of the financial year of the supply, or the date the annual return is filed if earlier, and input tax credit on a debit note follows a similar window. Other countries set their own limits, so check your tax authority's current rules.",
+      },
+      {
+        q: "Can I just refund the customer instead of issuing a credit note?",
+        a: "You still need a document that explains the refund. The credit note records why the amount owed was reduced and adjusts sales and tax; the refund is simply the payment that settles that credit. Refunding money without a credit note leaves the original invoice showing as fully billed, which makes your books, tax return and the customer's records disagree.",
+      },
+      {
+        q: "How does a buyer record a debit note from a supplier?",
+        a: "A buyer receiving a seller's debit note records the extra cost: debit purchases or the relevant expense account, debit input tax if they can reclaim it, and credit accounts payable for the total. The entry is the mirror image of the seller's. Match it to the original invoice before approving, and query anything that wasn't agreed.",
+      },
+      {
+        q: "Is a debit memo the same as a debit note?",
+        a: "Often, yes. In the US, debit memo is a common name for a seller's document that increases what a customer owes, which works like a seller's debit note. Banks also use debit memo for charges taken from your account, which is a different thing. Check who issued the document and whether it adds to your balance or asks for a reduction.",
+      },
     ],
     content: `
 <p><strong>Quick answer:</strong> In a debit note vs credit note comparison, the key difference is direction: a credit note reduces the amount owed on an invoice, while a debit note increases it (when issued by the seller) or requests a reduction (when issued by the buyer). A seller issues a credit note for returns, overcharges or discounts, and a debit note for undercharges or extra costs. Both reference the original invoice rather than editing it.</p>
@@ -407,6 +467,26 @@ export const HOW_TO_POSTS_B: PostDraft[] = [
       {
         q: "Can I change the due date after sending an invoice?",
         a: "You can agree a new date with the customer, but don't silently edit the issued invoice. Confirm the extension in writing and note it in your records, or issue a corrected invoice if your process requires it.",
+      },
+      {
+        q: "What does due on receipt actually mean?",
+        a: "It means payment is expected as soon as the customer receives the invoice. In practice, many customers treat it as within a few days, and it gives you no fixed date for reminders or late fees. If you want prompt payment, print a specific date instead, such as payment due by 29 October 2026, and agree it with the customer upfront.",
+      },
+      {
+        q: "Can I charge interest when a business customer pays after the due date?",
+        a: "If your contract allows it, or the law provides it. In the UK, businesses can generally claim statutory interest at 8 percentage points above the Bank of England base rate, plus fixed compensation of 40, 70 or 100 pounds depending on the debt size. In other countries, rules differ, so agree late-payment terms in writing before work starts.",
+      },
+      {
+        q: "Do government clients have to pay by a set due date?",
+        a: "Often, yes. US federal agencies are generally covered by the Prompt Payment Act, which usually requires payment within 30 days of receiving a proper invoice and adds interest when they pay late. EU public authorities are generally held to 30 days. State, local and other national rules vary, so check your contract and the relevant authority's guidance.",
+      },
+      {
+        q: "Does a partial payment change the due date?",
+        a: "No, not unless you agree a new arrangement. The unpaid balance remains due on the original date, and it becomes overdue if not paid by then. If you agree a payment plan, confirm the new dates and amounts in writing and note them in your records, so reminders and any late fees apply to the right dates.",
+      },
+      {
+        q: "What if a large customer insists on longer payment terms than mine?",
+        a: "Big buyers often set payment terms in their supplier agreements, but those terms are still negotiable before you sign. Check whether local law caps them: the EU Late Payment Directive, for example, generally limits business terms to 60 days unless expressly agreed and not grossly unfair. You can also price in the wait or offer an early payment discount.",
       },
     ],
     content: `
@@ -528,6 +608,26 @@ export const HOW_TO_POSTS_B: PostDraft[] = [
       {
         q: "Is a deposit refundable?",
         a: "Only according to your contract and local consumer law. State clearly in your agreement and on the deposit invoice whether the deposit is refundable and under what conditions.",
+      },
+      {
+        q: "Can I send a deposit invoice before the contract is signed?",
+        a: "You can, but it is safer to send it with or just after the signed quote or contract. The deposit invoice should reference that document, so both sides agree on what the deposit secures and whether it is refundable. If a client pays a deposit without signing anything, confirm the scope, price and cancellation terms by email before starting work.",
+      },
+      {
+        q: "How do I record a customer deposit in my books?",
+        a: "Under accrual accounting, a deposit for work not yet done is usually recorded as a liability, often called customer deposits or unearned revenue, rather than as income. When you deliver and issue the final invoice, you move it to revenue. Under cash accounting, it is generally income when received. Ask your accountant how tax rules treat it where you are.",
+      },
+      {
+        q: "What if the final bill turns out lower than the deposit?",
+        a: "Then you owe the client the difference. Issue a final invoice showing the full value, deduct the deposit, and show the resulting credit balance. Refund that amount, or with the client's written agreement hold it against future work, and issue a credit note so your records show what was returned. Check your contract and consumer rules for refund timing.",
+      },
+      {
+        q: "Should I send a receipt when a client pays a deposit?",
+        a: "Yes. Mark the deposit invoice as paid in your records and send a short receipt or confirmation showing the amount, date, payment method and the deposit invoice number. It reassures the client that the booking is secured and gives both sides a clear reference for the deduction on the final invoice.",
+      },
+      {
+        q: "Are there legal limits on deposits from consumers?",
+        a: "In some places, yes, especially for home improvement work. For example, California generally limits a home improvement contractor's down payment to 1,000 dollars or 10% of the contract price, whichever is less. Other states, countries and industries have their own rules on deposit size, refunds and cancellation rights. Check your local consumer protection or licensing authority before quoting.",
       },
     ],
     content: `
@@ -666,6 +766,30 @@ export const HOW_TO_POSTS_B: PostDraft[] = [
         q: "Should I itemize materials markup?",
         a: "You don't usually need to show your markup separately. Most businesses bill materials at their selling price per unit; just make sure the price matches what was quoted or agreed.",
       },
+      {
+        q: "Do I have to list labor and parts separately?",
+        a: "Often it is good practice, and sometimes it is required. Labor and parts can be taxed differently, and some states require itemized repair invoices: California, for example, requires auto repair invoices to list parts and labor separately. Even where it isn't mandatory, separate lines make your tax calculation checkable and reduce customer questions. Check the rules for your trade and location.",
+      },
+      {
+        q: "Can I itemize a fixed-price project without revealing my hourly rate?",
+        a: "Yes. Itemize by phase or deliverable instead of by hour, for example Discovery workshop, Homepage design and Development and launch, each with its share of the agreed fee. The client sees what they are paying for, the lines add up to the quoted price, and your internal rates and margins stay private. Match the phase names to your proposal.",
+      },
+      {
+        q: "How do I show a discount on an itemized invoice?",
+        a: "Show it either on the line it applies to, as a reduced rate or a separate negative line beneath it, or as a single discount row below the subtotal. Label it clearly, for example 10% loyalty discount. If some items are taxable, the discount usually affects the tax base, but how depends on local rules, so check with your tax authority.",
+      },
+      {
+        q: "Should shipping and handling be separate line items?",
+        a: "Yes, list shipping or delivery as its own line rather than hiding it inside product prices. Whether shipping is taxable varies by US state and by country, and in some places separately stating it can change the tax treatment. A separate line also lets the customer see exactly what delivery cost and compare it with your quote.",
+      },
+      {
+        q: "Do I need to attach receipts to itemized expenses?",
+        a: "Not always, but many clients ask for them, especially for travel and other reimbursable costs. If your contract says expenses are billed at cost, attaching or offering receipts makes approval faster. Either way, keep copies of every receipt in your own records, because tax authorities may ask to see them as evidence for the expense.",
+      },
+      {
+        q: "Is an itemized receipt the same as an itemized invoice?",
+        a: "No. An itemized invoice lists charges and requests payment, while an itemized receipt lists what was bought and confirms it has already been paid. Employees often need itemized receipts for expense claims, and customers may ask for one after paying. Both use the same line-by-line detail, but the receipt shows the payment date and method instead of a due date.",
+      },
     ],
     content: `
 <p><strong>Quick answer:</strong> An itemized invoice is an invoice that breaks the total into separate line items, each showing a description, quantity, unit price and line amount, with taxes and fees listed individually. It lets the customer see exactly what they are paying for and approve the bill quickly. Use an itemized invoice whenever a job involves more than one product, service, or labor charge.</p>
@@ -795,6 +919,26 @@ export const HOW_TO_POSTS_B: PostDraft[] = [
       {
         q: "Is a statement of account a tax document?",
         a: "Generally no. VAT or GST is charged and reclaimed on the underlying invoices and credit notes, not on the statement. Check local rules with your accountant if you're unsure.",
+      },
+      {
+        q: "What is the difference between a statement of account and an aging report?",
+        a: "A statement of account is sent to one customer and lists their transactions and balance. An accounts receivable aging report is an internal report covering all customers, grouping unpaid amounts by how long they are overdue. The aging summary on a statement is that same breakdown for a single customer, which is why the two should always agree.",
+      },
+      {
+        q: "Should a statement of account include late fees or interest?",
+        a: "Only charges already supported by a document. If you charge agreed late fees or interest, issue an invoice or debit note for them first, then let that document appear on the statement like any other transaction. Adding a new charge directly to a statement, with no underlying document, makes it hard for the customer to reconcile and easy to dispute.",
+      },
+      {
+        q: "Can I make a statement of account in Excel or Google Sheets?",
+        a: "Yes. Use columns for date, type, reference, charges, credits and balance. Put the opening balance in the first balance cell, then use a running balance formula such as =F2+D3-E3 and fill it down. Add the due date of each invoice in another column so you can calculate the aging buckets from the due date, not the invoice date.",
+      },
+      {
+        q: "What is a balance confirmation request?",
+        a: "It is a request, often from a customer's auditors, asking you to confirm the balance they owe you at a certain date, usually the end of their financial year. Reply with a statement of account for that date and explain any differences, such as payments in transit. Prompt, accurate answers help their audit and protect your own records.",
+      },
+      {
+        q: "Should I send a statement to a customer with a zero balance?",
+        a: "It is optional. Many businesses skip zero-balance statements during the year to avoid noise, but sending one at year end, or on request, confirms that both sets of records agree. It can also surface problems early, such as a payment you applied that the customer still shows as outstanding in their own ledger.",
       },
     ],
     content: `
@@ -935,6 +1079,26 @@ export const HOW_TO_POSTS_B: PostDraft[] = [
         q: "How do I number invoices on a blank template?",
         a: "Write the next number in your sequence on every invoice and never reuse or skip numbers. Keep a log of issued numbers, or use an invoice number generator to set a consistent format.",
       },
+      {
+        q: "Should I use carbonless invoice books for handwritten invoices?",
+        a: "They are a good option. Carbonless duplicate or triplicate books create a copy as you write, so the client gets the original and you keep a matching record. Many come pre-numbered, which helps you avoid skipped or repeated numbers. Office supply stores and printers sell generic books and can usually print your business details on custom ones.",
+      },
+      {
+        q: "How do I make a fillable PDF invoice template?",
+        a: "Create your layout in a word processor, export it to PDF, then open it in a PDF editor that can add form fields and place a text field in each blank. Some editors can add simple calculations, but behavior varies between PDF readers. If you want totals calculated reliably, an online invoice generator is often simpler than building a fillable form.",
+      },
+      {
+        q: "Can I scan a handwritten invoice and email it to a client?",
+        a: "Yes. Most phones can scan documents into a PDF, for example through the iPhone Notes app or the scan option in Google Drive on Android. Scan in good light, check that every number is readable and send the PDF rather than a photo. Keep the paper original or carbon copy, and file the scan with your records.",
+      },
+      {
+        q: "What should I do if I make a mistake writing a blank invoice?",
+        a: "If you haven't given it to the client, don't scribble over it or use correction fluid. Write VOID across the sheet, keep it in your book so the number stays accounted for, and start again on the next numbered invoice. If the client already has it, issue a credit note or a corrected invoice that references the original.",
+      },
+      {
+        q: "Should I put my Social Security number on a blank invoice template?",
+        a: "Avoid it if you can. Printing an SSN on every invoice exposes you to identity theft. US sole proprietors can apply for a free Employer Identification Number (EIN) from the IRS and use that on invoices and tax forms instead. Only pre-print a tax ID if your clients or tax rules require it to appear on the invoice.",
+      },
     ],
     content: `
 <p><strong>Quick answer:</strong> A blank invoice template is an empty, pre-formatted invoice with labeled spaces for your business details, client details, invoice number, dates, line items, totals and payment terms. You can print it and fill it in by hand, or fill it in on screen and download a PDF. A good printable template keeps the layout simple, leaves enough room for line items and works in black and white.</p>
@@ -1071,6 +1235,26 @@ export const HOW_TO_POSTS_B: PostDraft[] = [
       {
         q: "Do I need to tell my client about an invoice correction?",
         a: "Yes. Send a short email explaining the error, attaching the credit note and any replacement invoice, and stating the new amount due and due date.",
+      },
+      {
+        q: "Is there a time limit for correcting an invoice?",
+        a: "There is no universal deadline, but correcting quickly is best, and tax rules may set limits. In India, for example, GST credit notes generally must be declared by 30 November following the end of the financial year, or when the annual return is filed if earlier. Other countries have their own rules for correcting tax in past periods, so ask your accountant.",
+      },
+      {
+        q: "Can I correct an overcharge by deducting it from my next invoice?",
+        a: "Some businesses do, with the client's agreement, but it makes both sets of records harder to follow. The cleaner route is a credit note against the original invoice, which can then be applied to the next invoice if the client prefers. In VAT and GST systems a proper credit note is often required to adjust the tax, so check before netting amounts.",
+      },
+      {
+        q: "Does a corrected invoice restart the payment terms?",
+        a: "It depends on the fix. With a partial credit note, the original due date usually still applies to the reduced balance. With a full credit note and a new replacement invoice, many businesses give fresh terms from the new invoice date, which avoids arguments about lateness. Whatever you choose, state the due date clearly in your correction email.",
+      },
+      {
+        q: "What if the client paid the wrong amount, but my invoice was correct?",
+        a: "Then the invoice doesn't need correcting. Record the payment as received and handle the difference. If they underpaid, send a polite note showing the balance still due on the same invoice number. If they overpaid, refund the excess or, with their agreement, hold it as a credit toward the next invoice, and document whichever you choose.",
+      },
+      {
+        q: "How do I correct an e-invoice in a country with mandatory e-invoicing?",
+        a: "Usually through the same system that issued it. Where e-invoicing is mandatory, such as India's IRN system or Saudi Arabia's ZATCA framework, you generally can't edit a cleared invoice; you issue an electronic credit or debit note instead. India allows an e-invoice to be cancelled only within a short window, generally 24 hours. Check your tax authority's current rules.",
       },
     ],
     content: `

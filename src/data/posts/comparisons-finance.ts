@@ -31,6 +31,26 @@ export const COMPARISON_FINANCE_POSTS: PostDraft[] = [
         q: "Can one purchase order have several invoices?",
         a: "Yes. With partial deliveries or milestone work, a seller may issue several invoices against one PO. Each invoice should quote the same PO number and the running total should never exceed the PO value.",
       },
+      {
+        q: "Where should the PO number go on an invoice?",
+        a: "Put the PO number near the top of the invoice, next to the invoice number and date, and repeat it in the email subject line when you send the invoice. Accounts payable teams use it to match your invoice to the order. Our free generator has a dedicated PO number field, so it appears clearly on the PDF.",
+      },
+      {
+        q: "Is a purchase order the same as a quote?",
+        a: "No. A quote, or estimate, is issued by the seller to propose prices before an order. A purchase order is issued by the buyer to accept terms and place the order. The typical sequence is quote, purchase order, delivery, then invoice. A PO often refers back to the quote number so both sides agree on the price and scope.",
+      },
+      {
+        q: "What is a purchase requisition?",
+        a: "A purchase requisition is an internal request from an employee or department asking for approval to buy something. Once approved, the purchasing team turns it into a purchase order sent to the supplier. Suppliers usually never see the requisition. It matters to you only because a buyer's PO may take longer to arrive while their internal approval is pending.",
+      },
+      {
+        q: "What is the difference between a purchase order and a sales order?",
+        a: "A purchase order is the buyer's document that places an order. A sales order is the seller's internal document confirming the order and setting up fulfilment, often created when the PO is received. Many businesses send the buyer an order confirmation based on the sales order. The invoice then follows delivery and should reference the original PO number.",
+      },
+      {
+        q: "Can a purchase order be used as a tax document?",
+        a: "Generally no. For VAT, GST and sales tax purposes, the invoice is the document that records the sale and supports the buyer's tax claims, while the purchase order is a commercial document showing what was ordered. Keep both for your records, because auditors may use the PO to confirm a purchase was authorized, but rely on the invoice for tax.",
+      },
     ],
     content: `
 <p><strong>Quick answer:</strong> In the invoice vs purchase order relationship, the purchase order (PO) comes first: the buyer sends it to the seller to order specific goods or services at agreed prices. The invoice comes last: the seller sends it after delivery to request payment for what was supplied. The PO authorizes a purchase; the invoice asks to be paid for it, and the two should match.</p>
@@ -154,6 +174,26 @@ export const COMPARISON_FINANCE_POSTS: PostDraft[] = [
       {
         q: "When should I switch from an invoice generator to accounting software?",
         a: "Common triggers are invoicing many clients a month, needing automatic reminders and payment matching, hiring staff, registering for VAT or sales tax with digital filing obligations, or wanting your accountant to access live books.",
+      },
+      {
+        q: "How much does accounting software cost?",
+        a: "Most accounting software is sold as a monthly or annual subscription, with prices rising for more users, features such as payroll and inventory, or higher invoice volumes. Some offer free plans with limits. Because prices and plans change often, compare current offers on each provider's official pricing page, and factor in add-ons and setup time, not just the headline price.",
+      },
+      {
+        q: "Can I move invoices from a generator into accounting software later?",
+        a: "Yes, but usually by hand or by import. Our free generator creates PDF invoices and saves drafts in your browser; it does not sync with accounting software. When you switch, you typically enter open invoices as opening balances and record new ones in the software. Keep your invoice numbering continuous so your records and audit trail stay clean.",
+      },
+      {
+        q: "Does an invoice generator track whether invoices are paid?",
+        a: "Usually not in the way accounting software does. Our generator lets you show the amount paid and balance due on an invoice, but it does not take payments, send reminders or reconcile bank transactions. If you use a generator, keep a simple list or spreadsheet of unpaid invoices and their due dates so you know who to chase.",
+      },
+      {
+        q: "Can I use an invoice generator if I charge VAT or sales tax?",
+        a: "Yes, for ordinary invoices. A good generator lets you add tax lines, your tax ID and the buyer's details. But in countries with e-invoicing mandates, such as Germany, Belgium, Saudi Arabia or India above certain thresholds, a PDF is not enough for in-scope sales and you need compliant e-invoicing software. Check your local rules.",
+      },
+      {
+        q: "Is a spreadsheet a good alternative to both?",
+        a: "A spreadsheet can work as a simple record of income, expenses and unpaid invoices for a very small business. It is less suited to producing professional invoices, because templates break easily and numbering mistakes are common. Many people combine a generator for invoices with a spreadsheet for tracking, then move to accounting software as transactions grow.",
       },
     ],
     content: `
@@ -293,6 +333,26 @@ export const COMPARISON_FINANCE_POSTS: PostDraft[] = [
         q: "Is the cash basis the default for UK sole traders?",
         a: "From the 2024 to 2025 tax year, HMRC made the cash basis the default for most self-employed individuals and partnerships, with an option to elect for accrual (traditional) accounting. Check current HMRC guidance for your situation.",
       },
+      {
+        q: "What is the modified cash basis?",
+        a: "The modified cash basis, or hybrid method, records most income and expenses when cash moves but treats some items on an accrual basis, such as long-term assets, loans or inventory. It is often used for internal reporting by small businesses that want simplicity with a more realistic balance sheet. Tax authorities have their own rules on hybrid methods, so check them before using one for taxes.",
+      },
+      {
+        q: "Does GAAP require accrual accounting?",
+        a: "Yes. Financial statements prepared under US GAAP, and under IFRS in most other countries, must use the accrual basis. That is why lenders, investors and auditors usually expect accrual-based statements. A small business can still use the cash method for its own bookkeeping or taxes where allowed, but may need accrual statements when raising finance or being audited.",
+      },
+      {
+        q: "Can I use cash accounting for taxes and accrual for management reports?",
+        a: "Often yes, where tax rules allow the cash method for your business. Many companies keep accrual-based books for management and lenders and make adjustments to calculate taxable income on a cash basis. This needs careful reconciliation, so it is usually done with accounting software and an accountant. Very small businesses often find one method simpler.",
+      },
+      {
+        q: "What is the difference between accrued revenue and deferred revenue?",
+        a: "Accrued revenue is income you have earned but not yet invoiced or been paid for, such as work completed at month end. Deferred revenue is money received before you have earned it, such as a deposit or annual subscription paid upfront, recorded as a liability until you deliver. Both exist only under accrual accounting; cash accounting simply records money when it arrives.",
+      },
+      {
+        q: "How is the UK VAT cash accounting scheme different from the cash basis?",
+        a: "They are separate. The cash basis is about income tax for the self-employed. The VAT Cash Accounting Scheme lets VAT-registered businesses with estimated taxable turnover up to £1.35 million pay VAT when customers pay them, rather than when they invoice. You can use one without the other. Check current eligibility rules on GOV.UK before joining or leaving the scheme.",
+      },
     ],
     content: `
 <p><strong>Quick answer:</strong> Cash vs accrual accounting is a question of timing. The cash method records income when money arrives and expenses when you pay them. The accrual method records income when you earn it (usually when you invoice) and expenses when you incur them, even if no cash has moved. Cash is simpler; accrual shows true profitability.</p>
@@ -416,6 +476,26 @@ export const COMPARISON_FINANCE_POSTS: PostDraft[] = [
       {
         q: "How can I avoid needing invoice factoring?",
         a: "Shorten payment terms, invoice immediately, take deposits on large jobs, offer early payment discounts and follow up promptly on overdue invoices. These steps reduce the cash gap that factoring is designed to fill.",
+      },
+      {
+        q: "What is the difference between spot factoring and whole-ledger factoring?",
+        a: "Spot factoring, also called single-invoice factoring, lets you sell individual invoices when you need cash, with no long-term commitment, usually at a higher fee per invoice. Whole-ledger factoring means you sell all or most of your receivables under an ongoing contract, typically at lower rates but with minimum volumes and notice periods. Choose based on how often you need funding.",
+      },
+      {
+        q: "Can a new business or one with poor credit use invoice factoring?",
+        a: "Often yes, because factoring companies focus mainly on the creditworthiness of your customers, who will pay the invoices, rather than on your own credit history. A startup invoicing large, reliable business customers may qualify more easily than for a bank loan. Expect the factor to check your customers, your invoices and your contracts before approving.",
+      },
+      {
+        q: "Can I factor invoices to consumers?",
+        a: "Generally no. Factoring is designed for B2B invoices, where the customer is a business with a credit history the factor can assess and collect from. Consumer debts bring stricter consumer credit and collection rules and higher risk, so most factoring companies do not buy them. If most of your sales are to consumers, consider other funding options.",
+      },
+      {
+        q: "What is reverse factoring?",
+        a: "Reverse factoring, also called supply chain finance, is set up by a large buyer rather than the supplier. A finance provider pays the supplier's approved invoices early, at a cost based on the buyer's credit rating, and the buyer pays the provider on the normal due date. If a big customer offers it, compare its cost with your own factoring options.",
+      },
+      {
+        q: "Does invoice factoring show up on my credit record?",
+        a: "Factoring is usually structured as a sale of receivables, not a loan, so it does not appear as debt in the same way. However, factors often register a security interest over your receivables, such as a UCC filing in the US, which other lenders can see. That can limit future borrowing, so read the agreement carefully and ask how and when the filing is released.",
       },
     ],
     content: `
@@ -557,6 +637,26 @@ export const COMPARISON_FINANCE_POSTS: PostDraft[] = [
         q: "What happens to receivables that are never paid?",
         a: "After reasonable collection efforts, an uncollectible invoice is usually written off as a bad debt. Whether it is deductible for tax depends on your accounting method and local rules, so ask your accountant.",
       },
+      {
+        q: "What is the difference between accounts receivable and revenue?",
+        a: "Revenue is the income you have earned in a period. Accounts receivable is the part of that income customers have not yet paid. Under accrual accounting, an invoice for completed work increases both revenue and accounts receivable; when the customer pays, receivables fall and cash rises, while revenue stays the same. High revenue with growing receivables can hide a cash shortage.",
+      },
+      {
+        q: "What is the difference between accounts receivable and notes receivable?",
+        a: "Accounts receivable are informal amounts owed on normal credit terms, usually due within weeks. Notes receivable are backed by a written promissory note, often for larger amounts or longer periods, and may carry interest. A business sometimes converts an overdue customer account into a note receivable as part of a payment plan. Both are assets on the balance sheet.",
+      },
+      {
+        q: "What are unbilled receivables?",
+        a: "Unbilled receivables are amounts you have earned for work performed but not yet invoiced, such as hours worked on a project before the next billing milestone. Under accrual accounting they are recorded as an asset until you issue the invoice, when they become ordinary receivables. Large unbilled balances often mean you should invoice more frequently to speed up cash flow.",
+      },
+      {
+        q: "Is accounts receivable part of working capital?",
+        a: "Yes. Working capital is current assets minus current liabilities, and receivables are usually one of the largest current assets for service businesses. Higher receivables increase working capital on paper, but that money is not usable until customers pay. That is why lenders look closely at the age and quality of receivables, not just the total.",
+      },
+      {
+        q: "What is a credit policy and do I need one?",
+        a: "A credit policy sets out who can buy from you on credit, how much, on what payment terms, and what happens when invoices are late, such as reminders, late fees or stopping work. Even a one-page policy helps a small business apply rules consistently and avoid letting risky customers build large balances. Make sure late fees are allowed under your contracts and local law.",
+      },
     ],
     content: `
 <p><strong>Quick answer:</strong> Accounts receivable (AR) is the money customers owe your business for goods or services you have delivered but not yet been paid for. Every unpaid invoice is part of your accounts receivable. AR is recorded as a current asset, and managing it well means invoicing promptly, tracking due dates and collecting on time.</p>
@@ -681,6 +781,26 @@ export const COMPARISON_FINANCE_POSTS: PostDraft[] = [
       {
         q: "What is an allowance for doubtful accounts?",
         a: "It is an estimate of receivables you don't expect to collect. A common method applies a higher percentage to older aging buckets. The percentages should be based on your own collection history and reviewed with your accountant.",
+      },
+      {
+        q: "What is the difference between an AR aging report and an AP aging report?",
+        a: "An accounts receivable aging report shows what customers owe you, grouped by how overdue each invoice is. An accounts payable aging report does the same for what you owe your suppliers. Used together, they help you plan cash: you can see when money should arrive and which bills need paying first, and spot whether you are paying suppliers faster than customers pay you.",
+      },
+      {
+        q: "How do partial payments and credits appear on an aging report?",
+        a: "Show only the remaining balance of each invoice after any partial payment, in the bucket for that invoice's age. Unapplied payments and credit notes should be matched to the invoices they relate to; if they cannot be matched yet, list them separately as credits so customer totals are not overstated. Regularly clearing unapplied items keeps the report accurate.",
+      },
+      {
+        q: "How should I handle disputed invoices on an aging report?",
+        a: "Keep disputed invoices on the report, but flag them, for example in a separate column or note, so your collection effort focuses on resolving the dispute rather than sending standard reminders. Record the reason and who is handling it. If the dispute ends with a reduction, issue a credit note rather than editing the original invoice, and the aging report will update.",
+      },
+      {
+        q: "Why do lenders ask for an aging report?",
+        a: "Lenders, factoring companies and investors use the aging report to judge how collectible your receivables are. For asset-based loans and lines of credit, the amount you can borrow is often based on receivables below a certain age, with older or disputed balances excluded. A clean, current report with few old balances can improve your access to funding.",
+      },
+      {
+        q: "Can I use an aging report to send customer statements?",
+        a: "Yes. The aging report lists each customer's open invoices and balances, which is the information a customer statement needs. Sending monthly statements that show unpaid invoices, amounts and due dates reminds customers what they owe and helps catch missing or disputed invoices early. Check the statement against your records before sending, especially where partial payments are involved.",
       },
     ],
     content: `
@@ -825,6 +945,26 @@ export const COMPARISON_FINANCE_POSTS: PostDraft[] = [
         q: "How can invoicing improve cash flow?",
         a: "Invoicing immediately, using short and clear payment terms, adding easy payment options, taking deposits and following up on time all shorten the gap between doing the work and receiving cash.",
       },
+      {
+        q: "What is the cash conversion cycle?",
+        a: "The cash conversion cycle measures how many days it takes for money spent on inventory or work to come back as cash from customers. It is commonly calculated as days inventory outstanding plus days sales outstanding minus days payables outstanding. A shorter cycle means less cash is tied up. Service businesses without inventory can focus on collecting faster and agreeing sensible supplier terms.",
+      },
+      {
+        q: "How should I plan for tax payments in my cash flow?",
+        a: "Treat tax as money that is not yours to spend. Many small businesses move a set share of each payment received into a separate savings account for income tax, VAT, GST or sales tax, and add tax due dates to their cash flow forecast. Ask your accountant to estimate the right amount for your situation, as rates and payment schedules vary.",
+      },
+      {
+        q: "Is negative cash flow always a bad sign?",
+        a: "Not always. Cash flow can be negative for a period because you are investing in equipment, stock or hiring ahead of growth, or because of seasonal sales. It becomes a problem when operating cash flow is negative month after month with no plan to fix it, or when you cannot cover payroll and bills without new borrowing. Forecasting helps tell the two apart.",
+      },
+      {
+        q: "What are burn rate and runway?",
+        a: "Burn rate is how much cash your business uses each month, usually measured as net cash going out. Runway is how many months your current cash will last at that burn rate, calculated by dividing cash on hand by the monthly burn. They are most often used by startups and businesses that are not yet profitable, but any business can use them in a tight period.",
+      },
+      {
+        q: "How can I negotiate better payment terms with suppliers?",
+        a: "Ask, especially once you have a record of paying on time. Suppliers may agree to longer terms, such as Net 45 instead of Net 30, staged payments for large orders, or discounts for early payment that you can take when cash is strong. Put agreed terms in writing, and avoid stretching payments without agreement, which can damage relationships and your supply.",
+      },
     ],
     content: `
 <p><strong>Quick answer:</strong> Cash flow management for a small business means tracking, forecasting and controlling the timing of money coming in and going out so you can always pay your bills. In practice it comes down to three habits: forecast cash weekly, collect from customers faster, and time your own payments and big expenses carefully.</p>
@@ -960,6 +1100,26 @@ export const COMPARISON_FINANCE_POSTS: PostDraft[] = [
       {
         q: "What records should a small business keep?",
         a: "Sales invoices, receipts for expenses, bank and card statements, payroll records, tax returns and contracts. Retention periods vary by country, often several years, so check your tax authority's rules.",
+      },
+      {
+        q: "What is a trial balance?",
+        a: "A trial balance is a list of every account in your books with its debit or credit balance at a given date. In double-entry bookkeeping, total debits should equal total credits. If they do not, there is an error to find before preparing financial statements. A balanced trial balance does not prove everything is right, because some errors, such as posting to the wrong account, still balance.",
+      },
+      {
+        q: "Can I keep digital copies of receipts instead of paper?",
+        a: "In many countries, yes, as long as the digital copies are complete, legible and can be produced when the tax authority asks. The IRS, HMRC and ATO, for example, accept electronic records that meet their requirements. Scan or photograph receipts promptly, store them with clear names or in accounting software, and back them up. Check your tax authority's rules before discarding paper originals.",
+      },
+      {
+        q: "How do I record money I take out of the business?",
+        a: "For a sole proprietor, money you take for personal use is usually recorded as an owner's draw or drawings, not as an expense, because it is not a business cost. Personal expenses paid from the business account should be recorded the same way. Companies pay owners through salary or dividends instead. Ask your accountant which applies to your business structure.",
+      },
+      {
+        q: "How do I catch up on months of bookkeeping?",
+        a: "Start by gathering bank and card statements, sales invoices and receipts for the missing period. Work month by month, recording transactions and reconciling each month to the bank statement before moving on. Deal with the oldest period first so balances carry forward correctly. If you are far behind or have tax deadlines approaching, a bookkeeper can help you catch up quickly.",
+      },
+      {
+        q: "What is the accounting equation?",
+        a: "The accounting equation is assets = liabilities + equity. It means everything your business owns is funded either by what it owes to others or by the owner's stake. Every transaction in double-entry bookkeeping keeps the equation in balance; for example, invoicing a customer increases both accounts receivable (an asset) and income, which flows into equity.",
       },
     ],
     content: `
