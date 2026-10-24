@@ -11,6 +11,15 @@ import { FORMAT_TEMPLATE_POSTS } from "./posts/formats-templates";
 import { PLATFORM_SOFTWARE_POSTS } from "./posts/platforms-software";
 import { INDUSTRY_POSTS_C } from "./posts/industry-c";
 import { FINANCE_ADVANCED_POSTS } from "./posts/finance-advanced";
+import { TAX_US_UK_2026_POSTS } from "./posts/tax-us-uk-2026";
+import { TAX_ASIA_2026_POSTS } from "./posts/tax-asia-2026";
+import { EINVOICING_2027_POSTS } from "./posts/e-invoicing-2027";
+import { PAYMENTS_2026_POSTS } from "./posts/payments-2026";
+import { FREELANCING_2026_POSTS } from "./posts/freelancing-2026";
+import { FINANCE_2026_POSTS } from "./posts/finance-2026";
+import { BASICS_2026_POSTS } from "./posts/basics-2026";
+import { GUIDES_2026_POSTS } from "./posts/guides-2026";
+import { DESIGN_INDUSTRY_2026_POSTS } from "./posts/design-industry-2026";
 
 export interface Post {
   slug: string;
@@ -2591,6 +2600,15 @@ export const POST_DRAFTS: PostDraft[] = [
   ...PLATFORM_SOFTWARE_POSTS,
   ...INDUSTRY_POSTS_C,
   ...FINANCE_ADVANCED_POSTS,
+  ...TAX_US_UK_2026_POSTS,
+  ...TAX_ASIA_2026_POSTS,
+  ...EINVOICING_2027_POSTS,
+  ...PAYMENTS_2026_POSTS,
+  ...FREELANCING_2026_POSTS,
+  ...FINANCE_2026_POSTS,
+  ...BASICS_2026_POSTS,
+  ...GUIDES_2026_POSTS,
+  ...DESIGN_INDUSTRY_2026_POSTS,
 ];
 
 /** Reading time is derived from content length so it cannot drift from the article. */
