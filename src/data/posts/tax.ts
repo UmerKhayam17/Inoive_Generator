@@ -158,7 +158,12 @@ export const TAX_POSTS: PostDraft[] = [
     date: "2026-10-22",
     author: "Invoice Creator Editorial Team",
     jurisdiction: "United States",
-    related: ["independent-contractor-invoice", "tax-id-on-invoice", "self-employed-tax-deductions"],
+    related: [
+      "vendor-onboarding-checklist",
+      "independent-contractor-invoice",
+      "tax-id-on-invoice",
+      "self-employed-tax-deductions",
+    ],
     faqs: [
       {
         q: "Who fills out a W-9 and who fills out a 1099?",
@@ -742,7 +747,12 @@ export const TAX_POSTS: PostDraft[] = [
     date: "2026-10-22",
     author: "Invoice Creator Editorial Team",
     jurisdiction: "General",
-    related: ["bookkeeping-basics", "e-invoicing-guide", "invoice-numbering-system"],
+    related: [
+      "invoice-audit-preparation",
+      "bookkeeping-basics",
+      "e-invoicing-guide",
+      "invoice-numbering-system",
+    ],
     faqs: [
       {
         q: "How long should a small business keep invoices?",
@@ -878,7 +888,12 @@ export const TAX_POSTS: PostDraft[] = [
     date: "2026-10-22",
     author: "Invoice Creator Editorial Team",
     jurisdiction: "General",
-    related: ["tax-invoice-guide", "w9-and-1099-for-contractors", "reverse-charge-invoice"],
+    related: [
+      "invoice-requirements-by-country",
+      "tax-invoice-guide",
+      "w9-and-1099-for-contractors",
+      "reverse-charge-invoice",
+    ],
     faqs: [
       {
         q: "Is a tax ID required on an invoice?",

@@ -336,7 +336,12 @@ export const BASICS_2026_POSTS: PostDraft[] = [
     category: "invoicing-basics",
     date: "2026-10-24",
     author: "Invoice Creator Editorial Team",
-    related: ["deposit-invoice", "statement-of-account", "payment-receipt-template"],
+    related: [
+      "short-payments-and-deductions",
+      "deposit-invoice",
+      "statement-of-account",
+      "payment-receipt-template",
+    ],
     faqs: [
       {
         q: "Should I issue a new invoice after a partial payment?",
@@ -638,7 +643,12 @@ export const BASICS_2026_POSTS: PostDraft[] = [
     category: "invoicing-basics",
     date: "2026-10-24",
     author: "Invoice Creator Editorial Team",
-    related: ["recurring-invoices-guide", "rent-invoice-template", "retainer-invoice"],
+    related: [
+      "usage-based-billing-invoice",
+      "recurring-invoices-guide",
+      "rent-invoice-template",
+      "retainer-invoice",
+    ],
     faqs: [
       {
         q: "What does prorated mean on an invoice?",

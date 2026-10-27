@@ -9,7 +9,12 @@ export const FINANCE_2026_POSTS: PostDraft[] = [
     category: "business-finance",
     date: "2026-10-24",
     author: "Invoice Creator Editorial Team",
-    related: ["chatgpt-invoice", "invoice-generator-vs-accounting-software", "accounts-receivable-guide"],
+    related: [
+      "invoice-ocr-data-extraction",
+      "chatgpt-invoice",
+      "invoice-generator-vs-accounting-software",
+      "accounts-receivable-guide",
+    ],
     faqs: [
       {
         q: "Can AI create an invoice for me from a short description?",

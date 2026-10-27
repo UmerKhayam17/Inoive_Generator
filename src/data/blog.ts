@@ -20,6 +20,16 @@ import { FINANCE_2026_POSTS } from "./posts/finance-2026";
 import { BASICS_2026_POSTS } from "./posts/basics-2026";
 import { GUIDES_2026_POSTS } from "./posts/guides-2026";
 import { DESIGN_INDUSTRY_2026_POSTS } from "./posts/design-industry-2026";
+import { AP_AUTOMATION_2026_POSTS } from "./posts/ap-automation-2026";
+import { FINANCE_TRENDS_2027_POSTS } from "./posts/finance-trends-2027";
+import { TAX_COMPLIANCE_2026_POSTS } from "./posts/tax-compliance-2026";
+import { INDUSTRY_POSTS_D } from "./posts/industry-d";
+import { FINANCE_METRICS_2026_POSTS } from "./posts/finance-metrics-2026";
+import { RECEIVABLES_2026_POSTS } from "./posts/receivables-2026";
+import { PROCUREMENT_TRADE_2026_POSTS } from "./posts/procurement-trade-2026";
+import { INDUSTRY_POSTS_E } from "./posts/industry-e";
+import { FREELANCE_CREATIVE_2026_POSTS } from "./posts/freelance-creative-2026";
+import { TAX_COUNTRIES_2026_POSTS } from "./posts/tax-countries-2026";
 
 export interface Post {
   slug: string;
@@ -719,6 +729,7 @@ jane@smithdesign.example</p>
     category: "guides",
     date: "2026-10-01",
     author: "Invoice Creator Editorial Team",
+    related: ["incoterms-on-invoice"],
     faqs: [
       {
         q: "Do I need to register for VAT or sales tax in my client's country?",
@@ -927,6 +938,7 @@ jane@smithdesign.example</p>
     category: "guides",
     date: "2026-09-26",
     author: "Invoice Creator Editorial Team",
+    related: ["architect-invoice-template"],
     faqs: [
       {
         q: "What is an AIA G702 pay application?",
@@ -1584,6 +1596,7 @@ jane@smithdesign.example</p>
     category: "comparisons",
     date: "2026-08-25",
     author: "Invoice Creator Editorial Team",
+    related: ["hs-code-on-commercial-invoice"],
     faqs: [
       {
         q: "Is a proforma invoice legally binding?",
@@ -2231,6 +2244,7 @@ jane@smithdesign.example</p>
     date: "2026-07-15",
     updated: "2026-09-25",
     author: "Invoice Creator Editorial Team",
+    related: ["ecommerce-invoice-shopify-woocommerce"],
     faqs: [
       {
         q: "Is a business legally required to give a receipt?",
@@ -3483,6 +3497,7 @@ jane@smithdesign.example</p>
     date: "2026-05-06",
     updated: "2026-09-25",
     author: "Invoice Creator Editorial Team",
+    related: ["singapore-gst-tax-invoice"],
     jurisdiction: "GST jurisdictions (e.g. India)",
     faqs: [
       {
@@ -3610,6 +3625,7 @@ jane@smithdesign.example</p>
     date: "2026-04-29",
     updated: "2026-09-25",
     author: "Invoice Creator Editorial Team",
+    related: ["south-africa-vat-invoice", "sales-tax-vs-vat-vs-gst"],
     jurisdiction: "VAT jurisdictions (e.g. UK / EU)",
     faqs: [
       {
@@ -4037,6 +4053,16 @@ export const POST_DRAFTS: PostDraft[] = [
   ...BASICS_2026_POSTS,
   ...GUIDES_2026_POSTS,
   ...DESIGN_INDUSTRY_2026_POSTS,
+  ...AP_AUTOMATION_2026_POSTS,
+  ...FINANCE_TRENDS_2027_POSTS,
+  ...TAX_COMPLIANCE_2026_POSTS,
+  ...INDUSTRY_POSTS_D,
+  ...FINANCE_METRICS_2026_POSTS,
+  ...RECEIVABLES_2026_POSTS,
+  ...PROCUREMENT_TRADE_2026_POSTS,
+  ...INDUSTRY_POSTS_E,
+  ...FREELANCE_CREATIVE_2026_POSTS,
+  ...TAX_COUNTRIES_2026_POSTS,
 ];
 
 /** Reading time is derived from content length so it cannot drift from the article. */

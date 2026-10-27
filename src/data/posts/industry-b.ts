@@ -738,7 +738,12 @@ export const INDUSTRY_POSTS_B: PostDraft[] = [
     category: "industry-invoices",
     date: "2026-10-22",
     author: "Invoice Creator Editorial Team",
-    related: ["milestone-payments", "freelance-invoice-template", "retainer-invoice"],
+    related: [
+      "it-managed-services-invoice-template",
+      "milestone-payments",
+      "freelance-invoice-template",
+      "retainer-invoice",
+    ],
     faqs: [
       {
         q: "How do web developers usually invoice clients?",

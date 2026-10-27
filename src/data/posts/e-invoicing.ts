@@ -1307,7 +1307,12 @@ export const EINVOICING_POSTS: PostDraft[] = [
     date: "2026-10-23",
     author: "Invoice Creator Editorial Team",
     jurisdiction: "Australia",
-    related: ["tax-invoice-guide", "what-is-peppol", "tax-id-on-invoice"],
+    related: [
+      "new-zealand-gst-invoice",
+      "tax-invoice-guide",
+      "what-is-peppol",
+      "tax-id-on-invoice",
+    ],
     faqs: [
       {
         q: "What must be on a tax invoice in Australia?",

@@ -506,7 +506,12 @@ export const FINANCE_ADVANCED_POSTS: PostDraft[] = [
     category: "business-finance",
     date: "2026-10-23",
     author: "Invoice Creator Editorial Team",
-    related: ["accounts-receivable-guide", "accounts-receivable-aging-report", "cash-flow-management"],
+    related: [
+      "cash-conversion-cycle",
+      "accounts-receivable-guide",
+      "accounts-receivable-aging-report",
+      "cash-flow-management",
+    ],
     faqs: [
       {
         q: "What is days sales outstanding?",
@@ -926,7 +931,12 @@ export const FINANCE_ADVANCED_POSTS: PostDraft[] = [
     category: "invoicing-basics",
     date: "2026-10-23",
     author: "Invoice Creator Editorial Team",
-    related: ["payment-receipt-template", "statement-of-account", "accounts-payable-vs-accounts-receivable"],
+    related: [
+      "cash-application",
+      "payment-receipt-template",
+      "statement-of-account",
+      "accounts-payable-vs-accounts-receivable",
+    ],
     faqs: [
       {
         q: "What is a remittance advice?",
@@ -1076,7 +1086,12 @@ export const FINANCE_ADVANCED_POSTS: PostDraft[] = [
     category: "comparisons",
     date: "2026-10-23",
     author: "Invoice Creator Editorial Team",
-    related: ["accounts-receivable-guide", "bookkeeping-basics", "cash-vs-accrual-accounting"],
+    related: [
+      "accounts-payable-kpis",
+      "accounts-receivable-guide",
+      "bookkeeping-basics",
+      "cash-vs-accrual-accounting",
+    ],
     faqs: [
       {
         q: "What is the difference between accounts payable and accounts receivable?",
@@ -1231,7 +1246,12 @@ export const FINANCE_ADVANCED_POSTS: PostDraft[] = [
     category: "payments",
     date: "2026-10-23",
     author: "Invoice Creator Editorial Team",
-    related: ["bank-details-on-invoice", "accounts-payable-vs-accounts-receivable", "how-to-send-paypal-invoice"],
+    related: [
+      "duplicate-invoice-payments",
+      "bank-details-on-invoice",
+      "accounts-payable-vs-accounts-receivable",
+      "how-to-send-paypal-invoice",
+    ],
     faqs: [
       {
         q: "How can I tell if an invoice is fake?",

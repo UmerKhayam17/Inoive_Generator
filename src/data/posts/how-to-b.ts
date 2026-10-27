@@ -9,7 +9,12 @@ export const HOW_TO_POSTS_B: PostDraft[] = [
     category: "guides",
     date: "2026-10-22",
     author: "Invoice Creator Editorial Team",
-    related: ["proforma-invoice-guide", "invoice-international-clients", "tax-id-on-invoice"],
+    related: [
+      "letter-of-credit-invoice",
+      "proforma-invoice-guide",
+      "invoice-international-clients",
+      "tax-id-on-invoice",
+    ],
     faqs: [
       {
         q: "What is a commercial invoice used for?",
@@ -748,7 +753,12 @@ export const HOW_TO_POSTS_B: PostDraft[] = [
     category: "invoicing-basics",
     date: "2026-10-22",
     author: "Invoice Creator Editorial Team",
-    related: ["invoice-examples", "how-to-invoice-for-hourly-work", "what-is-a-sales-invoice"],
+    related: [
+      "reimbursable-expenses-invoice",
+      "invoice-examples",
+      "how-to-invoice-for-hourly-work",
+      "what-is-a-sales-invoice",
+    ],
     faqs: [
       {
         q: "What does itemized invoice mean?",

@@ -443,7 +443,12 @@ Our bank details will never change by email. If you receive a message saying the
     category: "payments",
     date: "2026-10-22",
     author: "Invoice Creator Editorial Team",
-    related: ["invoice-payment-terms", "late-payment-fees", "cash-flow-management"],
+    related: [
+      "dynamic-discounting",
+      "invoice-payment-terms",
+      "late-payment-fees",
+      "cash-flow-management",
+    ],
     faqs: [
       {
         q: "What does 2/10 net 30 mean?",
@@ -583,7 +588,12 @@ Our bank details will never change by email. If you receive a message saying the
     category: "payments",
     date: "2026-10-22",
     author: "Invoice Creator Editorial Team",
-    related: ["bank-details-on-invoice", "how-to-accept-credit-card-payments", "invoice-international-clients"],
+    related: [
+      "sepa-direct-debit",
+      "bank-details-on-invoice",
+      "how-to-accept-credit-card-payments",
+      "invoice-international-clients",
+    ],
     faqs: [
       {
         q: "Is ACH or wire transfer faster?",

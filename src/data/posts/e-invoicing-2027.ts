@@ -500,7 +500,12 @@ export const EINVOICING_2027_POSTS: PostDraft[] = [
     date: "2026-10-24",
     author: "Invoice Creator Editorial Team",
     jurisdiction: "General",
-    related: ["e-invoicing-guide", "vida-vat-in-the-digital-age", "germany-e-invoicing-2027"],
+    related: [
+      "future-of-invoicing-trends-2027",
+      "e-invoicing-guide",
+      "vida-vat-in-the-digital-age",
+      "germany-e-invoicing-2027",
+    ],
     faqs: [
       {
         q: "Which countries require B2B e-invoicing in 2027?",

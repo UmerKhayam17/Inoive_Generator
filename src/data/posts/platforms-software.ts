@@ -140,7 +140,12 @@ export const PLATFORM_SOFTWARE_POSTS: PostDraft[] = [
     category: "payments",
     date: "2026-10-23",
     author: "Invoice Creator Editorial Team",
-    related: ["add-payment-link-to-invoice", "how-to-send-paypal-invoice", "how-to-accept-credit-card-payments"],
+    related: [
+      "embedded-finance-invoicing",
+      "add-payment-link-to-invoice",
+      "how-to-send-paypal-invoice",
+      "how-to-accept-credit-card-payments",
+    ],
     faqs: [
       {
         q: "How much does Stripe charge for an invoice?",
