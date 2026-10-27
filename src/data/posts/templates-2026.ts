@@ -1015,7 +1015,12 @@ export const TEMPLATES_2026_POSTS: PostDraft[] = [
     category: "design-templates",
     date: "2026-10-27",
     author: "Invoice Creator Editorial Team",
-    related: ["timesheet-template", "salary-increase-percentage", "independent-contractor-invoice"],
+    related: [
+      "gross-pay-vs-net-pay",
+      "timesheet-template",
+      "salary-increase-percentage",
+      "independent-contractor-invoice",
+    ],
     faqs: [
       {
         q: "What is a salary slip?",

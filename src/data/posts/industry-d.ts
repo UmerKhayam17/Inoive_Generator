@@ -350,6 +350,7 @@ export const INDUSTRY_POSTS_D: PostDraft[] = [
     date: "2026-10-27",
     author: "Invoice Creator Editorial Team",
     related: [
+      "cash-on-delivery-invoicing",
       "cost-of-goods-sold",
       "invoice-vs-receipt",
       "credit-note-guide",

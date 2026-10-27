@@ -889,7 +889,12 @@ export const INDUSTRY_POSTS_A: PostDraft[] = [
     category: "industry-invoices",
     date: "2026-10-22",
     author: "Invoice Creator Editorial Team",
-    related: ["contractor-invoice-template", "plumbing-invoice-template", "hvac-invoice-template"],
+    related: [
+      "solar-installation-invoice-template",
+      "contractor-invoice-template",
+      "plumbing-invoice-template",
+      "hvac-invoice-template",
+    ],
     faqs: [
       {
         q: "What should an electrician invoice include?",
@@ -1030,7 +1035,12 @@ export const INDUSTRY_POSTS_A: PostDraft[] = [
     category: "industry-invoices",
     date: "2026-10-22",
     author: "Invoice Creator Editorial Team",
-    related: ["recurring-invoices-guide", "cleaning-service-invoice-template", "deposit-invoice"],
+    related: [
+      "snow-removal-invoice-template",
+      "recurring-invoices-guide",
+      "cleaning-service-invoice-template",
+      "deposit-invoice",
+    ],
     faqs: [
       {
         q: "What should a landscaping invoice include?",

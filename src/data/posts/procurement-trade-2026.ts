@@ -750,6 +750,7 @@ export const PROCUREMENT_TRADE_2026_POSTS: PostDraft[] = [
     date: "2026-10-27",
     author: "Invoice Creator Editorial Team",
     related: [
+      "hsn-sac-code",
       "commercial-invoice-template",
       "incoterms-on-invoice",
       "invoice-international-clients",

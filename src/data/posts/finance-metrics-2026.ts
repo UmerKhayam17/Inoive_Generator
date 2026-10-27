@@ -10,6 +10,7 @@ export const FINANCE_METRICS_2026_POSTS: PostDraft[] = [
     date: "2026-10-27",
     author: "Invoice Creator Editorial Team",
     related: [
+      "roi-formula",
       "gross-profit-vs-net-profit",
       "cash-conversion-cycle",
       "days-sales-outstanding",
@@ -943,6 +944,7 @@ export const FINANCE_METRICS_2026_POSTS: PostDraft[] = [
     date: "2026-10-27",
     author: "Invoice Creator Editorial Team",
     related: [
+      "trial-balance",
       "petty-cash-log",
       "bank-reconciliation",
       "bookkeeping-basics",

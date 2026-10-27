@@ -10,7 +10,12 @@ export const TAX_ASIA_ME_2026_POSTS: PostDraft[] = [
     jurisdiction: "UAE",
     date: "2026-10-27",
     author: "Invoice Creator Editorial Team",
-    related: ["uae-vat-invoice-requirements", "uae-e-invoicing-2027", "tax-id-on-invoice"],
+    related: [
+      "uae-vat-return-filing",
+      "uae-vat-invoice-requirements",
+      "uae-e-invoicing-2027",
+      "tax-id-on-invoice",
+    ],
     faqs: [
       {
         q: "What is a TRN number in the UAE?",
@@ -331,7 +336,12 @@ export const TAX_ASIA_ME_2026_POSTS: PostDraft[] = [
     jurisdiction: "India",
     date: "2026-10-27",
     author: "Invoice Creator Editorial Team",
-    related: ["gst-invoice-guide", "gst-2-0-new-gst-rates", "e-way-bill"],
+    related: [
+      "gst-return-filing-india",
+      "gst-invoice-guide",
+      "gst-2-0-new-gst-rates",
+      "e-way-bill",
+    ],
     faqs: [
       {
         q: "What is the turnover limit for GST registration?",
@@ -642,6 +652,7 @@ export const TAX_ASIA_ME_2026_POSTS: PostDraft[] = [
     date: "2026-10-27",
     author: "Invoice Creator Editorial Team",
     related: [
+      "income-tax-return-pakistan-iris",
       "sales-tax-invoice-pakistan",
       "freelancer-tax-pakistan-2026",
       "strn-registration-pakistan",

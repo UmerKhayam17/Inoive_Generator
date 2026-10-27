@@ -735,6 +735,7 @@ Our bank details never change by email. Call 555-0187 to verify before sending a
     date: "2026-10-22",
     author: "Invoice Creator Editorial Team",
     related: [
+      "payment-confirmation-email",
       "rent-receipt-template",
       "invoice-vs-receipt",
       "deposit-invoice",

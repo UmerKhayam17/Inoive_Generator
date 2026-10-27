@@ -701,7 +701,12 @@ export const TAX_US_UK_2026_B_POSTS: PostDraft[] = [
     jurisdiction: "United Kingdom",
     date: "2026-10-27",
     author: "Invoice Creator Editorial Team",
-    related: ["vat-invoice-guide", "zero-rated-vs-exempt-vat", "self-assessment-tax-return-uk"],
+    related: [
+      "how-to-file-vat-return-uk",
+      "vat-invoice-guide",
+      "zero-rated-vs-exempt-vat",
+      "self-assessment-tax-return-uk",
+    ],
     faqs: [
       {
         q: "What is the UK VAT registration threshold in 2026?",

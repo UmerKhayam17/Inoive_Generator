@@ -188,7 +188,12 @@ export const PAYMENTS_GUIDES_2026_POSTS: PostDraft[] = [
     category: "comparisons",
     date: "2026-10-27",
     author: "Invoice Creator Editorial Team",
-    related: ["schedule-c-for-freelancers", "how-to-get-an-ein", "self-employment-tax"],
+    related: [
+      "s-corp-vs-llc",
+      "schedule-c-for-freelancers",
+      "how-to-get-an-ein",
+      "self-employment-tax",
+    ],
     faqs: [
       {
         q: "Is an LLC better than a sole proprietorship for a freelancer?",
@@ -349,6 +354,7 @@ export const PAYMENTS_GUIDES_2026_POSTS: PostDraft[] = [
     date: "2026-10-27",
     author: "Invoice Creator Editorial Team",
     related: [
+      "payoneer-vs-paypal",
       "stripe-invoicing-guide",
       "how-to-send-paypal-invoice",
       "add-payment-link-to-invoice",

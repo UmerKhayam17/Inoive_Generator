@@ -575,7 +575,12 @@ export const PLATFORM_SOFTWARE_POSTS: PostDraft[] = [
     category: "payments",
     date: "2026-10-23",
     author: "Invoice Creator Editorial Team",
-    related: ["receive-payment-from-abroad-pakistan", "invoice-international-clients", "fiverr-upwork-invoice"],
+    related: [
+      "wise-vs-paypal",
+      "receive-payment-from-abroad-pakistan",
+      "invoice-international-clients",
+      "fiverr-upwork-invoice",
+    ],
     faqs: [
       {
         q: "Which is cheaper, Wise or Payoneer?",
@@ -714,6 +719,7 @@ export const PLATFORM_SOFTWARE_POSTS: PostDraft[] = [
     author: "Invoice Creator Editorial Team",
     jurisdiction: "Pakistan",
     related: [
+      "w-8ben-form-freelancers",
       "how-to-start-freelancing-in-pakistan",
       "invoice-international-clients",
       "wise-vs-payoneer",
@@ -847,7 +853,12 @@ export const PLATFORM_SOFTWARE_POSTS: PostDraft[] = [
     category: "freelancing",
     date: "2026-10-23",
     author: "Invoice Creator Editorial Team",
-    related: ["freelancer-invoice-guide", "wise-vs-payoneer", "1099-k-threshold"],
+    related: [
+      "upwork-vs-fiverr",
+      "freelancer-invoice-guide",
+      "wise-vs-payoneer",
+      "1099-k-threshold",
+    ],
     faqs: [
       {
         q: "Does Fiverr give sellers an invoice for completed orders?",

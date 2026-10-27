@@ -157,6 +157,7 @@ export const FINANCE_ADVANCED_POSTS: PostDraft[] = [
     date: "2026-10-23",
     author: "Invoice Creator Editorial Team",
     related: [
+      "how-to-price-a-product",
       "break-even-point",
       "how-to-set-freelance-rates",
       "reverse-sales-tax-calculation",

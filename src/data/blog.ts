@@ -38,6 +38,15 @@ import { TAX_US_UK_2026_B_POSTS } from "./posts/tax-us-uk-2026-b";
 import { TAX_ASIA_ME_2026_POSTS } from "./posts/tax-asia-me-2026";
 import { FREELANCING_GROWTH_2026_POSTS } from "./posts/freelancing-growth-2026";
 import { INDUSTRY_POSTS_F } from "./posts/industry-f";
+import { TEMPLATES_BASICS_2026_B_POSTS } from "./posts/templates-basics-2026-b";
+import { COMPARISONS_2026_B_POSTS } from "./posts/comparisons-2026-b";
+import { COMPARISONS_2026_C_POSTS } from "./posts/comparisons-2026-c";
+import { ACCOUNTING_BASICS_2026_POSTS } from "./posts/accounting-basics-2026";
+import { BUSINESS_GROWTH_2026_POSTS } from "./posts/business-growth-2026";
+import { TAX_FILING_2026_POSTS } from "./posts/tax-filing-2026";
+import { TAX_PK_IN_2026_POSTS } from "./posts/tax-pk-in-2026";
+import { PAYMENTS_FREELANCE_2026_B_POSTS } from "./posts/payments-freelance-2026-b";
+import { INDUSTRY_POSTS_G } from "./posts/industry-g";
 
 export interface Post {
   slug: string;
@@ -516,7 +525,7 @@ const CORE_POSTS: PostDraft[] = [
     category: "tax-compliance",
     date: "2026-10-06",
     author: "Invoice Creator Editorial Team",
-    related: ["self-assessment-tax-return-uk"],
+    related: ["sole-trader-vs-limited-company", "self-assessment-tax-return-uk"],
     jurisdiction: "United Kingdom",
     faqs: [
       {
@@ -628,7 +637,7 @@ jane@smithdesign.example</p>
     category: "guides",
     date: "2026-10-03",
     author: "Invoice Creator Editorial Team",
-    related: ["timesheet-template"],
+    related: ["security-services-invoice-template", "timesheet-template"],
     faqs: [
       {
         q: "How do I convert minutes to decimal hours on an invoice?",
@@ -741,7 +750,7 @@ jane@smithdesign.example</p>
     category: "guides",
     date: "2026-10-01",
     author: "Invoice Creator Editorial Team",
-    related: ["incoterms-on-invoice"],
+    related: ["billing-address-vs-shipping-address", "incoterms-on-invoice"],
     faqs: [
       {
         q: "Do I need to register for VAT or sales tax in my client's country?",
@@ -1495,6 +1504,7 @@ jane@smithdesign.example</p>
     category: "invoicing-basics",
     date: "2026-09-01",
     author: "Invoice Creator Editorial Team",
+    related: ["journal-entries"],
     faqs: [
       {
         q: "Can I issue a credit note after the client has already paid the invoice?",
@@ -3768,7 +3778,7 @@ jane@smithdesign.example</p>
     date: "2026-04-22",
     updated: "2026-09-25",
     author: "Invoice Creator Editorial Team",
-    related: ["best-fonts-for-invoices"],
+    related: ["letterhead-template", "best-fonts-for-invoices"],
     faqs: [
       {
         q: "What font is best for a professional invoice?",
@@ -4093,6 +4103,15 @@ export const POST_DRAFTS: PostDraft[] = [
   ...TAX_ASIA_ME_2026_POSTS,
   ...FREELANCING_GROWTH_2026_POSTS,
   ...INDUSTRY_POSTS_F,
+  ...TEMPLATES_BASICS_2026_B_POSTS,
+  ...COMPARISONS_2026_B_POSTS,
+  ...COMPARISONS_2026_C_POSTS,
+  ...ACCOUNTING_BASICS_2026_POSTS,
+  ...BUSINESS_GROWTH_2026_POSTS,
+  ...TAX_FILING_2026_POSTS,
+  ...TAX_PK_IN_2026_POSTS,
+  ...PAYMENTS_FREELANCE_2026_B_POSTS,
+  ...INDUSTRY_POSTS_G,
 ];
 
 /** Reading time is derived from content length so it cannot drift from the article. */

@@ -880,7 +880,12 @@ export const BASICS_COMPARISONS_2026_POSTS: PostDraft[] = [
     category: "comparisons",
     date: "2026-10-27",
     author: "Invoice Creator Editorial Team",
-    related: ["tax-invoice-guide", "gst-invoice-guide", "sales-tax-invoice-pakistan"],
+    related: [
+      "cash-memo-format",
+      "tax-invoice-guide",
+      "gst-invoice-guide",
+      "sales-tax-invoice-pakistan",
+    ],
     faqs: [
       {
         q: "What is the difference between a tax invoice and a retail invoice?",

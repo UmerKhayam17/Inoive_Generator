@@ -10,6 +10,7 @@ export const INDUSTRY_POSTS_B: PostDraft[] = [
     date: "2026-10-22",
     author: "Invoice Creator Editorial Team",
     related: [
+      "property-management-invoice-template",
       "hotel-invoice-template",
       "recurring-invoices-guide",
       "late-payment-fees",

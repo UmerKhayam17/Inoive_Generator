@@ -9,7 +9,12 @@ export const INDUSTRY_POSTS_F: PostDraft[] = [
     category: "industry-invoices",
     date: "2026-10-27",
     author: "Invoice Creator Editorial Team",
-    related: ["restaurant-bill-format", "itemized-invoice", "deposit-invoice"],
+    related: [
+      "travel-agency-invoice-template",
+      "restaurant-bill-format",
+      "itemized-invoice",
+      "deposit-invoice",
+    ],
     faqs: [
       {
         q: "What is the difference between a hotel folio and a hotel invoice?",

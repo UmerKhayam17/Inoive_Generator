@@ -191,7 +191,12 @@ export const SMALL_BUSINESS_FINANCE_2026_POSTS: PostDraft[] = [
     category: "business-finance",
     date: "2026-10-27",
     author: "Invoice Creator Editorial Team",
-    related: ["profit-and-loss-statement", "working-capital", "accounts-receivable-turnover-ratio"],
+    related: [
+      "capex-vs-opex",
+      "profit-and-loss-statement",
+      "working-capital",
+      "accounts-receivable-turnover-ratio",
+    ],
     faqs: [
       {
         q: "What is a balance sheet in simple terms?",
@@ -387,7 +392,12 @@ export const SMALL_BUSINESS_FINANCE_2026_POSTS: PostDraft[] = [
     category: "business-finance",
     date: "2026-10-27",
     author: "Invoice Creator Editorial Team",
-    related: ["markup-vs-margin", "small-business-budget", "gross-profit-vs-net-profit"],
+    related: [
+      "fixed-vs-variable-costs",
+      "markup-vs-margin",
+      "small-business-budget",
+      "gross-profit-vs-net-profit",
+    ],
     faqs: [
       {
         q: "What is the break-even point formula?",
@@ -557,7 +567,12 @@ export const SMALL_BUSINESS_FINANCE_2026_POSTS: PostDraft[] = [
     category: "comparisons",
     date: "2026-10-27",
     author: "Invoice Creator Editorial Team",
-    related: ["cost-of-goods-sold", "profit-and-loss-statement", "markup-vs-margin"],
+    related: [
+      "revenue-vs-profit",
+      "cost-of-goods-sold",
+      "profit-and-loss-statement",
+      "markup-vs-margin",
+    ],
     faqs: [
       {
         q: "What is the main difference between gross profit and net profit?",
@@ -738,7 +753,12 @@ export const SMALL_BUSINESS_FINANCE_2026_POSTS: PostDraft[] = [
     category: "business-finance",
     date: "2026-10-27",
     author: "Invoice Creator Editorial Team",
-    related: ["gross-profit-vs-net-profit", "profit-and-loss-statement", "markup-vs-margin"],
+    related: [
+      "inventory-management-spreadsheet",
+      "gross-profit-vs-net-profit",
+      "profit-and-loss-statement",
+      "markup-vs-margin",
+    ],
     faqs: [
       {
         q: "What is the cost of goods sold formula?",
@@ -900,7 +920,12 @@ export const SMALL_BUSINESS_FINANCE_2026_POSTS: PostDraft[] = [
     category: "business-finance",
     date: "2026-10-27",
     author: "Invoice Creator Editorial Team",
-    related: ["cash-flow-forecast", "break-even-point", "how-to-track-business-expenses"],
+    related: [
+      "operating-expenses",
+      "cash-flow-forecast",
+      "break-even-point",
+      "how-to-track-business-expenses",
+    ],
     faqs: [
       {
         q: "How do I create a budget for a small business?",
@@ -1074,7 +1099,12 @@ export const SMALL_BUSINESS_FINANCE_2026_POSTS: PostDraft[] = [
     category: "business-finance",
     date: "2026-10-27",
     author: "Invoice Creator Editorial Team",
-    related: ["how-to-track-business-expenses", "bank-reconciliation", "bookkeeping-basics"],
+    related: [
+      "payment-voucher-format",
+      "how-to-track-business-expenses",
+      "bank-reconciliation",
+      "bookkeeping-basics",
+    ],
     faqs: [
       {
         q: "What is a petty cash log?",
@@ -1240,7 +1270,12 @@ export const SMALL_BUSINESS_FINANCE_2026_POSTS: PostDraft[] = [
     category: "business-finance",
     date: "2026-10-27",
     author: "Invoice Creator Editorial Team",
-    related: ["self-employed-tax-deductions", "petty-cash-log", "bookkeeping-basics"],
+    related: [
+      "expense-report-template",
+      "self-employed-tax-deductions",
+      "petty-cash-log",
+      "bookkeeping-basics",
+    ],
     faqs: [
       {
         q: "What is the easiest way to track business expenses?",
