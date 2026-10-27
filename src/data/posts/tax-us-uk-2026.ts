@@ -10,7 +10,12 @@ export const TAX_US_UK_2026_POSTS: PostDraft[] = [
     date: "2026-10-24",
     author: "Invoice Creator Editorial Team",
     jurisdiction: "United States",
-    related: ["1099-nec-vs-1099-misc-vs-1099-k", "w9-and-1099-for-contractors", "1099-k-threshold"],
+    related: [
+      "schedule-c-for-freelancers",
+      "1099-nec-vs-1099-misc-vs-1099-k",
+      "w9-and-1099-for-contractors",
+      "1099-k-threshold",
+    ],
     faqs: [
       {
         q: "Do I still need a W-9 from a contractor I will pay less than $2,000?",

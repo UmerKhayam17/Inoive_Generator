@@ -9,7 +9,12 @@ export const FREELANCING_2026_POSTS: PostDraft[] = [
     category: "freelancing",
     date: "2026-10-24",
     author: "Invoice Creator Editorial Team",
-    related: ["how-to-set-freelance-rates", "freelance-contract-template", "scope-creep-change-order"],
+    related: [
+      "chatgpt-vs-claude-vs-gemini",
+      "how-to-set-freelance-rates",
+      "freelance-contract-template",
+      "scope-creep-change-order",
+    ],
     faqs: [
       {
         q: "Should I lower my rate because I use AI tools?",
@@ -686,6 +691,8 @@ export const FREELANCING_2026_POSTS: PostDraft[] = [
     author: "Invoice Creator Editorial Team",
     jurisdiction: "Pakistan",
     related: [
+      "income-tax-slabs-pakistan-2026-27",
+      "how-to-get-ntn-number-pakistan",
       "withholding-tax-on-invoices",
       "receive-payment-from-abroad-pakistan",
       "raast-business-payments-pakistan",

@@ -180,6 +180,7 @@ export const INDUSTRY_POSTS_D: PostDraft[] = [
     date: "2026-10-27",
     author: "Invoice Creator Editorial Team",
     related: [
+      "ai-automation-agency-invoice-template",
       "social-media-manager-invoice-template",
       "retainer-invoice",
       "markup-vs-margin",
@@ -349,7 +350,13 @@ export const INDUSTRY_POSTS_D: PostDraft[] = [
     category: "industry-invoices",
     date: "2026-10-27",
     author: "Invoice Creator Editorial Team",
-    related: ["invoice-vs-receipt", "credit-note-guide", "sales-tax-on-invoices-us"],
+    related: [
+      "cash-on-delivery-invoicing",
+      "cost-of-goods-sold",
+      "invoice-vs-receipt",
+      "credit-note-guide",
+      "sales-tax-on-invoices-us",
+    ],
     faqs: [
       {
         q: "Do I need to send an invoice for every online order?",

@@ -10,6 +10,7 @@ export const COMPARISON_FINANCE_POSTS: PostDraft[] = [
     date: "2026-10-22",
     author: "Invoice Creator Editorial Team",
     related: [
+      "invoice-vs-sales-order",
       "three-way-match",
       "po-number-on-invoice",
       "invoice-vs-bill",
@@ -159,6 +160,7 @@ export const COMPARISON_FINANCE_POSTS: PostDraft[] = [
     date: "2026-10-22",
     author: "Invoice Creator Editorial Team",
     related: [
+      "ai-accounting-software",
       "touchless-invoice-processing",
       "how-to-generate-an-invoice",
       "bookkeeping-basics",
@@ -322,6 +324,8 @@ export const COMPARISON_FINANCE_POSTS: PostDraft[] = [
     date: "2026-10-22",
     author: "Invoice Creator Editorial Team",
     related: [
+      "double-entry-bookkeeping",
+      "balance-sheet-small-business",
       "revenue-recognition-asc-606",
       "bookkeeping-basics",
       "accounts-receivable-guide",
@@ -470,7 +474,12 @@ export const COMPARISON_FINANCE_POSTS: PostDraft[] = [
     category: "business-finance",
     date: "2026-10-22",
     author: "Invoice Creator Editorial Team",
-    related: ["cash-flow-management", "accounts-receivable-guide", "early-payment-discount"],
+    related: [
+      "b2b-buy-now-pay-later",
+      "cash-flow-management",
+      "accounts-receivable-guide",
+      "early-payment-discount",
+    ],
     faqs: [
       {
         q: "What is the difference between invoice factoring and invoice financing?",
@@ -944,6 +953,7 @@ export const COMPARISON_FINANCE_POSTS: PostDraft[] = [
     date: "2026-10-22",
     author: "Invoice Creator Editorial Team",
     related: [
+      "cash-flow-statement",
       "working-capital",
       "accounts-receivable-guide",
       "how-to-get-paid-faster",
@@ -1105,6 +1115,9 @@ export const COMPARISON_FINANCE_POSTS: PostDraft[] = [
     date: "2026-10-22",
     author: "Invoice Creator Editorial Team",
     related: [
+      "ai-bookkeeping",
+      "general-ledger",
+      "profit-and-loss-statement",
       "bank-reconciliation",
       "year-end-invoicing-checklist",
       "cash-vs-accrual-accounting",

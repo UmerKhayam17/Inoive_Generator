@@ -600,7 +600,12 @@ export const INDUSTRY_POSTS_C: PostDraft[] = [
     category: "industry-invoices",
     date: "2026-10-23",
     author: "Invoice Creator Editorial Team",
-    related: ["recurring-invoices-guide", "deposit-invoice", "independent-contractor-invoice"],
+    related: [
+      "makeup-artist-invoice-template",
+      "recurring-invoices-guide",
+      "deposit-invoice",
+      "independent-contractor-invoice",
+    ],
     faqs: [
       {
         q: "What is a booth rent invoice?",
@@ -742,7 +747,12 @@ export const INDUSTRY_POSTS_C: PostDraft[] = [
     category: "industry-invoices",
     date: "2026-10-23",
     author: "Invoice Creator Editorial Team",
-    related: ["milestone-payments", "deposit-invoice", "catering-invoice-template"],
+    related: [
+      "dj-invoice-template",
+      "milestone-payments",
+      "deposit-invoice",
+      "catering-invoice-template",
+    ],
     faqs: [
       {
         q: "How do event planners charge clients?",
@@ -1181,7 +1191,12 @@ export const INDUSTRY_POSTS_C: PostDraft[] = [
     date: "2026-10-23",
     author: "Invoice Creator Editorial Team",
     jurisdiction: "United States",
-    related: ["payment-receipt-template", "recurring-invoices-guide", "late-payment-fees"],
+    related: [
+      "dog-walking-invoice-template",
+      "payment-receipt-template",
+      "recurring-invoices-guide",
+      "late-payment-fees",
+    ],
     faqs: [
       {
         q: "What should a daycare invoice include?",

@@ -163,7 +163,12 @@ export const EINVOICING_POSTS: PostDraft[] = [
     date: "2026-10-23",
     author: "Invoice Creator Editorial Team",
     jurisdiction: "United Arab Emirates",
-    related: ["uae-vat-invoice-requirements", "what-is-peppol", "zatca-e-invoicing-guide"],
+    related: [
+      "uae-corporate-tax-freelancers",
+      "uae-vat-invoice-requirements",
+      "what-is-peppol",
+      "zatca-e-invoicing-guide",
+    ],
     faqs: [
       {
         q: "When does e-invoicing become mandatory in the UAE?",
@@ -447,7 +452,7 @@ export const EINVOICING_POSTS: PostDraft[] = [
     date: "2026-10-23",
     author: "Invoice Creator Editorial Team",
     jurisdiction: "India",
-    related: ["gst-invoice-guide", "e-invoicing-guide", "tax-invoice-guide"],
+    related: ["e-way-bill", "gst-invoice-guide", "e-invoicing-guide", "tax-invoice-guide"],
     faqs: [
       {
         q: "What is the e-invoice limit under GST?",

@@ -141,6 +141,7 @@ export const PLATFORM_SOFTWARE_POSTS: PostDraft[] = [
     date: "2026-10-23",
     author: "Invoice Creator Editorial Team",
     related: [
+      "stripe-vs-paypal",
       "embedded-finance-invoicing",
       "add-payment-link-to-invoice",
       "how-to-send-paypal-invoice",
@@ -574,7 +575,12 @@ export const PLATFORM_SOFTWARE_POSTS: PostDraft[] = [
     category: "payments",
     date: "2026-10-23",
     author: "Invoice Creator Editorial Team",
-    related: ["receive-payment-from-abroad-pakistan", "invoice-international-clients", "fiverr-upwork-invoice"],
+    related: [
+      "wise-vs-paypal",
+      "receive-payment-from-abroad-pakistan",
+      "invoice-international-clients",
+      "fiverr-upwork-invoice",
+    ],
     faqs: [
       {
         q: "Which is cheaper, Wise or Payoneer?",
@@ -712,7 +718,13 @@ export const PLATFORM_SOFTWARE_POSTS: PostDraft[] = [
     date: "2026-10-23",
     author: "Invoice Creator Editorial Team",
     jurisdiction: "Pakistan",
-    related: ["invoice-international-clients", "wise-vs-payoneer", "sales-tax-invoice-pakistan"],
+    related: [
+      "w-8ben-form-freelancers",
+      "how-to-start-freelancing-in-pakistan",
+      "invoice-international-clients",
+      "wise-vs-payoneer",
+      "sales-tax-invoice-pakistan",
+    ],
     faqs: [
       {
         q: "What is the best way to receive payment from abroad in Pakistan?",
@@ -841,7 +853,12 @@ export const PLATFORM_SOFTWARE_POSTS: PostDraft[] = [
     category: "freelancing",
     date: "2026-10-23",
     author: "Invoice Creator Editorial Team",
-    related: ["freelancer-invoice-guide", "wise-vs-payoneer", "1099-k-threshold"],
+    related: [
+      "upwork-vs-fiverr",
+      "freelancer-invoice-guide",
+      "wise-vs-payoneer",
+      "1099-k-threshold",
+    ],
     faqs: [
       {
         q: "Does Fiverr give sellers an invoice for completed orders?",
@@ -1285,7 +1302,12 @@ export const PLATFORM_SOFTWARE_POSTS: PostDraft[] = [
     category: "comparisons",
     date: "2026-10-23",
     author: "Invoice Creator Editorial Team",
-    related: ["invoice-generator-vs-accounting-software", "best-free-invoicing-software", "bookkeeping-basics"],
+    related: [
+      "how-to-create-invoice-in-quickbooks",
+      "invoice-generator-vs-accounting-software",
+      "best-free-invoicing-software",
+      "bookkeeping-basics",
+    ],
     faqs: [
       {
         q: "Is FreshBooks or QuickBooks better for freelancers?",

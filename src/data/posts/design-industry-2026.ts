@@ -199,7 +199,12 @@ export const DESIGN_INDUSTRY_2026_POSTS: PostDraft[] = [
     category: "design-templates",
     date: "2026-10-24",
     author: "Invoice Creator Editorial Team",
-    related: ["invoice-payment-terms", "late-payment-fees", "professional-invoice-design-tips"],
+    related: [
+      "invoice-terms-and-conditions",
+      "invoice-payment-terms",
+      "late-payment-fees",
+      "professional-invoice-design-tips",
+    ],
     faqs: [
       {
         q: "What is the difference between invoice notes and terms and conditions?",

@@ -9,7 +9,13 @@ export const FINANCE_METRICS_2026_POSTS: PostDraft[] = [
     category: "business-finance",
     date: "2026-10-27",
     author: "Invoice Creator Editorial Team",
-    related: ["cash-conversion-cycle", "days-sales-outstanding", "cash-flow-management"],
+    related: [
+      "roi-formula",
+      "gross-profit-vs-net-profit",
+      "cash-conversion-cycle",
+      "days-sales-outstanding",
+      "cash-flow-management",
+    ],
     faqs: [
       {
         q: "What is the working capital formula?",
@@ -937,7 +943,13 @@ export const FINANCE_METRICS_2026_POSTS: PostDraft[] = [
     category: "guides",
     date: "2026-10-27",
     author: "Invoice Creator Editorial Team",
-    related: ["bank-reconciliation", "bookkeeping-basics", "year-end-invoicing-checklist"],
+    related: [
+      "trial-balance",
+      "petty-cash-log",
+      "bank-reconciliation",
+      "bookkeeping-basics",
+      "year-end-invoicing-checklist",
+    ],
     faqs: [
       {
         q: "What is a month-end close?",

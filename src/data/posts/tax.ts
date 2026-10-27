@@ -11,7 +11,7 @@ export const TAX_POSTS: PostDraft[] = [
     date: "2026-10-22",
     author: "Invoice Creator Editorial Team",
     jurisdiction: "United States",
-    related: ["tax-id-on-invoice", "tax-invoice-guide", "itemized-invoice"],
+    related: ["sales-tax-nexus", "tax-id-on-invoice", "tax-invoice-guide", "itemized-invoice"],
     faqs: [
       {
         q: "Do I have to show sales tax separately on an invoice?",
@@ -159,6 +159,8 @@ export const TAX_POSTS: PostDraft[] = [
     author: "Invoice Creator Editorial Team",
     jurisdiction: "United States",
     related: [
+      "w2-vs-1099",
+      "how-to-get-an-ein",
       "vendor-onboarding-checklist",
       "independent-contractor-invoice",
       "tax-id-on-invoice",
@@ -1023,7 +1025,14 @@ export const TAX_POSTS: PostDraft[] = [
     date: "2026-10-22",
     author: "Invoice Creator Editorial Team",
     jurisdiction: "United States",
-    related: ["w9-and-1099-for-contractors", "bookkeeping-basics", "freelancer-invoice-guide"],
+    related: [
+      "ai-tax-preparation",
+      "how-to-calculate-depreciation",
+      "how-to-track-business-expenses",
+      "w9-and-1099-for-contractors",
+      "bookkeeping-basics",
+      "freelancer-invoice-guide",
+    ],
     faqs: [
       {
         q: "What can I write off as self-employed?",

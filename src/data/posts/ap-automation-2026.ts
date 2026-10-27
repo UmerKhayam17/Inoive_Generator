@@ -9,7 +9,12 @@ export const AP_AUTOMATION_2026_POSTS: PostDraft[] = [
     category: "business-finance",
     date: "2026-10-27",
     author: "Invoice Creator Editorial Team",
-    related: ["ai-invoicing-automation", "touchless-invoice-processing", "three-way-match"],
+    related: [
+      "ai-data-privacy-financial-data",
+      "ai-invoicing-automation",
+      "touchless-invoice-processing",
+      "three-way-match",
+    ],
     faqs: [
       {
         q: "What is invoice OCR?",

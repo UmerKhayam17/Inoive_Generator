@@ -10,6 +10,7 @@ export const FINANCE_2026_POSTS: PostDraft[] = [
     date: "2026-10-24",
     author: "Invoice Creator Editorial Team",
     related: [
+      "ai-vs-accountant",
       "invoice-ocr-data-extraction",
       "chatgpt-invoice",
       "invoice-generator-vs-accounting-software",
@@ -157,7 +158,13 @@ export const FINANCE_2026_POSTS: PostDraft[] = [
     category: "business-finance",
     date: "2026-10-24",
     author: "Invoice Creator Editorial Team",
-    related: ["cash-flow-management", "accounts-receivable-aging-report", "invoice-financing-vs-line-of-credit"],
+    related: [
+      "ai-cash-flow-forecasting",
+      "small-business-budget",
+      "cash-flow-management",
+      "accounts-receivable-aging-report",
+      "invoice-financing-vs-line-of-credit",
+    ],
     faqs: [
       {
         q: "Why 13 weeks and not three months?",

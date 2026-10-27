@@ -920,7 +920,12 @@ Bill to: Northpoint Marketing Ltd, Accounts Payable</p>
     category: "design-templates",
     date: "2026-10-23",
     author: "Invoice Creator Editorial Team",
-    related: ["how-to-invoice-for-hourly-work", "retainer-invoice", "simple-invoice-template"],
+    related: [
+      "work-order-template",
+      "how-to-invoice-for-hourly-work",
+      "retainer-invoice",
+      "simple-invoice-template",
+    ],
     faqs: [
       {
         q: "What is a service invoice?",
@@ -1082,6 +1087,7 @@ Bill to: Larkspur Dental Clinic · PO: LDC-4471 · Service dates: 19–21 Octobe
     date: "2026-10-23",
     author: "Invoice Creator Editorial Team",
     related: [
+      "order-form-template",
       "purchase-requisition-vs-purchase-order",
       "invoice-vs-purchase-order",
       "po-number-on-invoice",

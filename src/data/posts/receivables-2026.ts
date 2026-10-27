@@ -158,7 +158,12 @@ export const RECEIVABLES_2026_POSTS: PostDraft[] = [
     category: "business-finance",
     date: "2026-10-27",
     author: "Invoice Creator Editorial Team",
-    related: ["bank-reconciliation", "remittance-advice", "short-payments-and-deductions"],
+    related: [
+      "ai-agents-accounts-receivable",
+      "bank-reconciliation",
+      "remittance-advice",
+      "short-payments-and-deductions",
+    ],
     faqs: [
       {
         q: "What is cash application in accounts receivable?",
@@ -636,7 +641,12 @@ export const RECEIVABLES_2026_POSTS: PostDraft[] = [
     category: "payments",
     date: "2026-10-27",
     author: "Invoice Creator Editorial Team",
-    related: ["recurring-invoices-guide", "bank-details-on-invoice", "foreign-currency-invoice"],
+    related: [
+      "uk-direct-debit",
+      "recurring-invoices-guide",
+      "bank-details-on-invoice",
+      "foreign-currency-invoice",
+    ],
     faqs: [
       {
         q: "What is SEPA Direct Debit?",
@@ -938,7 +948,12 @@ export const RECEIVABLES_2026_POSTS: PostDraft[] = [
     category: "invoicing-basics",
     date: "2026-10-27",
     author: "Invoice Creator Editorial Team",
-    related: ["itemized-invoice", "markup-vs-margin", "consulting-invoice-template"],
+    related: [
+      "mileage-log-template",
+      "itemized-invoice",
+      "markup-vs-margin",
+      "consulting-invoice-template",
+    ],
     faqs: [
       {
         q: "What are reimbursable expenses on an invoice?",
@@ -1048,7 +1063,7 @@ export const RECEIVABLES_2026_POSTS: PostDraft[] = [
 <p>The client's accounts payable team can tick each line against a receipt or the contract terms: the hotel against the nightly cap, the mileage against the agreed rate and the handling fee against the 10% clause. Nothing needs a follow-up email.</p>
 
 <h2>Mileage: rates and records</h2>
-<p>The rate you bill is whatever your agreement says. Many US businesses use the IRS standard mileage rate as a reference point. The IRS announced a business rate of 72.5 cents per mile for 2026, and rates can be adjusted, so check the current figure on the <a href="https://www.irs.gov/tax-professionals/standard-mileage-rates" target="_blank" rel="noopener noreferrer">IRS standard mileage rates</a> page before quoting it in a contract. Other countries publish their own reference rates.</p>
+<p>The rate you bill is whatever your agreement says. Many US businesses use the IRS standard mileage rate as a reference point. For 2026 the IRS business rate changed mid-year: 72.5 cents per mile from January 1 to June 30, then 76 cents per mile from July 1. Rates can be adjusted, so check the current figure on the <a href="https://www.irs.gov/tax-professionals/standard-mileage-rates" target="_blank" rel="noopener noreferrer">IRS standard mileage rates</a> page before quoting it in a contract. Other countries publish their own reference rates.</p>
 <p>Whatever the rate, keep a log for each trip: the date, start and end locations, business purpose and distance. A simple spreadsheet or mileage app works. Bill the total for the period on one line with the miles and rate visible, and keep the log in case the client or a tax authority asks for it.</p>
 
 <h2>Tax on reimbursable expenses</h2>
