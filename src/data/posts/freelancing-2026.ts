@@ -166,7 +166,12 @@ export const FREELANCING_2026_POSTS: PostDraft[] = [
     category: "freelancing",
     date: "2026-10-24",
     author: "Invoice Creator Editorial Team",
-    related: ["freelance-invoice-template", "deposit-invoice", "videographer-invoice-template"],
+    related: [
+      "copywriter-invoice-template",
+      "freelance-invoice-template",
+      "deposit-invoice",
+      "videographer-invoice-template",
+    ],
     faqs: [
       {
         q: "What is the difference between UGC and influencer marketing?",
@@ -680,7 +685,12 @@ export const FREELANCING_2026_POSTS: PostDraft[] = [
     date: "2026-10-24",
     author: "Invoice Creator Editorial Team",
     jurisdiction: "Pakistan",
-    related: ["receive-payment-from-abroad-pakistan", "raast-business-payments-pakistan", "finance-act-2026-pakistan-sales-tax"],
+    related: [
+      "withholding-tax-on-invoices",
+      "receive-payment-from-abroad-pakistan",
+      "raast-business-payments-pakistan",
+      "finance-act-2026-pakistan-sales-tax",
+    ],
     faqs: [
       {
         q: "Do freelancers in Pakistan have to file an income tax return?",
@@ -838,7 +848,12 @@ export const FREELANCING_2026_POSTS: PostDraft[] = [
     category: "freelancing",
     date: "2026-10-24",
     author: "Invoice Creator Editorial Team",
-    related: ["invoice-payment-terms", "early-payment-discount", "late-payment-statistics"],
+    related: [
+      "customer-credit-policy",
+      "invoice-payment-terms",
+      "early-payment-discount",
+      "late-payment-statistics",
+    ],
     faqs: [
       {
         q: "Does net 60 mean 60 business days?",

@@ -1081,7 +1081,12 @@ Bill to: Larkspur Dental Clinic · PO: LDC-4471 · Service dates: 19–21 Octobe
     category: "invoicing-basics",
     date: "2026-10-23",
     author: "Invoice Creator Editorial Team",
-    related: ["invoice-vs-purchase-order", "po-number-on-invoice", "quotation-format"],
+    related: [
+      "purchase-requisition-vs-purchase-order",
+      "invoice-vs-purchase-order",
+      "po-number-on-invoice",
+      "quotation-format",
+    ],
     faqs: [
       {
         q: "What is a purchase order?",
@@ -1414,7 +1419,12 @@ Quote ref: Q-88412 dated 20 October 2026 · Deliver by: 30 October 2026 · Terms
     category: "comparisons",
     date: "2026-10-23",
     author: "Invoice Creator Editorial Team",
-    related: ["commercial-invoice-template", "delivery-challan-format", "purchase-order-template"],
+    related: [
+      "consignment-invoice",
+      "commercial-invoice-template",
+      "delivery-challan-format",
+      "purchase-order-template",
+    ],
     faqs: [
       {
         q: "What is the difference between a packing slip and an invoice?",

@@ -9,7 +9,12 @@ export const COMPARISON_FINANCE_POSTS: PostDraft[] = [
     category: "comparisons",
     date: "2026-10-22",
     author: "Invoice Creator Editorial Team",
-    related: ["po-number-on-invoice", "invoice-vs-bill", "accounts-receivable-guide"],
+    related: [
+      "three-way-match",
+      "po-number-on-invoice",
+      "invoice-vs-bill",
+      "accounts-receivable-guide",
+    ],
     faqs: [
       {
         q: "Who issues a purchase order and who issues an invoice?",
@@ -153,7 +158,12 @@ export const COMPARISON_FINANCE_POSTS: PostDraft[] = [
     category: "comparisons",
     date: "2026-10-22",
     author: "Invoice Creator Editorial Team",
-    related: ["how-to-generate-an-invoice", "bookkeeping-basics", "small-business-invoice-guide"],
+    related: [
+      "touchless-invoice-processing",
+      "how-to-generate-an-invoice",
+      "bookkeeping-basics",
+      "small-business-invoice-guide",
+    ],
     faqs: [
       {
         q: "Is an invoice generator enough for a small business?",
@@ -311,7 +321,12 @@ export const COMPARISON_FINANCE_POSTS: PostDraft[] = [
     category: "comparisons",
     date: "2026-10-22",
     author: "Invoice Creator Editorial Team",
-    related: ["bookkeeping-basics", "accounts-receivable-guide", "cash-flow-management"],
+    related: [
+      "revenue-recognition-asc-606",
+      "bookkeeping-basics",
+      "accounts-receivable-guide",
+      "cash-flow-management",
+    ],
     faqs: [
       {
         q: "What is the main difference between cash and accrual accounting?",
@@ -615,7 +630,12 @@ export const COMPARISON_FINANCE_POSTS: PostDraft[] = [
     category: "business-finance",
     date: "2026-10-22",
     author: "Invoice Creator Editorial Team",
-    related: ["accounts-receivable-aging-report", "invoice-payment-terms", "cash-flow-management"],
+    related: [
+      "accounts-receivable-turnover-ratio",
+      "accounts-receivable-aging-report",
+      "invoice-payment-terms",
+      "cash-flow-management",
+    ],
     faqs: [
       {
         q: "Is accounts receivable an asset?",
@@ -923,7 +943,12 @@ export const COMPARISON_FINANCE_POSTS: PostDraft[] = [
     category: "business-finance",
     date: "2026-10-22",
     author: "Invoice Creator Editorial Team",
-    related: ["accounts-receivable-guide", "how-to-get-paid-faster", "invoice-factoring"],
+    related: [
+      "working-capital",
+      "accounts-receivable-guide",
+      "how-to-get-paid-faster",
+      "invoice-factoring",
+    ],
     faqs: [
       {
         q: "What is the difference between cash flow and profit?",
@@ -1079,7 +1104,13 @@ export const COMPARISON_FINANCE_POSTS: PostDraft[] = [
     category: "business-finance",
     date: "2026-10-22",
     author: "Invoice Creator Editorial Team",
-    related: ["cash-vs-accrual-accounting", "invoice-generator-vs-accounting-software", "how-long-to-keep-invoices"],
+    related: [
+      "bank-reconciliation",
+      "year-end-invoicing-checklist",
+      "cash-vs-accrual-accounting",
+      "invoice-generator-vs-accounting-software",
+      "how-long-to-keep-invoices",
+    ],
     faqs: [
       {
         q: "What is the difference between bookkeeping and accounting?",

@@ -315,7 +315,12 @@ export const INDUSTRY_POSTS_A: PostDraft[] = [
     category: "industry-invoices",
     date: "2026-10-22",
     author: "Invoice Creator Editorial Team",
-    related: ["recurring-invoices-guide", "landscaping-invoice-template", "small-business-invoice-guide"],
+    related: [
+      "pest-control-invoice-template",
+      "recurring-invoices-guide",
+      "landscaping-invoice-template",
+      "small-business-invoice-guide",
+    ],
     faqs: [
       {
         q: "How do I make an invoice for cleaning services?",
@@ -603,7 +608,12 @@ export const INDUSTRY_POSTS_A: PostDraft[] = [
     category: "industry-invoices",
     date: "2026-10-22",
     author: "Invoice Creator Editorial Team",
-    related: ["freelance-invoice-template", "deposit-invoice", "freelancer-invoice-guide"],
+    related: [
+      "interior-design-invoice-template",
+      "freelance-invoice-template",
+      "deposit-invoice",
+      "freelancer-invoice-guide",
+    ],
     faqs: [
       {
         q: "What should a graphic design invoice include?",

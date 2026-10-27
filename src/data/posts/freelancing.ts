@@ -159,7 +159,12 @@ export const FREELANCING_POSTS: PostDraft[] = [
     category: "freelancing",
     date: "2026-10-22",
     author: "Invoice Creator Editorial Team",
-    related: ["freelancer-invoice-guide", "milestone-payments", "client-not-paying-invoice"],
+    related: [
+      "statement-of-work-template",
+      "freelancer-invoice-guide",
+      "milestone-payments",
+      "client-not-paying-invoice",
+    ],
     faqs: [
       {
         q: "Do freelancers really need a contract?",
@@ -289,7 +294,12 @@ export const FREELANCING_POSTS: PostDraft[] = [
     category: "freelancing",
     date: "2026-10-22",
     author: "Invoice Creator Editorial Team",
-    related: ["recurring-invoices-guide", "deposit-invoice", "freelance-contract-template"],
+    related: [
+      "marketing-agency-invoice-template",
+      "recurring-invoices-guide",
+      "deposit-invoice",
+      "freelance-contract-template",
+    ],
     faqs: [
       {
         q: "What is a retainer invoice?",
@@ -699,7 +709,12 @@ export const FREELANCING_POSTS: PostDraft[] = [
     category: "freelancing",
     date: "2026-10-22",
     author: "Invoice Creator Editorial Team",
-    related: ["freelancer-invoice-guide", "invoice-examples", "independent-contractor-invoice"],
+    related: [
+      "translation-invoice-template",
+      "freelancer-invoice-guide",
+      "invoice-examples",
+      "independent-contractor-invoice",
+    ],
     faqs: [
       {
         q: "What is the best invoice template for freelancers?",
