@@ -1258,6 +1258,7 @@ export const FINANCE_ADVANCED_POSTS: PostDraft[] = [
     date: "2026-10-23",
     author: "Invoice Creator Editorial Team",
     related: [
+      "ai-fraud-detection-payments",
       "duplicate-invoice-payments",
       "bank-details-on-invoice",
       "accounts-payable-vs-accounts-receivable",

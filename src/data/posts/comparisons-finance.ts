@@ -160,6 +160,7 @@ export const COMPARISON_FINANCE_POSTS: PostDraft[] = [
     date: "2026-10-22",
     author: "Invoice Creator Editorial Team",
     related: [
+      "ai-accounting-software",
       "touchless-invoice-processing",
       "how-to-generate-an-invoice",
       "bookkeeping-basics",
@@ -1114,6 +1115,7 @@ export const COMPARISON_FINANCE_POSTS: PostDraft[] = [
     date: "2026-10-22",
     author: "Invoice Creator Editorial Team",
     related: [
+      "ai-bookkeeping",
       "general-ledger",
       "profit-and-loss-statement",
       "bank-reconciliation",

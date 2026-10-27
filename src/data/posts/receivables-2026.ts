@@ -158,7 +158,12 @@ export const RECEIVABLES_2026_POSTS: PostDraft[] = [
     category: "business-finance",
     date: "2026-10-27",
     author: "Invoice Creator Editorial Team",
-    related: ["bank-reconciliation", "remittance-advice", "short-payments-and-deductions"],
+    related: [
+      "ai-agents-accounts-receivable",
+      "bank-reconciliation",
+      "remittance-advice",
+      "short-payments-and-deductions",
+    ],
     faqs: [
       {
         q: "What is cash application in accounts receivable?",

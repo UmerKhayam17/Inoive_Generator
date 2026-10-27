@@ -165,6 +165,7 @@ export const FREELANCING_POSTS: PostDraft[] = [
     date: "2026-10-22",
     author: "Invoice Creator Editorial Team",
     related: [
+      "ai-generated-work-copyright",
       "freelance-proposal-template",
       "statement-of-work-template",
       "freelancer-invoice-guide",

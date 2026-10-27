@@ -361,7 +361,12 @@ export const ACCOUNTING_BASICS_2026_POSTS: PostDraft[] = [
     category: "business-finance",
     date: "2026-10-27",
     author: "Invoice Creator Editorial Team",
-    related: ["double-entry-bookkeeping", "general-ledger", "credit-note-guide"],
+    related: [
+      "chatgpt-prompts-for-finance",
+      "double-entry-bookkeeping",
+      "general-ledger",
+      "credit-note-guide",
+    ],
     faqs: [
       {
         q: "What is a journal entry?",

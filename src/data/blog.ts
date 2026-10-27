@@ -47,6 +47,10 @@ import { TAX_FILING_2026_POSTS } from "./posts/tax-filing-2026";
 import { TAX_PK_IN_2026_POSTS } from "./posts/tax-pk-in-2026";
 import { PAYMENTS_FREELANCE_2026_B_POSTS } from "./posts/payments-freelance-2026-b";
 import { INDUSTRY_POSTS_G } from "./posts/industry-g";
+import { AI_FINANCE_2026_POSTS } from "./posts/ai-finance-2026";
+import { AI_GUIDES_2026_POSTS } from "./posts/ai-guides-2026";
+import { AI_PAYMENTS_TAX_2026_POSTS } from "./posts/ai-payments-tax-2026";
+import { AI_FREELANCE_2026_POSTS } from "./posts/ai-freelance-2026";
 
 export interface Post {
   slug: string;
@@ -1831,6 +1835,7 @@ jane@smithdesign.example</p>
     category: "guides",
     date: "2026-08-11",
     author: "Invoice Creator Editorial Team",
+    related: ["ai-payment-reminder-emails"],
     faqs: [
       {
         q: "Is it rude to send a payment reminder before the invoice is due?",
@@ -4112,6 +4117,10 @@ export const POST_DRAFTS: PostDraft[] = [
   ...TAX_PK_IN_2026_POSTS,
   ...PAYMENTS_FREELANCE_2026_B_POSTS,
   ...INDUSTRY_POSTS_G,
+  ...AI_FINANCE_2026_POSTS,
+  ...AI_GUIDES_2026_POSTS,
+  ...AI_PAYMENTS_TAX_2026_POSTS,
+  ...AI_FREELANCE_2026_POSTS,
 ];
 
 /** Reading time is derived from content length so it cannot drift from the article. */

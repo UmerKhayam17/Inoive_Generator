@@ -1026,6 +1026,7 @@ export const TAX_POSTS: PostDraft[] = [
     author: "Invoice Creator Editorial Team",
     jurisdiction: "United States",
     related: [
+      "ai-tax-preparation",
       "how-to-calculate-depreciation",
       "how-to-track-business-expenses",
       "w9-and-1099-for-contractors",

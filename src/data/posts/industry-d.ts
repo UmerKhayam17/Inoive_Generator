@@ -180,6 +180,7 @@ export const INDUSTRY_POSTS_D: PostDraft[] = [
     date: "2026-10-27",
     author: "Invoice Creator Editorial Team",
     related: [
+      "ai-automation-agency-invoice-template",
       "social-media-manager-invoice-template",
       "retainer-invoice",
       "markup-vs-margin",

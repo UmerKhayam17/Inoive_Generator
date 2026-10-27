@@ -10,6 +10,7 @@ export const TEMPLATES_BASICS_2026_B_POSTS: PostDraft[] = [
     date: "2026-10-27",
     author: "Invoice Creator Editorial Team",
     related: [
+      "ai-logo-generator",
       "professional-invoice-design-tips",
       "best-fonts-for-invoices",
       "sole-trader-vs-limited-company",

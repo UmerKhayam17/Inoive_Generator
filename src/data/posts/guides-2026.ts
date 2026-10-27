@@ -9,7 +9,12 @@ export const GUIDES_2026_POSTS: PostDraft[] = [
     category: "guides",
     date: "2026-10-24",
     author: "Invoice Creator Editorial Team",
-    related: ["how-to-write-an-invoice", "invoice-ai-assisted-work", "ai-invoicing-automation"],
+    related: [
+      "chatgpt-for-small-business",
+      "how-to-write-an-invoice",
+      "invoice-ai-assisted-work",
+      "ai-invoicing-automation",
+    ],
     faqs: [
       {
         q: "Can ChatGPT create a PDF invoice I can download?",

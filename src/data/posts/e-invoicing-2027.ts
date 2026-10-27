@@ -670,7 +670,12 @@ export const EINVOICING_2027_POSTS: PostDraft[] = [
     date: "2026-10-24",
     author: "Invoice Creator Editorial Team",
     jurisdiction: "European Union",
-    related: ["e-invoicing-mandates-2027", "e-invoice-vs-pdf-invoice", "peppol-vs-clearance-model"],
+    related: [
+      "eu-ai-act-small-business",
+      "e-invoicing-mandates-2027",
+      "e-invoice-vs-pdf-invoice",
+      "peppol-vs-clearance-model",
+    ],
     faqs: [
       {
         q: "Does ViDA apply to small businesses?",

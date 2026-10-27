@@ -10,6 +10,7 @@ export const FINANCE_2026_POSTS: PostDraft[] = [
     date: "2026-10-24",
     author: "Invoice Creator Editorial Team",
     related: [
+      "ai-vs-accountant",
       "invoice-ocr-data-extraction",
       "chatgpt-invoice",
       "invoice-generator-vs-accounting-software",
@@ -158,6 +159,7 @@ export const FINANCE_2026_POSTS: PostDraft[] = [
     date: "2026-10-24",
     author: "Invoice Creator Editorial Team",
     related: [
+      "ai-cash-flow-forecasting",
       "small-business-budget",
       "cash-flow-management",
       "accounts-receivable-aging-report",

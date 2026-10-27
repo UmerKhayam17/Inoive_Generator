@@ -921,6 +921,7 @@ export const SMALL_BUSINESS_FINANCE_2026_POSTS: PostDraft[] = [
     date: "2026-10-27",
     author: "Invoice Creator Editorial Team",
     related: [
+      "ai-business-plan-generator",
       "operating-expenses",
       "cash-flow-forecast",
       "break-even-point",

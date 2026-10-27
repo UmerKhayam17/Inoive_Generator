@@ -534,7 +534,7 @@ export const BUSINESS_GROWTH_2026_POSTS: PostDraft[] = [
     category: "business-finance",
     date: "2026-10-27",
     author: "Invoice Creator Editorial Team",
-    related: ["markup-vs-margin", "break-even-point", "cost-of-goods-sold"],
+    related: ["ai-pricing-tools", "markup-vs-margin", "break-even-point", "cost-of-goods-sold"],
     faqs: [
       {
         q: "What is the formula for pricing a product?",
