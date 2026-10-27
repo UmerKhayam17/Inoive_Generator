@@ -9,7 +9,12 @@ export const PAYMENTS_POSTS: PostDraft[] = [
     category: "payments",
     date: "2026-10-22",
     author: "Invoice Creator Editorial Team",
-    related: ["add-payment-link-to-invoice", "ach-vs-wire-transfer", "how-to-get-paid-faster"],
+    related: [
+      "apple-pay-google-pay-business",
+      "add-payment-link-to-invoice",
+      "ach-vs-wire-transfer",
+      "how-to-get-paid-faster",
+    ],
     faqs: [
       {
         q: "How can a small business accept credit card payments without a card machine?",
@@ -444,6 +449,7 @@ Our bank details will never change by email. If you receive a message saying the
     date: "2026-10-22",
     author: "Invoice Creator Editorial Team",
     related: [
+      "discount-on-invoice",
       "dynamic-discounting",
       "invoice-payment-terms",
       "late-payment-fees",
@@ -728,7 +734,12 @@ Our bank details never change by email. Call 555-0187 to verify before sending a
     category: "payments",
     date: "2026-10-22",
     author: "Invoice Creator Editorial Team",
-    related: ["invoice-vs-receipt", "deposit-invoice", "statement-of-account"],
+    related: [
+      "rent-receipt-template",
+      "invoice-vs-receipt",
+      "deposit-invoice",
+      "statement-of-account",
+    ],
     faqs: [
       {
         q: "What should a payment receipt include?",
@@ -1178,7 +1189,12 @@ Jordan Lee, Lee Analytics LLC</blockquote>
     category: "payments",
     date: "2026-10-22",
     author: "Invoice Creator Editorial Team",
-    related: ["credit-note-guide", "how-to-correct-an-invoice", "invoice-collections"],
+    related: [
+      "how-to-handle-chargebacks",
+      "credit-note-guide",
+      "how-to-correct-an-invoice",
+      "invoice-collections",
+    ],
     faqs: [
       {
         q: "What is an invoice dispute?",

@@ -10,6 +10,7 @@ export const COMPARISON_FINANCE_POSTS: PostDraft[] = [
     date: "2026-10-22",
     author: "Invoice Creator Editorial Team",
     related: [
+      "invoice-vs-sales-order",
       "three-way-match",
       "po-number-on-invoice",
       "invoice-vs-bill",
@@ -322,6 +323,7 @@ export const COMPARISON_FINANCE_POSTS: PostDraft[] = [
     date: "2026-10-22",
     author: "Invoice Creator Editorial Team",
     related: [
+      "balance-sheet-small-business",
       "revenue-recognition-asc-606",
       "bookkeeping-basics",
       "accounts-receivable-guide",
@@ -1105,6 +1107,7 @@ export const COMPARISON_FINANCE_POSTS: PostDraft[] = [
     date: "2026-10-22",
     author: "Invoice Creator Editorial Team",
     related: [
+      "profit-and-loss-statement",
       "bank-reconciliation",
       "year-end-invoicing-checklist",
       "cash-vs-accrual-accounting",

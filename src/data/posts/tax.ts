@@ -159,6 +159,7 @@ export const TAX_POSTS: PostDraft[] = [
     author: "Invoice Creator Editorial Team",
     jurisdiction: "United States",
     related: [
+      "how-to-get-an-ein",
       "vendor-onboarding-checklist",
       "independent-contractor-invoice",
       "tax-id-on-invoice",
@@ -1023,7 +1024,12 @@ export const TAX_POSTS: PostDraft[] = [
     date: "2026-10-22",
     author: "Invoice Creator Editorial Team",
     jurisdiction: "United States",
-    related: ["w9-and-1099-for-contractors", "bookkeeping-basics", "freelancer-invoice-guide"],
+    related: [
+      "how-to-track-business-expenses",
+      "w9-and-1099-for-contractors",
+      "bookkeeping-basics",
+      "freelancer-invoice-guide",
+    ],
     faqs: [
       {
         q: "What can I write off as self-employed?",

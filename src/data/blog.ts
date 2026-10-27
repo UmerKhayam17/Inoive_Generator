@@ -30,6 +30,14 @@ import { PROCUREMENT_TRADE_2026_POSTS } from "./posts/procurement-trade-2026";
 import { INDUSTRY_POSTS_E } from "./posts/industry-e";
 import { FREELANCE_CREATIVE_2026_POSTS } from "./posts/freelance-creative-2026";
 import { TAX_COUNTRIES_2026_POSTS } from "./posts/tax-countries-2026";
+import { TEMPLATES_2026_POSTS } from "./posts/templates-2026";
+import { BASICS_COMPARISONS_2026_POSTS } from "./posts/basics-comparisons-2026";
+import { SMALL_BUSINESS_FINANCE_2026_POSTS } from "./posts/small-business-finance-2026";
+import { PAYMENTS_GUIDES_2026_POSTS } from "./posts/payments-guides-2026";
+import { TAX_US_UK_2026_B_POSTS } from "./posts/tax-us-uk-2026-b";
+import { TAX_ASIA_ME_2026_POSTS } from "./posts/tax-asia-me-2026";
+import { FREELANCING_GROWTH_2026_POSTS } from "./posts/freelancing-growth-2026";
+import { INDUSTRY_POSTS_F } from "./posts/industry-f";
 
 export interface Post {
   slug: string;
@@ -290,6 +298,7 @@ const CORE_POSTS: PostDraft[] = [
     category: "tax-compliance",
     date: "2026-10-08",
     author: "Invoice Creator Editorial Team",
+    related: ["strn-registration-pakistan"],
     jurisdiction: "Pakistan",
     faqs: [
       {
@@ -398,6 +407,7 @@ const CORE_POSTS: PostDraft[] = [
     category: "tax-compliance",
     date: "2026-10-07",
     author: "Invoice Creator Editorial Team",
+    related: ["trn-number-uae"],
     jurisdiction: "United Arab Emirates",
     faqs: [
       {
@@ -506,6 +516,7 @@ const CORE_POSTS: PostDraft[] = [
     category: "tax-compliance",
     date: "2026-10-06",
     author: "Invoice Creator Editorial Team",
+    related: ["self-assessment-tax-return-uk"],
     jurisdiction: "United Kingdom",
     faqs: [
       {
@@ -617,6 +628,7 @@ jane@smithdesign.example</p>
     category: "guides",
     date: "2026-10-03",
     author: "Invoice Creator Editorial Team",
+    related: ["timesheet-template"],
     faqs: [
       {
         q: "How do I convert minutes to decimal hours on an invoice?",
@@ -1915,6 +1927,7 @@ jane@smithdesign.example</p>
     category: "invoicing-basics",
     date: "2026-08-04",
     author: "Invoice Creator Editorial Team",
+    related: ["due-upon-receipt"],
     faqs: [
       {
         q: "Does Net 30 mean 30 calendar days or 30 business days?",
@@ -2244,7 +2257,7 @@ jane@smithdesign.example</p>
     date: "2026-07-15",
     updated: "2026-09-25",
     author: "Invoice Creator Editorial Team",
-    related: ["ecommerce-invoice-shopify-woocommerce"],
+    related: ["donation-receipt-template", "ecommerce-invoice-shopify-woocommerce"],
     faqs: [
       {
         q: "Is a business legally required to give a receipt?",
@@ -2371,6 +2384,7 @@ jane@smithdesign.example</p>
     date: "2026-07-08",
     updated: "2026-09-25",
     author: "Invoice Creator Editorial Team",
+    related: ["estimate-template"],
     faqs: [
       {
         q: "Is an estimate legally binding?",
@@ -2889,6 +2903,7 @@ jane@smithdesign.example</p>
     date: "2026-06-10",
     updated: "2026-09-25",
     author: "Invoice Creator Editorial Team",
+    related: ["how-to-get-clients-as-a-freelancer"],
     faqs: [
       {
         q: "Do I need a registered business to send invoices as a freelancer?",
@@ -3368,6 +3383,7 @@ jane@smithdesign.example</p>
     date: "2026-05-13",
     updated: "2026-09-25",
     author: "Invoice Creator Editorial Team",
+    related: ["tax-invoice-vs-retail-invoice"],
     jurisdiction: "General",
     faqs: [
       {
@@ -3497,7 +3513,7 @@ jane@smithdesign.example</p>
     date: "2026-05-06",
     updated: "2026-09-25",
     author: "Invoice Creator Editorial Team",
-    related: ["singapore-gst-tax-invoice"],
+    related: ["gst-registration-india", "singapore-gst-tax-invoice"],
     jurisdiction: "GST jurisdictions (e.g. India)",
     faqs: [
       {
@@ -3625,7 +3641,11 @@ jane@smithdesign.example</p>
     date: "2026-04-29",
     updated: "2026-09-25",
     author: "Invoice Creator Editorial Team",
-    related: ["south-africa-vat-invoice", "sales-tax-vs-vat-vs-gst"],
+    related: [
+      "vat-registration-threshold-uk",
+      "south-africa-vat-invoice",
+      "sales-tax-vs-vat-vs-gst",
+    ],
     jurisdiction: "VAT jurisdictions (e.g. UK / EU)",
     faqs: [
       {
@@ -3748,6 +3768,7 @@ jane@smithdesign.example</p>
     date: "2026-04-22",
     updated: "2026-09-25",
     author: "Invoice Creator Editorial Team",
+    related: ["best-fonts-for-invoices"],
     faqs: [
       {
         q: "What font is best for a professional invoice?",
@@ -3956,6 +3977,7 @@ jane@smithdesign.example</p>
     category: "design-templates",
     date: "2026-10-19",
     author: "Invoice Creator Editorial Team",
+    related: ["invoice-signature"],
     faqs: [
       {
         q: "Should invoices be A4 or US Letter size?",
@@ -4063,6 +4085,14 @@ export const POST_DRAFTS: PostDraft[] = [
   ...INDUSTRY_POSTS_E,
   ...FREELANCE_CREATIVE_2026_POSTS,
   ...TAX_COUNTRIES_2026_POSTS,
+  ...TEMPLATES_2026_POSTS,
+  ...BASICS_COMPARISONS_2026_POSTS,
+  ...SMALL_BUSINESS_FINANCE_2026_POSTS,
+  ...PAYMENTS_GUIDES_2026_POSTS,
+  ...TAX_US_UK_2026_B_POSTS,
+  ...TAX_ASIA_ME_2026_POSTS,
+  ...FREELANCING_GROWTH_2026_POSTS,
+  ...INDUSTRY_POSTS_F,
 ];
 
 /** Reading time is derived from content length so it cannot drift from the article. */

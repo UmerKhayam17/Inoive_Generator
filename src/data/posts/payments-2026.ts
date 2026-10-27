@@ -853,7 +853,12 @@ export const PAYMENTS_2026_POSTS: PostDraft[] = [
     category: "payments",
     date: "2026-10-24",
     author: "Invoice Creator Editorial Team",
-    related: ["receive-payment-from-abroad-pakistan", "sales-tax-invoice-pakistan", "fbr-e-invoicing-pakistan"],
+    related: [
+      "payment-gateway-pakistan",
+      "receive-payment-from-abroad-pakistan",
+      "sales-tax-invoice-pakistan",
+      "fbr-e-invoicing-pakistan",
+    ],
     faqs: [
       {
         q: "Is Raast free for businesses?",

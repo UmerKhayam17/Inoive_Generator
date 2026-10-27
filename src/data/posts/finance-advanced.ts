@@ -156,7 +156,12 @@ export const FINANCE_ADVANCED_POSTS: PostDraft[] = [
     category: "business-finance",
     date: "2026-10-23",
     author: "Invoice Creator Editorial Team",
-    related: ["how-to-set-freelance-rates", "reverse-sales-tax-calculation", "cash-flow-management"],
+    related: [
+      "break-even-point",
+      "how-to-set-freelance-rates",
+      "reverse-sales-tax-calculation",
+      "cash-flow-management",
+    ],
     faqs: [
       {
         q: "What is the difference between markup and margin?",
@@ -653,7 +658,12 @@ export const FINANCE_ADVANCED_POSTS: PostDraft[] = [
     date: "2026-10-23",
     author: "Invoice Creator Editorial Team",
     jurisdiction: "United States",
-    related: ["self-employed-tax-deductions", "1099-k-threshold", "w9-and-1099-for-contractors"],
+    related: [
+      "self-employment-tax",
+      "self-employed-tax-deductions",
+      "1099-k-threshold",
+      "w9-and-1099-for-contractors",
+    ],
     faqs: [
       {
         q: "When are quarterly estimated taxes due for 2026?",

@@ -1181,7 +1181,12 @@ export const INDUSTRY_POSTS_C: PostDraft[] = [
     date: "2026-10-23",
     author: "Invoice Creator Editorial Team",
     jurisdiction: "United States",
-    related: ["payment-receipt-template", "recurring-invoices-guide", "late-payment-fees"],
+    related: [
+      "dog-walking-invoice-template",
+      "payment-receipt-template",
+      "recurring-invoices-guide",
+      "late-payment-fees",
+    ],
     faqs: [
       {
         q: "What should a daycare invoice include?",

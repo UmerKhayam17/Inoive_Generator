@@ -9,7 +9,12 @@ export const INDUSTRY_POSTS_B: PostDraft[] = [
     category: "industry-invoices",
     date: "2026-10-22",
     author: "Invoice Creator Editorial Team",
-    related: ["recurring-invoices-guide", "late-payment-fees", "payment-receipt-template"],
+    related: [
+      "hotel-invoice-template",
+      "recurring-invoices-guide",
+      "late-payment-fees",
+      "payment-receipt-template",
+    ],
     faqs: [
       {
         q: "Do landlords have to send a rent invoice?",
@@ -587,7 +592,12 @@ export const INDUSTRY_POSTS_B: PostDraft[] = [
     category: "industry-invoices",
     date: "2026-10-22",
     author: "Invoice Creator Editorial Team",
-    related: ["itemized-invoice", "invoice-vs-estimate", "sales-tax-on-invoices-us"],
+    related: [
+      "car-rental-invoice-template",
+      "itemized-invoice",
+      "invoice-vs-estimate",
+      "sales-tax-on-invoices-us",
+    ],
     faqs: [
       {
         q: "What should be on an auto repair invoice?",
@@ -880,7 +890,12 @@ export const INDUSTRY_POSTS_B: PostDraft[] = [
     category: "industry-invoices",
     date: "2026-10-22",
     author: "Invoice Creator Editorial Team",
-    related: ["how-to-invoice-for-hourly-work", "recurring-invoices-guide", "how-to-invoice-without-a-business"],
+    related: [
+      "school-fee-voucher-format",
+      "how-to-invoice-for-hourly-work",
+      "recurring-invoices-guide",
+      "how-to-invoice-without-a-business",
+    ],
     faqs: [
       {
         q: "How do private tutors invoice parents?",
@@ -1028,7 +1043,12 @@ export const INDUSTRY_POSTS_B: PostDraft[] = [
     category: "industry-invoices",
     date: "2026-10-22",
     author: "Invoice Creator Editorial Team",
-    related: ["deposit-invoice", "invoice-vs-quotation", "sales-tax-on-invoices-us"],
+    related: [
+      "restaurant-bill-format",
+      "deposit-invoice",
+      "invoice-vs-quotation",
+      "sales-tax-on-invoices-us",
+    ],
     faqs: [
       {
         q: "What should a catering invoice include?",

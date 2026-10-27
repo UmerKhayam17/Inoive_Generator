@@ -9,7 +9,12 @@ export const FREELANCING_POSTS: PostDraft[] = [
     category: "freelancing",
     date: "2026-10-22",
     author: "Invoice Creator Editorial Team",
-    related: ["freelancer-invoice-guide", "how-to-invoice-for-hourly-work", "retainer-invoice"],
+    related: [
+      "salary-increase-percentage",
+      "freelancer-invoice-guide",
+      "how-to-invoice-for-hourly-work",
+      "retainer-invoice",
+    ],
     faqs: [
       {
         q: "How do I calculate my freelance hourly rate?",
@@ -160,6 +165,7 @@ export const FREELANCING_POSTS: PostDraft[] = [
     date: "2026-10-22",
     author: "Invoice Creator Editorial Team",
     related: [
+      "freelance-proposal-template",
       "statement-of-work-template",
       "freelancer-invoice-guide",
       "milestone-payments",
@@ -581,7 +587,12 @@ export const FREELANCING_POSTS: PostDraft[] = [
     date: "2026-10-22",
     author: "Invoice Creator Editorial Team",
     jurisdiction: "United States",
-    related: ["w9-and-1099-for-contractors", "freelance-invoice-template", "self-employed-tax-deductions"],
+    related: [
+      "salary-slip-format",
+      "w9-and-1099-for-contractors",
+      "freelance-invoice-template",
+      "self-employed-tax-deductions",
+    ],
     faqs: [
       {
         q: "What should an independent contractor invoice include?",
@@ -865,7 +876,12 @@ export const FREELANCING_POSTS: PostDraft[] = [
     category: "freelancing",
     date: "2026-10-22",
     author: "Invoice Creator Editorial Team",
-    related: ["what-is-an-invoice", "independent-contractor-invoice", "sole-trader-invoice-uk"],
+    related: [
+      "llc-vs-sole-proprietorship",
+      "what-is-an-invoice",
+      "independent-contractor-invoice",
+      "sole-trader-invoice-uk",
+    ],
     faqs: [
       {
         q: "Can I send an invoice if I do not have a business?",

@@ -337,6 +337,7 @@ export const BASICS_2026_POSTS: PostDraft[] = [
     date: "2026-10-24",
     author: "Invoice Creator Editorial Team",
     related: [
+      "payment-plan-agreement",
       "short-payments-and-deductions",
       "deposit-invoice",
       "statement-of-account",

@@ -10,6 +10,7 @@ export const HOW_TO_POSTS_B: PostDraft[] = [
     date: "2026-10-22",
     author: "Invoice Creator Editorial Team",
     related: [
+      "bill-of-lading-vs-commercial-invoice",
       "letter-of-credit-invoice",
       "proforma-invoice-guide",
       "invoice-international-clients",
@@ -155,7 +156,7 @@ export const HOW_TO_POSTS_B: PostDraft[] = [
     category: "invoicing-basics",
     date: "2026-10-22",
     author: "Invoice Creator Editorial Team",
-    related: ["what-is-an-invoice", "itemized-invoice", "invoice-vs-bill"],
+    related: ["bill-of-sale-template", "what-is-an-invoice", "itemized-invoice", "invoice-vs-bill"],
     faqs: [
       {
         q: "Is a sales invoice the same as an invoice?",

@@ -349,7 +349,12 @@ export const INDUSTRY_POSTS_D: PostDraft[] = [
     category: "industry-invoices",
     date: "2026-10-27",
     author: "Invoice Creator Editorial Team",
-    related: ["invoice-vs-receipt", "credit-note-guide", "sales-tax-on-invoices-us"],
+    related: [
+      "cost-of-goods-sold",
+      "invoice-vs-receipt",
+      "credit-note-guide",
+      "sales-tax-on-invoices-us",
+    ],
     faqs: [
       {
         q: "Do I need to send an invoice for every online order?",

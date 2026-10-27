@@ -686,6 +686,7 @@ export const FREELANCING_2026_POSTS: PostDraft[] = [
     author: "Invoice Creator Editorial Team",
     jurisdiction: "Pakistan",
     related: [
+      "how-to-get-ntn-number-pakistan",
       "withholding-tax-on-invoices",
       "receive-payment-from-abroad-pakistan",
       "raast-business-payments-pakistan",
