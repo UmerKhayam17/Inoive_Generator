@@ -185,7 +185,12 @@ export const COMPARISONS_2026_B_POSTS: PostDraft[] = [
     category: "comparisons",
     date: "2026-10-27",
     author: "Invoice Creator Editorial Team",
-    related: ["salary-slip-format", "w2-vs-1099", "salary-increase-percentage"],
+    related: [
+      "employer-national-insurance-2026",
+      "salary-slip-format",
+      "w2-vs-1099",
+      "salary-increase-percentage",
+    ],
     faqs: [
       {
         q: "What is the difference between gross pay and net pay?",
@@ -726,6 +731,7 @@ export const COMPARISONS_2026_B_POSTS: PostDraft[] = [
     date: "2026-10-27",
     author: "Invoice Creator Editorial Team",
     related: [
+      "section-174-rd-expensing",
       "how-to-calculate-depreciation",
       "operating-expenses",
       "self-employed-tax-deductions",

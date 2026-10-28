@@ -475,7 +475,12 @@ export const FINANCE_2026_POSTS: PostDraft[] = [
     category: "business-finance",
     date: "2026-10-24",
     author: "Invoice Creator Editorial Team",
-    related: ["invoice-factoring", "cash-flow-forecast", "accounts-receivable-guide"],
+    related: [
+      "revenue-based-financing",
+      "invoice-factoring",
+      "cash-flow-forecast",
+      "accounts-receivable-guide",
+    ],
     faqs: [
       {
         q: "Is invoice financing easier to get than a line of credit?",
@@ -821,7 +826,12 @@ export const FINANCE_2026_POSTS: PostDraft[] = [
     category: "comparisons",
     date: "2026-10-24",
     author: "Invoice Creator Editorial Team",
-    related: ["best-free-invoicing-software", "xero-vs-quickbooks", "invoice-generator-vs-accounting-software"],
+    related: [
+      "zoho-books-vs-quickbooks",
+      "best-free-invoicing-software",
+      "xero-vs-quickbooks",
+      "invoice-generator-vs-accounting-software",
+    ],
     faqs: [
       {
         q: "Is Zoho Invoice completely free?",

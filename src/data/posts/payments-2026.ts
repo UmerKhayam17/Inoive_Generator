@@ -9,7 +9,12 @@ export const PAYMENTS_2026_POSTS: PostDraft[] = [
     category: "payments",
     date: "2026-10-24",
     author: "Invoice Creator Editorial Team",
-    related: ["fednow-vs-rtp-instant-payments", "invoice-international-clients", "wise-vs-payoneer"],
+    related: [
+      "digital-euro-business",
+      "fednow-vs-rtp-instant-payments",
+      "invoice-international-clients",
+      "wise-vs-payoneer",
+    ],
     faqs: [
       {
         q: "Is USDC the same as US dollars in my bank account?",
@@ -181,7 +186,12 @@ export const PAYMENTS_2026_POSTS: PostDraft[] = [
     category: "payments",
     date: "2026-10-24",
     author: "Invoice Creator Editorial Team",
-    related: ["ach-vs-wire-transfer", "bank-details-on-invoice", "stablecoin-invoice-payments"],
+    related: [
+      "nacha-2026-rules",
+      "ach-vs-wire-transfer",
+      "bank-details-on-invoice",
+      "stablecoin-invoice-payments",
+    ],
     faqs: [
       {
         q: "Can a FedNow bank send money to an RTP-only bank?",

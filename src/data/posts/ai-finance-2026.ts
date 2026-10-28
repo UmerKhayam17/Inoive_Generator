@@ -474,7 +474,12 @@ export const AI_FINANCE_2026_POSTS: PostDraft[] = [
     category: "business-finance",
     date: "2026-10-27",
     author: "Invoice Creator Editorial Team",
-    related: ["cash-application", "ai-invoicing-automation", "accounts-receivable-guide"],
+    related: [
+      "agentic-payments",
+      "cash-application",
+      "ai-invoicing-automation",
+      "accounts-receivable-guide",
+    ],
     faqs: [
       {
         q: "What is an AI agent in accounts receivable?",
@@ -634,7 +639,7 @@ export const AI_FINANCE_2026_POSTS: PostDraft[] = [
     category: "comparisons",
     date: "2026-10-27",
     author: "Invoice Creator Editorial Team",
-    related: ["ai-accounting-software", "ai-bookkeeping", "ai-tax-preparation"],
+    related: ["fractional-cfo", "ai-accounting-software", "ai-bookkeeping", "ai-tax-preparation"],
     faqs: [
       {
         q: "Will AI replace accountants?",

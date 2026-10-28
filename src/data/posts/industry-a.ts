@@ -160,7 +160,12 @@ export const INDUSTRY_POSTS_A: PostDraft[] = [
     category: "industry-invoices",
     date: "2026-10-22",
     author: "Invoice Creator Editorial Team",
-    related: ["deposit-invoice", "freelance-invoice-template", "graphic-design-invoice-template"],
+    related: [
+      "drone-services-invoice-template",
+      "deposit-invoice",
+      "freelance-invoice-template",
+      "graphic-design-invoice-template",
+    ],
     faqs: [
       {
         q: "What should a photography invoice include?",
@@ -316,6 +321,7 @@ export const INDUSTRY_POSTS_A: PostDraft[] = [
     date: "2026-10-22",
     author: "Invoice Creator Editorial Team",
     related: [
+      "carpet-cleaning-invoice-template",
       "pest-control-invoice-template",
       "recurring-invoices-guide",
       "landscaping-invoice-template",
@@ -1036,6 +1042,7 @@ export const INDUSTRY_POSTS_A: PostDraft[] = [
     date: "2026-10-22",
     author: "Invoice Creator Editorial Team",
     related: [
+      "tree-service-invoice-template",
       "snow-removal-invoice-template",
       "recurring-invoices-guide",
       "cleaning-service-invoice-template",
@@ -1184,7 +1191,12 @@ export const INDUSTRY_POSTS_A: PostDraft[] = [
     category: "industry-invoices",
     date: "2026-10-22",
     author: "Invoice Creator Editorial Team",
-    related: ["contractor-invoice-template", "itemized-invoice", "how-to-invoice-for-hourly-work"],
+    related: [
+      "flooring-invoice-template",
+      "contractor-invoice-template",
+      "itemized-invoice",
+      "how-to-invoice-for-hourly-work",
+    ],
     faqs: [
       {
         q: "What should a handyman invoice include?",

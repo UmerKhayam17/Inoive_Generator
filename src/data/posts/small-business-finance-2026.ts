@@ -192,6 +192,7 @@ export const SMALL_BUSINESS_FINANCE_2026_POSTS: PostDraft[] = [
     date: "2026-10-27",
     author: "Invoice Creator Editorial Team",
     related: [
+      "retained-earnings",
       "capex-vs-opex",
       "profit-and-loss-statement",
       "working-capital",
@@ -393,6 +394,7 @@ export const SMALL_BUSINESS_FINANCE_2026_POSTS: PostDraft[] = [
     date: "2026-10-27",
     author: "Invoice Creator Editorial Team",
     related: [
+      "unit-economics",
       "fixed-vs-variable-costs",
       "markup-vs-margin",
       "small-business-budget",
@@ -568,6 +570,7 @@ export const SMALL_BUSINESS_FINANCE_2026_POSTS: PostDraft[] = [
     date: "2026-10-27",
     author: "Invoice Creator Editorial Team",
     related: [
+      "ebitda",
       "revenue-vs-profit",
       "cost-of-goods-sold",
       "profit-and-loss-statement",
@@ -921,6 +924,7 @@ export const SMALL_BUSINESS_FINANCE_2026_POSTS: PostDraft[] = [
     date: "2026-10-27",
     author: "Invoice Creator Editorial Team",
     related: [
+      "zero-based-budgeting",
       "ai-business-plan-generator",
       "operating-expenses",
       "cash-flow-forecast",

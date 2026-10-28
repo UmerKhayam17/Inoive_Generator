@@ -175,6 +175,7 @@ export const TAX_FILING_2026_POSTS: PostDraft[] = [
     date: "2026-10-27",
     author: "Invoice Creator Editorial Team",
     related: [
+      "vat-cash-accounting-scheme",
       "vat-registration-threshold-uk",
       "vat-invoice-guide",
       "making-tax-digital-income-tax",
@@ -539,6 +540,7 @@ export const TAX_FILING_2026_POSTS: PostDraft[] = [
     date: "2026-10-27",
     author: "Invoice Creator Editorial Team",
     related: [
+      "digital-nomad-tax",
       "w9-and-1099-for-contractors",
       "receive-payment-from-abroad-pakistan",
       "invoice-international-clients",

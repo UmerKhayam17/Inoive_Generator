@@ -921,6 +921,7 @@ Bill to: Northpoint Marketing Ltd, Accounts Payable</p>
     date: "2026-10-23",
     author: "Invoice Creator Editorial Team",
     related: [
+      "invoice-for-services-rendered",
       "work-order-template",
       "how-to-invoice-for-hourly-work",
       "retainer-invoice",

@@ -660,6 +660,8 @@ export const FINANCE_ADVANCED_POSTS: PostDraft[] = [
     author: "Invoice Creator Editorial Team",
     jurisdiction: "United States",
     related: [
+      "estimated-tax-penalty",
+      "solo-401k-vs-sep-ira",
       "self-employment-tax",
       "self-employed-tax-deductions",
       "1099-k-threshold",

@@ -178,7 +178,12 @@ export const TAX_COUNTRIES_2026_POSTS: PostDraft[] = [
     jurisdiction: "Singapore",
     date: "2026-10-27",
     author: "Invoice Creator Editorial Team",
-    related: ["gst-invoice-guide", "what-is-peppol", "invoice-requirements-by-country"],
+    related: [
+      "vietnam-e-invoice",
+      "gst-invoice-guide",
+      "what-is-peppol",
+      "invoice-requirements-by-country",
+    ],
     faqs: [
       {
         q: "What is the GST rate in Singapore in 2026?",

@@ -210,7 +210,12 @@ export const AP_AUTOMATION_2026_POSTS: PostDraft[] = [
     category: "business-finance",
     date: "2026-10-27",
     author: "Invoice Creator Editorial Team",
-    related: ["three-way-match", "invoice-scams", "invoice-numbering-system"],
+    related: [
+      "positive-pay-check-fraud",
+      "three-way-match",
+      "invoice-scams",
+      "invoice-numbering-system",
+    ],
     faqs: [
       {
         q: "What is a duplicate invoice?",
@@ -591,6 +596,7 @@ export const AP_AUTOMATION_2026_POSTS: PostDraft[] = [
     date: "2026-10-27",
     author: "Invoice Creator Editorial Team",
     related: [
+      "accounts-payable-process",
       "invoice-approval-workflow",
       "invoice-vs-purchase-order",
       "touchless-invoice-processing",

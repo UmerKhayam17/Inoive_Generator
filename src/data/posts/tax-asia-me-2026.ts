@@ -11,6 +11,7 @@ export const TAX_ASIA_ME_2026_POSTS: PostDraft[] = [
     date: "2026-10-27",
     author: "Invoice Creator Editorial Team",
     related: [
+      "bahrain-vat-invoice-requirements",
       "uae-vat-return-filing",
       "uae-vat-invoice-requirements",
       "uae-e-invoicing-2027",
@@ -337,6 +338,7 @@ export const TAX_ASIA_ME_2026_POSTS: PostDraft[] = [
     date: "2026-10-27",
     author: "Invoice Creator Editorial Team",
     related: [
+      "income-tax-act-2025-india",
       "gst-return-filing-india",
       "gst-invoice-guide",
       "gst-2-0-new-gst-rates",

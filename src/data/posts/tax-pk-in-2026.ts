@@ -183,6 +183,7 @@ export const TAX_PK_IN_2026_POSTS: PostDraft[] = [
     date: "2026-10-27",
     author: "Invoice Creator Editorial Team",
     related: [
+      "how-to-pay-fbr-challan-psid",
       "income-tax-slabs-pakistan-2026-27",
       "active-taxpayer-list-pakistan",
       "how-to-get-ntn-number-pakistan",
@@ -506,7 +507,12 @@ export const TAX_PK_IN_2026_POSTS: PostDraft[] = [
     jurisdiction: "India",
     date: "2026-10-27",
     author: "Invoice Creator Editorial Team",
-    related: ["gst-invoice-management-system", "hsn-sac-code", "gst-registration-india"],
+    related: [
+      "section-44ada-freelancers",
+      "gst-invoice-management-system",
+      "hsn-sac-code",
+      "gst-registration-india",
+    ],
     faqs: [
       {
         q: "What is the due date for GSTR-1 and GSTR-3B?",
@@ -659,7 +665,12 @@ export const TAX_PK_IN_2026_POSTS: PostDraft[] = [
     jurisdiction: "India",
     date: "2026-10-27",
     author: "Invoice Creator Editorial Team",
-    related: ["gst-invoice-guide", "gst-2-0-new-gst-rates", "gst-return-filing-india"],
+    related: [
+      "gst-composition-scheme",
+      "gst-invoice-guide",
+      "gst-2-0-new-gst-rates",
+      "gst-return-filing-india",
+    ],
     faqs: [
       {
         q: "What is an HSN code?",

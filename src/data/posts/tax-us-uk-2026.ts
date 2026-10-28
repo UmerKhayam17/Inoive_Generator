@@ -11,6 +11,7 @@ export const TAX_US_UK_2026_POSTS: PostDraft[] = [
     author: "Invoice Creator Editorial Team",
     jurisdiction: "United States",
     related: [
+      "irs-penalty-abatement",
       "schedule-c-for-freelancers",
       "1099-nec-vs-1099-misc-vs-1099-k",
       "w9-and-1099-for-contractors",
@@ -339,7 +340,12 @@ export const TAX_US_UK_2026_POSTS: PostDraft[] = [
     date: "2026-10-24",
     author: "Invoice Creator Editorial Team",
     jurisdiction: "United States",
-    related: ["self-employed-tax-deductions", "1099-nec-threshold-2026", "quarterly-estimated-taxes-freelancers"],
+    related: [
+      "no-tax-on-overtime",
+      "self-employed-tax-deductions",
+      "1099-nec-threshold-2026",
+      "quarterly-estimated-taxes-freelancers",
+    ],
     faqs: [
       {
         q: "Does the no tax on tips deduction reduce self-employment tax?",
@@ -513,7 +519,12 @@ export const TAX_US_UK_2026_POSTS: PostDraft[] = [
     date: "2026-10-24",
     author: "Invoice Creator Editorial Team",
     jurisdiction: "United Kingdom",
-    related: ["sole-trader-invoice-uk", "how-long-to-keep-invoices", "invoice-tracker-spreadsheet"],
+    related: [
+      "trading-allowance",
+      "sole-trader-invoice-uk",
+      "how-long-to-keep-invoices",
+      "invoice-tracker-spreadsheet",
+    ],
     faqs: [
       {
         q: "Do quarterly updates mean I pay tax every quarter?",

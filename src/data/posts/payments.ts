@@ -10,6 +10,7 @@ export const PAYMENTS_POSTS: PostDraft[] = [
     date: "2026-10-22",
     author: "Invoice Creator Editorial Team",
     related: [
+      "virtual-cards-for-business",
       "apple-pay-google-pay-business",
       "add-payment-link-to-invoice",
       "ach-vs-wire-transfer",
@@ -312,7 +313,12 @@ Questions? Call 555-0142 before paying if anything on this invoice looks differe
     category: "payments",
     date: "2026-10-22",
     author: "Invoice Creator Editorial Team",
-    related: ["ach-vs-wire-transfer", "invoice-international-clients", "add-payment-link-to-invoice"],
+    related: [
+      "iso-20022-payments",
+      "ach-vs-wire-transfer",
+      "invoice-international-clients",
+      "add-payment-link-to-invoice",
+    ],
     faqs: [
       {
         q: "Is it safe to put bank details on an invoice?",
@@ -595,6 +601,7 @@ Our bank details will never change by email. If you receive a message saying the
     date: "2026-10-22",
     author: "Invoice Creator Editorial Team",
     related: [
+      "us-paper-checks-phase-out",
       "sepa-direct-debit",
       "bank-details-on-invoice",
       "how-to-accept-credit-card-payments",

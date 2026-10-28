@@ -348,6 +348,7 @@ export const FREELANCING_GROWTH_2026_POSTS: PostDraft[] = [
     date: "2026-10-27",
     author: "Invoice Creator Editorial Team",
     related: [
+      "how-to-negotiate-freelance-rates",
       "statement-of-work-template",
       "freelance-contract-template",
       "how-to-get-clients-as-a-freelancer",

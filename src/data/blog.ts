@@ -51,6 +51,26 @@ import { AI_FINANCE_2026_POSTS } from "./posts/ai-finance-2026";
 import { AI_GUIDES_2026_POSTS } from "./posts/ai-guides-2026";
 import { AI_PAYMENTS_TAX_2026_POSTS } from "./posts/ai-payments-tax-2026";
 import { AI_FREELANCE_2026_POSTS } from "./posts/ai-freelance-2026";
+import { US_TAX_2026_B_POSTS } from "./posts/us-tax-2026-b";
+import { TRADE_TARIFFS_2026_POSTS } from "./posts/trade-tariffs-2026";
+import { UK_2026_B_POSTS } from "./posts/uk-2026-b";
+import { TAX_GLOBAL_2026_B_POSTS } from "./posts/tax-global-2026-b";
+import { PAYMENTS_2026_C_POSTS } from "./posts/payments-2026-c";
+import { PAYMENTS_2026_D_POSTS } from "./posts/payments-2026-d";
+import { FINANCE_METRICS_2026_B_POSTS } from "./posts/finance-metrics-2026-b";
+import { COMPARISONS_2026_D_POSTS } from "./posts/comparisons-2026-d";
+import { FREELANCE_TEMPLATES_2026_C_POSTS } from "./posts/freelance-templates-2026-c";
+import { INDUSTRY_POSTS_H } from "./posts/industry-h";
+import { US_TAX_2026_C_POSTS } from "./posts/us-tax-2026-c";
+import { UK_EU_TAX_2026_C_POSTS } from "./posts/uk-eu-tax-2026-c";
+import { TAX_GCC_ASIA_2026_POSTS } from "./posts/tax-gcc-asia-2026";
+import { TAX_PK_IN_2026_B_POSTS } from "./posts/tax-pk-in-2026-b";
+import { BASICS_2026_C_POSTS } from "./posts/basics-2026-c";
+import { PAYMENTS_2026_E_POSTS } from "./posts/payments-2026-e";
+import { BUSINESS_FINANCE_2026_C_POSTS } from "./posts/business-finance-2026-c";
+import { ACCOUNTING_GUIDES_2026_B_POSTS } from "./posts/accounting-guides-2026-b";
+import { FREELANCING_2026_D_POSTS } from "./posts/freelancing-2026-d";
+import { INDUSTRY_POSTS_I } from "./posts/industry-i";
 
 export interface Post {
   slug: string;
@@ -311,7 +331,7 @@ const CORE_POSTS: PostDraft[] = [
     category: "tax-compliance",
     date: "2026-10-08",
     author: "Invoice Creator Editorial Team",
-    related: ["strn-registration-pakistan"],
+    related: ["withholding-tax-rates-pakistan", "strn-registration-pakistan"],
     jurisdiction: "Pakistan",
     faqs: [
       {
@@ -420,7 +440,7 @@ const CORE_POSTS: PostDraft[] = [
     category: "tax-compliance",
     date: "2026-10-07",
     author: "Invoice Creator Editorial Team",
-    related: ["trn-number-uae"],
+    related: ["uae-vat-changes-2026", "trn-number-uae"],
     jurisdiction: "United Arab Emirates",
     faqs: [
       {
@@ -529,7 +549,11 @@ const CORE_POSTS: PostDraft[] = [
     category: "tax-compliance",
     date: "2026-10-06",
     author: "Invoice Creator Editorial Team",
-    related: ["sole-trader-vs-limited-company", "self-assessment-tax-return-uk"],
+    related: [
+      "ir35-off-payroll-rules",
+      "sole-trader-vs-limited-company",
+      "self-assessment-tax-return-uk",
+    ],
     jurisdiction: "United Kingdom",
     faqs: [
       {
@@ -754,7 +778,11 @@ jane@smithdesign.example</p>
     category: "guides",
     date: "2026-10-01",
     author: "Invoice Creator Editorial Team",
-    related: ["billing-address-vs-shipping-address", "incoterms-on-invoice"],
+    related: [
+      "upi-international-payments",
+      "billing-address-vs-shipping-address",
+      "incoterms-on-invoice",
+    ],
     faqs: [
       {
         q: "Do I need to register for VAT or sales tax in my client's country?",
@@ -2918,7 +2946,7 @@ jane@smithdesign.example</p>
     date: "2026-06-10",
     updated: "2026-09-25",
     author: "Invoice Creator Editorial Team",
-    related: ["how-to-get-clients-as-a-freelancer"],
+    related: ["business-bank-account-for-freelancers", "how-to-get-clients-as-a-freelancer"],
     faqs: [
       {
         q: "Do I need a registered business to send invoices as a freelancer?",
@@ -3528,7 +3556,7 @@ jane@smithdesign.example</p>
     date: "2026-05-06",
     updated: "2026-09-25",
     author: "Invoice Creator Editorial Team",
-    related: ["gst-registration-india", "singapore-gst-tax-invoice"],
+    related: ["udyam-registration", "gst-registration-india", "singapore-gst-tax-invoice"],
     jurisdiction: "GST jurisdictions (e.g. India)",
     faqs: [
       {
@@ -4121,6 +4149,26 @@ export const POST_DRAFTS: PostDraft[] = [
   ...AI_GUIDES_2026_POSTS,
   ...AI_PAYMENTS_TAX_2026_POSTS,
   ...AI_FREELANCE_2026_POSTS,
+  ...US_TAX_2026_B_POSTS,
+  ...TRADE_TARIFFS_2026_POSTS,
+  ...UK_2026_B_POSTS,
+  ...TAX_GLOBAL_2026_B_POSTS,
+  ...PAYMENTS_2026_C_POSTS,
+  ...PAYMENTS_2026_D_POSTS,
+  ...FINANCE_METRICS_2026_B_POSTS,
+  ...COMPARISONS_2026_D_POSTS,
+  ...FREELANCE_TEMPLATES_2026_C_POSTS,
+  ...INDUSTRY_POSTS_H,
+  ...US_TAX_2026_C_POSTS,
+  ...UK_EU_TAX_2026_C_POSTS,
+  ...TAX_GCC_ASIA_2026_POSTS,
+  ...TAX_PK_IN_2026_B_POSTS,
+  ...BASICS_2026_C_POSTS,
+  ...PAYMENTS_2026_E_POSTS,
+  ...BUSINESS_FINANCE_2026_C_POSTS,
+  ...ACCOUNTING_GUIDES_2026_B_POSTS,
+  ...FREELANCING_2026_D_POSTS,
+  ...INDUSTRY_POSTS_I,
 ];
 
 /** Reading time is derived from content length so it cannot drift from the article. */

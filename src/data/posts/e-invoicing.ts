@@ -10,7 +10,12 @@ export const EINVOICING_POSTS: PostDraft[] = [
     date: "2026-10-23",
     author: "Invoice Creator Editorial Team",
     jurisdiction: "Saudi Arabia",
-    related: ["e-invoicing-guide", "vat-invoice-guide", "uae-e-invoicing-2027"],
+    related: [
+      "saudi-vat-registration",
+      "e-invoicing-guide",
+      "vat-invoice-guide",
+      "uae-e-invoicing-2027",
+    ],
     faqs: [
       {
         q: "Is ZATCA e-invoicing mandatory for all businesses?",
@@ -164,6 +169,7 @@ export const EINVOICING_POSTS: PostDraft[] = [
     author: "Invoice Creator Editorial Team",
     jurisdiction: "United Arab Emirates",
     related: [
+      "oman-e-invoicing",
       "uae-corporate-tax-freelancers",
       "uae-vat-invoice-requirements",
       "what-is-peppol",
@@ -596,7 +602,12 @@ export const EINVOICING_POSTS: PostDraft[] = [
     date: "2026-10-23",
     author: "Invoice Creator Editorial Team",
     jurisdiction: "Malaysia",
-    related: ["e-invoicing-guide", "what-is-peppol", "india-e-invoice-limit"],
+    related: [
+      "philippines-e-invoicing",
+      "e-invoicing-guide",
+      "what-is-peppol",
+      "india-e-invoice-limit",
+    ],
     faqs: [
       {
         q: "Who is exempt from LHDN e-invoicing?",
@@ -1023,7 +1034,12 @@ export const EINVOICING_POSTS: PostDraft[] = [
     date: "2026-10-23",
     author: "Invoice Creator Editorial Team",
     jurisdiction: "General",
-    related: ["e-invoicing-guide", "belgium-poland-e-invoicing-mandates", "uae-e-invoicing-2027"],
+    related: [
+      "uk-e-invoicing-mandate-2029",
+      "e-invoicing-guide",
+      "belgium-poland-e-invoicing-mandates",
+      "uae-e-invoicing-2027",
+    ],
     faqs: [
       {
         q: "What is Peppol in simple terms?",

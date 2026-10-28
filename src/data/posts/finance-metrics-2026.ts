@@ -10,6 +10,7 @@ export const FINANCE_METRICS_2026_POSTS: PostDraft[] = [
     date: "2026-10-27",
     author: "Invoice Creator Editorial Team",
     related: [
+      "current-ratio-vs-quick-ratio",
       "roi-formula",
       "gross-profit-vs-net-profit",
       "cash-conversion-cycle",
@@ -717,7 +718,12 @@ export const FINANCE_METRICS_2026_POSTS: PostDraft[] = [
     category: "comparisons",
     date: "2026-10-27",
     author: "Invoice Creator Editorial Team",
-    related: ["revenue-recognition-asc-606", "cash-vs-accrual-accounting", "retainer-invoice"],
+    related: [
+      "accrued-expenses",
+      "revenue-recognition-asc-606",
+      "cash-vs-accrual-accounting",
+      "retainer-invoice",
+    ],
     faqs: [
       {
         q: "What is the main difference between deferred and accrued revenue?",

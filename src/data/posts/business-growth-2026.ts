@@ -190,7 +190,12 @@ export const BUSINESS_GROWTH_2026_POSTS: PostDraft[] = [
     category: "business-finance",
     date: "2026-10-27",
     author: "Invoice Creator Editorial Team",
-    related: ["capex-vs-opex", "balance-sheet-small-business", "operating-expenses"],
+    related: [
+      "section-179-vs-bonus-depreciation",
+      "capex-vs-opex",
+      "balance-sheet-small-business",
+      "operating-expenses",
+    ],
     faqs: [
       {
         q: "What is the simplest way to calculate depreciation?",
@@ -350,7 +355,12 @@ export const BUSINESS_GROWTH_2026_POSTS: PostDraft[] = [
     category: "business-finance",
     date: "2026-10-27",
     author: "Invoice Creator Editorial Team",
-    related: ["break-even-point", "how-to-price-a-product", "gross-profit-vs-net-profit"],
+    related: [
+      "customer-lifetime-value",
+      "break-even-point",
+      "how-to-price-a-product",
+      "gross-profit-vs-net-profit",
+    ],
     faqs: [
       {
         q: "What is the formula for ROI?",
@@ -534,7 +544,13 @@ export const BUSINESS_GROWTH_2026_POSTS: PostDraft[] = [
     category: "business-finance",
     date: "2026-10-27",
     author: "Invoice Creator Editorial Team",
-    related: ["ai-pricing-tools", "markup-vs-margin", "break-even-point", "cost-of-goods-sold"],
+    related: [
+      "how-to-raise-prices",
+      "ai-pricing-tools",
+      "markup-vs-margin",
+      "break-even-point",
+      "cost-of-goods-sold",
+    ],
     faqs: [
       {
         q: "What is the formula for pricing a product?",
@@ -713,7 +729,12 @@ export const BUSINESS_GROWTH_2026_POSTS: PostDraft[] = [
     category: "business-finance",
     date: "2026-10-27",
     author: "Invoice Creator Editorial Team",
-    related: ["cost-of-goods-sold", "invoice-tracker-spreadsheet", "how-to-price-a-product"],
+    related: [
+      "inventory-turnover-ratio",
+      "cost-of-goods-sold",
+      "invoice-tracker-spreadsheet",
+      "how-to-price-a-product",
+    ],
     faqs: [
       {
         q: "How do I create an inventory spreadsheet in Excel or Google Sheets?",

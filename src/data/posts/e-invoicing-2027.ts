@@ -501,6 +501,7 @@ export const EINVOICING_2027_POSTS: PostDraft[] = [
     author: "Invoice Creator Editorial Team",
     jurisdiction: "General",
     related: [
+      "greece-mydata-e-invoicing",
       "future-of-invoicing-trends-2027",
       "e-invoicing-guide",
       "vida-vat-in-the-digital-age",
@@ -671,6 +672,7 @@ export const EINVOICING_2027_POSTS: PostDraft[] = [
     author: "Invoice Creator Editorial Team",
     jurisdiction: "European Union",
     related: [
+      "eu-vat-one-stop-shop",
       "eu-ai-act-small-business",
       "e-invoicing-mandates-2027",
       "e-invoice-vs-pdf-invoice",

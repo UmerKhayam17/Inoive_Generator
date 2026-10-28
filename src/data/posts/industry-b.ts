@@ -164,7 +164,12 @@ export const INDUSTRY_POSTS_B: PostDraft[] = [
     category: "industry-invoices",
     date: "2026-10-22",
     author: "Invoice Creator Editorial Team",
-    related: ["itemized-invoice", "payment-receipt-template", "how-long-to-keep-invoices"],
+    related: [
+      "home-health-care-invoice-template",
+      "itemized-invoice",
+      "payment-receipt-template",
+      "how-long-to-keep-invoices",
+    ],
     faqs: [
       {
         q: "Is a medical invoice the same as an insurance claim?",
@@ -750,6 +755,7 @@ export const INDUSTRY_POSTS_B: PostDraft[] = [
     date: "2026-10-22",
     author: "Invoice Creator Editorial Team",
     related: [
+      "app-developer-invoice-template",
       "it-managed-services-invoice-template",
       "milestone-payments",
       "freelance-invoice-template",

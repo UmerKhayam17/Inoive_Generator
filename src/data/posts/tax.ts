@@ -11,7 +11,13 @@ export const TAX_POSTS: PostDraft[] = [
     date: "2026-10-22",
     author: "Invoice Creator Editorial Team",
     jurisdiction: "United States",
-    related: ["sales-tax-nexus", "tax-id-on-invoice", "tax-invoice-guide", "itemized-invoice"],
+    related: [
+      "sales-tax-exemption-certificate",
+      "sales-tax-nexus",
+      "tax-id-on-invoice",
+      "tax-invoice-guide",
+      "itemized-invoice",
+    ],
     faqs: [
       {
         q: "Do I have to show sales tax separately on an invoice?",
@@ -449,7 +455,12 @@ export const TAX_POSTS: PostDraft[] = [
     date: "2026-10-22",
     author: "Invoice Creator Editorial Team",
     jurisdiction: "United Kingdom & EU",
-    related: ["vat-invoice-guide", "reverse-charge-invoice", "uae-vat-invoice-requirements"],
+    related: [
+      "tax-exempt-invoice",
+      "vat-invoice-guide",
+      "reverse-charge-invoice",
+      "uae-vat-invoice-requirements",
+    ],
     faqs: [
       {
         q: "What is the main difference between zero-rated and exempt VAT?",
@@ -1026,6 +1037,7 @@ export const TAX_POSTS: PostDraft[] = [
     author: "Invoice Creator Editorial Team",
     jurisdiction: "United States",
     related: [
+      "home-office-deduction",
       "ai-tax-preparation",
       "how-to-calculate-depreciation",
       "how-to-track-business-expenses",
