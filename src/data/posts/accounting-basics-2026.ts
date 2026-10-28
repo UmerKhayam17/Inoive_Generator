@@ -9,7 +9,7 @@ export const ACCOUNTING_BASICS_2026_POSTS: PostDraft[] = [
     category: "business-finance",
     date: "2026-10-27",
     author: "Invoice Creator Editorial Team",
-    related: ["trial-balance", "journal-entries", "bookkeeping-basics"],
+    related: ["chart-of-accounts", "trial-balance", "journal-entries", "bookkeeping-basics"],
     faqs: [
       {
         q: "What is a general ledger in simple terms?",
@@ -362,6 +362,7 @@ export const ACCOUNTING_BASICS_2026_POSTS: PostDraft[] = [
     date: "2026-10-27",
     author: "Invoice Creator Editorial Team",
     related: [
+      "prepaid-expenses",
       "chatgpt-prompts-for-finance",
       "double-entry-bookkeeping",
       "general-ledger",

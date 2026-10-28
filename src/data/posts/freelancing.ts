@@ -10,6 +10,7 @@ export const FREELANCING_POSTS: PostDraft[] = [
     date: "2026-10-22",
     author: "Invoice Creator Editorial Team",
     related: [
+      "value-based-pricing",
       "salary-increase-percentage",
       "freelancer-invoice-guide",
       "how-to-invoice-for-hourly-work",
@@ -165,6 +166,7 @@ export const FREELANCING_POSTS: PostDraft[] = [
     date: "2026-10-22",
     author: "Invoice Creator Editorial Team",
     related: [
+      "client-onboarding-checklist",
       "ai-generated-work-copyright",
       "freelance-proposal-template",
       "statement-of-work-template",
@@ -302,6 +304,7 @@ export const FREELANCING_POSTS: PostDraft[] = [
     date: "2026-10-22",
     author: "Invoice Creator Editorial Team",
     related: [
+      "bookkeeping-services-invoice-template",
       "marketing-agency-invoice-template",
       "recurring-invoices-guide",
       "deposit-invoice",
@@ -443,7 +446,12 @@ export const FREELANCING_POSTS: PostDraft[] = [
     category: "freelancing",
     date: "2026-10-22",
     author: "Invoice Creator Editorial Team",
-    related: ["payment-reminder-emails", "late-payment-fees", "invoice-collections"],
+    related: [
+      "how-to-fire-a-client",
+      "payment-reminder-emails",
+      "late-payment-fees",
+      "invoice-collections",
+    ],
     faqs: [
       {
         q: "What should I do if a client will not pay my invoice?",
@@ -878,6 +886,7 @@ export const FREELANCING_POSTS: PostDraft[] = [
     date: "2026-10-22",
     author: "Invoice Creator Editorial Team",
     related: [
+      "hobby-vs-business",
       "llc-vs-sole-proprietorship",
       "what-is-an-invoice",
       "independent-contractor-invoice",
@@ -1008,7 +1017,12 @@ export const FREELANCING_POSTS: PostDraft[] = [
     category: "freelancing",
     date: "2026-10-22",
     author: "Invoice Creator Editorial Team",
-    related: ["deposit-invoice", "freelance-contract-template", "construction-invoice-guide"],
+    related: [
+      "escrow-payments",
+      "deposit-invoice",
+      "freelance-contract-template",
+      "construction-invoice-guide",
+    ],
     faqs: [
       {
         q: "What are milestone payments?",

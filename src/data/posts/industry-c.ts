@@ -305,7 +305,12 @@ export const INDUSTRY_POSTS_C: PostDraft[] = [
     category: "industry-invoices",
     date: "2026-10-23",
     author: "Invoice Creator Editorial Team",
-    related: ["recurring-invoices-guide", "itemized-invoice", "payment-receipt-template"],
+    related: [
+      "pool-cleaning-invoice-template",
+      "recurring-invoices-guide",
+      "itemized-invoice",
+      "payment-receipt-template",
+    ],
     faqs: [
       {
         q: "How do I price pressure washing on an invoice?",
@@ -601,6 +606,7 @@ export const INDUSTRY_POSTS_C: PostDraft[] = [
     date: "2026-10-23",
     author: "Invoice Creator Editorial Team",
     related: [
+      "tattoo-invoice-template",
       "makeup-artist-invoice-template",
       "recurring-invoices-guide",
       "deposit-invoice",

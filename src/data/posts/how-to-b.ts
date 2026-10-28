@@ -10,6 +10,7 @@ export const HOW_TO_POSTS_B: PostDraft[] = [
     date: "2026-10-22",
     author: "Invoice Creator Editorial Team",
     related: [
+      "tariff-surcharge-on-invoice",
       "bill-of-lading-vs-commercial-invoice",
       "letter-of-credit-invoice",
       "proforma-invoice-guide",
@@ -458,7 +459,12 @@ export const HOW_TO_POSTS_B: PostDraft[] = [
     category: "invoicing-basics",
     date: "2026-10-22",
     author: "Invoice Creator Editorial Team",
-    related: ["invoice-payment-terms", "overdue-invoice", "late-payment-fees"],
+    related: [
+      "invoice-date-vs-due-date",
+      "invoice-payment-terms",
+      "overdue-invoice",
+      "late-payment-fees",
+    ],
     faqs: [
       {
         q: "What is the difference between invoice date and due date?",
@@ -915,7 +921,12 @@ export const HOW_TO_POSTS_B: PostDraft[] = [
     category: "invoicing-basics",
     date: "2026-10-22",
     author: "Invoice Creator Editorial Team",
-    related: ["accounts-receivable-aging-report", "overdue-invoice", "credit-note-guide"],
+    related: [
+      "consolidated-invoice",
+      "accounts-receivable-aging-report",
+      "overdue-invoice",
+      "credit-note-guide",
+    ],
     faqs: [
       {
         q: "What is a statement of account?",
@@ -1231,7 +1242,12 @@ export const HOW_TO_POSTS_B: PostDraft[] = [
     category: "guides",
     date: "2026-10-22",
     author: "Invoice Creator Editorial Team",
-    related: ["credit-note-guide", "debit-note-vs-credit-note", "how-to-void-an-invoice"],
+    related: [
+      "backdating-invoices",
+      "credit-note-guide",
+      "debit-note-vs-credit-note",
+      "how-to-void-an-invoice",
+    ],
     faqs: [
       {
         q: "Can I just edit an invoice I already sent?",

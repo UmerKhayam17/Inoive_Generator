@@ -341,6 +341,7 @@ export const TAX_COMPLIANCE_2026_POSTS: PostDraft[] = [
     date: "2026-10-27",
     author: "Invoice Creator Editorial Team",
     related: [
+      "tds-on-professional-fees",
       "active-taxpayer-list-pakistan",
       "sales-tax-invoice-pakistan",
       "w9-and-1099-for-contractors",

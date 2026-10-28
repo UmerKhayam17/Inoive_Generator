@@ -189,6 +189,7 @@ export const PAYMENTS_GUIDES_2026_POSTS: PostDraft[] = [
     date: "2026-10-27",
     author: "Invoice Creator Editorial Team",
     related: [
+      "business-credit-score",
       "s-corp-vs-llc",
       "schedule-c-for-freelancers",
       "how-to-get-an-ein",
@@ -354,6 +355,7 @@ export const PAYMENTS_GUIDES_2026_POSTS: PostDraft[] = [
     date: "2026-10-27",
     author: "Invoice Creator Editorial Team",
     related: [
+      "stripe-vs-square",
       "payoneer-vs-paypal",
       "stripe-invoicing-guide",
       "how-to-send-paypal-invoice",

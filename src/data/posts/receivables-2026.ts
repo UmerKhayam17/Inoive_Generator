@@ -642,6 +642,7 @@ export const RECEIVABLES_2026_POSTS: PostDraft[] = [
     date: "2026-10-27",
     author: "Invoice Creator Editorial Team",
     related: [
+      "wero-payments-europe",
       "uk-direct-debit",
       "recurring-invoices-guide",
       "bank-details-on-invoice",

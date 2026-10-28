@@ -10,7 +10,12 @@ export const TAX_US_UK_2026_B_POSTS: PostDraft[] = [
     jurisdiction: "United States",
     date: "2026-10-27",
     author: "Invoice Creator Editorial Team",
-    related: ["tax-id-on-invoice", "llc-vs-sole-proprietorship", "w9-and-1099-for-contractors"],
+    related: [
+      "boi-reporting-2026",
+      "tax-id-on-invoice",
+      "llc-vs-sole-proprietorship",
+      "w9-and-1099-for-contractors",
+    ],
     faqs: [
       {
         q: "Is it free to get an EIN?",
@@ -187,6 +192,7 @@ export const TAX_US_UK_2026_B_POSTS: PostDraft[] = [
     date: "2026-10-27",
     author: "Invoice Creator Editorial Team",
     related: [
+      "qbi-deduction-section-199a",
       "self-employment-tax",
       "self-employed-tax-deductions",
       "quarterly-estimated-taxes-freelancers",
@@ -360,6 +366,8 @@ export const TAX_US_UK_2026_B_POSTS: PostDraft[] = [
     date: "2026-10-27",
     author: "Invoice Creator Editorial Team",
     related: [
+      "side-hustle-taxes",
+      "one-big-beautiful-bill-small-business",
       "schedule-c-for-freelancers",
       "quarterly-estimated-taxes-freelancers",
       "self-employed-tax-deductions",
@@ -531,6 +539,7 @@ export const TAX_US_UK_2026_B_POSTS: PostDraft[] = [
     date: "2026-10-27",
     author: "Invoice Creator Editorial Team",
     related: [
+      "uk-dividend-tax-rates-2026",
       "making-tax-digital-income-tax",
       "sole-trader-invoice-uk",
       "vat-registration-threshold-uk",
@@ -702,6 +711,7 @@ export const TAX_US_UK_2026_B_POSTS: PostDraft[] = [
     date: "2026-10-27",
     author: "Invoice Creator Editorial Team",
     related: [
+      "vat-flat-rate-scheme",
       "how-to-file-vat-return-uk",
       "vat-invoice-guide",
       "zero-rated-vs-exempt-vat",

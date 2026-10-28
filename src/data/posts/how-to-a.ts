@@ -10,6 +10,7 @@ export const HOW_TO_POSTS_A: PostDraft[] = [
     date: "2026-10-22",
     author: "Invoice Creator Editorial Team",
     related: [
+      "numbers-invoice-template",
       "how-to-make-an-invoice-in-excel",
       "how-to-make-an-invoice-in-google-docs",
       "how-to-create-an-invoice",
@@ -476,6 +477,7 @@ export const HOW_TO_POSTS_A: PostDraft[] = [
     date: "2026-10-22",
     author: "Invoice Creator Editorial Team",
     related: [
+      "notion-invoice-template",
       "how-to-make-an-invoice-in-excel",
       "how-to-make-an-invoice-in-google-docs",
       "invoice-numbering-system",

@@ -649,7 +649,12 @@ export const COMPARISONS_2026_C_POSTS: PostDraft[] = [
     jurisdiction: "United Kingdom",
     date: "2026-10-27",
     author: "Invoice Creator Editorial Team",
-    related: ["sole-trader-invoice-uk", "self-assessment-tax-return-uk", "s-corp-vs-llc"],
+    related: [
+      "companies-house-identity-verification",
+      "sole-trader-invoice-uk",
+      "self-assessment-tax-return-uk",
+      "s-corp-vs-llc",
+    ],
     faqs: [
       {
         q: "Is it better to be a sole trader or a limited company in the UK?",

@@ -9,7 +9,12 @@ export const PLATFORM_SOFTWARE_POSTS: PostDraft[] = [
     category: "payments",
     date: "2026-10-23",
     author: "Invoice Creator Editorial Team",
-    related: ["stripe-invoicing-guide", "add-payment-link-to-invoice", "how-to-accept-credit-card-payments"],
+    related: [
+      "paypal-fees",
+      "stripe-invoicing-guide",
+      "add-payment-link-to-invoice",
+      "how-to-accept-credit-card-payments",
+    ],
     faqs: [
       {
         q: "Is it free to send an invoice on PayPal?",
@@ -576,6 +581,7 @@ export const PLATFORM_SOFTWARE_POSTS: PostDraft[] = [
     date: "2026-10-23",
     author: "Invoice Creator Editorial Team",
     related: [
+      "revolut-business-vs-wise",
       "wise-vs-paypal",
       "receive-payment-from-abroad-pakistan",
       "invoice-international-clients",
@@ -1004,7 +1010,12 @@ export const PLATFORM_SOFTWARE_POSTS: PostDraft[] = [
     category: "comparisons",
     date: "2026-10-23",
     author: "Invoice Creator Editorial Team",
-    related: ["invoice-generator-vs-accounting-software", "invoice-simple-alternatives", "freshbooks-vs-quickbooks"],
+    related: [
+      "quickbooks-alternatives",
+      "invoice-generator-vs-accounting-software",
+      "invoice-simple-alternatives",
+      "freshbooks-vs-quickbooks",
+    ],
     faqs: [
       {
         q: "What is the best free invoicing software?",

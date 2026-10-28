@@ -10,7 +10,12 @@ export const PAYMENTS_FREELANCE_2026_B_POSTS: PostDraft[] = [
     jurisdiction: "UK",
     date: "2026-10-27",
     author: "Invoice Creator Editorial Team",
-    related: ["sepa-direct-debit", "recurring-invoices-guide", "ach-vs-wire-transfer"],
+    related: [
+      "pay-by-bank",
+      "sepa-direct-debit",
+      "recurring-invoices-guide",
+      "ach-vs-wire-transfer",
+    ],
     faqs: [
       {
         q: "How long does a Direct Debit take to clear in the UK?",

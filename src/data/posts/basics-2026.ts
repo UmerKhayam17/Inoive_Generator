@@ -818,7 +818,12 @@ export const BASICS_2026_POSTS: PostDraft[] = [
     date: "2026-10-24",
     author: "Invoice Creator Editorial Team",
     jurisdiction: "General",
-    related: ["invoice-international-clients", "wise-vs-payoneer", "bank-details-on-invoice"],
+    related: [
+      "cross-border-payment-fees",
+      "invoice-international-clients",
+      "wise-vs-payoneer",
+      "bank-details-on-invoice",
+    ],
     faqs: [
       {
         q: "Can I legally invoice in a currency that is not my own?",

@@ -641,7 +641,12 @@ export const INDUSTRY_POSTS_E: PostDraft[] = [
     category: "industry-invoices",
     date: "2026-10-27",
     author: "Invoice Creator Editorial Team",
-    related: ["recurring-invoices-guide", "prorated-invoice", "usage-based-billing-invoice"],
+    related: [
+      "cybersecurity-consultant-invoice-template",
+      "recurring-invoices-guide",
+      "prorated-invoice",
+      "usage-based-billing-invoice",
+    ],
     faqs: [
       {
         q: "What should a managed services invoice include?",
