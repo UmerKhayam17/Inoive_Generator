@@ -818,7 +818,12 @@ export const PAYMENTS_FREELANCE_2026_B_POSTS: PostDraft[] = [
     category: "freelancing",
     date: "2026-10-27",
     author: "Invoice Creator Editorial Team",
-    related: ["fiverr-upwork-invoice", "how-to-get-clients-as-a-freelancer", "wise-vs-payoneer"],
+    related: [
+      "upwork-fees",
+      "fiverr-upwork-invoice",
+      "how-to-get-clients-as-a-freelancer",
+      "wise-vs-payoneer",
+    ],
     faqs: [
       {
         q: "Which is better for beginners, Upwork or Fiverr?",

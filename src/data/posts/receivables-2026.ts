@@ -950,6 +950,7 @@ export const RECEIVABLES_2026_POSTS: PostDraft[] = [
     date: "2026-10-27",
     author: "Invoice Creator Editorial Team",
     related: [
+      "irs-mileage-rate-2026",
       "mileage-log-template",
       "itemized-invoice",
       "markup-vs-margin",

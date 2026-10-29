@@ -475,6 +475,7 @@ export const COMPARISON_FINANCE_POSTS: PostDraft[] = [
     date: "2026-10-22",
     author: "Invoice Creator Editorial Team",
     related: [
+      "invoice-discounting-vs-factoring",
       "b2b-buy-now-pay-later",
       "cash-flow-management",
       "accounts-receivable-guide",
@@ -789,7 +790,12 @@ export const COMPARISON_FINANCE_POSTS: PostDraft[] = [
     category: "business-finance",
     date: "2026-10-22",
     author: "Invoice Creator Editorial Team",
-    related: ["accounts-receivable-guide", "overdue-invoice", "invoice-collections"],
+    related: [
+      "allowance-for-doubtful-accounts",
+      "accounts-receivable-guide",
+      "overdue-invoice",
+      "invoice-collections",
+    ],
     faqs: [
       {
         q: "What are the standard aging buckets?",
@@ -1116,6 +1122,7 @@ export const COMPARISON_FINANCE_POSTS: PostDraft[] = [
     date: "2026-10-22",
     author: "Invoice Creator Editorial Team",
     related: [
+      "bookkeeping-rates",
       "ai-bookkeeping",
       "general-ledger",
       "profit-and-loss-statement",

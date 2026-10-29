@@ -10,7 +10,12 @@ export const DESIGN_INDUSTRY_2026_POSTS: PostDraft[] = [
     date: "2026-10-24",
     author: "Invoice Creator Editorial Team",
     jurisdiction: "European Union",
-    related: ["e-invoice-vs-pdf-invoice", "how-to-send-peppol-invoice", "germany-e-invoicing-xrechnung-zugferd"],
+    related: [
+      "romania-e-factura",
+      "e-invoice-vs-pdf-invoice",
+      "how-to-send-peppol-invoice",
+      "germany-e-invoicing-xrechnung-zugferd",
+    ],
     faqs: [
       {
         q: "Is EN 16931 a file format?",
@@ -391,7 +396,12 @@ export const DESIGN_INDUSTRY_2026_POSTS: PostDraft[] = [
     category: "industry-invoices",
     date: "2026-10-24",
     author: "Invoice Creator Editorial Team",
-    related: ["recurring-invoices-guide", "deposit-invoice", "salon-invoice-template"],
+    related: [
+      "massage-therapy-invoice-template",
+      "recurring-invoices-guide",
+      "deposit-invoice",
+      "salon-invoice-template",
+    ],
     faqs: [
       {
         q: "Should personal trainers charge per session or by package?",
@@ -552,7 +562,12 @@ export const DESIGN_INDUSTRY_2026_POSTS: PostDraft[] = [
     category: "industry-invoices",
     date: "2026-10-24",
     author: "Invoice Creator Editorial Team",
-    related: ["photography-invoice-template", "kill-fee", "scope-creep-change-order"],
+    related: [
+      "photography-pricing-guide",
+      "photography-invoice-template",
+      "kill-fee",
+      "scope-creep-change-order",
+    ],
     faqs: [
       {
         q: "Do videographers charge by the hour or by the day?",

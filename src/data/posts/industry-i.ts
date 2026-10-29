@@ -169,7 +169,12 @@ export const INDUSTRY_POSTS_I: PostDraft[] = [
     category: "industry-invoices",
     date: "2026-10-28",
     author: "Invoice Creator Editorial Team",
-    related: ["landscaping-invoice-template", "estimate-template", "deposit-invoice"],
+    related: [
+      "how-much-to-charge-for-lawn-mowing",
+      "landscaping-invoice-template",
+      "estimate-template",
+      "deposit-invoice",
+    ],
     faqs: [
       {
         q: "What should a tree removal invoice include?",
@@ -320,6 +325,7 @@ export const INDUSTRY_POSTS_I: PostDraft[] = [
     date: "2026-10-28",
     author: "Invoice Creator Editorial Team",
     related: [
+      "how-much-to-charge-for-house-cleaning",
       "cleaning-service-invoice-template",
       "pressure-washing-invoice-template",
       "payment-receipt-template",
@@ -648,7 +654,12 @@ export const INDUSTRY_POSTS_I: PostDraft[] = [
     category: "industry-invoices",
     date: "2026-10-28",
     author: "Invoice Creator Editorial Team",
-    related: ["retainer-invoice", "consulting-invoice-template", "bookkeeping-basics"],
+    related: [
+      "bookkeeping-rates",
+      "retainer-invoice",
+      "consulting-invoice-template",
+      "bookkeeping-basics",
+    ],
     faqs: [
       {
         q: "What should a bookkeeper invoice include?",

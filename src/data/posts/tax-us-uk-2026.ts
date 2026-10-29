@@ -11,6 +11,7 @@ export const TAX_US_UK_2026_POSTS: PostDraft[] = [
     author: "Invoice Creator Editorial Team",
     jurisdiction: "United States",
     related: [
+      "how-to-file-1099-nec",
       "irs-penalty-abatement",
       "schedule-c-for-freelancers",
       "1099-nec-vs-1099-misc-vs-1099-k",
@@ -520,6 +521,7 @@ export const TAX_US_UK_2026_POSTS: PostDraft[] = [
     author: "Invoice Creator Editorial Team",
     jurisdiction: "United Kingdom",
     related: [
+      "how-to-register-as-self-employed-uk",
       "trading-allowance",
       "sole-trader-invoice-uk",
       "how-long-to-keep-invoices",

@@ -727,6 +727,7 @@ export const COMPARISONS_2026_D_POSTS: PostDraft[] = [
     author: "Invoice Creator Editorial Team",
     jurisdiction: "United States",
     related: [
+      "net-30-vendor-accounts",
       "sba-loans",
       "how-to-get-an-ein",
       "llc-vs-sole-proprietorship",

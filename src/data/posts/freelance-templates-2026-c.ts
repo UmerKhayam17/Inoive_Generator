@@ -358,6 +358,7 @@ export const FREELANCE_TEMPLATES_2026_C_POSTS: PostDraft[] = [
     date: "2026-10-28",
     author: "Invoice Creator Editorial Team",
     related: [
+      "uae-freelance-permit",
       "invoice-international-clients",
       "self-employment-tax",
       "quarterly-estimated-taxes-freelancers",
@@ -512,6 +513,7 @@ export const FREELANCE_TEMPLATES_2026_C_POSTS: PostDraft[] = [
     author: "Invoice Creator Editorial Team",
     jurisdiction: "United States",
     related: [
+      "self-employed-health-insurance-deduction",
       "self-employment-tax",
       "self-employed-tax-deductions",
       "quarterly-estimated-taxes-freelancers",
@@ -686,6 +688,7 @@ export const FREELANCE_TEMPLATES_2026_C_POSTS: PostDraft[] = [
     date: "2026-10-28",
     author: "Invoice Creator Editorial Team",
     related: [
+      "what-is-a-dba",
       "bank-details-on-invoice",
       "sole-trader-invoice-uk",
       "freelancer-digital-account-pakistan",

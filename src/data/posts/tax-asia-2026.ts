@@ -343,7 +343,12 @@ export const TAX_ASIA_2026_POSTS: PostDraft[] = [
     date: "2026-10-24",
     author: "Invoice Creator Editorial Team",
     jurisdiction: "India",
-    related: ["gst-2-0-new-gst-rates", "gst-invoice-guide", "india-e-invoice-limit"],
+    related: [
+      "input-tax-credit-gst",
+      "gst-2-0-new-gst-rates",
+      "gst-invoice-guide",
+      "india-e-invoice-limit",
+    ],
     faqs: [
       {
         q: "Is it mandatory to take action on every invoice in IMS?",
@@ -498,7 +503,12 @@ export const TAX_ASIA_2026_POSTS: PostDraft[] = [
     date: "2026-10-24",
     author: "Invoice Creator Editorial Team",
     jurisdiction: "Pakistan",
-    related: ["fbr-e-invoicing-pakistan", "sales-tax-invoice-pakistan", "freelancer-tax-pakistan-2026"],
+    related: [
+      "srb-sales-tax-on-services",
+      "fbr-e-invoicing-pakistan",
+      "sales-tax-invoice-pakistan",
+      "freelancer-tax-pakistan-2026",
+    ],
     faqs: [
       {
         q: "When did the Finance Act 2026 take effect in Pakistan?",

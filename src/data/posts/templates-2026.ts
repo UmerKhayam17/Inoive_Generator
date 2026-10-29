@@ -313,7 +313,12 @@ export const TEMPLATES_2026_POSTS: PostDraft[] = [
     category: "design-templates",
     date: "2026-10-27",
     author: "Invoice Creator Editorial Team",
-    related: ["purchase-order-template", "estimate-template", "itemized-invoice"],
+    related: [
+      "locksmith-invoice-template",
+      "purchase-order-template",
+      "estimate-template",
+      "itemized-invoice",
+    ],
     faqs: [
       {
         q: "What is a work order?",
@@ -502,7 +507,12 @@ export const TEMPLATES_2026_POSTS: PostDraft[] = [
     category: "design-templates",
     date: "2026-10-27",
     author: "Invoice Creator Editorial Team",
-    related: ["invoice-vs-estimate", "quotation-format", "deposit-invoice"],
+    related: [
+      "veterinary-invoice-template",
+      "invoice-vs-estimate",
+      "quotation-format",
+      "deposit-invoice",
+    ],
     faqs: [
       {
         q: "What should be included in a job estimate?",

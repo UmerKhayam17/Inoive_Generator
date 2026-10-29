@@ -779,7 +779,12 @@ export const TRADE_TARIFFS_2026_POSTS: PostDraft[] = [
     jurisdiction: "United States",
     date: "2026-10-28",
     author: "Invoice Creator Editorial Team",
-    related: ["ach-vs-wire-transfer", "bank-details-on-invoice", "how-to-get-paid-faster"],
+    related: [
+      "how-to-write-a-check",
+      "ach-vs-wire-transfer",
+      "bank-details-on-invoice",
+      "how-to-get-paid-faster",
+    ],
     faqs: [
       {
         q: "Is the government stopping paper checks?",

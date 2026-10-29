@@ -169,7 +169,12 @@ export const COMPARISONS_2026_C_POSTS: PostDraft[] = [
     category: "comparisons",
     date: "2026-10-27",
     author: "Invoice Creator Editorial Team",
-    related: ["wise-vs-paypal", "wise-vs-payoneer", "receive-payment-from-abroad-pakistan"],
+    related: [
+      "fiverr-fees",
+      "wise-vs-paypal",
+      "wise-vs-payoneer",
+      "receive-payment-from-abroad-pakistan",
+    ],
     faqs: [
       {
         q: "Which is better for freelancers, Payoneer or PayPal?",
@@ -326,7 +331,12 @@ export const COMPARISONS_2026_C_POSTS: PostDraft[] = [
     jurisdiction: "United States",
     date: "2026-10-27",
     author: "Invoice Creator Editorial Team",
-    related: ["w9-and-1099-for-contractors", "1099-nec-threshold-2026", "self-employment-tax"],
+    related: [
+      "nanny-invoice-template",
+      "w9-and-1099-for-contractors",
+      "1099-nec-threshold-2026",
+      "self-employment-tax",
+    ],
     faqs: [
       {
         q: "What is the main difference between W-2 and 1099?",
@@ -479,7 +489,12 @@ export const COMPARISONS_2026_C_POSTS: PostDraft[] = [
     jurisdiction: "United States",
     date: "2026-10-27",
     author: "Invoice Creator Editorial Team",
-    related: ["llc-vs-sole-proprietorship", "self-employment-tax", "w2-vs-1099"],
+    related: [
+      "how-to-pay-yourself-as-a-business-owner",
+      "llc-vs-sole-proprietorship",
+      "self-employment-tax",
+      "w2-vs-1099",
+    ],
     faqs: [
       {
         q: "Is an S corp the same as an LLC?",
@@ -650,6 +665,7 @@ export const COMPARISONS_2026_C_POSTS: PostDraft[] = [
     date: "2026-10-27",
     author: "Invoice Creator Editorial Team",
     related: [
+      "how-to-register-as-self-employed-uk",
       "companies-house-identity-verification",
       "sole-trader-invoice-uk",
       "self-assessment-tax-return-uk",

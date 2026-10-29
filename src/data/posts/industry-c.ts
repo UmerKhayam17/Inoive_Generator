@@ -306,6 +306,7 @@ export const INDUSTRY_POSTS_C: PostDraft[] = [
     date: "2026-10-23",
     author: "Invoice Creator Editorial Team",
     related: [
+      "window-cleaning-invoice-template",
       "pool-cleaning-invoice-template",
       "recurring-invoices-guide",
       "itemized-invoice",
@@ -334,7 +335,7 @@ export const INDUSTRY_POSTS_C: PostDraft[] = [
       },
       {
         q: "Should I note pre-existing damage on a pressure washing invoice?",
-        a: "Yes. Washing can reveal problems hidden under dirt, such as cracked concrete, loose mortar, oxidized siding or failing paint. Note what you saw before starting, take dated photos, and repeat the key points in the invoice notes, for example \"Oxidation on south wall siding noted before cleaning; chalking may remain.\" That record protects you if the customer later says the washing caused the damage.",
+        a: 'Yes. Washing can reveal problems hidden under dirt, such as cracked concrete, loose mortar, oxidized siding or failing paint. Note what you saw before starting, take dated photos, and repeat the key points in the invoice notes, for example "Oxidation on south wall siding noted before cleaning; chalking may remain." That record protects you if the customer later says the washing caused the damage.',
       },
       {
         q: "How do I invoice paver sealing after a wash?",
@@ -458,7 +459,12 @@ export const INDUSTRY_POSTS_C: PostDraft[] = [
     category: "industry-invoices",
     date: "2026-10-23",
     author: "Invoice Creator Editorial Team",
-    related: ["auto-repair-invoice-template", "deposit-invoice", "payment-receipt-template"],
+    related: [
+      "how-much-to-charge-for-pressure-washing",
+      "auto-repair-invoice-template",
+      "deposit-invoice",
+      "payment-receipt-template",
+    ],
     faqs: [
       {
         q: "What should a car detailing invoice include?",
@@ -482,7 +488,7 @@ export const INDUSTRY_POSTS_C: PostDraft[] = [
       },
       {
         q: "How do I invoice a multi-stage paint correction?",
-        a: "Name the stage on the invoice, for example \"Two-stage paint correction: compound and polish,\" along with the panels covered, the hours or package price and the products used. Note the condition before you started, such as heavy swirls, and the expected result, because deep scratches may remain after correction. If you add a coating afterward, bill it on its own line so the customer can see what the correction cost compared with the protection.",
+        a: 'Name the stage on the invoice, for example "Two-stage paint correction: compound and polish," along with the panels covered, the hours or package price and the products used. Note the condition before you started, such as heavy swirls, and the expected result, because deep scratches may remain after correction. If you add a coating afterward, bill it on its own line so the customer can see what the correction cost compared with the protection.',
       },
       {
         q: "How should I price and invoice detailing for RVs and boats?",
@@ -490,7 +496,7 @@ export const INDUSTRY_POSTS_C: PostDraft[] = [
       },
       {
         q: "How do I handle gift certificates on a detailing invoice?",
-        a: "Record the gift certificate as a payment on the invoice, not as a discount. When it's redeemed, list the full package price, add a line such as \"Gift certificate GC-0142 applied: -$150.00\" and show any balance due. Keep a list of certificates sold with their numbers and amounts so you know which are still outstanding, and check whether your state has rules on gift certificate expiry before printing a date on them.",
+        a: 'Record the gift certificate as a payment on the invoice, not as a discount. When it\'s redeemed, list the full package price, add a line such as "Gift certificate GC-0142 applied: -$150.00" and show any balance due. Keep a list of certificates sold with their numbers and amounts so you know which are still outstanding, and check whether your state has rules on gift certificate expiry before printing a date on them.',
       },
       {
         q: "Does a ceramic coating warranty require maintenance visits?",
@@ -606,6 +612,7 @@ export const INDUSTRY_POSTS_C: PostDraft[] = [
     date: "2026-10-23",
     author: "Invoice Creator Editorial Team",
     related: [
+      "massage-therapy-invoice-template",
       "tattoo-invoice-template",
       "makeup-artist-invoice-template",
       "recurring-invoices-guide",
@@ -754,6 +761,7 @@ export const INDUSTRY_POSTS_C: PostDraft[] = [
     date: "2026-10-23",
     author: "Invoice Creator Editorial Team",
     related: [
+      "florist-invoice-template",
       "dj-invoice-template",
       "milestone-payments",
       "deposit-invoice",
@@ -899,7 +907,11 @@ export const INDUSTRY_POSTS_C: PostDraft[] = [
     date: "2026-10-23",
     author: "Invoice Creator Editorial Team",
     jurisdiction: "United States",
-    related: ["independent-contractor-invoice", "w9-and-1099-for-contractors", "consulting-invoice-template"],
+    related: [
+      "independent-contractor-invoice",
+      "w9-and-1099-for-contractors",
+      "consulting-invoice-template",
+    ],
     faqs: [
       {
         q: "Can a real estate agent invoice a client directly for commission?",
@@ -1040,7 +1052,11 @@ export const INDUSTRY_POSTS_C: PostDraft[] = [
     category: "industry-invoices",
     date: "2026-10-23",
     author: "Invoice Creator Editorial Team",
-    related: ["retainer-invoice", "how-to-invoice-for-hourly-work", "invoice-international-clients"],
+    related: [
+      "retainer-invoice",
+      "how-to-invoice-for-hourly-work",
+      "invoice-international-clients",
+    ],
     faqs: [
       {
         q: "How do virtual assistants bill clients?",
@@ -1064,7 +1080,7 @@ export const INDUSTRY_POSTS_C: PostDraft[] = [
       },
       {
         q: "Can I bill for onboarding, meetings and learning a client's tools?",
-        a: "Yes, if your contract says so. Time spent in client meetings, onboarding calls and learning systems the client asked you to use is real work and is normally billable at your usual rate. Some VAs give the first hour of onboarding free as goodwill. Whatever you decide, state it before you start and show these hours as their own category on the time log, such as \"Onboarding and tool setup: 2.5 hrs.\"",
+        a: 'Yes, if your contract says so. Time spent in client meetings, onboarding calls and learning systems the client asked you to use is real work and is normally billable at your usual rate. Some VAs give the first hour of onboarding free as goodwill. Whatever you decide, state it before you start and show these hours as their own category on the time log, such as "Onboarding and tool setup: 2.5 hrs."',
       },
       {
         q: "Do I need to register a business before I can invoice as a VA?",
@@ -1076,7 +1092,7 @@ export const INDUSTRY_POSTS_C: PostDraft[] = [
       },
       {
         q: "How do I raise my rate with existing clients?",
-        a: "Give written notice before the change, commonly 30 days or one full billing cycle, and say when the new rate starts and what it applies to. Then show the new rate clearly on the first invoice after the change, with a note such as \"Rate updated to $40/hour from 1 January 2027, as notified on 1 December 2026.\" If you're on a retainer, update the retainer amount and the overage rate together so they stay consistent.",
+        a: 'Give written notice before the change, commonly 30 days or one full billing cycle, and say when the new rate starts and what it applies to. Then show the new rate clearly on the first invoice after the change, with a note such as "Rate updated to $40/hour from 1 January 2027, as notified on 1 December 2026." If you\'re on a retainer, update the retainer amount and the overage rate together so they stay consistent.',
       },
       {
         q: "Should each client get its own invoice numbering?",
@@ -1198,6 +1214,7 @@ export const INDUSTRY_POSTS_C: PostDraft[] = [
     author: "Invoice Creator Editorial Team",
     jurisdiction: "United States",
     related: [
+      "nanny-invoice-template",
       "dog-walking-invoice-template",
       "payment-receipt-template",
       "recurring-invoices-guide",
@@ -1348,7 +1365,12 @@ export const INDUSTRY_POSTS_C: PostDraft[] = [
     date: "2026-10-23",
     author: "Invoice Creator Editorial Team",
     jurisdiction: "United States",
-    related: ["invoice-vs-estimate", "deposit-invoice", "trucking-invoice-template"],
+    related: [
+      "junk-removal-invoice-template",
+      "invoice-vs-estimate",
+      "deposit-invoice",
+      "trucking-invoice-template",
+    ],
     faqs: [
       {
         q: "What is the difference between a binding and a non-binding moving estimate?",

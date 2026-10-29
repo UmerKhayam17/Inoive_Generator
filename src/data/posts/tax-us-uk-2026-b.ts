@@ -11,6 +11,7 @@ export const TAX_US_UK_2026_B_POSTS: PostDraft[] = [
     date: "2026-10-27",
     author: "Invoice Creator Editorial Team",
     related: [
+      "how-to-start-an-llc",
       "boi-reporting-2026",
       "tax-id-on-invoice",
       "llc-vs-sole-proprietorship",
@@ -192,6 +193,7 @@ export const TAX_US_UK_2026_B_POSTS: PostDraft[] = [
     date: "2026-10-27",
     author: "Invoice Creator Editorial Team",
     related: [
+      "self-employed-health-insurance-deduction",
       "qbi-deduction-section-199a",
       "self-employment-tax",
       "self-employed-tax-deductions",
@@ -366,6 +368,7 @@ export const TAX_US_UK_2026_B_POSTS: PostDraft[] = [
     date: "2026-10-27",
     author: "Invoice Creator Editorial Team",
     related: [
+      "how-to-pay-yourself-as-a-business-owner",
       "side-hustle-taxes",
       "one-big-beautiful-bill-small-business",
       "schedule-c-for-freelancers",
@@ -539,6 +542,7 @@ export const TAX_US_UK_2026_B_POSTS: PostDraft[] = [
     date: "2026-10-27",
     author: "Invoice Creator Editorial Team",
     related: [
+      "how-to-get-utr-number",
       "uk-dividend-tax-rates-2026",
       "making-tax-digital-income-tax",
       "sole-trader-invoice-uk",

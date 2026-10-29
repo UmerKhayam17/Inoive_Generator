@@ -9,7 +9,12 @@ export const ACCOUNTING_GUIDES_2026_B_POSTS: PostDraft[] = [
     category: "guides",
     date: "2026-10-28",
     author: "Invoice Creator Editorial Team",
-    related: ["general-ledger", "bookkeeping-basics", "double-entry-bookkeeping"],
+    related: [
+      "business-expense-categories",
+      "general-ledger",
+      "bookkeeping-basics",
+      "double-entry-bookkeeping",
+    ],
     faqs: [
       {
         q: "What is a chart of accounts in simple terms?",
@@ -681,7 +686,7 @@ export const ACCOUNTING_GUIDES_2026_B_POSTS: PostDraft[] = [
     category: "guides",
     date: "2026-10-28",
     author: "Invoice Creator Editorial Team",
-    related: ["balance-sheet-small-business", "general-ledger", "trial-balance"],
+    related: ["owners-equity", "balance-sheet-small-business", "general-ledger", "trial-balance"],
     faqs: [
       {
         q: "What are retained earnings?",

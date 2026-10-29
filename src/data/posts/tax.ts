@@ -12,6 +12,7 @@ export const TAX_POSTS: PostDraft[] = [
     author: "Invoice Creator Editorial Team",
     jurisdiction: "United States",
     related: [
+      "how-to-calculate-sales-tax",
       "sales-tax-exemption-certificate",
       "sales-tax-nexus",
       "tax-id-on-invoice",
@@ -165,6 +166,7 @@ export const TAX_POSTS: PostDraft[] = [
     author: "Invoice Creator Editorial Team",
     jurisdiction: "United States",
     related: [
+      "how-to-file-1099-nec",
       "w2-vs-1099",
       "how-to-get-an-ein",
       "vendor-onboarding-checklist",
@@ -456,6 +458,7 @@ export const TAX_POSTS: PostDraft[] = [
     author: "Invoice Creator Editorial Team",
     jurisdiction: "United Kingdom & EU",
     related: [
+      "how-to-calculate-vat",
       "tax-exempt-invoice",
       "vat-invoice-guide",
       "reverse-charge-invoice",
@@ -620,7 +623,12 @@ export const TAX_POSTS: PostDraft[] = [
     date: "2026-10-22",
     author: "Invoice Creator Editorial Team",
     jurisdiction: "General",
-    related: ["tax-invoice-guide", "invoice-generator-vs-accounting-software", "uae-vat-invoice-requirements"],
+    related: [
+      "israel-invoice-allocation-number",
+      "tax-invoice-guide",
+      "invoice-generator-vs-accounting-software",
+      "uae-vat-invoice-requirements",
+    ],
     faqs: [
       {
         q: "Is a PDF invoice an e-invoice?",
@@ -902,6 +910,7 @@ export const TAX_POSTS: PostDraft[] = [
     author: "Invoice Creator Editorial Team",
     jurisdiction: "General",
     related: [
+      "japan-qualified-invoice-system",
       "invoice-requirements-by-country",
       "tax-invoice-guide",
       "w9-and-1099-for-contractors",
@@ -1037,6 +1046,7 @@ export const TAX_POSTS: PostDraft[] = [
     author: "Invoice Creator Editorial Team",
     jurisdiction: "United States",
     related: [
+      "irs-mileage-rate-2026",
       "home-office-deduction",
       "ai-tax-preparation",
       "how-to-calculate-depreciation",

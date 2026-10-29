@@ -179,7 +179,12 @@ export const ACCOUNTING_BASICS_2026_POSTS: PostDraft[] = [
     category: "business-finance",
     date: "2026-10-27",
     author: "Invoice Creator Editorial Team",
-    related: ["general-ledger", "journal-entries", "month-end-close-checklist"],
+    related: [
+      "debits-and-credits",
+      "general-ledger",
+      "journal-entries",
+      "month-end-close-checklist",
+    ],
     faqs: [
       {
         q: "What is a trial balance in simple terms?",
@@ -362,6 +367,7 @@ export const ACCOUNTING_BASICS_2026_POSTS: PostDraft[] = [
     date: "2026-10-27",
     author: "Invoice Creator Editorial Team",
     related: [
+      "debits-and-credits",
       "prepaid-expenses",
       "chatgpt-prompts-for-finance",
       "double-entry-bookkeeping",
@@ -561,7 +567,7 @@ export const ACCOUNTING_BASICS_2026_POSTS: PostDraft[] = [
     category: "business-finance",
     date: "2026-10-27",
     author: "Invoice Creator Editorial Team",
-    related: ["journal-entries", "bookkeeping-basics", "general-ledger"],
+    related: ["accounting-equation", "journal-entries", "bookkeeping-basics", "general-ledger"],
     faqs: [
       {
         q: "What is double-entry bookkeeping in simple terms?",
@@ -733,7 +739,12 @@ export const ACCOUNTING_BASICS_2026_POSTS: PostDraft[] = [
     category: "business-finance",
     date: "2026-10-27",
     author: "Invoice Creator Editorial Team",
-    related: ["cash-flow-management", "profit-and-loss-statement", "balance-sheet-small-business"],
+    related: [
+      "income-statement-vs-balance-sheet",
+      "cash-flow-management",
+      "profit-and-loss-statement",
+      "balance-sheet-small-business",
+    ],
     faqs: [
       {
         q: "What is a cash flow statement in simple terms?",

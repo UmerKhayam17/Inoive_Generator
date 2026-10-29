@@ -9,7 +9,12 @@ export const FREELANCING_2026_D_POSTS: PostDraft[] = [
     category: "freelancing",
     date: "2026-10-28",
     author: "Invoice Creator Editorial Team",
-    related: ["how-to-set-freelance-rates", "how-to-raise-prices", "freelance-proposal-template"],
+    related: [
+      "graphic-design-pricing",
+      "how-to-set-freelance-rates",
+      "how-to-raise-prices",
+      "freelance-proposal-template",
+    ],
     faqs: [
       {
         q: "What is value-based pricing in simple terms?",
@@ -898,7 +903,12 @@ export const FREELANCING_2026_D_POSTS: PostDraft[] = [
     category: "freelancing",
     date: "2026-10-28",
     author: "Invoice Creator Editorial Team",
-    related: ["how-to-set-freelance-rates", "how-to-raise-prices", "value-based-pricing"],
+    related: [
+      "freelance-writing-rates",
+      "how-to-set-freelance-rates",
+      "how-to-raise-prices",
+      "value-based-pricing",
+    ],
     faqs: [
       {
         q: "How do I negotiate pay as a freelancer?",

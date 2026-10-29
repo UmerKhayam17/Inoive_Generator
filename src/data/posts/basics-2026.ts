@@ -9,7 +9,12 @@ export const BASICS_2026_POSTS: PostDraft[] = [
     category: "comparisons",
     date: "2026-10-24",
     author: "Invoice Creator Editorial Team",
-    related: ["construction-invoice-guide", "milestone-payments", "partial-payment-invoice"],
+    related: [
+      "aia-g702-g703-billing",
+      "construction-invoice-guide",
+      "milestone-payments",
+      "partial-payment-invoice",
+    ],
     faqs: [
       {
         q: "Is an interim invoice a legal tax invoice?",
@@ -337,6 +342,7 @@ export const BASICS_2026_POSTS: PostDraft[] = [
     date: "2026-10-24",
     author: "Invoice Creator Editorial Team",
     related: [
+      "lien-waiver",
       "payment-plan-agreement",
       "short-payments-and-deductions",
       "deposit-invoice",

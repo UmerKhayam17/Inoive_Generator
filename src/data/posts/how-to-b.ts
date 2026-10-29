@@ -10,6 +10,7 @@ export const HOW_TO_POSTS_B: PostDraft[] = [
     date: "2026-10-22",
     author: "Invoice Creator Editorial Team",
     related: [
+      "tax-invoice-vs-commercial-invoice",
       "tariff-surcharge-on-invoice",
       "bill-of-lading-vs-commercial-invoice",
       "letter-of-credit-invoice",
@@ -605,7 +606,12 @@ export const HOW_TO_POSTS_B: PostDraft[] = [
     category: "invoicing-basics",
     date: "2026-10-22",
     author: "Invoice Creator Editorial Team",
-    related: ["retainer-invoice", "milestone-payments", "proforma-invoice-guide"],
+    related: [
+      "florist-invoice-template",
+      "retainer-invoice",
+      "milestone-payments",
+      "proforma-invoice-guide",
+    ],
     faqs: [
       {
         q: "What is a deposit invoice?",
@@ -767,6 +773,7 @@ export const HOW_TO_POSTS_B: PostDraft[] = [
     date: "2026-10-22",
     author: "Invoice Creator Editorial Team",
     related: [
+      "superbill-template",
       "reimbursable-expenses-invoice",
       "invoice-examples",
       "how-to-invoice-for-hourly-work",
@@ -1085,7 +1092,11 @@ export const HOW_TO_POSTS_B: PostDraft[] = [
     category: "design-templates",
     date: "2026-10-22",
     author: "Invoice Creator Editorial Team",
-    related: ["how-to-fill-out-an-invoice", "invoice-pdf-print-checklist", "best-invoice-templates"],
+    related: [
+      "how-to-fill-out-an-invoice",
+      "invoice-pdf-print-checklist",
+      "best-invoice-templates",
+    ],
     faqs: [
       {
         q: "What is a blank invoice template?",

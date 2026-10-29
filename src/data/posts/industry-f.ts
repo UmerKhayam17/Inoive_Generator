@@ -10,6 +10,7 @@ export const INDUSTRY_POSTS_F: PostDraft[] = [
     date: "2026-10-27",
     author: "Invoice Creator Editorial Team",
     related: [
+      "vacation-rental-invoice-template",
       "travel-agency-invoice-template",
       "restaurant-bill-format",
       "itemized-invoice",
@@ -309,7 +310,12 @@ export const INDUSTRY_POSTS_F: PostDraft[] = [
     category: "industry-invoices",
     date: "2026-10-27",
     author: "Invoice Creator Editorial Team",
-    related: ["deposit-invoice", "itemized-invoice", "auto-repair-invoice-template"],
+    related: [
+      "equipment-rental-invoice-template",
+      "deposit-invoice",
+      "itemized-invoice",
+      "auto-repair-invoice-template",
+    ],
     faqs: [
       {
         q: "What should a car rental invoice include?",
@@ -455,7 +461,12 @@ export const INDUSTRY_POSTS_F: PostDraft[] = [
     category: "industry-invoices",
     date: "2026-10-27",
     author: "Invoice Creator Editorial Team",
-    related: ["recurring-invoices-guide", "daycare-invoice-template", "late-payment-fees"],
+    related: [
+      "babysitting-rates",
+      "recurring-invoices-guide",
+      "daycare-invoice-template",
+      "late-payment-fees",
+    ],
     faqs: [
       {
         q: "What should a dog walking invoice include?",

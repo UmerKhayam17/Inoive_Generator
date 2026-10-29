@@ -189,6 +189,7 @@ export const PAYMENTS_GUIDES_2026_POSTS: PostDraft[] = [
     date: "2026-10-27",
     author: "Invoice Creator Editorial Team",
     related: [
+      "how-to-start-an-llc",
       "business-credit-score",
       "s-corp-vs-llc",
       "schedule-c-for-freelancers",
@@ -355,6 +356,7 @@ export const PAYMENTS_GUIDES_2026_POSTS: PostDraft[] = [
     date: "2026-10-27",
     author: "Invoice Creator Editorial Team",
     related: [
+      "stripe-fees",
       "stripe-vs-square",
       "payoneer-vs-paypal",
       "stripe-invoicing-guide",
@@ -847,7 +849,12 @@ export const PAYMENTS_GUIDES_2026_POSTS: PostDraft[] = [
     category: "payments",
     date: "2026-10-27",
     author: "Invoice Creator Editorial Team",
-    related: ["partial-payment-invoice", "milestone-payments", "client-not-paying-invoice"],
+    related: [
+      "promissory-note-template",
+      "partial-payment-invoice",
+      "milestone-payments",
+      "client-not-paying-invoice",
+    ],
     faqs: [
       {
         q: "What is a payment plan agreement?",

@@ -513,7 +513,12 @@ export const BASICS_2026_C_POSTS: PostDraft[] = [
     category: "invoicing-basics",
     date: "2026-10-28",
     author: "Invoice Creator Editorial Team",
-    related: ["zero-rated-vs-exempt-vat", "sales-tax-on-invoices-us", "vat-invoice-guide"],
+    related: [
+      "resale-certificate",
+      "zero-rated-vs-exempt-vat",
+      "sales-tax-on-invoices-us",
+      "vat-invoice-guide",
+    ],
     faqs: [
       {
         q: "What is a tax exempt invoice?",

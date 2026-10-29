@@ -613,6 +613,7 @@ export const UK_2026_B_POSTS: PostDraft[] = [
     author: "Invoice Creator Editorial Team",
     jurisdiction: "United Kingdom",
     related: [
+      "payments-on-account-hmrc",
       "corporation-tax-uk",
       "sole-trader-vs-limited-company",
       "self-assessment-tax-return-uk",

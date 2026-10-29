@@ -155,7 +155,12 @@ export const FREELANCE_CREATIVE_2026_POSTS: PostDraft[] = [
     category: "industry-invoices",
     date: "2026-10-27",
     author: "Invoice Creator Editorial Team",
-    related: ["kill-fee", "freelance-invoice-template", "invoice-ai-assisted-work"],
+    related: [
+      "editing-proofreading-invoice-template",
+      "kill-fee",
+      "freelance-invoice-template",
+      "invoice-ai-assisted-work",
+    ],
     faqs: [
       {
         q: "What should a copywriter invoice include?",

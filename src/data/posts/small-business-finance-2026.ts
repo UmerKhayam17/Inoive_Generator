@@ -9,7 +9,12 @@ export const SMALL_BUSINESS_FINANCE_2026_POSTS: PostDraft[] = [
     category: "business-finance",
     date: "2026-10-27",
     author: "Invoice Creator Editorial Team",
-    related: ["balance-sheet-small-business", "gross-profit-vs-net-profit", "cash-flow-management"],
+    related: [
+      "income-statement-vs-balance-sheet",
+      "balance-sheet-small-business",
+      "gross-profit-vs-net-profit",
+      "cash-flow-management",
+    ],
     faqs: [
       {
         q: "What is a profit and loss statement in simple terms?",
@@ -192,6 +197,7 @@ export const SMALL_BUSINESS_FINANCE_2026_POSTS: PostDraft[] = [
     date: "2026-10-27",
     author: "Invoice Creator Editorial Team",
     related: [
+      "accounting-equation",
       "retained-earnings",
       "capex-vs-opex",
       "profit-and-loss-statement",
@@ -570,6 +576,7 @@ export const SMALL_BUSINESS_FINANCE_2026_POSTS: PostDraft[] = [
     date: "2026-10-27",
     author: "Invoice Creator Editorial Team",
     related: [
+      "how-to-calculate-profit-margin",
       "ebitda",
       "revenue-vs-profit",
       "cost-of-goods-sold",
@@ -1276,6 +1283,7 @@ export const SMALL_BUSINESS_FINANCE_2026_POSTS: PostDraft[] = [
     date: "2026-10-27",
     author: "Invoice Creator Editorial Team",
     related: [
+      "business-expense-categories",
       "expense-report-template",
       "self-employed-tax-deductions",
       "petty-cash-log",

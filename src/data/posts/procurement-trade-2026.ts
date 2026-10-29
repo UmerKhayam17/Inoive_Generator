@@ -193,6 +193,7 @@ export const PROCUREMENT_TRADE_2026_POSTS: PostDraft[] = [
     date: "2026-10-27",
     author: "Invoice Creator Editorial Team",
     related: [
+      "what-is-a-voided-check",
       "w9-and-1099-for-contractors",
       "bank-details-on-invoice",
       "invoice-approval-workflow",
@@ -750,6 +751,7 @@ export const PROCUREMENT_TRADE_2026_POSTS: PostDraft[] = [
     date: "2026-10-27",
     author: "Invoice Creator Editorial Team",
     related: [
+      "proforma-invoice-for-customs",
       "de-minimis-exemption-end",
       "hsn-sac-code",
       "commercial-invoice-template",

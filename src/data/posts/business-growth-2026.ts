@@ -191,6 +191,7 @@ export const BUSINESS_GROWTH_2026_POSTS: PostDraft[] = [
     date: "2026-10-27",
     author: "Invoice Creator Editorial Team",
     related: [
+      "standard-mileage-vs-actual-expenses",
       "section-179-vs-bonus-depreciation",
       "capex-vs-opex",
       "balance-sheet-small-business",

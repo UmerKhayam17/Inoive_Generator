@@ -319,7 +319,12 @@ export const EINVOICING_POSTS: PostDraft[] = [
     date: "2026-10-23",
     author: "Invoice Creator Editorial Team",
     jurisdiction: "Pakistan",
-    related: ["sales-tax-invoice-pakistan", "e-invoicing-guide", "tax-id-on-invoice"],
+    related: [
+      "srb-sales-tax-on-services",
+      "sales-tax-invoice-pakistan",
+      "e-invoicing-guide",
+      "tax-id-on-invoice",
+    ],
     faqs: [
       {
         q: "Is FBR e-invoicing mandatory for all sales tax registered persons?",
@@ -458,7 +463,13 @@ export const EINVOICING_POSTS: PostDraft[] = [
     date: "2026-10-23",
     author: "Invoice Creator Editorial Team",
     jurisdiction: "India",
-    related: ["e-way-bill", "gst-invoice-guide", "e-invoicing-guide", "tax-invoice-guide"],
+    related: [
+      "gstr-1-vs-gstr-3b",
+      "e-way-bill",
+      "gst-invoice-guide",
+      "e-invoicing-guide",
+      "tax-invoice-guide",
+    ],
     faqs: [
       {
         q: "What is the e-invoice limit under GST?",
@@ -603,6 +614,7 @@ export const EINVOICING_POSTS: PostDraft[] = [
     author: "Invoice Creator Editorial Team",
     jurisdiction: "Malaysia",
     related: [
+      "nigeria-e-invoicing",
       "philippines-e-invoicing",
       "e-invoicing-guide",
       "what-is-peppol",
@@ -1373,7 +1385,7 @@ export const EINVOICING_POSTS: PostDraft[] = [
       },
       {
         q: "Can one document be both a tax invoice and a receipt?",
-        a: "Yes. If the customer has already paid, a single document can serve as both, as long as it includes all the tax invoice details and shows that payment was received. Many businesses label it \"Tax invoice\" and mark it as paid with the payment date. Our free generator lets you add the amount paid and balance due, so a paid tax invoice is easy to produce.",
+        a: 'Yes. If the customer has already paid, a single document can serve as both, as long as it includes all the tax invoice details and shows that payment was received. Many businesses label it "Tax invoice" and mark it as paid with the payment date. Our free generator lets you add the amount paid and balance due, so a paid tax invoice is easy to produce.',
       },
     ],
     content: `

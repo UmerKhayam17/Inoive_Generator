@@ -171,7 +171,11 @@ export const PAYMENTS_POSTS: PostDraft[] = [
     category: "payments",
     date: "2026-10-22",
     author: "Invoice Creator Editorial Team",
-    related: ["how-to-accept-credit-card-payments", "bank-details-on-invoice", "how-to-send-an-invoice"],
+    related: [
+      "how-to-accept-credit-card-payments",
+      "bank-details-on-invoice",
+      "how-to-send-an-invoice",
+    ],
     faqs: [
       {
         q: "How do I add a payment link to an invoice?",
@@ -601,6 +605,7 @@ Our bank details will never change by email. If you receive a message saying the
     date: "2026-10-22",
     author: "Invoice Creator Editorial Team",
     related: [
+      "how-long-does-a-wire-transfer-take",
       "us-paper-checks-phase-out",
       "sepa-direct-debit",
       "bank-details-on-invoice",
@@ -742,6 +747,7 @@ Our bank details never change by email. Call 555-0187 to verify before sending a
     date: "2026-10-22",
     author: "Invoice Creator Editorial Team",
     related: [
+      "lien-waiver",
       "payment-confirmation-email",
       "rent-receipt-template",
       "invoice-vs-receipt",
@@ -909,7 +915,12 @@ Thank you for your payment.</blockquote>
     category: "payments",
     date: "2026-10-22",
     author: "Invoice Creator Editorial Team",
-    related: ["payment-reminder-emails", "invoice-collections", "client-not-paying-invoice"],
+    related: [
+      "prompt-payment-act",
+      "payment-reminder-emails",
+      "invoice-collections",
+      "client-not-paying-invoice",
+    ],
     faqs: [
       {
         q: "When is an invoice considered overdue?",

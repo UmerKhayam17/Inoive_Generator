@@ -11,6 +11,7 @@ export const TAX_ASIA_ME_2026_POSTS: PostDraft[] = [
     date: "2026-10-27",
     author: "Invoice Creator Editorial Team",
     related: [
+      "uae-vat-registration",
       "bahrain-vat-invoice-requirements",
       "uae-vat-return-filing",
       "uae-vat-invoice-requirements",
@@ -179,7 +180,12 @@ export const TAX_ASIA_ME_2026_POSTS: PostDraft[] = [
     jurisdiction: "UAE",
     date: "2026-10-27",
     author: "Invoice Creator Editorial Team",
-    related: ["trn-number-uae", "uae-vat-invoice-requirements", "freelancer-invoice-guide"],
+    related: [
+      "uae-freelance-permit",
+      "trn-number-uae",
+      "uae-vat-invoice-requirements",
+      "freelancer-invoice-guide",
+    ],
     faqs: [
       {
         q: "Do freelancers have to pay corporate tax in the UAE?",
@@ -338,6 +344,7 @@ export const TAX_ASIA_ME_2026_POSTS: PostDraft[] = [
     date: "2026-10-27",
     author: "Invoice Creator Editorial Team",
     related: [
+      "lut-under-gst",
       "income-tax-act-2025-india",
       "gst-return-filing-india",
       "gst-invoice-guide",
@@ -654,6 +661,7 @@ export const TAX_ASIA_ME_2026_POSTS: PostDraft[] = [
     date: "2026-10-27",
     author: "Invoice Creator Editorial Team",
     related: [
+      "how-to-become-filer-pakistan",
       "income-tax-return-pakistan-iris",
       "sales-tax-invoice-pakistan",
       "freelancer-tax-pakistan-2026",
@@ -814,6 +822,7 @@ export const TAX_ASIA_ME_2026_POSTS: PostDraft[] = [
     date: "2026-10-27",
     author: "Invoice Creator Editorial Team",
     related: [
+      "pra-sales-tax-on-services",
       "sales-tax-invoice-pakistan",
       "how-to-get-ntn-number-pakistan",
       "fbr-e-invoicing-pakistan",

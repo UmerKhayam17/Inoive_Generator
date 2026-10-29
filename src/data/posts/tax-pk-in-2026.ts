@@ -346,6 +346,7 @@ export const TAX_PK_IN_2026_POSTS: PostDraft[] = [
     date: "2026-10-27",
     author: "Invoice Creator Editorial Team",
     related: [
+      "how-to-become-filer-pakistan",
       "income-tax-return-pakistan-iris",
       "how-to-get-ntn-number-pakistan",
       "withholding-tax-on-invoices",
@@ -508,6 +509,7 @@ export const TAX_PK_IN_2026_POSTS: PostDraft[] = [
     date: "2026-10-27",
     author: "Invoice Creator Editorial Team",
     related: [
+      "input-tax-credit-gst",
       "section-44ada-freelancers",
       "gst-invoice-management-system",
       "hsn-sac-code",

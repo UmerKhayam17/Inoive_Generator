@@ -174,6 +174,7 @@ export const FREELANCING_GROWTH_2026_POSTS: PostDraft[] = [
     date: "2026-10-27",
     author: "Invoice Creator Editorial Team",
     related: [
+      "best-freelance-websites",
       "ai-tools-for-freelancers",
       "cold-email-for-freelancers",
       "freelance-proposal-template",
@@ -348,6 +349,7 @@ export const FREELANCING_GROWTH_2026_POSTS: PostDraft[] = [
     date: "2026-10-27",
     author: "Invoice Creator Editorial Team",
     related: [
+      "best-freelance-websites",
       "how-to-negotiate-freelance-rates",
       "statement-of-work-template",
       "freelance-contract-template",
@@ -544,6 +546,7 @@ export const FREELANCING_GROWTH_2026_POSTS: PostDraft[] = [
     date: "2026-10-27",
     author: "Invoice Creator Editorial Team",
     related: [
+      "jazzcash-easypaisa-business-account",
       "raast-business-payments-pakistan",
       "receive-payment-from-abroad-pakistan",
       "how-to-accept-credit-card-payments",

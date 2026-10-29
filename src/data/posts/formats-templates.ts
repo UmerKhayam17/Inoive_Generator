@@ -452,7 +452,11 @@ Vehicle: [vehicle number] · Transporter: Own vehicle</p>
     category: "design-templates",
     date: "2026-10-23",
     author: "Invoice Creator Editorial Team",
-    related: ["simple-invoice-template", "invoice-template-pdf", "professional-invoice-design-tips"],
+    related: [
+      "simple-invoice-template",
+      "invoice-template-pdf",
+      "professional-invoice-design-tips",
+    ],
     faqs: [
       {
         q: "Does Canva have free invoice templates?",
@@ -921,6 +925,7 @@ Bill to: Northpoint Marketing Ltd, Accounts Payable</p>
     date: "2026-10-23",
     author: "Invoice Creator Editorial Team",
     related: [
+      "home-inspection-invoice-template",
       "invoice-for-services-rendered",
       "work-order-template",
       "how-to-invoice-for-hourly-work",
@@ -1255,7 +1260,11 @@ Quote ref: Q-88412 dated 20 October 2026 · Deliver by: 30 October 2026 · Terms
     category: "business-finance",
     date: "2026-10-23",
     author: "Invoice Creator Editorial Team",
-    related: ["accounts-receivable-aging-report", "google-sheets-invoice-template", "overdue-invoice"],
+    related: [
+      "accounts-receivable-aging-report",
+      "google-sheets-invoice-template",
+      "overdue-invoice",
+    ],
     faqs: [
       {
         q: "How do I track invoices in Excel?",
@@ -1283,11 +1292,11 @@ Quote ref: Q-88412 dated 20 October 2026 · Deliver by: 30 October 2026 · Terms
       },
       {
         q: "Can I track invoices in different currencies in one spreadsheet?",
-        a: "Yes. Add a Currency column and never mix currencies in a single total. Use SUMIFS with the currency as a condition, such as =SUMIFS(G:G,N:N,\"USD\"), to total balances per currency. If you want one combined figure, add an exchange rate column and a converted balance column, and record the rate date. Remember that the amount you finally receive may differ because of exchange rates and fees.",
+        a: 'Yes. Add a Currency column and never mix currencies in a single total. Use SUMIFS with the currency as a condition, such as =SUMIFS(G:G,N:N,"USD"), to total balances per currency. If you want one combined figure, add an exchange rate column and a converted balance column, and record the rate date. Remember that the amount you finally receive may differ because of exchange rates and fees.',
       },
       {
         q: "How do I see which clients take the longest to pay?",
-        a: "First add a 'days to pay' column for paid invoices, using =IF(I2=\"\",\"\",I2-C2). Then calculate the average for each client with AVERAGEIFS, for example =AVERAGEIFS(N:N,B:B,\"Acme Ltd\"), where N holds days to pay. A pivot table with Client as rows and the average of days to pay as values does the same for every client at once. Use the result to adjust deposits or terms.",
+        a: 'First add a \'days to pay\' column for paid invoices, using =IF(I2="","",I2-C2). Then calculate the average for each client with AVERAGEIFS, for example =AVERAGEIFS(N:N,B:B,"Acme Ltd"), where N holds days to pay. A pivot table with Client as rows and the average of days to pay as values does the same for every client at once. Use the result to adjust deposits or terms.',
       },
       {
         q: "How can I spot duplicate invoice numbers in my tracker?",

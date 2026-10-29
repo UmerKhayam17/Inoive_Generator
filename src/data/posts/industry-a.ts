@@ -9,7 +9,12 @@ export const INDUSTRY_POSTS_A: PostDraft[] = [
     category: "industry-invoices",
     date: "2026-10-22",
     author: "Invoice Creator Editorial Team",
-    related: ["construction-invoice-guide", "deposit-invoice", "independent-contractor-invoice"],
+    related: [
+      "concrete-invoice-template",
+      "construction-invoice-guide",
+      "deposit-invoice",
+      "independent-contractor-invoice",
+    ],
     faqs: [
       {
         q: "What should a contractor invoice include?",
@@ -161,6 +166,7 @@ export const INDUSTRY_POSTS_A: PostDraft[] = [
     date: "2026-10-22",
     author: "Invoice Creator Editorial Team",
     related: [
+      "photography-pricing-guide",
       "drone-services-invoice-template",
       "deposit-invoice",
       "freelance-invoice-template",
@@ -321,6 +327,7 @@ export const INDUSTRY_POSTS_A: PostDraft[] = [
     date: "2026-10-22",
     author: "Invoice Creator Editorial Team",
     related: [
+      "window-cleaning-invoice-template",
       "carpet-cleaning-invoice-template",
       "pest-control-invoice-template",
       "recurring-invoices-guide",
@@ -471,7 +478,12 @@ export const INDUSTRY_POSTS_A: PostDraft[] = [
     category: "industry-invoices",
     date: "2026-10-22",
     author: "Invoice Creator Editorial Team",
-    related: ["retainer-invoice", "how-to-invoice-for-hourly-work", "milestone-payments"],
+    related: [
+      "life-coach-invoice-template",
+      "retainer-invoice",
+      "how-to-invoice-for-hourly-work",
+      "milestone-payments",
+    ],
     faqs: [
       {
         q: "What should a consulting invoice include?",
@@ -615,6 +627,7 @@ export const INDUSTRY_POSTS_A: PostDraft[] = [
     date: "2026-10-22",
     author: "Invoice Creator Editorial Team",
     related: [
+      "graphic-design-pricing",
       "interior-design-invoice-template",
       "freelance-invoice-template",
       "deposit-invoice",
@@ -756,7 +769,11 @@ export const INDUSTRY_POSTS_A: PostDraft[] = [
     category: "industry-invoices",
     date: "2026-10-22",
     author: "Invoice Creator Editorial Team",
-    related: ["hvac-invoice-template", "electrician-invoice-template", "contractor-invoice-template"],
+    related: [
+      "hvac-invoice-template",
+      "electrician-invoice-template",
+      "contractor-invoice-template",
+    ],
     faqs: [
       {
         q: "What should be on a plumbing invoice?",
@@ -1042,6 +1059,7 @@ export const INDUSTRY_POSTS_A: PostDraft[] = [
     date: "2026-10-22",
     author: "Invoice Creator Editorial Team",
     related: [
+      "fencing-invoice-template",
       "tree-service-invoice-template",
       "snow-removal-invoice-template",
       "recurring-invoices-guide",
@@ -1192,6 +1210,7 @@ export const INDUSTRY_POSTS_A: PostDraft[] = [
     date: "2026-10-22",
     author: "Invoice Creator Editorial Team",
     related: [
+      "junk-removal-invoice-template",
       "flooring-invoice-template",
       "contractor-invoice-template",
       "itemized-invoice",

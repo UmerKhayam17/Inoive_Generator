@@ -216,7 +216,7 @@ export const FREELANCING_2026_POSTS: PostDraft[] = [
       },
       {
         q: "How do brands usually pay UGC creators, and who covers the fees?",
-        a: "Brands commonly pay by bank transfer, PayPal or through a creator platform or agency system. Card and PayPal-style payments carry processing fees that normally come out of what you receive unless your contract says otherwise. State your preferred method and bank details on the invoice, and add a line such as \"transfer fees to be paid by the sender\" for international payments.",
+        a: 'Brands commonly pay by bank transfer, PayPal or through a creator platform or agency system. Card and PayPal-style payments carry processing fees that normally come out of what you receive unless your contract says otherwise. State your preferred method and bank details on the invoice, and add a line such as "transfer fees to be paid by the sender" for international payments.',
       },
     ],
     content: `
@@ -691,6 +691,7 @@ export const FREELANCING_2026_POSTS: PostDraft[] = [
     author: "Invoice Creator Editorial Team",
     jurisdiction: "Pakistan",
     related: [
+      "pseb-registration-freelancers",
       "income-tax-slabs-pakistan-2026-27",
       "how-to-get-ntn-number-pakistan",
       "withholding-tax-on-invoices",

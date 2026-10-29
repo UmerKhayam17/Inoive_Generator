@@ -10,7 +10,11 @@ export const EINVOICING_2027_POSTS: PostDraft[] = [
     date: "2026-10-24",
     author: "Invoice Creator Editorial Team",
     jurisdiction: "Germany",
-    related: ["germany-e-invoicing-xrechnung-zugferd", "e-invoicing-mandates-2027", "e-invoice-vs-pdf-invoice"],
+    related: [
+      "germany-e-invoicing-xrechnung-zugferd",
+      "e-invoicing-mandates-2027",
+      "e-invoice-vs-pdf-invoice",
+    ],
     faqs: [
       {
         q: "Does the €800,000 threshold include VAT?",
@@ -200,7 +204,7 @@ export const EINVOICING_2027_POSTS: PostDraft[] = [
       },
       {
         q: "What does the QR code on a Verifactu invoice do?",
-        a: "Invoices created with Verifactu-compliant software must show a QR code, and in Verifactu mode the legend \"VERI*FACTU\". Your customer can scan the code to check the invoice with the AEAT. It does not make the invoice an e-invoice; it is a verification feature of the billing software rules. Your software should generate it automatically, so check where it is placed on your invoice layout.",
+        a: 'Invoices created with Verifactu-compliant software must show a QR code, and in Verifactu mode the legend "VERI*FACTU". Your customer can scan the code to check the invoice with the AEAT. It does not make the invoice an e-invoice; it is a verification feature of the billing software rules. Your software should generate it automatically, so check where it is placed on your invoice layout.',
       },
       {
         q: "How do I know if my billing software meets the Verifactu rules?",
@@ -501,6 +505,7 @@ export const EINVOICING_2027_POSTS: PostDraft[] = [
     author: "Invoice Creator Editorial Team",
     jurisdiction: "General",
     related: [
+      "italy-sdi-e-invoicing",
       "greece-mydata-e-invoicing",
       "future-of-invoicing-trends-2027",
       "e-invoicing-guide",
@@ -672,6 +677,7 @@ export const EINVOICING_2027_POSTS: PostDraft[] = [
     author: "Invoice Creator Editorial Team",
     jurisdiction: "European Union",
     related: [
+      "italy-sdi-e-invoicing",
       "eu-vat-one-stop-shop",
       "eu-ai-act-small-business",
       "e-invoicing-mandates-2027",
@@ -995,7 +1001,12 @@ export const EINVOICING_2027_POSTS: PostDraft[] = [
     date: "2026-10-24",
     author: "Invoice Creator Editorial Team",
     jurisdiction: "General",
-    related: ["what-is-peppol", "e-invoicing-mandates-2027", "how-to-send-peppol-invoice"],
+    related: [
+      "israel-invoice-allocation-number",
+      "what-is-peppol",
+      "e-invoicing-mandates-2027",
+      "how-to-send-peppol-invoice",
+    ],
     faqs: [
       {
         q: "Is Peppol a clearance model?",

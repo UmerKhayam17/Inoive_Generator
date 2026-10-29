@@ -11,6 +11,7 @@ export const TAX_FILING_2026_POSTS: PostDraft[] = [
     date: "2026-10-27",
     author: "Invoice Creator Editorial Team",
     related: [
+      "how-to-get-a-business-license",
       "sales-tax-on-invoices-us",
       "ecommerce-invoice-shopify-woocommerce",
       "sales-tax-vs-vat-vs-gst",

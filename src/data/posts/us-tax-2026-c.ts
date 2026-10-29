@@ -364,6 +364,7 @@ export const US_TAX_2026_C_POSTS: PostDraft[] = [
     author: "Invoice Creator Editorial Team",
     jurisdiction: "United States",
     related: [
+      "how-to-get-a-business-license",
       "how-to-invoice-without-a-business",
       "schedule-c-for-freelancers",
       "1099-k-threshold",
@@ -527,7 +528,12 @@ export const US_TAX_2026_C_POSTS: PostDraft[] = [
     date: "2026-10-28",
     author: "Invoice Creator Editorial Team",
     jurisdiction: "United States",
-    related: ["sales-tax-on-invoices-us", "sales-tax-nexus", "tax-id-on-invoice"],
+    related: [
+      "resale-certificate",
+      "sales-tax-on-invoices-us",
+      "sales-tax-nexus",
+      "tax-id-on-invoice",
+    ],
     faqs: [
       {
         q: "What is a sales tax exemption certificate?",

@@ -312,6 +312,7 @@ export const INDUSTRY_POSTS_G: PostDraft[] = [
     date: "2026-10-27",
     author: "Invoice Creator Editorial Team",
     related: [
+      "how-much-to-charge-for-lawn-mowing",
       "landscaping-invoice-template",
       "recurring-invoices-guide",
       "how-to-invoice-for-hourly-work",
@@ -464,7 +465,12 @@ export const INDUSTRY_POSTS_G: PostDraft[] = [
     category: "industry-invoices",
     date: "2026-10-27",
     author: "Invoice Creator Editorial Team",
-    related: ["timesheet-template", "how-to-invoice-for-hourly-work", "po-number-on-invoice"],
+    related: [
+      "locksmith-invoice-template",
+      "timesheet-template",
+      "how-to-invoice-for-hourly-work",
+      "po-number-on-invoice",
+    ],
     faqs: [
       {
         q: "What should a security guard invoice include?",

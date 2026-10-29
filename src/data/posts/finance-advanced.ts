@@ -9,7 +9,11 @@ export const FINANCE_ADVANCED_POSTS: PostDraft[] = [
     category: "comparisons",
     date: "2026-10-23",
     author: "Invoice Creator Editorial Team",
-    related: ["best-free-invoicing-software", "invoice-simple-alternatives", "freshbooks-vs-quickbooks"],
+    related: [
+      "best-free-invoicing-software",
+      "invoice-simple-alternatives",
+      "freshbooks-vs-quickbooks",
+    ],
     faqs: [
       {
         q: "Is there a free alternative to Invoice2go?",
@@ -157,6 +161,7 @@ export const FINANCE_ADVANCED_POSTS: PostDraft[] = [
     date: "2026-10-23",
     author: "Invoice Creator Editorial Team",
     related: [
+      "how-to-calculate-profit-margin",
       "how-to-price-a-product",
       "break-even-point",
       "how-to-set-freelance-rates",
@@ -339,7 +344,12 @@ export const FINANCE_ADVANCED_POSTS: PostDraft[] = [
     date: "2026-10-23",
     author: "Invoice Creator Editorial Team",
     jurisdiction: "General",
-    related: ["sales-tax-on-invoices-us", "markup-vs-margin", "vat-invoice-guide"],
+    related: [
+      "how-to-calculate-sales-tax",
+      "sales-tax-on-invoices-us",
+      "markup-vs-margin",
+      "vat-invoice-guide",
+    ],
     faqs: [
       {
         q: "How do I calculate sales tax from the total amount?",
@@ -660,6 +670,7 @@ export const FINANCE_ADVANCED_POSTS: PostDraft[] = [
     author: "Invoice Creator Editorial Team",
     jurisdiction: "United States",
     related: [
+      "federal-tax-brackets-2026",
       "estimated-tax-penalty",
       "solo-401k-vs-sep-ira",
       "self-employment-tax",
@@ -808,7 +819,11 @@ export const FINANCE_ADVANCED_POSTS: PostDraft[] = [
     date: "2026-10-23",
     author: "Invoice Creator Editorial Team",
     jurisdiction: "United States",
-    related: ["w9-and-1099-for-contractors", "venmo-zelle-cash-app-invoice", "how-to-send-paypal-invoice"],
+    related: [
+      "w9-and-1099-for-contractors",
+      "venmo-zelle-cash-app-invoice",
+      "how-to-send-paypal-invoice",
+    ],
     faqs: [
       {
         q: "What is the 1099-K threshold for 2026?",
@@ -1401,7 +1416,12 @@ export const FINANCE_ADVANCED_POSTS: PostDraft[] = [
     date: "2026-10-23",
     author: "Invoice Creator Editorial Team",
     jurisdiction: "United States / United Kingdom",
-    related: ["client-not-paying-invoice", "invoice-collections", "overdue-invoice"],
+    related: [
+      "demand-letter-for-payment",
+      "client-not-paying-invoice",
+      "invoice-collections",
+      "overdue-invoice",
+    ],
     faqs: [
       {
         q: "Can I take a client to small claims court for an unpaid invoice?",

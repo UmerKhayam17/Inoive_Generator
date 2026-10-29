@@ -19,7 +19,7 @@ export const FINANCE_2026_POSTS: PostDraft[] = [
     faqs: [
       {
         q: "Can AI create an invoice for me from a short description?",
-        a: "Yes. A general chatbot or an AI feature inside invoicing software can turn a note like \"12 hours of design at $85\" into line items, a subtotal and a draft email. You still need to check the client's legal name, the tax rate, the invoice number and the arithmetic, because language models can produce figures that look right but are not.",
+        a: 'Yes. A general chatbot or an AI feature inside invoicing software can turn a note like "12 hours of design at $85" into line items, a subtotal and a draft email. You still need to check the client\'s legal name, the tax rate, the invoice number and the arithmetic, because language models can produce figures that look right but are not.',
       },
       {
         q: "Is it safe to upload client invoices to an AI tool?",
@@ -476,6 +476,7 @@ export const FINANCE_2026_POSTS: PostDraft[] = [
     date: "2026-10-24",
     author: "Invoice Creator Editorial Team",
     related: [
+      "invoice-discounting-vs-factoring",
       "revenue-based-financing",
       "invoice-factoring",
       "cash-flow-forecast",
@@ -654,7 +655,12 @@ export const FINANCE_2026_POSTS: PostDraft[] = [
     date: "2026-10-24",
     author: "Invoice Creator Editorial Team",
     jurisdiction: "General",
-    related: ["invoice-collections", "accounts-receivable-aging-report", "credit-note-guide"],
+    related: [
+      "allowance-for-doubtful-accounts",
+      "invoice-collections",
+      "accounts-receivable-aging-report",
+      "credit-note-guide",
+    ],
     faqs: [
       {
         q: "Can I still collect a debt after writing it off?",
@@ -835,7 +841,7 @@ export const FINANCE_2026_POSTS: PostDraft[] = [
     faqs: [
       {
         q: "Is Zoho Invoice completely free?",
-        a: "At the time of writing, Zoho describes Zoho Invoice as forever free. The plan allows up to 500 invoices a year, two users, three projects and two organizations, and invoices carry \"Powered by Zoho Invoice\" branding. Online payment gateway fees still apply when clients pay by card. Check Zoho's pricing page for current limits.",
+        a: 'At the time of writing, Zoho describes Zoho Invoice as forever free. The plan allows up to 500 invoices a year, two users, three projects and two organizations, and invoices carry "Powered by Zoho Invoice" branding. Online payment gateway fees still apply when clients pay by card. Check Zoho\'s pricing page for current limits.',
       },
       {
         q: "Is Wave really free?",
@@ -871,7 +877,7 @@ export const FINANCE_2026_POSTS: PostDraft[] = [
       },
       {
         q: "Can I customize invoice templates on the free plans?",
-        a: "Yes, within limits. Both let you set your business details, payment terms and notes on a choice of templates. Free Zoho Invoice invoices show \"Powered by Zoho Invoice\", and free Wave invoices carry Wave branding, which the Pro plan removes along with adding your brand colors, based on the published plans. If a branding-free PDF matters most, a free invoice generator that downloads a plain PDF is an alternative.",
+        a: 'Yes, within limits. Both let you set your business details, payment terms and notes on a choice of templates. Free Zoho Invoice invoices show "Powered by Zoho Invoice", and free Wave invoices carry Wave branding, which the Pro plan removes along with adding your brand colors, based on the published plans. If a branding-free PDF matters most, a free invoice generator that downloads a plain PDF is an alternative.',
       },
     ],
     content: `
@@ -974,7 +980,11 @@ export const FINANCE_2026_POSTS: PostDraft[] = [
     category: "comparisons",
     date: "2026-10-24",
     author: "Invoice Creator Editorial Team",
-    related: ["freshbooks-vs-quickbooks", "zoho-invoice-vs-wave", "invoice-generator-vs-accounting-software"],
+    related: [
+      "freshbooks-vs-quickbooks",
+      "zoho-invoice-vs-wave",
+      "invoice-generator-vs-accounting-software",
+    ],
     faqs: [
       {
         q: "Is Xero cheaper than QuickBooks?",

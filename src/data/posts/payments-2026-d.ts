@@ -174,7 +174,12 @@ export const PAYMENTS_2026_D_POSTS: PostDraft[] = [
     date: "2026-10-28",
     author: "Invoice Creator Editorial Team",
     jurisdiction: "United States",
-    related: ["invoice-scams", "ach-vs-wire-transfer", "ai-fraud-detection-payments"],
+    related: [
+      "how-to-write-a-check",
+      "invoice-scams",
+      "ach-vs-wire-transfer",
+      "ai-fraud-detection-payments",
+    ],
     faqs: [
       {
         q: "What is positive pay in banking?",

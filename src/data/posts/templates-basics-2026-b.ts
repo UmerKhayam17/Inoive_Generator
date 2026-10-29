@@ -178,6 +178,7 @@ export const TEMPLATES_BASICS_2026_B_POSTS: PostDraft[] = [
     date: "2026-10-27",
     author: "Invoice Creator Editorial Team",
     related: [
+      "allowable-expenses-self-employed-uk",
       "mileage-log-template",
       "reimbursable-expenses-invoice",
       "how-to-track-business-expenses",
@@ -368,6 +369,7 @@ export const TEMPLATES_BASICS_2026_B_POSTS: PostDraft[] = [
     date: "2026-10-27",
     author: "Invoice Creator Editorial Team",
     related: [
+      "how-to-start-a-lawn-care-business",
       "expense-report-template",
       "self-employed-tax-deductions",
       "schedule-c-for-freelancers",

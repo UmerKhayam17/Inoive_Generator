@@ -490,7 +490,12 @@ export const BASICS_COMPARISONS_2026_POSTS: PostDraft[] = [
     category: "invoicing-basics",
     date: "2026-10-27",
     author: "Invoice Creator Editorial Team",
-    related: ["purchase-order-template", "invoice-vs-sales-order", "invoice-vs-purchase-order"],
+    related: [
+      "bakery-invoice-template",
+      "purchase-order-template",
+      "invoice-vs-sales-order",
+      "invoice-vs-purchase-order",
+    ],
     faqs: [
       {
         q: "What is an order form?",

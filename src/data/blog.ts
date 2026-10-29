@@ -71,6 +71,26 @@ import { BUSINESS_FINANCE_2026_C_POSTS } from "./posts/business-finance-2026-c";
 import { ACCOUNTING_GUIDES_2026_B_POSTS } from "./posts/accounting-guides-2026-b";
 import { FREELANCING_2026_D_POSTS } from "./posts/freelancing-2026-d";
 import { INDUSTRY_POSTS_I } from "./posts/industry-i";
+import { INDUSTRY_POSTS_J } from "./posts/industry-j";
+import { INDUSTRY_POSTS_K } from "./posts/industry-k";
+import { INDUSTRY_POSTS_L } from "./posts/industry-l";
+import { INDUSTRY_POSTS_M } from "./posts/industry-m";
+import { PRICING_GUIDES_2026_POSTS } from "./posts/pricing-guides-2026";
+import { PRICING_GUIDES_2026_B_POSTS } from "./posts/pricing-guides-2026-b";
+import { START_BUSINESS_2026_POSTS } from "./posts/start-business-2026";
+import { START_BUSINESS_2026_B_POSTS } from "./posts/start-business-2026-b";
+import { US_TAX_2026_D_POSTS } from "./posts/us-tax-2026-d";
+import { US_TAX_2026_E_POSTS } from "./posts/us-tax-2026-e";
+import { UK_TAX_2026_D_POSTS } from "./posts/uk-tax-2026-d";
+import { PK_TAX_2026_C_POSTS } from "./posts/pk-tax-2026-c";
+import { INDIA_GST_2026_POSTS } from "./posts/india-gst-2026";
+import { UAE_GLOBAL_TAX_2026_POSTS } from "./posts/uae-global-tax-2026";
+import { EINVOICING_2027_B_POSTS } from "./posts/e-invoicing-2027-b";
+import { PAYMENTS_2026_F_POSTS } from "./posts/payments-2026-f";
+import { PAYMENTS_2026_G_POSTS } from "./posts/payments-2026-g";
+import { ACCOUNTING_BASICS_2026_C_POSTS } from "./posts/accounting-basics-2026-c";
+import { COMPARISONS_2026_E_POSTS } from "./posts/comparisons-2026-e";
+import { COLLECTIONS_LEGAL_2026_POSTS } from "./posts/collections-legal-2026";
 
 export interface Post {
   slug: string;
@@ -331,7 +351,11 @@ const CORE_POSTS: PostDraft[] = [
     category: "tax-compliance",
     date: "2026-10-08",
     author: "Invoice Creator Editorial Team",
-    related: ["withholding-tax-rates-pakistan", "strn-registration-pakistan"],
+    related: [
+      "pra-sales-tax-on-services",
+      "withholding-tax-rates-pakistan",
+      "strn-registration-pakistan",
+    ],
     jurisdiction: "Pakistan",
     faqs: [
       {
@@ -440,7 +464,7 @@ const CORE_POSTS: PostDraft[] = [
     category: "tax-compliance",
     date: "2026-10-07",
     author: "Invoice Creator Editorial Team",
-    related: ["uae-vat-changes-2026", "trn-number-uae"],
+    related: ["uae-vat-registration", "uae-vat-changes-2026", "trn-number-uae"],
     jurisdiction: "United Arab Emirates",
     faqs: [
       {
@@ -550,6 +574,7 @@ const CORE_POSTS: PostDraft[] = [
     date: "2026-10-06",
     author: "Invoice Creator Editorial Team",
     related: [
+      "how-to-get-utr-number",
       "ir35-off-payroll-rules",
       "sole-trader-vs-limited-company",
       "self-assessment-tax-return-uk",
@@ -779,6 +804,7 @@ jane@smithdesign.example</p>
     date: "2026-10-01",
     author: "Invoice Creator Editorial Team",
     related: [
+      "lut-under-gst",
       "upi-international-payments",
       "billing-address-vs-shipping-address",
       "incoterms-on-invoice",
@@ -991,7 +1017,7 @@ jane@smithdesign.example</p>
     category: "guides",
     date: "2026-09-26",
     author: "Invoice Creator Editorial Team",
-    related: ["architect-invoice-template"],
+    related: ["equipment-rental-invoice-template", "architect-invoice-template"],
     faqs: [
       {
         q: "What is an AIA G702 pay application?",
@@ -1309,6 +1335,7 @@ jane@smithdesign.example</p>
     category: "invoicing-basics",
     date: "2026-09-15",
     author: "Invoice Creator Editorial Team",
+    related: ["prompt-payment-act"],
     jurisdiction: "General",
     faqs: [
       {
@@ -1536,7 +1563,7 @@ jane@smithdesign.example</p>
     category: "invoicing-basics",
     date: "2026-09-01",
     author: "Invoice Creator Editorial Team",
-    related: ["journal-entries"],
+    related: ["gstr-1-vs-gstr-3b", "journal-entries"],
     faqs: [
       {
         q: "Can I issue a credit note after the client has already paid the invoice?",
@@ -1650,7 +1677,7 @@ jane@smithdesign.example</p>
     category: "comparisons",
     date: "2026-08-25",
     author: "Invoice Creator Editorial Team",
-    related: ["hs-code-on-commercial-invoice"],
+    related: ["proforma-invoice-for-customs", "hs-code-on-commercial-invoice"],
     faqs: [
       {
         q: "Is a proforma invoice legally binding?",
@@ -1690,7 +1717,7 @@ jane@smithdesign.example</p>
       },
       {
         q: "Is it spelled proforma, pro forma or pro-forma?",
-        a: "All three spellings are widely used and mean the same thing. The term comes from the Latin pro forma, meaning \"as a matter of form\". Pro forma (two words) is common in dictionaries, while proforma (one word) is popular in international trade documents. Whichever you choose, use it consistently in the document title, your numbering prefix and your emails so the buyer knows it is not a final invoice.",
+        a: 'All three spellings are widely used and mean the same thing. The term comes from the Latin pro forma, meaning "as a matter of form". Pro forma (two words) is common in dictionaries, while proforma (one word) is popular in international trade documents. Whichever you choose, use it consistently in the document title, your numbering prefix and your emails so the buyer knows it is not a final invoice.',
       },
     ],
     content: `
@@ -1756,6 +1783,7 @@ jane@smithdesign.example</p>
     category: "guides",
     date: "2026-08-18",
     author: "Invoice Creator Editorial Team",
+    related: ["music-lesson-invoice-template"],
     faqs: [
       {
         q: "What is the difference between a recurring invoice and automatic payment?",
@@ -1767,7 +1795,7 @@ jane@smithdesign.example</p>
       },
       {
         q: "What happens if a retainer client uses fewer hours than they paid for?",
-        a: "It depends entirely on your agreement, so decide before you start. Common options are use-it-or-lose-it hours, a limited rollover into the next period, or a credit against future work. Whatever you choose, state it in the contract and show it on the invoice, for example \"8 of 10 hours used; 2 hours roll over to November\". Unclear rules on unused time are a frequent source of retainer disputes.",
+        a: 'It depends entirely on your agreement, so decide before you start. Common options are use-it-or-lose-it hours, a limited rollover into the next period, or a credit against future work. Whatever you choose, state it in the contract and show it on the invoice, for example "8 of 10 hours used; 2 hours roll over to November". Unclear rules on unused time are a frequent source of retainer disputes.',
       },
       {
         q: "Do I need a written contract for recurring billing?",
@@ -1779,7 +1807,7 @@ jane@smithdesign.example</p>
       },
       {
         q: "Can I send one invoice that covers several months?",
-        a: "Yes. Billing quarterly or annually in advance is common and reduces paperwork for both sides. List the full service period, such as \"Maintenance plan: January to March 2027\", and consider showing the monthly breakdown so the client can match it to their budget. Some businesses offer a small discount for upfront payment. Make sure your contract covers what happens if the client cancels part way through.",
+        a: 'Yes. Billing quarterly or annually in advance is common and reduces paperwork for both sides. List the full service period, such as "Maintenance plan: January to March 2027", and consider showing the monthly breakdown so the client can match it to their budget. Some businesses offer a small discount for upfront payment. Make sure your contract covers what happens if the client cancels part way through.',
       },
       {
         q: "How should I handle a tax rate change on recurring invoices?",
@@ -1863,7 +1891,7 @@ jane@smithdesign.example</p>
     category: "guides",
     date: "2026-08-11",
     author: "Invoice Creator Editorial Team",
-    related: ["ai-payment-reminder-emails"],
+    related: ["final-notice-before-legal-action", "ai-payment-reminder-emails"],
     faqs: [
       {
         q: "Is it rude to send a payment reminder before the invoice is due?",
@@ -1970,7 +1998,7 @@ jane@smithdesign.example</p>
     category: "invoicing-basics",
     date: "2026-08-04",
     author: "Invoice Creator Editorial Team",
-    related: ["due-upon-receipt"],
+    related: ["net-30-vendor-accounts", "due-upon-receipt"],
     faqs: [
       {
         q: "Does Net 30 mean 30 calendar days or 30 business days?",
@@ -1978,7 +2006,7 @@ jane@smithdesign.example</p>
       },
       {
         q: "What happens if an invoice due date falls on a weekend or public holiday?",
-        a: "There is no universal rule. Many businesses treat payment on the next working day as on time, while others expect payment by the previous working day. If it matters to you, say so in your terms, for example \"if the due date is not a business day, payment is due the preceding business day\". Simplest of all, choose a due date that falls on a working day when you create the invoice.",
+        a: 'There is no universal rule. Many businesses treat payment on the next working day as on time, while others expect payment by the previous working day. If it matters to you, say so in your terms, for example "if the due date is not a business day, payment is due the preceding business day". Simplest of all, choose a due date that falls on a working day when you create the invoice.',
       },
       {
         q: "Can a large client insist on longer payment terms than mine?",
@@ -1986,15 +2014,15 @@ jane@smithdesign.example</p>
       },
       {
         q: "What payment terms apply if none were agreed?",
-        a: "That depends on local law. In the UK, if no payment date was agreed in a business-to-business contract, statutory late payment interest can generally start 30 days after the later of delivery or receipt of the invoice. EU countries have similar default rules under the Late Payment Directive. In other places, a court may simply look for a \"reasonable\" time. Agreeing terms in writing avoids the uncertainty.",
+        a: 'That depends on local law. In the UK, if no payment date was agreed in a business-to-business contract, statutory late payment interest can generally start 30 days after the later of delivery or receipt of the invoice. EU countries have similar default rules under the Late Payment Directive. In other places, a court may simply look for a "reasonable" time. Agreeing terms in writing avoids the uncertainty.',
       },
       {
         q: "Can I change payment terms for an existing client?",
         a: "Yes, but do it by agreement and in writing. Tell the client what is changing, why and from which date, and apply the new terms only to invoices issued after that date. Check your contract first, because it may fix the terms or require a notice period. Shortening terms suddenly can strain a relationship, so many businesses introduce changes at contract renewal or alongside a new project.",
       },
       {
-        q: "What does \"Net 10th Prox\" mean on an invoice?",
-        a: "\"Prox\" is short for the Latin proximo, meaning the next month. Net 10th Prox means payment is due on the 10th day of the month following the invoice date. So an invoice dated 18 October would be due on 10 November. Terms like this suit clients who pay suppliers in a monthly run. Because not everyone knows the abbreviation, also print the calculated due date on the invoice.",
+        q: 'What does "Net 10th Prox" mean on an invoice?',
+        a: '"Prox" is short for the Latin proximo, meaning the next month. Net 10th Prox means payment is due on the 10th day of the month following the invoice date. So an invoice dated 18 October would be due on 10 November. Terms like this suit clients who pay suppliers in a monthly run. Because not everyone knows the abbreviation, also print the calculated due date on the invoice.',
       },
       {
         q: "Should new clients get different payment terms from established ones?",
@@ -2094,7 +2122,7 @@ jane@smithdesign.example</p>
       },
       {
         q: "What is the difference between an invoice and a bill?",
-        a: "They are usually the same document seen from different sides. The seller issues an invoice to request payment; the buyer receives it and often records it as a bill to pay. In everyday speech, \"bill\" is also used for restaurant checks and utility statements. In accounting, invoices you send are accounts receivable and bills you receive are accounts payable.",
+        a: 'They are usually the same document seen from different sides. The seller issues an invoice to request payment; the buyer receives it and often records it as a bill to pay. In everyday speech, "bill" is also used for restaurant checks and utility statements. In accounting, invoices you send are accounts receivable and bills you receive are accounts payable.',
       },
       {
         q: "What is the difference between a tax invoice and a regular invoice?",
@@ -2106,7 +2134,7 @@ jane@smithdesign.example</p>
       },
       {
         q: "Can I send an invoice before the work is done?",
-        a: "Yes, if the client has agreed to it. Invoicing in advance is normal for deposits, subscriptions, retainers billed in advance and goods paid for before shipping. Label the invoice clearly, for example \"Deposit: 50% of quoted price\" or \"Retainer: November 2026\", so nobody mistakes it for payment for completed work. If you only want to show what will be charged, a proforma invoice may be more suitable.",
+        a: 'Yes, if the client has agreed to it. Invoicing in advance is normal for deposits, subscriptions, retainers billed in advance and goods paid for before shipping. Label the invoice clearly, for example "Deposit: 50% of quoted price" or "Retainer: November 2026", so nobody mistakes it for payment for completed work. If you only want to show what will be charged, a proforma invoice may be more suitable.',
       },
       {
         q: "Is a PDF invoice legally valid, or do I need an e-invoice?",
@@ -2562,7 +2590,7 @@ jane@smithdesign.example</p>
       },
       {
         q: "Does a client have to sign a quotation for it to be accepted?",
-        a: "Not always. In many places, a clear written acceptance, such as an email saying \"We accept quotation Q-2026-018\", is enough to form an agreement, and sometimes conduct, like asking you to start work, can count too. A signature is stronger evidence and some clients require one. To avoid doubt, state on the quotation how it should be accepted.",
+        a: 'Not always. In many places, a clear written acceptance, such as an email saying "We accept quotation Q-2026-018", is enough to form an agreement, and sometimes conduct, like asking you to start work, can count too. A signature is stronger evidence and some clients require one. To avoid doubt, state on the quotation how it should be accepted.',
       },
       {
         q: "Can I invoice the full quoted amount if the client cancels part way through?",
@@ -2690,7 +2718,7 @@ jane@smithdesign.example</p>
       },
       {
         q: "Can I use an invoice template for a quote, estimate or receipt?",
-        a: "You can adapt the layout, but the document must be correctly labeled and contain the right fields. A quote needs a validity date and acceptance terms instead of a due date; a receipt needs the payment date and method. Never send a document titled \"Invoice\" when you mean a quote or receipt, because clients may pay early, pay twice or record it incorrectly.",
+        a: 'You can adapt the layout, but the document must be correctly labeled and contain the right fields. A quote needs a validity date and acceptance terms instead of a due date; a receipt needs the payment date and method. Never send a document titled "Invoice" when you mean a quote or receipt, because clients may pay early, pay twice or record it incorrectly.',
       },
       {
         q: "Do I need a logo on my invoice template?",
@@ -2813,19 +2841,19 @@ jane@smithdesign.example</p>
     faqs: [
       {
         q: "What does a deposit invoice look like?",
-        a: "A deposit invoice usually has one line, such as \"Deposit: 40% of quotation Q-2026-021\", plus the amount, due date and payment details. Give it its own invoice number. When you send the final invoice, list the full project value and then show the deposit already paid as a deduction, so the client can see exactly how the balance due was calculated.",
+        a: 'A deposit invoice usually has one line, such as "Deposit: 40% of quotation Q-2026-021", plus the amount, due date and payment details. Give it its own invoice number. When you send the final invoice, list the full project value and then show the deposit already paid as a deduction, so the client can see exactly how the balance due was calculated.',
       },
       {
         q: "How do I show a partial payment on an invoice?",
-        a: "List the full invoice total, then add an \"Amount paid\" line with the date and amount received, and finish with a clear \"Balance due\". Keep the original invoice number so the client's accounts team can match both payments. If the remaining balance has a new due date agreed in writing, put that calendar date beside the balance due.",
+        a: 'List the full invoice total, then add an "Amount paid" line with the date and amount received, and finish with a clear "Balance due". Keep the original invoice number so the client\'s accounts team can match both payments. If the remaining balance has a new due date agreed in writing, put that calendar date beside the balance due.',
       },
       {
         q: "How do I add a late fee to an invoice?",
-        a: "Add the late fee as a separate line, such as \"Late payment charge per agreement section 6\", instead of quietly raising the original amount. Reference the overdue invoice number and the date it was due. Only charge fees or interest your contract or local law allows, and note that rules on late charges vary by country and, in the US, by state.",
+        a: 'Add the late fee as a separate line, such as "Late payment charge per agreement section 6", instead of quietly raising the original amount. Reference the overdue invoice number and the date it was due. Only charge fees or interest your contract or local law allows, and note that rules on late charges vary by country and, in the US, by state.',
       },
       {
         q: "How do I invoice for a cancelled project or kill fee?",
-        a: "Invoice the cancellation fee your contract specifies, with a line like \"Cancellation fee: 25% of contract value per clause 9\", plus any completed work or non-refundable costs already incurred. Credit any deposit the client paid. If your contract has no cancellation clause, agree the amount in writing with the client before you send the invoice, so it is not disputed on arrival.",
+        a: 'Invoice the cancellation fee your contract specifies, with a line like "Cancellation fee: 25% of contract value per clause 9", plus any completed work or non-refundable costs already incurred. Credit any deposit the client paid. If your contract has no cancellation clause, agree the amount in writing with the client before you send the invoice, so it is not disputed on arrival.',
       },
       {
         q: "What should an invoice look like if I am not registered for tax?",
@@ -2849,7 +2877,7 @@ jane@smithdesign.example</p>
       },
       {
         q: "How should I write the date range for a service period?",
-        a: "Write the period in the line description using unambiguous dates, such as \"Support services: 1–31 August 2026\" or \"Week of 4–8 Aug 2026\". Spelling out the month avoids confusion between day-first and month-first date formats used in different countries. A clear period helps the client match the charge to their budget month and stops duplicate-billing questions.",
+        a: 'Write the period in the line description using unambiguous dates, such as "Support services: 1–31 August 2026" or "Week of 4–8 Aug 2026". Spelling out the month avoids confusion between day-first and month-first date formats used in different countries. A clear period helps the client match the charge to their budget month and stops duplicate-billing questions.',
       },
     ],
     content: `
@@ -2946,7 +2974,11 @@ jane@smithdesign.example</p>
     date: "2026-06-10",
     updated: "2026-09-25",
     author: "Invoice Creator Editorial Team",
-    related: ["business-bank-account-for-freelancers", "how-to-get-clients-as-a-freelancer"],
+    related: [
+      "kenya-etims-invoice",
+      "business-bank-account-for-freelancers",
+      "how-to-get-clients-as-a-freelancer",
+    ],
     faqs: [
       {
         q: "Do I need a registered business to send invoices as a freelancer?",
@@ -3426,7 +3458,7 @@ jane@smithdesign.example</p>
     date: "2026-05-13",
     updated: "2026-09-25",
     author: "Invoice Creator Editorial Team",
-    related: ["tax-invoice-vs-retail-invoice"],
+    related: ["tax-invoice-vs-commercial-invoice", "tax-invoice-vs-retail-invoice"],
     jurisdiction: "General",
     faqs: [
       {
@@ -3556,7 +3588,12 @@ jane@smithdesign.example</p>
     date: "2026-05-06",
     updated: "2026-09-25",
     author: "Invoice Creator Editorial Team",
-    related: ["udyam-registration", "gst-registration-india", "singapore-gst-tax-invoice"],
+    related: [
+      "bill-of-supply-gst",
+      "udyam-registration",
+      "gst-registration-india",
+      "singapore-gst-tax-invoice",
+    ],
     jurisdiction: "GST jurisdictions (e.g. India)",
     faqs: [
       {
@@ -3685,6 +3722,7 @@ jane@smithdesign.example</p>
     updated: "2026-09-25",
     author: "Invoice Creator Editorial Team",
     related: [
+      "cis-invoice-template",
       "vat-registration-threshold-uk",
       "south-africa-vat-invoice",
       "sales-tax-vs-vat-vs-gst",
@@ -3823,7 +3861,7 @@ jane@smithdesign.example</p>
       },
       {
         q: "Where should the logo go on an invoice?",
-        a: "Most invoices place the logo in the top left, with the word \"Invoice\", the number and the date on the right. That matches how readers scan a page and keeps reference details where accounts teams expect them. Centered logos can work in minimal layouts. Wherever it goes, keep it modest so the amount due remains the focal point.",
+        a: 'Most invoices place the logo in the top left, with the word "Invoice", the number and the date on the right. That matches how readers scan a page and keeps reference details where accounts teams expect them. Centered logos can work in minimal layouts. Wherever it goes, keep it modest so the amount due remains the focal point.',
       },
       {
         q: "How large should an invoice PDF file be?",
@@ -3843,7 +3881,7 @@ jane@smithdesign.example</p>
       },
       {
         q: "Should I add a thank-you message to my invoice?",
-        a: "A short thank-you line in the notes or footer is a nice touch and costs no space. Keep it to one sentence, such as \"Thank you for your business\", and place it below the payment details, not above the total. It should never push key information like bank details or the due date onto a second page.",
+        a: 'A short thank-you line in the notes or footer is a nice touch and costs no space. Keep it to one sentence, such as "Thank you for your business", and place it below the payment details, not above the total. It should never push key information like bank details or the due date onto a second page.',
       },
       {
         q: "How should I mark an invoice as paid?",
@@ -4048,11 +4086,11 @@ jane@smithdesign.example</p>
       },
       {
         q: "Will a client's scanning software read my printed invoice correctly?",
-        a: "It is more likely to if you use plain fonts, strong contrast, clear labels like \"Invoice number\" and \"Total due\", and avoid text over images or colored backgrounds. Many accounts teams use text recognition to capture invoice data from scans. Print a test copy, scan or photograph it, and check whether every number is still easy to read.",
+        a: 'It is more likely to if you use plain fonts, strong contrast, clear labels like "Invoice number" and "Total due", and avoid text over images or colored backgrounds. Many accounts teams use text recognition to capture invoice data from scans. Print a test copy, scan or photograph it, and check whether every number is still easy to read.',
       },
       {
         q: "Should a printed invoice include page numbers?",
-        a: "Yes, if the invoice runs longer than one page. Use \"Page 1 of 2\" so readers know if a page is missing, and repeat the invoice number and client name on every page. Keep the totals and payment details together on the final page. A single-page invoice does not need page numbers.",
+        a: 'Yes, if the invoice runs longer than one page. Use "Page 1 of 2" so readers know if a page is missing, and repeat the invoice number and client name on every page. Keep the totals and payment details together on the final page. A single-page invoice does not need page numbers.',
       },
       {
         q: "What should I include when mailing a printed invoice?",
@@ -4169,6 +4207,26 @@ export const POST_DRAFTS: PostDraft[] = [
   ...ACCOUNTING_GUIDES_2026_B_POSTS,
   ...FREELANCING_2026_D_POSTS,
   ...INDUSTRY_POSTS_I,
+  ...INDUSTRY_POSTS_J,
+  ...INDUSTRY_POSTS_K,
+  ...INDUSTRY_POSTS_L,
+  ...INDUSTRY_POSTS_M,
+  ...PRICING_GUIDES_2026_POSTS,
+  ...PRICING_GUIDES_2026_B_POSTS,
+  ...START_BUSINESS_2026_POSTS,
+  ...START_BUSINESS_2026_B_POSTS,
+  ...US_TAX_2026_D_POSTS,
+  ...US_TAX_2026_E_POSTS,
+  ...UK_TAX_2026_D_POSTS,
+  ...PK_TAX_2026_C_POSTS,
+  ...INDIA_GST_2026_POSTS,
+  ...UAE_GLOBAL_TAX_2026_POSTS,
+  ...EINVOICING_2027_B_POSTS,
+  ...PAYMENTS_2026_F_POSTS,
+  ...PAYMENTS_2026_G_POSTS,
+  ...ACCOUNTING_BASICS_2026_C_POSTS,
+  ...COMPARISONS_2026_E_POSTS,
+  ...COLLECTIONS_LEGAL_2026_POSTS,
 ];
 
 /** Reading time is derived from content length so it cannot drift from the article. */

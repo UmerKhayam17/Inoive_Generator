@@ -10,6 +10,7 @@ export const INDUSTRY_POSTS_B: PostDraft[] = [
     date: "2026-10-22",
     author: "Invoice Creator Editorial Team",
     related: [
+      "vacation-rental-invoice-template",
       "property-management-invoice-template",
       "hotel-invoice-template",
       "recurring-invoices-guide",
@@ -165,6 +166,7 @@ export const INDUSTRY_POSTS_B: PostDraft[] = [
     date: "2026-10-22",
     author: "Invoice Creator Editorial Team",
     related: [
+      "superbill-template",
       "home-health-care-invoice-template",
       "itemized-invoice",
       "payment-receipt-template",
@@ -319,7 +321,12 @@ export const INDUSTRY_POSTS_B: PostDraft[] = [
     category: "industry-invoices",
     date: "2026-10-22",
     author: "Invoice Creator Editorial Team",
-    related: ["retainer-invoice", "how-to-invoice-for-hourly-work", "invoice-dispute"],
+    related: [
+      "notary-invoice-template",
+      "retainer-invoice",
+      "how-to-invoice-for-hourly-work",
+      "invoice-dispute",
+    ],
     faqs: [
       {
         q: "What should be on an attorney invoice?",
@@ -456,7 +463,12 @@ export const INDUSTRY_POSTS_B: PostDraft[] = [
     category: "industry-invoices",
     date: "2026-10-22",
     author: "Invoice Creator Editorial Team",
-    related: ["invoice-factoring", "accounts-receivable-aging-report", "how-to-get-paid-faster"],
+    related: [
+      "towing-invoice-template",
+      "invoice-factoring",
+      "accounts-receivable-aging-report",
+      "how-to-get-paid-faster",
+    ],
     faqs: [
       {
         q: "What documents do I send with a trucking invoice?",
@@ -599,6 +611,7 @@ export const INDUSTRY_POSTS_B: PostDraft[] = [
     date: "2026-10-22",
     author: "Invoice Creator Editorial Team",
     related: [
+      "towing-invoice-template",
       "car-rental-invoice-template",
       "itemized-invoice",
       "invoice-vs-estimate",
@@ -755,6 +768,7 @@ export const INDUSTRY_POSTS_B: PostDraft[] = [
     date: "2026-10-22",
     author: "Invoice Creator Editorial Team",
     related: [
+      "web-design-pricing",
       "app-developer-invoice-template",
       "it-managed-services-invoice-template",
       "milestone-payments",
@@ -898,6 +912,7 @@ export const INDUSTRY_POSTS_B: PostDraft[] = [
     date: "2026-10-22",
     author: "Invoice Creator Editorial Team",
     related: [
+      "music-lesson-invoice-template",
       "school-fee-voucher-format",
       "how-to-invoice-for-hourly-work",
       "recurring-invoices-guide",
@@ -1051,6 +1066,7 @@ export const INDUSTRY_POSTS_B: PostDraft[] = [
     date: "2026-10-22",
     author: "Invoice Creator Editorial Team",
     related: [
+      "bakery-invoice-template",
       "restaurant-bill-format",
       "deposit-invoice",
       "invoice-vs-quotation",
@@ -1204,7 +1220,12 @@ export const INDUSTRY_POSTS_B: PostDraft[] = [
     category: "industry-invoices",
     date: "2026-10-22",
     author: "Invoice Creator Editorial Team",
-    related: ["plumbing-invoice-template", "electrician-invoice-template", "recurring-invoices-guide"],
+    related: [
+      "appliance-repair-invoice-template",
+      "plumbing-invoice-template",
+      "electrician-invoice-template",
+      "recurring-invoices-guide",
+    ],
     faqs: [
       {
         q: "What should be on an HVAC invoice?",

@@ -10,6 +10,7 @@ export const INDUSTRY_POSTS_E: PostDraft[] = [
     date: "2026-10-27",
     author: "Invoice Creator Editorial Team",
     related: [
+      "editing-proofreading-invoice-template",
       "freelance-invoice-template",
       "foreign-currency-invoice",
       "how-to-invoice-for-hourly-work",
@@ -492,6 +493,7 @@ export const INDUSTRY_POSTS_E: PostDraft[] = [
     date: "2026-10-27",
     author: "Invoice Creator Editorial Team",
     related: [
+      "home-inspection-invoice-template",
       "recurring-invoices-guide",
       "landscaping-invoice-template",
       "sales-tax-on-invoices-us",

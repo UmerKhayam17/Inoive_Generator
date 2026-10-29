@@ -347,6 +347,7 @@ export const US_TAX_2026_B_POSTS: PostDraft[] = [
     author: "Invoice Creator Editorial Team",
     jurisdiction: "United States",
     related: [
+      "standard-mileage-vs-actual-expenses",
       "how-to-calculate-depreciation",
       "capex-vs-opex",
       "one-big-beautiful-bill-small-business",
@@ -500,6 +501,7 @@ export const US_TAX_2026_B_POSTS: PostDraft[] = [
     author: "Invoice Creator Editorial Team",
     jurisdiction: "United States",
     related: [
+      "federal-tax-brackets-2026",
       "one-big-beautiful-bill-small-business",
       "schedule-c-for-freelancers",
       "s-corp-vs-llc",

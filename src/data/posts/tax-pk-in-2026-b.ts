@@ -658,7 +658,12 @@ export const TAX_PK_IN_2026_B_POSTS: PostDraft[] = [
     category: "tax-compliance",
     date: "2026-10-28",
     author: "Invoice Creator Editorial Team",
-    related: ["gst-registration-india", "gst-invoice-guide", "gst-return-filing-india"],
+    related: [
+      "bill-of-supply-gst",
+      "gst-registration-india",
+      "gst-invoice-guide",
+      "gst-return-filing-india",
+    ],
     jurisdiction: "India",
     faqs: [
       {

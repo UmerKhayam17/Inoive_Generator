@@ -38,7 +38,7 @@ export const PAYMENTS_2026_POSTS: PostDraft[] = [
       },
       {
         q: "What if a client sends less or more USDC than the invoice amount?",
-        a: "Treat it like any short payment or overpayment. If they sent less, often because network fees came out of the amount, record what arrived and ask for the difference as a separate transfer, pointing to your \"sender pays network fees\" term. If they sent too much, agree whether to refund the excess to a confirmed address or credit it to the next invoice, and document the choice on a statement or credit note.",
+        a: 'Treat it like any short payment or overpayment. If they sent less, often because network fees came out of the amount, record what arrived and ask for the difference as a separate transfer, pointing to your "sender pays network fees" term. If they sent too much, agree whether to refund the excess to a confirmed address or credit it to the next invoice, and document the choice on a statement or credit note.',
       },
       {
         q: "Should I accept USDT as well as USDC?",
@@ -682,7 +682,11 @@ export const PAYMENTS_2026_POSTS: PostDraft[] = [
     date: "2026-10-24",
     author: "Invoice Creator Editorial Team",
     jurisdiction: "General",
-    related: ["how-to-accept-credit-card-payments", "add-payment-link-to-invoice", "early-payment-discount"],
+    related: [
+      "how-to-accept-credit-card-payments",
+      "add-payment-link-to-invoice",
+      "early-payment-discount",
+    ],
     faqs: [
       {
         q: "Can I add a credit card fee to an invoice I have already sent?",
@@ -864,6 +868,7 @@ export const PAYMENTS_2026_POSTS: PostDraft[] = [
     date: "2026-10-24",
     author: "Invoice Creator Editorial Team",
     related: [
+      "jazzcash-easypaisa-business-account",
       "payment-gateway-pakistan",
       "receive-payment-from-abroad-pakistan",
       "sales-tax-invoice-pakistan",
@@ -900,7 +905,7 @@ export const PAYMENTS_2026_POSTS: PostDraft[] = [
       },
       {
         q: "What if a customer's banking app doesn't show a Raast option?",
-        a: "Most banks, microfinance banks and many wallets are connected to Raast, but the option may be named differently in the app, such as \"send via Raast ID\" or \"IBAN transfer.\" If the customer can't find it, they can usually pay to your IBAN, which may route through Raast or IBFT depending on their bank. Keep your IBAN on every invoice as a fallback so the payment method never holds up payment.",
+        a: 'Most banks, microfinance banks and many wallets are connected to Raast, but the option may be named differently in the app, such as "send via Raast ID" or "IBAN transfer." If the customer can\'t find it, they can usually pay to your IBAN, which may route through Raast or IBFT depending on their bank. Keep your IBAN on every invoice as a fallback so the payment method never holds up payment.',
       },
       {
         q: "What should I do if a customer says they paid by Raast but nothing arrived?",
@@ -1049,7 +1054,12 @@ export const PAYMENTS_2026_POSTS: PostDraft[] = [
     date: "2026-10-24",
     author: "Invoice Creator Editorial Team",
     jurisdiction: "United Kingdom",
-    related: ["uk-late-payment-law-2026", "late-payment-fees", "overdue-invoice"],
+    related: [
+      "demand-letter-for-payment",
+      "uk-late-payment-law-2026",
+      "late-payment-fees",
+      "overdue-invoice",
+    ],
     faqs: [
       {
         q: "Do I charge late payment interest on the VAT part of an invoice?",

@@ -10,6 +10,7 @@ export const PLATFORM_SOFTWARE_POSTS: PostDraft[] = [
     date: "2026-10-23",
     author: "Invoice Creator Editorial Team",
     related: [
+      "paypal-goods-and-services-vs-friends-and-family",
       "paypal-fees",
       "stripe-invoicing-guide",
       "add-payment-link-to-invoice",
@@ -146,6 +147,7 @@ export const PLATFORM_SOFTWARE_POSTS: PostDraft[] = [
     date: "2026-10-23",
     author: "Invoice Creator Editorial Team",
     related: [
+      "stripe-fees",
       "stripe-vs-paypal",
       "embedded-finance-invoicing",
       "add-payment-link-to-invoice",
@@ -295,7 +297,12 @@ export const PLATFORM_SOFTWARE_POSTS: PostDraft[] = [
     category: "payments",
     date: "2026-10-23",
     author: "Invoice Creator Editorial Team",
-    related: ["1099-k-threshold", "how-to-send-paypal-invoice", "add-payment-link-to-invoice"],
+    related: [
+      "venmo-business-fees",
+      "1099-k-threshold",
+      "how-to-send-paypal-invoice",
+      "add-payment-link-to-invoice",
+    ],
     faqs: [
       {
         q: "Can you send an invoice through Zelle?",
@@ -438,7 +445,12 @@ export const PLATFORM_SOFTWARE_POSTS: PostDraft[] = [
     category: "payments",
     date: "2026-10-23",
     author: "Invoice Creator Editorial Team",
-    related: ["stripe-invoicing-guide", "how-to-accept-credit-card-payments", "how-to-send-paypal-invoice"],
+    related: [
+      "venmo-business-fees",
+      "stripe-invoicing-guide",
+      "how-to-accept-credit-card-payments",
+      "how-to-send-paypal-invoice",
+    ],
     faqs: [
       {
         q: "How much does Square charge per invoice?",
@@ -725,6 +737,7 @@ export const PLATFORM_SOFTWARE_POSTS: PostDraft[] = [
     author: "Invoice Creator Editorial Team",
     jurisdiction: "Pakistan",
     related: [
+      "pseb-registration-freelancers",
       "w-8ben-form-freelancers",
       "how-to-start-freelancing-in-pakistan",
       "invoice-international-clients",
@@ -860,6 +873,7 @@ export const PLATFORM_SOFTWARE_POSTS: PostDraft[] = [
     date: "2026-10-23",
     author: "Invoice Creator Editorial Team",
     related: [
+      "upwork-fees",
       "upwork-vs-fiverr",
       "freelancer-invoice-guide",
       "wise-vs-payoneer",
@@ -1168,7 +1182,11 @@ export const PLATFORM_SOFTWARE_POSTS: PostDraft[] = [
     category: "comparisons",
     date: "2026-10-23",
     author: "Invoice Creator Editorial Team",
-    related: ["best-free-invoicing-software", "invoice2go-alternatives", "freshbooks-vs-quickbooks"],
+    related: [
+      "best-free-invoicing-software",
+      "invoice2go-alternatives",
+      "freshbooks-vs-quickbooks",
+    ],
     faqs: [
       {
         q: "Is Invoice Simple free?",

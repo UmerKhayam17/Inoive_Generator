@@ -303,7 +303,12 @@ export const TAX_GLOBAL_2026_B_POSTS: PostDraft[] = [
     date: "2026-10-28",
     author: "Invoice Creator Editorial Team",
     jurisdiction: "India",
-    related: ["section-44ada-freelancers", "tds-on-professional-fees", "gst-invoice-guide"],
+    related: [
+      "section-44ad",
+      "section-44ada-freelancers",
+      "tds-on-professional-fees",
+      "gst-invoice-guide",
+    ],
     faqs: [
       {
         q: "When did the Income Tax Act 2025 come into force?",
@@ -450,6 +455,7 @@ export const TAX_GLOBAL_2026_B_POSTS: PostDraft[] = [
     author: "Invoice Creator Editorial Team",
     jurisdiction: "India",
     related: [
+      "section-44ad",
       "income-tax-act-2025-india",
       "tds-on-professional-fees",
       "self-employed-tax-deductions",

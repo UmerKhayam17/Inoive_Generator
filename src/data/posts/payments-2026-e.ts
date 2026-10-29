@@ -10,7 +10,12 @@ export const PAYMENTS_2026_E_POSTS: PostDraft[] = [
     date: "2026-10-28",
     author: "Invoice Creator Editorial Team",
     jurisdiction: "United States",
-    related: ["ach-vs-wire-transfer", "nacha-2026-rules", "how-to-accept-credit-card-payments"],
+    related: [
+      "what-is-a-voided-check",
+      "ach-vs-wire-transfer",
+      "nacha-2026-rules",
+      "how-to-accept-credit-card-payments",
+    ],
     faqs: [
       {
         q: "How do I accept ACH payments as a small business?",
@@ -322,7 +327,12 @@ export const PAYMENTS_2026_E_POSTS: PostDraft[] = [
     category: "payments",
     date: "2026-10-28",
     author: "Invoice Creator Editorial Team",
-    related: ["invoice-international-clients", "foreign-currency-invoice", "wise-vs-paypal"],
+    related: [
+      "how-long-does-a-wire-transfer-take",
+      "invoice-international-clients",
+      "foreign-currency-invoice",
+      "wise-vs-paypal",
+    ],
     faqs: [
       {
         q: "What are cross-border payment fees?",
@@ -638,7 +648,12 @@ export const PAYMENTS_2026_E_POSTS: PostDraft[] = [
     date: "2026-10-28",
     author: "Invoice Creator Editorial Team",
     jurisdiction: "United States",
-    related: ["how-to-send-paypal-invoice", "stripe-vs-paypal", "wise-vs-paypal"],
+    related: [
+      "paypal-goods-and-services-vs-friends-and-family",
+      "how-to-send-paypal-invoice",
+      "stripe-vs-paypal",
+      "wise-vs-paypal",
+    ],
     faqs: [
       {
         q: "How much does PayPal charge a business per transaction?",

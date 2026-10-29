@@ -11,6 +11,7 @@ export const TAX_COMPLIANCE_2026_POSTS: PostDraft[] = [
     date: "2026-10-27",
     author: "Invoice Creator Editorial Team",
     related: [
+      "japan-qualified-invoice-system",
       "canada-gst-hst-invoice-requirements",
       "tax-invoice-guide",
       "tax-id-on-invoice",
@@ -184,7 +185,12 @@ export const TAX_COMPLIANCE_2026_POSTS: PostDraft[] = [
     jurisdiction: "General",
     date: "2026-10-27",
     author: "Invoice Creator Editorial Team",
-    related: ["sales-tax-on-invoices-us", "vat-invoice-guide", "gst-invoice-guide"],
+    related: [
+      "how-to-calculate-vat",
+      "sales-tax-on-invoices-us",
+      "vat-invoice-guide",
+      "gst-invoice-guide",
+    ],
     faqs: [
       {
         q: "What is the main difference between sales tax and VAT?",
@@ -341,6 +347,7 @@ export const TAX_COMPLIANCE_2026_POSTS: PostDraft[] = [
     date: "2026-10-27",
     author: "Invoice Creator Editorial Team",
     related: [
+      "mexico-cfdi-invoice",
       "tds-on-professional-fees",
       "active-taxpayer-list-pakistan",
       "sales-tax-invoice-pakistan",

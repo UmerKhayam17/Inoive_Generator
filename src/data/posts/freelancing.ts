@@ -10,6 +10,7 @@ export const FREELANCING_POSTS: PostDraft[] = [
     date: "2026-10-22",
     author: "Invoice Creator Editorial Team",
     related: [
+      "how-much-to-charge-for-house-cleaning",
       "value-based-pricing",
       "salary-increase-percentage",
       "freelancer-invoice-guide",
@@ -166,6 +167,7 @@ export const FREELANCING_POSTS: PostDraft[] = [
     date: "2026-10-22",
     author: "Invoice Creator Editorial Team",
     related: [
+      "how-to-start-a-photography-business",
       "client-onboarding-checklist",
       "ai-generated-work-copyright",
       "freelance-proposal-template",
@@ -304,6 +306,7 @@ export const FREELANCING_POSTS: PostDraft[] = [
     date: "2026-10-22",
     author: "Invoice Creator Editorial Team",
     related: [
+      "life-coach-invoice-template",
       "bookkeeping-services-invoice-template",
       "marketing-agency-invoice-template",
       "recurring-invoices-guide",
@@ -447,6 +450,7 @@ export const FREELANCING_POSTS: PostDraft[] = [
     date: "2026-10-22",
     author: "Invoice Creator Editorial Team",
     related: [
+      "promissory-note-template",
       "how-to-fire-a-client",
       "payment-reminder-emails",
       "late-payment-fees",
@@ -597,6 +601,7 @@ export const FREELANCING_POSTS: PostDraft[] = [
     author: "Invoice Creator Editorial Team",
     jurisdiction: "United States",
     related: [
+      "notary-invoice-template",
       "salary-slip-format",
       "w9-and-1099-for-contractors",
       "freelance-invoice-template",
@@ -730,6 +735,7 @@ export const FREELANCING_POSTS: PostDraft[] = [
     date: "2026-10-22",
     author: "Invoice Creator Editorial Team",
     related: [
+      "freelance-writing-rates",
       "translation-invoice-template",
       "freelancer-invoice-guide",
       "invoice-examples",
@@ -886,6 +892,7 @@ export const FREELANCING_POSTS: PostDraft[] = [
     date: "2026-10-22",
     author: "Invoice Creator Editorial Team",
     related: [
+      "what-is-a-dba",
       "hobby-vs-business",
       "llc-vs-sole-proprietorship",
       "what-is-an-invoice",
@@ -1018,6 +1025,7 @@ export const FREELANCING_POSTS: PostDraft[] = [
     date: "2026-10-22",
     author: "Invoice Creator Editorial Team",
     related: [
+      "web-design-pricing",
       "escrow-payments",
       "deposit-invoice",
       "freelance-contract-template",
