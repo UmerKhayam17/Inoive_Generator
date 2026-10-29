@@ -1039,6 +1039,7 @@ export const BASICS_COMPARISONS_2026_POSTS: PostDraft[] = [
     date: "2026-10-27",
     author: "Invoice Creator Editorial Team",
     related: [
+      "waybill-vs-bill-of-lading",
       "freight-invoice",
       "commercial-invoice-template",
       "incoterms-on-invoice",

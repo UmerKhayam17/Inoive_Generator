@@ -357,7 +357,12 @@ export const TEMPLATES_2026_C_POSTS: PostDraft[] = [
     category: "design-templates",
     date: "2026-10-29",
     author: "Invoice Creator Editorial Team",
-    related: ["how-to-price-a-product", "how-to-raise-prices", "quotation-format"],
+    related: [
+      "upholstery-invoice-template",
+      "how-to-price-a-product",
+      "how-to-raise-prices",
+      "quotation-format",
+    ],
     faqs: [
       {
         q: "What is the difference between a price list and a quote?",

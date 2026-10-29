@@ -311,6 +311,7 @@ export const INDUSTRY_POSTS_F: PostDraft[] = [
     date: "2026-10-27",
     author: "Invoice Creator Editorial Team",
     related: [
+      "limo-service-invoice-template",
       "equipment-rental-invoice-template",
       "deposit-invoice",
       "itemized-invoice",

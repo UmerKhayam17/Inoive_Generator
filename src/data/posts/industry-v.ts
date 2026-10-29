@@ -9,7 +9,12 @@ export const INDUSTRY_POSTS_V: PostDraft[] = [
     category: "industry-invoices",
     date: "2026-10-29",
     author: "Invoice Creator Editorial Team",
-    related: ["graphic-design-invoice-template", "estimate-template", "resale-certificate"],
+    related: [
+      "screen-printing-invoice-template",
+      "graphic-design-invoice-template",
+      "estimate-template",
+      "resale-certificate",
+    ],
     faqs: [
       {
         q: "What is a setup fee on a printing invoice?",
@@ -183,7 +188,12 @@ Client: Brightsmile Dental Group | PO: BSD-221 | Estimate: EST-26-0412 | Job: Fa
     category: "industry-invoices",
     date: "2026-10-29",
     author: "Invoice Creator Editorial Team",
-    related: ["salon-invoice-template", "price-list-template", "payment-receipt-template"],
+    related: [
+      "embroidery-invoice-template",
+      "salon-invoice-template",
+      "price-list-template",
+      "payment-receipt-template",
+    ],
     faqs: [
       {
         q: "How do tailors price alterations?",
@@ -374,7 +384,12 @@ Customer: Marcus Bell, (512) 555-0147</p>
     category: "industry-invoices",
     date: "2026-10-29",
     author: "Invoice Creator Editorial Team",
-    related: ["timesheet-template", "markup-vs-margin", "how-to-invoice-for-overtime"],
+    related: [
+      "recruiter-invoice-template",
+      "timesheet-template",
+      "markup-vs-margin",
+      "how-to-invoice-for-overtime",
+    ],
     faqs: [
       {
         q: "What is the difference between bill rate and pay rate?",

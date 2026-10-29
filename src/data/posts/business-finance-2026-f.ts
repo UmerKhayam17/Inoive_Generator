@@ -173,7 +173,12 @@ export const BUSINESS_FINANCE_2026_F_POSTS: PostDraft[] = [
     category: "business-finance",
     date: "2026-10-29",
     author: "Invoice Creator Editorial Team",
-    related: ["how-to-start-a-small-business", "startup-costs", "sales-forecast"],
+    related: [
+      "how-to-start-a-laundromat",
+      "how-to-start-a-small-business",
+      "startup-costs",
+      "sales-forecast",
+    ],
     faqs: [
       {
         q: "How long should a business plan be?",
@@ -419,6 +424,7 @@ export const BUSINESS_FINANCE_2026_F_POSTS: PostDraft[] = [
     date: "2026-10-29",
     author: "Invoice Creator Editorial Team",
     related: [
+      "business-insurance",
       "how-to-start-a-small-business",
       "business-plan-template",
       "self-employed-tax-deductions",

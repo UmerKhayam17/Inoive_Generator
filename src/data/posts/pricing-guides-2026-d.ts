@@ -644,6 +644,7 @@ export const PRICING_GUIDES_2026_D_POSTS: PostDraft[] = [
     date: "2026-10-29",
     author: "Invoice Creator Editorial Team",
     related: [
+      "hr-consultant-invoice-template",
       "consulting-invoice-template",
       "value-based-pricing",
       "how-to-set-freelance-rates",

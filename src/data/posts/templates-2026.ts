@@ -166,7 +166,12 @@ export const TEMPLATES_2026_POSTS: PostDraft[] = [
     category: "design-templates",
     date: "2026-10-27",
     author: "Invoice Creator Editorial Team",
-    related: ["payment-receipt-template", "invoice-vs-receipt", "how-long-to-keep-invoices"],
+    related: [
+      "nonprofit-invoice-template",
+      "payment-receipt-template",
+      "invoice-vs-receipt",
+      "how-long-to-keep-invoices",
+    ],
     faqs: [
       {
         q: "What must a donation receipt include for the IRS?",

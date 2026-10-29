@@ -200,6 +200,7 @@ export const INVOICING_BASICS_2026_D_POSTS: PostDraft[] = [
     date: "2026-10-29",
     author: "Invoice Creator Editorial Team",
     related: [
+      "siding-installation-invoice-template",
       "contractor-invoice-template",
       "handyman-invoice-template",
       "markup-vs-margin",

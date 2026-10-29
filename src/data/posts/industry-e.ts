@@ -336,7 +336,12 @@ export const INDUSTRY_POSTS_E: PostDraft[] = [
     category: "industry-invoices",
     date: "2026-10-27",
     author: "Invoice Creator Editorial Team",
-    related: ["construction-invoice-guide", "milestone-payments", "consulting-invoice-template"],
+    related: [
+      "engineering-invoice-template",
+      "construction-invoice-guide",
+      "milestone-payments",
+      "consulting-invoice-template",
+    ],
     faqs: [
       {
         q: "How do architects usually bill clients?",
@@ -645,6 +650,7 @@ export const INDUSTRY_POSTS_E: PostDraft[] = [
     date: "2026-10-27",
     author: "Invoice Creator Editorial Team",
     related: [
+      "av-installation-invoice-template",
       "cybersecurity-consultant-invoice-template",
       "recurring-invoices-guide",
       "prorated-invoice",

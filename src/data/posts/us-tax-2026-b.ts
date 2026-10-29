@@ -348,6 +348,7 @@ export const US_TAX_2026_B_POSTS: PostDraft[] = [
     author: "Invoice Creator Editorial Team",
     jurisdiction: "United States",
     related: [
+      "how-to-start-a-photo-booth-business",
       "standard-mileage-vs-actual-expenses",
       "how-to-calculate-depreciation",
       "capex-vs-opex",

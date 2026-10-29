@@ -293,6 +293,7 @@ export const INDUSTRY_POSTS_T: PostDraft[] = [
     date: "2026-10-29",
     author: "Invoice Creator Editorial Team",
     related: [
+      "youtube-sponsorship-invoice-template",
       "ugc-creator-invoice",
       "social-media-manager-invoice-template",
       "model-invoice-template",
@@ -570,7 +571,12 @@ export const INDUSTRY_POSTS_T: PostDraft[] = [
     category: "industry-invoices",
     date: "2026-10-29",
     author: "Invoice Creator Editorial Team",
-    related: ["illustrator-invoice-template", "illustration-pricing", "deposit-invoice"],
+    related: [
+      "jewelry-invoice-template",
+      "illustrator-invoice-template",
+      "illustration-pricing",
+      "deposit-invoice",
+    ],
     faqs: [
       {
         q: "How much deposit should I take for an art commission?",

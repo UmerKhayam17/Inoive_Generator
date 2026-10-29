@@ -919,6 +919,7 @@ export const INDUSTRY_POSTS_A: PostDraft[] = [
     date: "2026-10-22",
     author: "Invoice Creator Editorial Team",
     related: [
+      "ev-charger-installation-invoice-template",
       "solar-installation-invoice-template",
       "contractor-invoice-template",
       "plumbing-invoice-template",

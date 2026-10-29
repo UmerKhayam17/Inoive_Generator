@@ -370,7 +370,12 @@ export const INVOICING_BASICS_2026_G_POSTS: PostDraft[] = [
     category: "invoicing-basics",
     date: "2026-10-29",
     author: "Invoice Creator Editorial Team",
-    related: ["markup-vs-margin", "time-and-materials-invoice", "cost-plus-pricing"],
+    related: [
+      "furniture-maker-invoice-template",
+      "markup-vs-margin",
+      "time-and-materials-invoice",
+      "cost-plus-pricing",
+    ],
     faqs: [
       {
         q: "Is it legal to mark up materials?",

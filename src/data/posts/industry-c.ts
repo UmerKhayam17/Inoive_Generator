@@ -10,6 +10,7 @@ export const INDUSTRY_POSTS_C: PostDraft[] = [
     date: "2026-10-23",
     author: "Invoice Creator Editorial Team",
     related: [
+      "how-to-bill-insurance-companies-as-a-contractor",
       "gutter-cleaning-invoice-template",
       "construction-invoice-guide",
       "contractor-invoice-template",
@@ -316,6 +317,7 @@ export const INDUSTRY_POSTS_C: PostDraft[] = [
     date: "2026-10-23",
     author: "Invoice Creator Editorial Team",
     related: [
+      "car-wash-invoice-template",
       "window-cleaning-invoice-template",
       "pool-cleaning-invoice-template",
       "recurring-invoices-guide",
@@ -773,6 +775,7 @@ export const INDUSTRY_POSTS_C: PostDraft[] = [
     date: "2026-10-23",
     author: "Invoice Creator Editorial Team",
     related: [
+      "wedding-planner-invoice-template",
       "how-to-start-an-event-planning-business",
       "florist-invoice-template",
       "dj-invoice-template",
@@ -1384,6 +1387,7 @@ export const INDUSTRY_POSTS_C: PostDraft[] = [
     author: "Invoice Creator Editorial Team",
     jurisdiction: "United States",
     related: [
+      "how-to-start-a-moving-company",
       "junk-removal-invoice-template",
       "invoice-vs-estimate",
       "deposit-invoice",

@@ -416,6 +416,7 @@ export const PRICING_GUIDES_2026_B_POSTS: PostDraft[] = [
     date: "2026-10-29",
     author: "Invoice Creator Editorial Team",
     related: [
+      "grant-writer-invoice-template",
       "how-to-become-a-freelance-writer",
       "copywriter-invoice-template",
       "how-to-set-freelance-rates",

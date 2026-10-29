@@ -551,7 +551,12 @@ export const INVOICING_BASICS_2026_F_POSTS: PostDraft[] = [
     category: "invoicing-basics",
     date: "2026-10-29",
     author: "Invoice Creator Editorial Team",
-    related: ["how-to-bill-for-travel-time", "hvac-invoice-template", "plumbing-invoice-template"],
+    related: [
+      "mobile-mechanic-invoice-template",
+      "how-to-bill-for-travel-time",
+      "hvac-invoice-template",
+      "plumbing-invoice-template",
+    ],
     faqs: [
       {
         q: "Is a service call fee the same as a diagnostic fee?",

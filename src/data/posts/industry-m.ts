@@ -327,6 +327,7 @@ export const INDUSTRY_POSTS_M: PostDraft[] = [
     date: "2026-10-29",
     author: "Invoice Creator Editorial Team",
     related: [
+      "phone-repair-invoice-template",
       "hvac-invoice-template",
       "handyman-invoice-template",
       "work-order-template",

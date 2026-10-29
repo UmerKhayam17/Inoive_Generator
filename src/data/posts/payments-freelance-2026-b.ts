@@ -600,7 +600,12 @@ export const PAYMENTS_FREELANCE_2026_B_POSTS: PostDraft[] = [
     category: "payments",
     date: "2026-10-27",
     author: "Invoice Creator Editorial Team",
-    related: ["payment-receipt-template", "payment-reminder-emails", "partial-payment-invoice"],
+    related: [
+      "thank-you-for-your-payment-message",
+      "payment-receipt-template",
+      "payment-reminder-emails",
+      "partial-payment-invoice",
+    ],
     faqs: [
       {
         q: "What should a payment confirmation email include?",

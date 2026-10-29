@@ -348,6 +348,7 @@ export const INDUSTRY_POSTS_J: PostDraft[] = [
     author: "Invoice Creator Editorial Team",
     jurisdiction: "United States",
     related: [
+      "therapist-invoice-template",
       "dental-invoice-template",
       "medical-invoice-template",
       "itemized-invoice",

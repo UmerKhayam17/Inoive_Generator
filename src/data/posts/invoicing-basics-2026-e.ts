@@ -9,7 +9,12 @@ export const INVOICING_BASICS_2026_E_POSTS: PostDraft[] = [
     category: "invoicing-basics",
     date: "2026-10-29",
     author: "Invoice Creator Editorial Team",
-    related: ["invoice-payment-terms", "net-60-net-90-payment-terms", "2-10-net-30"],
+    related: [
+      "end-of-month-payment-terms",
+      "invoice-payment-terms",
+      "net-60-net-90-payment-terms",
+      "2-10-net-30",
+    ],
     faqs: [
       {
         q: "Does net 30 include weekends and holidays?",
@@ -386,7 +391,12 @@ export const INVOICING_BASICS_2026_E_POSTS: PostDraft[] = [
     category: "invoicing-basics",
     date: "2026-10-29",
     author: "Invoice Creator Editorial Team",
-    related: ["construction-invoice-guide", "aia-g702-g703-billing", "retainage-invoice"],
+    related: [
+      "sign-company-invoice-template",
+      "construction-invoice-guide",
+      "aia-g702-g703-billing",
+      "retainage-invoice",
+    ],
     faqs: [
       {
         q: "Is progress billing the same as milestone billing?",
@@ -574,7 +584,12 @@ export const INVOICING_BASICS_2026_E_POSTS: PostDraft[] = [
     category: "invoicing-basics",
     date: "2026-10-29",
     author: "Invoice Creator Editorial Team",
-    related: ["progress-billing", "construction-invoice-guide", "lien-waiver"],
+    related: [
+      "asphalt-paving-invoice-template",
+      "progress-billing",
+      "construction-invoice-guide",
+      "lien-waiver",
+    ],
     faqs: [
       {
         q: "Is retainage the same as a retainer?",

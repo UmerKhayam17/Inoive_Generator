@@ -328,6 +328,7 @@ export const INDUSTRY_POSTS_H: PostDraft[] = [
     date: "2026-10-28",
     author: "Invoice Creator Editorial Team",
     related: [
+      "computer-repair-invoice-template",
       "consulting-invoice-template",
       "it-managed-services-invoice-template",
       "statement-of-work-template",
@@ -506,7 +507,12 @@ export const INDUSTRY_POSTS_H: PostDraft[] = [
     category: "industry-invoices",
     date: "2026-10-28",
     author: "Invoice Creator Editorial Team",
-    related: ["web-development-invoice-template", "milestone-payments", "scope-creep-change-order"],
+    related: [
+      "software-development-invoice-template",
+      "web-development-invoice-template",
+      "milestone-payments",
+      "scope-creep-change-order",
+    ],
     faqs: [
       {
         q: "What should an app development invoice include?",

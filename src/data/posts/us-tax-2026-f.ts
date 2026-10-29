@@ -189,7 +189,12 @@ export const US_TAX_2026_F_POSTS: PostDraft[] = [
     date: "2026-10-29",
     author: "Invoice Creator Editorial Team",
     jurisdiction: "United States",
-    related: ["sales-tax-by-state", "sales-tax-nexus", "sales-tax-on-invoices-us"],
+    related: [
+      "photo-booth-invoice-template",
+      "sales-tax-by-state",
+      "sales-tax-nexus",
+      "sales-tax-on-invoices-us",
+    ],
     faqs: [
       {
         q: "Are consulting services subject to sales tax?",

@@ -561,6 +561,7 @@ export const PROCUREMENT_TRADE_2026_POSTS: PostDraft[] = [
     date: "2026-10-27",
     author: "Invoice Creator Editorial Team",
     related: [
+      "fob-shipping-point-vs-destination",
       "commercial-invoice-template",
       "hs-code-on-commercial-invoice",
       "proforma-invoice-guide",

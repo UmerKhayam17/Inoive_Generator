@@ -9,7 +9,12 @@ export const BASICS_2026_C_POSTS: PostDraft[] = [
     category: "invoicing-basics",
     date: "2026-10-28",
     author: "Invoice Creator Editorial Team",
-    related: ["statement-of-account", "itemized-invoice", "po-number-on-invoice"],
+    related: [
+      "batch-invoicing",
+      "statement-of-account",
+      "itemized-invoice",
+      "po-number-on-invoice",
+    ],
     faqs: [
       {
         q: "What is a consolidated invoice?",

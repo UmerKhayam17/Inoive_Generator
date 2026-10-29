@@ -9,7 +9,12 @@ export const START_BUSINESS_2026_E_POSTS: PostDraft[] = [
     category: "business-finance",
     date: "2026-10-29",
     author: "Invoice Creator Editorial Team",
-    related: ["startup-costs", "business-plan-template", "how-to-start-an-llc"],
+    related: [
+      "small-business-grants",
+      "startup-costs",
+      "business-plan-template",
+      "how-to-start-an-llc",
+    ],
     faqs: [
       {
         q: "How much money do I need to start a small business?",
@@ -200,6 +205,7 @@ export const START_BUSINESS_2026_E_POSTS: PostDraft[] = [
     date: "2026-10-29",
     author: "Invoice Creator Editorial Team",
     related: [
+      "how-to-start-a-dropshipping-business",
       "ecommerce-invoice-shopify-woocommerce",
       "sales-tax-nexus",
       "how-to-start-a-small-business",
@@ -384,6 +390,7 @@ export const START_BUSINESS_2026_E_POSTS: PostDraft[] = [
     date: "2026-10-29",
     author: "Invoice Creator Editorial Team",
     related: [
+      "how-to-start-a-car-wash-business",
       "car-detailing-invoice-template",
       "how-to-start-a-pressure-washing-business",
       "how-to-start-a-small-business",

@@ -10,6 +10,7 @@ export const INDUSTRY_POSTS_Q: PostDraft[] = [
     date: "2026-10-29",
     author: "Invoice Creator Editorial Team",
     related: [
+      "sprinkler-irrigation-invoice-template",
       "landscaping-invoice-template",
       "how-much-to-charge-for-lawn-mowing",
       "recurring-invoices-guide",
@@ -329,6 +330,7 @@ export const INDUSTRY_POSTS_Q: PostDraft[] = [
     date: "2026-10-29",
     author: "Invoice Creator Editorial Team",
     related: [
+      "chimney-sweep-invoice-template",
       "concrete-invoice-template",
       "construction-invoice-guide",
       "scope-creep-change-order",
@@ -492,6 +494,7 @@ export const INDUSTRY_POSTS_Q: PostDraft[] = [
     date: "2026-10-29",
     author: "Invoice Creator Editorial Team",
     related: [
+      "demolition-invoice-template",
       "construction-invoice-guide",
       "time-and-materials-invoice",
       "contractor-invoice-template",
@@ -652,7 +655,12 @@ export const INDUSTRY_POSTS_Q: PostDraft[] = [
     category: "industry-invoices",
     date: "2026-10-29",
     author: "Invoice Creator Editorial Team",
-    related: ["progress-billing", "contractor-invoice-template", "scope-creep-change-order"],
+    related: [
+      "water-damage-restoration-invoice-template",
+      "progress-billing",
+      "contractor-invoice-template",
+      "scope-creep-change-order",
+    ],
     faqs: [
       {
         q: "What is an allowance on a remodeling invoice?",

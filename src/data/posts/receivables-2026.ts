@@ -159,6 +159,7 @@ export const RECEIVABLES_2026_POSTS: PostDraft[] = [
     date: "2026-10-27",
     author: "Invoice Creator Editorial Team",
     related: [
+      "lockbox-services",
       "paid-invoice-template",
       "ai-agents-accounts-receivable",
       "bank-reconciliation",

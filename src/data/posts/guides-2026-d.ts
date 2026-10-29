@@ -175,7 +175,12 @@ export const GUIDES_2026_D_POSTS: PostDraft[] = [
     category: "guides",
     date: "2026-10-29",
     author: "Invoice Creator Editorial Team",
-    related: ["ecommerce-invoice-shopify-woocommerce", "vat-invoice-guide", "etsy-invoice"],
+    related: [
+      "how-to-start-an-amazon-fba-business",
+      "ecommerce-invoice-shopify-woocommerce",
+      "vat-invoice-guide",
+      "etsy-invoice",
+    ],
     faqs: [
       {
         q: "How do I get an invoice for an Amazon order?",

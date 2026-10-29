@@ -10,6 +10,7 @@ export const PAYMENTS_POSTS: PostDraft[] = [
     date: "2026-10-22",
     author: "Invoice Creator Editorial Team",
     related: [
+      "virtual-terminal",
       "best-payment-methods-for-small-business",
       "virtual-cards-for-business",
       "apple-pay-google-pay-business",
@@ -173,6 +174,7 @@ export const PAYMENTS_POSTS: PostDraft[] = [
     date: "2026-10-22",
     author: "Invoice Creator Editorial Team",
     related: [
+      "how-to-send-invoice-on-whatsapp",
       "how-to-accept-credit-card-payments",
       "bank-details-on-invoice",
       "how-to-send-an-invoice",
@@ -922,6 +924,7 @@ Thank you for your payment.</blockquote>
     date: "2026-10-22",
     author: "Invoice Creator Editorial Team",
     related: [
+      "dunning-process",
       "prompt-payment-act",
       "payment-reminder-emails",
       "invoice-collections",

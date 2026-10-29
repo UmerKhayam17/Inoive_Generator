@@ -719,7 +719,12 @@ Client: Alex Morgan | Event: Morgan-Lee wedding reception, October 31, 2026, 5:0
     category: "industry-invoices",
     date: "2026-10-29",
     author: "Invoice Creator Editorial Team",
-    related: ["bill-of-sale-template", "sales-tax-exemption-certificate", "delivery-note-template"],
+    related: [
+      "horse-boarding-invoice-template",
+      "bill-of-sale-template",
+      "sales-tax-exemption-certificate",
+      "delivery-note-template",
+    ],
     faqs: [
       {
         q: "Do farmers have to charge sales tax on produce?",

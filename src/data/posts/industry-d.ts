@@ -9,7 +9,12 @@ export const INDUSTRY_POSTS_D: PostDraft[] = [
     category: "industry-invoices",
     date: "2026-10-27",
     author: "Invoice Creator Editorial Team",
-    related: ["recurring-invoices-guide", "prorated-invoice", "stripe-invoicing-guide"],
+    related: [
+      "laundry-service-invoice-template",
+      "recurring-invoices-guide",
+      "prorated-invoice",
+      "stripe-invoicing-guide",
+    ],
     faqs: [
       {
         q: "What is usage-based billing?",

@@ -9,7 +9,12 @@ export const BUSINESS_FINANCE_2026_E_POSTS: PostDraft[] = [
     category: "business-finance",
     date: "2026-10-29",
     author: "Invoice Creator Editorial Team",
-    related: ["invoice-financing-vs-line-of-credit", "sba-loans", "merchant-cash-advance"],
+    related: [
+      "business-credit-card",
+      "invoice-financing-vs-line-of-credit",
+      "sba-loans",
+      "merchant-cash-advance",
+    ],
     faqs: [
       {
         q: "Does a business line of credit affect my personal credit?",
@@ -360,7 +365,12 @@ export const BUSINESS_FINANCE_2026_E_POSTS: PostDraft[] = [
     category: "business-finance",
     date: "2026-10-29",
     author: "Invoice Creator Editorial Team",
-    related: ["how-to-calculate-depreciation", "business-line-of-credit", "sba-loans"],
+    related: [
+      "how-to-start-a-screen-printing-business",
+      "how-to-calculate-depreciation",
+      "business-line-of-credit",
+      "sba-loans",
+    ],
     faqs: [
       {
         q: "Can I get equipment financing with bad credit?",
@@ -541,6 +551,7 @@ export const BUSINESS_FINANCE_2026_E_POSTS: PostDraft[] = [
     date: "2026-10-29",
     author: "Invoice Creator Editorial Team",
     related: [
+      "gusto-vs-adp",
       "hiring-your-first-employee",
       "employer-payroll-taxes",
       "how-to-set-up-direct-deposit",
@@ -747,7 +758,12 @@ export const BUSINESS_FINANCE_2026_E_POSTS: PostDraft[] = [
     category: "business-finance",
     date: "2026-10-29",
     author: "Invoice Creator Editorial Team",
-    related: ["how-to-do-payroll-yourself", "w2-vs-1099", "employer-payroll-taxes"],
+    related: [
+      "workers-compensation-insurance",
+      "how-to-do-payroll-yourself",
+      "w2-vs-1099",
+      "employer-payroll-taxes",
+    ],
     faqs: [
       {
         q: "Do I need an LLC to hire an employee?",

@@ -141,6 +141,22 @@ import { TEMPLATES_2026_D_POSTS } from "./posts/templates-2026-d";
 import { FREELANCING_2026_F_POSTS } from "./posts/freelancing-2026-f";
 import { PRICING_GUIDES_2026_E_POSTS } from "./posts/pricing-guides-2026-e";
 import { PRICING_GUIDES_2026_F_POSTS } from "./posts/pricing-guides-2026-f";
+import { INDUSTRY_POSTS_W } from "./posts/industry-w";
+import { INDUSTRY_POSTS_X } from "./posts/industry-x";
+import { INDUSTRY_POSTS_Y } from "./posts/industry-y";
+import { INDUSTRY_POSTS_Z } from "./posts/industry-z";
+import { INDUSTRY_POSTS_AA } from "./posts/industry-aa";
+import { INDUSTRY_POSTS_AB } from "./posts/industry-ab";
+import { INDUSTRY_POSTS_AC } from "./posts/industry-ac";
+import { INDUSTRY_POSTS_AD } from "./posts/industry-ad";
+import { INVOICING_BASICS_2026_H_POSTS } from "./posts/invoicing-basics-2026-h";
+import { GUIDES_2026_E_POSTS } from "./posts/guides-2026-e";
+import { COMPARISONS_2026_I_POSTS } from "./posts/comparisons-2026-i";
+import { START_BUSINESS_2026_G_POSTS } from "./posts/start-business-2026-g";
+import { START_BUSINESS_2026_H_POSTS } from "./posts/start-business-2026-h";
+import { US_TAX_2026_H_POSTS } from "./posts/us-tax-2026-h";
+import { BUSINESS_FINANCE_2026_G_POSTS } from "./posts/business-finance-2026-g";
+import { PAYMENTS_2026_M_POSTS } from "./posts/payments-2026-m";
 
 export interface Post {
   slug: string;
@@ -4336,6 +4352,22 @@ export const POST_DRAFTS: PostDraft[] = [
   ...FREELANCING_2026_F_POSTS,
   ...PRICING_GUIDES_2026_E_POSTS,
   ...PRICING_GUIDES_2026_F_POSTS,
+  ...INDUSTRY_POSTS_W,
+  ...INDUSTRY_POSTS_X,
+  ...INDUSTRY_POSTS_Y,
+  ...INDUSTRY_POSTS_Z,
+  ...INDUSTRY_POSTS_AA,
+  ...INDUSTRY_POSTS_AB,
+  ...INDUSTRY_POSTS_AC,
+  ...INDUSTRY_POSTS_AD,
+  ...INVOICING_BASICS_2026_H_POSTS,
+  ...GUIDES_2026_E_POSTS,
+  ...COMPARISONS_2026_I_POSTS,
+  ...START_BUSINESS_2026_G_POSTS,
+  ...START_BUSINESS_2026_H_POSTS,
+  ...US_TAX_2026_H_POSTS,
+  ...BUSINESS_FINANCE_2026_G_POSTS,
+  ...PAYMENTS_2026_M_POSTS,
 ];
 
 /** Reading time is derived from content length so it cannot drift from the article. */

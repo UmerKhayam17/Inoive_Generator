@@ -970,7 +970,12 @@ export const HOW_TO_POSTS_A: PostDraft[] = [
     category: "guides",
     date: "2026-10-22",
     author: "Invoice Creator Editorial Team",
-    related: ["how-to-send-an-invoice", "how-to-invoice-a-client", "add-payment-link-to-invoice"],
+    related: [
+      "how-to-send-an-invoice-by-text",
+      "how-to-send-an-invoice",
+      "how-to-invoice-a-client",
+      "add-payment-link-to-invoice",
+    ],
     faqs: [
       {
         q: "Can I make an invoice on my phone for free?",

@@ -548,6 +548,7 @@ export const US_TAX_2026_E_POSTS: PostDraft[] = [
     author: "Invoice Creator Editorial Team",
     jurisdiction: "United States",
     related: [
+      "how-to-invoice-the-federal-government",
       "late-payment-fees",
       "invoice-payment-terms",
       "overdue-invoice",

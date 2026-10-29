@@ -765,6 +765,7 @@ export const SMALL_BUSINESS_FINANCE_2026_POSTS: PostDraft[] = [
     date: "2026-10-27",
     author: "Invoice Creator Editorial Team",
     related: [
+      "inventory-accounting",
       "inventory-management-spreadsheet",
       "gross-profit-vs-net-profit",
       "profit-and-loss-statement",

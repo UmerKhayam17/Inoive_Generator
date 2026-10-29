@@ -204,6 +204,7 @@ export const BUSINESS_FINANCE_2026_D_POSTS: PostDraft[] = [
     author: "Invoice Creator Editorial Team",
     jurisdiction: "United States",
     related: [
+      "form-941",
       "quarterly-estimated-taxes-freelancers",
       "estimated-tax-penalty",
       "irs-penalty-abatement",

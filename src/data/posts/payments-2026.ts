@@ -10,6 +10,7 @@ export const PAYMENTS_2026_POSTS: PostDraft[] = [
     date: "2026-10-24",
     author: "Invoice Creator Editorial Team",
     related: [
+      "how-to-accept-crypto-payments",
       "digital-euro-business",
       "fednow-vs-rtp-instant-payments",
       "invoice-international-clients",
@@ -683,6 +684,7 @@ export const PAYMENTS_2026_POSTS: PostDraft[] = [
     author: "Invoice Creator Editorial Team",
     jurisdiction: "General",
     related: [
+      "convenience-fee",
       "how-to-accept-credit-card-payments",
       "add-payment-link-to-invoice",
       "early-payment-discount",

@@ -499,6 +499,7 @@ export const INDUSTRY_POSTS_K: PostDraft[] = [
     date: "2026-10-29",
     author: "Invoice Creator Editorial Team",
     related: [
+      "resume-writer-invoice-template",
       "yoga-instructor-invoice-template",
       "consulting-invoice-template",
       "retainer-invoice",
@@ -662,6 +663,7 @@ export const INDUSTRY_POSTS_K: PostDraft[] = [
     author: "Invoice Creator Editorial Team",
     jurisdiction: "United States",
     related: [
+      "appraisal-invoice-template",
       "service-invoice-template",
       "pest-control-invoice-template",
       "property-management-invoice-template",

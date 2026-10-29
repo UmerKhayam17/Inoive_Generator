@@ -9,7 +9,12 @@ export const PAYMENTS_2026_K_POSTS: PostDraft[] = [
     category: "payments",
     date: "2026-10-29",
     author: "Invoice Creator Editorial Team",
-    related: ["how-to-accept-ach-payments", "ach-vs-wire-transfer", "ach-debit-vs-ach-credit"],
+    related: [
+      "echeck",
+      "how-to-accept-ach-payments",
+      "ach-vs-wire-transfer",
+      "ach-debit-vs-ach-credit",
+    ],
     faqs: [
       {
         q: "Why does my ACH payment say pending for days?",
@@ -329,7 +334,12 @@ export const PAYMENTS_2026_K_POSTS: PostDraft[] = [
     category: "payments",
     date: "2026-10-29",
     author: "Invoice Creator Editorial Team",
-    related: ["recurring-invoices-guide", "billing-cycle", "saas-subscription-invoice-template"],
+    related: [
+      "customer-payment-portal",
+      "recurring-invoices-guide",
+      "billing-cycle",
+      "saas-subscription-invoice-template",
+    ],
     faqs: [
       {
         q: "What is the difference between recurring payments and recurring invoices?",

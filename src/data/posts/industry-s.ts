@@ -165,7 +165,12 @@ export const INDUSTRY_POSTS_S: PostDraft[] = [
     category: "industry-invoices",
     date: "2026-10-29",
     author: "Invoice Creator Editorial Team",
-    related: ["voice-over-rates", "podcast-editing-invoice-template", "musician-invoice-template"],
+    related: [
+      "recording-studio-invoice-template",
+      "voice-over-rates",
+      "podcast-editing-invoice-template",
+      "musician-invoice-template",
+    ],
     faqs: [
       {
         q: "What is the difference between a session fee and a usage fee?",

@@ -179,6 +179,7 @@ export const TAX_US_UK_2026_POSTS: PostDraft[] = [
     author: "Invoice Creator Editorial Team",
     jurisdiction: "United States",
     related: [
+      "youtuber-taxes",
       "does-an-llc-get-a-1099",
       "1099-nec-threshold-2026",
       "1099-k-threshold",
@@ -347,6 +348,7 @@ export const TAX_US_UK_2026_POSTS: PostDraft[] = [
     author: "Invoice Creator Editorial Team",
     jurisdiction: "United States",
     related: [
+      "nail-technician-invoice-template",
       "no-tax-on-overtime",
       "self-employed-tax-deductions",
       "1099-nec-threshold-2026",

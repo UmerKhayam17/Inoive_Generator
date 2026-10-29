@@ -10,7 +10,7 @@ export const US_TAX_2026_G_POSTS: PostDraft[] = [
     date: "2026-10-29",
     author: "Invoice Creator Editorial Team",
     jurisdiction: "United States",
-    related: ["s-corp-vs-llc", "llc-tax-rate", "director-salary-vs-dividends"],
+    related: ["s-corp-vs-c-corp", "s-corp-vs-llc", "llc-tax-rate", "director-salary-vs-dividends"],
     faqs: [
       {
         q: "Can a single-member LLC file Form 2553?",
@@ -329,7 +329,7 @@ export const US_TAX_2026_G_POSTS: PostDraft[] = [
     date: "2026-10-29",
     author: "Invoice Creator Editorial Team",
     jurisdiction: "United States",
-    related: ["how-to-do-payroll-yourself", "hiring-your-first-employee", "w2-vs-1099"],
+    related: ["form-w-2", "how-to-do-payroll-yourself", "hiring-your-first-employee", "w2-vs-1099"],
     faqs: [
       {
         q: "What percentage does an employer pay in payroll taxes?",
@@ -490,6 +490,7 @@ export const US_TAX_2026_G_POSTS: PostDraft[] = [
     author: "Invoice Creator Editorial Team",
     jurisdiction: "United States",
     related: [
+      "form-1065",
       "business-tax-deadlines-2027",
       "how-to-file-taxes-as-an-llc",
       "irs-penalty-abatement",

@@ -189,6 +189,7 @@ export const PAYMENTS_GUIDES_2026_POSTS: PostDraft[] = [
     date: "2026-10-27",
     author: "Invoice Creator Editorial Team",
     related: [
+      "partnership-vs-llc",
       "how-to-start-an-llc",
       "business-credit-score",
       "s-corp-vs-llc",

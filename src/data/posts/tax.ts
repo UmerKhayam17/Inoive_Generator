@@ -777,6 +777,7 @@ export const TAX_POSTS: PostDraft[] = [
     author: "Invoice Creator Editorial Team",
     jurisdiction: "General",
     related: [
+      "form-i-9",
       "invoice-audit-preparation",
       "bookkeeping-basics",
       "e-invoicing-guide",
