@@ -184,7 +184,7 @@ export const IN_GCC_2026_POSTS: PostDraft[] = [
 </ul>
 
 <h2>File your ITR with clean invoices</h2>
-<p>Whether you land on ITR-4 or ITR-3, the ITR for freelancers is only as reliable as the invoices behind it. Every receipt you report should match a numbered invoice that shows your PAN, the client's details and any GST charged. Create those invoices in minutes with our <a href="/invoice-generator">free invoice generator</a>, pick a clean layout from our <a href="/invoice-templates/minimal">minimal invoice template</a>, and you will have a ready-made register when filing season comes round.</p>
+<p>Whether you land on ITR-4 or ITR-3, the ITR for freelancers is only as reliable as the invoices behind it. Every receipt you report should match a numbered invoice that shows your PAN, the client's details and any GST charged. Create those invoices in minutes with our <a href="/invoice-generator">free invoice generator</a>, pick a clean layout from our <a href="/invoice-templates/minimal">minimal invoice template</a>, and you will have a ready-made register when filing season comes round. Your finished invoice downloads as a PDF, free and with no sign-up.</p>
 `,
   },
   {
@@ -382,7 +382,7 @@ export const IN_GCC_2026_POSTS: PostDraft[] = [
 </ul>
 
 <h2>Start invoicing as a registered proprietorship</h2>
-<p>Proprietorship firm registration in India comes down to a few targeted registrations, not a single certificate: Udyam, a state shop licence where needed, and GST once you cross the threshold. With those in place and a current account in your trade name, the last piece is professional invoicing. Use our <a href="/invoice-generator">free invoice generator</a> to add your trade name, PAN and GSTIN, choose a layout such as the <a href="/invoice-templates/classic">classic invoice template</a>, and send your first invoice today.</p>
+<p>Proprietorship firm registration in India comes down to a few targeted registrations, not a single certificate: Udyam, a state shop licence where needed, and GST once you cross the threshold. With those in place and a current account in your trade name, the last piece is professional invoicing. Use our <a href="/invoice-generator">free invoice generator</a> to add your trade name, PAN and GSTIN, choose a layout such as the <a href="/invoice-templates/classic">classic invoice template</a>, and send your first invoice today. When your invoice looks right, download it as a PDF and send it straight to your client.</p>
 `,
   },
   {
@@ -773,7 +773,7 @@ export const IN_GCC_2026_POSTS: PostDraft[] = [
 <p>A simple compliance calendar helps: note your licence expiry, lease end date, visa expiries, corporate tax return deadline and, if registered, VAT return dates in one place. Set reminders a month ahead of each. Most penalties small Dubai businesses pay come from missed renewals and late filings rather than from complicated tax positions, and every one of them is avoidable with a calendar and clean records.</p>
 
 <h2>Create invoices for your Dubai business</h2>
-<p>A Dubai trade license is easier to obtain than ever, but the right licence type and location decide your real costs and who you can serve. Once you are licensed, send professional invoices from day one: use our <a href="/invoice-generator">free invoice generator</a> with your licence details and TRN, and pick a polished layout such as the <a href="/invoice-templates/modern">modern invoice template</a>.</p>
+<p>A Dubai trade license is easier to obtain than ever, but the right licence type and location decide your real costs and who you can serve. Once you are licensed, send professional invoices from day one: use our <a href="/invoice-generator">free invoice generator</a> with your licence details and TRN, and pick a polished layout such as the <a href="/invoice-templates/modern">modern invoice template</a>. It is free, needs no account, and exports a print-ready PDF invoice.</p>
 `,
   },
   {
@@ -948,7 +948,7 @@ export const IN_GCC_2026_POSTS: PostDraft[] = [
 </ul>
 
 <h2>Invoice confidently from either setup</h2>
-<p>The free zone vs mainland UAE choice is no longer about ownership; it is about where your clients are, what each option really costs and whether the free zone tax regime fits your income. Once you have chosen, send compliant invoices from day one with our <a href="/invoice-generator">free invoice generator</a>, and pick a clean layout such as the <a href="/invoice-templates/slate">slate invoice template</a>.</p>
+<p>The free zone vs mainland UAE choice is no longer about ownership; it is about where your clients are, what each option really costs and whether the free zone tax regime fits your income. Once you have chosen, send compliant invoices from day one with our <a href="/invoice-generator">free invoice generator</a>, and pick a clean layout such as the <a href="/invoice-templates/slate">slate invoice template</a>. Download the result as a PDF invoice you can email, print or upload to a client portal.</p>
 `,
   },
 ];

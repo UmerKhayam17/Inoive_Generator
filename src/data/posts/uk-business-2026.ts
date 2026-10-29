@@ -218,7 +218,7 @@ export const UK_BUSINESS_2026_POSTS: PostDraft[] = [
 
 <h2>Create your first limited company invoice</h2>
 
-<p>Once you know how to set up a limited company and the certificate is in hand, the next job is getting paid. Open the <a href="/invoice-generator">invoice generator</a>, add your company name, number, registered office and VAT number, pick a professional design from the <a href="/invoice-templates/corporate">corporate invoice template</a>, and send your first invoice in minutes. Everything is free, and your details stay ready for the next one.</p>
+<p>Once you know how to set up a limited company and the certificate is in hand, the next job is getting paid. Open the <a href="/invoice-generator">invoice generator</a>, add your company name, number, registered office and VAT number, pick a professional design from the <a href="/invoice-templates/corporate">corporate invoice template</a>, and send your first invoice in minutes. Everything is free, and your details stay ready for the next one. Every invoice exports as a PDF, so it looks the same on your client's phone, laptop or printer.</p>
 `,
   },
   {
@@ -407,7 +407,7 @@ export const UK_BUSINESS_2026_POSTS: PostDraft[] = [
 
 <p>The best way to avoid s455 is to plan how you take money out: a regular salary, dividends declared from profits, and expenses reimbursed against receipts. Our article on the <a href="/blog/director-salary-vs-dividends">director salary vs dividends</a> split shows how to set that plan for 2026/27, and <a href="/blog/how-to-pay-yourself-as-a-business-owner">how to pay yourself as a business owner</a> gives the wider picture. A director's loan account that stays near zero is a sign the company's money is under control.</p>
 
-<p>Clean income records make all of this easier. Raise every client invoice in the company's name with the <a href="/invoice-generator">free invoice generator</a>, number them with the <a href="/tools/invoice-number-generator">invoice number generator</a>, and you will always be able to show exactly what came in and what went out.</p>
+<p>Clean income records make all of this easier. Raise every client invoice in the company's name with the <a href="/invoice-generator">free invoice generator</a>, number them with the <a href="/tools/invoice-number-generator">invoice number generator</a>, and you will always be able to show exactly what came in and what went out. No sign-up is needed, and your PDF invoice is ready to send in a few minutes.</p>
 `,
   },
   {
@@ -632,7 +632,7 @@ export const UK_BUSINESS_2026_POSTS: PostDraft[] = [
 
 <h2>Fund the plan with steady invoicing</h2>
 
-<p>Every salary vs dividends calculation starts with profit, and profit starts with invoices that get paid on time. Raise your company invoices with the <a href="/invoice-generator">free invoice generator</a>, choose a clean design such as the <a href="/invoice-templates/minimal">minimal invoice template</a>, and keep a record of every payment so year-end figures are ready for your accountant.</p>
+<p>Every salary vs dividends calculation starts with profit, and profit starts with invoices that get paid on time. Raise your company invoices with the <a href="/invoice-generator">free invoice generator</a>, choose a clean design such as the <a href="/invoice-templates/minimal">minimal invoice template</a>, and keep a record of every payment so year-end figures are ready for your accountant. Your finished invoice downloads as a PDF, free and with no sign-up.</p>
 `,
   },
   {
@@ -842,7 +842,7 @@ export const UK_BUSINESS_2026_POSTS: PostDraft[] = [
 
 <h2>Keep VAT penalties off your books</h2>
 
-<p>Most VAT penalties trace back to two things: returns filed late and VAT spent before it was paid over. Accurate invoices fix the first half of both problems. Create VAT invoices in the <a href="/invoice-generator">free invoice generator</a> with the correct 20% or 5% rate, check our <a href="/blog/vat-invoice-guide">VAT invoice guide</a> for the required fields, and set aside the VAT from every payment as it lands.</p>
+<p>Most VAT penalties trace back to two things: returns filed late and VAT spent before it was paid over. Accurate invoices fix the first half of both problems. Create VAT invoices in the <a href="/invoice-generator">free invoice generator</a> with the correct 20% or 5% rate, check our <a href="/blog/vat-invoice-guide">VAT invoice guide</a> for the required fields, and set aside the VAT from every payment as it lands. When your invoice looks right, download it as a PDF and send it straight to your client.</p>
 `,
   },
   {
@@ -1065,7 +1065,7 @@ export const UK_BUSINESS_2026_POSTS: PostDraft[] = [
 
 <h2>Keep your company records and invoices in step</h2>
 
-<p>The confirmation statement is the one filing that checks your company's public identity every year, so treat it as a yearly tidy-up: verify directors, update the register, pay the £50 and file early in the 14-day window. Then make sure the same details appear on every invoice. Save your company name, number and registered office in the <a href="/invoice-generator">invoice generator</a>, pick a design from our <a href="/invoice-templates">invoice templates</a>, and your paperwork will match the register every time.</p>
+<p>The confirmation statement is the one filing that checks your company's public identity every year, so treat it as a yearly tidy-up: verify directors, update the register, pay the £50 and file early in the 14-day window. Then make sure the same details appear on every invoice. Save your company name, number and registered office in the <a href="/invoice-generator">invoice generator</a>, pick a design from our <a href="/invoice-templates">invoice templates</a>, and your paperwork will match the register every time. It is free, needs no account, and exports a print-ready PDF invoice.</p>
 `,
   },
 ];

@@ -327,7 +327,7 @@ export const EINVOICING_2027_B_POSTS: PostDraft[] = [
 <p>Mexico's CFDI is broader than most systems: it covers invoices, payments, payroll and transport waybills. Countries building newer mandates, from <a href="/blog/nigeria-e-invoicing">Nigeria's NRS rollout</a> to <a href="/blog/romania-e-factura">Romania's e-Factura</a>, use similar validation-before-validity logic. Our roundup of <a href="/blog/e-invoicing-mandates-2027">e-invoicing mandates for 2027</a> puts them side by side.</p>
 
 <h2>Create your invoice for Mexican clients</h2>
-<p>A valid CFDI invoice comes down to accurate receiver data, the right PUE or PPD choice, correct retentions and disciplined cancellation. If you are a foreign supplier billing a Mexican company, create a clear commercial invoice with the client's RFC and legal name in our free <a href="/invoice-generator">invoice generator</a>, then pick a layout from our <a href="/invoice-templates/corporate">corporate invoice template</a>.</p>
+<p>A valid CFDI invoice comes down to accurate receiver data, the right PUE or PPD choice, correct retentions and disciplined cancellation. If you are a foreign supplier billing a Mexican company, create a clear commercial invoice with the client's RFC and legal name in our free <a href="/invoice-generator">invoice generator</a>, then pick a layout from our <a href="/invoice-templates/corporate">corporate invoice template</a>. No sign-up is needed, and your PDF invoice is ready to send in a few minutes.</p>
 `,
   },
   {
@@ -489,7 +489,7 @@ export const EINVOICING_2027_B_POSTS: PostDraft[] = [
 <p>Nigeria's phased approach, with large companies first and small ones later, follows a path similar to <a href="/blog/malaysia-lhdn-e-invoice">Malaysia's LHDN e-invoice</a> and <a href="/blog/zatca-e-invoicing-guide">Saudi Arabia's ZATCA waves</a>. Next door in East Africa, <a href="/blog/kenya-etims-invoice">Kenya's eTIMS</a> shows where it may go: once invoice data is complete, the authority starts matching it against income tax returns. Businesses that treat e-invoicing as a data project, not just a software install, cope best.</p>
 
 <h2>Create invoices that are ready for the MBS</h2>
-<p>Nigeria e-invoicing is live for large and medium taxpayers, with emerging businesses following in July 2027. Until your go-live date, keep invoices clean, numbered and complete so the switch is painless. Our free <a href="/invoice-generator">invoice generator</a> lets you produce consistent invoices with TINs and VAT lines today, and our <a href="/invoice-templates/classic">classic invoice template</a> keeps the layout simple.</p>
+<p>Nigeria e-invoicing is live for large and medium taxpayers, with emerging businesses following in July 2027. Until your go-live date, keep invoices clean, numbered and complete so the switch is painless. Our free <a href="/invoice-generator">invoice generator</a> lets you produce consistent invoices with TINs and VAT lines today, and our <a href="/invoice-templates/classic">classic invoice template</a> keeps the layout simple. Your finished invoice downloads as a PDF, free and with no sign-up.</p>
 `,
   },
   {
@@ -654,7 +654,7 @@ export const EINVOICING_2027_B_POSTS: PostDraft[] = [
 <p>Kenya's approach is a preview of where other mandates are going. Our roundup of <a href="/blog/e-invoicing-mandates-2027">e-invoicing mandates for 2027</a> shows how widely data matching is spreading.</p>
 
 <h2>Prepare your client invoices</h2>
-<p>KRA eTIMS is now the backbone of business invoicing in Kenya, and the 2026 validation rules mean your clients will expect an eTIMS invoice every time. Use eTIMS for Kenyan clients, and for quotes, statements or invoices to foreign clients, create a professional document in our free <a href="/invoice-generator">invoice generator</a> with a <a href="/invoice-templates/modern">modern invoice template</a>.</p>
+<p>KRA eTIMS is now the backbone of business invoicing in Kenya, and the 2026 validation rules mean your clients will expect an eTIMS invoice every time. Use eTIMS for Kenyan clients, and for quotes, statements or invoices to foreign clients, create a professional document in our free <a href="/invoice-generator">invoice generator</a> with a <a href="/invoice-templates/modern">modern invoice template</a>. When your invoice looks right, download it as a PDF and send it straight to your client.</p>
 `,
   },
   {

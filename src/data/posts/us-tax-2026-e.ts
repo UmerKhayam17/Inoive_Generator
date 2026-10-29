@@ -337,7 +337,7 @@ export const US_TAX_2026_E_POSTS: PostDraft[] = [
 <p>If you are on the other side, remember that all business income is taxable whether or not a 1099 arrives. With a $2,000 threshold, many freelancers will receive fewer forms for small jobs. Keep your own income records from your invoices, match them to any 1099s and report the full amount on <a href="/blog/schedule-c-for-freelancers">Schedule C</a>. Sending a clean <a href="/blog/independent-contractor-invoice">independent contractor invoice</a> with your legal name and TIN details makes your client's 1099 accurate. Our sibling guide on <a href="/blog/how-to-file-taxes-as-an-llc">how to file taxes for an LLC</a> explains where that income goes if you operate through an LLC.</p>
 
 <h2>Get your contractor records in order</h2>
-<p>Filing 1099-NEC forms is quick when every contractor payment ties to an invoice with a clear number and date. Ask contractors to bill you using our <a href="/invoice-generator">invoice generator</a> or a <a href="/invoice-templates/minimal">minimal invoice template</a>, keep W-9s on file, and you will have everything ready for IRIS well before February 1, 2027. Create your next invoice with the <a href="/invoice-generator/usa">US invoice generator</a>.</p>
+<p>Filing 1099-NEC forms is quick when every contractor payment ties to an invoice with a clear number and date. Ask contractors to bill you using our <a href="/invoice-generator">invoice generator</a> or a <a href="/invoice-templates/minimal">minimal invoice template</a>, keep W-9s on file, and you will have everything ready for IRIS well before February 1, 2027. Create your next invoice with the <a href="/invoice-generator/usa">US invoice generator</a>. Every invoice exports as a PDF, so it looks the same on your client's phone, laptop or printer.</p>
 `,
   },
   {
@@ -532,7 +532,7 @@ export const US_TAX_2026_E_POSTS: PostDraft[] = [
 <p>For a wider list of what you can claim, see our guide to <a href="/blog/self-employed-tax-deductions">self-employed tax deductions</a> and remember that every category should roll up into a monthly profit and loss you actually read.</p>
 
 <h2>Keep income as organized as your expense categories</h2>
-<p>Clean business expense categories only tell half the story: your income needs the same discipline. Issue numbered invoices for every sale with our <a href="/invoice-generator">free invoice generator</a>, track totals in an <a href="/blog/invoice-tracker-spreadsheet">invoice tracker spreadsheet</a> and choose a clear layout from our <a href="/invoice-templates">invoice templates</a>. Your Schedule C will practically fill itself.</p>
+<p>Clean business expense categories only tell half the story: your income needs the same discipline. Issue numbered invoices for every sale with our <a href="/invoice-generator">free invoice generator</a>, track totals in an <a href="/blog/invoice-tracker-spreadsheet">invoice tracker spreadsheet</a> and choose a clear layout from our <a href="/invoice-templates">invoice templates</a>. Your Schedule C will practically fill itself. No sign-up is needed, and your PDF invoice is ready to send in a few minutes.</p>
 `,
   },
   {
@@ -713,7 +713,7 @@ export const US_TAX_2026_E_POSTS: PostDraft[] = [
 </ol>
 
 <h2>Send a proper invoice the first time</h2>
-<p>The Prompt Payment Act only protects you once the agency has a proper invoice, so completeness is everything. Build yours with the <a href="/invoice-generator">invoice generator</a>, add your contract number, TIN and bank details, and pick a clean <a href="/invoice-templates/classic">classic invoice template</a>. For US-specific fields, use the <a href="/invoice-generator/usa">US invoice generator</a>.</p>
+<p>The Prompt Payment Act only protects you once the agency has a proper invoice, so completeness is everything. Build yours with the <a href="/invoice-generator">invoice generator</a>, add your contract number, TIN and bank details, and pick a clean <a href="/invoice-templates/classic">classic invoice template</a>. For US-specific fields, use the <a href="/invoice-generator/usa">US invoice generator</a>. Your finished invoice downloads as a PDF, free and with no sign-up.</p>
 `,
   },
   {
@@ -880,7 +880,7 @@ export const US_TAX_2026_E_POSTS: PostDraft[] = [
 <p>Your tax method and what you charge clients are separate. Many freelancers rebill travel at the IRS rate because clients recognize it, but you can charge any rate your contract allows. Show the miles, dates and rate as a separate line, as explained in our guide to <a href="/blog/reimbursable-expenses-invoice">reimbursable expenses on invoices</a>. If you rebill mileage, record the client payment as income so your deduction and reimbursement match up.</p>
 
 <h2>Invoice mileage the easy way</h2>
-<p>Whichever side of standard mileage vs actual expenses you land on, good records make the deduction safe. Log every trip, then add billable miles to client invoices with our <a href="/invoice-generator">free invoice generator</a>, the <a href="/invoice-generator/usa">US invoice generator</a> or a <a href="/invoice-templates/modern">modern invoice template</a>. Our <a href="/user-guide">user guide</a> shows how to add custom line items.</p>
+<p>Whichever side of standard mileage vs actual expenses you land on, good records make the deduction safe. Log every trip, then add billable miles to client invoices with our <a href="/invoice-generator">free invoice generator</a>, the <a href="/invoice-generator/usa">US invoice generator</a> or a <a href="/invoice-templates/modern">modern invoice template</a>. Our <a href="/user-guide">user guide</a> shows how to add custom line items. When your invoice looks right, download it as a PDF and send it straight to your client.</p>
 `,
   },
 ];

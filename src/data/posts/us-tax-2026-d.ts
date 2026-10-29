@@ -544,7 +544,7 @@ export const US_TAX_2026_D_POSTS: PostDraft[] = [
 
 <h2>Bill resale customers correctly</h2>
 <p>A resale certificate lets registered sellers buy inventory without sales tax, as long as the goods are truly for resale and the certificate is complete, timely and kept on file. Buyers need a valid permit and must pay use tax on anything they pull for their own use; sellers need good faith, good records and zero-tax invoices that note the exemption.</p>
-<p><a href="/invoice-generator/usa">Create a US invoice</a> with exempt line items and a resale note, or <a href="/invoice-generator">open the free invoice generator</a> to bill your next wholesale order in minutes.</p>
+<p><a href="/invoice-generator/usa">Create a US invoice</a> with exempt line items and a resale note, or <a href="/invoice-generator">open the free invoice generator</a> to bill your next wholesale order in minutes. When your invoice looks right, download it as a PDF and send it straight to your client.</p>
 `,
   },
   {
@@ -725,7 +725,7 @@ export const US_TAX_2026_D_POSTS: PostDraft[] = [
 
 <h2>Show sales tax clearly on your invoices</h2>
 <p>To calculate sales tax, find the combined rate for the location where the sale is sourced, convert it to a decimal and multiply it by the taxable subtotal after discounts. Keep exempt items and shipping on separate lines, round to the nearest cent and show the tax and rate on the invoice. To work backwards, divide the total by 1 plus the rate.</p>
-<p>For more on presentation, read <a href="/blog/sales-tax-on-invoices-us">how to show sales tax on US invoices</a>. Then <a href="/invoice-generator/usa">create a US invoice</a> with automatic tax lines, pick a layout like the <a href="/invoice-templates/modern">modern invoice template</a>, or <a href="/invoice-generator">use the free invoice generator</a> to send your next bill today.</p>
+<p>For more on presentation, read <a href="/blog/sales-tax-on-invoices-us">how to show sales tax on US invoices</a>. Then <a href="/invoice-generator/usa">create a US invoice</a> with automatic tax lines, pick a layout like the <a href="/invoice-templates/modern">modern invoice template</a>, or <a href="/invoice-generator">use the free invoice generator</a> to send your next bill today. It is free, needs no account, and exports a print-ready PDF invoice.</p>
 `,
   },
   {
@@ -901,7 +901,7 @@ export const US_TAX_2026_D_POSTS: PostDraft[] = [
 
 <h2>Grow the profit that supports your deduction</h2>
 <p>The self-employed health insurance deduction lets you deduct eligible medical, dental, vision, Medicare and long-term care premiums for your household, up to your business profit after the deductible part of SE tax and retirement contributions, for each month you had no subsidized employer plan available. Use Form 7206 when you have multiple businesses or long-term care premiums.</p>
-<p>Clear records of what you earned make every limit easy to support. Bill clients from the <a href="/invoice-generator/usa">US invoice generator</a>, choose a clean layout like the <a href="/invoice-templates/minimal">minimal invoice template</a>, and <a href="/invoice-generator">create your next invoice free</a>.</p>
+<p>Clear records of what you earned make every limit easy to support. Bill clients from the <a href="/invoice-generator/usa">US invoice generator</a>, choose a clean layout like the <a href="/invoice-templates/minimal">minimal invoice template</a>, and <a href="/invoice-generator">create your next invoice free</a>. Download the result as a PDF invoice you can email, print or upload to a client portal.</p>
 `,
   },
 ];

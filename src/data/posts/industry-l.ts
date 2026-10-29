@@ -176,7 +176,7 @@ export const INDUSTRY_POSTS_L: PostDraft[] = [
 </ul>
 
 <h2>Create your veterinary invoice</h2>
-<p>A good veterinary invoice is specific, honest and easy to match against the estimate: patient name, dated lines for every exam, test, medicine and procedure, the right tax treatment, deposits subtracted and a clear balance. Build your next vet bill in the <a href="/invoice-generator">free invoice generator</a>, or compare layouts in our <a href="/invoice-templates">invoice templates gallery</a> before you start.</p>
+<p>A good veterinary invoice is specific, honest and easy to match against the estimate: patient name, dated lines for every exam, test, medicine and procedure, the right tax treatment, deposits subtracted and a clear balance. Build your next vet bill in the <a href="/invoice-generator">free invoice generator</a>, or compare layouts in our <a href="/invoice-templates">invoice templates gallery</a> before you start. Every invoice exports as a PDF, so it looks the same on your client's phone, laptop or printer.</p>
 `,
   },
   {
@@ -822,7 +822,7 @@ export const INDUSTRY_POSTS_L: PostDraft[] = [
 </ul>
 
 <h2>Create your equipment rental invoice</h2>
-<p>A reliable equipment rental invoice template links every charge to the signed agreement: asset numbers, out and return times, the right rate period, a clearly explained damage waiver, delivery, fuel and any damage on their own lines, the correct tax and the deposit applied. Build your next rental invoice in the <a href="/invoice-generator">free invoice generator</a>, or browse the <a href="/invoice-templates">invoice templates</a> to match your brand first.</p>
+<p>A reliable equipment rental invoice template links every charge to the signed agreement: asset numbers, out and return times, the right rate period, a clearly explained damage waiver, delivery, fuel and any damage on their own lines, the correct tax and the deposit applied. Build your next rental invoice in the <a href="/invoice-generator">free invoice generator</a>, or browse the <a href="/invoice-templates">invoice templates</a> to match your brand first. No sign-up is needed, and your PDF invoice is ready to send in a few minutes.</p>
 `,
   },
 ];

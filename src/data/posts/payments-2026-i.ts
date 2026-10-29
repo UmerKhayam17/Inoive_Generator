@@ -199,7 +199,7 @@ export const PAYMENTS_2026_I_POSTS: PostDraft[] = [
 
 <h2>Rebill Returned ACH Payments With a Clear Invoice</h2>
 
-<p>ACH return codes are short, but they tell you exactly what went wrong: no funds, bad details or a disputed authorization. Match your response to the code, reopen the invoice, and send a replacement that references the original invoice number and shows any amount already paid. You can create that replacement in minutes with the <a href="/invoice-generator">free invoice generator</a>, use the <a href="/tools/invoice-number-generator">invoice number generator</a> to keep your numbering consistent, and follow up with our <a href="/blog/overdue-invoice">overdue invoice process</a> if the balance stays unpaid.</p>
+<p>ACH return codes are short, but they tell you exactly what went wrong: no funds, bad details or a disputed authorization. Match your response to the code, reopen the invoice, and send a replacement that references the original invoice number and shows any amount already paid. You can create that replacement in minutes with the <a href="/invoice-generator">free invoice generator</a>, use the <a href="/tools/invoice-number-generator">invoice number generator</a> to keep your numbering consistent, and follow up with our <a href="/blog/overdue-invoice">overdue invoice process</a> if the balance stays unpaid. When your invoice looks right, download it as a PDF and send it straight to your client.</p>
 `,
   },
   {
@@ -415,7 +415,7 @@ export const PAYMENTS_2026_I_POSTS: PostDraft[] = [
 
 <h2>Add Your Routing and Account Numbers to Your Next Invoice</h2>
 
-<p>The routing number vs account number difference is simple once you see it: the routing number finds the bank, the account number finds you. Take both straight from your bank, label them clearly, use the right routing number for ACH or wire, and give clients an invoice number to quote. Set up your payment block once in the <a href="/invoice-generator">free invoice generator</a>, pick a clear layout from our <a href="/invoice-templates">invoice templates</a>, and every invoice you send will tell clients exactly where to pay.</p>
+<p>The routing number vs account number difference is simple once you see it: the routing number finds the bank, the account number finds you. Take both straight from your bank, label them clearly, use the right routing number for ACH or wire, and give clients an invoice number to quote. Set up your payment block once in the <a href="/invoice-generator">free invoice generator</a>, pick a clear layout from our <a href="/invoice-templates">invoice templates</a>, and every invoice you send will tell clients exactly where to pay. It is free, needs no account, and exports a print-ready PDF invoice.</p>
 `,
   },
   {
@@ -636,7 +636,7 @@ export const PAYMENTS_2026_I_POSTS: PostDraft[] = [
 
 <h2>Get Paid Through PayPal With a Professional Invoice</h2>
 
-<p>For the PayPal business vs personal account decision, the rule of thumb is simple: if clients pay you regularly, use a business account, either by upgrading or by opening a separate one, and remember that fees follow the payment type, not the account type. Then send every client a clear invoice with your PayPal details and a cheaper bank option. Create it in the <a href="/invoice-generator">free invoice generator</a>, or start from a clean layout like the <a href="/invoice-templates/modern">modern invoice template</a>.</p>
+<p>For the PayPal business vs personal account decision, the rule of thumb is simple: if clients pay you regularly, use a business account, either by upgrading or by opening a separate one, and remember that fees follow the payment type, not the account type. Then send every client a clear invoice with your PayPal details and a cheaper bank option. Create it in the <a href="/invoice-generator">free invoice generator</a>, or start from a clean layout like the <a href="/invoice-templates/modern">modern invoice template</a>. Download the result as a PDF invoice you can email, print or upload to a client portal.</p>
 `,
   },
   {
@@ -821,7 +821,7 @@ export const PAYMENTS_2026_I_POSTS: PostDraft[] = [
 
 <h2>Set Up Your Payment Options and Get Paid Faster</h2>
 
-<p>The best payment methods for small business balance cost and convenience: make a bank payment your default because it is the cheapest way to get paid, add a card or PayPal option for clients who need it, and keep wires for large or international invoices. Put those options clearly on every invoice with the <a href="/invoice-generator">free invoice generator</a>, and choose a layout with room for a clean payment section from our <a href="/invoice-templates">invoice templates</a>.</p>
+<p>The best payment methods for small business balance cost and convenience: make a bank payment your default because it is the cheapest way to get paid, add a card or PayPal option for clients who need it, and keep wires for large or international invoices. Put those options clearly on every invoice with the <a href="/invoice-generator">free invoice generator</a>, and choose a layout with room for a clean payment section from our <a href="/invoice-templates">invoice templates</a>. Every invoice exports as a PDF, so it looks the same on your client's phone, laptop or printer.</p>
 `,
   },
   {
@@ -1023,7 +1023,7 @@ export const PAYMENTS_2026_I_POSTS: PostDraft[] = [
 
 <h2>Create Your No Commercial Value Invoice</h2>
 
-<p>A no commercial value invoice is simply a commercial invoice without a sale: full descriptions, HS codes, origin, a realistic value with its basis, freight, a clear duty payer and a statement that no payment is due. Get those right and samples, gifts and replacements clear customs like any other shipment. Build yours in the <a href="/invoice-generator">free invoice generator</a> using a clean, formal layout such as the <a href="/invoice-templates/corporate">corporate invoice template</a>, and keep a copy in your NCV series for your records.</p>
+<p>A no commercial value invoice is simply a commercial invoice without a sale: full descriptions, HS codes, origin, a realistic value with its basis, freight, a clear duty payer and a statement that no payment is due. Get those right and samples, gifts and replacements clear customs like any other shipment. Build yours in the <a href="/invoice-generator">free invoice generator</a> using a clean, formal layout such as the <a href="/invoice-templates/corporate">corporate invoice template</a>, and keep a copy in your NCV series for your records. No sign-up is needed, and your PDF invoice is ready to send in a few minutes.</p>
 `,
   },
 ];

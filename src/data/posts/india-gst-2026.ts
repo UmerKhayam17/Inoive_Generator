@@ -160,7 +160,7 @@ export const INDIA_GST_2026_POSTS: PostDraft[] = [
 </ul>
 
 <h2>Create GST invoices your buyers can claim credit on</h2>
-<p>Input tax credit under GST rewards clean paperwork on both sides: valid invoices, timely GSTR-1 filings and prompt payment. When you sell, give your customers a tax invoice with your GSTIN, theirs, the place of supply, HSN or SAC codes and the tax split, so their credit flows without a chase. Build one free with our <a href="/invoice-generator">GST-ready invoice generator</a>, or start from a clean layout in the <a href="/invoice-templates/corporate">corporate invoice template</a>.</p>
+<p>Input tax credit under GST rewards clean paperwork on both sides: valid invoices, timely GSTR-1 filings and prompt payment. When you sell, give your customers a tax invoice with your GSTIN, theirs, the place of supply, HSN or SAC codes and the tax split, so their credit flows without a chase. Build one free with our <a href="/invoice-generator">GST-ready invoice generator</a>, or start from a clean layout in the <a href="/invoice-templates/corporate">corporate invoice template</a>. Every invoice exports as a PDF, so it looks the same on your client's phone, laptop or printer.</p>
 `,
   },
   {
@@ -321,7 +321,7 @@ export const INDIA_GST_2026_POSTS: PostDraft[] = [
 </ul>
 
 <h2>Create your export invoice under LUT</h2>
-<p>An LUT in GST is a once-a-year filing that saves exporters from paying IGST on every foreign invoice. File it before your first export of the financial year, put the LUT endorsement on each invoice, and make sure payment arrives in foreign exchange within a year. You can create a zero-rated export invoice in any currency with our free <a href="/invoice-generator">invoice generator</a>, or start from the <a href="/invoice-templates/startup">startup invoice template</a>.</p>
+<p>An LUT in GST is a once-a-year filing that saves exporters from paying IGST on every foreign invoice. File it before your first export of the financial year, put the LUT endorsement on each invoice, and make sure payment arrives in foreign exchange within a year. You can create a zero-rated export invoice in any currency with our free <a href="/invoice-generator">invoice generator</a>, or start from the <a href="/invoice-templates/startup">startup invoice template</a>. No sign-up is needed, and your PDF invoice is ready to send in a few minutes.</p>
 `,
   },
   {
@@ -657,7 +657,7 @@ export const INDIA_GST_2026_POSTS: PostDraft[] = [
 <p>Both, for different people, and the answer does not change with business size. GSTR-1 matters most to your customers, because their credit depends on it; file it late or wrongly and they will chase you or withhold payment. GSTR-3B matters most to you, because it settles your liability, carries the interest and decides your own credit. A clean GSTR-1 makes GSTR-3B almost automatic, and a GSTR-3B that matches GSTR-1 keeps notices away. Small businesses that hand returns to an accountant should still review the GSTR-1 summary and the auto-filled GSTR-3B before each filing, because the accountant can only report the invoices they are given.</p>
 
 <h2>Start with accurate GST invoices</h2>
-<p>The GSTR-1 vs GSTR-3B question is really about one data trail: invoices go into GSTR-1, GSTR-1 drives GSTR-3B, and GSTR-3B settles the tax. Get the invoice right and both returns follow. Create GST invoices with GSTINs, HSN codes and the correct CGST, SGST or IGST split using our free <a href="/invoice-generator">invoice generator</a>, and keep every period reconciled before you file.</p>
+<p>The GSTR-1 vs GSTR-3B question is really about one data trail: invoices go into GSTR-1, GSTR-1 drives GSTR-3B, and GSTR-3B settles the tax. Get the invoice right and both returns follow. Create GST invoices with GSTINs, HSN codes and the correct CGST, SGST or IGST split using our free <a href="/invoice-generator">invoice generator</a>, and keep every period reconciled before you file. Your finished invoice downloads as a PDF, free and with no sign-up.</p>
 `,
   },
   {
@@ -820,7 +820,7 @@ export const INDIA_GST_2026_POSTS: PostDraft[] = [
 <p>44AD is separate from GST. If your turnover requires GST registration, you file GST returns as usual, or you may opt for the <a href="/blog/gst-composition-scheme">GST composition scheme</a> and issue a <a href="/blog/bill-of-supply-gst">bill of supply</a> instead of tax invoices. Regular GST taxpayers can claim <a href="/blog/input-tax-credit-gst">input tax credit under GST</a> on purchases. Either way, the turnover in your GST returns and in your income tax return should reconcile. If business customers deduct TDS from your payments, the amounts appear in your Form 26AS and AIS, and our guide to <a href="/blog/tds-on-professional-fees">TDS on professional fees</a> explains how credits work.</p>
 
 <h2>Create invoices that support your 44AD turnover</h2>
-<p>Section 44AD presumptive taxation is the simplest route for most small Indian businesses, provided turnover stays under the limit and receipts are mostly digital. Clear, numbered invoices that show how each customer paid make the 6% claim easy to support. Create them free with our <a href="/invoice-generator">invoice generator</a>, or pick a straightforward layout from the <a href="/invoice-templates/classic">classic invoice template</a>.</p>
+<p>Section 44AD presumptive taxation is the simplest route for most small Indian businesses, provided turnover stays under the limit and receipts are mostly digital. Clear, numbered invoices that show how each customer paid make the 6% claim easy to support. Create them free with our <a href="/invoice-generator">invoice generator</a>, or pick a straightforward layout from the <a href="/invoice-templates/classic">classic invoice template</a>. When your invoice looks right, download it as a PDF and send it straight to your client.</p>
 `,
   },
 ];

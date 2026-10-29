@@ -229,7 +229,7 @@ export const FREELANCING_2026_E_POSTS: PostDraft[] = [
 
 <h2>Start Freelancing With Confidence</h2>
 
-<p>Becoming a freelancer comes down to a sellable skill, a clear niche, a rate that covers your real costs, proof in a portfolio and a steady habit of pitching. Add a simple contract, a deposit and prompt invoicing, and you have the foundations of a real business. When your first client says yes, create a professional invoice in minutes with the free <a href="/invoice-generator">invoice generator</a>, or pick a clean design from our <a href="/invoice-templates">invoice templates</a>.</p>
+<p>Becoming a freelancer comes down to a sellable skill, a clear niche, a rate that covers your real costs, proof in a portfolio and a steady habit of pitching. Add a simple contract, a deposit and prompt invoicing, and you have the foundations of a real business. When your first client says yes, create a professional invoice in minutes with the free <a href="/invoice-generator">invoice generator</a>, or pick a clean design from our <a href="/invoice-templates">invoice templates</a>. When your invoice looks right, download it as a PDF and send it straight to your client.</p>
 `,
   },
   {
@@ -443,7 +443,7 @@ export const FREELANCING_2026_E_POSTS: PostDraft[] = [
 
 <h2>Start Your Virtual Assistant Business</h2>
 
-<p>Becoming a virtual assistant with no experience is realistic if you lead with reliability: a short list of services, a clear niche, sample work, sensible rates and careful handling of client data. Win a first client, deliver well, ask for a testimonial and repeat. When your first retainer is agreed, send a clean, professional invoice from the free <a href="/invoice-generator">invoice generator</a>, or choose a simple layout such as the <a href="/invoice-templates/minimal">minimal invoice template</a>.</p>
+<p>Becoming a virtual assistant with no experience is realistic if you lead with reliability: a short list of services, a clear niche, sample work, sensible rates and careful handling of client data. Win a first client, deliver well, ask for a testimonial and repeat. When your first retainer is agreed, send a clean, professional invoice from the free <a href="/invoice-generator">invoice generator</a>, or choose a simple layout such as the <a href="/invoice-templates/minimal">minimal invoice template</a>. It is free, needs no account, and exports a print-ready PDF invoice.</p>
 `,
   },
   {
@@ -662,7 +662,7 @@ export const FREELANCING_2026_E_POSTS: PostDraft[] = [
 
 <h2>Start Your Freelance Writing Business</h2>
 
-<p>Becoming a freelance writer takes a focused niche, samples that match what clients buy, steady pitching and prices that cover your real time. Protect yourself with a simple contract and a kill fee, and invoice every piece promptly. When your first article is accepted, send a polished invoice from the free <a href="/invoice-generator">invoice generator</a>, or use a clean design like the <a href="/invoice-templates/modern">modern invoice template</a>.</p>
+<p>Becoming a freelance writer takes a focused niche, samples that match what clients buy, steady pitching and prices that cover your real time. Protect yourself with a simple contract and a kill fee, and invoice every piece promptly. When your first article is accepted, send a polished invoice from the free <a href="/invoice-generator">invoice generator</a>, or use a clean design like the <a href="/invoice-templates/modern">modern invoice template</a>. Download the result as a PDF invoice you can email, print or upload to a client portal.</p>
 `,
   },
   {
@@ -887,7 +887,7 @@ export const FREELANCING_2026_E_POSTS: PostDraft[] = [
 
 <h2>Start Your UGC Business</h2>
 
-<p>Becoming a UGC creator is about content, not followers: learn the formats brands use, build a focused UGC portfolio, pitch steadily and price usage rights separately from creation. Protect yourself with clear contracts and clear invoices. When your first brand deal is confirmed, create a professional invoice in the free <a href="/invoice-generator">invoice generator</a>, or give it some personality with the <a href="/invoice-templates/creative">creative invoice template</a>.</p>
+<p>Becoming a UGC creator is about content, not followers: learn the formats brands use, build a focused UGC portfolio, pitch steadily and price usage rights separately from creation. Protect yourself with clear contracts and clear invoices. When your first brand deal is confirmed, create a professional invoice in the free <a href="/invoice-generator">invoice generator</a>, or give it some personality with the <a href="/invoice-templates/creative">creative invoice template</a>. Every invoice exports as a PDF, so it looks the same on your client's phone, laptop or printer.</p>
 `,
   },
   {
@@ -1115,7 +1115,7 @@ export const FREELANCING_2026_E_POSTS: PostDraft[] = [
 
 <h2>Keep Your Portfolio Working for You</h2>
 
-<p>A freelance portfolio that wins work is short, relevant and evidence-based: a clear positioning line, a handful of strong samples, short case studies with real results, testimonials and an obvious next step. Review it every few months and measure whether it improves your win rate. Then, when clients start saying yes, set your prices with our <a href="/blog/how-to-set-freelance-rates">freelance rate formula</a> and send your first invoice with the free <a href="/invoice-generator">invoice generator</a>.</p>
+<p>A freelance portfolio that wins work is short, relevant and evidence-based: a clear positioning line, a handful of strong samples, short case studies with real results, testimonials and an obvious next step. Review it every few months and measure whether it improves your win rate. Then, when clients start saying yes, set your prices with our <a href="/blog/how-to-set-freelance-rates">freelance rate formula</a> and send your first invoice with the free <a href="/invoice-generator">invoice generator</a>. No sign-up is needed, and your PDF invoice is ready to send in a few minutes.</p>
 `,
   },
 ];

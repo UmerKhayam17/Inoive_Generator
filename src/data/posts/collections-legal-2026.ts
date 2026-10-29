@@ -708,7 +708,7 @@ export const COLLECTIONS_LEGAL_2026_POSTS: PostDraft[] = [
 </ul>
 
 <h2>Keep lien-ready invoices from day one</h2>
-<p>A mechanics lien is only as good as your paperwork. Issue a numbered, dated invoice for every pay period, show change orders and payments received, and keep copies with your notices. Create them in our <a href="/invoice-generator">free invoice generator</a>, use the <a href="/tools/invoice-number-generator">invoice number generator</a> to keep sequences clean, and start from a <a href="/blog/contractor-invoice-template">contractor invoice template</a> so every job is billed the same way. If you pour foundations or slabs, our <a href="/blog/concrete-invoice-template">concrete invoice template</a> shows the line items to track.</p>
+<p>A mechanics lien is only as good as your paperwork. Issue a numbered, dated invoice for every pay period, show change orders and payments received, and keep copies with your notices. Create them in our <a href="/invoice-generator">free invoice generator</a>, use the <a href="/tools/invoice-number-generator">invoice number generator</a> to keep sequences clean, and start from a <a href="/blog/contractor-invoice-template">contractor invoice template</a> so every job is billed the same way. If you pour foundations or slabs, our <a href="/blog/concrete-invoice-template">concrete invoice template</a> shows the line items to track. Every invoice exports as a PDF, so it looks the same on your client's phone, laptop or printer.</p>
 `,
   },
   {
@@ -910,7 +910,7 @@ export const COLLECTIONS_LEGAL_2026_POSTS: PostDraft[] = [
 <p>If a certified application still goes unpaid, see our guides to <a href="/blog/client-not-paying-invoice">a client not paying an invoice</a> and to <a href="/blog/mechanics-lien">mechanics liens</a>, which can protect you on private projects.</p>
 
 <h2>Create your construction invoice</h2>
-<p>AIA G702 billing works best with a clear invoice behind it. Create a numbered progress invoice showing the period, work completed, retainage and amount due in our <a href="/invoice-generator">free invoice generator</a>, then attach it to your G702 and G703 pay application. For a clean, professional layout, start from the <a href="/invoice-templates/corporate">corporate invoice template</a> or browse all <a href="/invoice-templates">invoice templates</a>.</p>
+<p>AIA G702 billing works best with a clear invoice behind it. Create a numbered progress invoice showing the period, work completed, retainage and amount due in our <a href="/invoice-generator">free invoice generator</a>, then attach it to your G702 and G703 pay application. For a clean, professional layout, start from the <a href="/invoice-templates/corporate">corporate invoice template</a> or browse all <a href="/invoice-templates">invoice templates</a>. No sign-up is needed, and your PDF invoice is ready to send in a few minutes.</p>
 `,
   },
 ];

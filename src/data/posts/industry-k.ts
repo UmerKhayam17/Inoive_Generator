@@ -321,7 +321,7 @@ export const INDUSTRY_POSTS_K: PostDraft[] = [
 <p>If you are building a wider cleaning business, our <a href="/blog/cleaning-service-invoice-template">cleaning service invoice template</a> and the sibling guide on <a href="/blog/how-to-start-a-cleaning-business">how to start a cleaning business</a> cover pricing, insurance and billing for general cleaning work.</p>
 
 <h2>Create your window cleaning invoice</h2>
-<p>A window cleaning invoice works best when it matches the quote line for line: window or pane count, inside or out, the rate, the extras and the date of the clean. Keep the same layout for every client on your round and you can bill a full day's work in minutes. Build your next one in the <a href="/invoice-generator">free invoice generator</a> and browse our <a href="/invoice-templates">invoice templates</a> to find a design that fits your brand.</p>
+<p>A window cleaning invoice works best when it matches the quote line for line: window or pane count, inside or out, the rate, the extras and the date of the clean. Keep the same layout for every client on your round and you can bill a full day's work in minutes. Build your next one in the <a href="/invoice-generator">free invoice generator</a> and browse our <a href="/invoice-templates">invoice templates</a> to find a design that fits your brand. It is free, needs no account, and exports a print-ready PDF invoice.</p>
 `,
   },
   {
@@ -487,7 +487,7 @@ export const INDUSTRY_POSTS_K: PostDraft[] = [
 <p>If a corporate client or a couple stops paying altogether, our sibling guide to a <a href="/blog/demand-letter-for-payment">demand letter for payment</a> explains the formal next step.</p>
 
 <h2>Create your florist invoice</h2>
-<p>A florist invoice, especially for wedding flowers, should show every arrangement, every service, the tax, the deposit and the balance due date. Get those right and the money arrives before the flowers do. Build your next proposal or final invoice in the <a href="/invoice-generator">free invoice generator</a>, and browse our <a href="/invoice-templates">invoice templates</a> for a design that matches your brand.</p>
+<p>A florist invoice, especially for wedding flowers, should show every arrangement, every service, the tax, the deposit and the balance due date. Get those right and the money arrives before the flowers do. Build your next proposal or final invoice in the <a href="/invoice-generator">free invoice generator</a>, and browse our <a href="/invoice-templates">invoice templates</a> for a design that matches your brand. Download the result as a PDF invoice you can email, print or upload to a client portal.</p>
 `,
   },
   {

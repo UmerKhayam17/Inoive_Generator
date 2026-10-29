@@ -243,7 +243,7 @@ export const PRICING_GUIDES_2026_C_POSTS: PostDraft[] = [
 
 <h2>Set your snow removal prices and send the invoice</h2>
 
-<p>Snow removal prices that last are built from your hourly cost, adjusted for snowfall depth, and sold through a mix of per push and capped seasonal contracts. Work out your route rate, test it against a few real driveways, and write the trigger, cap and payment terms into every agreement. When the first storm clears, open the <a href="/invoice-generator">invoice generator</a>, add your events and salting lines, record any retainer as amount paid, and send a clean invoice the same day. For a ready design, browse our <a href="/invoice-templates/corporate">corporate invoice template</a>.</p>
+<p>Snow removal prices that last are built from your hourly cost, adjusted for snowfall depth, and sold through a mix of per push and capped seasonal contracts. Work out your route rate, test it against a few real driveways, and write the trigger, cap and payment terms into every agreement. When the first storm clears, open the <a href="/invoice-generator">invoice generator</a>, add your events and salting lines, record any retainer as amount paid, and send a clean invoice the same day. For a ready design, browse our <a href="/invoice-templates/corporate">corporate invoice template</a>. Download the result as a PDF invoice you can email, print or upload to a client portal.</p>
 `,
   },
   {
@@ -496,7 +496,7 @@ export const PRICING_GUIDES_2026_C_POSTS: PostDraft[] = [
 
 <h2>Price your next painting job and invoice it</h2>
 
-<p>How much do painters charge? Enough to cover a fair hourly wage, real business costs and a margin, which for many owner-operators means $50 to $60 an hour turned into a per room or per square foot price the client can understand. Measure carefully, estimate prep honestly, take a deposit, and put every change in writing. When the last coat dries, build the final invoice in our <a href="/invoice-generator">free invoice generator</a> or pick a design from the <a href="/invoice-templates">invoice templates</a> gallery.</p>
+<p>How much do painters charge? Enough to cover a fair hourly wage, real business costs and a margin, which for many owner-operators means $50 to $60 an hour turned into a per room or per square foot price the client can understand. Measure carefully, estimate prep honestly, take a deposit, and put every change in writing. When the last coat dries, build the final invoice in our <a href="/invoice-generator">free invoice generator</a> or pick a design from the <a href="/invoice-templates">invoice templates</a> gallery. Every invoice exports as a PDF, so it looks the same on your client's phone, laptop or printer.</p>
 `,
   },
   {
@@ -700,7 +700,7 @@ export const PRICING_GUIDES_2026_C_POSTS: PostDraft[] = [
 
 <h2>Set your dog walking rates and get paid</h2>
 
-<p>How much to charge for dog walking comes down to a simple calculation: income plus costs divided by the walks you can really do, plus a buffer. From there, build a rate card with add-on fees for extra dogs and longer walks, offer modest package discounts, and gross up any platform prices. When the week is done, list your walks in the <a href="/invoice-generator">invoice generator</a>, apply the plan discount and send it before Monday's first walk. For a friendly design, try the <a href="/invoice-templates/emerald">emerald invoice template</a>.</p>
+<p>How much to charge for dog walking comes down to a simple calculation: income plus costs divided by the walks you can really do, plus a buffer. From there, build a rate card with add-on fees for extra dogs and longer walks, offer modest package discounts, and gross up any platform prices. When the week is done, list your walks in the <a href="/invoice-generator">invoice generator</a>, apply the plan discount and send it before Monday's first walk. For a friendly design, try the <a href="/invoice-templates/emerald">emerald invoice template</a>. No sign-up is needed, and your PDF invoice is ready to send in a few minutes.</p>
 `,
   },
   {
@@ -903,7 +903,7 @@ export const PRICING_GUIDES_2026_C_POSTS: PostDraft[] = [
 
 <h2>Set your pet sitting rates and invoice the booking</h2>
 
-<p>Pet sitting rates that work are built per visit and per night: a drop-in price from your income and capacity, an overnight rate that covers the slots you give up, and clear add-ons for extra pets, medication and holidays. Take deposits on long bookings, put your policies in writing, and gross up any platform listings. When the client is home, open the <a href="/invoice-generator">invoice generator</a>, add the nights and visits, record the deposit as amount paid and send the balance. For a warm, simple design, try the <a href="/invoice-templates/lavender">lavender invoice template</a>.</p>
+<p>Pet sitting rates that work are built per visit and per night: a drop-in price from your income and capacity, an overnight rate that covers the slots you give up, and clear add-ons for extra pets, medication and holidays. Take deposits on long bookings, put your policies in writing, and gross up any platform listings. When the client is home, open the <a href="/invoice-generator">invoice generator</a>, add the nights and visits, record the deposit as amount paid and send the balance. For a warm, simple design, try the <a href="/invoice-templates/lavender">lavender invoice template</a>. Your finished invoice downloads as a PDF, free and with no sign-up.</p>
 `,
   },
   {
@@ -1114,7 +1114,7 @@ export const PRICING_GUIDES_2026_C_POSTS: PostDraft[] = [
 
 <h2>Set your tutoring rates and send your first invoice</h2>
 
-<p>How much to charge for tutoring comes down to a clear formula: income plus costs divided by the sessions you can fill, then scaled by subject and level. Add travel fees for in-person work, gross up any marketplace prices, sell packages to steady your income, and enforce a fair cancellation policy. When the month ends, list each session in the <a href="/invoice-generator">invoice generator</a>, apply any package discount, record deposits as amount paid and send a clear invoice to the parent. For a clean school-friendly design, try the <a href="/invoice-templates/minimal">minimal invoice template</a>.</p>
+<p>How much to charge for tutoring comes down to a clear formula: income plus costs divided by the sessions you can fill, then scaled by subject and level. Add travel fees for in-person work, gross up any marketplace prices, sell packages to steady your income, and enforce a fair cancellation policy. When the month ends, list each session in the <a href="/invoice-generator">invoice generator</a>, apply any package discount, record deposits as amount paid and send a clear invoice to the parent. For a clean school-friendly design, try the <a href="/invoice-templates/minimal">minimal invoice template</a>. When your invoice looks right, download it as a PDF and send it straight to your client.</p>
 `,
   },
 ];

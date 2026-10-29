@@ -161,7 +161,7 @@ export const UK_TAX_2026_D_POSTS: PostDraft[] = [
 </ul>
 
 <h2>Get set up and start invoicing</h2>
-<p>Getting a UTR number is simple once you know it comes from registering for Self Assessment: register as soon as you start trading, allow about 15 days for the letter, and keep the number somewhere safe alongside your National Insurance number. While you wait, you can already trade and invoice. Create a professional, numbered invoice for free with our <a href="/invoice-generator">invoice generator</a>, or pick a clean layout from our <a href="/invoice-templates/minimal">minimal invoice template</a>.</p>
+<p>Getting a UTR number is simple once you know it comes from registering for Self Assessment: register as soon as you start trading, allow about 15 days for the letter, and keep the number somewhere safe alongside your National Insurance number. While you wait, you can already trade and invoice. Create a professional, numbered invoice for free with our <a href="/invoice-generator">invoice generator</a>, or pick a clean layout from our <a href="/invoice-templates/minimal">minimal invoice template</a>. Download the result as a PDF invoice you can email, print or upload to a client portal.</p>
 `,
   },
   {
@@ -339,7 +339,7 @@ export const UK_TAX_2026_D_POSTS: PostDraft[] = [
 </ul>
 
 <h2>Register, then start invoicing</h2>
-<p>Learning how to register as self-employed takes minutes: check you are over the £1,000 trading allowance, have your National Insurance number ready, complete the free GOV.UK sole trader registration well before 5 October, and wait about 15 days for your UTR. Then focus on getting paid. Create your first professional invoice free with our <a href="/invoice-generator">invoice generator</a>, and read the <a href="/user-guide">user guide</a> to save your details for next time.</p>
+<p>Learning how to register as self-employed takes minutes: check you are over the £1,000 trading allowance, have your National Insurance number ready, complete the free GOV.UK sole trader registration well before 5 October, and wait about 15 days for your UTR. Then focus on getting paid. Create your first professional invoice free with our <a href="/invoice-generator">invoice generator</a>, and read the <a href="/user-guide">user guide</a> to save your details for next time. Every invoice exports as a PDF, so it looks the same on your client's phone, laptop or printer.</p>
 `,
   },
   {
@@ -536,7 +536,7 @@ export const UK_TAX_2026_D_POSTS: PostDraft[] = [
 <p>If you have not yet registered as self-employed, do that first: see <a href="/blog/how-to-register-as-self-employed-uk">how to register as self-employed in the UK</a>, then register for CIS with your UTR.</p>
 
 <h2>Create your CIS invoice</h2>
-<p>A good CIS invoice template does three things: separates labour from materials, shows the CIS deduction at the right rate, and handles VAT correctly, with reverse charge wording where both parties are VAT registered. Set it up once and every monthly invoice becomes a two-minute job. Build yours now with our free <a href="/invoice-generator">invoice generator</a>, then save it for the next valuation.</p>
+<p>A good CIS invoice template does three things: separates labour from materials, shows the CIS deduction at the right rate, and handles VAT correctly, with reverse charge wording where both parties are VAT registered. Set it up once and every monthly invoice becomes a two-minute job. Build yours now with our free <a href="/invoice-generator">invoice generator</a>, then save it for the next valuation. No sign-up is needed, and your PDF invoice is ready to send in a few minutes.</p>
 `,
   },
   {
@@ -692,7 +692,7 @@ export const UK_TAX_2026_D_POSTS: PostDraft[] = [
 <p>Using Priya's second-year figures, she needs £2,968.20 on 31 January 2028 and £2,500 on 31 July 2028, a total of £5,468.20 over the year. Saving £456 a month for 12 months gives £5,472, which covers both payments with £3.80 to spare. Spreading it this way turns two large bills into one predictable monthly transfer.</p>
 
 <h2>Keep cash flowing for tax day</h2>
-<p>Payments on account are simply HMRC collecting tomorrow's tax today: two halves of last year's bill on 31 January and 31 July, with a balancing payment to square up. Plan for the first-year jump, reduce payments on account only with a realistic estimate, and keep saving from every invoice. The easiest way to stay on top is steady, professional billing: create and send invoices in minutes with our <a href="/invoice-generator">invoice generator</a> or the <a href="/invoice-generator/uk">UK invoice generator</a>.</p>
+<p>Payments on account are simply HMRC collecting tomorrow's tax today: two halves of last year's bill on 31 January and 31 July, with a balancing payment to square up. Plan for the first-year jump, reduce payments on account only with a realistic estimate, and keep saving from every invoice. The easiest way to stay on top is steady, professional billing: create and send invoices in minutes with our <a href="/invoice-generator">invoice generator</a> or the <a href="/invoice-generator/uk">UK invoice generator</a>. Your finished invoice downloads as a PDF, free and with no sign-up.</p>
 `,
   },
   {
@@ -890,7 +890,7 @@ export const UK_TAX_2026_D_POSTS: PostDraft[] = [
 <p>If you work under CIS, claiming allowable expenses is often how you get a refund of the 20% deducted from your labour. Our <a href="/blog/cis-invoice-template">CIS invoice template guide</a> explains how to separate labour and materials on invoices.</p>
 
 <h2>Claim every expense, invoice every job</h2>
-<p>Allowable expenses for the self-employed cover far more than most people claim: materials, travel at 55p a mile, home working, insurance, phone, software and training all reduce your tax bill. Keep receipts, use simplified expenses where they help, and compare against the trading allowance each year. Good records start with good invoices: create yours free with our <a href="/invoice-generator">invoice generator</a> or the <a href="/invoice-generator/uk">UK invoice generator</a>.</p>
+<p>Allowable expenses for the self-employed cover far more than most people claim: materials, travel at 55p a mile, home working, insurance, phone, software and training all reduce your tax bill. Keep receipts, use simplified expenses where they help, and compare against the trading allowance each year. Good records start with good invoices: create yours free with our <a href="/invoice-generator">invoice generator</a> or the <a href="/invoice-generator/uk">UK invoice generator</a>. When your invoice looks right, download it as a PDF and send it straight to your client.</p>
 `,
   },
 ];

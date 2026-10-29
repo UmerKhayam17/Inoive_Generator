@@ -419,7 +419,7 @@ export const PRICING_GUIDES_2026_D_POSTS: PostDraft[] = [
 
 <h2>Create your virtual assistant invoice</h2>
 
-<p>Clear virtual assistant rates come from a known floor, a simple retainer ladder and firm rules on overage and rollover. Once a client signs on, bill the first month in advance the same day. Use our <a href="/invoice-generator">free invoice generator</a> to add your retainer, any overage hours and your payment terms, and number it with the <a href="/tools/invoice-number-generator">invoice number generator</a> so every month follows the same sequence.</p>
+<p>Clear virtual assistant rates come from a known floor, a simple retainer ladder and firm rules on overage and rollover. Once a client signs on, bill the first month in advance the same day. Use our <a href="/invoice-generator">free invoice generator</a> to add your retainer, any overage hours and your payment terms, and number it with the <a href="/tools/invoice-number-generator">invoice number generator</a> so every month follows the same sequence. It is free, needs no account, and exports a print-ready PDF invoice.</p>
 `,
   },
   {
@@ -631,7 +631,7 @@ export const PRICING_GUIDES_2026_D_POSTS: PostDraft[] = [
 
 <h2>Create your social media management invoice</h2>
 
-<p>Good social media management pricing starts with your hourly floor, turns it into clear monthly packages, and charges separately for ads and content production. Once a client signs, invoice the first month in advance. Build it in minutes with our <a href="/invoice-generator">free invoice generator</a>, add your package and add-ons, and keep numbering consistent with our <a href="/tools/invoice-number-generator">invoice number generator</a>.</p>
+<p>Good social media management pricing starts with your hourly floor, turns it into clear monthly packages, and charges separately for ads and content production. Once a client signs, invoice the first month in advance. Build it in minutes with our <a href="/invoice-generator">free invoice generator</a>, add your package and add-ons, and keep numbering consistent with our <a href="/tools/invoice-number-generator">invoice number generator</a>. Download the result as a PDF invoice you can email, print or upload to a client portal.</p>
 `,
   },
   {
@@ -837,7 +837,7 @@ export const PRICING_GUIDES_2026_D_POSTS: PostDraft[] = [
 
 <h2>Create your consulting invoice</h2>
 
-<p>Good consulting rates rest on a clear floor, a fee structure that fits the work, and a payment schedule that keeps cash coming in. Once a proposal is signed, send the deposit invoice the same day. Create it in minutes with our <a href="/invoice-generator">free invoice generator</a>, record payments received so the balance updates, and choose a professional layout such as the <a href="/invoice-templates/corporate">corporate invoice template</a>.</p>
+<p>Good consulting rates rest on a clear floor, a fee structure that fits the work, and a payment schedule that keeps cash coming in. Once a proposal is signed, send the deposit invoice the same day. Create it in minutes with our <a href="/invoice-generator">free invoice generator</a>, record payments received so the balance updates, and choose a professional layout such as the <a href="/invoice-templates/corporate">corporate invoice template</a>. Every invoice exports as a PDF, so it looks the same on your client's phone, laptop or printer.</p>
 `,
   },
   {
@@ -1068,7 +1068,7 @@ export const PRICING_GUIDES_2026_D_POSTS: PostDraft[] = [
 
 <h2>Create your UGC invoice</h2>
 
-<p>Clear UGC rates come from a base price built on your hourly floor, plus separate, well-defined fees for hooks, raw footage, usage, whitelisting and exclusivity. When a brand accepts your quote, send the deposit invoice straight away. Build it in minutes with our <a href="/invoice-generator">free invoice generator</a>, record the deposit as an amount paid so the balance updates, and choose a bright layout such as the <a href="/invoice-templates/creative">creative invoice template</a>.</p>
+<p>Clear UGC rates come from a base price built on your hourly floor, plus separate, well-defined fees for hooks, raw footage, usage, whitelisting and exclusivity. When a brand accepts your quote, send the deposit invoice straight away. Build it in minutes with our <a href="/invoice-generator">free invoice generator</a>, record the deposit as an amount paid so the balance updates, and choose a bright layout such as the <a href="/invoice-templates/creative">creative invoice template</a>. No sign-up is needed, and your PDF invoice is ready to send in a few minutes.</p>
 `,
   },
 ];

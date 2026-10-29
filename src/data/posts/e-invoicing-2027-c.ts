@@ -189,7 +189,7 @@ export const EINVOICING_2027_C_POSTS: PostDraft[] = [
 
 <h2>Create your Egypt e-invoice data with confidence</h2>
 
-<p>The Egypt e-invoice system is strict but predictable: register on the ETA portal, sign every document with your eSeal, submit at the time of sale and only send customers documents the platform has accepted. B2C sellers should watch the e-receipt decisions for their name and prepare their POS early. For quotes, records and invoices to clients outside Egypt, use our <a href="/invoice-generator">free invoice generator</a> or start from a clean <a href="/invoice-templates/corporate">corporate invoice template</a>.</p>
+<p>The Egypt e-invoice system is strict but predictable: register on the ETA portal, sign every document with your eSeal, submit at the time of sale and only send customers documents the platform has accepted. B2C sellers should watch the e-receipt decisions for their name and prepare their POS early. For quotes, records and invoices to clients outside Egypt, use our <a href="/invoice-generator">free invoice generator</a> or start from a clean <a href="/invoice-templates/corporate">corporate invoice template</a>. It is free, needs no account, and exports a print-ready PDF invoice.</p>
 `,
   },
   {
@@ -393,7 +393,7 @@ export const EINVOICING_2027_C_POSTS: PostDraft[] = [
 
 <h2>Get your Turkey e-fatura process right</h2>
 
-<p>Turkey e-fatura is no longer only for large companies. Check your gross sales against the 3 million TL threshold, set up e-Arşiv for buyers outside the system, and plan for the end of paper invoices that took effect in 2026 for most sellers. For quotes, pro formas and invoices to clients outside Turkey, use our <a href="/invoice-generator">invoice generator</a> or pick a clean <a href="/invoice-templates/minimal">minimal invoice template</a>.</p>
+<p>Turkey e-fatura is no longer only for large companies. Check your gross sales against the 3 million TL threshold, set up e-Arşiv for buyers outside the system, and plan for the end of paper invoices that took effect in 2026 for most sellers. For quotes, pro formas and invoices to clients outside Turkey, use our <a href="/invoice-generator">invoice generator</a> or pick a clean <a href="/invoice-templates/minimal">minimal invoice template</a>. Download the result as a PDF invoice you can email, print or upload to a client portal.</p>
 `,
   },
   {
@@ -597,7 +597,7 @@ export const EINVOICING_2027_C_POSTS: PostDraft[] = [
 
 <h2>Issue e-Faktur with confidence</h2>
 
-<p>e-Faktur under Coretax is simpler than the old system once it is set up: activate your account, get your certificate, let Coretax assign the NSFP and use the 11/12 base for ordinary sales. Keep your commercial invoices matched to each faktur pajak. For quotes, commercial invoices and bills to clients outside Indonesia, use our <a href="/invoice-generator">free invoice generator</a> or a ready-made <a href="/invoice-templates/modern">modern invoice template</a>.</p>
+<p>e-Faktur under Coretax is simpler than the old system once it is set up: activate your account, get your certificate, let Coretax assign the NSFP and use the 11/12 base for ordinary sales. Keep your commercial invoices matched to each faktur pajak. For quotes, commercial invoices and bills to clients outside Indonesia, use our <a href="/invoice-generator">free invoice generator</a> or a ready-made <a href="/invoice-templates/modern">modern invoice template</a>. Every invoice exports as a PDF, so it looks the same on your client's phone, laptop or printer.</p>
 `,
   },
   {
@@ -832,7 +832,7 @@ export const EINVOICING_2027_C_POSTS: PostDraft[] = [
 
 <h2>Meet the Irish VAT invoice requirements every time</h2>
 
-<p>Irish VAT invoice requirements are straightforward once you build them into a template: sequential numbers, full details for both parties, VAT-exclusive prices, a breakdown by rate and the right notations for reverse charge or intra-EU supplies. Plan now for the receive obligation in November 2028. Create a compliant invoice in our <a href="/invoice-generator">free invoice generator</a> or start from a clean <a href="/invoice-templates/classic">classic invoice template</a>; if you also bill in other markets, compare the rules in our <a href="/blog/turkey-e-invoice">Turkey e-invoice guide</a>.</p>
+<p>Irish VAT invoice requirements are straightforward once you build them into a template: sequential numbers, full details for both parties, VAT-exclusive prices, a breakdown by rate and the right notations for reverse charge or intra-EU supplies. Plan now for the receive obligation in November 2028. Create a compliant invoice in our <a href="/invoice-generator">free invoice generator</a> or start from a clean <a href="/invoice-templates/classic">classic invoice template</a>; if you also bill in other markets, compare the rules in our <a href="/blog/turkey-e-invoice">Turkey e-invoice guide</a>. No sign-up is needed, and your PDF invoice is ready to send in a few minutes.</p>
 `,
   },
   {
@@ -1048,7 +1048,7 @@ export const EINVOICING_2027_C_POSTS: PostDraft[] = [
 
 <h2>Get your NF-e and nota fiscal process ready</h2>
 
-<p>NF-e, NFC-e and NFS-e are part of daily life for Brazilian businesses, and the reform adds work in 2026: update your software for the CBS and IBS fields, move services onto the national NFS-e standard if you are an MEI or Simples Nacional company, and keep your digital certificate valid. For pro formas, quotes and invoices to clients outside Brazil, use our <a href="/invoice-generator">free invoice generator</a>.</p>
+<p>NF-e, NFC-e and NFS-e are part of daily life for Brazilian businesses, and the reform adds work in 2026: update your software for the CBS and IBS fields, move services onto the national NFS-e standard if you are an MEI or Simples Nacional company, and keep your digital certificate valid. For pro formas, quotes and invoices to clients outside Brazil, use our <a href="/invoice-generator">free invoice generator</a>. Your finished invoice downloads as a PDF, free and with no sign-up.</p>
 `,
   },
 ];

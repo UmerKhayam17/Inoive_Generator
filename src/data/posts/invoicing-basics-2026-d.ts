@@ -700,7 +700,7 @@ export const INVOICING_BASICS_2026_D_POSTS: PostDraft[] = [
 <p>For cash-on-delivery customers, our guide to <a href="/blog/cash-on-delivery-invoicing">cash on delivery invoicing</a> shows how drivers collect payment and how to reconcile it. If you run a courier business delivering for others, our sibling guide to the <a href="/blog/courier-delivery-invoice-template">courier delivery invoice template</a> covers billing per drop and per mile.</p>
 
 <h2>Send the invoice that matches your delivery note</h2>
-<p>A delivery note template records what left your premises and what the customer accepted, and a signed copy is your proof of delivery if anything is questioned. Keep prices off it, show ordered, delivered and outstanding quantities, and invoice exactly what the signed note confirms. When the delivery is done, open the <a href="/invoice-generator">invoice generator</a>, add the delivered items with the PO and delivery note references, and download your invoice in minutes.</p>
+<p>A delivery note template records what left your premises and what the customer accepted, and a signed copy is your proof of delivery if anything is questioned. Keep prices off it, show ordered, delivered and outstanding quantities, and invoice exactly what the signed note confirms. When the delivery is done, open the <a href="/invoice-generator">invoice generator</a>, add the delivered items with the PO and delivery note references, and download your invoice in minutes. Download the result as a PDF invoice you can email, print or upload to a client portal.</p>
 `,
   },
   {

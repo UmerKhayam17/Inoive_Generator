@@ -247,7 +247,7 @@ export const COMPARISONS_2026_E_POSTS: PostDraft[] = [
 
 <p>Both statements are only as accurate as the records behind them. Revenue on the income statement and receivables on the balance sheet both come straight from your invoices, so missing numbers, duplicate invoices or wrong tax amounts flow through to every report. Clear, numbered invoices with dates, due dates and tax shown separately make month-end far quicker and keep the income statement vs balance sheet link intact.</p>
 
-<p>Create professional, numbered invoices in minutes with our <a href="/invoice-generator">invoice generator</a>, then pick a clean layout such as the <a href="/invoice-templates/corporate">corporate invoice template</a> so every sale is recorded correctly from day one.</p>
+<p>Create professional, numbered invoices in minutes with our <a href="/invoice-generator">invoice generator</a>, then pick a clean layout such as the <a href="/invoice-templates/corporate">corporate invoice template</a> so every sale is recorded correctly from day one. Your finished invoice downloads as a PDF, free and with no sign-up.</p>
 `,
   },
   {
@@ -499,7 +499,7 @@ export const COMPARISONS_2026_E_POSTS: PostDraft[] = [
 
 <h2>Build Owner's Equity One Invoice at a Time</h2>
 
-<p>Owner's equity grows when your business earns more than it spends and you leave some of that profit in place. The starting point is getting paid in full and on time for the work you do. Send clear, professional invoices with due dates and payment details using our <a href="/invoice-generator">invoice generator</a>, or choose a clean design such as the <a href="/invoice-templates/minimal">minimal invoice template</a>, and track your owner's equity monthly so you always know what your business is really worth to you.</p>
+<p>Owner's equity grows when your business earns more than it spends and you leave some of that profit in place. The starting point is getting paid in full and on time for the work you do. Send clear, professional invoices with due dates and payment details using our <a href="/invoice-generator">invoice generator</a>, or choose a clean design such as the <a href="/invoice-templates/minimal">minimal invoice template</a>, and track your owner's equity monthly so you always know what your business is really worth to you. When your invoice looks right, download it as a PDF and send it straight to your client.</p>
 `,
   },
   {
@@ -719,7 +719,7 @@ export const COMPARISONS_2026_E_POSTS: PostDraft[] = [
 
 <h2>Speed Up Payment Before You Finance It</h2>
 
-<p>The best way to reduce invoice finance costs is to get paid faster in the first place. Clear invoices sent the day work is delivered, with visible due dates and easy payment options, shorten the time your money is tied up, whichever side of the invoice discounting vs factoring choice you land on. Create accurate, finance-ready invoices in minutes with our <a href="/invoice-generator">invoice generator</a>, and keep an eye on <a href="/blog/cash-flow-management">cash flow management</a> so finance stays a tool rather than a habit.</p>
+<p>The best way to reduce invoice finance costs is to get paid faster in the first place. Clear invoices sent the day work is delivered, with visible due dates and easy payment options, shorten the time your money is tied up, whichever side of the invoice discounting vs factoring choice you land on. Create accurate, finance-ready invoices in minutes with our <a href="/invoice-generator">invoice generator</a>, and keep an eye on <a href="/blog/cash-flow-management">cash flow management</a> so finance stays a tool rather than a habit. It is free, needs no account, and exports a print-ready PDF invoice.</p>
 `,
   },
   {
@@ -932,7 +932,7 @@ export const COMPARISONS_2026_E_POSTS: PostDraft[] = [
 
 <h2>Create Your Tax or Commercial Invoice</h2>
 
-<p>The tax invoice vs commercial invoice question comes down to audience: the tax authority for one, customs for the other. Get the shared basics right on both, including numbering, descriptions, prices and totals, and add the specialist fields each authority needs. Build either document in minutes with our <a href="/invoice-generator">invoice generator</a>, using a clear layout such as the <a href="/invoice-templates/classic">classic invoice template</a>. This article is general information, not tax, customs or legal advice; check current rules with your tax authority or customs broker before you ship.</p>
+<p>The tax invoice vs commercial invoice question comes down to audience: the tax authority for one, customs for the other. Get the shared basics right on both, including numbering, descriptions, prices and totals, and add the specialist fields each authority needs. Build either document in minutes with our <a href="/invoice-generator">invoice generator</a>, using a clear layout such as the <a href="/invoice-templates/classic">classic invoice template</a>. This article is general information, not tax, customs or legal advice; check current rules with your tax authority or customs broker before you ship. Download the result as a PDF invoice you can email, print or upload to a client portal.</p>
 `,
   },
   {
@@ -1165,7 +1165,7 @@ export const COMPARISONS_2026_E_POSTS: PostDraft[] = [
 
 <h2>Create Your Proforma or Commercial Invoice</h2>
 
-<p>The proforma invoice vs commercial invoice choice is really about timing: the proforma sets expectations before shipment, and the commercial invoice records what actually crossed the border. Keep both consistent, label them clearly and let the commercial invoice reflect the final facts. Build either one in minutes with our <a href="/invoice-generator">invoice generator</a>. This guide is general information, not customs or legal advice; check the destination country's requirements with your carrier or customs broker before shipping.</p>
+<p>The proforma invoice vs commercial invoice choice is really about timing: the proforma sets expectations before shipment, and the commercial invoice records what actually crossed the border. Keep both consistent, label them clearly and let the commercial invoice reflect the final facts. Build either one in minutes with our <a href="/invoice-generator">invoice generator</a>. This guide is general information, not customs or legal advice; check the destination country's requirements with your carrier or customs broker before shipping. Every invoice exports as a PDF, so it looks the same on your client's phone, laptop or printer.</p>
 `,
   },
 ];

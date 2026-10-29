@@ -180,7 +180,7 @@ export const UK_BUSINESS_2026_B_POSTS: PostDraft[] = [
 <p>Your invoices feed your accounts, your Corporation Tax return and, once a year, the information you check when filing your <a href="/blog/confirmation-statement">confirmation statement</a>. If the registered office changes, update your invoice footer the same day you update Companies House. If you change the company name, update templates immediately, because the old name will no longer match the register. A quick quarterly review of your template catches most of these issues.</p>
 
 <h2>Create your limited company invoice</h2>
-<p>Meeting limited company invoice requirements is mostly a one-time setup: get the registered name, company number, registered office and place of registration into your template, add VAT details if you are registered, and every invoice after that will be compliant. Choose a professional layout such as the <a href="/invoice-templates/corporate">corporate invoice template</a>, then build and download your invoice in the <a href="/invoice-generator">free invoice generator</a>, no sign-up needed.</p>
+<p>Meeting limited company invoice requirements is mostly a one-time setup: get the registered name, company number, registered office and place of registration into your template, add VAT details if you are registered, and every invoice after that will be compliant. Choose a professional layout such as the <a href="/invoice-templates/corporate">corporate invoice template</a>, then build and download your invoice in the <a href="/invoice-generator">free invoice generator</a>, no sign-up needed. No sign-up is needed, and your PDF invoice is ready to send in a few minutes.</p>
 `,
   },
   {
@@ -377,7 +377,7 @@ export const UK_BUSINESS_2026_B_POSTS: PostDraft[] = [
 </ul>
 
 <h2>Avoid the Self Assessment late filing penalty with better records</h2>
-<p>The Self Assessment late filing penalty is entirely avoidable: file by 31 January even if you cannot pay, appeal within 30 days if you had a genuine reasonable excuse, and keep records that make the return quick to complete. Start with clean, numbered invoices from the <a href="/invoice-generator">free invoice generator</a> and pick a simple layout such as the <a href="/invoice-templates/minimal">minimal invoice template</a>, so your income figures are ready when tax season arrives.</p>
+<p>The Self Assessment late filing penalty is entirely avoidable: file by 31 January even if you cannot pay, appeal within 30 days if you had a genuine reasonable excuse, and keep records that make the return quick to complete. Start with clean, numbered invoices from the <a href="/invoice-generator">free invoice generator</a> and pick a simple layout such as the <a href="/invoice-templates/minimal">minimal invoice template</a>, so your income figures are ready when tax season arrives. Your finished invoice downloads as a PDF, free and with no sign-up.</p>
 `,
   },
   {
@@ -559,7 +559,7 @@ export const UK_BUSINESS_2026_B_POSTS: PostDraft[] = [
 </ul>
 
 <h2>Plan for Class 4 National Insurance from your first invoice</h2>
-<p>Class 4 National Insurance is predictable: nothing up to £12,570, 6% up to £50,270 and 2% above that for 2026/27. The difficult part is having the money ready in January and July. Issue clear, numbered invoices with the <a href="/invoice-generator">free invoice generator</a>, keep your expenses tidy, and you will know your self-employed NI bill long before HMRC asks for it.</p>
+<p>Class 4 National Insurance is predictable: nothing up to £12,570, 6% up to £50,270 and 2% above that for 2026/27. The difficult part is having the money ready in January and July. Issue clear, numbered invoices with the <a href="/invoice-generator">free invoice generator</a>, keep your expenses tidy, and you will know your self-employed NI bill long before HMRC asks for it. When your invoice looks right, download it as a PDF and send it straight to your client.</p>
 `,
   },
   {
@@ -728,7 +728,7 @@ export const UK_BUSINESS_2026_B_POSTS: PostDraft[] = [
 <p>Once you are in a plan, HMRC may still send automated statements showing the full balance. These usually reflect the debt, not a demand to pay it all at once. Check each letter against your plan confirmation and call the relevant payment problems line if anything does not match, rather than assuming the plan has been cancelled.</p>
 
 <h2>Use HMRC Time to Pay early, then fix the cash flow</h2>
-<p>An HMRC Time to Pay arrangement is a practical way to clear a tax debt in manageable monthly payments, but it costs interest and depends on staying current with new bills. File on time, ask early, pay what you can up front, and then fix the cash flow that caused the problem. Getting paid faster starts with clear invoices: create yours in the <a href="/invoice-generator">free invoice generator</a> and track which are still unpaid.</p>
+<p>An HMRC Time to Pay arrangement is a practical way to clear a tax debt in manageable monthly payments, but it costs interest and depends on staying current with new bills. File on time, ask early, pay what you can up front, and then fix the cash flow that caused the problem. Getting paid faster starts with clear invoices: create yours in the <a href="/invoice-generator">free invoice generator</a> and track which are still unpaid. It is free, needs no account, and exports a print-ready PDF invoice.</p>
 `,
   },
   {
@@ -909,7 +909,7 @@ export const UK_BUSINESS_2026_B_POSTS: PostDraft[] = [
 </ul>
 
 <h2>Close your limited company cleanly</h2>
-<p>Knowing how to close a limited company comes down to three decisions: is it solvent, how much is left to distribute, and have you settled every tax and creditor first. For most small companies with under £25,000 left, a DS01 strike-off is quick and cheap; above that, an MVL is often worth its fees. Start by sending your final invoices from the <a href="/invoice-generator">free invoice generator</a>, then collect, settle and distribute before you apply.</p>
+<p>Knowing how to close a limited company comes down to three decisions: is it solvent, how much is left to distribute, and have you settled every tax and creditor first. For most small companies with under £25,000 left, a DS01 strike-off is quick and cheap; above that, an MVL is often worth its fees. Start by sending your final invoices from the <a href="/invoice-generator">free invoice generator</a>, then collect, settle and distribute before you apply. Download the result as a PDF invoice you can email, print or upload to a client portal.</p>
 `,
   },
 ];

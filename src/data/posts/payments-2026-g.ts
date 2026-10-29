@@ -217,7 +217,7 @@ export const PAYMENTS_2026_G_POSTS: PostDraft[] = [
 
 <h2>Create the Invoice Your Clients Pay by Check</h2>
 
-<p>Knowing how to write a check correctly protects your money when you pay bills. When you are the one being paid, a clear invoice makes it easy for clients to write the check right the first time: your exact legal name for the payee line, an invoice number for the memo, and a total they can copy straight into the amount box. Build one in minutes with our free <a href="/invoice-generator">invoice generator</a>, number it consistently with the <a href="/tools/invoice-number-generator">invoice number generator</a>, and choose a clean layout from our <a href="/invoice-templates/classic">classic invoice template</a> if your clients still prefer paper.</p>
+<p>Knowing how to write a check correctly protects your money when you pay bills. When you are the one being paid, a clear invoice makes it easy for clients to write the check right the first time: your exact legal name for the payee line, an invoice number for the memo, and a total they can copy straight into the amount box. Build one in minutes with our free <a href="/invoice-generator">invoice generator</a>, number it consistently with the <a href="/tools/invoice-number-generator">invoice number generator</a>, and choose a clean layout from our <a href="/invoice-templates/classic">classic invoice template</a> if your clients still prefer paper. Download the result as a PDF invoice you can email, print or upload to a client portal.</p>
 `,
   },
   {
@@ -441,7 +441,7 @@ export const PAYMENTS_2026_G_POSTS: PostDraft[] = [
 
 <h2>Bill Every Installment Clearly</h2>
 
-<p>A promissory note template sets the promise; clean records make it stick. Whether your note is secured or unsecured, send a dated, numbered bill or receipt for each installment that references the note and shows the remaining balance. You can do that in minutes with our free <a href="/invoice-generator">invoice generator</a>, keep numbers in sequence with the <a href="/tools/invoice-number-generator">invoice number generator</a>, and use a plain <a href="/invoice-templates/minimal">minimal invoice template</a> so each installment is easy to read and file.</p>
+<p>A promissory note template sets the promise; clean records make it stick. Whether your note is secured or unsecured, send a dated, numbered bill or receipt for each installment that references the note and shows the remaining balance. You can do that in minutes with our free <a href="/invoice-generator">invoice generator</a>, keep numbers in sequence with the <a href="/tools/invoice-number-generator">invoice number generator</a>, and use a plain <a href="/invoice-templates/minimal">minimal invoice template</a> so each installment is easy to read and file. Every invoice exports as a PDF, so it looks the same on your client's phone, laptop or printer.</p>
 `,
   },
   {
@@ -653,7 +653,7 @@ export const PAYMENTS_2026_G_POSTS: PostDraft[] = [
 
 <h2>Bill Your Off-Platform Clients With Zero Commission</h2>
 
-<p>Upwork fees in 2026 come down to three numbers: the 0% to 15% service fee on each contract, the Connects you spend to win it, and the withdrawal fee to get paid. Know all three and you can price every bid with confidence. For clients you find yourself, skip the commission entirely: create a professional bill with our free <a href="/invoice-generator">invoice generator</a> or start from a ready-made <a href="/invoice-templates/modern">modern invoice template</a> built for freelancers.</p>
+<p>Upwork fees in 2026 come down to three numbers: the 0% to 15% service fee on each contract, the Connects you spend to win it, and the withdrawal fee to get paid. Know all three and you can price every bid with confidence. For clients you find yourself, skip the commission entirely: create a professional bill with our free <a href="/invoice-generator">invoice generator</a> or start from a ready-made <a href="/invoice-templates/modern">modern invoice template</a> built for freelancers. No sign-up is needed, and your PDF invoice is ready to send in a few minutes.</p>
 `,
   },
   {
@@ -853,7 +853,7 @@ export const PAYMENTS_2026_G_POSTS: PostDraft[] = [
 
 <h2>Invoice Your Direct Clients Commission-Free</h2>
 
-<p>Fiverr fees for sellers are predictable: 20% of every order and tip, a clearing period, and a small withdrawal fee that depends on your payout method. Price from your take-home figure and those fees stop being a surprise. For clients you win outside Fiverr, keep 100% of the fee by billing them yourself: build a professional bill with our free <a href="/invoice-generator">invoice generator</a>, or pick a ready-made <a href="/invoice-templates/creative">creative invoice template</a> that suits design and content work.</p>
+<p>Fiverr fees for sellers are predictable: 20% of every order and tip, a clearing period, and a small withdrawal fee that depends on your payout method. Price from your take-home figure and those fees stop being a surprise. For clients you win outside Fiverr, keep 100% of the fee by billing them yourself: build a professional bill with our free <a href="/invoice-generator">invoice generator</a>, or pick a ready-made <a href="/invoice-templates/creative">creative invoice template</a> that suits design and content work. Your finished invoice downloads as a PDF, free and with no sign-up.</p>
 `,
   },
   {
@@ -1065,7 +1065,7 @@ export const PAYMENTS_2026_G_POSTS: PostDraft[] = [
 
 <h2>Invoice Direct Clients and Keep 100%</h2>
 
-<p>The best freelance websites for you are the ones that bring steady work at a fee your prices can absorb: Upwork and Fiverr for volume, Freelancer.com, PeoplePerHour and Guru as alternatives, Contra and LinkedIn when you want to keep the whole fee. For every client you win directly, create a professional bill in minutes with our free <a href="/invoice-generator">invoice generator</a>, or start from a ready-made <a href="/invoice-templates/startup">startup invoice template</a> designed for freelancers and small studios.</p>
+<p>The best freelance websites for you are the ones that bring steady work at a fee your prices can absorb: Upwork and Fiverr for volume, Freelancer.com, PeoplePerHour and Guru as alternatives, Contra and LinkedIn when you want to keep the whole fee. For every client you win directly, create a professional bill in minutes with our free <a href="/invoice-generator">invoice generator</a>, or start from a ready-made <a href="/invoice-templates/startup">startup invoice template</a> designed for freelancers and small studios. When your invoice looks right, download it as a PDF and send it straight to your client.</p>
 `,
   },
 ];

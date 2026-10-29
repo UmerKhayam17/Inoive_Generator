@@ -265,7 +265,7 @@ export const ACCOUNTING_2026_D_POSTS: PostDraft[] = [
 
 <h2>Start with accurate revenue</h2>
 
-<p>Learning how to calculate net income is mostly about discipline: the same formula, the same categories and complete records every period. Revenue is the line everything else depends on, so make sure every sale is invoiced, dated and numbered. Create clean, professional invoices with the free <a href="/invoice-generator">invoice generator</a>, pick a layout from our <a href="/invoice-templates">invoice templates</a>, and your net income calculation will start from numbers you can trust.</p>
+<p>Learning how to calculate net income is mostly about discipline: the same formula, the same categories and complete records every period. Revenue is the line everything else depends on, so make sure every sale is invoiced, dated and numbered. Create clean, professional invoices with the free <a href="/invoice-generator">invoice generator</a>, pick a layout from our <a href="/invoice-templates">invoice templates</a>, and your net income calculation will start from numbers you can trust. Your finished invoice downloads as a PDF, free and with no sign-up.</p>
 `,
   },
   {
@@ -494,7 +494,7 @@ export const ACCOUNTING_2026_D_POSTS: PostDraft[] = [
 
 <h2>Track operating income from your invoices up</h2>
 
-<p>Operating income is only as accurate as the revenue at the top of the statement. Make sure every job is invoiced promptly with clear line items, consistent dates and <a href="/tools/invoice-number-generator">sequential invoice numbers</a>, so your monthly profit and loss is complete. Create your next invoice with the free <a href="/invoice-generator">invoice generator</a> or choose a clean layout such as the <a href="/invoice-templates/corporate">corporate invoice template</a>, then review your operating income and margin every month.</p>
+<p>Operating income is only as accurate as the revenue at the top of the statement. Make sure every job is invoiced promptly with clear line items, consistent dates and <a href="/tools/invoice-number-generator">sequential invoice numbers</a>, so your monthly profit and loss is complete. Create your next invoice with the free <a href="/invoice-generator">invoice generator</a> or choose a clean layout such as the <a href="/invoice-templates/corporate">corporate invoice template</a>, then review your operating income and margin every month. When your invoice looks right, download it as a PDF and send it straight to your client.</p>
 `,
   },
   {
@@ -723,7 +723,7 @@ export const ACCOUNTING_2026_D_POSTS: PostDraft[] = [
 
 <h2>Put contribution margin to work</h2>
 
-<p>Calculate contribution margin per unit and ratio for each product or service, review the totals monthly, and use them before every discount, wholesale deal or busy-season decision. It pairs naturally with <a href="/blog/unit-economics">unit economics</a> and with tracking your <a href="/blog/operating-income">operating income</a>. When it is time to bill, create itemised invoices with the free <a href="/invoice-generator">invoice generator</a> so every sale's price, discount and quantity is recorded accurately.</p>
+<p>Calculate contribution margin per unit and ratio for each product or service, review the totals monthly, and use them before every discount, wholesale deal or busy-season decision. It pairs naturally with <a href="/blog/unit-economics">unit economics</a> and with tracking your <a href="/blog/operating-income">operating income</a>. When it is time to bill, create itemised invoices with the free <a href="/invoice-generator">invoice generator</a> so every sale's price, discount and quantity is recorded accurately. It is free, needs no account, and exports a print-ready PDF invoice.</p>
 `,
   },
   {
@@ -970,7 +970,7 @@ export const ACCOUNTING_2026_D_POSTS: PostDraft[] = [
 
 <h2>Price with overhead built in</h2>
 
-<p>Overhead costs are real costs, and every price you quote should recover its share. Calculate your overhead rate once a year, add it to every job or hourly rate, and check recovery each quarter. When the work is done, bill it clearly with the free <a href="/invoice-generator">invoice generator</a>, using a tidy layout such as the <a href="/invoice-templates/classic">classic invoice template</a>.</p>
+<p>Overhead costs are real costs, and every price you quote should recover its share. Calculate your overhead rate once a year, add it to every job or hourly rate, and check recovery each quarter. When the work is done, bill it clearly with the free <a href="/invoice-generator">invoice generator</a>, using a tidy layout such as the <a href="/invoice-templates/classic">classic invoice template</a>. Download the result as a PDF invoice you can email, print or upload to a client portal.</p>
 `,
   },
   {
@@ -1246,7 +1246,7 @@ export const ACCOUNTING_2026_D_POSTS: PostDraft[] = [
 
 <h2>Bill your cost plus prices clearly</h2>
 
-<p>Cost plus pricing is only as good as the cost behind it, so count materials, labour and overhead before adding your markup, and convert any target margin to the right markup first. When the work is done, itemise costs and fees clearly on the invoice. Create a professional invoice in minutes with the free <a href="/invoice-generator">invoice generator</a>, or start from the <a href="/invoice-templates/modern">modern invoice template</a>.</p>
+<p>Cost plus pricing is only as good as the cost behind it, so count materials, labour and overhead before adding your markup, and convert any target margin to the right markup first. When the work is done, itemise costs and fees clearly on the invoice. Create a professional invoice in minutes with the free <a href="/invoice-generator">invoice generator</a>, or start from the <a href="/invoice-templates/modern">modern invoice template</a>. Every invoice exports as a PDF, so it looks the same on your client's phone, laptop or printer.</p>
 `,
   },
 ];

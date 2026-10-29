@@ -722,7 +722,7 @@ export const START_BUSINESS_2026_D_POSTS: PostDraft[] = [
 
 <h2>Create Your Event Planning Invoice</h2>
 
-<p>Starting an event planning business means choosing a niche, getting registered and insured, building a portfolio and vendor network, and pricing packages from real hours with a firm payment schedule. When your first client signs, open the free <a href="/invoice-generator">invoice generator</a>, add your retainer or package, record any amount already paid and send a polished invoice that shows the balance due.</p>
+<p>Starting an event planning business means choosing a niche, getting registered and insured, building a portfolio and vendor network, and pricing packages from real hours with a firm payment schedule. When your first client signs, open the free <a href="/invoice-generator">invoice generator</a>, add your retainer or package, record any amount already paid and send a polished invoice that shows the balance due. Your finished invoice downloads as a PDF, free and with no sign-up.</p>
 `,
   },
   {
@@ -927,7 +927,7 @@ export const START_BUSINESS_2026_D_POSTS: PostDraft[] = [
 
 <h2>Invoice Under Your New Business Structure</h2>
 
-<p>The types of business entities come down to a trade-off between simplicity, liability protection and tax treatment. Sole proprietorships are easiest, LLCs add protection with flexible tax options, S corp elections can cut payroll-type tax at higher profits, and C corporations suit companies raising capital. Whichever structure you choose, show the correct legal name and tax ID on your invoices. Open the free <a href="/invoice-generator">invoice generator</a> to create a professional invoice under your business name today.</p>
+<p>The types of business entities come down to a trade-off between simplicity, liability protection and tax treatment. Sole proprietorships are easiest, LLCs add protection with flexible tax options, S corp elections can cut payroll-type tax at higher profits, and C corporations suit companies raising capital. Whichever structure you choose, show the correct legal name and tax ID on your invoices. Open the free <a href="/invoice-generator">invoice generator</a> to create a professional invoice under your business name today. When your invoice looks right, download it as a PDF and send it straight to your client.</p>
 `,
   },
   {
@@ -1123,7 +1123,7 @@ export const START_BUSINESS_2026_D_POSTS: PostDraft[] = [
 
 <h2>Keep Your LLC Invoices 1099-Ready</h2>
 
-<p>So, does an LLC get a 1099? Yes when it is taxed as a disregarded entity or partnership and you paid it $2,000 or more for services in 2026 by cash, check or bank transfer; generally no when it is taxed as an S or C corporation, unless it provides legal or medical services. Collect a W-9 from every vendor, and if you are the LLC, make your invoices match your W-9. Create clean invoices with your legal name and EIN in the free <a href="/invoice-generator">invoice generator</a>, or pick a professional layout from our <a href="/invoice-templates">invoice templates</a>.</p>
+<p>So, does an LLC get a 1099? Yes when it is taxed as a disregarded entity or partnership and you paid it $2,000 or more for services in 2026 by cash, check or bank transfer; generally no when it is taxed as an S or C corporation, unless it provides legal or medical services. Collect a W-9 from every vendor, and if you are the LLC, make your invoices match your W-9. Create clean invoices with your legal name and EIN in the free <a href="/invoice-generator">invoice generator</a>, or pick a professional layout from our <a href="/invoice-templates">invoice templates</a>. It is free, needs no account, and exports a print-ready PDF invoice.</p>
 `,
   },
 ];

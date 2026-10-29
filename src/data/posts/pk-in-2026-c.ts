@@ -524,7 +524,7 @@ export const PK_IN_2026_C_POSTS: PostDraft[] = [
 <p>Most of these mistakes cost little to fix early and a lot to fix after a notice arrives, so review your registrations once a year when you file your return.</p>
 
 <h2>Invoice like a registered business</h2>
-<p>Sole proprietorship registration in Pakistan is mostly a matter of getting your NTN, adding your business in IRIS and taking on only the extra registrations your activity needs. From then on, consistent invoices and records do most of the work for your tax return. Pick a clean layout such as the <a href="/invoice-templates/minimal">minimal invoice template</a>, add your business name and NTN, and create your first invoice with the <a href="/invoice-generator">free invoice generator</a>.</p>
+<p>Sole proprietorship registration in Pakistan is mostly a matter of getting your NTN, adding your business in IRIS and taking on only the extra registrations your activity needs. From then on, consistent invoices and records do most of the work for your tax return. Pick a clean layout such as the <a href="/invoice-templates/minimal">minimal invoice template</a>, add your business name and NTN, and create your first invoice with the <a href="/invoice-generator">free invoice generator</a>. Your finished invoice downloads as a PDF, free and with no sign-up.</p>
 `,
   },
   {
@@ -686,7 +686,7 @@ export const PK_IN_2026_C_POSTS: PostDraft[] = [
 <p>For freelancers and small businesses, TDS is an advance payment of your income tax. It appears against your PAN in Form 168 and the annual information statement, and you claim it in your return. If your total TDS is more than your final tax, the excess is refunded. Remember to account for TDS when calculating <a href="/blog/advance-tax-due-dates-india">advance tax due dates and instalments</a>, because advance tax is payable only on tax after TDS. Freelancers using presumptive taxation should also read our guide to <a href="/blog/section-44ada-freelancers">section 44ADA (now section 58)</a> and our sibling guide to <a href="/blog/itr-for-freelancers-india">ITR for freelancers</a>. Businesses that pay suppliers late should also watch the <a href="/blog/msme-45-days-payment-rule">MSME 45-day payment rule</a>.</p>
 
 <h2>Create TDS-ready invoices</h2>
-<p>The TDS rate chart for 2026-27 mostly keeps familiar rates, but it moves them into section 393 under the Income-tax Act 2025, so update your contracts, invoice notes and software. Show GST separately, include your PAN, and add a clear TDS note so clients deduct the right amount. Number invoices consistently with the <a href="/tools/invoice-number-generator">invoice number generator</a>, register for GST if you cross the limit (see <a href="/blog/gst-registration-india">GST registration in India</a>), and create your next invoice with the <a href="/invoice-generator">free invoice generator</a>.</p>
+<p>The TDS rate chart for 2026-27 mostly keeps familiar rates, but it moves them into section 393 under the Income-tax Act 2025, so update your contracts, invoice notes and software. Show GST separately, include your PAN, and add a clear TDS note so clients deduct the right amount. Number invoices consistently with the <a href="/tools/invoice-number-generator">invoice number generator</a>, register for GST if you cross the limit (see <a href="/blog/gst-registration-india">GST registration in India</a>), and create your next invoice with the <a href="/invoice-generator">free invoice generator</a>. When your invoice looks right, download it as a PDF and send it straight to your client.</p>
 `,
   },
   {
@@ -858,7 +858,7 @@ export const PK_IN_2026_C_POSTS: PostDraft[] = [
 <p>If you also deal with tax systems abroad, the idea is similar elsewhere: compare our guide to <a href="/blog/quarterly-estimated-taxes-freelancers">quarterly estimated taxes for US freelancers</a>.</p>
 
 <h2>Plan your advance tax with clean invoice records</h2>
-<p>The advance tax due dates are fixed: 15 June, 15 September, 15 December and 15 March, with cumulative targets of 15, 45, 75 and 100 percent. What makes them manageable is knowing your income as the year goes on. Issue numbered invoices, record every payment and TDS deduction, and revisit your estimate before each date to avoid interest under sections 424 and 425. Create professional invoices for every client with the <a href="/invoice-generator">free invoice generator</a> and keep your tax year organised from the first instalment.</p>
+<p>The advance tax due dates are fixed: 15 June, 15 September, 15 December and 15 March, with cumulative targets of 15, 45, 75 and 100 percent. What makes them manageable is knowing your income as the year goes on. Issue numbered invoices, record every payment and TDS deduction, and revisit your estimate before each date to avoid interest under sections 424 and 425. Create professional invoices for every client with the <a href="/invoice-generator">free invoice generator</a> and keep your tax year organised from the first instalment. It is free, needs no account, and exports a print-ready PDF invoice.</p>
 `,
   },
 ];

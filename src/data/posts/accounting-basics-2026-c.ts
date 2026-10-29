@@ -457,7 +457,7 @@ export const ACCOUNTING_BASICS_2026_C_POSTS: PostDraft[] = [
 
 <h2>Create invoices that are easy to post</h2>
 
-<p>Every invoice you send becomes a debit to receivables and a credit to revenue, so a clean invoice makes for a clean entry. Show the pre-tax amount, the tax and the total on separate lines, and give each invoice a unique number from the <a href="/tools/invoice-number-generator">invoice number generator</a>. Build yours in minutes with the <a href="/invoice-generator">invoice generator</a>, or pick a layout from our <a href="/invoice-templates">invoice templates</a>, then post it using the cheat sheet above.</p>
+<p>Every invoice you send becomes a debit to receivables and a credit to revenue, so a clean invoice makes for a clean entry. Show the pre-tax amount, the tax and the total on separate lines, and give each invoice a unique number from the <a href="/tools/invoice-number-generator">invoice number generator</a>. Build yours in minutes with the <a href="/invoice-generator">invoice generator</a>, or pick a layout from our <a href="/invoice-templates">invoice templates</a>, then post it using the cheat sheet above. When your invoice looks right, download it as a PDF and send it straight to your client.</p>
 `,
   },
   {
@@ -662,7 +662,7 @@ export const ACCOUNTING_BASICS_2026_C_POSTS: PostDraft[] = [
 
 <h2>Invoice clearly to track margins accurately</h2>
 
-<p>Learning how to calculate profit margin is only useful if your revenue figures are clean. Invoices that separate the price, discounts and tax make it simple to pull net revenue for any job or period. Create yours with the <a href="/invoice-generator">invoice generator</a>, pick a layout from the <a href="/invoice-templates">invoice templates</a>, and run the margin on every job before you hit send.</p>
+<p>Learning how to calculate profit margin is only useful if your revenue figures are clean. Invoices that separate the price, discounts and tax make it simple to pull net revenue for any job or period. Create yours with the <a href="/invoice-generator">invoice generator</a>, pick a layout from the <a href="/invoice-templates">invoice templates</a>, and run the margin on every job before you hit send. It is free, needs no account, and exports a print-ready PDF invoice.</p>
 `,
   },
   {
@@ -896,7 +896,7 @@ export const ACCOUNTING_BASICS_2026_C_POSTS: PostDraft[] = [
 
 <h2>Create invoices that get paid</h2>
 
-<p>An allowance for doubtful accounts protects your financial statements, but clear invoices protect your cash. Use the <a href="/invoice-generator">invoice generator</a> to create professional invoices with due dates, payment terms and unique numbers from the <a href="/tools/invoice-number-generator">invoice number generator</a>, so every receivable is easy to track, chase and, if it ever comes to it, document.</p>
+<p>An allowance for doubtful accounts protects your financial statements, but clear invoices protect your cash. Use the <a href="/invoice-generator">invoice generator</a> to create professional invoices with due dates, payment terms and unique numbers from the <a href="/tools/invoice-number-generator">invoice number generator</a>, so every receivable is easy to track, chase and, if it ever comes to it, document. Download the result as a PDF invoice you can email, print or upload to a client portal.</p>
 `,
   },
   {
@@ -1123,7 +1123,7 @@ export const ACCOUNTING_BASICS_2026_C_POSTS: PostDraft[] = [
 
 <h2>Keep the paper trail for every asset</h2>
 
-<p>Whether an asset is depreciated or amortized, the starting point is the same: a clear purchase record showing the date, description, cost and seller. Keep supplier invoices with your fixed asset register, and when you sell equipment or services yourself, issue clean, numbered invoices with the <a href="/invoice-generator">invoice generator</a>. Choose a layout from our <a href="/invoice-templates">invoice templates</a>, and your records will be ready for your accountant at year end.</p>
+<p>Whether an asset is depreciated or amortized, the starting point is the same: a clear purchase record showing the date, description, cost and seller. Keep supplier invoices with your fixed asset register, and when you sell equipment or services yourself, issue clean, numbered invoices with the <a href="/invoice-generator">invoice generator</a>. Choose a layout from our <a href="/invoice-templates">invoice templates</a>, and your records will be ready for your accountant at year end. Every invoice exports as a PDF, so it looks the same on your client's phone, laptop or printer.</p>
 `,
   },
 ];

@@ -233,7 +233,7 @@ export const PAYMENTS_2026_H_POSTS: PostDraft[] = [
 
 <h2>Create an Invoice That Gets Paid for Less</h2>
 
-<p>Credit card processing fees are unavoidable if you accept cards, but you control how much of your revenue they take. Know your effective rate, steer large invoices to bank payment, and make card payment easy without keying cards yourself. Create a clean invoice that lists every payment option with our <a href="/invoice-generator">free invoice generator</a>, or start from one of our <a href="/invoice-templates">professional invoice templates</a>.</p>
+<p>Credit card processing fees are unavoidable if you accept cards, but you control how much of your revenue they take. Know your effective rate, steer large invoices to bank payment, and make card payment easy without keying cards yourself. Create a clean invoice that lists every payment option with our <a href="/invoice-generator">free invoice generator</a>, or start from one of our <a href="/invoice-templates">professional invoice templates</a>. It is free, needs no account, and exports a print-ready PDF invoice.</p>
 `,
   },
   {
@@ -485,7 +485,7 @@ export const PAYMENTS_2026_H_POSTS: PostDraft[] = [
 
 <h2>Send a Professional Invoice With Your $Cashtag</h2>
 
-<p>Cash App business fees are simple: 2.75% per payment received, free standard deposits, and optional instant deposits at extra cost. That is fair for small consumer payments, but it adds up on larger invoices. Give customers a clear invoice with your $Cashtag and a cheaper bank option using our <a href="/invoice-generator">invoice generator</a>, or pick a design from our <a href="/invoice-templates/minimal">minimal invoice template</a>.</p>
+<p>Cash App business fees are simple: 2.75% per payment received, free standard deposits, and optional instant deposits at extra cost. That is fair for small consumer payments, but it adds up on larger invoices. Give customers a clear invoice with your $Cashtag and a cheaper bank option using our <a href="/invoice-generator">invoice generator</a>, or pick a design from our <a href="/invoice-templates/minimal">minimal invoice template</a>. Download the result as a PDF invoice you can email, print or upload to a client portal.</p>
 `,
   },
   {
@@ -731,7 +731,7 @@ export const PAYMENTS_2026_H_POSTS: PostDraft[] = [
 
 <h2>Create an Invoice With Clear Payment Options</h2>
 
-<p>QuickBooks Payments fees are straightforward: 2.99% on card and wallet invoice payments, 1% on ACH, with higher rates for keyed cards and instant deposits. Whether you use QuickBooks or not, a clear invoice that names your preferred payment method saves money. Make one in minutes with our <a href="/invoice-generator">invoice generator</a> or browse the <a href="/invoice-templates/corporate">corporate invoice template</a>.</p>
+<p>QuickBooks Payments fees are straightforward: 2.99% on card and wallet invoice payments, 1% on ACH, with higher rates for keyed cards and instant deposits. Whether you use QuickBooks or not, a clear invoice that names your preferred payment method saves money. Make one in minutes with our <a href="/invoice-generator">invoice generator</a> or browse the <a href="/invoice-templates/corporate">corporate invoice template</a>. Every invoice exports as a PDF, so it looks the same on your client's phone, laptop or printer.</p>
 `,
   },
   {
@@ -986,7 +986,7 @@ export const PAYMENTS_2026_H_POSTS: PostDraft[] = [
 
 <h2>Create a Payoneer-Ready Invoice</h2>
 
-<p>Payoneer fees are manageable once you know where they sit: receiving is often free, card payments are expensive, and conversion on withdrawal is the biggest cost. Ask clients to pay your receiving account details, invoice in their currency, and keep an eye on the annual fee. Build a clear invoice with your Payoneer details in our <a href="/invoice-generator">invoice generator</a>, or start from the <a href="/invoice-templates/modern">modern invoice template</a>.</p>
+<p>Payoneer fees are manageable once you know where they sit: receiving is often free, card payments are expensive, and conversion on withdrawal is the biggest cost. Ask clients to pay your receiving account details, invoice in their currency, and keep an eye on the annual fee. Build a clear invoice with your Payoneer details in our <a href="/invoice-generator">invoice generator</a>, or start from the <a href="/invoice-templates/modern">modern invoice template</a>. No sign-up is needed, and your PDF invoice is ready to send in a few minutes.</p>
 `,
   },
   {
@@ -1220,7 +1220,7 @@ export const PAYMENTS_2026_H_POSTS: PostDraft[] = [
 
 <h2>Create an Invoice With Your Wise Account Details</h2>
 
-<p>Wise Business fees are low and transparent: a one-time 31 USD setup, free ACH receipts, fixed fees for wires and Swift, and conversion from 0.23% at the mid-market rate. The biggest savings come from telling clients exactly how to pay. Build an invoice with your Wise details in our <a href="/invoice-generator">invoice generator</a>, or choose the <a href="/invoice-templates/nordic">Nordic invoice template</a> for a clean international look.</p>
+<p>Wise Business fees are low and transparent: a one-time 31 USD setup, free ACH receipts, fixed fees for wires and Swift, and conversion from 0.23% at the mid-market rate. The biggest savings come from telling clients exactly how to pay. Build an invoice with your Wise details in our <a href="/invoice-generator">invoice generator</a>, or choose the <a href="/invoice-templates/nordic">Nordic invoice template</a> for a clean international look. Your finished invoice downloads as a PDF, free and with no sign-up.</p>
 `,
   },
 ];

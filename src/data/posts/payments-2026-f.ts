@@ -177,7 +177,7 @@ export const PAYMENTS_2026_F_POSTS: PostDraft[] = [
 
 <h2>Create Your Invoice Before You Get Paid</h2>
 
-<p>The bottom line on PayPal goods and services vs friends and family: if a payment is for work or products, use goods and services or a PayPal invoice, accept the fee as a business cost, and keep the protection and the clean record. Save friends and family for genuine personal transfers. Start every client payment with a professional invoice from our <a href="/invoice-generator">free invoice generator</a>, then attach your PayPal link so the client pays the right way the first time.</p>
+<p>The bottom line on PayPal goods and services vs friends and family: if a payment is for work or products, use goods and services or a PayPal invoice, accept the fee as a business cost, and keep the protection and the clean record. Save friends and family for genuine personal transfers. Start every client payment with a professional invoice from our <a href="/invoice-generator">free invoice generator</a>, then attach your PayPal link so the client pays the right way the first time. Every invoice exports as a PDF, so it looks the same on your client's phone, laptop or printer.</p>
 `,
   },
   {
@@ -378,7 +378,7 @@ export const PAYMENTS_2026_F_POSTS: PostDraft[] = [
 
 <h2>Create a Stripe-Ready Invoice</h2>
 
-<p>Stripe fees are predictable once you know the layers: 2.9% + 30¢ for domestic cards, extra for international cards and conversion, 0.4% for Stripe Invoicing, and a capped 0.8% for ACH. Give clients a low-cost bank option for large bills and keep cards for convenience. Build a clear, numbered invoice in our <a href="/invoice-generator">free invoice generator</a>, pick a clean design from our <a href="/invoice-templates/modern">modern invoice template</a>, and add your Stripe payment link so clients can pay in one click.</p>
+<p>Stripe fees are predictable once you know the layers: 2.9% + 30¢ for domestic cards, extra for international cards and conversion, 0.4% for Stripe Invoicing, and a capped 0.8% for ACH. Give clients a low-cost bank option for large bills and keep cards for convenience. Build a clear, numbered invoice in our <a href="/invoice-generator">free invoice generator</a>, pick a clean design from our <a href="/invoice-templates/modern">modern invoice template</a>, and add your Stripe payment link so clients can pay in one click. No sign-up is needed, and your PDF invoice is ready to send in a few minutes.</p>
 `,
   },
   {
@@ -575,7 +575,7 @@ export const PAYMENTS_2026_F_POSTS: PostDraft[] = [
 
 <h2>Send a Venmo-Ready Invoice</h2>
 
-<p>Venmo business account fees are straightforward: 1.9% + 10 cents per payment, about 2.29% for Tap to Pay, free standard transfers and capped instant transfers. For most local service businesses, that is a fair price for a payment method customers already use. Create a professional invoice in our <a href="/invoice-generator/usa">US invoice generator</a> or the main <a href="/invoice-generator">free invoice generator</a>, add your Venmo handle, and give customers an easy way to pay you on time.</p>
+<p>Venmo business account fees are straightforward: 1.9% + 10 cents per payment, about 2.29% for Tap to Pay, free standard transfers and capped instant transfers. For most local service businesses, that is a fair price for a payment method customers already use. Create a professional invoice in our <a href="/invoice-generator/usa">US invoice generator</a> or the main <a href="/invoice-generator">free invoice generator</a>, add your Venmo handle, and give customers an easy way to pay you on time. Your finished invoice downloads as a PDF, free and with no sign-up.</p>
 `,
   },
   {
@@ -762,7 +762,7 @@ export const PAYMENTS_2026_F_POSTS: PostDraft[] = [
 
 <h2>Create an Invoice That Gets Wired On Time</h2>
 
-<p>So, how long does a wire transfer take? Domestic wires usually arrive the same business day if sent before the bank's cutoff, and international wires take one to five business days depending on route, currency and checks. You cannot control the banks, but you can control your invoice: complete bank details, a clear reference, realistic due dates and a note on who pays charges. Build that invoice now with our <a href="/invoice-generator">free invoice generator</a>, and choose a clean <a href="/invoice-templates/corporate">corporate invoice template</a> for larger B2B clients.</p>
+<p>So, how long does a wire transfer take? Domestic wires usually arrive the same business day if sent before the bank's cutoff, and international wires take one to five business days depending on route, currency and checks. You cannot control the banks, but you can control your invoice: complete bank details, a clear reference, realistic due dates and a note on who pays charges. Build that invoice now with our <a href="/invoice-generator">free invoice generator</a>, and choose a clean <a href="/invoice-templates/corporate">corporate invoice template</a> for larger B2B clients. When your invoice looks right, download it as a PDF and send it straight to your client.</p>
 `,
   },
   {
@@ -956,7 +956,7 @@ export const PAYMENTS_2026_F_POSTS: PostDraft[] = [
 
 <h2>Set Up Your Invoices for Direct Payment</h2>
 
-<p>A voided check is simply a safe, cancelled check that shares your routing and account numbers so someone can pay you, or debit you, electronically. Void it with permanent ink, keep the bottom numbers clear, share it only through secure channels, and use a bank letter if you have no checks. Once clients have your details, make paying easy: create a professional invoice in our <a href="/invoice-generator">free invoice generator</a>, or start from a <a href="/invoice-templates/classic">classic invoice template</a>, and list your bank payment option clearly.</p>
+<p>A voided check is simply a safe, cancelled check that shares your routing and account numbers so someone can pay you, or debit you, electronically. Void it with permanent ink, keep the bottom numbers clear, share it only through secure channels, and use a bank letter if you have no checks. Once clients have your details, make paying easy: create a professional invoice in our <a href="/invoice-generator">free invoice generator</a>, or start from a <a href="/invoice-templates/classic">classic invoice template</a>, and list your bank payment option clearly. It is free, needs no account, and exports a print-ready PDF invoice.</p>
 `,
   },
 ];

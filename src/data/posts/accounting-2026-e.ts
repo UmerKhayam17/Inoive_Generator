@@ -419,7 +419,7 @@ export const ACCOUNTING_2026_E_POSTS: PostDraft[] = [
 
 <p>If you are a freelancer or a two-person business, you do not need a 40-line report. Five lines are enough: revenue, direct costs, overhead, owner pay and profit. Build the budget once a year, compare it monthly, and focus on the two biggest variances. If your budget feels unreliable, rebuilding it from zero can help; see our guide to <a href="/blog/zero-based-budgeting">zero-based budgeting</a>.</p>
 
-<p><strong>Make the actual column easy to trust.</strong> Accurate invoices are the starting point for every budget vs actual report. Create, number and download professional invoices for free with our <a href="/invoice-generator">invoice generator</a>, or choose a clean, readable layout from our <a href="/invoice-templates/minimal">minimal invoice template</a>.</p>
+<p><strong>Make the actual column easy to trust.</strong> Accurate invoices are the starting point for every budget vs actual report. Create, number and download professional invoices for free with our <a href="/invoice-generator">invoice generator</a>, or choose a clean, readable layout from our <a href="/invoice-templates/minimal">minimal invoice template</a>. No sign-up is needed, and your PDF invoice is ready to send in a few minutes.</p>
 `,
   },
   {
@@ -625,7 +625,7 @@ export const ACCOUNTING_2026_E_POSTS: PostDraft[] = [
 
 <p>The same logic applies in reverse. If you sell on credit, your customers will reconcile your statements, and clear invoices make that easy for them: a unique number from an <a href="/tools/invoice-number-generator">invoice number generator</a>, the customer's PO number, itemized lines and a running balance. When a customer pays part of an invoice, show the amount paid and balance due on a <a href="/blog/partial-payment-invoice">partial payment invoice</a> so their ledger and your statement stay aligned. If you ship goods, a matching <a href="/blog/delivery-note-template">delivery note</a> gives the customer proof of receipt for their own match, and a formal <a href="/blog/payment-request-template">payment request</a> can help when a balance is overdue.</p>
 
-<p><strong>Send invoices your customers can reconcile.</strong> Clear invoices make vendor statement reconciliation easy for your clients, just as clear supplier invoices make it easy for you. Create numbered, itemized invoices with PO references, amount paid and balance due using our free <a href="/invoice-generator">invoice generator</a>, or start from the <a href="/invoice-templates/classic">classic invoice template</a> for a familiar, audit-friendly layout.</p>
+<p><strong>Send invoices your customers can reconcile.</strong> Clear invoices make vendor statement reconciliation easy for your clients, just as clear supplier invoices make it easy for you. Create numbered, itemized invoices with PO references, amount paid and balance due using our free <a href="/invoice-generator">invoice generator</a>, or start from the <a href="/invoice-templates/classic">classic invoice template</a> for a familiar, audit-friendly layout. Your finished invoice downloads as a PDF, free and with no sign-up.</p>
 `,
   },
   {

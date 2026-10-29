@@ -190,7 +190,7 @@ export const BUSINESS_FINANCE_2026_D_POSTS: PostDraft[] = [
 
 <p>The business tax deadlines 2027 calendar has a few weekend surprises, February 1, August 2, November 1 and January 18, 2028 among them, but the structure is the same as every year: information returns in early February, pass-through returns in mid-March, individual and C corporation returns in mid-April and four estimated payments spread across the year. Put the dates in one calendar, attach an amount to every payment and keep cash flowing from clients so the money is ready.</p>
 
-<p>Create your next invoice with the <a href="/invoice-generator">Invoice Creator invoice generator</a> to keep tax, discounts and balances clear on every bill, or browse the <a href="/invoice-templates">invoice templates</a> to find a layout that suits your business.</p>
+<p>Create your next invoice with the <a href="/invoice-generator">Invoice Creator invoice generator</a> to keep tax, discounts and balances clear on every bill, or browse the <a href="/invoice-templates">invoice templates</a> to find a layout that suits your business. No sign-up is needed, and your PDF invoice is ready to send in a few minutes.</p>
 `,
   },
   {
@@ -393,7 +393,7 @@ export const BUSINESS_FINANCE_2026_D_POSTS: PostDraft[] = [
 
 <p>Learning how to pay the IRS online comes down to a few choices: Direct Pay or your Online Account for free, quick payments; the Business Tax Account or EFTPS for payroll and frequent business deposits; and card payments only when the fee is worth it. Pick the right tax type and year, schedule ahead and keep every confirmation.</p>
 
-<p>The money for those payments starts with getting paid on time. Create clear, professional invoices with the <a href="/invoice-generator">Invoice Creator invoice generator</a>, or start from a <a href="/invoice-generator/usa">US invoice format</a> with sales tax built in.</p>
+<p>The money for those payments starts with getting paid on time. Create clear, professional invoices with the <a href="/invoice-generator">Invoice Creator invoice generator</a>, or start from a <a href="/invoice-generator/usa">US invoice format</a> with sales tax built in. Your finished invoice downloads as a PDF, free and with no sign-up.</p>
 `,
   },
   {
@@ -614,7 +614,7 @@ export const BUSINESS_FINANCE_2026_D_POSTS: PostDraft[] = [
 
 <p>The debt to equity ratio is simple to calculate and hard to fake: total liabilities divided by total equity. Calculate it every quarter, use the same version each time, compare it with your own history and similar businesses, and remember that profit retained and invoices collected are the two most reliable ways to improve it.</p>
 
-<p>Faster payment starts with a clear invoice. Create one in minutes with the <a href="/invoice-generator">Invoice Creator invoice generator</a> or pick a professional layout from our <a href="/invoice-templates/corporate">corporate invoice template</a>.</p>
+<p>Faster payment starts with a clear invoice. Create one in minutes with the <a href="/invoice-generator">Invoice Creator invoice generator</a> or pick a professional layout from our <a href="/invoice-templates/corporate">corporate invoice template</a>. When your invoice looks right, download it as a PDF and send it straight to your client.</p>
 `,
   },
   {
@@ -809,7 +809,7 @@ export const BUSINESS_FINANCE_2026_D_POSTS: PostDraft[] = [
 
 <p>The accounts payable turnover ratio takes two numbers, credit purchases and average payables, and turns them into a clear signal about how you treat suppliers and manage cash. Convert it to DPO, compare it with your terms each quarter, and remember that the healthiest way to free up cash is usually on the receivables side.</p>
 
-<p>Get your own invoices out promptly with clear due dates using the <a href="/invoice-generator">Invoice Creator invoice generator</a>, or start from a clean <a href="/invoice-templates/minimal">minimal invoice template</a>.</p>
+<p>Get your own invoices out promptly with clear due dates using the <a href="/invoice-generator">Invoice Creator invoice generator</a>, or start from a clean <a href="/invoice-templates/minimal">minimal invoice template</a>. It is free, needs no account, and exports a print-ready PDF invoice.</p>
 `,
   },
   {
@@ -1049,7 +1049,7 @@ export const BUSINESS_FINANCE_2026_D_POSTS: PostDraft[] = [
 
 <p>Financial ratios for small business do not require an accountant's toolkit: a balance sheet, a profit and loss statement and fourteen simple divisions will tell you more about your business than hours of scrolling through transactions. Pick the handful that matter most, calculate them on a schedule and act on the trend.</p>
 
-<p>Many of those levers start with the invoice. Send clear, numbered invoices with due dates using the <a href="/invoice-generator">Invoice Creator invoice generator</a>, keep them consistent with the <a href="/tools/invoice-number-generator">invoice number generator</a> and browse our <a href="/invoice-templates">invoice templates</a> for a layout that fits.</p>
+<p>Many of those levers start with the invoice. Send clear, numbered invoices with due dates using the <a href="/invoice-generator">Invoice Creator invoice generator</a>, keep them consistent with the <a href="/tools/invoice-number-generator">invoice number generator</a> and browse our <a href="/invoice-templates">invoice templates</a> for a layout that fits. Download the result as a PDF invoice you can email, print or upload to a client portal.</p>
 `,
   },
 ];

@@ -483,7 +483,7 @@ export const INDUSTRY_POSTS_O: PostDraft[] = [
 <p>A clean, businesslike design suits logistics clients. Try the <a href="/invoice-templates/corporate">corporate template</a> or browse the full <a href="/invoice-templates">invoice templates gallery</a>.</p>
 
 <h2>Create your courier invoice</h2>
-<p>A good courier invoice template makes every delivery traceable: date, reference, route, price and any surcharge, with tolls passed through at cost and a total the client can approve without phoning you. Build your next delivery service invoice in the <a href="/invoice-generator">free invoice generator</a>, attach your job list and send it on the same day every cycle so payments arrive on schedule.</p>
+<p>A good courier invoice template makes every delivery traceable: date, reference, route, price and any surcharge, with tolls passed through at cost and a total the client can approve without phoning you. Build your next delivery service invoice in the <a href="/invoice-generator">free invoice generator</a>, attach your job list and send it on the same day every cycle so payments arrive on schedule. Your finished invoice downloads as a PDF, free and with no sign-up.</p>
 `,
   },
   {
@@ -639,7 +639,7 @@ export const INDUSTRY_POSTS_O: PostDraft[] = [
 <p>Digital clients notice design. A clean layout such as the <a href="/invoice-templates/modern">modern template</a> or the agency design fits SEO work well.</p>
 
 <h2>Create your SEO invoice</h2>
-<p>A strong SEO invoice template turns invisible work into a clear monthly record: the package, the deliverables, approved extras and pass-through costs, all on one page with firm payment terms. Create your next SEO retainer invoice in the <a href="/invoice-generator">free invoice generator</a> and send it with your monthly report. If you also sell social or video work, compare our guides to <a href="/blog/social-media-management-pricing">social media management pricing</a> and the <a href="/blog/video-editing-invoice-template">video editing invoice template</a>.</p>
+<p>A strong SEO invoice template turns invisible work into a clear monthly record: the package, the deliverables, approved extras and pass-through costs, all on one page with firm payment terms. Create your next SEO retainer invoice in the <a href="/invoice-generator">free invoice generator</a> and send it with your monthly report. If you also sell social or video work, compare our guides to <a href="/blog/social-media-management-pricing">social media management pricing</a> and the <a href="/blog/video-editing-invoice-template">video editing invoice template</a>. When your invoice looks right, download it as a PDF and send it straight to your client.</p>
 `,
   },
   {
@@ -793,7 +793,7 @@ export const INDUSTRY_POSTS_O: PostDraft[] = [
 <p>Creative clients notice presentation. The <a href="/invoice-templates/creative">creative template</a> or the dark design suit video work, and the full <a href="/invoice-templates">invoice templates gallery</a> has more options.</p>
 
 <h2>Create your video editing invoice</h2>
-<p>A clear video editing invoice lists the deliverables, shows revision rounds and rush fees as separate lines, passes licences through at cost and credits the deposit, so clients see exactly how the final number was reached. Create yours in the <a href="/invoice-generator">free invoice generator</a> and send it with your delivery link. If you edit for brands and creators, our guides to <a href="/blog/ugc-rates">UGC rates</a> and the <a href="/blog/seo-services-invoice-template">SEO invoice template</a> cover neighbouring services you can bundle.</p>
+<p>A clear video editing invoice lists the deliverables, shows revision rounds and rush fees as separate lines, passes licences through at cost and credits the deposit, so clients see exactly how the final number was reached. Create yours in the <a href="/invoice-generator">free invoice generator</a> and send it with your delivery link. If you edit for brands and creators, our guides to <a href="/blog/ugc-rates">UGC rates</a> and the <a href="/blog/seo-services-invoice-template">SEO invoice template</a> cover neighbouring services you can bundle. It is free, needs no account, and exports a print-ready PDF invoice.</p>
 `,
   },
 ];

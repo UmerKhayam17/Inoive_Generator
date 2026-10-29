@@ -177,7 +177,7 @@ export const UAE_GLOBAL_TAX_2026_POSTS: PostDraft[] = [
 </ul>
 
 <h2>Create your UAE VAT invoice</h2>
-<p>UAE VAT registration comes down to three habits: track your rolling 12-month taxable turnover, apply on EmaraTax within 30 days of crossing AED 375,000, and switch to compliant tax invoices from your effective date. When your TRN arrives, open our free <a href="/invoice-generator">invoice generator</a>, add your TRN and 5% VAT, and download a professional tax invoice in minutes. Prefer a ready design? Browse our <a href="/invoice-templates/corporate">corporate invoice template</a>, the full <a href="/invoice-templates">invoice template gallery</a>, or the <a href="/invoice-generator/uae">UAE invoice generator</a> with local fields preset.</p>
+<p>UAE VAT registration comes down to three habits: track your rolling 12-month taxable turnover, apply on EmaraTax within 30 days of crossing AED 375,000, and switch to compliant tax invoices from your effective date. When your TRN arrives, open our free <a href="/invoice-generator">invoice generator</a>, add your TRN and 5% VAT, and download a professional tax invoice in minutes. Prefer a ready design? Browse our <a href="/invoice-templates/corporate">corporate invoice template</a>, the full <a href="/invoice-templates">invoice template gallery</a>, or the <a href="/invoice-generator/uae">UAE invoice generator</a> with local fields preset. When your invoice looks right, download it as a PDF and send it straight to your client.</p>
 `,
   },
   {
@@ -358,7 +358,7 @@ export const UAE_GLOBAL_TAX_2026_POSTS: PostDraft[] = [
 </ul>
 
 <h2>Start invoicing under your freelance permit</h2>
-<p>A UAE freelance permit is the foundation of a legal freelance business: pick the authority whose activity list fits your work, budget for the full first-year cost rather than the headline fee, and keep your licence, visa and VAT position in step. When the first project lands, create a professional bill in our free <a href="/invoice-generator">invoice generator</a> or start from the <a href="/invoice-templates/creative">creative invoice template</a>, add your licence details, and get paid faster. Looking for clients? Our roundup of the <a href="/blog/best-freelance-websites">best freelance websites</a> is a good next read.</p>
+<p>A UAE freelance permit is the foundation of a legal freelance business: pick the authority whose activity list fits your work, budget for the full first-year cost rather than the headline fee, and keep your licence, visa and VAT position in step. When the first project lands, create a professional bill in our free <a href="/invoice-generator">invoice generator</a> or start from the <a href="/invoice-templates/creative">creative invoice template</a>, add your licence details, and get paid faster. Looking for clients? Our roundup of the <a href="/blog/best-freelance-websites">best freelance websites</a> is a good next read. It is free, needs no account, and exports a print-ready PDF invoice.</p>
 `,
   },
   {
@@ -724,7 +724,7 @@ export const UAE_GLOBAL_TAX_2026_POSTS: PostDraft[] = [
 <p>Comparing Asian regimes? Our guides to the <a href="/blog/singapore-gst-tax-invoice">Singapore GST tax invoice</a> and <a href="/blog/malaysia-lhdn-e-invoice">Malaysia's LHDN e-invoice</a> cover neighbouring rules, and our <a href="/blog/israel-invoice-allocation-number">Israel allocation number</a> guide shows a very different, clearance-style approach.</p>
 
 <h2>Create a qualified invoice for Japanese clients</h2>
-<p>The Japan qualified invoice system rewards suppliers who get the basics right: register for a T-number if your customers need it, split every invoice by the 10% and 8% rates, round once per rate, and keep copies. Build your next invoice in our free <a href="/invoice-generator">invoice generator</a>, add your T-number in the business details, and pick a clean layout such as the <a href="/invoice-templates/nordic">Nordic invoice template</a> so each rate and tax amount stands out.</p>
+<p>The Japan qualified invoice system rewards suppliers who get the basics right: register for a T-number if your customers need it, split every invoice by the 10% and 8% rates, round once per rate, and keep copies. Build your next invoice in our free <a href="/invoice-generator">invoice generator</a>, add your T-number in the business details, and pick a clean layout such as the <a href="/invoice-templates/nordic">Nordic invoice template</a> so each rate and tax amount stands out. Download the result as a PDF invoice you can email, print or upload to a client portal.</p>
 `,
   },
   {
@@ -883,7 +883,7 @@ export const UAE_GLOBAL_TAX_2026_POSTS: PostDraft[] = [
 <p>Israel's approach mirrors a wider trend towards real-time controls. Compare it with Greece's <a href="/blog/greece-mydata-e-invoicing">myDATA e-invoicing</a>, the <a href="/blog/japan-qualified-invoice-system">Japan qualified invoice system</a> and upcoming mandates in our sibling guide to <a href="/blog/italy-sdi-e-invoicing">Italy's SDI e-invoicing</a>.</p>
 
 <h2>Create invoices ready for the allocation number</h2>
-<p>The Israel invoice allocation number rule is simple to apply once your process is set: check the pre-VAT amount against the threshold on the issue date (NIS 5,000 since June 1, 2026), get the number before sending, and print it clearly. For quotes, smaller invoices or clients outside Israel, our free <a href="/invoice-generator">invoice generator</a> gives you a clean, professional layout in minutes; add a custom field for the allocation number and VAT details, or start from the <a href="/invoice-templates/classic">classic invoice template</a>.</p>
+<p>The Israel invoice allocation number rule is simple to apply once your process is set: check the pre-VAT amount against the threshold on the issue date (NIS 5,000 since June 1, 2026), get the number before sending, and print it clearly. For quotes, smaller invoices or clients outside Israel, our free <a href="/invoice-generator">invoice generator</a> gives you a clean, professional layout in minutes; add a custom field for the allocation number and VAT details, or start from the <a href="/invoice-templates/classic">classic invoice template</a>. Every invoice exports as a PDF, so it looks the same on your client's phone, laptop or printer.</p>
 `,
   },
 ];

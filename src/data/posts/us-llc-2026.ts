@@ -186,7 +186,7 @@ export const US_LLC_2026_POSTS: PostDraft[] = [
 </ul>
 
 <h2>Create your first LLC invoice</h2>
-<p>An LLC operating agreement gives your company clear rules on ownership, money and control; the next step is billing like the separate business it is. Put the LLC's legal name, address and invoice number on every bill with our <a href="/invoice-generator">free invoice generator</a>, pick a layout from the <a href="/invoice-templates">invoice templates</a> gallery, and see the <a href="/user-guide">user guide</a> if you want a quick tour first.</p>
+<p>An LLC operating agreement gives your company clear rules on ownership, money and control; the next step is billing like the separate business it is. Put the LLC's legal name, address and invoice number on every bill with our <a href="/invoice-generator">free invoice generator</a>, pick a layout from the <a href="/invoice-templates">invoice templates</a> gallery, and see the <a href="/user-guide">user guide</a> if you want a quick tour first. It is free, needs no account, and exports a print-ready PDF invoice.</p>
 `,
   },
   {
@@ -369,7 +369,7 @@ export const US_LLC_2026_POSTS: PostDraft[] = [
 <p>If your agent resigns, moves or stops responding, the state may treat the LLC as lacking a valid agent. Consequences can include loss of good standing, inability to get a certificate of good standing for a loan, and in time administrative dissolution. If a lawsuit cannot be served on the agent, a court may allow alternative service, and you might learn about a judgment only when your bank account is frozen. Check the state record once a year when you file your annual report, and if you ever decide to wind down the business, keep the agent in place until the process in our guide on <a href="/blog/how-to-dissolve-an-llc">how to dissolve an LLC</a> is complete.</p>
 
 <h2>Get your LLC paperwork and billing in order</h2>
-<p>A registered agent keeps your LLC reachable and in good standing; whether you act as your own registered agent or pay a service, keep the details current in every state. Then make sure the money side is just as tidy: create branded invoices in your LLC's name with our <a href="/invoice-generator">free invoice generator</a>, or browse the <a href="/invoice-templates">invoice templates</a> to find a layout that suits your business.</p>
+<p>A registered agent keeps your LLC reachable and in good standing; whether you act as your own registered agent or pay a service, keep the details current in every state. Then make sure the money side is just as tidy: create branded invoices in your LLC's name with our <a href="/invoice-generator">free invoice generator</a>, or browse the <a href="/invoice-templates">invoice templates</a> to find a layout that suits your business. Download the result as a PDF invoice you can email, print or upload to a client portal.</p>
 `,
   },
   {
@@ -550,7 +550,7 @@ export const US_LLC_2026_POSTS: PostDraft[] = [
 <p>The details on your annual report should match what clients see. Invoices should carry the LLC's exact legal name and current address, and any trade name you use should be properly registered (see <a href="/blog/what-is-a-dba">what a DBA is</a>). When you update your address on the report, update your <a href="/invoice-templates">invoice templates</a> the same day. If you are thinking of closing the business instead of renewing, our guide on <a href="/blog/how-to-dissolve-an-llc">how to dissolve an LLC</a> explains how to stop the annual fees properly.</p>
 
 <h2>Stay in good standing and keep billing</h2>
-<p>Filing your LLC annual report on time is cheap insurance: a small fee keeps your liability protection, your name and your good standing intact. Put every state deadline in your calendar, save each receipt, and keep your invoices matching your official records with our <a href="/invoice-generator">invoice generator</a> or the <a href="/invoice-generator/usa">US invoice generator</a>.</p>
+<p>Filing your LLC annual report on time is cheap insurance: a small fee keeps your liability protection, your name and your good standing intact. Put every state deadline in your calendar, save each receipt, and keep your invoices matching your official records with our <a href="/invoice-generator">invoice generator</a> or the <a href="/invoice-generator/usa">US invoice generator</a>. Every invoice exports as a PDF, so it looks the same on your client's phone, laptop or printer.</p>
 `,
   },
   {
@@ -729,7 +729,7 @@ export const US_LLC_2026_POSTS: PostDraft[] = [
 <p>Not every exit needs a full dissolution. If you are simply changing structure, for example moving from an LLC to a corporation, or the business is being sold to a buyer who wants the entity intact, a conversion, merger or sale of membership interests may be simpler. If you are going back to freelancing on your own, compare the structures in <a href="/blog/llc-vs-sole-proprietorship">LLC vs sole proprietorship</a> and our guide to <a href="/blog/business-entity-types">business entity types</a> before you decide.</p>
 
 <h2>Send your final invoices before you close</h2>
-<p>Knowing how to dissolve an LLC properly protects the members and stops fees from following you after the doors close. Before you file anything with the state, bill every outstanding job and record every deposit: create clear final invoices with balance due in our <a href="/invoice-generator">free invoice generator</a> and pick a layout from our <a href="/invoice-templates">invoice templates</a>.</p>
+<p>Knowing how to dissolve an LLC properly protects the members and stops fees from following you after the doors close. Before you file anything with the state, bill every outstanding job and record every deposit: create clear final invoices with balance due in our <a href="/invoice-generator">free invoice generator</a> and pick a layout from our <a href="/invoice-templates">invoice templates</a>. No sign-up is needed, and your PDF invoice is ready to send in a few minutes.</p>
 `,
   },
   {
@@ -907,7 +907,7 @@ export const US_LLC_2026_POSTS: PostDraft[] = [
 </ul>
 
 <h2>Create sales tax invoices with your permit number</h2>
-<p>A seller's permit is usually free and quick to get, and having one before your first sale keeps you on the right side of your state's sales tax rules. Once you have it, make every invoice show the taxable amount, rate and tax clearly: use our <a href="/invoice-generator">free invoice generator</a> with your sales tax permit number in the tax ID field, and choose a layout from our <a href="/invoice-templates/classic">classic invoice template</a> or the full <a href="/invoice-templates">invoice templates</a> gallery.</p>
+<p>A seller's permit is usually free and quick to get, and having one before your first sale keeps you on the right side of your state's sales tax rules. Once you have it, make every invoice show the taxable amount, rate and tax clearly: use our <a href="/invoice-generator">free invoice generator</a> with your sales tax permit number in the tax ID field, and choose a layout from our <a href="/invoice-templates/classic">classic invoice template</a> or the full <a href="/invoice-templates">invoice templates</a> gallery. Your finished invoice downloads as a PDF, free and with no sign-up.</p>
 `,
   },
 ];

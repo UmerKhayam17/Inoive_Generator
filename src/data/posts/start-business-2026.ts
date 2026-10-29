@@ -395,7 +395,7 @@ export const START_BUSINESS_2026_POSTS: PostDraft[] = [
 
 <h2>Create invoices under your DBA</h2>
 
-<p>Now you know what a DBA is: a low-cost way to trade under a brand name that does not change your legal structure or taxes. Once your filing is approved and your bank account matches, open the <a href="/invoice-generator">invoice generator</a>, add your trade name and legal name, and send a professional invoice your clients can pay without confusion. Browse the <a href="/invoice-templates">invoice templates</a> to find a design that fits your new brand.</p>
+<p>Now you know what a DBA is: a low-cost way to trade under a brand name that does not change your legal structure or taxes. Once your filing is approved and your bank account matches, open the <a href="/invoice-generator">invoice generator</a>, add your trade name and legal name, and send a professional invoice your clients can pay without confusion. Browse the <a href="/invoice-templates">invoice templates</a> to find a design that fits your new brand. Download the result as a PDF invoice you can email, print or upload to a client portal.</p>
 `,
   },
   {
@@ -583,7 +583,7 @@ export const START_BUSINESS_2026_POSTS: PostDraft[] = [
 
 <h2>Start invoicing as a licensed business</h2>
 
-<p>Now you know how to get a business license: map your activity against federal, state and local rules, apply to each agency, and track renewals. With licenses in hand, open the <a href="/invoice-generator">invoice generator</a>, add your license and permit numbers to your business details, and send compliant invoices from day one. The <a href="/user-guide">user guide</a> shows where each field goes.</p>
+<p>Now you know how to get a business license: map your activity against federal, state and local rules, apply to each agency, and track renewals. With licenses in hand, open the <a href="/invoice-generator">invoice generator</a>, add your license and permit numbers to your business details, and send compliant invoices from day one. The <a href="/user-guide">user guide</a> shows where each field goes. Every invoice exports as a PDF, so it looks the same on your client's phone, laptop or printer.</p>
 `,
   },
   {
@@ -769,7 +769,7 @@ export const START_BUSINESS_2026_POSTS: PostDraft[] = [
 
 <h2>Keep the money coming in</h2>
 
-<p>The best plan for how to pay yourself only works if clients pay on time. Send clear, itemized invoices the day work is delivered, with payment details and a due date, using the <a href="/invoice-generator">invoice generator</a>. A clean design such as the <a href="/invoice-templates/minimal">minimal invoice template</a> keeps the focus on what is owed and when.</p>
+<p>The best plan for how to pay yourself only works if clients pay on time. Send clear, itemized invoices the day work is delivered, with payment details and a due date, using the <a href="/invoice-generator">invoice generator</a>. A clean design such as the <a href="/invoice-templates/minimal">minimal invoice template</a> keeps the focus on what is owed and when. No sign-up is needed, and your PDF invoice is ready to send in a few minutes.</p>
 `,
   },
   {
@@ -961,7 +961,7 @@ export const START_BUSINESS_2026_POSTS: PostDraft[] = [
 
 <h2>Invoice your customers on net 30 terms</h2>
 
-<p>Net 30 accounts help you build business credit and smooth cash flow on the buying side; clear net 30 invoices protect you on the selling side. Create professional invoices with due dates, payment terms and your bank details in the <a href="/invoice-generator">invoice generator</a>, or pick a polished layout from the <a href="/invoice-templates/startup">startup invoice template</a> to match your new business.</p>
+<p>Net 30 accounts help you build business credit and smooth cash flow on the buying side; clear net 30 invoices protect you on the selling side. Create professional invoices with due dates, payment terms and your bank details in the <a href="/invoice-generator">invoice generator</a>, or pick a polished layout from the <a href="/invoice-templates/startup">startup invoice template</a> to match your new business. Your finished invoice downloads as a PDF, free and with no sign-up.</p>
 `,
   },
 ];
