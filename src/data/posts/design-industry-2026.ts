@@ -397,6 +397,7 @@ export const DESIGN_INDUSTRY_2026_POSTS: PostDraft[] = [
     date: "2026-10-24",
     author: "Invoice Creator Editorial Team",
     related: [
+      "gym-membership-invoice-template",
       "massage-therapy-invoice-template",
       "recurring-invoices-guide",
       "deposit-invoice",

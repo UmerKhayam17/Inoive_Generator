@@ -420,6 +420,7 @@ export const UK_BUSINESS_2026_POSTS: PostDraft[] = [
     author: "Invoice Creator Editorial Team",
     jurisdiction: "United Kingdom",
     related: [
+      "s-corp-election-form-2553",
       "uk-dividend-tax-rates-2026",
       "employer-national-insurance-2026",
       "corporation-tax-uk",

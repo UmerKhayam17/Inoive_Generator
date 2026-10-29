@@ -10,6 +10,7 @@ export const INDUSTRY_POSTS_A: PostDraft[] = [
     date: "2026-10-22",
     author: "Invoice Creator Editorial Team",
     related: [
+      "excavation-invoice-template",
       "concrete-invoice-template",
       "construction-invoice-guide",
       "deposit-invoice",
@@ -166,6 +167,7 @@ export const INDUSTRY_POSTS_A: PostDraft[] = [
     date: "2026-10-22",
     author: "Invoice Creator Editorial Team",
     related: [
+      "model-invoice-template",
       "photography-pricing-guide",
       "drone-services-invoice-template",
       "deposit-invoice",
@@ -327,6 +329,7 @@ export const INDUSTRY_POSTS_A: PostDraft[] = [
     date: "2026-10-22",
     author: "Invoice Creator Editorial Team",
     related: [
+      "janitorial-invoice-template",
       "window-cleaning-invoice-template",
       "carpet-cleaning-invoice-template",
       "pest-control-invoice-template",
@@ -479,6 +482,7 @@ export const INDUSTRY_POSTS_A: PostDraft[] = [
     date: "2026-10-22",
     author: "Invoice Creator Editorial Team",
     related: [
+      "speaker-invoice-template",
       "life-coach-invoice-template",
       "retainer-invoice",
       "how-to-invoice-for-hourly-work",
@@ -627,6 +631,7 @@ export const INDUSTRY_POSTS_A: PostDraft[] = [
     date: "2026-10-22",
     author: "Invoice Creator Editorial Team",
     related: [
+      "motion-graphics-invoice-template",
       "graphic-design-pricing",
       "interior-design-invoice-template",
       "freelance-invoice-template",
@@ -1060,6 +1065,7 @@ export const INDUSTRY_POSTS_A: PostDraft[] = [
     date: "2026-10-22",
     author: "Invoice Creator Editorial Team",
     related: [
+      "lawn-care-invoice-template",
       "fencing-invoice-template",
       "tree-service-invoice-template",
       "snow-removal-invoice-template",
@@ -1211,6 +1217,7 @@ export const INDUSTRY_POSTS_A: PostDraft[] = [
     date: "2026-10-22",
     author: "Invoice Creator Editorial Team",
     related: [
+      "garage-door-repair-invoice-template",
       "junk-removal-invoice-template",
       "flooring-invoice-template",
       "contractor-invoice-template",

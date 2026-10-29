@@ -530,6 +530,7 @@ export const US_TAX_2026_C_POSTS: PostDraft[] = [
     author: "Invoice Creator Editorial Team",
     jurisdiction: "United States",
     related: [
+      "farm-invoice-template",
       "resale-certificate",
       "sales-tax-on-invoices-us",
       "sales-tax-nexus",

@@ -470,6 +470,7 @@ export const INDUSTRY_POSTS_C: PostDraft[] = [
     date: "2026-10-23",
     author: "Invoice Creator Editorial Team",
     related: [
+      "how-to-start-a-car-detailing-business",
       "how-much-to-charge-for-pressure-washing",
       "auto-repair-invoice-template",
       "deposit-invoice",
@@ -622,6 +623,7 @@ export const INDUSTRY_POSTS_C: PostDraft[] = [
     date: "2026-10-23",
     author: "Invoice Creator Editorial Team",
     related: [
+      "alterations-tailoring-invoice-template",
       "massage-therapy-invoice-template",
       "tattoo-invoice-template",
       "makeup-artist-invoice-template",
@@ -919,6 +921,7 @@ export const INDUSTRY_POSTS_C: PostDraft[] = [
     author: "Invoice Creator Editorial Team",
     jurisdiction: "United States",
     related: [
+      "sales-commission-invoice-template",
       "septic-pumping-invoice-template",
       "independent-contractor-invoice",
       "w9-and-1099-for-contractors",
@@ -1065,6 +1068,7 @@ export const INDUSTRY_POSTS_C: PostDraft[] = [
     date: "2026-10-23",
     author: "Invoice Creator Editorial Team",
     related: [
+      "data-entry-invoice-template",
       "virtual-assistant-rates",
       "retainer-invoice",
       "how-to-invoice-for-hourly-work",
@@ -1227,6 +1231,7 @@ export const INDUSTRY_POSTS_C: PostDraft[] = [
     author: "Invoice Creator Editorial Team",
     jurisdiction: "United States",
     related: [
+      "how-to-start-a-daycare",
       "nanny-invoice-template",
       "dog-walking-invoice-template",
       "payment-receipt-template",

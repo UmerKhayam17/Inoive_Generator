@@ -11,6 +11,7 @@ export const TAX_FILING_2026_POSTS: PostDraft[] = [
     date: "2026-10-27",
     author: "Invoice Creator Editorial Team",
     related: [
+      "how-to-start-an-online-store",
       "how-to-get-a-business-license",
       "sales-tax-on-invoices-us",
       "ecommerce-invoice-shopify-woocommerce",
@@ -176,6 +177,7 @@ export const TAX_FILING_2026_POSTS: PostDraft[] = [
     date: "2026-10-27",
     author: "Invoice Creator Editorial Team",
     related: [
+      "making-tax-digital-for-vat",
       "vat-penalties-uk",
       "vat-cash-accounting-scheme",
       "vat-registration-threshold-uk",

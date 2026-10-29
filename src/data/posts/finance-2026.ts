@@ -159,6 +159,7 @@ export const FINANCE_2026_POSTS: PostDraft[] = [
     date: "2026-10-24",
     author: "Invoice Creator Editorial Team",
     related: [
+      "hiring-your-first-employee",
       "ai-cash-flow-forecasting",
       "small-business-budget",
       "cash-flow-management",
@@ -476,6 +477,7 @@ export const FINANCE_2026_POSTS: PostDraft[] = [
     date: "2026-10-24",
     author: "Invoice Creator Editorial Team",
     related: [
+      "business-line-of-credit",
       "invoice-discounting-vs-factoring",
       "revenue-based-financing",
       "invoice-factoring",
@@ -833,6 +835,7 @@ export const FINANCE_2026_POSTS: PostDraft[] = [
     date: "2026-10-24",
     author: "Invoice Creator Editorial Team",
     related: [
+      "how-to-create-invoice-in-wave",
       "zoho-books-vs-quickbooks",
       "best-free-invoicing-software",
       "xero-vs-quickbooks",
@@ -981,6 +984,7 @@ export const FINANCE_2026_POSTS: PostDraft[] = [
     date: "2026-10-24",
     author: "Invoice Creator Editorial Team",
     related: [
+      "xero-vs-zoho-books",
       "how-to-start-a-bookkeeping-business",
       "freshbooks-vs-quickbooks",
       "zoho-invoice-vs-wave",

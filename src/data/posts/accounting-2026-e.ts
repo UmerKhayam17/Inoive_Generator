@@ -213,6 +213,7 @@ export const ACCOUNTING_2026_E_POSTS: PostDraft[] = [
     date: "2026-10-29",
     author: "Invoice Creator Editorial Team",
     related: [
+      "sales-forecast",
       "small-business-budget",
       "profit-and-loss-statement",
       "zero-based-budgeting",
@@ -637,6 +638,7 @@ export const ACCOUNTING_2026_E_POSTS: PostDraft[] = [
     date: "2026-10-29",
     author: "Invoice Creator Editorial Team",
     related: [
+      "time-and-materials-invoice",
       "milestone-payments",
       "how-to-invoice-for-hourly-work",
       "statement-of-work-template",

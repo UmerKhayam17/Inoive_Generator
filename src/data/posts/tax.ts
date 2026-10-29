@@ -12,6 +12,7 @@ export const TAX_POSTS: PostDraft[] = [
     author: "Invoice Creator Editorial Team",
     jurisdiction: "United States",
     related: [
+      "etsy-invoice",
       "how-to-calculate-sales-tax",
       "sales-tax-exemption-certificate",
       "sales-tax-nexus",
@@ -166,6 +167,7 @@ export const TAX_POSTS: PostDraft[] = [
     author: "Invoice Creator Editorial Team",
     jurisdiction: "United States",
     related: [
+      "how-to-pay-contractors",
       "how-to-file-1099-nec",
       "w2-vs-1099",
       "how-to-get-an-ein",
@@ -317,6 +319,7 @@ export const TAX_POSTS: PostDraft[] = [
     author: "Invoice Creator Editorial Team",
     jurisdiction: "United Kingdom & EU",
     related: [
+      "vies-vat-number-check",
       "ireland-vat-invoice-requirements",
       "vat-invoice-guide",
       "zero-rated-vs-exempt-vat",
@@ -915,6 +918,7 @@ export const TAX_POSTS: PostDraft[] = [
     author: "Invoice Creator Editorial Team",
     jurisdiction: "General",
     related: [
+      "invoice-header-and-footer",
       "japan-qualified-invoice-system",
       "invoice-requirements-by-country",
       "tax-invoice-guide",
@@ -1051,6 +1055,7 @@ export const TAX_POSTS: PostDraft[] = [
     author: "Invoice Creator Editorial Team",
     jurisdiction: "United States",
     related: [
+      "startup-costs",
       "irs-mileage-rate-2026",
       "home-office-deduction",
       "ai-tax-preparation",

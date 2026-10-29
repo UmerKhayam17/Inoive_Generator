@@ -11,6 +11,7 @@ export const PAYMENTS_2026_E_POSTS: PostDraft[] = [
     author: "Invoice Creator Editorial Team",
     jurisdiction: "United States",
     related: [
+      "how-long-does-ach-take",
       "what-is-a-voided-check",
       "ach-vs-wire-transfer",
       "nacha-2026-rules",
@@ -166,6 +167,7 @@ export const PAYMENTS_2026_E_POSTS: PostDraft[] = [
     date: "2026-10-28",
     author: "Invoice Creator Editorial Team",
     related: [
+      "card-readers-for-small-business",
       "credit-card-processing-fees",
       "how-to-accept-credit-card-payments",
       "stripe-vs-square",

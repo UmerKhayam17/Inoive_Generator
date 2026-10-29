@@ -11,6 +11,7 @@ export const US_TAX_2026_D_POSTS: PostDraft[] = [
     author: "Invoice Creator Editorial Team",
     jurisdiction: "United States",
     related: [
+      "mileage-invoice",
       "courier-delivery-invoice-template",
       "mileage-log-template",
       "reimbursable-expenses-invoice",
@@ -392,6 +393,7 @@ export const US_TAX_2026_D_POSTS: PostDraft[] = [
     author: "Invoice Creator Editorial Team",
     jurisdiction: "United States",
     related: [
+      "printing-services-invoice-template",
       "sellers-permit",
       "sales-tax-exemption-certificate",
       "tax-exempt-invoice",
@@ -557,6 +559,7 @@ export const US_TAX_2026_D_POSTS: PostDraft[] = [
     author: "Invoice Creator Editorial Team",
     jurisdiction: "United States",
     related: [
+      "sales-tax-by-state",
       "reverse-sales-tax-calculation",
       "sales-tax-on-invoices-us",
       "sales-tax-nexus",

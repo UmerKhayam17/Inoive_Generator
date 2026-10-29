@@ -758,7 +758,12 @@ export const EINVOICING_POSTS: PostDraft[] = [
     date: "2026-10-23",
     author: "Invoice Creator Editorial Team",
     jurisdiction: "France",
-    related: ["e-invoicing-guide", "germany-e-invoicing-xrechnung-zugferd", "vat-invoice-guide"],
+    related: [
+      "french-invoice-requirements",
+      "e-invoicing-guide",
+      "germany-e-invoicing-xrechnung-zugferd",
+      "vat-invoice-guide",
+    ],
     faqs: [
       {
         q: "When does e-invoicing become mandatory in France?",
@@ -900,7 +905,12 @@ export const EINVOICING_POSTS: PostDraft[] = [
     date: "2026-10-23",
     author: "Invoice Creator Editorial Team",
     jurisdiction: "Germany",
-    related: ["e-invoicing-guide", "what-is-peppol", "france-e-invoicing-reform"],
+    related: [
+      "kleinunternehmerregelung",
+      "e-invoicing-guide",
+      "what-is-peppol",
+      "france-e-invoicing-reform",
+    ],
     faqs: [
       {
         q: "What is XRechnung?",
@@ -1342,6 +1352,7 @@ export const EINVOICING_POSTS: PostDraft[] = [
     author: "Invoice Creator Editorial Team",
     jurisdiction: "Australia",
     related: [
+      "how-to-get-an-abn",
       "new-zealand-gst-invoice",
       "tax-invoice-guide",
       "what-is-peppol",

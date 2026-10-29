@@ -469,6 +469,7 @@ export const ACCOUNTING_BASICS_2026_C_POSTS: PostDraft[] = [
     date: "2026-10-29",
     author: "Invoice Creator Editorial Team",
     related: [
+      "average-profit-margin-by-industry",
       "financial-ratios-small-business",
       "markup-vs-margin",
       "gross-profit-vs-net-profit",

@@ -10,6 +10,7 @@ export const FREELANCING_POSTS: PostDraft[] = [
     date: "2026-10-22",
     author: "Invoice Creator Editorial Team",
     related: [
+      "video-editing-rates",
       "how-much-to-charge-for-house-cleaning",
       "value-based-pricing",
       "salary-increase-percentage",
@@ -167,6 +168,7 @@ export const FREELANCING_POSTS: PostDraft[] = [
     date: "2026-10-22",
     author: "Invoice Creator Editorial Team",
     related: [
+      "illustrator-invoice-template",
       "how-to-start-a-photography-business",
       "client-onboarding-checklist",
       "ai-generated-work-copyright",
@@ -306,6 +308,7 @@ export const FREELANCING_POSTS: PostDraft[] = [
     date: "2026-10-22",
     author: "Invoice Creator Editorial Team",
     related: [
+      "billing-cycle",
       "life-coach-invoice-template",
       "bookkeeping-services-invoice-template",
       "marketing-agency-invoice-template",
@@ -735,6 +738,7 @@ export const FREELANCING_POSTS: PostDraft[] = [
     date: "2026-10-22",
     author: "Invoice Creator Editorial Team",
     related: [
+      "podcast-editing-invoice-template",
       "freelance-writing-rates",
       "translation-invoice-template",
       "freelancer-invoice-guide",
@@ -1025,6 +1029,7 @@ export const FREELANCING_POSTS: PostDraft[] = [
     date: "2026-10-22",
     author: "Invoice Creator Editorial Team",
     related: [
+      "ux-design-invoice-template",
       "web-design-pricing",
       "escrow-payments",
       "deposit-invoice",

@@ -186,6 +186,7 @@ export const TAX_COMPLIANCE_2026_POSTS: PostDraft[] = [
     date: "2026-10-27",
     author: "Invoice Creator Editorial Team",
     related: [
+      "australia-gst-registration",
       "how-to-calculate-vat",
       "sales-tax-on-invoices-us",
       "vat-invoice-guide",

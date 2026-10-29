@@ -10,6 +10,7 @@ export const PAYMENTS_2026_H_POSTS: PostDraft[] = [
     date: "2026-10-29",
     author: "Invoice Creator Editorial Team",
     related: [
+      "pci-compliance-small-business",
       "merchant-account-vs-payment-processor",
       "stripe-fees",
       "credit-card-surcharge-rules",

@@ -392,7 +392,12 @@ export const TRADE_TARIFFS_2026_POSTS: PostDraft[] = [
     category: "business-finance",
     date: "2026-10-28",
     author: "Invoice Creator Editorial Team",
-    related: ["how-to-price-a-product", "how-to-set-freelance-rates", "markup-vs-margin"],
+    related: [
+      "price-list-template",
+      "how-to-price-a-product",
+      "how-to-set-freelance-rates",
+      "markup-vs-margin",
+    ],
     faqs: [
       {
         q: "How do I tell customers about a price increase?",

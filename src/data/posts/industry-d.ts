@@ -180,6 +180,7 @@ export const INDUSTRY_POSTS_D: PostDraft[] = [
     date: "2026-10-27",
     author: "Invoice Creator Editorial Team",
     related: [
+      "how-to-start-a-social-media-marketing-agency",
       "seo-services-invoice-template",
       "ai-automation-agency-invoice-template",
       "social-media-manager-invoice-template",
@@ -352,6 +353,7 @@ export const INDUSTRY_POSTS_D: PostDraft[] = [
     date: "2026-10-27",
     author: "Invoice Creator Editorial Team",
     related: [
+      "amazon-business-invoice",
       "cash-on-delivery-invoicing",
       "cost-of-goods-sold",
       "invoice-vs-receipt",

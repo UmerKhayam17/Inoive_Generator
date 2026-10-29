@@ -171,6 +171,7 @@ export const INDUSTRY_POSTS_G: PostDraft[] = [
     date: "2026-10-27",
     author: "Invoice Creator Editorial Team",
     related: [
+      "dj-rates",
       "musician-invoice-template",
       "event-planner-invoice-template",
       "deposit-invoice",
@@ -757,7 +758,12 @@ export const INDUSTRY_POSTS_G: PostDraft[] = [
     category: "industry-invoices",
     date: "2026-10-27",
     author: "Invoice Creator Editorial Team",
-    related: ["salon-invoice-template", "deposit-invoice", "event-planner-invoice-template"],
+    related: [
+      "makeup-artist-rates",
+      "salon-invoice-template",
+      "deposit-invoice",
+      "event-planner-invoice-template",
+    ],
     faqs: [
       {
         q: "What should a makeup artist invoice include?",

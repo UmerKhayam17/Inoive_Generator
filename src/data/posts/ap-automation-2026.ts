@@ -211,6 +211,7 @@ export const AP_AUTOMATION_2026_POSTS: PostDraft[] = [
     date: "2026-10-27",
     author: "Invoice Creator Editorial Team",
     related: [
+      "customer-overpayment",
       "positive-pay-check-fraud",
       "three-way-match",
       "invoice-scams",

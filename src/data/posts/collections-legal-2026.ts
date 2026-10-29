@@ -378,6 +378,7 @@ export const COLLECTIONS_LEGAL_2026_POSTS: PostDraft[] = [
     author: "Invoice Creator Editorial Team",
     jurisdiction: "United States",
     related: [
+      "retainage-invoice",
       "construction-invoice-guide",
       "contractor-invoice-template",
       "partial-payment-invoice",
@@ -721,6 +722,7 @@ export const COLLECTIONS_LEGAL_2026_POSTS: PostDraft[] = [
     author: "Invoice Creator Editorial Team",
     jurisdiction: "United States",
     related: [
+      "construction-subcontractor-invoice-template",
       "construction-invoice-guide",
       "contractor-invoice-template",
       "milestone-payments",

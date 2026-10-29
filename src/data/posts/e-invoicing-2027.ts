@@ -11,6 +11,7 @@ export const EINVOICING_2027_POSTS: PostDraft[] = [
     author: "Invoice Creator Editorial Team",
     jurisdiction: "Germany",
     related: [
+      "german-invoice-requirements",
       "germany-e-invoicing-xrechnung-zugferd",
       "e-invoicing-mandates-2027",
       "e-invoice-vs-pdf-invoice",

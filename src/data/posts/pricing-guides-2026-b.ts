@@ -10,6 +10,7 @@ export const PRICING_GUIDES_2026_B_POSTS: PostDraft[] = [
     date: "2026-10-29",
     author: "Invoice Creator Editorial Team",
     related: [
+      "how-to-become-a-freelance-graphic-designer",
       "freelance-portfolio",
       "graphic-design-invoice-template",
       "how-to-set-freelance-rates",
@@ -205,6 +206,7 @@ export const PRICING_GUIDES_2026_B_POSTS: PostDraft[] = [
     date: "2026-10-29",
     author: "Invoice Creator Editorial Team",
     related: [
+      "web-developer-hourly-rate",
       "web-development-invoice-template",
       "milestone-payments",
       "scope-creep-change-order",

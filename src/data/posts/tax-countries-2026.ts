@@ -10,7 +10,12 @@ export const TAX_COUNTRIES_2026_POSTS: PostDraft[] = [
     jurisdiction: "Canada",
     date: "2026-10-27",
     author: "Invoice Creator Editorial Team",
-    related: ["invoice-requirements-by-country", "gst-invoice-guide", "sales-tax-vs-vat-vs-gst"],
+    related: [
+      "how-to-register-for-gst-hst-canada",
+      "invoice-requirements-by-country",
+      "gst-invoice-guide",
+      "sales-tax-vs-vat-vs-gst",
+    ],
     faqs: [
       {
         q: "What must a GST/HST invoice show in Canada?",

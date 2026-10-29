@@ -189,6 +189,7 @@ export const PAYMENTS_2026_F_POSTS: PostDraft[] = [
     date: "2026-10-29",
     author: "Invoice Creator Editorial Team",
     related: [
+      "how-to-create-invoice-in-xero",
       "credit-card-processing-fees",
       "stripe-invoicing-guide",
       "stripe-vs-paypal",
@@ -391,6 +392,7 @@ export const PAYMENTS_2026_F_POSTS: PostDraft[] = [
     author: "Invoice Creator Editorial Team",
     jurisdiction: "United States",
     related: [
+      "zelle-vs-venmo",
       "cash-app-business-fees",
       "venmo-zelle-cash-app-invoice",
       "paypal-fees",
@@ -775,6 +777,7 @@ export const PAYMENTS_2026_F_POSTS: PostDraft[] = [
     author: "Invoice Creator Editorial Team",
     jurisdiction: "United States",
     related: [
+      "how-to-set-up-direct-deposit",
       "routing-number-vs-account-number",
       "how-to-accept-ach-payments",
       "vendor-onboarding-checklist",

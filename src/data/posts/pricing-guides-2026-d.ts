@@ -431,6 +431,7 @@ export const PRICING_GUIDES_2026_D_POSTS: PostDraft[] = [
     date: "2026-10-29",
     author: "Invoice Creator Editorial Team",
     related: [
+      "how-to-become-a-freelance-social-media-manager",
       "social-media-manager-invoice-template",
       "marketing-agency-invoice-template",
       "retainer-invoice",
@@ -849,6 +850,7 @@ export const PRICING_GUIDES_2026_D_POSTS: PostDraft[] = [
     date: "2026-10-29",
     author: "Invoice Creator Editorial Team",
     related: [
+      "voice-over-rates",
       "ugc-creator-invoice",
       "how-to-set-freelance-rates",
       "ai-generated-work-copyright",

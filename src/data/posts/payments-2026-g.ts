@@ -11,6 +11,7 @@ export const PAYMENTS_2026_G_POSTS: PostDraft[] = [
     author: "Invoice Creator Editorial Team",
     jurisdiction: "United States",
     related: [
+      "how-to-fill-out-a-money-order",
       "us-paper-checks-phase-out",
       "positive-pay-check-fraud",
       "payment-receipt-template",

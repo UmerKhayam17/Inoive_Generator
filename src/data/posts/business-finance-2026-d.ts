@@ -11,6 +11,7 @@ export const BUSINESS_FINANCE_2026_D_POSTS: PostDraft[] = [
     author: "Invoice Creator Editorial Team",
     jurisdiction: "United States",
     related: [
+      "business-tax-extension",
       "quarterly-estimated-taxes-freelancers",
       "how-to-file-1099-nec",
       "how-to-file-taxes-as-an-llc",

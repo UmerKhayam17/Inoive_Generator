@@ -607,6 +607,7 @@ export const HOW_TO_POSTS_B: PostDraft[] = [
     date: "2026-10-22",
     author: "Invoice Creator Editorial Team",
     related: [
+      "artist-commission-invoice-template",
       "florist-invoice-template",
       "retainer-invoice",
       "milestone-payments",
@@ -773,6 +774,7 @@ export const HOW_TO_POSTS_B: PostDraft[] = [
     date: "2026-10-22",
     author: "Invoice Creator Editorial Team",
     related: [
+      "rush-fee",
       "superbill-template",
       "reimbursable-expenses-invoice",
       "invoice-examples",
@@ -929,6 +931,7 @@ export const HOW_TO_POSTS_B: PostDraft[] = [
     date: "2026-10-22",
     author: "Invoice Creator Editorial Team",
     related: [
+      "invoice-vs-statement",
       "vendor-statement-reconciliation",
       "consolidated-invoice",
       "accounts-receivable-aging-report",

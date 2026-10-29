@@ -508,6 +508,7 @@ export const TEMPLATES_2026_POSTS: PostDraft[] = [
     date: "2026-10-27",
     author: "Invoice Creator Editorial Team",
     related: [
+      "quote-vs-estimate",
       "veterinary-invoice-template",
       "invoice-vs-estimate",
       "quotation-format",
@@ -674,7 +675,12 @@ export const TEMPLATES_2026_POSTS: PostDraft[] = [
     category: "design-templates",
     date: "2026-10-27",
     author: "Invoice Creator Editorial Team",
-    related: ["invoice-vs-receipt", "payment-receipt-template", "what-is-a-sales-invoice"],
+    related: [
+      "invoice-vs-bill-of-sale",
+      "invoice-vs-receipt",
+      "payment-receipt-template",
+      "what-is-a-sales-invoice",
+    ],
     faqs: [
       {
         q: "What is a bill of sale?",
@@ -859,6 +865,7 @@ export const TEMPLATES_2026_POSTS: PostDraft[] = [
     date: "2026-10-27",
     author: "Invoice Creator Editorial Team",
     related: [
+      "staffing-agency-invoice-template",
       "how-to-invoice-for-hourly-work",
       "invoice-tracker-spreadsheet",
       "independent-contractor-invoice",
@@ -1206,6 +1213,7 @@ export const TEMPLATES_2026_POSTS: PostDraft[] = [
     date: "2026-10-27",
     author: "Invoice Creator Editorial Team",
     related: [
+      "how-to-add-logo-to-invoice",
       "professional-invoice-design-tips",
       "choose-invoice-template-by-client",
       "invoice-pdf-print-checklist",

@@ -322,6 +322,7 @@ export const INDUSTRY_POSTS_B: PostDraft[] = [
     date: "2026-10-22",
     author: "Invoice Creator Editorial Team",
     related: [
+      "private-investigator-invoice-template",
       "notary-invoice-template",
       "retainer-invoice",
       "how-to-invoice-for-hourly-work",
@@ -464,6 +465,7 @@ export const INDUSTRY_POSTS_B: PostDraft[] = [
     date: "2026-10-22",
     author: "Invoice Creator Editorial Team",
     related: [
+      "how-to-start-a-trucking-business",
       "towing-invoice-template",
       "invoice-factoring",
       "accounts-receivable-aging-report",
@@ -768,6 +770,7 @@ export const INDUSTRY_POSTS_B: PostDraft[] = [
     date: "2026-10-22",
     author: "Invoice Creator Editorial Team",
     related: [
+      "how-to-become-a-freelance-web-developer",
       "web-design-pricing",
       "app-developer-invoice-template",
       "it-managed-services-invoice-template",
@@ -1066,6 +1069,7 @@ export const INDUSTRY_POSTS_B: PostDraft[] = [
     date: "2026-10-22",
     author: "Invoice Creator Editorial Team",
     related: [
+      "bartending-invoice-template",
       "how-to-start-an-event-planning-business",
       "bakery-invoice-template",
       "restaurant-bill-format",
@@ -1222,6 +1226,7 @@ export const INDUSTRY_POSTS_B: PostDraft[] = [
     date: "2026-10-22",
     author: "Invoice Creator Editorial Team",
     related: [
+      "service-call-fee",
       "appliance-repair-invoice-template",
       "plumbing-invoice-template",
       "electrician-invoice-template",

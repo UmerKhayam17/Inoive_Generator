@@ -897,6 +897,7 @@ export const ACCOUNTING_GUIDES_2026_B_POSTS: PostDraft[] = [
     date: "2026-10-28",
     author: "Invoice Creator Editorial Team",
     related: [
+      "invoice-processing",
       "vendor-statement-reconciliation",
       "invoice-approval-workflow",
       "three-way-match",

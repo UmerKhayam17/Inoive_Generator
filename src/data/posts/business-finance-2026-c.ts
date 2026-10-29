@@ -226,6 +226,7 @@ export const BUSINESS_FINANCE_2026_C_POSTS: PostDraft[] = [
     date: "2026-10-28",
     author: "Invoice Creator Editorial Team",
     related: [
+      "business-plan-template",
       "invoice-financing-vs-line-of-credit",
       "business-credit-score",
       "revenue-based-financing",

@@ -11,6 +11,7 @@ export const START_BUSINESS_2026_POSTS: PostDraft[] = [
     author: "Invoice Creator Editorial Team",
     jurisdiction: "United States",
     related: [
+      "how-to-invoice-as-an-llc",
       "business-entity-types",
       "llc-vs-sole-proprietorship",
       "how-to-get-an-ein",
@@ -223,6 +224,7 @@ export const START_BUSINESS_2026_POSTS: PostDraft[] = [
     author: "Invoice Creator Editorial Team",
     jurisdiction: "United States",
     related: [
+      "how-to-invoice-as-a-sole-proprietor",
       "registered-agent",
       "llc-vs-sole-proprietorship",
       "how-to-invoice-without-a-business",
@@ -408,6 +410,7 @@ export const START_BUSINESS_2026_POSTS: PostDraft[] = [
     author: "Invoice Creator Editorial Team",
     jurisdiction: "United States",
     related: [
+      "how-to-start-a-food-truck-business",
       "how-to-start-a-junk-removal-business",
       "llc-vs-sole-proprietorship",
       "how-to-get-an-ein",

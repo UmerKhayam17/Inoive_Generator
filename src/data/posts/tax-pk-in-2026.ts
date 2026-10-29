@@ -510,6 +510,7 @@ export const TAX_PK_IN_2026_POSTS: PostDraft[] = [
     date: "2026-10-27",
     author: "Invoice Creator Editorial Team",
     related: [
+      "gst-late-fee-india",
       "input-tax-credit-gst",
       "section-44ada-freelancers",
       "gst-invoice-management-system",

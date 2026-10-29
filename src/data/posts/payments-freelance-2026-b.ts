@@ -11,6 +11,7 @@ export const PAYMENTS_FREELANCE_2026_B_POSTS: PostDraft[] = [
     date: "2026-10-27",
     author: "Invoice Creator Editorial Team",
     related: [
+      "recurring-payments-small-business",
       "pay-by-bank",
       "sepa-direct-debit",
       "recurring-invoices-guide",

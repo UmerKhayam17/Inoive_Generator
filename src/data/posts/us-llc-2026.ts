@@ -742,6 +742,7 @@ export const US_LLC_2026_POSTS: PostDraft[] = [
     author: "Invoice Creator Editorial Team",
     jurisdiction: "United States",
     related: [
+      "sales-tax-on-services-by-state",
       "sales-tax-on-invoices-us",
       "resale-certificate",
       "sales-tax-nexus",

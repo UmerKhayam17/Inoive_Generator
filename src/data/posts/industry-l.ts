@@ -349,6 +349,7 @@ export const INDUSTRY_POSTS_L: PostDraft[] = [
     date: "2026-10-29",
     author: "Invoice Creator Editorial Team",
     related: [
+      "translation-rates",
       "copywriter-invoice-template",
       "translation-invoice-template",
       "freelance-invoice-template",
@@ -516,6 +517,7 @@ export const INDUSTRY_POSTS_L: PostDraft[] = [
     date: "2026-10-29",
     author: "Invoice Creator Editorial Team",
     related: [
+      "airbnb-cleaning-invoice-template",
       "hotel-invoice-template",
       "rent-invoice-template",
       "property-management-invoice-template",

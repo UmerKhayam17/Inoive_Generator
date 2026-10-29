@@ -319,6 +319,7 @@ Questions? Call 555-0142 before paying if anything on this invoice looks differe
     date: "2026-10-22",
     author: "Invoice Creator Editorial Team",
     related: [
+      "swift-code-vs-iban",
       "routing-number-vs-account-number",
       "iso-20022-payments",
       "ach-vs-wire-transfer",
@@ -461,6 +462,7 @@ Our bank details will never change by email. If you receive a message saying the
     date: "2026-10-22",
     author: "Invoice Creator Editorial Team",
     related: [
+      "2-10-net-30",
       "discount-on-invoice",
       "dynamic-discounting",
       "invoice-payment-terms",
@@ -607,6 +609,7 @@ Our bank details will never change by email. If you receive a message saying the
     date: "2026-10-22",
     author: "Invoice Creator Editorial Team",
     related: [
+      "wire-transfer-fees",
       "how-long-does-a-wire-transfer-take",
       "us-paper-checks-phase-out",
       "sepa-direct-debit",
@@ -749,6 +752,7 @@ Our bank details never change by email. Call 555-0187 to verify before sending a
     date: "2026-10-22",
     author: "Invoice Creator Editorial Team",
     related: [
+      "gift-certificate-template",
       "lien-waiver",
       "payment-confirmation-email",
       "rent-receipt-template",
@@ -1063,7 +1067,12 @@ Thank you for your payment.</blockquote>
     category: "payments",
     date: "2026-10-22",
     author: "Invoice Creator Editorial Team",
-    related: ["overdue-invoice", "client-not-paying-invoice", "invoice-dispute"],
+    related: [
+      "collection-agency-for-unpaid-invoices",
+      "overdue-invoice",
+      "client-not-paying-invoice",
+      "invoice-dispute",
+    ],
     faqs: [
       {
         q: "When should I send an invoice to collections?",

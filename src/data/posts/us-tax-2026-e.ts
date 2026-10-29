@@ -11,6 +11,7 @@ export const US_TAX_2026_E_POSTS: PostDraft[] = [
     author: "Invoice Creator Editorial Team",
     jurisdiction: "United States",
     related: [
+      "llc-tax-rate",
       "business-entity-types",
       "llc-vs-sole-proprietorship",
       "s-corp-vs-llc",
@@ -178,6 +179,7 @@ export const US_TAX_2026_E_POSTS: PostDraft[] = [
     author: "Invoice Creator Editorial Team",
     jurisdiction: "United States",
     related: [
+      "how-to-file-sales-tax-return",
       "does-an-llc-get-a-1099",
       "1099-nec-threshold-2026",
       "w9-and-1099-for-contractors",
@@ -350,6 +352,7 @@ export const US_TAX_2026_E_POSTS: PostDraft[] = [
     author: "Invoice Creator Editorial Team",
     jurisdiction: "United States",
     related: [
+      "business-meals-deduction",
       "self-employed-tax-deductions",
       "schedule-c-for-freelancers",
       "how-to-track-business-expenses",

@@ -161,6 +161,7 @@ export const FINANCE_ADVANCED_POSTS: PostDraft[] = [
     date: "2026-10-23",
     author: "Invoice Creator Editorial Team",
     related: [
+      "materials-markup",
       "how-to-calculate-profit-margin",
       "how-to-price-a-product",
       "break-even-point",
@@ -345,6 +346,7 @@ export const FINANCE_ADVANCED_POSTS: PostDraft[] = [
     author: "Invoice Creator Editorial Team",
     jurisdiction: "General",
     related: [
+      "how-to-start-a-vending-machine-business",
       "how-to-calculate-sales-tax",
       "sales-tax-on-invoices-us",
       "markup-vs-margin",
@@ -670,6 +672,7 @@ export const FINANCE_ADVANCED_POSTS: PostDraft[] = [
     author: "Invoice Creator Editorial Team",
     jurisdiction: "United States",
     related: [
+      "how-much-to-set-aside-for-taxes",
       "federal-tax-brackets-2026",
       "estimated-tax-penalty",
       "solo-401k-vs-sep-ira",
@@ -1418,6 +1421,7 @@ export const FINANCE_ADVANCED_POSTS: PostDraft[] = [
     author: "Invoice Creator Editorial Team",
     jurisdiction: "United States / United Kingdom",
     related: [
+      "statute-of-limitations-unpaid-invoice",
       "demand-letter-for-payment",
       "client-not-paying-invoice",
       "invoice-collections",

@@ -160,6 +160,7 @@ export const COMPARISON_FINANCE_POSTS: PostDraft[] = [
     date: "2026-10-22",
     author: "Invoice Creator Editorial Team",
     related: [
+      "honeybook-vs-dubsado",
       "ai-accounting-software",
       "touchless-invoice-processing",
       "how-to-generate-an-invoice",
@@ -641,6 +642,7 @@ export const COMPARISON_FINANCE_POSTS: PostDraft[] = [
     date: "2026-10-22",
     author: "Invoice Creator Editorial Team",
     related: [
+      "split-billing",
       "accounts-receivable-turnover-ratio",
       "accounts-receivable-aging-report",
       "invoice-payment-terms",
@@ -791,6 +793,7 @@ export const COMPARISON_FINANCE_POSTS: PostDraft[] = [
     date: "2026-10-22",
     author: "Invoice Creator Editorial Team",
     related: [
+      "accounts-payable-aging-report",
       "allowance-for-doubtful-accounts",
       "accounts-receivable-guide",
       "overdue-invoice",
@@ -1123,6 +1126,7 @@ export const COMPARISON_FINANCE_POSTS: PostDraft[] = [
     date: "2026-10-22",
     author: "Invoice Creator Editorial Team",
     related: [
+      "bookkeeper-vs-accountant",
       "bookkeeping-rates",
       "ai-bookkeeping",
       "general-ledger",

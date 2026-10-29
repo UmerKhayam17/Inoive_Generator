@@ -11,6 +11,7 @@ export const TAX_US_UK_2026_B_POSTS: PostDraft[] = [
     date: "2026-10-27",
     author: "Invoice Creator Editorial Team",
     related: [
+      "ein-vs-ssn",
       "how-to-start-an-llc",
       "boi-reporting-2026",
       "tax-id-on-invoice",
@@ -368,6 +369,7 @@ export const TAX_US_UK_2026_B_POSTS: PostDraft[] = [
     date: "2026-10-27",
     author: "Invoice Creator Editorial Team",
     related: [
+      "employer-payroll-taxes",
       "how-to-pay-yourself-as-a-business-owner",
       "side-hustle-taxes",
       "one-big-beautiful-bill-small-business",
@@ -542,6 +544,7 @@ export const TAX_US_UK_2026_B_POSTS: PostDraft[] = [
     date: "2026-10-27",
     author: "Invoice Creator Editorial Team",
     related: [
+      "self-assessment-deadlines",
       "how-to-get-utr-number",
       "uk-dividend-tax-rates-2026",
       "making-tax-digital-income-tax",

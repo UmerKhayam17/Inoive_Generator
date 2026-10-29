@@ -712,6 +712,7 @@ export const INVOICING_BASICS_2026_D_POSTS: PostDraft[] = [
     date: "2026-10-29",
     author: "Invoice Creator Editorial Team",
     related: [
+      "freight-broker-invoice-template",
       "trucking-invoice-template",
       "bill-of-lading-vs-commercial-invoice",
       "invoice-dispute",

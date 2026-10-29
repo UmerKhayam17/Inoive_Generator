@@ -11,6 +11,7 @@ export const PAYMENTS_2026_I_POSTS: PostDraft[] = [
     author: "Invoice Creator Editorial Team",
     jurisdiction: "United States",
     related: [
+      "ach-debit-vs-ach-credit",
       "how-to-accept-ach-payments",
       "nacha-2026-rules",
       "ach-vs-wire-transfer",
@@ -648,6 +649,7 @@ export const PAYMENTS_2026_I_POSTS: PostDraft[] = [
     date: "2026-10-29",
     author: "Invoice Creator Editorial Team",
     related: [
+      "freshbooks-vs-wave",
       "ach-vs-wire-transfer",
       "how-to-accept-credit-card-payments",
       "stripe-fees",

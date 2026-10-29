@@ -495,6 +495,7 @@ export const INDUSTRY_POSTS_O: PostDraft[] = [
     date: "2026-10-29",
     author: "Invoice Creator Editorial Team",
     related: [
+      "seo-pricing",
       "retainer-invoice",
       "marketing-agency-invoice-template",
       "recurring-invoices-guide",
@@ -651,6 +652,7 @@ export const INDUSTRY_POSTS_O: PostDraft[] = [
     date: "2026-10-29",
     author: "Invoice Creator Editorial Team",
     related: [
+      "how-to-become-a-freelance-video-editor",
       "videographer-invoice-template",
       "deposit-invoice",
       "scope-creep-change-order",

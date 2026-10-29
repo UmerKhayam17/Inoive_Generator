@@ -196,6 +196,7 @@ export const BUSINESS_GROWTH_2026_POSTS: PostDraft[] = [
     date: "2026-10-27",
     author: "Invoice Creator Editorial Team",
     related: [
+      "equipment-financing",
       "standard-mileage-vs-actual-expenses",
       "section-179-vs-bonus-depreciation",
       "capex-vs-opex",
@@ -551,6 +552,7 @@ export const BUSINESS_GROWTH_2026_POSTS: PostDraft[] = [
     date: "2026-10-27",
     author: "Invoice Creator Editorial Team",
     related: [
+      "how-to-start-a-candle-business",
       "how-to-start-a-home-bakery-business",
       "how-to-raise-prices",
       "ai-pricing-tools",

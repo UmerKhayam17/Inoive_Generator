@@ -916,6 +916,7 @@ export const UK_EU_TAX_2026_C_POSTS: PostDraft[] = [
     author: "Invoice Creator Editorial Team",
     jurisdiction: "European Union",
     related: [
+      "eu-vat-rates-2026",
       "vida-vat-in-the-digital-age",
       "ecommerce-invoice-shopify-woocommerce",
       "reverse-charge-invoice",

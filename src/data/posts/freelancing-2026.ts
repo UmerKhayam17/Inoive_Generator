@@ -172,6 +172,7 @@ export const FREELANCING_2026_POSTS: PostDraft[] = [
     date: "2026-10-24",
     author: "Invoice Creator Editorial Team",
     related: [
+      "influencer-invoice-template",
       "ugc-rates",
       "copywriter-invoice-template",
       "freelance-invoice-template",
@@ -509,6 +510,7 @@ export const FREELANCING_2026_POSTS: PostDraft[] = [
     date: "2026-10-24",
     author: "Invoice Creator Editorial Team",
     related: [
+      "remodeling-invoice-template",
       "seo-services-invoice-template",
       "milestone-payments",
       "freelance-contract-template",
@@ -868,6 +870,7 @@ export const FREELANCING_2026_POSTS: PostDraft[] = [
     date: "2026-10-24",
     author: "Invoice Creator Editorial Team",
     related: [
+      "net-30-payment-terms",
       "customer-credit-policy",
       "invoice-payment-terms",
       "early-payment-discount",

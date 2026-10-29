@@ -10,6 +10,7 @@ export const START_BUSINESS_2026_B_POSTS: PostDraft[] = [
     date: "2026-10-29",
     author: "Invoice Creator Editorial Team",
     related: [
+      "how-to-start-a-small-business",
       "cleaning-service-invoice-template",
       "llc-vs-sole-proprietorship",
       "recurring-invoices-guide",

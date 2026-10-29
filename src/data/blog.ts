@@ -111,6 +111,36 @@ import { UK_BUSINESS_2026_POSTS } from "./posts/uk-business-2026";
 import { UK_BUSINESS_2026_B_POSTS } from "./posts/uk-business-2026-b";
 import { PK_IN_2026_C_POSTS } from "./posts/pk-in-2026-c";
 import { IN_GCC_2026_POSTS } from "./posts/in-gcc-2026";
+import { INDUSTRY_POSTS_Q } from "./posts/industry-q";
+import { INDUSTRY_POSTS_R } from "./posts/industry-r";
+import { INDUSTRY_POSTS_S } from "./posts/industry-s";
+import { INDUSTRY_POSTS_T } from "./posts/industry-t";
+import { INDUSTRY_POSTS_U } from "./posts/industry-u";
+import { INDUSTRY_POSTS_V } from "./posts/industry-v";
+import { INVOICING_BASICS_2026_E_POSTS } from "./posts/invoicing-basics-2026-e";
+import { INVOICING_BASICS_2026_F_POSTS } from "./posts/invoicing-basics-2026-f";
+import { INVOICING_BASICS_2026_G_POSTS } from "./posts/invoicing-basics-2026-g";
+import { GUIDES_2026_C_POSTS } from "./posts/guides-2026-c";
+import { GUIDES_2026_D_POSTS } from "./posts/guides-2026-d";
+import { COMPARISONS_2026_F_POSTS } from "./posts/comparisons-2026-f";
+import { COMPARISONS_2026_G_POSTS } from "./posts/comparisons-2026-g";
+import { COMPARISONS_2026_H_POSTS } from "./posts/comparisons-2026-h";
+import { PAYMENTS_2026_J_POSTS } from "./posts/payments-2026-j";
+import { PAYMENTS_2026_K_POSTS } from "./posts/payments-2026-k";
+import { PAYMENTS_2026_L_POSTS } from "./posts/payments-2026-l";
+import { US_TAX_2026_F_POSTS } from "./posts/us-tax-2026-f";
+import { US_TAX_2026_G_POSTS } from "./posts/us-tax-2026-g";
+import { UK_EU_TAX_2026_D_POSTS } from "./posts/uk-eu-tax-2026-d";
+import { TAX_GLOBAL_2026_C_POSTS } from "./posts/tax-global-2026-c";
+import { BUSINESS_FINANCE_2026_E_POSTS } from "./posts/business-finance-2026-e";
+import { BUSINESS_FINANCE_2026_F_POSTS } from "./posts/business-finance-2026-f";
+import { START_BUSINESS_2026_E_POSTS } from "./posts/start-business-2026-e";
+import { START_BUSINESS_2026_F_POSTS } from "./posts/start-business-2026-f";
+import { TEMPLATES_2026_C_POSTS } from "./posts/templates-2026-c";
+import { TEMPLATES_2026_D_POSTS } from "./posts/templates-2026-d";
+import { FREELANCING_2026_F_POSTS } from "./posts/freelancing-2026-f";
+import { PRICING_GUIDES_2026_E_POSTS } from "./posts/pricing-guides-2026-e";
+import { PRICING_GUIDES_2026_F_POSTS } from "./posts/pricing-guides-2026-f";
 
 export interface Post {
   slug: string;
@@ -4276,6 +4306,36 @@ export const POST_DRAFTS: PostDraft[] = [
   ...UK_BUSINESS_2026_B_POSTS,
   ...PK_IN_2026_C_POSTS,
   ...IN_GCC_2026_POSTS,
+  ...INDUSTRY_POSTS_Q,
+  ...INDUSTRY_POSTS_R,
+  ...INDUSTRY_POSTS_S,
+  ...INDUSTRY_POSTS_T,
+  ...INDUSTRY_POSTS_U,
+  ...INDUSTRY_POSTS_V,
+  ...INVOICING_BASICS_2026_E_POSTS,
+  ...INVOICING_BASICS_2026_F_POSTS,
+  ...INVOICING_BASICS_2026_G_POSTS,
+  ...GUIDES_2026_C_POSTS,
+  ...GUIDES_2026_D_POSTS,
+  ...COMPARISONS_2026_F_POSTS,
+  ...COMPARISONS_2026_G_POSTS,
+  ...COMPARISONS_2026_H_POSTS,
+  ...PAYMENTS_2026_J_POSTS,
+  ...PAYMENTS_2026_K_POSTS,
+  ...PAYMENTS_2026_L_POSTS,
+  ...US_TAX_2026_F_POSTS,
+  ...US_TAX_2026_G_POSTS,
+  ...UK_EU_TAX_2026_D_POSTS,
+  ...TAX_GLOBAL_2026_C_POSTS,
+  ...BUSINESS_FINANCE_2026_E_POSTS,
+  ...BUSINESS_FINANCE_2026_F_POSTS,
+  ...START_BUSINESS_2026_E_POSTS,
+  ...START_BUSINESS_2026_F_POSTS,
+  ...TEMPLATES_2026_C_POSTS,
+  ...TEMPLATES_2026_D_POSTS,
+  ...FREELANCING_2026_F_POSTS,
+  ...PRICING_GUIDES_2026_E_POSTS,
+  ...PRICING_GUIDES_2026_F_POSTS,
 ];
 
 /** Reading time is derived from content length so it cannot drift from the article. */

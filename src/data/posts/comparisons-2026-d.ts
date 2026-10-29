@@ -9,7 +9,12 @@ export const COMPARISONS_2026_D_POSTS: PostDraft[] = [
     category: "comparisons",
     date: "2026-10-28",
     author: "Invoice Creator Editorial Team",
-    related: ["xero-vs-quickbooks", "freshbooks-vs-quickbooks", "zoho-books-vs-quickbooks"],
+    related: [
+      "quickbooks-online-vs-desktop",
+      "xero-vs-quickbooks",
+      "freshbooks-vs-quickbooks",
+      "zoho-books-vs-quickbooks",
+    ],
     faqs: [
       {
         q: "What is the best alternative to QuickBooks for a small business?",
@@ -173,6 +178,7 @@ export const COMPARISONS_2026_D_POSTS: PostDraft[] = [
     date: "2026-10-28",
     author: "Invoice Creator Editorial Team",
     related: [
+      "square-vs-clover",
       "merchant-account-vs-payment-processor",
       "stripe-invoicing-guide",
       "square-invoice-fees",
@@ -540,7 +546,12 @@ export const COMPARISONS_2026_D_POSTS: PostDraft[] = [
     category: "comparisons",
     date: "2026-10-28",
     author: "Invoice Creator Editorial Team",
-    related: ["quickbooks-alternatives", "xero-vs-quickbooks", "freshbooks-vs-quickbooks"],
+    related: [
+      "how-to-create-invoice-in-zoho-books",
+      "quickbooks-alternatives",
+      "xero-vs-quickbooks",
+      "freshbooks-vs-quickbooks",
+    ],
     faqs: [
       {
         q: "Is Zoho Books cheaper than QuickBooks?",

@@ -173,6 +173,7 @@ export const INDIA_GST_2026_POSTS: PostDraft[] = [
     author: "Invoice Creator Editorial Team",
     jurisdiction: "India",
     related: [
+      "receive-money-from-abroad-india",
       "invoice-international-clients",
       "gst-registration-india",
       "foreign-currency-invoice",

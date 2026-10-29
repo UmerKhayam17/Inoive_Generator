@@ -484,6 +484,7 @@ export const START_BUSINESS_2026_D_POSTS: PostDraft[] = [
     date: "2026-10-29",
     author: "Invoice Creator Editorial Team",
     related: [
+      "how-to-start-a-catering-business",
       "event-planner-invoice-template",
       "deposit-invoice",
       "freelance-contract-template",

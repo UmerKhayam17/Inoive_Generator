@@ -178,6 +178,7 @@ export const TEMPLATES_BASICS_2026_B_POSTS: PostDraft[] = [
     date: "2026-10-27",
     author: "Invoice Creator Editorial Team",
     related: [
+      "canada-self-employed-tax",
       "allowable-expenses-self-employed-uk",
       "mileage-log-template",
       "reimbursable-expenses-invoice",
@@ -891,7 +892,12 @@ export const TEMPLATES_BASICS_2026_B_POSTS: PostDraft[] = [
     category: "invoicing-basics",
     date: "2026-10-27",
     author: "Invoice Creator Editorial Team",
-    related: ["packing-slip-vs-invoice", "sales-tax-nexus", "how-to-accept-credit-card-payments"],
+    related: [
+      "sales-tax-on-shipping",
+      "packing-slip-vs-invoice",
+      "sales-tax-nexus",
+      "how-to-accept-credit-card-payments",
+    ],
     faqs: [
       {
         q: "What is a billing address?",
@@ -1054,7 +1060,12 @@ export const TEMPLATES_BASICS_2026_B_POSTS: PostDraft[] = [
     category: "invoicing-basics",
     date: "2026-10-27",
     author: "Invoice Creator Editorial Team",
-    related: ["invoice-payment-terms", "invoice-notes-examples", "late-payment-fees"],
+    related: [
+      "cancellation-fee-invoice",
+      "invoice-payment-terms",
+      "invoice-notes-examples",
+      "late-payment-fees",
+    ],
     faqs: [
       {
         q: "What are invoice terms and conditions?",

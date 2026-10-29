@@ -342,6 +342,7 @@ export const BASICS_2026_POSTS: PostDraft[] = [
     date: "2026-10-24",
     author: "Invoice Creator Editorial Team",
     related: [
+      "progress-billing",
       "lien-waiver",
       "payment-plan-agreement",
       "short-payments-and-deductions",
@@ -651,6 +652,7 @@ export const BASICS_2026_POSTS: PostDraft[] = [
     date: "2026-10-24",
     author: "Invoice Creator Editorial Team",
     related: [
+      "saas-subscription-invoice-template",
       "usage-based-billing-invoice",
       "recurring-invoices-guide",
       "rent-invoice-template",

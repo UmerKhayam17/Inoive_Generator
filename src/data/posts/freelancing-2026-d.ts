@@ -10,6 +10,7 @@ export const FREELANCING_2026_D_POSTS: PostDraft[] = [
     date: "2026-10-28",
     author: "Invoice Creator Editorial Team",
     related: [
+      "logo-design-pricing",
       "graphic-design-pricing",
       "how-to-set-freelance-rates",
       "how-to-raise-prices",

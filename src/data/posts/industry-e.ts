@@ -10,6 +10,7 @@ export const INDUSTRY_POSTS_E: PostDraft[] = [
     date: "2026-10-27",
     author: "Invoice Creator Editorial Team",
     related: [
+      "how-to-become-a-freelance-translator",
       "editing-proofreading-invoice-template",
       "freelance-invoice-template",
       "foreign-currency-invoice",
@@ -180,7 +181,7 @@ export const INDUSTRY_POSTS_E: PostDraft[] = [
     category: "industry-invoices",
     date: "2026-10-27",
     author: "Invoice Creator Editorial Team",
-    related: ["markup-vs-margin", "deposit-invoice", "retainer-invoice"],
+    related: ["interior-design-fees", "markup-vs-margin", "deposit-invoice", "retainer-invoice"],
     faqs: [
       {
         q: "What should an interior design invoice include?",

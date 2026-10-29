@@ -159,6 +159,7 @@ export const US_TAX_2026_B_POSTS: PostDraft[] = [
     author: "Invoice Creator Editorial Team",
     jurisdiction: "United States",
     related: [
+      "how-to-invoice-for-overtime",
       "no-tax-on-tips-self-employed",
       "one-big-beautiful-bill-small-business",
       "w2-vs-1099",

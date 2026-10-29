@@ -520,6 +520,7 @@ export const PAYMENTS_GUIDES_2026_POSTS: PostDraft[] = [
     date: "2026-10-27",
     author: "Invoice Creator Editorial Team",
     related: [
+      "wave-vs-quickbooks",
       "quickbooks-payments-fees",
       "freshbooks-vs-quickbooks",
       "xero-vs-quickbooks",
@@ -1020,6 +1021,7 @@ export const PAYMENTS_GUIDES_2026_POSTS: PostDraft[] = [
     date: "2026-10-27",
     author: "Invoice Creator Editorial Team",
     related: [
+      "tap-to-pay-on-iphone",
       "how-to-accept-credit-card-payments",
       "add-payment-link-to-invoice",
       "stripe-vs-paypal",

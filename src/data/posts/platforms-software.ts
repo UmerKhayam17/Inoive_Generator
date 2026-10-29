@@ -298,6 +298,7 @@ export const PLATFORM_SOFTWARE_POSTS: PostDraft[] = [
     date: "2026-10-23",
     author: "Invoice Creator Editorial Team",
     related: [
+      "zelle-business-limits",
       "venmo-business-fees",
       "1099-k-threshold",
       "how-to-send-paypal-invoice",
@@ -1333,6 +1334,7 @@ export const PLATFORM_SOFTWARE_POSTS: PostDraft[] = [
     date: "2026-10-23",
     author: "Invoice Creator Editorial Team",
     related: [
+      "how-to-create-invoice-in-freshbooks",
       "quickbooks-payments-fees",
       "how-to-create-invoice-in-quickbooks",
       "invoice-generator-vs-accounting-software",

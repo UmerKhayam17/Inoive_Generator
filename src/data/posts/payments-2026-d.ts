@@ -175,6 +175,7 @@ export const PAYMENTS_2026_D_POSTS: PostDraft[] = [
     author: "Invoice Creator Editorial Team",
     jurisdiction: "United States",
     related: [
+      "certified-check-vs-cashiers-check",
       "how-to-write-a-check",
       "invoice-scams",
       "ach-vs-wire-transfer",
@@ -649,7 +650,12 @@ export const PAYMENTS_2026_D_POSTS: PostDraft[] = [
     category: "business-finance",
     date: "2026-10-28",
     author: "Invoice Creator Editorial Team",
-    related: ["invoice-factoring", "invoice-financing-vs-line-of-credit", "cash-flow-management"],
+    related: [
+      "merchant-cash-advance",
+      "invoice-factoring",
+      "invoice-financing-vs-line-of-credit",
+      "cash-flow-management",
+    ],
     faqs: [
       {
         q: "What is revenue-based financing?",

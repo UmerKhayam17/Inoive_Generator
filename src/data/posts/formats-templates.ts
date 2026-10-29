@@ -785,7 +785,12 @@ Bill to: Northpoint Marketing Ltd, Accounts Payable</p>
     category: "design-templates",
     date: "2026-10-23",
     author: "Invoice Creator Editorial Team",
-    related: ["invoice-pdf-print-checklist", "blank-invoice-template", "simple-invoice-template"],
+    related: [
+      "invoice-paper-size",
+      "invoice-pdf-print-checklist",
+      "blank-invoice-template",
+      "simple-invoice-template",
+    ],
     faqs: [
       {
         q: "How do I make a fillable invoice PDF?",
@@ -1266,6 +1271,7 @@ Quote ref: Q-88412 dated 20 October 2026 · Deliver by: 30 October 2026 · Terms
     date: "2026-10-23",
     author: "Invoice Creator Editorial Team",
     related: [
+      "quickbooks-vs-excel",
       "accounts-receivable-aging-report",
       "google-sheets-invoice-template",
       "overdue-invoice",
@@ -1441,6 +1447,7 @@ Quote ref: Q-88412 dated 20 October 2026 · Deliver by: 30 October 2026 · Terms
     date: "2026-10-23",
     author: "Invoice Creator Editorial Team",
     related: [
+      "packing-list-template",
       "delivery-note-template",
       "consignment-invoice",
       "commercial-invoice-template",
