@@ -393,6 +393,7 @@ export const PAYMENTS_FREELANCE_2026_B_POSTS: PostDraft[] = [
     date: "2026-10-27",
     author: "Invoice Creator Editorial Team",
     related: [
+      "courier-delivery-invoice-template",
       "payment-gateway-pakistan",
       "ecommerce-invoice-shopify-woocommerce",
       "bank-reconciliation",

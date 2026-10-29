@@ -167,6 +167,7 @@ export const INDUSTRY_POSTS_M: PostDraft[] = [
     date: "2026-10-29",
     author: "Invoice Creator Editorial Team",
     related: [
+      "welding-invoice-template",
       "contractor-invoice-template",
       "landscaping-invoice-template",
       "deposit-invoice",
@@ -624,6 +625,7 @@ export const INDUSTRY_POSTS_M: PostDraft[] = [
     date: "2026-10-29",
     author: "Invoice Creator Editorial Team",
     related: [
+      "how-to-start-a-home-bakery-business",
       "catering-invoice-template",
       "deposit-invoice",
       "event-planner-invoice-template",

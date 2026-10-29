@@ -159,6 +159,7 @@ export const RECEIVABLES_2026_POSTS: PostDraft[] = [
     date: "2026-10-27",
     author: "Invoice Creator Editorial Team",
     related: [
+      "paid-invoice-template",
       "ai-agents-accounts-receivable",
       "bank-reconciliation",
       "remittance-advice",
@@ -484,7 +485,7 @@ export const RECEIVABLES_2026_POSTS: PostDraft[] = [
     category: "payments",
     date: "2026-10-27",
     author: "Invoice Creator Editorial Team",
-    related: ["cash-application", "invoice-dispute", "partial-payment-invoice"],
+    related: ["ach-return-codes", "cash-application", "invoice-dispute", "partial-payment-invoice"],
     faqs: [
       {
         q: "What is a short payment on an invoice?",

@@ -198,6 +198,7 @@ export const AI_FREELANCE_2026_POSTS: PostDraft[] = [
     date: "2026-10-27",
     author: "Invoice Creator Editorial Team",
     related: [
+      "ugc-rates",
       "invoice-ai-assisted-work",
       "freelance-contract-template",
       "ai-tools-for-freelancers",

@@ -174,6 +174,7 @@ export const UK_TAX_2026_D_POSTS: PostDraft[] = [
     author: "Invoice Creator Editorial Team",
     jurisdiction: "United Kingdom",
     related: [
+      "self-assessment-late-penalty",
       "sole-trader-invoice-uk",
       "self-assessment-tax-return-uk",
       "sole-trader-vs-limited-company",
@@ -548,6 +549,7 @@ export const UK_TAX_2026_D_POSTS: PostDraft[] = [
     author: "Invoice Creator Editorial Team",
     jurisdiction: "United Kingdom",
     related: [
+      "self-assessment-late-penalty",
       "self-assessment-tax-return-uk",
       "making-tax-digital-income-tax",
       "sole-trader-invoice-uk",

@@ -178,7 +178,12 @@ export const TAX_US_UK_2026_POSTS: PostDraft[] = [
     date: "2026-10-24",
     author: "Invoice Creator Editorial Team",
     jurisdiction: "United States",
-    related: ["1099-nec-threshold-2026", "1099-k-threshold", "independent-contractor-invoice"],
+    related: [
+      "does-an-llc-get-a-1099",
+      "1099-nec-threshold-2026",
+      "1099-k-threshold",
+      "independent-contractor-invoice",
+    ],
     faqs: [
       {
         q: "Can a freelancer receive both a 1099-NEC and a 1099-K for the same client?",

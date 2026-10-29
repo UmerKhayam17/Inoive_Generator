@@ -179,6 +179,7 @@ export const EINVOICING_2027_B_POSTS: PostDraft[] = [
     author: "Invoice Creator Editorial Team",
     jurisdiction: "Mexico",
     related: [
+      "brazil-nfe-invoice",
       "peppol-vs-clearance-model",
       "e-invoicing-guide",
       "withholding-tax-on-invoices",

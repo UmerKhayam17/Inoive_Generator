@@ -9,7 +9,7 @@ export const COMPARISONS_2026_C_POSTS: PostDraft[] = [
     category: "comparisons",
     date: "2026-10-27",
     author: "Invoice Creator Editorial Team",
-    related: ["wise-vs-payoneer", "stripe-vs-paypal", "payoneer-vs-paypal"],
+    related: ["wise-business-fees", "wise-vs-payoneer", "stripe-vs-paypal", "payoneer-vs-paypal"],
     faqs: [
       {
         q: "Is Wise cheaper than PayPal for receiving international payments?",

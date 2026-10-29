@@ -91,6 +91,26 @@ import { PAYMENTS_2026_G_POSTS } from "./posts/payments-2026-g";
 import { ACCOUNTING_BASICS_2026_C_POSTS } from "./posts/accounting-basics-2026-c";
 import { COMPARISONS_2026_E_POSTS } from "./posts/comparisons-2026-e";
 import { COLLECTIONS_LEGAL_2026_POSTS } from "./posts/collections-legal-2026";
+import { INDUSTRY_POSTS_N } from "./posts/industry-n";
+import { INDUSTRY_POSTS_O } from "./posts/industry-o";
+import { INDUSTRY_POSTS_P } from "./posts/industry-p";
+import { PRICING_GUIDES_2026_C_POSTS } from "./posts/pricing-guides-2026-c";
+import { PRICING_GUIDES_2026_D_POSTS } from "./posts/pricing-guides-2026-d";
+import { START_BUSINESS_2026_C_POSTS } from "./posts/start-business-2026-c";
+import { START_BUSINESS_2026_D_POSTS } from "./posts/start-business-2026-d";
+import { FREELANCING_2026_E_POSTS } from "./posts/freelancing-2026-e";
+import { US_LLC_2026_POSTS } from "./posts/us-llc-2026";
+import { BUSINESS_FINANCE_2026_D_POSTS } from "./posts/business-finance-2026-d";
+import { ACCOUNTING_2026_D_POSTS } from "./posts/accounting-2026-d";
+import { ACCOUNTING_2026_E_POSTS } from "./posts/accounting-2026-e";
+import { INVOICING_BASICS_2026_D_POSTS } from "./posts/invoicing-basics-2026-d";
+import { EINVOICING_2027_C_POSTS } from "./posts/e-invoicing-2027-c";
+import { PAYMENTS_2026_H_POSTS } from "./posts/payments-2026-h";
+import { PAYMENTS_2026_I_POSTS } from "./posts/payments-2026-i";
+import { UK_BUSINESS_2026_POSTS } from "./posts/uk-business-2026";
+import { UK_BUSINESS_2026_B_POSTS } from "./posts/uk-business-2026-b";
+import { PK_IN_2026_C_POSTS } from "./posts/pk-in-2026-c";
+import { IN_GCC_2026_POSTS } from "./posts/in-gcc-2026";
 
 export interface Post {
   slug: string;
@@ -690,7 +710,11 @@ jane@smithdesign.example</p>
     category: "guides",
     date: "2026-10-03",
     author: "Invoice Creator Editorial Team",
-    related: ["security-services-invoice-template", "timesheet-template"],
+    related: [
+      "carpentry-invoice-template",
+      "security-services-invoice-template",
+      "timesheet-template",
+    ],
     faqs: [
       {
         q: "How do I convert minutes to decimal hours on an invoice?",
@@ -1449,6 +1473,7 @@ jane@smithdesign.example</p>
     category: "guides",
     date: "2026-09-08",
     author: "Invoice Creator Editorial Team",
+    related: ["limited-company-invoice-requirements"],
     faqs: [
       {
         q: "Can my first invoice number start somewhere other than 0001?",
@@ -2328,7 +2353,11 @@ jane@smithdesign.example</p>
     date: "2026-07-15",
     updated: "2026-09-25",
     author: "Invoice Creator Editorial Team",
-    related: ["donation-receipt-template", "ecommerce-invoice-shopify-woocommerce"],
+    related: [
+      "paid-invoice-template",
+      "donation-receipt-template",
+      "ecommerce-invoice-shopify-woocommerce",
+    ],
     faqs: [
       {
         q: "Is a business legally required to give a receipt?",
@@ -4227,6 +4256,26 @@ export const POST_DRAFTS: PostDraft[] = [
   ...ACCOUNTING_BASICS_2026_C_POSTS,
   ...COMPARISONS_2026_E_POSTS,
   ...COLLECTIONS_LEGAL_2026_POSTS,
+  ...INDUSTRY_POSTS_N,
+  ...INDUSTRY_POSTS_O,
+  ...INDUSTRY_POSTS_P,
+  ...PRICING_GUIDES_2026_C_POSTS,
+  ...PRICING_GUIDES_2026_D_POSTS,
+  ...START_BUSINESS_2026_C_POSTS,
+  ...START_BUSINESS_2026_D_POSTS,
+  ...FREELANCING_2026_E_POSTS,
+  ...US_LLC_2026_POSTS,
+  ...BUSINESS_FINANCE_2026_D_POSTS,
+  ...ACCOUNTING_2026_D_POSTS,
+  ...ACCOUNTING_2026_E_POSTS,
+  ...INVOICING_BASICS_2026_D_POSTS,
+  ...EINVOICING_2027_C_POSTS,
+  ...PAYMENTS_2026_H_POSTS,
+  ...PAYMENTS_2026_I_POSTS,
+  ...UK_BUSINESS_2026_POSTS,
+  ...UK_BUSINESS_2026_B_POSTS,
+  ...PK_IN_2026_C_POSTS,
+  ...IN_GCC_2026_POSTS,
 ];
 
 /** Reading time is derived from content length so it cannot drift from the article. */

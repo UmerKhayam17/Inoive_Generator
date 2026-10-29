@@ -173,6 +173,7 @@ export const INDUSTRY_POSTS_K: PostDraft[] = [
     date: "2026-10-29",
     author: "Invoice Creator Editorial Team",
     related: [
+      "gutter-cleaning-invoice-template",
       "cleaning-service-invoice-template",
       "pressure-washing-invoice-template",
       "recurring-invoices-guide",
@@ -498,6 +499,7 @@ export const INDUSTRY_POSTS_K: PostDraft[] = [
     date: "2026-10-29",
     author: "Invoice Creator Editorial Team",
     related: [
+      "yoga-instructor-invoice-template",
       "consulting-invoice-template",
       "retainer-invoice",
       "personal-trainer-invoice-template",

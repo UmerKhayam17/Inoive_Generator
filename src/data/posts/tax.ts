@@ -316,7 +316,12 @@ export const TAX_POSTS: PostDraft[] = [
     date: "2026-10-22",
     author: "Invoice Creator Editorial Team",
     jurisdiction: "United Kingdom & EU",
-    related: ["vat-invoice-guide", "zero-rated-vs-exempt-vat", "invoice-international-clients"],
+    related: [
+      "ireland-vat-invoice-requirements",
+      "vat-invoice-guide",
+      "zero-rated-vs-exempt-vat",
+      "invoice-international-clients",
+    ],
     faqs: [
       {
         q: "What wording should a reverse charge invoice include?",

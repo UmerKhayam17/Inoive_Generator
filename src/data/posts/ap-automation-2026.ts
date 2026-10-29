@@ -774,7 +774,12 @@ export const AP_AUTOMATION_2026_POSTS: PostDraft[] = [
     category: "business-finance",
     date: "2026-10-27",
     author: "Invoice Creator Editorial Team",
-    related: ["days-sales-outstanding", "touchless-invoice-processing", "cash-flow-management"],
+    related: [
+      "accounts-payable-turnover-ratio",
+      "days-sales-outstanding",
+      "touchless-invoice-processing",
+      "cash-flow-management",
+    ],
     faqs: [
       {
         q: "What are the most important accounts payable KPIs?",

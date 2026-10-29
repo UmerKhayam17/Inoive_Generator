@@ -165,7 +165,12 @@ export const PAYMENTS_2026_E_POSTS: PostDraft[] = [
     category: "payments",
     date: "2026-10-28",
     author: "Invoice Creator Editorial Team",
-    related: ["how-to-accept-credit-card-payments", "stripe-vs-square", "stripe-vs-paypal"],
+    related: [
+      "credit-card-processing-fees",
+      "how-to-accept-credit-card-payments",
+      "stripe-vs-square",
+      "stripe-vs-paypal",
+    ],
     faqs: [
       {
         q: "What is the difference between a merchant account and a payment processor?",

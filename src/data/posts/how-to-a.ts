@@ -197,7 +197,7 @@ export const HOW_TO_POSTS_A: PostDraft[] = [
       },
       {
         q: "How do I charge tax on only some line items in Excel?",
-        a: "Add a Taxable column (for example column E) and mark each line Y or N. Then calculate tax only on the taxable lines with a formula such as =ROUND(SUMIF(E12:E21,\"Y\",D12:D21)*C25,2). This keeps non-taxable items, such as some services or exempt goods, out of the tax base. Which items are taxable depends on your local rules, so confirm with your tax authority.",
+        a: 'Add a Taxable column (for example column E) and mark each line Y or N. Then calculate tax only on the taxable lines with a formula such as =ROUND(SUMIF(E12:E21,"Y",D12:D21)*C25,2). This keeps non-taxable items, such as some services or exempt goods, out of the tax base. Which items are taxable depends on your local rules, so confirm with your tax authority.',
       },
       {
         q: "How do I show a different currency on an Excel invoice?",
@@ -501,15 +501,15 @@ export const HOW_TO_POSTS_A: PostDraft[] = [
       },
       {
         q: "Can Google Sheets track which invoices are paid?",
-        a: "Yes. Add a log tab listing each invoice number, client, issue date, due date, amount and paid date. A simple formula such as =IF(F2=\"\",\"Unpaid\",\"Paid\") shows the status at a glance.",
+        a: 'Yes. Add a log tab listing each invoice number, client, issue date, due date, amount and paid date. A simple formula such as =IF(F2="","Unpaid","Paid") shows the status at a glance.',
       },
       {
         q: "How do I add a dropdown of products with automatic prices in Google Sheets?",
-        a: "Create a Products tab with item names in column A and prices in column B. Use data validation on A12:A21 to show a dropdown from that list, then put a lookup in the rate column, for example =IFERROR(VLOOKUP(A12,Products!A:B,2,FALSE),\"\"). Choosing an item fills in its price, which saves typing and avoids rate mistakes.",
+        a: 'Create a Products tab with item names in column A and prices in column B. Use data validation on A12:A21 to show a dropdown from that list, then put a lookup in the rate column, for example =IFERROR(VLOOKUP(A12,Products!A:B,2,FALSE),""). Choosing an item fills in its price, which saves typing and avoids rate mistakes.',
       },
       {
         q: "Can Google Sheets convert currencies on my invoice?",
-        a: "Yes. The GOOGLEFINANCE function can fetch an exchange rate, for example =GOOGLEFINANCE(\"CURRENCY:USDEUR\"). Google notes that its data may be delayed and is not for trading purposes, so treat it as a guide. Once an invoice is issued, paste the rate in as a fixed value so the total doesn't change every time the file recalculates.",
+        a: 'Yes. The GOOGLEFINANCE function can fetch an exchange rate, for example =GOOGLEFINANCE("CURRENCY:USDEUR"). Google notes that its data may be delayed and is not for trading purposes, so treat it as a guide. Once an invoice is issued, paste the rate in as a fixed value so the total doesn\'t change every time the file recalculates.',
       },
       {
         q: "How do I back out tax from a tax-inclusive price in Google Sheets?",
@@ -647,11 +647,7 @@ export const HOW_TO_POSTS_A: PostDraft[] = [
     category: "guides",
     date: "2026-10-22",
     author: "Invoice Creator Editorial Team",
-    related: [
-      "how-to-create-an-invoice",
-      "how-to-fill-out-an-invoice",
-      "how-to-invoice-a-client",
-    ],
+    related: ["how-to-create-an-invoice", "how-to-fill-out-an-invoice", "how-to-invoice-a-client"],
     faqs: [
       {
         q: "What should be written on an invoice?",
@@ -810,6 +806,7 @@ export const HOW_TO_POSTS_A: PostDraft[] = [
     date: "2026-10-22",
     author: "Invoice Creator Editorial Team",
     related: [
+      "net-vs-gross-amount-on-invoice",
       "how-to-write-an-invoice",
       "blank-invoice-template",
       "invoice-examples",
@@ -973,11 +970,7 @@ export const HOW_TO_POSTS_A: PostDraft[] = [
     category: "guides",
     date: "2026-10-22",
     author: "Invoice Creator Editorial Team",
-    related: [
-      "how-to-send-an-invoice",
-      "how-to-invoice-a-client",
-      "add-payment-link-to-invoice",
-    ],
+    related: ["how-to-send-an-invoice", "how-to-invoice-a-client", "add-payment-link-to-invoice"],
     faqs: [
       {
         q: "Can I make an invoice on my phone for free?",
@@ -1113,11 +1106,7 @@ export const HOW_TO_POSTS_A: PostDraft[] = [
     category: "guides",
     date: "2026-10-22",
     author: "Invoice Creator Editorial Team",
-    related: [
-      "how-to-write-an-invoice",
-      "freelancer-invoice-guide",
-      "how-to-send-an-invoice",
-    ],
+    related: ["how-to-write-an-invoice", "freelancer-invoice-guide", "how-to-send-an-invoice"],
     faqs: [
       {
         q: "How do I invoice a client for the first time?",
@@ -1276,11 +1265,7 @@ export const HOW_TO_POSTS_A: PostDraft[] = [
     category: "guides",
     date: "2026-10-22",
     author: "Invoice Creator Editorial Team",
-    related: [
-      "credit-note-guide",
-      "how-to-correct-an-invoice",
-      "invoice-numbering-system",
-    ],
+    related: ["credit-note-guide", "how-to-correct-an-invoice", "invoice-numbering-system"],
     faqs: [
       {
         q: "What does it mean to void an invoice?",

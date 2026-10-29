@@ -10,6 +10,7 @@ export const PRICING_GUIDES_2026_B_POSTS: PostDraft[] = [
     date: "2026-10-29",
     author: "Invoice Creator Editorial Team",
     related: [
+      "freelance-portfolio",
       "graphic-design-invoice-template",
       "how-to-set-freelance-rates",
       "value-based-pricing",
@@ -413,6 +414,7 @@ export const PRICING_GUIDES_2026_B_POSTS: PostDraft[] = [
     date: "2026-10-29",
     author: "Invoice Creator Editorial Team",
     related: [
+      "how-to-become-a-freelance-writer",
       "copywriter-invoice-template",
       "how-to-set-freelance-rates",
       "how-to-negotiate-freelance-rates",
@@ -804,6 +806,7 @@ export const PRICING_GUIDES_2026_B_POSTS: PostDraft[] = [
     date: "2026-10-29",
     author: "Invoice Creator Editorial Team",
     related: [
+      "how-to-start-a-bookkeeping-business",
       "bookkeeping-services-invoice-template",
       "retainer-invoice",
       "bookkeeping-basics",

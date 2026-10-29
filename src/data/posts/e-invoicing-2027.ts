@@ -844,7 +844,12 @@ export const EINVOICING_2027_POSTS: PostDraft[] = [
     date: "2026-10-24",
     author: "Invoice Creator Editorial Team",
     jurisdiction: "General",
-    related: ["e-invoicing-guide", "e-invoice-template-en-16931", "what-is-peppol"],
+    related: [
+      "turkey-e-invoice",
+      "e-invoicing-guide",
+      "e-invoice-template-en-16931",
+      "what-is-peppol",
+    ],
     faqs: [
       {
         q: "Is an emailed PDF legally an electronic invoice?",

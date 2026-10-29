@@ -361,7 +361,12 @@ export const COMPARISONS_2026_D_POSTS: PostDraft[] = [
     category: "comparisons",
     date: "2026-10-28",
     author: "Invoice Creator Editorial Team",
-    related: ["wise-vs-payoneer", "wise-vs-paypal", "foreign-currency-invoice"],
+    related: [
+      "wise-business-fees",
+      "wise-vs-payoneer",
+      "wise-vs-paypal",
+      "foreign-currency-invoice",
+    ],
     faqs: [
       {
         q: "Is Wise or Revolut Business cheaper?",

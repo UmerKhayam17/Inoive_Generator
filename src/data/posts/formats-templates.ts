@@ -308,7 +308,12 @@ Goods once sold can be exchanged within 7 days with this bill.
     date: "2026-10-23",
     author: "Invoice Creator Editorial Team",
     jurisdiction: "General",
-    related: ["packing-slip-vs-invoice", "gst-invoice-guide", "purchase-order-template"],
+    related: [
+      "delivery-note-template",
+      "packing-slip-vs-invoice",
+      "gst-invoice-guide",
+      "purchase-order-template",
+    ],
     faqs: [
       {
         q: "What is a delivery challan?",
@@ -1436,6 +1441,7 @@ Quote ref: Q-88412 dated 20 October 2026 · Deliver by: 30 October 2026 · Terms
     date: "2026-10-23",
     author: "Invoice Creator Editorial Team",
     related: [
+      "delivery-note-template",
       "consignment-invoice",
       "commercial-invoice-template",
       "delivery-challan-format",

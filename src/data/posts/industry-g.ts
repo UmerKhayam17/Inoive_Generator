@@ -170,7 +170,12 @@ export const INDUSTRY_POSTS_G: PostDraft[] = [
     category: "industry-invoices",
     date: "2026-10-27",
     author: "Invoice Creator Editorial Team",
-    related: ["event-planner-invoice-template", "deposit-invoice", "reimbursable-expenses-invoice"],
+    related: [
+      "musician-invoice-template",
+      "event-planner-invoice-template",
+      "deposit-invoice",
+      "reimbursable-expenses-invoice",
+    ],
     faqs: [
       {
         q: "What should a DJ invoice include?",

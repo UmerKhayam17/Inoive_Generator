@@ -11,6 +11,7 @@ export const US_TAX_2026_E_POSTS: PostDraft[] = [
     author: "Invoice Creator Editorial Team",
     jurisdiction: "United States",
     related: [
+      "business-entity-types",
       "llc-vs-sole-proprietorship",
       "s-corp-vs-llc",
       "schedule-c-for-freelancers",
@@ -177,6 +178,7 @@ export const US_TAX_2026_E_POSTS: PostDraft[] = [
     author: "Invoice Creator Editorial Team",
     jurisdiction: "United States",
     related: [
+      "does-an-llc-get-a-1099",
       "1099-nec-threshold-2026",
       "w9-and-1099-for-contractors",
       "1099-nec-vs-1099-misc-vs-1099-k",

@@ -520,6 +520,7 @@ export const PAYMENTS_GUIDES_2026_POSTS: PostDraft[] = [
     date: "2026-10-27",
     author: "Invoice Creator Editorial Team",
     related: [
+      "quickbooks-payments-fees",
       "freshbooks-vs-quickbooks",
       "xero-vs-quickbooks",
       "invoice-generator-vs-accounting-software",

@@ -11,6 +11,7 @@ export const FREELANCING_GROWTH_2026_POSTS: PostDraft[] = [
     date: "2026-10-27",
     author: "Invoice Creator Editorial Team",
     related: [
+      "sole-proprietorship-registration-pakistan",
       "freelancer-digital-account-pakistan",
       "freelancer-tax-pakistan-2026",
       "receive-payment-from-abroad-pakistan",

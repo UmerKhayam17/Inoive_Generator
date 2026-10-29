@@ -259,6 +259,7 @@ export const COMPARISONS_2026_E_POSTS: PostDraft[] = [
     date: "2026-10-29",
     author: "Invoice Creator Editorial Team",
     related: [
+      "debt-to-equity-ratio",
       "balance-sheet-small-business",
       "retained-earnings",
       "profit-and-loss-statement",
@@ -943,6 +944,7 @@ export const COMPARISONS_2026_E_POSTS: PostDraft[] = [
     date: "2026-10-29",
     author: "Invoice Creator Editorial Team",
     related: [
+      "no-commercial-value-invoice",
       "proforma-invoice-guide",
       "commercial-invoice-template",
       "hs-code-on-commercial-invoice",

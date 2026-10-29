@@ -10,6 +10,7 @@ export const FINANCE_METRICS_2026_B_POSTS: PostDraft[] = [
     date: "2026-10-28",
     author: "Invoice Creator Editorial Team",
     related: [
+      "operating-income",
       "how-to-value-a-small-business",
       "profit-and-loss-statement",
       "gross-profit-vs-net-profit",

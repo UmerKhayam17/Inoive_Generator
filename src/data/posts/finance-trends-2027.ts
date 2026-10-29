@@ -159,6 +159,7 @@ export const FINANCE_TRENDS_2027_POSTS: PostDraft[] = [
     date: "2026-10-27",
     author: "Invoice Creator Editorial Team",
     related: [
+      "llc-annual-report",
       "month-end-close-checklist",
       "bad-debt-write-off",
       "1099-nec-threshold-2026",

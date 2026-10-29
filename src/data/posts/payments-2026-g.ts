@@ -453,6 +453,7 @@ export const PAYMENTS_2026_G_POSTS: PostDraft[] = [
     date: "2026-10-29",
     author: "Invoice Creator Editorial Team",
     related: [
+      "virtual-assistant-rates",
       "upwork-vs-fiverr",
       "fiverr-upwork-invoice",
       "how-to-set-freelance-rates",
@@ -864,6 +865,7 @@ export const PAYMENTS_2026_G_POSTS: PostDraft[] = [
     date: "2026-10-29",
     author: "Invoice Creator Editorial Team",
     related: [
+      "how-to-become-a-freelancer",
       "how-to-get-clients-as-a-freelancer",
       "upwork-vs-fiverr",
       "freelance-proposal-template",

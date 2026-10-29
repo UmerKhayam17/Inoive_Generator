@@ -400,6 +400,7 @@ export const SMALL_BUSINESS_FINANCE_2026_POSTS: PostDraft[] = [
     date: "2026-10-27",
     author: "Invoice Creator Editorial Team",
     related: [
+      "contribution-margin",
       "unit-economics",
       "fixed-vs-variable-costs",
       "markup-vs-margin",
@@ -931,6 +932,7 @@ export const SMALL_BUSINESS_FINANCE_2026_POSTS: PostDraft[] = [
     date: "2026-10-27",
     author: "Invoice Creator Editorial Team",
     related: [
+      "budget-vs-actual",
       "zero-based-budgeting",
       "ai-business-plan-generator",
       "operating-expenses",

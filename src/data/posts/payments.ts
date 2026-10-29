@@ -10,6 +10,7 @@ export const PAYMENTS_POSTS: PostDraft[] = [
     date: "2026-10-22",
     author: "Invoice Creator Editorial Team",
     related: [
+      "best-payment-methods-for-small-business",
       "virtual-cards-for-business",
       "apple-pay-google-pay-business",
       "add-payment-link-to-invoice",
@@ -318,6 +319,7 @@ Questions? Call 555-0142 before paying if anything on this invoice looks differe
     date: "2026-10-22",
     author: "Invoice Creator Editorial Team",
     related: [
+      "routing-number-vs-account-number",
       "iso-20022-payments",
       "ach-vs-wire-transfer",
       "invoice-international-clients",
@@ -1209,6 +1211,7 @@ Jordan Lee, Lee Analytics LLC</blockquote>
     date: "2026-10-22",
     author: "Invoice Creator Editorial Team",
     related: [
+      "freight-invoice",
       "how-to-handle-chargebacks",
       "credit-note-guide",
       "how-to-correct-an-invoice",

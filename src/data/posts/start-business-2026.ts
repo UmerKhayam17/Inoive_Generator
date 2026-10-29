@@ -11,6 +11,7 @@ export const START_BUSINESS_2026_POSTS: PostDraft[] = [
     author: "Invoice Creator Editorial Team",
     jurisdiction: "United States",
     related: [
+      "business-entity-types",
       "llc-vs-sole-proprietorship",
       "how-to-get-an-ein",
       "s-corp-vs-llc",
@@ -222,6 +223,7 @@ export const START_BUSINESS_2026_POSTS: PostDraft[] = [
     author: "Invoice Creator Editorial Team",
     jurisdiction: "United States",
     related: [
+      "registered-agent",
       "llc-vs-sole-proprietorship",
       "how-to-invoice-without-a-business",
       "business-bank-account-for-freelancers",
@@ -406,6 +408,7 @@ export const START_BUSINESS_2026_POSTS: PostDraft[] = [
     author: "Invoice Creator Editorial Team",
     jurisdiction: "United States",
     related: [
+      "how-to-start-a-junk-removal-business",
       "llc-vs-sole-proprietorship",
       "how-to-get-an-ein",
       "sales-tax-nexus",
@@ -591,7 +594,13 @@ export const START_BUSINESS_2026_POSTS: PostDraft[] = [
     category: "business-finance",
     date: "2026-10-29",
     author: "Invoice Creator Editorial Team",
-    related: ["s-corp-vs-llc", "self-employment-tax", "cash-flow-management", "retained-earnings"],
+    related: [
+      "directors-loan-account",
+      "s-corp-vs-llc",
+      "self-employment-tax",
+      "cash-flow-management",
+      "retained-earnings",
+    ],
     faqs: [
       {
         q: "What is an owner's draw?",

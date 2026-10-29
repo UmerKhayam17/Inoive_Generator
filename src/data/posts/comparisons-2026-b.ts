@@ -534,7 +534,12 @@ export const COMPARISONS_2026_B_POSTS: PostDraft[] = [
     category: "comparisons",
     date: "2026-10-27",
     author: "Invoice Creator Editorial Team",
-    related: ["break-even-point", "how-to-price-a-product", "small-business-budget"],
+    related: [
+      "contribution-margin",
+      "break-even-point",
+      "how-to-price-a-product",
+      "small-business-budget",
+    ],
     faqs: [
       {
         q: "What is the difference between fixed and variable costs?",

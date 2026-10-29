@@ -217,6 +217,7 @@ export const PRICING_GUIDES_2026_POSTS: PostDraft[] = [
     date: "2026-10-29",
     author: "Invoice Creator Editorial Team",
     related: [
+      "snow-removal-pricing",
       "landscaping-invoice-template",
       "how-to-set-freelance-rates",
       "tree-service-invoice-template",
@@ -410,6 +411,7 @@ export const PRICING_GUIDES_2026_POSTS: PostDraft[] = [
     date: "2026-10-29",
     author: "Invoice Creator Editorial Team",
     related: [
+      "carpentry-invoice-template",
       "handyman-invoice-template",
       "how-to-set-freelance-rates",
       "contractor-invoice-template",
@@ -823,6 +825,7 @@ export const PRICING_GUIDES_2026_POSTS: PostDraft[] = [
     date: "2026-10-29",
     author: "Invoice Creator Editorial Team",
     related: [
+      "dog-walking-rates",
       "daycare-invoice-template",
       "how-to-set-freelance-rates",
       "tutoring-invoice-template",

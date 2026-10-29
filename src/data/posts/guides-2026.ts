@@ -169,7 +169,12 @@ export const GUIDES_2026_POSTS: PostDraft[] = [
     date: "2026-10-24",
     author: "Invoice Creator Editorial Team",
     jurisdiction: "General",
-    related: ["zatca-e-invoicing-guide", "fbr-e-invoicing-pakistan", "bank-details-on-invoice"],
+    related: [
+      "egypt-e-invoicing",
+      "zatca-e-invoicing-guide",
+      "fbr-e-invoicing-pakistan",
+      "bank-details-on-invoice",
+    ],
     faqs: [
       {
         q: "Can I use any free QR code generator for a ZATCA invoice?",
@@ -495,7 +500,12 @@ export const GUIDES_2026_POSTS: PostDraft[] = [
     date: "2026-10-24",
     author: "Invoice Creator Editorial Team",
     jurisdiction: "United Arab Emirates and Saudi Arabia",
-    related: ["uae-vat-invoice-requirements", "zatca-e-invoicing-guide", "uae-e-invoicing-2027"],
+    related: [
+      "saudi-freelance-license",
+      "uae-vat-invoice-requirements",
+      "zatca-e-invoicing-guide",
+      "uae-e-invoicing-2027",
+    ],
     faqs: [
       {
         q: "Can a Saudi tax invoice be in English only?",

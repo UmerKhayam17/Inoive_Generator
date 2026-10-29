@@ -11,6 +11,7 @@ export const PK_TAX_2026_C_POSTS: PostDraft[] = [
     author: "Invoice Creator Editorial Team",
     jurisdiction: "Pakistan",
     related: [
+      "secp-company-registration",
       "active-taxpayer-list-pakistan",
       "how-to-get-ntn-number-pakistan",
       "income-tax-return-pakistan-iris",

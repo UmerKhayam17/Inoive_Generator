@@ -896,7 +896,12 @@ export const ACCOUNTING_GUIDES_2026_B_POSTS: PostDraft[] = [
     category: "guides",
     date: "2026-10-28",
     author: "Invoice Creator Editorial Team",
-    related: ["invoice-approval-workflow", "three-way-match", "accounts-payable-kpis"],
+    related: [
+      "vendor-statement-reconciliation",
+      "invoice-approval-workflow",
+      "three-way-match",
+      "accounts-payable-kpis",
+    ],
     faqs: [
       {
         q: "What are the steps in the accounts payable process?",

@@ -678,7 +678,12 @@ export const INDUSTRY_POSTS_H: PostDraft[] = [
     category: "industry-invoices",
     date: "2026-10-28",
     author: "Invoice Creator Editorial Team",
-    related: ["medical-invoice-template", "timesheet-template", "mileage-log-template"],
+    related: [
+      "physical-therapy-invoice-template",
+      "medical-invoice-template",
+      "timesheet-template",
+      "mileage-log-template",
+    ],
     faqs: [
       {
         q: "What should a home health care invoice include?",

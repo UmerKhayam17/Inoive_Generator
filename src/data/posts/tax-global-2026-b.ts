@@ -626,6 +626,7 @@ export const TAX_GLOBAL_2026_B_POSTS: PostDraft[] = [
     author: "Invoice Creator Editorial Team",
     jurisdiction: "India",
     related: [
+      "tds-rate-chart",
       "msme-45-days-payment-rule",
       "withholding-tax-on-invoices",
       "income-tax-act-2025-india",

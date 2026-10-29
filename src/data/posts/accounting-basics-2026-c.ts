@@ -10,6 +10,7 @@ export const ACCOUNTING_BASICS_2026_C_POSTS: PostDraft[] = [
     date: "2026-10-29",
     author: "Invoice Creator Editorial Team",
     related: [
+      "debt-to-equity-ratio",
       "balance-sheet-small-business",
       "double-entry-bookkeeping",
       "retained-earnings",
@@ -468,6 +469,7 @@ export const ACCOUNTING_BASICS_2026_C_POSTS: PostDraft[] = [
     date: "2026-10-29",
     author: "Invoice Creator Editorial Team",
     related: [
+      "financial-ratios-small-business",
       "markup-vs-margin",
       "gross-profit-vs-net-profit",
       "cost-of-goods-sold",
@@ -906,6 +908,7 @@ export const ACCOUNTING_BASICS_2026_C_POSTS: PostDraft[] = [
     date: "2026-10-29",
     author: "Invoice Creator Editorial Team",
     related: [
+      "fixed-asset-register",
       "how-to-calculate-depreciation",
       "section-179-vs-bonus-depreciation",
       "balance-sheet-small-business",

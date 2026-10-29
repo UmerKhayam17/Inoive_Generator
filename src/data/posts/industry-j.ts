@@ -181,6 +181,7 @@ export const INDUSTRY_POSTS_J: PostDraft[] = [
     date: "2026-10-29",
     author: "Invoice Creator Editorial Team",
     related: [
+      "chiropractic-invoice-template",
       "personal-trainer-invoice-template",
       "salon-invoice-template",
       "medical-invoice-template",
@@ -347,6 +348,7 @@ export const INDUSTRY_POSTS_J: PostDraft[] = [
     author: "Invoice Creator Editorial Team",
     jurisdiction: "United States",
     related: [
+      "dental-invoice-template",
       "medical-invoice-template",
       "itemized-invoice",
       "invoice-vs-receipt",
@@ -542,6 +544,7 @@ export const INDUSTRY_POSTS_J: PostDraft[] = [
     date: "2026-10-29",
     author: "Invoice Creator Editorial Team",
     related: [
+      "how-to-start-a-junk-removal-business",
       "moving-company-invoice-template",
       "handyman-invoice-template",
       "estimate-template",

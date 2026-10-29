@@ -10,6 +10,7 @@ export const PAYMENTS_2026_F_POSTS: PostDraft[] = [
     date: "2026-10-29",
     author: "Invoice Creator Editorial Team",
     related: [
+      "paypal-business-vs-personal-account",
       "paypal-fees",
       "how-to-send-paypal-invoice",
       "venmo-zelle-cash-app-invoice",
@@ -188,6 +189,7 @@ export const PAYMENTS_2026_F_POSTS: PostDraft[] = [
     date: "2026-10-29",
     author: "Invoice Creator Editorial Team",
     related: [
+      "credit-card-processing-fees",
       "stripe-invoicing-guide",
       "stripe-vs-paypal",
       "stripe-vs-square",
@@ -389,6 +391,7 @@ export const PAYMENTS_2026_F_POSTS: PostDraft[] = [
     author: "Invoice Creator Editorial Team",
     jurisdiction: "United States",
     related: [
+      "cash-app-business-fees",
       "venmo-zelle-cash-app-invoice",
       "paypal-fees",
       "square-invoice-fees",
@@ -772,6 +775,7 @@ export const PAYMENTS_2026_F_POSTS: PostDraft[] = [
     author: "Invoice Creator Editorial Team",
     jurisdiction: "United States",
     related: [
+      "routing-number-vs-account-number",
       "how-to-accept-ach-payments",
       "vendor-onboarding-checklist",
       "positive-pay-check-fraud",

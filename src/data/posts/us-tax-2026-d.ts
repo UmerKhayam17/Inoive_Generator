@@ -11,6 +11,7 @@ export const US_TAX_2026_D_POSTS: PostDraft[] = [
     author: "Invoice Creator Editorial Team",
     jurisdiction: "United States",
     related: [
+      "courier-delivery-invoice-template",
       "mileage-log-template",
       "reimbursable-expenses-invoice",
       "self-employed-tax-deductions",
@@ -391,6 +392,7 @@ export const US_TAX_2026_D_POSTS: PostDraft[] = [
     author: "Invoice Creator Editorial Team",
     jurisdiction: "United States",
     related: [
+      "sellers-permit",
       "sales-tax-exemption-certificate",
       "tax-exempt-invoice",
       "sales-tax-nexus",

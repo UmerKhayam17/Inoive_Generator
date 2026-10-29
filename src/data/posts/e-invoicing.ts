@@ -11,6 +11,7 @@ export const EINVOICING_POSTS: PostDraft[] = [
     author: "Invoice Creator Editorial Team",
     jurisdiction: "Saudi Arabia",
     related: [
+      "egypt-e-invoicing",
       "saudi-vat-registration",
       "e-invoicing-guide",
       "vat-invoice-guide",

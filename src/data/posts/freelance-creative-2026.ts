@@ -9,7 +9,12 @@ export const FREELANCE_CREATIVE_2026_POSTS: PostDraft[] = [
     category: "industry-invoices",
     date: "2026-10-27",
     author: "Invoice Creator Editorial Team",
-    related: ["marketing-agency-invoice-template", "retainer-invoice", "ugc-creator-invoice"],
+    related: [
+      "social-media-management-pricing",
+      "marketing-agency-invoice-template",
+      "retainer-invoice",
+      "ugc-creator-invoice",
+    ],
     faqs: [
       {
         q: "What should a social media manager invoice include?",
@@ -301,7 +306,12 @@ export const FREELANCE_CREATIVE_2026_POSTS: PostDraft[] = [
     category: "freelancing",
     date: "2026-10-27",
     author: "Invoice Creator Editorial Team",
-    related: ["milestone-payments", "freelance-contract-template", "po-number-on-invoice"],
+    related: [
+      "fixed-price-vs-time-and-materials",
+      "milestone-payments",
+      "freelance-contract-template",
+      "po-number-on-invoice",
+    ],
     faqs: [
       {
         q: "What is a statement of work?",

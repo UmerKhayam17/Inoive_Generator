@@ -1066,6 +1066,7 @@ export const INDUSTRY_POSTS_B: PostDraft[] = [
     date: "2026-10-22",
     author: "Invoice Creator Editorial Team",
     related: [
+      "how-to-start-an-event-planning-business",
       "bakery-invoice-template",
       "restaurant-bill-format",
       "deposit-invoice",

@@ -11,6 +11,7 @@ export const UAE_GLOBAL_TAX_2026_POSTS: PostDraft[] = [
     author: "Invoice Creator Editorial Team",
     jurisdiction: "United Arab Emirates",
     related: [
+      "dubai-trade-license",
       "trn-number-uae",
       "uae-vat-invoice-requirements",
       "uae-vat-return-filing",
@@ -189,6 +190,7 @@ export const UAE_GLOBAL_TAX_2026_POSTS: PostDraft[] = [
     author: "Invoice Creator Editorial Team",
     jurisdiction: "United Arab Emirates",
     related: [
+      "dubai-trade-license",
       "uae-corporate-tax-freelancers",
       "freelance-invoice-template",
       "trn-number-uae",

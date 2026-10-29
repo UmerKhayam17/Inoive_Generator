@@ -9,7 +9,12 @@ export const PAYMENTS_2026_C_POSTS: PostDraft[] = [
     category: "payments",
     date: "2026-10-28",
     author: "Invoice Creator Editorial Team",
-    related: ["add-payment-link-to-invoice", "bank-details-on-invoice", "ach-vs-wire-transfer"],
+    related: [
+      "best-payment-methods-for-small-business",
+      "add-payment-link-to-invoice",
+      "bank-details-on-invoice",
+      "ach-vs-wire-transfer",
+    ],
     faqs: [
       {
         q: "What does pay by bank mean?",
@@ -795,6 +800,7 @@ export const PAYMENTS_2026_C_POSTS: PostDraft[] = [
     author: "Invoice Creator Editorial Team",
     jurisdiction: "United States",
     related: [
+      "ach-return-codes",
       "how-to-accept-ach-payments",
       "ach-vs-wire-transfer",
       "invoice-scams",

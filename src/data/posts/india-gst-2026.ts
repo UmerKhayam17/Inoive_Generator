@@ -670,6 +670,7 @@ export const INDIA_GST_2026_POSTS: PostDraft[] = [
     author: "Invoice Creator Editorial Team",
     jurisdiction: "India",
     related: [
+      "advance-tax-due-dates-india",
       "section-44ada-freelancers",
       "income-tax-act-2025-india",
       "gst-composition-scheme",

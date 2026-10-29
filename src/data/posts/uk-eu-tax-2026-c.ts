@@ -671,6 +671,7 @@ export const UK_EU_TAX_2026_C_POSTS: PostDraft[] = [
     author: "Invoice Creator Editorial Team",
     jurisdiction: "United Kingdom",
     related: [
+      "how-to-set-up-a-limited-company",
       "sole-trader-vs-limited-company",
       "uk-dividend-tax-rates-2026",
       "employer-national-insurance-2026",

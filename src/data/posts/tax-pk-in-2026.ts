@@ -183,6 +183,7 @@ export const TAX_PK_IN_2026_POSTS: PostDraft[] = [
     date: "2026-10-27",
     author: "Invoice Creator Editorial Team",
     related: [
+      "wealth-statement-pakistan",
       "how-to-pay-fbr-challan-psid",
       "income-tax-slabs-pakistan-2026-27",
       "active-taxpayer-list-pakistan",

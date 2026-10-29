@@ -593,6 +593,7 @@ export const PLATFORM_SOFTWARE_POSTS: PostDraft[] = [
     date: "2026-10-23",
     author: "Invoice Creator Editorial Team",
     related: [
+      "payoneer-fees",
       "revolut-business-vs-wise",
       "wise-vs-paypal",
       "receive-payment-from-abroad-pakistan",
@@ -1332,6 +1333,7 @@ export const PLATFORM_SOFTWARE_POSTS: PostDraft[] = [
     date: "2026-10-23",
     author: "Invoice Creator Editorial Team",
     related: [
+      "quickbooks-payments-fees",
       "how-to-create-invoice-in-quickbooks",
       "invoice-generator-vs-accounting-software",
       "best-free-invoicing-software",

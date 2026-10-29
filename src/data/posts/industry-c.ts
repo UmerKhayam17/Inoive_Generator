@@ -9,7 +9,12 @@ export const INDUSTRY_POSTS_C: PostDraft[] = [
     category: "industry-invoices",
     date: "2026-10-23",
     author: "Invoice Creator Editorial Team",
-    related: ["construction-invoice-guide", "contractor-invoice-template", "deposit-invoice"],
+    related: [
+      "gutter-cleaning-invoice-template",
+      "construction-invoice-guide",
+      "contractor-invoice-template",
+      "deposit-invoice",
+    ],
     faqs: [
       {
         q: "How do roofers price a job on an invoice?",
@@ -160,7 +165,12 @@ export const INDUSTRY_POSTS_C: PostDraft[] = [
     category: "industry-invoices",
     date: "2026-10-23",
     author: "Invoice Creator Editorial Team",
-    related: ["contractor-invoice-template", "itemized-invoice", "deposit-invoice"],
+    related: [
+      "drywall-invoice-template",
+      "contractor-invoice-template",
+      "itemized-invoice",
+      "deposit-invoice",
+    ],
     faqs: [
       {
         q: "How do painters charge on an invoice?",
@@ -761,6 +771,7 @@ export const INDUSTRY_POSTS_C: PostDraft[] = [
     date: "2026-10-23",
     author: "Invoice Creator Editorial Team",
     related: [
+      "how-to-start-an-event-planning-business",
       "florist-invoice-template",
       "dj-invoice-template",
       "milestone-payments",
@@ -908,6 +919,7 @@ export const INDUSTRY_POSTS_C: PostDraft[] = [
     author: "Invoice Creator Editorial Team",
     jurisdiction: "United States",
     related: [
+      "septic-pumping-invoice-template",
       "independent-contractor-invoice",
       "w9-and-1099-for-contractors",
       "consulting-invoice-template",
@@ -1053,6 +1065,7 @@ export const INDUSTRY_POSTS_C: PostDraft[] = [
     date: "2026-10-23",
     author: "Invoice Creator Editorial Team",
     related: [
+      "virtual-assistant-rates",
       "retainer-invoice",
       "how-to-invoice-for-hourly-work",
       "invoice-international-clients",

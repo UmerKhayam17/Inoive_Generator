@@ -172,6 +172,7 @@ export const FREELANCING_2026_POSTS: PostDraft[] = [
     date: "2026-10-24",
     author: "Invoice Creator Editorial Team",
     related: [
+      "ugc-rates",
       "copywriter-invoice-template",
       "freelance-invoice-template",
       "deposit-invoice",
@@ -340,7 +341,12 @@ export const FREELANCING_2026_POSTS: PostDraft[] = [
     category: "freelancing",
     date: "2026-10-24",
     author: "Invoice Creator Editorial Team",
-    related: ["freelance-contract-template", "deposit-invoice", "milestone-payments"],
+    related: [
+      "how-to-become-a-freelance-writer",
+      "freelance-contract-template",
+      "deposit-invoice",
+      "milestone-payments",
+    ],
     faqs: [
       {
         q: "Is a kill fee the same as a deposit?",
@@ -502,7 +508,12 @@ export const FREELANCING_2026_POSTS: PostDraft[] = [
     category: "freelancing",
     date: "2026-10-24",
     author: "Invoice Creator Editorial Team",
-    related: ["milestone-payments", "freelance-contract-template", "invoice-dispute"],
+    related: [
+      "seo-services-invoice-template",
+      "milestone-payments",
+      "freelance-contract-template",
+      "invoice-dispute",
+    ],
     faqs: [
       {
         q: "What is the difference between a change request and a change order?",

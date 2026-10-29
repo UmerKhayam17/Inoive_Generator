@@ -425,7 +425,12 @@ export const BUSINESS_FINANCE_2026_C_POSTS: PostDraft[] = [
     category: "business-finance",
     date: "2026-10-28",
     author: "Invoice Creator Editorial Team",
-    related: ["small-business-budget", "operating-expenses", "cash-flow-management"],
+    related: [
+      "budget-vs-actual",
+      "small-business-budget",
+      "operating-expenses",
+      "cash-flow-management",
+    ],
     faqs: [
       {
         q: "What is zero-based budgeting in simple terms?",
@@ -602,7 +607,12 @@ export const BUSINESS_FINANCE_2026_C_POSTS: PostDraft[] = [
     category: "business-finance",
     date: "2026-10-28",
     author: "Invoice Creator Editorial Team",
-    related: ["working-capital", "balance-sheet-small-business", "cash-conversion-cycle"],
+    related: [
+      "financial-ratios-small-business",
+      "working-capital",
+      "balance-sheet-small-business",
+      "cash-conversion-cycle",
+    ],
     faqs: [
       {
         q: "What is the main difference between the current ratio and the quick ratio?",

@@ -325,7 +325,12 @@ export const TAX_PK_IN_2026_B_POSTS: PostDraft[] = [
     category: "business-finance",
     date: "2026-10-28",
     author: "Invoice Creator Editorial Team",
-    related: ["msme-45-days-payment-rule", "gst-registration-india", "gst-invoice-guide"],
+    related: [
+      "proprietorship-registration-india",
+      "msme-45-days-payment-rule",
+      "gst-registration-india",
+      "gst-invoice-guide",
+    ],
     jurisdiction: "India",
     faqs: [
       {

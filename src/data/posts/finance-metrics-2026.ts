@@ -474,6 +474,7 @@ export const FINANCE_METRICS_2026_POSTS: PostDraft[] = [
     date: "2026-10-27",
     author: "Invoice Creator Editorial Team",
     related: [
+      "accounts-payable-turnover-ratio",
       "days-sales-outstanding",
       "accounts-receivable-aging-report",
       "cash-conversion-cycle",

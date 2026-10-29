@@ -9,7 +9,12 @@ export const BUSINESS_GROWTH_2026_POSTS: PostDraft[] = [
     category: "business-finance",
     date: "2026-10-27",
     author: "Invoice Creator Editorial Team",
-    related: ["capex-vs-opex", "profit-and-loss-statement", "fixed-vs-variable-costs"],
+    related: [
+      "how-to-calculate-net-income",
+      "capex-vs-opex",
+      "profit-and-loss-statement",
+      "fixed-vs-variable-costs",
+    ],
     faqs: [
       {
         q: "What are operating expenses in simple terms?",
@@ -546,6 +551,7 @@ export const BUSINESS_GROWTH_2026_POSTS: PostDraft[] = [
     date: "2026-10-27",
     author: "Invoice Creator Editorial Team",
     related: [
+      "how-to-start-a-home-bakery-business",
       "how-to-raise-prices",
       "ai-pricing-tools",
       "markup-vs-margin",

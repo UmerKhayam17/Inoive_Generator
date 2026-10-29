@@ -1038,7 +1038,12 @@ export const BASICS_COMPARISONS_2026_POSTS: PostDraft[] = [
     category: "comparisons",
     date: "2026-10-27",
     author: "Invoice Creator Editorial Team",
-    related: ["commercial-invoice-template", "incoterms-on-invoice", "letter-of-credit-invoice"],
+    related: [
+      "freight-invoice",
+      "commercial-invoice-template",
+      "incoterms-on-invoice",
+      "letter-of-credit-invoice",
+    ],
     faqs: [
       {
         q: "What is the main difference between a bill of lading and a commercial invoice?",

@@ -959,6 +959,7 @@ export const COMPARISON_FINANCE_POSTS: PostDraft[] = [
     date: "2026-10-22",
     author: "Invoice Creator Editorial Team",
     related: [
+      "hmrc-time-to-pay",
       "burn-rate-and-runway",
       "cash-flow-statement",
       "working-capital",

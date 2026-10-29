@@ -176,6 +176,7 @@ export const TAX_FILING_2026_POSTS: PostDraft[] = [
     date: "2026-10-27",
     author: "Invoice Creator Editorial Team",
     related: [
+      "vat-penalties-uk",
       "vat-cash-accounting-scheme",
       "vat-registration-threshold-uk",
       "vat-invoice-guide",

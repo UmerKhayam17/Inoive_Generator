@@ -715,6 +715,7 @@ export const TAX_US_UK_2026_B_POSTS: PostDraft[] = [
     date: "2026-10-27",
     author: "Invoice Creator Editorial Team",
     related: [
+      "vat-penalties-uk",
       "vat-flat-rate-scheme",
       "how-to-file-vat-return-uk",
       "vat-invoice-guide",

@@ -929,6 +929,7 @@ export const HOW_TO_POSTS_B: PostDraft[] = [
     date: "2026-10-22",
     author: "Invoice Creator Editorial Team",
     related: [
+      "vendor-statement-reconciliation",
       "consolidated-invoice",
       "accounts-receivable-aging-report",
       "overdue-invoice",

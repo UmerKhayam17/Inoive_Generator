@@ -11,6 +11,7 @@ export const US_TAX_2026_C_POSTS: PostDraft[] = [
     author: "Invoice Creator Editorial Team",
     jurisdiction: "United States",
     related: [
+      "business-tax-deadlines-2027",
       "quarterly-estimated-taxes-freelancers",
       "self-employment-tax",
       "irs-penalty-abatement",
@@ -700,6 +701,7 @@ export const US_TAX_2026_C_POSTS: PostDraft[] = [
     author: "Invoice Creator Editorial Team",
     jurisdiction: "United States",
     related: [
+      "how-to-pay-irs-online",
       "estimated-tax-penalty",
       "quarterly-estimated-taxes-freelancers",
       "self-employment-tax",

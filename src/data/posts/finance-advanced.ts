@@ -820,6 +820,7 @@ export const FINANCE_ADVANCED_POSTS: PostDraft[] = [
     author: "Invoice Creator Editorial Team",
     jurisdiction: "United States",
     related: [
+      "cash-app-business-fees",
       "w9-and-1099-for-contractors",
       "venmo-zelle-cash-app-invoice",
       "how-to-send-paypal-invoice",

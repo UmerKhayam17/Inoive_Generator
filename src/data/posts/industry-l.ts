@@ -10,6 +10,7 @@ export const INDUSTRY_POSTS_L: PostDraft[] = [
     date: "2026-10-29",
     author: "Invoice Creator Editorial Team",
     related: [
+      "pet-grooming-invoice-template",
       "medical-invoice-template",
       "estimate-template",
       "itemized-invoice",
@@ -187,6 +188,7 @@ export const INDUSTRY_POSTS_L: PostDraft[] = [
     date: "2026-10-29",
     author: "Invoice Creator Editorial Team",
     related: [
+      "musician-invoice-template",
       "tutoring-invoice-template",
       "recurring-invoices-guide",
       "prorated-invoice",

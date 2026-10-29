@@ -209,6 +209,7 @@ export const UK_2026_B_POSTS: PostDraft[] = [
     author: "Invoice Creator Editorial Team",
     jurisdiction: "United Kingdom",
     related: [
+      "how-to-set-up-a-limited-company",
       "sole-trader-vs-limited-company",
       "uk-dividend-tax-rates-2026",
       "self-assessment-tax-return-uk",
@@ -396,7 +397,12 @@ export const UK_2026_B_POSTS: PostDraft[] = [
     date: "2026-10-28",
     author: "Invoice Creator Editorial Team",
     jurisdiction: "United Kingdom",
-    related: ["gross-pay-vs-net-pay", "uk-dividend-tax-rates-2026", "small-business-budget"],
+    related: [
+      "director-salary-vs-dividends",
+      "gross-pay-vs-net-pay",
+      "uk-dividend-tax-rates-2026",
+      "small-business-budget",
+    ],
     faqs: [
       {
         q: "What is the employer NIC rate for 2026/27?",

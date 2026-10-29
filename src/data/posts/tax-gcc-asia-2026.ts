@@ -10,7 +10,12 @@ export const TAX_GCC_ASIA_2026_POSTS: PostDraft[] = [
     date: "2026-10-28",
     author: "Invoice Creator Editorial Team",
     jurisdiction: "Saudi Arabia",
-    related: ["zatca-e-invoicing-guide", "zatca-phase-2-wave-25", "arabic-english-invoice"],
+    related: [
+      "saudi-freelance-license",
+      "zatca-e-invoicing-guide",
+      "zatca-phase-2-wave-25",
+      "arabic-english-invoice",
+    ],
     faqs: [
       {
         q: "What is the VAT registration threshold in Saudi Arabia?",
@@ -620,7 +625,12 @@ export const TAX_GCC_ASIA_2026_POSTS: PostDraft[] = [
     date: "2026-10-28",
     author: "Invoice Creator Editorial Team",
     jurisdiction: "Vietnam",
-    related: ["malaysia-lhdn-e-invoice", "e-invoicing-guide", "philippines-e-invoicing"],
+    related: [
+      "indonesia-e-faktur",
+      "malaysia-lhdn-e-invoice",
+      "e-invoicing-guide",
+      "philippines-e-invoicing",
+    ],
     faqs: [
       {
         q: "Are e-invoices mandatory in Vietnam?",
