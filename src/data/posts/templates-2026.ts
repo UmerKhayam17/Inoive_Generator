@@ -167,6 +167,7 @@ export const TEMPLATES_2026_POSTS: PostDraft[] = [
     date: "2026-10-27",
     author: "Invoice Creator Editorial Team",
     related: [
+      "charitable-donations-business-deduction",
       "nonprofit-invoice-template",
       "payment-receipt-template",
       "invoice-vs-receipt",
@@ -681,6 +682,7 @@ export const TEMPLATES_2026_POSTS: PostDraft[] = [
     date: "2026-10-27",
     author: "Invoice Creator Editorial Team",
     related: [
+      "how-to-sell-a-small-business",
       "invoice-vs-bill-of-sale",
       "invoice-vs-receipt",
       "payment-receipt-template",
@@ -870,6 +872,7 @@ export const TEMPLATES_2026_POSTS: PostDraft[] = [
     date: "2026-10-27",
     author: "Invoice Creator Editorial Team",
     related: [
+      "pay-stub-template",
       "staffing-agency-invoice-template",
       "how-to-invoice-for-hourly-work",
       "invoice-tracker-spreadsheet",

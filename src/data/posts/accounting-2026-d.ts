@@ -505,7 +505,7 @@ export const ACCOUNTING_2026_D_POSTS: PostDraft[] = [
     category: "business-finance",
     date: "2026-10-29",
     author: "Invoice Creator Editorial Team",
-    related: ["break-even-point", "fixed-vs-variable-costs", "unit-economics", "markup-vs-margin"],
+    related: ["customer-acquisition-cost", "break-even-point", "fixed-vs-variable-costs", "unit-economics", "markup-vs-margin"],
     faqs: [
       {
         q: "What is contribution margin in simple terms?",

@@ -208,7 +208,7 @@ export const COMPARISONS_2026_I_POSTS: PostDraft[] = [
     date: "2026-10-29",
     author: "Invoice Creator Editorial Team",
     jurisdiction: "United States",
-    related: ["llc-vs-sole-proprietorship", "form-1065", "how-to-start-an-llc"],
+    related: ["schedule-k-1", "llc-vs-sole-proprietorship", "form-1065", "how-to-start-an-llc"],
     faqs: [
       {
         q: "Is a multi-member LLC the same as a partnership?",
@@ -420,7 +420,7 @@ export const COMPARISONS_2026_I_POSTS: PostDraft[] = [
     date: "2026-10-29",
     author: "Invoice Creator Editorial Team",
     jurisdiction: "United States",
-    related: ["s-corp-vs-llc", "s-corp-election-form-2553", "llc-vs-corporation"],
+    related: ["form-1120-vs-1120-s", "s-corp-vs-llc", "s-corp-election-form-2553", "llc-vs-corporation"],
     faqs: [
       {
         q: "Is an S corp a different legal entity from a C corp?",

@@ -322,6 +322,7 @@ export const INDUSTRY_POSTS_B: PostDraft[] = [
     date: "2026-10-22",
     author: "Invoice Creator Editorial Team",
     related: [
+      "how-to-start-a-law-firm",
       "private-investigator-invoice-template",
       "notary-invoice-template",
       "retainer-invoice",

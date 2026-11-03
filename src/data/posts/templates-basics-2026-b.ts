@@ -10,6 +10,7 @@ export const TEMPLATES_BASICS_2026_B_POSTS: PostDraft[] = [
     date: "2026-10-27",
     author: "Invoice Creator Editorial Team",
     related: [
+      "what-to-put-on-a-business-card",
       "ai-logo-generator",
       "professional-invoice-design-tips",
       "best-fonts-for-invoices",
@@ -178,6 +179,7 @@ export const TEMPLATES_BASICS_2026_B_POSTS: PostDraft[] = [
     date: "2026-10-27",
     author: "Invoice Creator Editorial Team",
     related: [
+      "accountable-plan",
       "canada-self-employed-tax",
       "allowable-expenses-self-employed-uk",
       "mileage-log-template",

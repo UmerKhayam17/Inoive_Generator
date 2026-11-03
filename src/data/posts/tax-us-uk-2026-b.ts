@@ -11,6 +11,7 @@ export const TAX_US_UK_2026_B_POSTS: PostDraft[] = [
     date: "2026-10-27",
     author: "Invoice Creator Editorial Team",
     related: [
+      "sam-gov-registration",
       "ein-vs-ssn",
       "how-to-start-an-llc",
       "boi-reporting-2026",
@@ -194,6 +195,7 @@ export const TAX_US_UK_2026_B_POSTS: PostDraft[] = [
     date: "2026-10-27",
     author: "Invoice Creator Editorial Team",
     related: [
+      "twitch-streamer-taxes",
       "self-employed-health-insurance-deduction",
       "qbi-deduction-section-199a",
       "self-employment-tax",

@@ -173,7 +173,7 @@ export const BASICS_COMPARISONS_2026_POSTS: PostDraft[] = [
     category: "invoicing-basics",
     date: "2026-10-27",
     author: "Invoice Creator Editorial Team",
-    related: ["early-payment-discount", "itemized-invoice", "sales-tax-on-invoices-us"],
+    related: ["customer-loyalty-program-ideas", "early-payment-discount", "itemized-invoice", "sales-tax-on-invoices-us"],
     faqs: [
       {
         q: "How do you show a discount on an invoice?",

@@ -11,6 +11,7 @@ export const US_LLC_2026_POSTS: PostDraft[] = [
     author: "Invoice Creator Editorial Team",
     jurisdiction: "United States",
     related: [
+      "wyoming-vs-delaware-llc",
       "how-to-start-an-llc",
       "llc-vs-sole-proprietorship",
       "s-corp-vs-llc",
@@ -199,6 +200,7 @@ export const US_LLC_2026_POSTS: PostDraft[] = [
     author: "Invoice Creator Editorial Team",
     jurisdiction: "United States",
     related: [
+      "california-statement-of-information",
       "how-to-start-an-llc",
       "llc-vs-sole-proprietorship",
       "what-is-a-dba",
@@ -382,6 +384,7 @@ export const US_LLC_2026_POSTS: PostDraft[] = [
     author: "Invoice Creator Editorial Team",
     jurisdiction: "United States",
     related: [
+      "texas-franchise-tax",
       "how-to-start-an-llc",
       "how-to-file-taxes-as-an-llc",
       "year-end-invoicing-checklist",
@@ -563,6 +566,7 @@ export const US_LLC_2026_POSTS: PostDraft[] = [
     author: "Invoice Creator Editorial Team",
     jurisdiction: "United States",
     related: [
+      "certificate-of-good-standing",
       "how-to-file-taxes-as-an-llc",
       "bad-debt-write-off",
       "interim-invoice-vs-final-invoice",

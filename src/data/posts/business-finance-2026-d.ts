@@ -823,6 +823,7 @@ export const BUSINESS_FINANCE_2026_D_POSTS: PostDraft[] = [
     date: "2026-10-29",
     author: "Invoice Creator Editorial Team",
     related: [
+      "swot-analysis-template",
       "current-ratio-vs-quick-ratio",
       "how-to-calculate-profit-margin",
       "days-sales-outstanding",

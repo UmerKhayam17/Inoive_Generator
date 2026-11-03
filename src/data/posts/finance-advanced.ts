@@ -161,6 +161,7 @@ export const FINANCE_ADVANCED_POSTS: PostDraft[] = [
     date: "2026-10-23",
     author: "Invoice Creator Editorial Team",
     related: [
+      "wholesale-pricing",
       "materials-markup",
       "how-to-calculate-profit-margin",
       "how-to-price-a-product",
@@ -823,6 +824,7 @@ export const FINANCE_ADVANCED_POSTS: PostDraft[] = [
     author: "Invoice Creator Editorial Team",
     jurisdiction: "United States",
     related: [
+      "ebay-seller-1099-k",
       "cash-app-business-fees",
       "w9-and-1099-for-contractors",
       "venmo-zelle-cash-app-invoice",

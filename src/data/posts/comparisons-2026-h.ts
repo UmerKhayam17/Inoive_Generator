@@ -189,6 +189,7 @@ export const COMPARISONS_2026_H_POSTS: PostDraft[] = [
     date: "2026-10-29",
     author: "Invoice Creator Editorial Team",
     related: [
+      "free-crm-small-business",
       "how-to-start-a-wedding-planning-business",
       "invoice-generator-vs-accounting-software",
       "freshbooks-vs-wave",

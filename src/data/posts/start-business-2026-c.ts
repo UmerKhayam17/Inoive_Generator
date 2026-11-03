@@ -475,6 +475,7 @@ export const START_BUSINESS_2026_C_POSTS: PostDraft[] = [
     date: "2026-10-29",
     author: "Invoice Creator Editorial Team",
     related: [
+      "dumpster-rental-business",
       "junk-removal-invoice-template",
       "llc-vs-sole-proprietorship",
       "how-to-get-a-business-license",

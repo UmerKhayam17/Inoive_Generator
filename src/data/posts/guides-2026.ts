@@ -683,7 +683,7 @@ export const GUIDES_2026_POSTS: PostDraft[] = [
     category: "guides",
     date: "2026-10-24",
     author: "Invoice Creator Editorial Team",
-    related: ["how-to-send-an-invoice", "payment-reminder-emails", "invoice-notes-examples"],
+    related: ["holiday-card-messages-for-clients", "how-to-send-an-invoice", "payment-reminder-emails", "invoice-notes-examples"],
     faqs: [
       {
         q: "Should I put the amount in an invoice email subject line?",

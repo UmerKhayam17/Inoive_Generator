@@ -604,7 +604,7 @@ export const US_TAX_2026_F_POSTS: PostDraft[] = [
     date: "2026-10-29",
     author: "Invoice Creator Editorial Team",
     jurisdiction: "United States",
-    related: ["how-to-file-taxes-as-an-llc", "s-corp-vs-llc", "s-corp-election-form-2553"],
+    related: ["california-llc-800-tax", "how-to-file-taxes-as-an-llc", "s-corp-vs-llc", "s-corp-election-form-2553"],
     faqs: [
       {
         q: "Do LLCs pay a flat tax rate?",

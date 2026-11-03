@@ -9,7 +9,7 @@ export const BUSINESS_FINANCE_2026_C_POSTS: PostDraft[] = [
     category: "business-finance",
     date: "2026-10-28",
     author: "Invoice Creator Editorial Team",
-    related: ["ebitda", "profit-and-loss-statement", "balance-sheet-small-business"],
+    related: ["letter-of-intent-template", "ebitda", "profit-and-loss-statement", "balance-sheet-small-business"],
     faqs: [
       {
         q: "What is the most common way to value a small business?",

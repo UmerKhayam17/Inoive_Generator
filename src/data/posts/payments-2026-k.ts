@@ -335,6 +335,7 @@ export const PAYMENTS_2026_K_POSTS: PostDraft[] = [
     date: "2026-10-29",
     author: "Invoice Creator Editorial Team",
     related: [
+      "churn-rate",
       "customer-payment-portal",
       "recurring-invoices-guide",
       "billing-cycle",

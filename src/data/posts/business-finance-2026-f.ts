@@ -174,6 +174,7 @@ export const BUSINESS_FINANCE_2026_F_POSTS: PostDraft[] = [
     date: "2026-10-29",
     author: "Invoice Creator Editorial Team",
     related: [
+      "mission-statement-examples",
       "how-to-start-a-laundromat",
       "how-to-start-a-small-business",
       "startup-costs",
@@ -424,6 +425,7 @@ export const BUSINESS_FINANCE_2026_F_POSTS: PostDraft[] = [
     date: "2026-10-29",
     author: "Invoice Creator Editorial Team",
     related: [
+      "how-to-buy-a-domain-name",
       "business-insurance",
       "how-to-start-a-small-business",
       "business-plan-template",
@@ -620,7 +622,7 @@ export const BUSINESS_FINANCE_2026_F_POSTS: PostDraft[] = [
     category: "business-finance",
     date: "2026-10-29",
     author: "Invoice Creator Editorial Team",
-    related: ["cash-flow-forecast", "business-plan-template", "budget-vs-actual"],
+    related: ["sales-pipeline-stages", "cash-flow-forecast", "business-plan-template", "budget-vs-actual"],
     faqs: [
       {
         q: "How far ahead should a small business forecast sales?",

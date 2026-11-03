@@ -11,6 +11,7 @@ export const START_BUSINESS_2026_POSTS: PostDraft[] = [
     author: "Invoice Creator Editorial Team",
     jurisdiction: "United States",
     related: [
+      "new-york-llc-publication-requirement",
       "how-to-invoice-as-an-llc",
       "business-entity-types",
       "llc-vs-sole-proprietorship",
@@ -224,6 +225,7 @@ export const START_BUSINESS_2026_POSTS: PostDraft[] = [
     author: "Invoice Creator Editorial Team",
     jurisdiction: "United States",
     related: [
+      "business-name-search",
       "how-to-invoice-as-a-sole-proprietor",
       "registered-agent",
       "llc-vs-sole-proprietorship",
@@ -598,6 +600,7 @@ export const START_BUSINESS_2026_POSTS: PostDraft[] = [
     date: "2026-10-29",
     author: "Invoice Creator Editorial Team",
     related: [
+      "profit-first-method",
       "directors-loan-account",
       "s-corp-vs-llc",
       "self-employment-tax",

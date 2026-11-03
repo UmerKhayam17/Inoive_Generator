@@ -358,6 +358,7 @@ export const TEMPLATES_2026_C_POSTS: PostDraft[] = [
     date: "2026-10-29",
     author: "Invoice Creator Editorial Team",
     related: [
+      "map-pricing-policy",
       "upholstery-invoice-template",
       "how-to-price-a-product",
       "how-to-raise-prices",
@@ -528,7 +529,7 @@ export const TEMPLATES_2026_C_POSTS: PostDraft[] = [
     category: "design-templates",
     date: "2026-10-29",
     author: "Invoice Creator Editorial Team",
-    related: ["freelance-contract-template", "statement-of-work-template", "invoice-payment-terms"],
+    related: ["memorandum-of-understanding", "freelance-contract-template", "statement-of-work-template", "invoice-payment-terms"],
     faqs: [
       {
         q: "What is the difference between a service agreement and a statement of work?",
@@ -693,7 +694,7 @@ export const TEMPLATES_2026_C_POSTS: PostDraft[] = [
     category: "design-templates",
     date: "2026-10-29",
     author: "Invoice Creator Editorial Team",
-    related: ["invoice-numbering-system", "payment-receipt-template", "price-list-template"],
+    related: ["small-business-saturday", "invoice-numbering-system", "payment-receipt-template", "price-list-template"],
     faqs: [
       {
         q: "Can a gift certificate expire?",

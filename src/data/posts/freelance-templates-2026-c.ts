@@ -513,6 +513,7 @@ export const FREELANCE_TEMPLATES_2026_C_POSTS: PostDraft[] = [
     author: "Invoice Creator Editorial Team",
     jurisdiction: "United States",
     related: [
+      "401k-contribution-limits-2027",
       "self-employed-health-insurance-deduction",
       "self-employment-tax",
       "self-employed-tax-deductions",

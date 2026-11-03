@@ -10,7 +10,7 @@ export const US_TAX_2026_H_POSTS: PostDraft[] = [
     date: "2026-10-29",
     author: "Invoice Creator Editorial Team",
     jurisdiction: "United States",
-    related: ["partnership-vs-llc", "how-to-file-taxes-as-an-llc", "business-tax-deadlines-2027"],
+    related: ["business-exit-strategy", "partnership-vs-llc", "how-to-file-taxes-as-an-llc", "business-tax-deadlines-2027"],
     faqs: [
       {
         q: "Does a partnership pay tax on Form 1065?",
@@ -183,7 +183,7 @@ export const US_TAX_2026_H_POSTS: PostDraft[] = [
     date: "2026-10-29",
     author: "Invoice Creator Editorial Team",
     jurisdiction: "United States",
-    related: ["employer-payroll-taxes", "form-941", "w2-vs-1099"],
+    related: ["form-w-4", "employer-payroll-taxes", "form-941", "w2-vs-1099"],
     faqs: [
       {
         q: "When do employers have to send W-2s for 2026?",
@@ -537,7 +537,7 @@ export const US_TAX_2026_H_POSTS: PostDraft[] = [
     date: "2026-10-29",
     author: "Invoice Creator Editorial Team",
     jurisdiction: "United States",
-    related: ["hiring-your-first-employee", "form-w-2", "w2-vs-1099"],
+    related: ["offer-letter-template", "hiring-your-first-employee", "form-w-2", "w2-vs-1099"],
     faqs: [
       {
         q: "Do I need to complete Form I-9 for independent contractors?",
@@ -709,6 +709,7 @@ export const US_TAX_2026_H_POSTS: PostDraft[] = [
     author: "Invoice Creator Editorial Team",
     jurisdiction: "United States",
     related: [
+      "tiktok-creator-taxes",
       "youtube-sponsorship-invoice-template",
       "self-employment-tax",
       "self-employed-tax-deductions",

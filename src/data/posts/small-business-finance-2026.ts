@@ -10,6 +10,7 @@ export const SMALL_BUSINESS_FINANCE_2026_POSTS: PostDraft[] = [
     date: "2026-10-27",
     author: "Invoice Creator Editorial Team",
     related: [
+      "self-employed-mortgage",
       "income-statement-vs-balance-sheet",
       "balance-sheet-small-business",
       "gross-profit-vs-net-profit",

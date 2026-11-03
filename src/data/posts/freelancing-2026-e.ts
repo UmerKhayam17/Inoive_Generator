@@ -10,6 +10,7 @@ export const FREELANCING_2026_E_POSTS: PostDraft[] = [
     date: "2026-10-29",
     author: "Invoice Creator Editorial Team",
     related: [
+      "passive-income-ideas-freelancers",
       "how-to-set-freelance-rates",
       "how-to-get-clients-as-a-freelancer",
       "best-freelance-websites",
@@ -899,6 +900,7 @@ export const FREELANCING_2026_E_POSTS: PostDraft[] = [
     date: "2026-10-29",
     author: "Invoice Creator Editorial Team",
     related: [
+      "testimonial-request-email",
       "freelance-proposal-template",
       "how-to-get-clients-as-a-freelancer",
       "how-to-set-freelance-rates",

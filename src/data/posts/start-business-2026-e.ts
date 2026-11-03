@@ -10,6 +10,7 @@ export const START_BUSINESS_2026_E_POSTS: PostDraft[] = [
     date: "2026-10-29",
     author: "Invoice Creator Editorial Team",
     related: [
+      "business-name-ideas",
       "small-business-grants",
       "startup-costs",
       "business-plan-template",

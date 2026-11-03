@@ -332,6 +332,7 @@ export const COMPARISONS_2026_C_POSTS: PostDraft[] = [
     date: "2026-10-27",
     author: "Invoice Creator Editorial Team",
     related: [
+      "how-to-make-a-pay-stub",
       "how-to-do-payroll-yourself",
       "nanny-invoice-template",
       "w9-and-1099-for-contractors",
@@ -491,6 +492,7 @@ export const COMPARISONS_2026_C_POSTS: PostDraft[] = [
     date: "2026-10-27",
     author: "Invoice Creator Editorial Team",
     related: [
+      "late-s-corp-election-relief",
       "llc-vs-corporation",
       "how-to-pay-yourself-as-a-business-owner",
       "llc-vs-sole-proprietorship",

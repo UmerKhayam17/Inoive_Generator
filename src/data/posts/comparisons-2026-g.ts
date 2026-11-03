@@ -492,7 +492,7 @@ export const COMPARISONS_2026_G_POSTS: PostDraft[] = [
     date: "2026-10-29",
     author: "Invoice Creator Editorial Team",
     jurisdiction: "United States",
-    related: ["s-corp-vs-llc", "llc-vs-sole-proprietorship", "llc-tax-rate"],
+    related: ["delaware-franchise-tax", "s-corp-vs-llc", "llc-vs-sole-proprietorship", "llc-tax-rate"],
     faqs: [
       {
         q: "Is an LLC or a corporation better for a small business?",
@@ -622,7 +622,7 @@ export const COMPARISONS_2026_G_POSTS: PostDraft[] = [
 <p>State fees are set by each secretary of state and change from time to time, so treat these as examples and check your state's website. Two well-known cases show how much ongoing costs can vary:</p>
 <table><thead><tr><th>State example</th><th>LLC ongoing cost</th><th>Corporation ongoing cost</th></tr></thead><tbody>
 <tr><td>California</td><td>$800 minimum annual franchise tax, plus a gross receipts fee above certain levels and a statement of information</td><td>$800 minimum franchise tax, or 8.84% of net income if higher, plus a statement of information</td></tr>
-<tr><td>Delaware</td><td>$300 annual tax</td><td>Franchise tax based on shares or assets, plus an annual report fee</td></tr>
+<tr><td>Delaware</td><td>$400 annual tax</td><td>Franchise tax based on shares or assets, plus an annual report fee</td></tr>
 </tbody></table>
 <p>Beyond state fees, budget for a registered agent if you use a service, bookkeeping, and tax preparation. A corporation's Form 1120 or an S corporation's Form 1120-S usually costs more to prepare than a single-member LLC's Schedule C, and running payroll adds a monthly payroll service fee. These ongoing costs often matter more than the one-time filing fee.</p>
 <p>Invoicing costs nothing extra under either structure: you can bill in the entity's name with a <a href="/invoice-generator">free invoice generator</a> from day one.</p>

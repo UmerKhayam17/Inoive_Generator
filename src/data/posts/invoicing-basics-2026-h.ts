@@ -833,7 +833,7 @@ export const INVOICING_BASICS_2026_H_POSTS: PostDraft[] = [
     category: "invoicing-basics",
     date: "2026-10-29",
     author: "Invoice Creator Editorial Team",
-    related: ["payment-confirmation-email", "payment-receipt-template", "dunning-process"],
+    related: ["thank-you-letter-to-clients", "payment-confirmation-email", "payment-receipt-template", "dunning-process"],
     faqs: [
       {
         q: "How do you say thank you for your payment professionally?",

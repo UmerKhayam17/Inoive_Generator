@@ -259,6 +259,7 @@ export const COMPARISONS_2026_E_POSTS: PostDraft[] = [
     date: "2026-10-29",
     author: "Invoice Creator Editorial Team",
     related: [
+      "cap-table-template",
       "debt-to-equity-ratio",
       "balance-sheet-small-business",
       "retained-earnings",

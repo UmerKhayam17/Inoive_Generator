@@ -10,6 +10,7 @@ export const FREELANCING_2026_D_POSTS: PostDraft[] = [
     date: "2026-10-28",
     author: "Invoice Creator Editorial Team",
     related: [
+      "value-proposition-examples",
       "logo-design-pricing",
       "graphic-design-pricing",
       "how-to-set-freelance-rates",
@@ -231,6 +232,7 @@ export const FREELANCING_2026_D_POSTS: PostDraft[] = [
     date: "2026-10-28",
     author: "Invoice Creator Editorial Team",
     related: [
+      "net-promoter-score",
       "freelance-contract-template",
       "statement-of-work-template",
       "vendor-onboarding-checklist",
@@ -470,7 +472,7 @@ export const FREELANCING_2026_D_POSTS: PostDraft[] = [
     category: "freelancing",
     date: "2026-10-28",
     author: "Invoice Creator Editorial Team",
-    related: ["self-employment-tax", "self-assessment-tax-return-uk", "1099-k-threshold"],
+    related: ["amazon-kdp-royalties", "self-employment-tax", "self-assessment-tax-return-uk", "1099-k-threshold"],
     faqs: [
       {
         q: "Do I need to pay tax on side income?",

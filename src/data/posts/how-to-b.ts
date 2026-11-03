@@ -10,6 +10,7 @@ export const HOW_TO_POSTS_B: PostDraft[] = [
     date: "2026-10-22",
     author: "Invoice Creator Editorial Team",
     related: [
+      "eori-number",
       "tax-invoice-vs-commercial-invoice",
       "tariff-surcharge-on-invoice",
       "bill-of-lading-vs-commercial-invoice",

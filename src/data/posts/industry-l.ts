@@ -518,6 +518,7 @@ export const INDUSTRY_POSTS_L: PostDraft[] = [
     date: "2026-10-29",
     author: "Invoice Creator Editorial Team",
     related: [
+      "short-term-rental-tax-loophole",
       "airbnb-cleaning-invoice-template",
       "hotel-invoice-template",
       "rent-invoice-template",

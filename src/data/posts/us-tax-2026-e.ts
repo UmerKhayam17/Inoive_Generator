@@ -179,6 +179,7 @@ export const US_TAX_2026_E_POSTS: PostDraft[] = [
     author: "Invoice Creator Editorial Team",
     jurisdiction: "United States",
     related: [
+      "form-1096",
       "how-to-file-sales-tax-return",
       "does-an-llc-get-a-1099",
       "1099-nec-threshold-2026",
@@ -548,6 +549,7 @@ export const US_TAX_2026_E_POSTS: PostDraft[] = [
     author: "Invoice Creator Editorial Team",
     jurisdiction: "United States",
     related: [
+      "gsa-schedule",
       "how-to-invoice-the-federal-government",
       "late-payment-fees",
       "invoice-payment-terms",
@@ -730,6 +732,7 @@ export const US_TAX_2026_E_POSTS: PostDraft[] = [
     author: "Invoice Creator Editorial Team",
     jurisdiction: "United States",
     related: [
+      "instacart-shopper-taxes",
       "mileage-log-template",
       "self-employed-tax-deductions",
       "how-to-calculate-depreciation",

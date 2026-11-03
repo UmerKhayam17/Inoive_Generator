@@ -10,6 +10,7 @@ export const INVOICING_BASICS_2026_D_POSTS: PostDraft[] = [
     date: "2026-10-29",
     author: "Invoice Creator Editorial Team",
     related: [
+      "proof-of-income-letter",
       "payment-receipt-template",
       "invoice-vs-receipt",
       "partial-payment-invoice",

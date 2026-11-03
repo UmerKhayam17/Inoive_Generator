@@ -11,6 +11,7 @@ export const US_TAX_2026_C_POSTS: PostDraft[] = [
     author: "Invoice Creator Editorial Team",
     jurisdiction: "United States",
     related: [
+      "underpayment-penalty-form-2210",
       "business-tax-deadlines-2027",
       "quarterly-estimated-taxes-freelancers",
       "self-employment-tax",

@@ -193,6 +193,7 @@ export const PROCUREMENT_TRADE_2026_POSTS: PostDraft[] = [
     date: "2026-10-27",
     author: "Invoice Creator Editorial Team",
     related: [
+      "minority-business-certification",
       "what-is-a-voided-check",
       "w9-and-1099-for-contractors",
       "bank-details-on-invoice",
@@ -371,7 +372,7 @@ export const PROCUREMENT_TRADE_2026_POSTS: PostDraft[] = [
     category: "comparisons",
     date: "2026-10-27",
     author: "Invoice Creator Editorial Team",
-    related: ["invoice-vs-purchase-order", "purchase-order-template", "three-way-match"],
+    related: ["procurement-process", "invoice-vs-purchase-order", "purchase-order-template", "three-way-match"],
     faqs: [
       {
         q: "What is the main difference between a purchase requisition and a purchase order?",

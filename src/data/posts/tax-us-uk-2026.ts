@@ -179,6 +179,7 @@ export const TAX_US_UK_2026_POSTS: PostDraft[] = [
     author: "Invoice Creator Editorial Team",
     jurisdiction: "United States",
     related: [
+      "irs-cp2000-notice",
       "youtuber-taxes",
       "does-an-llc-get-a-1099",
       "1099-nec-threshold-2026",

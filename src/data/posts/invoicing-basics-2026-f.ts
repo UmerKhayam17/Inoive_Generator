@@ -9,7 +9,7 @@ export const INVOICING_BASICS_2026_F_POSTS: PostDraft[] = [
     category: "invoicing-basics",
     date: "2026-10-29",
     author: "Invoice Creator Editorial Team",
-    related: ["accounts-payable-process", "three-way-match", "invoice-approval-workflow"],
+    related: ["sop-template", "accounts-payable-process", "three-way-match", "invoice-approval-workflow"],
     faqs: [
       {
         q: "How long should invoice processing take?",

@@ -157,6 +157,26 @@ import { START_BUSINESS_2026_H_POSTS } from "./posts/start-business-2026-h";
 import { US_TAX_2026_H_POSTS } from "./posts/us-tax-2026-h";
 import { BUSINESS_FINANCE_2026_G_POSTS } from "./posts/business-finance-2026-g";
 import { PAYMENTS_2026_M_POSTS } from "./posts/payments-2026-m";
+import { TAX_LIMITS_2027_POSTS } from "./posts/tax-limits-2027";
+import { PAYROLL_HR_2026_POSTS } from "./posts/payroll-hr-2026";
+import { YEAR_END_2026_POSTS } from "./posts/year-end-2026";
+import { US_TAX_FORMS_2026_POSTS } from "./posts/us-tax-forms-2026";
+import { US_TAX_FORMS_2026_B_POSTS } from "./posts/us-tax-forms-2026-b";
+import { STATE_BUSINESS_TAX_2026_POSTS } from "./posts/state-business-tax-2026";
+import { ENTITY_SETUP_2026_POSTS } from "./posts/entity-setup-2026";
+import { GIG_TAXES_2026_POSTS } from "./posts/gig-taxes-2026";
+import { CREATOR_INCOME_2026_POSTS } from "./posts/creator-income-2026";
+import { HR_DOCUMENTS_2026_POSTS } from "./posts/hr-documents-2026";
+import { BUSINESS_NAMING_2026_POSTS } from "./posts/business-naming-2026";
+import { GOVERNMENT_CONTRACTING_2026_POSTS } from "./posts/government-contracting-2026";
+import { BUSINESS_AGREEMENTS_2026_POSTS } from "./posts/business-agreements-2026";
+import { BUSINESS_PLANNING_2026_POSTS } from "./posts/business-planning-2026";
+import { START_BUSINESS_2026_I_POSTS } from "./posts/start-business-2026-i";
+import { LOCAL_MARKETING_2026_POSTS } from "./posts/local-marketing-2026";
+import { MARKETING_GROWTH_2026_POSTS } from "./posts/marketing-growth-2026";
+import { SALES_METRICS_2026_POSTS } from "./posts/sales-metrics-2026";
+import { PRICING_PROFIT_2026_POSTS } from "./posts/pricing-profit-2026";
+import { FREELANCE_PRODUCTIVITY_2026_POSTS } from "./posts/freelance-productivity-2026";
 
 export interface Post {
   slug: string;
@@ -757,6 +777,7 @@ jane@smithdesign.example</p>
     date: "2026-10-03",
     author: "Invoice Creator Editorial Team",
     related: [
+      "time-management-for-freelancers",
       "carpentry-invoice-template",
       "security-services-invoice-template",
       "timesheet-template",
@@ -1854,7 +1875,7 @@ jane@smithdesign.example</p>
     category: "guides",
     date: "2026-08-18",
     author: "Invoice Creator Editorial Team",
-    related: ["music-lesson-invoice-template"],
+    related: ["monthly-recurring-revenue", "music-lesson-invoice-template"],
     faqs: [
       {
         q: "What is the difference between a recurring invoice and automatic payment?",
@@ -4368,6 +4389,26 @@ export const POST_DRAFTS: PostDraft[] = [
   ...US_TAX_2026_H_POSTS,
   ...BUSINESS_FINANCE_2026_G_POSTS,
   ...PAYMENTS_2026_M_POSTS,
+  ...TAX_LIMITS_2027_POSTS,
+  ...PAYROLL_HR_2026_POSTS,
+  ...YEAR_END_2026_POSTS,
+  ...US_TAX_FORMS_2026_POSTS,
+  ...US_TAX_FORMS_2026_B_POSTS,
+  ...STATE_BUSINESS_TAX_2026_POSTS,
+  ...ENTITY_SETUP_2026_POSTS,
+  ...GIG_TAXES_2026_POSTS,
+  ...CREATOR_INCOME_2026_POSTS,
+  ...HR_DOCUMENTS_2026_POSTS,
+  ...BUSINESS_NAMING_2026_POSTS,
+  ...GOVERNMENT_CONTRACTING_2026_POSTS,
+  ...BUSINESS_AGREEMENTS_2026_POSTS,
+  ...BUSINESS_PLANNING_2026_POSTS,
+  ...START_BUSINESS_2026_I_POSTS,
+  ...LOCAL_MARKETING_2026_POSTS,
+  ...MARKETING_GROWTH_2026_POSTS,
+  ...SALES_METRICS_2026_POSTS,
+  ...PRICING_PROFIT_2026_POSTS,
+  ...FREELANCE_PRODUCTIVITY_2026_POSTS,
 ];
 
 /** Reading time is derived from content length so it cannot drift from the article. */

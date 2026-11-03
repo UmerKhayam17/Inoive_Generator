@@ -552,6 +552,7 @@ export const BUSINESS_GROWTH_2026_POSTS: PostDraft[] = [
     date: "2026-10-27",
     author: "Invoice Creator Editorial Team",
     related: [
+      "print-on-demand-business",
       "how-to-start-a-candle-business",
       "how-to-start-a-home-bakery-business",
       "how-to-raise-prices",

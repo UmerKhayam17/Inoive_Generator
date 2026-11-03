@@ -464,6 +464,7 @@ Our bank details will never change by email. If you receive a message saying the
     date: "2026-10-22",
     author: "Invoice Creator Editorial Team",
     related: [
+      "black-friday-ideas-service-business",
       "2-10-net-30",
       "discount-on-invoice",
       "dynamic-discounting",

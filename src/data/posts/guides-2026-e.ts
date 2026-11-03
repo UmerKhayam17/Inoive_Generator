@@ -10,6 +10,7 @@ export const GUIDES_2026_E_POSTS: PostDraft[] = [
     date: "2026-10-29",
     author: "Invoice Creator Editorial Team",
     related: [
+      "how-to-get-google-reviews",
       "how-to-send-an-invoice",
       "how-to-make-an-invoice-on-your-phone",
       "add-payment-link-to-invoice",
@@ -439,7 +440,7 @@ export const GUIDES_2026_E_POSTS: PostDraft[] = [
     date: "2026-10-29",
     author: "Invoice Creator Editorial Team",
     jurisdiction: "United States",
-    related: ["prompt-payment-act", "three-way-match", "e-invoicing-guide"],
+    related: ["duns-number", "prompt-payment-act", "three-way-match", "e-invoicing-guide"],
     faqs: [
       {
         q: "How long does the federal government take to pay invoices?",

@@ -11,6 +11,7 @@ export const US_TAX_2026_D_POSTS: PostDraft[] = [
     author: "Invoice Creator Editorial Team",
     jurisdiction: "United States",
     related: [
+      "doordash-taxes",
       "mileage-invoice",
       "courier-delivery-invoice-template",
       "mileage-log-template",
@@ -195,6 +196,7 @@ export const US_TAX_2026_D_POSTS: PostDraft[] = [
     author: "Invoice Creator Editorial Team",
     jurisdiction: "United States",
     related: [
+      "federal-tax-brackets-2027",
       "self-employment-tax",
       "quarterly-estimated-taxes-freelancers",
       "qbi-deduction-section-199a",
@@ -741,6 +743,7 @@ export const US_TAX_2026_D_POSTS: PostDraft[] = [
     author: "Invoice Creator Editorial Team",
     jurisdiction: "United States",
     related: [
+      "hsa-contribution-limits-2027",
       "self-employed-tax-deductions",
       "self-employment-tax",
       "schedule-c-for-freelancers",

@@ -175,6 +175,7 @@ export const FREELANCING_GROWTH_2026_POSTS: PostDraft[] = [
     date: "2026-10-27",
     author: "Invoice Creator Editorial Team",
     related: [
+      "google-business-profile",
       "best-freelance-websites",
       "ai-tools-for-freelancers",
       "cold-email-for-freelancers",
@@ -350,6 +351,7 @@ export const FREELANCING_GROWTH_2026_POSTS: PostDraft[] = [
     date: "2026-10-27",
     author: "Invoice Creator Editorial Team",
     related: [
+      "client-intake-form",
       "best-freelance-websites",
       "how-to-negotiate-freelance-rates",
       "statement-of-work-template",

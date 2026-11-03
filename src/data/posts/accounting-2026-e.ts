@@ -213,6 +213,7 @@ export const ACCOUNTING_2026_E_POSTS: PostDraft[] = [
     date: "2026-10-29",
     author: "Invoice Creator Editorial Team",
     related: [
+      "okr-examples",
       "sales-forecast",
       "small-business-budget",
       "profit-and-loss-statement",

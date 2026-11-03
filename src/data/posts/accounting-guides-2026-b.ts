@@ -686,7 +686,7 @@ export const ACCOUNTING_GUIDES_2026_B_POSTS: PostDraft[] = [
     category: "guides",
     date: "2026-10-28",
     author: "Invoice Creator Editorial Team",
-    related: ["owners-equity", "balance-sheet-small-business", "general-ledger", "trial-balance"],
+    related: ["409a-valuation", "owners-equity", "balance-sheet-small-business", "general-ledger", "trial-balance"],
     faqs: [
       {
         q: "What are retained earnings?",

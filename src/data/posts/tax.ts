@@ -1056,6 +1056,7 @@ export const TAX_POSTS: PostDraft[] = [
     author: "Invoice Creator Editorial Team",
     jurisdiction: "United States",
     related: [
+      "amended-tax-return-1040-x",
       "startup-costs",
       "irs-mileage-rate-2026",
       "home-office-deduction",

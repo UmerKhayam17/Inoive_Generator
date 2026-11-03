@@ -10,6 +10,7 @@ export const BUSINESS_FINANCE_2026_G_POSTS: PostDraft[] = [
     date: "2026-10-29",
     author: "Invoice Creator Editorial Team",
     related: [
+      "business-continuity-plan",
       "workers-compensation-insurance",
       "startup-costs",
       "how-to-bill-insurance-companies-as-a-contractor",
@@ -190,7 +191,7 @@ export const BUSINESS_FINANCE_2026_G_POSTS: PostDraft[] = [
     category: "business-finance",
     date: "2026-10-29",
     author: "Invoice Creator Editorial Team",
-    related: ["business-insurance", "hiring-your-first-employee", "employer-payroll-taxes"],
+    related: ["employee-handbook-template", "business-insurance", "hiring-your-first-employee", "employer-payroll-taxes"],
     faqs: [
       {
         q: "Do I need workers comp if I only have one employee?",
@@ -354,6 +355,7 @@ export const BUSINESS_FINANCE_2026_G_POSTS: PostDraft[] = [
     date: "2026-10-29",
     author: "Invoice Creator Editorial Team",
     related: [
+      "small-business-grants-for-women",
       "sba-loans",
       "how-to-start-a-small-business",
       "how-to-invoice-the-federal-government",

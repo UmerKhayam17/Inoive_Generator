@@ -230,6 +230,7 @@ export const PAYMENTS_2026_G_POSTS: PostDraft[] = [
     date: "2026-10-29",
     author: "Invoice Creator Editorial Team",
     related: [
+      "iou-template",
       "payment-plan-agreement",
       "client-not-paying-invoice",
       "bill-of-sale-template",
@@ -454,6 +455,7 @@ export const PAYMENTS_2026_G_POSTS: PostDraft[] = [
     date: "2026-10-29",
     author: "Invoice Creator Editorial Team",
     related: [
+      "toptal-vs-upwork",
       "virtual-assistant-rates",
       "upwork-vs-fiverr",
       "fiverr-upwork-invoice",

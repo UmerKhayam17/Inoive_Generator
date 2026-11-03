@@ -393,6 +393,7 @@ export const TRADE_TARIFFS_2026_POSTS: PostDraft[] = [
     date: "2026-10-28",
     author: "Invoice Creator Editorial Team",
     related: [
+      "freelancer-burnout",
       "price-list-template",
       "how-to-price-a-product",
       "how-to-set-freelance-rates",

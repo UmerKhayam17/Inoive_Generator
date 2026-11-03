@@ -737,6 +737,7 @@ export const START_BUSINESS_2026_D_POSTS: PostDraft[] = [
     author: "Invoice Creator Editorial Team",
     jurisdiction: "United States",
     related: [
+      "form-8832",
       "llc-vs-sole-proprietorship",
       "s-corp-vs-llc",
       "how-to-start-an-llc",

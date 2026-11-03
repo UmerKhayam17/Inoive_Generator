@@ -551,6 +551,7 @@ export const BUSINESS_FINANCE_2026_E_POSTS: PostDraft[] = [
     date: "2026-10-29",
     author: "Invoice Creator Editorial Team",
     related: [
+      "bonus-tax-rate",
       "gusto-vs-adp",
       "hiring-your-first-employee",
       "employer-payroll-taxes",
@@ -759,6 +760,7 @@ export const BUSINESS_FINANCE_2026_E_POSTS: PostDraft[] = [
     date: "2026-10-29",
     author: "Invoice Creator Editorial Team",
     related: [
+      "minimum-wage-by-state-2027",
       "workers-compensation-insurance",
       "how-to-do-payroll-yourself",
       "w2-vs-1099",

@@ -601,6 +601,7 @@ export const PAYMENTS_FREELANCE_2026_B_POSTS: PostDraft[] = [
     date: "2026-10-27",
     author: "Invoice Creator Editorial Team",
     related: [
+      "review-request-templates",
       "thank-you-for-your-payment-message",
       "payment-receipt-template",
       "payment-reminder-emails",
@@ -1224,6 +1225,7 @@ export const PAYMENTS_FREELANCE_2026_B_POSTS: PostDraft[] = [
     date: "2026-10-27",
     author: "Invoice Creator Editorial Team",
     related: [
+      "elevator-pitch-examples",
       "how-to-get-clients-as-a-freelancer",
       "freelance-proposal-template",
       "how-to-set-freelance-rates",

@@ -198,6 +198,7 @@ export const PRICING_GUIDES_2026_F_POSTS: PostDraft[] = [
     date: "2026-10-29",
     author: "Invoice Creator Editorial Team",
     related: [
+      "local-seo-checklist",
       "seo-services-invoice-template",
       "marketing-agency-invoice-template",
       "retainer-invoice",

@@ -159,6 +159,7 @@ export const FINANCE_2026_POSTS: PostDraft[] = [
     date: "2026-10-24",
     author: "Invoice Creator Editorial Team",
     related: [
+      "business-emergency-fund",
       "hiring-your-first-employee",
       "ai-cash-flow-forecasting",
       "small-business-budget",

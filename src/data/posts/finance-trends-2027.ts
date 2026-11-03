@@ -159,6 +159,7 @@ export const FINANCE_TRENDS_2027_POSTS: PostDraft[] = [
     date: "2026-10-27",
     author: "Invoice Creator Editorial Team",
     related: [
+      "year-end-tax-planning-small-business",
       "llc-annual-report",
       "month-end-close-checklist",
       "bad-debt-write-off",

@@ -371,6 +371,7 @@ export const INVOICING_BASICS_2026_G_POSTS: PostDraft[] = [
     date: "2026-10-29",
     author: "Invoice Creator Editorial Team",
     related: [
+      "keystone-pricing",
       "furniture-maker-invoice-template",
       "markup-vs-margin",
       "time-and-materials-invoice",

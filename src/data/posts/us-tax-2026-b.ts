@@ -503,6 +503,7 @@ export const US_TAX_2026_B_POSTS: PostDraft[] = [
     author: "Invoice Creator Editorial Team",
     jurisdiction: "United States",
     related: [
+      "pass-through-entity-tax",
       "federal-tax-brackets-2026",
       "one-big-beautiful-bill-small-business",
       "schedule-c-for-freelancers",

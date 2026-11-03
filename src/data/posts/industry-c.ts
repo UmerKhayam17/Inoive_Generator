@@ -625,6 +625,7 @@ export const INDUSTRY_POSTS_C: PostDraft[] = [
     date: "2026-10-23",
     author: "Invoice Creator Editorial Team",
     related: [
+      "how-to-start-a-barbershop",
       "alterations-tailoring-invoice-template",
       "massage-therapy-invoice-template",
       "tattoo-invoice-template",

@@ -686,7 +686,7 @@ export const FINANCE_METRICS_2026_B_POSTS: PostDraft[] = [
     category: "business-finance",
     date: "2026-10-28",
     author: "Invoice Creator Editorial Team",
-    related: ["unit-economics", "how-to-price-a-product", "recurring-invoices-guide"],
+    related: ["email-marketing-small-business", "unit-economics", "how-to-price-a-product", "recurring-invoices-guide"],
     faqs: [
       {
         q: "What is customer lifetime value?",
