@@ -177,6 +177,26 @@ import { MARKETING_GROWTH_2026_POSTS } from "./posts/marketing-growth-2026";
 import { SALES_METRICS_2026_POSTS } from "./posts/sales-metrics-2026";
 import { PRICING_PROFIT_2026_POSTS } from "./posts/pricing-profit-2026";
 import { FREELANCE_PRODUCTIVITY_2026_POSTS } from "./posts/freelance-productivity-2026";
+import { INTL_FREELANCERS_2026_POSTS } from "./posts/intl-freelancers-2026";
+import { INTL_TAX_2026_POSTS } from "./posts/intl-tax-2026";
+import { US_TAX_FORMS_2026_C_POSTS } from "./posts/us-tax-forms-2026-c";
+import { US_TAX_FORMS_2026_D_POSTS } from "./posts/us-tax-forms-2026-d";
+import { TAX_STRATEGIES_2026_POSTS } from "./posts/tax-strategies-2026";
+import { TAX_CHANGES_2026_POSTS } from "./posts/tax-changes-2026";
+import { PAYMENTS_2026_N_POSTS } from "./posts/payments-2026-n";
+import { BANKING_CARDS_2026_POSTS } from "./posts/banking-cards-2026";
+import { COST_ACCOUNTING_2026_POSTS } from "./posts/cost-accounting-2026";
+import { FINANCIAL_STATEMENTS_2026_POSTS } from "./posts/financial-statements-2026";
+import { FRAUD_LEGAL_2026_POSTS } from "./posts/fraud-legal-2026";
+import { CONTRACTS_IP_2026_POSTS } from "./posts/contracts-ip-2026";
+import { MARKETING_2026_C_POSTS } from "./posts/marketing-2026-c";
+import { MARKETING_2026_D_POSTS } from "./posts/marketing-2026-d";
+import { MARKETING_TOOLS_2026_POSTS } from "./posts/marketing-tools-2026";
+import { START_BUSINESS_2026_J_POSTS } from "./posts/start-business-2026-j";
+import { START_BUSINESS_2026_K_POSTS } from "./posts/start-business-2026-k";
+import { START_BUSINESS_2026_L_POSTS } from "./posts/start-business-2026-l";
+import { HR_POLICIES_2026_POSTS } from "./posts/hr-policies-2026";
+import { HR_COMPLIANCE_2026_POSTS } from "./posts/hr-compliance-2026";
 
 export interface Post {
   slug: string;
@@ -4409,6 +4429,26 @@ export const POST_DRAFTS: PostDraft[] = [
   ...SALES_METRICS_2026_POSTS,
   ...PRICING_PROFIT_2026_POSTS,
   ...FREELANCE_PRODUCTIVITY_2026_POSTS,
+  ...INTL_FREELANCERS_2026_POSTS,
+  ...INTL_TAX_2026_POSTS,
+  ...US_TAX_FORMS_2026_C_POSTS,
+  ...US_TAX_FORMS_2026_D_POSTS,
+  ...TAX_STRATEGIES_2026_POSTS,
+  ...TAX_CHANGES_2026_POSTS,
+  ...PAYMENTS_2026_N_POSTS,
+  ...BANKING_CARDS_2026_POSTS,
+  ...COST_ACCOUNTING_2026_POSTS,
+  ...FINANCIAL_STATEMENTS_2026_POSTS,
+  ...FRAUD_LEGAL_2026_POSTS,
+  ...CONTRACTS_IP_2026_POSTS,
+  ...MARKETING_2026_C_POSTS,
+  ...MARKETING_2026_D_POSTS,
+  ...MARKETING_TOOLS_2026_POSTS,
+  ...START_BUSINESS_2026_J_POSTS,
+  ...START_BUSINESS_2026_K_POSTS,
+  ...START_BUSINESS_2026_L_POSTS,
+  ...HR_POLICIES_2026_POSTS,
+  ...HR_COMPLIANCE_2026_POSTS,
 ];
 
 /** Reading time is derived from content length so it cannot drift from the article. */
